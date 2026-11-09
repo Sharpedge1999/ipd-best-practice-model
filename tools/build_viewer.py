@@ -603,7 +603,7 @@ def load_verify_triage(path, warnings):
         if text(it.get("tag")) and text(it.get("action")) in ("strip", "replace", "keep"):
             inline.append({"tag": it["tag"], "fields": [text(f) for f in as_list(it.get("fields"))],
                            "action": text(it.get("action")), "note": text(it.get("note")),
-                           "with": it.get("with") or ""})
+                           "with": it.get("with") or "", "key": text(it.get("key"))})
         else:
             warnings.append("verify triage: inline rule without tag or action skipped")
     return {"general": general, "items": items, "inline": inline}
@@ -641,11 +641,14 @@ def apply_verify_triage(citations, triage, warnings):
     def blocked_for(*ids):
         return sorted(set(t["wording"] for t in items.values() if t["class"] == "open" and excluded(t, ids)))
 
-    def inline_clean(val, field, notes=None):
-        # inline [verify] fragments in displayed fields: strip or replace the ones the triage settled (rules in order)
+    def inline_clean(val, field, notes=None, key=""):
+        # inline [verify] fragments in displayed fields: strip or replace the ones the triage settled (rules in order;
+        # a rule with a key applies only to that source key)
         if not isinstance(val, str) or not val:
             return val
         for rule in triage.get("inline", []):
+            if rule.get("key") and rule["key"] != key:
+                continue
             if rule["action"] in ("strip", "replace") and field in rule["fields"] and rule["tag"] in val:
                 val = re.sub(r"\s{2,}", " ", val.replace(rule["tag"], rule["with"] if rule["action"] == "replace" else "")).strip()
                 if rule["note"] and notes is not None and rule["note"] not in notes:
@@ -656,8 +659,12 @@ def apply_verify_triage(citations, triage, warnings):
         if "verify_raw" not in f:
             f["verify_raw"] = f.get("verify", [])
             f["verify"], f["verify_notes"] = split(f["verify_raw"], *ids)
+            # where an open point does not concern this element or REQ, its marker in the deadline goes too
+            if any(items.get(v) is not None and excluded(items[v], ids) for v in f["verify_raw"]):
+                f["deadline"] = re.sub(r"\s*\[verify[^\]]*\]", "", f.get("deadline", "")).strip()
         f["binding_route"] = inline_clean(f.get("binding_route", ""), "binding_route")
-        loc, page = inline_clean(f.get("loc", ""), "loc"), inline_clean(f.get("page", ""), "page")
+        k = f.get("src", "")
+        loc, page = inline_clean(f.get("loc", ""), "loc", key=k), inline_clean(f.get("page", ""), "page", key=k)
         if loc != f.get("loc", ""):
             f["loc_shown"] = loc
         if page != f.get("page", ""):
@@ -706,8 +713,8 @@ def apply_verify_triage(citations, triage, warnings):
                     if t["wording"] and t["wording"] not in rec["verify"]:
                         rec["verify"].append(t["wording"])
                 else:
-                    s["loc_shown"] = VERIFY_TAG.sub("", inline_clean(s["loc"], "loc")).strip()
-                    s["page_shown"] = VERIFY_TAG.sub("", inline_clean(s.get("page") or "", "page")).strip()
+                    s["loc_shown"] = VERIFY_TAG.sub("", inline_clean(s["loc"], "loc", key=s["key"])).strip()
+                    s["page_shown"] = VERIFY_TAG.sub("", inline_clean(s.get("page") or "", "page", key=s["key"])).strip()
                     if t["class"] == "note" and t["wording"] and t["wording"] not in rec["verify_notes"]:
                         rec["verify_notes"].append(t["wording"])
     # also_on: an open point that belongs to further elements (e.g. a diagram-level model note)

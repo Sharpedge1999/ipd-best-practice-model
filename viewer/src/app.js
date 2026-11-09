@@ -730,8 +730,8 @@
     return (list || []).filter(function (v) { return !blocked || blocked.indexOf(v) < 0; });
   }
   function findingHtml(f, blocked) {
-    var fv = openOf(f.verify, blocked), hidden = fv.length < (f.verify || []).length;
     if (!f || f.missing) return '<div class="find"><h4>' + esc(f ? f.id : '') + '</h4><p class="muted">Finding not in merged_findings.yaml.</p></div>';
+    var fv = openOf(f.verify, blocked), hidden = fv.length < (f.verify || []).length;
     var b = BINDING_BADGE[f.binding];
     var h = '<div class="find"><h4>' + esc(f.id) + ' ' + (b ? badge(b) : '') + (f.draft ? ' ' + badge('DRAFT') : '') + '</h4>';
     h += '<p class="kv">' + esc([f.doc, locOf(f) + (f.loc_alt ? ' (other version: ' + f.loc_alt + ')' : ''), pageOf(f) ? 'page ' + pageOf(f) : ''].filter(Boolean).join(' | ')) + '</p>';

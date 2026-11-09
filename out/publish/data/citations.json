@@ -6719,7 +6719,7 @@
      "verify": [],
      "verify_blocked": [],
      "verify_notes": [
-      "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane."
+      "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses."
      ],
      "verify_raw": [
       "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
@@ -8497,7 +8497,7 @@
     "Lane assumed: E6(R3) lists this as a monitoring activity under the sponsor's monitoring plan without naming who performs it.",
     "Duty applies to two parties: E6(R3) addresses this data and metadata review to investigators and sponsors; the model shows only the sponsor's review.",
     "Meaning of a term: in E6(R3) 'deviation beyond these ranges' means a range exceedance (e.g. a quality tolerance limit), not a protocol deviation.",
-    "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane.",
+    "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses.",
     "21 CFR 312.62(b) requires case histories recording all observations but does not name deviations; used here as the US basis for site documentation.",
     "Premature unblinding: E6(R3) requires prompt explanation to the sponsor but does not call it a deviation; trial-specific criteria decide whether it is an important deviation."
    ],
@@ -9384,7 +9384,7 @@
       {
        "binding": "binding-law",
        "binding_route": "US: federal regulation (21 CFR), legally binding for clinical investigations of drugs under an IND; EU: not applicable",
-       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference [verify whether its 5-working-day window applies]",
+       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference",
        "doc": "21 CFR Part 312 - Investigational New Drug Application, section 312.30 Protocol amendments (eCFR, up to date as of 10/22/2026)",
        "draft": false,
        "id": "R4-005",
@@ -18942,7 +18942,8 @@
    "type": "bpmn:CallActivity",
    "type_label": "Call activity",
    "verify": [
-    "Data standard not final: the classification variable DVCLASI exists only in the SDTMIG v4.0 public review draft; publication and FDA support are not confirmed."
+    "Data standard not final: the classification variable DVCLASI exists only in the SDTMIG v4.0 public review draft; publication and FDA support are not confirmed.",
+    "Data standard version not settled: the SDTM and SDTMIG versions FDA supports are listed in the FDA Data Standards Catalog, which was not checked."
    ],
    "verify_blocked": [],
    "verify_notes": [
@@ -21805,7 +21806,7 @@
      "verify": [],
      "verify_blocked": [],
      "verify_notes": [
-      "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane."
+      "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses."
      ],
      "verify_raw": [
       "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
@@ -21871,7 +21872,7 @@
    "verify": [],
    "verify_blocked": [],
    "verify_notes": [
-    "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane."
+    "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses."
    ],
    "verify_raw": [
     "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
@@ -21933,7 +21934,7 @@
       {
        "binding": "binding-law",
        "binding_route": "US: federal regulation (21 CFR), legally binding for clinical investigations of drugs under an IND; EU: not applicable",
-       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference [verify whether its 5-working-day window applies]",
+       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference",
        "doc": "21 CFR Part 312 - Investigational New Drug Application, section 312.30 Protocol amendments (eCFR, up to date as of 10/22/2026)",
        "draft": false,
        "id": "R4-005",
@@ -35243,7 +35244,7 @@
      "verify": [],
      "verify_blocked": [],
      "verify_notes": [
-      "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane."
+      "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses."
      ],
      "verify_raw": [
       "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
@@ -35309,7 +35310,7 @@
    "verify": [],
    "verify_blocked": [],
    "verify_notes": [
-    "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane."
+    "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses."
    ],
    "verify_raw": [
     "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
@@ -38373,7 +38374,7 @@
      "verify": [],
      "verify_blocked": [],
      "verify_notes": [
-      "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane."
+      "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses."
      ],
      "verify_raw": [
       "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
@@ -38439,7 +38440,7 @@
    "verify": [],
    "verify_blocked": [],
    "verify_notes": [
-    "Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the step is shown in the sponsor's or the monitor's lane."
+    "Lane assumed: E6(R3) names no performer for this monitoring activity. The requirement names the monitor; 'Who' shows the lane the model uses."
    ],
    "verify_raw": [
     "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
@@ -42170,7 +42171,7 @@
       {
        "binding": "binding-law",
        "binding_route": "US: federal regulation (21 CFR), legally binding for clinical investigations of drugs under an IND; EU: not applicable",
-       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference [verify whether its 5-working-day window applies]",
+       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference",
        "doc": "21 CFR Part 312 - Investigational New Drug Application, section 312.30 Protocol amendments (eCFR, up to date as of 10/22/2026)",
        "draft": false,
        "id": "R4-005",
@@ -44938,7 +44939,7 @@
       {
        "binding": "binding-law",
        "binding_route": "US: federal regulation (21 CFR), legally binding for clinical investigations of drugs under an IND; EU: not applicable",
-       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference [verify whether its 5-working-day window applies]",
+       "deadline": "FDA: subsequently, no period stated; IRB: per 21CFR56.104(c) cross-reference",
        "doc": "21 CFR Part 312 - Investigational New Drug Application, section 312.30 Protocol amendments (eCFR, up to date as of 10/22/2026)",
        "draft": false,
        "id": "R4-005",
@@ -82853,7 +82854,7 @@
    "verify_triage": {
     "file": "contracts/verify_triage.yaml",
     "records": 199,
-    "sha256": "ec419a2c1fee450dcc671136266a24ff50ed4c222d23f78ce66b6b1166107d2a"
+    "sha256": "63ec53b1d37b0b6d07a2d360ec52a0e5435072893d1652431c55121d523b16b3"
    }
   },
   "modal_loaded": true,
