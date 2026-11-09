@@ -22,6 +22,7 @@
   <button type="button" class="btn" id="back" disabled>Back to L3</button>
   <ol class="crumbs" id="crumbs" aria-label="Breadcrumb"></ol>
   <output id="z-level" class="zlevel" aria-live="off"></output>
+  <button type="button" class="btn" id="list-toggle" aria-pressed="false" aria-controls="panel" title="Show or hide all requirements of this diagram in the side panel">Requirements list</button>
   <button type="button" class="btn" id="mm-toggle" aria-pressed="false" title="Show or hide the overview map (minimap); click or drag in the map to move the view">Show minimap</button>
   <div class="zoom" role="group" aria-label="Zoom">
     <button type="button" id="z-out" title="Zoom out" aria-label="Zoom out">-</button>
@@ -65,8 +66,7 @@
     <div id="canvas" aria-label="BPMN diagram"></div>
     <div class="canvas-msg" id="canvas-msg" hidden></div>
   </div>
-  <aside class="panel" id="panel" aria-label="Details">
-    <button type="button" class="panel-toggle" id="panel-toggle" aria-expanded="false" aria-controls="panel-body">Show details</button>
+  <aside class="panel" id="panel" aria-label="Step details">
     <div id="panel-body" class="panel-body" aria-live="polite"></div>
   </aside>
 </main>

@@ -22,17 +22,18 @@
   var STORE_KEY = 'ipd-viewer-filters-v1';
   var BADGE_TEXT = {
     LAW: 'Binding law - regulation or statute (EU CTR, 21 CFR)',
-    ICH: 'ICH guideline - binding through regional adoption; the route is shown in the side panel',
+    ICH: 'ICH guideline - applies through regional adoption (EU: GCP via EU CTR Art. 47; US: nonbinding FDA guidance); the route is shown in the side panel',
     GUIDANCE: 'Agency guidance - not legally binding',
     DRAFT: 'Rests (also) on draft guidance - shown next to the binding badge; draft guidance is never the only basis of a binding step',
     BP: 'Industry best practice or data standard',
-    VERIFY: 'Binding class, numbering or content still to be verified'
+    VERIFY: 'Open point a reviewer should check - for example an unsettled deadline, reporting duty or decision rule; the side panel says what to check'
   };
   var BINDING_BADGE = { 'binding-law': 'LAW', 'binding-ICH': 'ICH', 'guidance': 'GUIDANCE',
     'best-practice': 'BP', 'verify-binding': 'VERIFY' };
 
   var state = {
     diagram: null, selected: null, pendingSelect: null,
+    list: false,         // side panel: closed until a step is selected or the requirements list is opened
     filters: { binding: '', jur: '', keys: [], q: '' },
     chain: Promise.resolve(), chipsSkipped: [],
     view: null,          // default view applied on open: { mode: 'readable' | 'fit', fit, zoom, pool, start }
@@ -123,6 +124,10 @@
   function afterOpen(d) {
     state.diagram = d;
     state.selected = null;
+    var pend = state.pendingSelect && EL[state.pendingSelect] && EL[state.pendingSelect].diagram === d.id ? state.pendingSelect : null;
+    state.pendingSelect = null;
+    // the panel takes its final width before the default view is computed
+    $('#panel').classList.toggle('open', !!(pend || state.list));
     canvas.resized();
     defaultView();
     minimapForDiagram();
@@ -132,12 +137,8 @@
     renderCrumbs(d);
     $('#back').disabled = d.id === ROOT_D.id;
     document.documentElement.setAttribute('data-diagram', d.id);
-    if (state.pendingSelect && EL[state.pendingSelect] && EL[state.pendingSelect].diagram === d.id) {
-      var id = state.pendingSelect; state.pendingSelect = null; select(id, true);
-    } else {
-      state.pendingSelect = null;
-      renderPanel();
-    }
+    if (pend) select(pend, true);
+    else renderPanel();
   }
 
   function fail(err) {
@@ -272,13 +273,19 @@
     var w = Math.max(150, el.width);
     return [el.x + el.width / 2 - w / 2, el.y + el.height + 6, w, 70];
   }
+  // a source location or page marked [verify] is shown without the marker unless the point is still open (verify triage)
+  function locOf(s) { return s.loc_shown != null ? s.loc_shown : s.loc; }
+  function pageOf(s) { return s.page_shown != null ? s.page_shown : s.page; }
   function sourceLines(rec) {
     var seen = {}, out = [];
     rec.sources.forEach(function (s) {
-      var k = s.key + ' ' + s.loc;
-      if (!seen[k]) { seen[k] = 1; out.push([s.key, s.loc]); }
+      var k = s.key + ' ' + locOf(s);
+      if (!seen[k]) { seen[k] = 1; out.push([s.key, locOf(s)]); }
     });
     return out;
+  }
+  function noteLines(list) {
+    return (list || []).map(function (n) { return '<p class="vnote"><span class="vnk">Note</span>' + esc(n) + '</p>'; }).join('');
   }
   var IFC_TEXT = 'Interface - outside this model';
   function isInterface(rec) { return !!(rec && rec.calls && rec.calls.interface); }
@@ -441,12 +448,13 @@
   }
 
   /* ------------------------------------------------------------ canvas events */
+  var clicks = [];   // the last two element clicks: the first click of a double-click may zoom, so the second lands elsewhere
   viewer.on('element.click', function (e) {
     var el = e.element;
     if (el.labelTarget) el = el.labelTarget;
+    clicks = [clicks[clicks.length - 1], { id: el.id, t: Date.now() }].filter(Boolean);
     if (!el.parent) { select(null); return; }
     var rec = EL[el.id];
-    if (rec && rec.calls && rec.calls.available && !rec.calls.interface) { go(byId[rec.calls.diagram]); return; }
     if (el.type === 'bpmn:Lane' || (el.type === 'bpmn:Participant' && el.businessObject.processRef)) {
       // lanes and expanded pools: only the header strip selects them; clicks on the body clear the selection
       var oe = e.originalEvent, rect = $('#canvas').getBoundingClientRect(), vb = canvas.viewbox();
@@ -454,6 +462,17 @@
       if (x > el.x + 30) { select(null); return; }
     }
     if (rec) select(el.id); else select(null);
+  });
+  // a click on an L3 step shows its description; a double-click (or its "Open L4" chip) opens the L4 detail diagram
+  function callable(id) {
+    var r = EL[id];
+    return r && r.calls && r.calls.available && !r.calls.interface ? r : null;
+  }
+  viewer.on('element.dblclick', function (e) {
+    var el = e.element.labelTarget || e.element;
+    var first = clicks.length === 2 && Date.now() - clicks[0].t < 800 ? clicks[0].id : null;
+    var rec = (first && callable(first)) || callable(el.id);
+    if (rec) go(byId[rec.calls.diagram]);
   });
 
   $('#canvas').addEventListener('click', function (ev) {
@@ -480,18 +499,22 @@
   function select(id, scroll) {
     if (state.selected) mark(state.selected, 'ipd-sel', false);
     state.selected = id && EL[id] && EL[id].diagram === (state.diagram && state.diagram.id) ? id : null;
+    var wasOpen = panelIsOpen();
+    renderPanel();   // opens the panel for a selection, closes it without one (unless the requirements list is open)
     if (state.selected) {
       mark(state.selected, 'ipd-sel', true);
       var el = registry.get(state.selected);
       if (el && el.type !== 'bpmn:Participant' && el.type !== 'bpmn:Lane') {
         if (canvas.zoom() < FOCUS_ZOOM - 0.005) focusElement(el);
-        else if (scroll) {
+        else if (scroll || !wasOpen) {
+          // the opening panel narrows the canvas: keep the step in view
           try { canvas.scrollToElement(el, { top: 120, bottom: 160, left: 120, right: 120 }); } catch (e) { /* older API */ }
         }
       }
-      openPanel(true);
+      if (!wasOpen && window.matchMedia && window.matchMedia('(max-width: 900px)').matches) {
+        try { $('#panel').scrollIntoView({ block: 'start' }); } catch (e) { /* old browser */ }
+      }
     }
-    renderPanel();
   }
 
   /* ------------------------------------------------------------ filters */
@@ -587,25 +610,42 @@
   }
 
   /* ------------------------------------------------------------ panel */
-  function openPanel(on) {
+  // The side panel is closed by default. A click on a step opens it with that step's description; x, Esc or a
+  // click on empty canvas closes it. "Requirements list" in the navigation bar shows all requirements of the diagram.
+  function panelIsOpen() { return $('#panel').classList.contains('open'); }
+  function setPanelOpen(on) {
     var p = $('#panel');
+    if (p.classList.contains('open') === !!on) return;
     p.classList.toggle('open', !!on);
-    $('#panel-toggle').setAttribute('aria-expanded', on ? 'true' : 'false');
-    $('#panel-toggle').textContent = on ? 'Hide details' : 'Show details';
+    canvas.resized();   // the canvas gets (or gives back) the panel width
   }
-  $('#panel-toggle').addEventListener('click', function () { openPanel(!$('#panel').classList.contains('open')); });
-
   function renderPanel() {
-    var body = $('#panel-body');
-    body.innerHTML = state.selected ? elementHtml(EL[state.selected]) : listHtml(state.diagram);
+    var body = $('#panel-body'), mode = state.selected ? 'element' : (state.list ? 'list' : '');
+    body.innerHTML = mode === 'element' ? elementHtml(EL[state.selected]) : (mode === 'list' ? listHtml(state.diagram) : '');
+    setPanelOpen(!!mode);
+    $('#list-toggle').setAttribute('aria-pressed', state.list ? 'true' : 'false');
+    document.documentElement.setAttribute('data-panel', mode || 'closed');
     body.scrollTop = 0;
     $('#panel').scrollTop = 0;
   }
+  function closePanel() {
+    state.list = false;
+    select(null);
+  }
+  $('#list-toggle').addEventListener('click', function () {
+    // from a step description the button shows the list; otherwise it opens or closes the list
+    state.list = state.selected ? true : !state.list;
+    select(null);
+  });
+  document.addEventListener('keydown', function (ev) {
+    if ((ev.key === 'Escape' || ev.key === 'Esc') && panelIsOpen()) closePanel();
+  });
 
   $('#panel-body').addEventListener('click', function (ev) {
     var t = ev.target.closest('[data-act],[data-select],[data-open],[data-goto]');
     if (!t) return;
-    if (t.hasAttribute('data-act') && t.getAttribute('data-act') === 'list') { select(null); return; }
+    if (t.getAttribute('data-act') === 'close') { closePanel(); return; }
+    if (t.getAttribute('data-act') === 'list') { state.list = true; select(null); return; }
     if (t.hasAttribute('data-select')) { select(t.getAttribute('data-select'), true); return; }
     if (t.hasAttribute('data-open')) { go(byId[t.getAttribute('data-open')]); return; }
     if (t.hasAttribute('data-goto')) {
@@ -639,8 +679,8 @@
   function listHtml(d) {
     if (!d) return '';
     var active = filtersActive();
-    var h = '<h2>' + esc(d.model) + ' - ' + esc(d.title) + '</h2>';
-    h += '<p class="sub">Requirements on this diagram, grouped by element. Click an element on the canvas, its source box, or a heading below for the full citation.</p>';
+    var h = panelHead('Requirements list', esc(d.model) + ' - ' + esc(d.title), '');
+    h += '<p class="sub">Requirements on this diagram, grouped by element. Click a heading below (or a step on the canvas) for its description.</p>';
     h += traceNote();
     if (d.parent) {
       var pr = EL[d.parent.element_id];
@@ -649,7 +689,7 @@
         esc(d.parent.label) + '</span>' + (pr ? badgesHtml(pr) : '') + '</button>' +
         (pr && pr.reqs.length ? reqList(pr.reqs) : '') + '</div>';
     }
-    var notes = (d.model_doc || []).filter(function (f) { return f[0] === 'Open item' || f[0] === 'Rule exception'; });
+    var notes = (d.model_doc || []).filter(function (f) { return f[0] === 'Open item' || f[0] === 'Rule exception' || f[0] === 'Model note'; });
     if (notes.length) {
       h += '<h3>Model notes</h3>';
       notes.forEach(function (f) {
@@ -685,126 +725,194 @@
     return h;
   }
 
-  function findingHtml(f) {
+  // open points of a finding that do not concern this element or requirement (verify triage not_on) are not shown
+  function openOf(list, blocked) {
+    return (list || []).filter(function (v) { return !blocked || blocked.indexOf(v) < 0; });
+  }
+  function findingHtml(f, blocked) {
     if (!f || f.missing) return '<div class="find"><h4>' + esc(f ? f.id : '') + '</h4><p class="muted">Finding not in merged_findings.yaml.</p></div>';
+    var fv = openOf(f.verify, blocked), hidden = fv.length < (f.verify || []).length;
     var b = BINDING_BADGE[f.binding];
     var h = '<div class="find"><h4>' + esc(f.id) + ' ' + (b ? badge(b) : '') + (f.draft ? ' ' + badge('DRAFT') : '') + '</h4>';
-    h += '<p class="kv">' + esc([f.doc, f.loc + (f.loc_alt ? ' (other version: ' + f.loc_alt + ')' : ''), f.page ? 'page ' + f.page : ''].filter(Boolean).join(' | ')) + '</p>';
+    h += '<p class="kv">' + esc([f.doc, locOf(f) + (f.loc_alt ? ' (other version: ' + f.loc_alt + ')' : ''), pageOf(f) ? 'page ' + pageOf(f) : ''].filter(Boolean).join(' | ')) + '</p>';
     if (f.paraphrase) h += '<p>' + esc(f.paraphrase) + '</p>';
     if (f.quote) h += '<blockquote class="quote">"' + esc(f.quote) + '"</blockquote>';
     var kv = [];
     if (f.binding) kv.push('Binding: ' + bindingText(f.binding, f.draft));
     if (f.binding_route) kv.push('Route: ' + f.binding_route);
     if (f.party) kv.push('Party: ' + f.party);
-    if (f.deadline) kv.push('Deadline: ' + f.deadline);
+    if (f.deadline) kv.push('Deadline: ' + (hidden ? f.deadline.replace(/\s*\[verify[^\]]*\]/gi, '') : f.deadline));
     if (f.record) kv.push('Record: ' + f.record);
     if (kv.length) h += '<p class="kv">' + kv.map(esc).join('<br>') + '</p>';
-    (f.verify || []).forEach(function (v) { h += verifyBox(v); });
+    fv.forEach(function (v) { h += verifyBox(v); });
+    h += noteLines(f.verify_notes);
     if (isHttp(f.url)) h += '<p>' + link(f.url) + '</p>';
     return h + '</div>';
   }
 
+  function panelHead(title, sub, badges) {
+    // sticky panel header: title, one sub line, optional badge row, close button
+    return '<div class="ph"><div class="ph-t"><h2>' + title + '</h2><p class="sub">' + sub + '</p>' +
+      (badges ? '<p class="badges">' + badges + '</p>' : '') + '</div>' +
+      '<button type="button" class="panel-close" data-act="close" aria-label="Close the side panel" title="Close (Esc)">&times;</button></div>';
+  }
+  var ACTIVITY = /^bpmn:(Task|UserTask|ManualTask|ServiceTask|SendTask|ReceiveTask|ScriptTask|BusinessRuleTask|CallActivity|SubProcess)$/;
+  function stepsOf(d) {
+    // the activities of a diagram in model order (order of the spec), for the description of the calling L3 step
+    return d.elements.filter(function (id) { return EL[id] && ACTIVITY.test(EL[id].type); })
+      .sort(function (a, b) { return (EL[a].order - EL[b].order) || (a < b ? -1 : 1); });
+  }
+  function someOf(list) {
+    // up to three values in full, then a count; every value is in the requirement detail
+    if (list.length <= 3) return esc(list.join('; '));
+    return esc(list.slice(0, 3).join('; ')) + ' <span class="muted">+' + (list.length - 3) + ' more (see requirements)</span>';
+  }
+  function reqItem(r, rec) {
+    var blocked = (r.verify_blocked || []).concat((rec && rec.verify_blocked) || []);
+    // one line per requirement: its statement; expand for modal, trigger, binding, findings and verify items
+    var b = BINDING_BADGE[r.binding];
+    var text = r.found && r.statement ? esc(r.statement)
+      : (r.action ? esc(r.action) : '<span class="muted">' + (r.found ? 'No statement in requirements.yaml' : 'Statement not loaded (requirements.yaml not available)') + '</span>');
+    var h = '<li class="ri"><details><summary>' + text + ' <span class="rid">' + esc(r.id) + (b ? badge(b) : '') +
+      (r.draft ? badge('DRAFT') : '') + '</span></summary><div class="rd">';
+    var kv = [];
+    if (r.modal) kv.push('Modal: ' + r.modal);
+    else if (META.modal_loaded && r.found) kv.push('Modal: not stated in requirements.yaml');
+    if (r.trigger) kv.push('Trigger: ' + r.trigger);
+    if (r.action) kv.push('Action: ' + r.action);
+    if (r.recipient) kv.push('Recipient: ' + r.recipient);
+    if (r.deadline) kv.push('Deadline: ' + r.deadline);
+    if (r.record) kv.push('Record: ' + r.record);
+    if (r.party) kv.push('Party: ' + r.party);
+    if (r.binding) kv.push('Binding: ' + bindingText(r.binding, r.draft));
+    if (r.binding_route) kv.push('Route: ' + r.binding_route);
+    if (r.jurisdiction.length) kv.push('Jurisdiction: ' + r.jurisdiction.join(', '));
+    if (r.scope) kv.push('Scope: ' + r.scope);
+    if (kv.length) h += '<p class="kv">' + kv.map(esc).join('<br>') + '</p>';
+    (r.verify || []).forEach(function (v) { h += verifyBox(v); });
+    h += noteLines(r.verify_notes);
+    if (r.findings.length) {
+      h += '<details><summary class="kv">Findings behind ' + esc(r.id) + ' (' + r.findings.length + ')</summary>' +
+        r.findings.map(function (f) { return findingHtml(f, blocked); }).join('') + '</details>';
+    }
+    return h + '</div></details></li>';
+  }
+  function sourceHtml(s, rec) {
+    var blocked = (rec && rec.verify_blocked) || [];
+    var b = BINDING_BADGE[s.binding_default];
+    var h = '<div class="card"><div><span class="k">' + esc(s.key) + '</span> ' + esc(locOf(s)) +
+      (pageOf(s) ? ' <span class="kv">| page ' + esc(pageOf(s)) + '</span>' : '') + '</div>';
+    h += '<p>' + (s.title ? esc(s.title) : '<span class="muted">Source key not in the registry.</span>') + '</p>';
+    if (s.binding_default) h += '<p class="kv">Registry class: ' + esc(s.binding_default) + (b ? ' ' + badge(b) : '') + '</p>';
+    if (isHttp(s.url)) {
+      h += '<p>' + link(s.url, 'Open source document') + (s.url_from === 'registry' && s.url_status === 'seeded' ? ' <span class="kv">(registry URL, not yet confirmed)</span>' : '') + '</p>';
+    } else {
+      h += '<p class="kv">No confirmed URL.</p>';
+    }
+    var fl = s.findings.map(function (id) { return FIND[id]; }).filter(Boolean);
+    if (fl.length) {
+      h += '<details><summary class="kv">' + (s.findings_match === 'key' ? 'Findings from ' + esc(s.key) + ' behind the linked requirements (no finding at exactly this location)' : 'Text at this location') + ' (' + fl.length + ')</summary>';
+      fl.slice(0, 3).forEach(function (f) {
+        h += '<div class="find"><div class="tag">' + esc(f.id) + ' | ' + esc(locOf(f)) + (pageOf(f) ? ' | page ' + esc(pageOf(f)) : '') + '</div>';
+        if (f.paraphrase) h += '<p>' + esc(f.paraphrase) + '</p>';
+        if (f.quote) h += '<blockquote class="quote">"' + esc(f.quote) + '"</blockquote>';
+        openOf(f.verify, blocked).forEach(function (v) { h += verifyBox(v); });
+        h += noteLines(f.verify_notes);
+        h += '</div>';
+      });
+      if (fl.length > 3) h += '<p class="kv">+' + (fl.length - 3) + ' more findings at this location (see requirements).</p>';
+      h += '</details>';
+    } else {
+      h += '<p class="kv">' + (META.findings_loaded ? 'No finding recorded at this location.' : 'Paraphrase and quote available after the synthesis step (findings not yet merged).') + '</p>';
+    }
+    return h + '</div>';
+  }
+
   function elementHtml(rec) {
-    var h = '<div class="top"><div><h2>' + esc(rec.label || '(no label)') + '</h2>' +
-      '<p class="sub">' + esc(rec.type_label) + ' | ' + esc(rec.model) + ' | ' + esc(rec.id) + '</p></div>' +
-      '<button type="button" class="btn" data-act="list">All requirements</button></div>';
-    if (hasBadgeRow(rec)) h += '<p class="badges">' + badgesHtml(rec, ' ') + '</p>';
+    // 1 header (name, type, role, badges) - 2 what happens - 3 at a glance - 4 folded detail: checks, requirements, sources
+    var step = !!(rec.calls && rec.calls.available && !rec.calls.interface);
+    var role = rec.message_flow ? '' : (rec.performer || '');
+    var h = panelHead(esc(rec.label || '(no label)'), [rec.type_label, role, rec.model].filter(Boolean).map(esc).join(' | '),
+      hasBadgeRow(rec) ? badgesHtml(rec, ' ') : '');
+    var acts = [];
+    if (step) acts.push('<button type="button" class="btn btn-p" data-open="' + esc(rec.calls.diagram) + '">Open ' + esc(rec.calls.model) + ' detail diagram</button>');
+    if (state.list) acts.push('<button type="button" class="btn" data-act="list">Back to the requirements list</button>');
+    if (acts.length) h += '<div class="acts">' + acts.join('') + '</div>';
     if (isInterface(rec)) {
       h += '<p class="note"><span class="ipd-ifc ipd-ifc-inline">' + IFC_TEXT + '</span> A neighbouring process that is not modelled here, so there is no drill-down. The requirements below are the hand-offs at this interface.</p>';
-    } else if (rec.calls) {
-      h += rec.calls.available
-        ? '<p><button type="button" class="btn" data-open="' + esc(rec.calls.diagram) + '">Open ' + esc(rec.calls.model) + ' detail</button></p>'
-        : '<p class="note">' + esc(rec.calls.model || 'The called model') + ' is not in this model file (called element ' + esc(rec.calls.called_element) + ').</p>';
+    } else if (rec.calls && !rec.calls.available) {
+      h += '<p class="note">' + esc(rec.calls.model || 'The called model') + ' is not in this model file (called element ' + esc(rec.calls.called_element) + ').</p>';
     }
-    var reqRecords = uniq(rec.reqs.map(function (r) { return r.record; }));
-    var parties = uniq(rec.reqs.map(function (r) { return r.party; }));
-    var deadlines = uniq(rec.reqs.map(function (r) { return r.deadline; }));
-    var dl = [];
-    dl.push(['Binding', esc(bindingText(rec.binding, rec.draft)) + (rec.req_draft && !rec.draft ? ' <span class="muted">- at least one requirement rests on draft guidance (DRAFT)</span>' : '')]);
-    dl.push(['Binding route', rec.binding_routes.length ? (rec.binding_routes.length === 1 ? esc(rec.binding_routes[0]) :
-      '<ul class="routes">' + rec.binding_routes.map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') + '</ul>') : '<span class="muted">' + (META.findings_loaded ? 'not stated in the linked findings' : 'available after the synthesis step') + '</span>']);
+
+    // what happens: for an L3 step its L4 steps, otherwise the statements of the linked requirements
+    h += '<section class="sec"><h3>' + (isInterface(rec) ? 'Interface requirements' : 'What happens') + '</h3>';
+    if (step) {
+      var sd = byId[rec.calls.diagram], steps = sd ? stepsOf(sd) : [];
+      h += '<p class="sub">' + steps.length + ' steps in the detail diagram ' + esc(rec.calls.model) + '; click one to open it there.</p>';
+      h += '<ol class="steps">' + steps.map(function (id) {
+        var s = EL[id];
+        return '<li><button type="button" class="lnk" data-goto="' + esc(sd.id + '|' + id) + '">' + esc(s.label || s.type_label) + '</button>' +
+          (s.performer && s.performer !== rec.performer ? ' <span class="who">(' + esc(s.performer) + ')</span>' : '') + '</li>';
+      }).join('') + '</ol>';
+    } else if (rec.reqs.length) {
+      if (META.trace_only) h += traceNote();
+      h += '<p class="sub">' + (rec.reqs.length === 1 ? 'One requirement rests' : rec.reqs.length + ' requirements rest') +
+        ' on this element; click a line for its detail and evidence.</p>';
+      h += '<ul class="what">' + rec.reqs.map(function (r) { return reqItem(r, rec); }).join('') + '</ul>';
+    } else if (rec.type === 'bpmn:Lane' || rec.type === 'bpmn:Participant') {
+      h += '<p>A role or party in this process. The sources that name it are listed below.</p>';
+    } else {
+      h += '<p class="muted">No requirement is linked to this element' + (rec.sources.length ? '; its sources are listed below.' : '.') + '</p>';
+    }
+    h += '</section>';
+
+    // at a glance
+    var facts = [];
+    if (rec.message_flow) {
+      facts.push(['From', esc(rec.message_flow.source_label) + ' <span class="muted">(' + esc(rec.message_flow.source_pool) + ')</span>']);
+      facts.push(['To', esc(rec.message_flow.target_label) + ' <span class="muted">(' + esc(rec.message_flow.target_pool) + ')</span>']);
+    } else if (rec.performer) {
+      facts.push(['Who', esc(rec.performer)]);
+    }
+    if (rec.party) facts.push(['Party', someOf(uniq(rec.party.split(/;\s*/)))]);
+    // an L3 step carries the requirements of all its L4 steps: triggers, deadlines and records are shown per L4 step
+    var fromReqs = function (k) { return step ? [] : uniq(rec.reqs.map(function (r) { return r[k]; })); };
+    var trig = fromReqs('trigger');
+    if (trig.length) facts.push(['Trigger', someOf(trig)]);
+    var due = rec.deadline ? [rec.deadline] : fromReqs('deadline');
+    if (due.length) facts.push(['Deadline', someOf(due)]);
+    var rec_ = rec.record ? [rec.record] : fromReqs('record');
+    if (rec_.length) facts.push(['Record produced', someOf(rec_)]);
+    if (rec.jurisdiction.length) facts.push(['Jurisdiction', esc(rec.jurisdiction.join(', '))]);
+    var routes = rec.binding_routes.length ? '<details class="inl"><summary>Binding route' + (rec.binding_routes.length > 1 ? 's (' + rec.binding_routes.length + ')' : '') + '</summary>' +
+      (rec.binding_routes.length === 1 ? '<p>' + esc(rec.binding_routes[0]) + '</p>' : '<ul class="routes">' + rec.binding_routes.map(function (r) { return '<li>' + esc(r) + '</li>'; }).join('') + '</ul>') + '</details>' : '';
+    facts.push(['Binding', esc(bindingText(rec.binding, rec.draft)) +
+      (rec.req_draft && !rec.draft ? ' <span class="muted">- at least one requirement rests on draft guidance (DRAFT)</span>' : '') + routes]);
     if (META.modal_loaded && rec.reqs.length) {
       var mods = uniq(rec.reqs.map(function (r) { return r.found ? (r.modal || 'not stated') : 'not loaded'; }));
-      dl.push(['Modal', esc(mods.join(', ')) + (rec.may_only ? ' <span class="muted">- every linked requirement is optional (MAY)</span>' : '')]);
+      facts.push(['Modal', esc(mods.join(', ')) + (rec.may_only ? ' <span class="muted">- every linked requirement is optional (MAY)</span>' : '')]);
     }
-    dl.push(['Jurisdiction', rec.jurisdiction.length ? esc(rec.jurisdiction.join(', ')) : '<span class="muted">not set</span>']);
-    dl.push(['Deadline', esc(rec.deadline || deadlines.join('; ')) || '<span class="muted">none stated</span>']);
-    dl.push(['Record produced', esc(rec.record || reqRecords.join('; ')) || '<span class="muted">none stated</span>']);
-    if (rec.message_flow) {
-      dl.push(['From', esc(rec.message_flow.source_label) + ' <span class="muted">(' + esc(rec.message_flow.source_pool) + ')</span>']);
-      dl.push(['To', esc(rec.message_flow.target_label) + ' <span class="muted">(' + esc(rec.message_flow.target_pool) + ')</span>']);
-    } else {
-      dl.push(['Performer', esc(rec.performer) || '<span class="muted">not set</span>']);
-    }
-    if (rec.party) dl.push(['Party', esc(rec.party)]);
-    else dl.push(['Party (requirements)', parties.length ? esc(parties.join('; ')) : '<span class="muted">' + (META.requirements_loaded ? 'not stated' : 'available after the synthesis step') + '</span>']);
-    h += '<dl>' + dl.map(function (x) { return '<dt>' + x[0] + '</dt><dd>' + x[1] + '</dd>'; }).join('') + '</dl>';
+    h += '<section class="sec"><h3>At a glance</h3><dl class="facts">' +
+      facts.map(function (x) { return '<dt>' + x[0] + '</dt><dd>' + x[1] + '</dd>'; }).join('') + '</dl></section>';
 
+    // folded detail
     var openVerify = rec.verify.slice();
     if (rec.binding === 'verify-binding') openVerify.unshift('Binding class to be verified');
-    if (openVerify.length) { h += '<h3>Open verify items (' + openVerify.length + ')</h3>'; openVerify.forEach(function (v) { h += verifyBox(v); }); }
-
-    h += '<h3>' + (isInterface(rec) ? 'Interface requirements' : 'Requirements') + ' (' + rec.reqs.length + ')</h3>';
-    if (!rec.reqs.length) h += '<p class="muted">No requirement linked to this element.</p>';
-    if (META.trace_only && rec.reqs.length) h += traceNote();
-    rec.reqs.forEach(function (r) {
-      var b = BINDING_BADGE[r.binding];
-      h += '<div class="card req"><div><span class="k">' + esc(r.id) + '</span> ' + (b ? badge(b) : '') + (r.draft ? ' ' + badge('DRAFT') : '') +
-        (r.scope ? ' <span class="tag">' + esc(r.scope) + '</span>' : '') + '</div>';
-      h += r.found ? (r.statement ? '<p>' + esc(r.statement) + '</p>' : '<p class="muted">No statement in requirements.yaml.</p>')
-        : '<p class="muted">Statement not loaded (requirements.yaml not available).</p>';
-      var kv = [];
-      if (r.modal) kv.push('Modal: ' + r.modal);
-      else if (META.modal_loaded && r.found) kv.push('Modal: not stated in requirements.yaml');
-      if (r.trigger) kv.push('Trigger: ' + r.trigger);
-      if (r.action) kv.push('Action: ' + r.action);
-      if (r.recipient) kv.push('Recipient: ' + r.recipient);
-      if (r.binding) kv.push('Binding: ' + bindingText(r.binding, r.draft));
-      if (r.binding_route) kv.push('Route: ' + r.binding_route);
-      if (r.jurisdiction.length) kv.push('Jurisdiction: ' + r.jurisdiction.join(', '));
-      if (r.deadline) kv.push('Deadline: ' + r.deadline);
-      if (r.record) kv.push('Record: ' + r.record);
-      if (r.party) kv.push('Party: ' + r.party);
-      if (kv.length) h += '<p class="kv">' + kv.map(esc).join('<br>') + '</p>';
-      (r.verify || []).forEach(function (v) { h += verifyBox(v); });
-      if (r.findings.length) {
-        h += '<details' + (r.findings.length <= 3 ? ' open' : '') + '><summary>Findings behind ' + esc(r.id) + ' (' + r.findings.length + ')</summary>' +
-          r.findings.map(findingHtml).join('') + '</details>';
-      }
-      h += '</div>';
-    });
-
-    h += '<h3>Sources (' + rec.sources.length + ')</h3>';
-    if (!rec.sources.length) h += '<p class="muted">No source on this element.</p>';
-    rec.sources.forEach(function (s) {
-      var b = BINDING_BADGE[s.binding_default];
-      h += '<div class="card"><div><span class="k">' + esc(s.key) + '</span> ' + esc(s.loc) +
-        (s.page ? ' <span class="kv">| page ' + esc(s.page) + '</span>' : '') + '</div>';
-      h += '<p>' + (s.title ? esc(s.title) : '<span class="muted">Source key not in the registry.</span>') + '</p>';
-      if (s.binding_default) h += '<p class="kv">Registry class: ' + esc(s.binding_default) + (b ? ' ' + badge(b) : '') + '</p>';
-      var fl = s.findings.map(function (id) { return FIND[id]; }).filter(Boolean);
-      if (fl.length) {
-        if (s.findings_match === 'key') h += '<p class="kv">No finding at exactly this location; findings from ' + esc(s.key) + ' behind the linked requirements:</p>';
-        fl.slice(0, 3).forEach(function (f) {
-          h += '<div class="find"><div class="tag">' + esc(f.id) + ' | ' + esc(f.loc) + (f.page ? ' | page ' + esc(f.page) : '') + '</div>';
-          if (f.paraphrase) h += '<p>' + esc(f.paraphrase) + '</p>';
-          if (f.quote) h += '<blockquote class="quote">"' + esc(f.quote) + '"</blockquote>';
-          (f.verify || []).forEach(function (v) { h += verifyBox(v); });
-          h += '</div>';
-        });
-        if (fl.length > 3) h += '<p class="kv">+' + (fl.length - 3) + ' more findings at this location (see requirements above).</p>';
-      } else {
-        h += '<p class="muted">' + (META.findings_loaded ? 'No finding recorded at this location.' : 'Paraphrase and quote available after the synthesis step (findings not yet merged).') + '</p>';
-      }
-      if (isHttp(s.url)) {
-        h += '<p>' + link(s.url, 'Open source document') + (s.url_from === 'registry' && s.url_status === 'seeded' ? ' <span class="kv">(registry URL, not yet confirmed)</span>' : '') + '</p>';
-      } else {
-        h += '<p class="kv">No confirmed URL.</p>';
-      }
-      h += '</div>';
-    });
-    if (rec.notes.length) {
-      h += '<h3>Notes</h3>' + rec.notes.map(function (n) { return '<p>' + esc(n) + '</p>'; }).join('');
+    if (openVerify.length) {
+      // open by default: an open point is what a reader of a VERIFY step has to see
+      h += '<details class="sec-d" open><summary>' + badge('VERIFY') + 'Open checks (' + openVerify.length + ')</summary><div class="sec-b">' +
+        openVerify.map(verifyBox).join('') + '</div></details>';
+    }
+    if (step && rec.reqs.length) {
+      h += '<details class="sec-d"><summary>Requirements (' + rec.reqs.length + ')</summary><div class="sec-b">' +
+        (META.trace_only ? traceNote() : '') + '<ul class="what">' + rec.reqs.map(function (r) { return reqItem(r, rec); }).join('') + '</ul></div></details>';
+    }
+    h += '<details class="sec-d"' + (!rec.reqs.length && rec.sources.length ? ' open' : '') + '><summary>Sources (' + rec.sources.length + ')</summary><div class="sec-b">' +
+      (rec.sources.length ? rec.sources.map(function (s) { return sourceHtml(s, rec); }).join('') : '<p class="muted">No source on this element.</p>') + '</div></details>';
+    var vnotes = rec.verify_notes || [];
+    if (vnotes.length || rec.notes.length) {
+      h += '<details class="sec-d"><summary>Notes (' + (vnotes.length + rec.notes.length) + ')</summary><div class="sec-b">' +
+        noteLines(vnotes) + rec.notes.map(function (n) { return '<p>' + esc(n) + '</p>'; }).join('') + '</div></details>';
     }
     return h;
   }
@@ -827,7 +935,7 @@
 
   var SYMBOLS = {
     'task': ['bpmn-icon-task', 'Task - a step performed by the role of its lane or pool'],
-    'callActivity': ['bpmn-icon-call-activity', 'Call activity (thick border, + marker) - an L3 step; click it or its "Open L4" chip to open the L4 detail'],
+    'callActivity': ['bpmn-icon-call-activity', 'Call activity (thick border, + marker) - an L3 step; click it for its description and steps, double-click it or use its "Open L4" chip to open the L4 detail'],
     'callActivity:interface': ['bpmn-icon-call-activity', 'Interface placeholder (call activity with the chip "Interface - outside this model") - a neighbouring process not modelled here; no drill-down, the side panel shows its interface requirements'],
     'subProcess': ['bpmn-icon-subprocess-collapsed', 'Sub-process'],
     'startEvent': ['bpmn-icon-start-event-none', 'Start event - the trigger of a process'],
@@ -873,19 +981,24 @@
     $('#lg-symbols').innerHTML = items.join('');
     $('#lg-colours').innerHTML = [
       'Colour never carries meaning on its own: every badge has a text label, every highlight has a count or a label.',
-      'Source box under an element: binding badge, then up to three source lines (source key and location); "+n more" when there are more. Click it for the full citation.',
+      'Side panel: opens when you click a step (or its source box) and shows what happens in the step, the key facts and, folded, the requirements and sources; close it with x, Esc or a click on empty canvas. "Requirements list" lists all requirements of the diagram.',
+      'Source box under an element: binding badge, then up to three source lines (source key and location); "+n more" when there are more. Click it for the step description and full citation.',
       'Dark green outline: the element matches the active filter (count in the filter bar). Faded: it does not match.',
-      'Yellow background: an open verify item, always labelled VERIFY.',
+      'Yellow background: an open point to check, always labelled VERIFY. Modelling choices and settled readings are plain notes in the side panel.',
       'Lane and pool sources are shown in the side panel only (click the lane or pool header).',
       'Wide diagrams open at ' + Math.round(READABLE_ZOOM * 100) + '% at the left edge, centred on the Sponsor pool: drag or scroll to pan, ' +
         '"Fit" shows the whole diagram, "100%" the detail; clicking a step zooms to 100%.' +
         (minimap ? ' The minimap (top right of the canvas, "Show minimap" / "Hide minimap") shows the whole diagram; its dark green frame marks the visible part - click or drag in it to move the view.' : '')
-    ].map(function (t) { return '<li><span>' + esc(t) + '</span></li>'; }).join('');
+    ].concat(Object.keys(META.verify_general || {}).length ? ['Not marked with VERIFY because it applies in general:'] : [])
+      .concat(Object.keys(META.verify_general || {}).map(function (k) { return '- ' + META.verify_general[k]; }))
+      .map(function (t) { return '<li><span>' + esc(t) + '</span></li>'; }).join('');
     var inp = META.inputs, b = [];
     b.push('Model file: ' + inp.bpmn.file + ' (sha256 ' + inp.bpmn.sha256.slice(0, 12) + ')');
     b.push(inp.findings ? 'Findings: ' + inp.findings.file + ' (' + inp.findings.records + ' records)' : 'Findings: not loaded - trace data from the .bpmn only');
     b.push(inp.requirements ? 'Requirements: ' + inp.requirements.file + ' (' + inp.requirements.records + ' records)' : 'Requirements: not loaded');
     b.push('Source registry: ' + inp.registry.file);
+    if (inp.verify_triage) b.push('Verify triage: ' + inp.verify_triage.file + ' (' + inp.verify_triage.records + ' entries; VERIFY on ' +
+      META.counts.verify_elements.after_triage + ' of ' + META.counts.verify_elements.before_triage + ' previously marked elements)');
     b.push('Rendered with bpmn-js ' + (META.viewer ? META.viewer.bpmn_js : '') + ' (NavigatedViewer); the bpmn.io watermark stays visible as its licence requires.');
     if (META.viewer && META.viewer.minimap) b.push('Minimap: diagram-js-minimap ' + META.viewer.minimap + ' (MIT licence, notice kept in the page source).');
     b.push('Generated by ' + META.generator + '.');
@@ -971,6 +1084,7 @@
     constants: { LEGIBLE: LEGIBLE, READABLE_ZOOM: READABLE_ZOOM, FOCUS_ZOOM: FOCUS_ZOOM, EDGE: EDGE },
     open: function (id) { return go(byId[id]); },
     select: function (id) { select(id, true); },
+    closePanel: closePanel,
     idle: function () { return state.chain; }
   };
 })();

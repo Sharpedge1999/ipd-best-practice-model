@@ -2,7 +2,7 @@
 
 Best-practice reference model of important protocol deviation (iPD) management in clinical development, derived outside-in from ICH, EU and US sources plus industry best practice. Every modelled element carries the sources it rests on (BPMN extension `ipd:trace`, namespace `urn:ipd-best-practice:trace:1.0`), and the interactive map shows them under each step.
 
-Status: final build 07 Nov 2026; viewer fix (readable labels on highlighted and selected elements) 09 Nov 2026. Independent validation (3 rounds): pass with documented exceptions, 0 open MUST. **Not validated by process owners (GEN-06)** - fit to the real process is open. Open decisions, [verify] items and gaps: `register/HANDOVER_iPD_Best_Practice_Model.md`.
+Status: final build 07 Nov 2026; viewer fix (readable labels on highlighted and selected elements) 09 Nov 2026; side panel closed by default and opened by a click on a step, with a step description (what happens, at a glance; requirements and sources folded) 09 Nov 2026. VERIFY markers simplified 09 Nov 2026: every raw [verify] text triaged against the stored sources (`contracts/verify_triage.yaml`); the map shows VERIFY on 17 instead of 113 elements, for six open points, and the rest as plain notes, four general statements in the legend, or not at all where the source settles it. The raw [verify] texts stay unchanged in the specs, the .bpmn, `synthesis/` and the register. Independent validation (3 rounds): pass with documented exceptions, 0 open MUST. **Not validated by process owners (GEN-06)** - fit to the real process is open. Open decisions, [verify] items and gaps: `register/HANDOVER_iPD_Best_Practice_Model.md`.
 
 ## Deliverables
 
@@ -37,7 +37,7 @@ Evidence base: 537 findings, 271 requirements (59 binding law, 138 ICH, 58 guida
 | Folder | Content |
 |---|---|
 | `context/` | Brief, workflow plan, BPMN design criteria used for modelling and validation |
-| `contracts/` | Schemas, source registry, `ipd:trace` extension (moddle descriptor), decision log S0 |
+| `contracts/` | Schemas, source registry, `ipd:trace` extension (moddle descriptor), decision log S0, verify triage for the map (`verify_triage.yaml`: class open / note / general / drop per raw [verify] text, with the source evidence) |
 | `research/` | Findings of the five research stems R1-R5 |
 | `synthesis/` | Merged findings, requirements, conflicts, L3 cut, requirement-to-step map, glossary |
 | `spec/` | Frozen YAML specs of L3 and L4-01 to L4-08 (`FROZEN.sha256`) |
