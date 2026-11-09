@@ -8,24 +8,71 @@
 # Triage per level against the local source texts (vendor/sources), X1 results and synthesis/conflicts.md;
 # evidence records what was checked.
 inline:
+- tag: 16 or 17 of 97 [verify]
+  fields:
+  - page
+  action: replace
+  with: 16 of 97
+  evidence: 'FDA-SDTCG S4.1.1.3: the DV domain text lies between the footers ''Page 15 of 97'' and ''Page 16 of 97'' (vendor/sources/FDA-SDTCG/doc_41.txt
+    lines 1405-1456); X1 confirmed R5-069 and R5-070 on page 16.'
+- tag: SConventions [verify]
+  fields:
+  - loc
+  action: replace
+  with: S0.3
+  evidence: 'M11 template: the conventions part is Section 0.3 ''Template Conventions and General Instructions'' (vendor/sources/M11-TEMPLATE/doc_9.txt
+    line 81); X1 confirmed R2-112.'
+- tag: printed iv-vii
+  fields:
+  - page
+  action: replace
+  with: printed iv-viii
+  evidence: M11 template Section 0.3 runs over printed iv-viii; 'Remove all instructional text' is on printed viii (doc_9.txt
+    line 254).
 - tag: ' [verify binding]'
   fields:
   - binding_route
   action: strip
-  evidence: ICH regional adoption; covered by the general statement G-ADOPTION (contracts/source_registry.yaml binding notes;
-    synthesis/conflicts.md C-06).
+  evidence: 'ICH regional adoption of E3, E3 Q&A, E8(R1), E9, E9(R1), M11 not checked: general statement G-ADOPTION. Also
+    strips the marker on REQ-236 (FDA eStudy guidance, FD&C Act 745A(a)), which the note ''Shown as law'' covers.'
 - tag: '[verify] '
   fields:
   - binding_route
   action: strip
-  evidence: '''EU: [verify] via EU CTR Art. 47 / EMA adoption'' on E6(R3) findings: E6(R3) adoption is documented (EU CTR
-    Art. 47 second paragraph; EMA effective dates in vendor/sources/EMA-E6R3/doc_13.txt lines 26-27); general statement G-ADOPTION.'
+  evidence: 'Finding routes ''EU: [verify] via EU CTR Art. 47 / EMA adoption'' (E6(R3); adoption documented: EU CTR Art. 47,
+    vendor/sources/EMA-E6R3/doc_13.txt lines 26-27) and ''[verify] ICH Step 4 guideline; EU route owned by R3, US route owned
+    by R4'' (E3, E3 Q&A, E8(R1), E9, E9(R1), M11): general statement G-ADOPTION.'
+- tag: ' [verify R3]'
+  fields:
+  - binding_route
+  action: strip
+  evidence: 'EMA page confirms Annex 2 effective 15 January 2027: vendor/sources/EMA-E6R3/doc_13.txt lines 27 and 44.'
+- tag: '[verify R4 whether Annex 2 adopted]'
+  fields:
+  - binding_route
+  action: replace
+  with: (FDA Annex 2 still draft)
+  evidence: 'FDA page lists E6(R3) Annex 2 as draft guidance: vendor/sources/FDA-E6R3-A2/doc_31.txt lines 64-81.'
+- tag: FDA-SDTCG [verify]
+  fields:
+  - binding_route
+  action: replace
+  with: FDA-SDTCG
+  evidence: 'R5-065, R5-066 route: FDA-ESTUDY names CDISC CT (vendor/sources/FDA-ESTUDY/doc_42.txt lines 340-354) and FDA-SDTCG
+    S4.1.1.3 recommends the DV variables (page 16 of 97). That CDISC CT is listed in the Data Standards Catalog rests on the
+    unread Catalog, which is the open point ''SDTM/SDTMIG versions supported by FDA''.'
+- tag: Data Standards Catalog [verify]
+  fields:
+  - binding_route
+  action: keep
+  evidence: 'Open point ''SDTM/SDTMIG versions supported by FDA (Data Standards Catalog)'': the Catalog has no local copy.'
 - tag: ' [verify]'
   fields:
   - loc
   - page
   action: strip
-  evidence: Finding copies of the source locations triaged as drop or G-LOCATION (SOURCE-LOC entries); none is open.
+  evidence: 'Remaining source and finding locations with a [verify] marker, triaged drop or G-LOCATION as SOURCE-LOC entries
+    (none open): E9 S5.2.2 and S5.2.3, E3 Annex IVa, FDA-RBM13 IV.D.1 and IV.D.2, CTIS-TM05, TCB-PD tabs.'
 - tag: ' [verify channel]'
   fields:
   - recipient
@@ -48,30 +95,7 @@ inline:
   fields:
   - deadline
   action: keep
-  evidence: Same open point C-11 on finding R4-005.
-- tag: ' [verify R3]'
-  fields:
-  - binding_route
-  action: strip
-  evidence: 'EMA page confirms Annex 2 effective 15 January 2027: vendor/sources/EMA-E6R3/doc_13.txt lines 27 and 44.'
-- tag: '[verify R4 whether Annex 2 adopted]'
-  fields:
-  - binding_route
-  action: replace
-  with: (FDA Annex 2 still draft)
-  evidence: 'FDA page lists E6(R3) Annex 2 as draft guidance: vendor/sources/FDA-E6R3-A2/doc_31.txt lines 64-81.'
-- tag: FDA-SDTCG [verify]
-  fields:
-  - binding_route
-  action: replace
-  with: FDA-SDTCG
-  evidence: 'L4-07 triage: the DV domain text of FDA-SDTCG S4.1.1.3 is on page 16 of 97 (vendor/sources/FDA-SDTCG/doc_41.txt
-    lines 1405-1456); X1 confirmed R5-069 and R5-070.'
-- tag: Data Standards Catalog [verify]
-  fields:
-  - binding_route
-  action: keep
-  evidence: 'Open point ''SDTM/SDTMIG version and DVCLASI status'' (L4-07): the FDA Data Standards Catalog has no local copy.'
+  evidence: Same open point C-11 on finding R4-005 (not shown where the window does not apply, see not_on).
 general:
   G-ADOPTION:
     wording: 'ICH guidelines apply through regional adoption. E6(R3) adoption is documented (EU: EU CTR Art. 47, EMA dates;
@@ -574,8 +598,8 @@ items:
     C-25; L4-02 A7, A8, A9 and L4-06 A2 are in the Monitor lane.'
 - text: '[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)'
   class: note
-  wording: 'Lane assumed: E6(R3) lists this as a monitoring activity under the sponsor''s monitoring plan without naming who
-    performs it.'
+  wording: 'Lane assumed: E6(R3) names no performer for this monitoring activity; the requirement names the monitor, and the
+    step is shown in the sponsor''s or the monitor''s lane.'
   topic: C-25 lane assumed for E6(R3) monitoring activities
   evidence: 'vendor/sources/E6R3/doc_1.txt lines 1972-1995 (3.11.4.4, 3.11.4.5 lead-in, 3.11.4.5.1(a) assigned monitor as
     contact point, (b) ''Informing the investigator ... of relevant deviations'', gerund, no actor); X1 confirmed R1-057.
@@ -623,6 +647,13 @@ items:
     part56.txt l.97 sets 5 working days for emergency use of a test article; FDA-PD24 (draft) lines 345-347 and fn 24 repeat
     the cross-reference only; conflicts.md C-11 leaves it open. No local source settles it. X1 R4-005 confirmed the paraphrase,
     not the applicability.
+  not_on:
+  - L3_M3
+  - L4_03_A5
+  - L4_03_M8
+  - REQ-085
+  not_on_note: The open 21 CFR 56.104(c) window concerns the IRB notification step, not this FDA protocol amendment.
+  not_on_reason: Finding R4-005 copy under REQ-085; see the element text. Contradiction check MF-1.
 - text: '[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol
     changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)'
   class: open
@@ -636,9 +667,10 @@ items:
   - L3_M3
   - L4_03_A5
   - L4_03_M8
-  not_on_reason: These elements are the sponsor's protocol amendment submission to FDA (REQ-085); the open window concerns
-    only the IRB notification (L4_03_A11, L4_03_M2 and the L3 step L3_A3). Reported by the L4-03 triage for L4_03_M8; L3_M3
-    and L4_03_A5 are the same submission.
+  - REQ-085
+  not_on_note: The open 21 CFR 56.104(c) window concerns the IRB notification step, not this FDA protocol amendment.
+  not_on_reason: REQ-085 and its elements are the sponsor's protocol amendment submission to FDA; the open window concerns
+    only the IRB notification (REQ-086 on L4_03_A11, L4_03_M2, rolled up to L3_A3). Contradiction check MF-1.
 - text: '[verify] whether the 5-working-day window of 21 CFR 56.104(c) applies to immediate-hazard protocol changes (C-11)'
   class: open
   wording: 'Deadline not settled: 21 CFR 312.30 requires IRB notification of immediate-hazard protocol changes per 21 CFR
@@ -826,7 +858,7 @@ items:
     pool'
   class: note
   wording: Recording duty applies to the sponsor or investigator, as applicable (EU CTR Art. 56(1)); shown in the Sponsor
-    lane, it applies equally to the investigator/institution.
+    lane, it applies to the investigator/institution where applicable.
   topic: Recording duty of sponsor or investigator (EU CTR Art. 56(1))
   evidence: 'vendor/sources/EUCTR-OJ/reg_2014_536_en.txt line 2648 (OJ L 158/41): ''stored by the sponsor or investigator,
     as applicable''; the raw quote adds a second ''the''. X1 R3-031 confirmed. L4-04 A2 sits in the Sponsor lane only.'
@@ -899,16 +931,16 @@ items:
 - text: '[verify] 21 CFR does not state whether a protocol deviation is a ''change in the research activity''; IRB written
     procedures decide (C-03)'
   class: open
-  wording: 'Reporting duty not settled: neither E6(R3) nor 21 CFR says whether a protocol deviation is a ''change'' for prompt
-    IRB/IEC reporting; the model defers to IRB/IEC procedures.'
+  wording: 'Reporting duty not settled: neither E6(R3) nor 21 CFR says whether a protocol deviation that has occurred is a
+    ''change'' for prompt IRB/IEC reporting; the model defers to IRB/IEC procedures.'
   topic: C-03 deviation as reportable change
   evidence: 'eCFR part312.txt line 772 (312.66) and line 695 (312.53(c)(1)(vii)) require prompt reporting of ''all changes
     in the research activity'' with no definition; part56.txt line 137 (56.108(a)(3)) leaves it to IRB written procedures;
     FDA-PD24 SIII.B.3 (doc_29.txt lines 351-356, DRAFT) does not settle it. conflicts.md C-03: [verify] on 312.66 stays.'
 - text: '[verify] E6(R3) does not state whether a protocol deviation counts as such a ''change'' (C-03)'
   class: open
-  wording: 'Reporting duty not settled: neither E6(R3) nor 21 CFR says whether a protocol deviation is a ''change'' for prompt
-    IRB/IEC reporting; the model defers to IRB/IEC procedures.'
+  wording: 'Reporting duty not settled: neither E6(R3) nor 21 CFR says whether a protocol deviation that has occurred is a
+    ''change'' for prompt IRB/IEC reporting; the model defers to IRB/IEC procedures.'
   topic: C-03 deviation as reportable change
   evidence: E6R3 doc_1.txt lines 806-824 (1.4.7, 1.4.8(a)/(b), printed 10-11) and line 947 (2.4.6, printed 13) speak of 'changes'
     and list deviations separately, without saying whether a deviation is a change. conflicts.md C-03 closed by default (IRB
@@ -947,8 +979,8 @@ items:
 - text: '[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution
     pools (D1)'
   class: note
-  wording: The IRB's duty stays inside the collapsed IRB/IEC pool; only its reports to FDA and to institutional officials
-    are shown, as message flows.
+  wording: IRB/IEC duties are shown only as message flows from the collapsed IRB/IEC pool; here its reports to FDA and to
+    institutional officials.
   topic: D1 IRB reporting as message flows
   evidence: 'eCFR part56.txt line 138 (56.108(b)(2)): reporting to the IRB, appropriate institutional officials and FDA; contracts/decisions.md
     D1 (IRB/IEC collapsed pool) and conflicts.md C-01 handling (4) confirm the modelling choice (spec L4-05 M8, M9).'
@@ -1155,42 +1187,42 @@ items:
     line 137 ''Retraining and feedback mechanisms should also be implemented.'' The single-fetch doubt is resolved.'
 - text: '[verify] DVCLASI is in the SDTMIG v4.0 public review draft only (R5-067)'
   class: open
-  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
-    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
-  topic: SDTM/SDTMIG version and DVCLASI status
+  wording: 'Data standard not final: the classification variable DVCLASI exists only in the SDTMIG v4.0 public review draft;
+    publication and FDA support are not confirmed.'
+  topic: DVCLASI only in SDTMIG v4.0 review draft
   evidence: 'vendor/sources/CDISC-SDTMIG40-PR/doc_40.txt slides 35-36 (PDF 34-35): DVCLASI is new in the SDTMIG v4.0 public
     review; slide 42 (PDF 41): review closed 6 Apr 2026, publication targeted Q4 2026, dependent on comments. Final status
     and FDA support not settled by any local source.'
+- text: '[verify] SDTMIG v4.0 publication status and final DVCLASI definition'
+  class: open
+  wording: 'Data standard not final: the classification variable DVCLASI exists only in the SDTMIG v4.0 public review draft;
+    publication and FDA support are not confirmed.'
+  topic: DVCLASI only in SDTMIG v4.0 review draft
+  evidence: 'CDISC-SDTMIG40-PR/doc_40.txt slide 42 (PDF 41): ''targeted Publication: Q4 2026''; no local source shows SDTMIG
+    v4.0 published. FDA-SDTCG/doc_41.txt lines 2629-2630: supported SDTMIGs are listed in the Catalog, which is not local.'
+- text: '[verify] SDTMIG v4.0 publication status and final DVCLASI definition (R5-067)'
+  class: open
+  wording: 'Data standard not final: the classification variable DVCLASI exists only in the SDTMIG v4.0 public review draft;
+    publication and FDA support are not confirmed.'
+  topic: DVCLASI only in SDTMIG v4.0 review draft
+  evidence: 'CDISC-SDTMIG40-PR/doc_40.txt slide 42 (PDF 41): ''targeted Publication: Q4 2026''; no local source shows SDTMIG
+    v4.0 published. FDA-SDTCG/doc_41.txt lines 2629-2630: supported SDTMIGs are listed in the Catalog, which is not local.'
 - text: '[verify] Data Standards Catalog not read; confirm SDTM/SDTMIG versions supported'
   class: open
-  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
-    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
-  topic: SDTM/SDTMIG version and DVCLASI status
+  wording: 'Data standard version not settled: the SDTM and SDTMIG versions FDA supports are listed in the FDA Data Standards
+    Catalog, which was not checked.'
+  topic: SDTM/SDTMIG versions supported by FDA (Data Standards Catalog)
   evidence: FDA-ESTUDY/doc_42.txt lines 236-241 require 'FDA-supported standards ... specified in the Catalog'; FDA-SDTCG/doc_41.txt
     lines 1093-1094 and 2629-2630 defer SDTMIG versions to the Catalog. The Catalog is not in vendor/sources; versions not
     checkable.
 - text: '[verify] Data Standards Catalog not read; confirm SDTM/SDTMIG versions supported (R5-071)'
   class: open
-  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
-    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
-  topic: SDTM/SDTMIG version and DVCLASI status
+  wording: 'Data standard version not settled: the SDTM and SDTMIG versions FDA supports are listed in the FDA Data Standards
+    Catalog, which was not checked.'
+  topic: SDTM/SDTMIG versions supported by FDA (Data Standards Catalog)
   evidence: FDA-ESTUDY/doc_42.txt lines 236-241 require 'FDA-supported standards ... specified in the Catalog'; FDA-SDTCG/doc_41.txt
     lines 1093-1094 and 2629-2630 defer SDTMIG versions to the Catalog. The Catalog is not in vendor/sources; versions not
     checkable.
-- text: '[verify] SDTMIG v4.0 publication status and final DVCLASI definition'
-  class: open
-  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
-    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
-  topic: SDTM/SDTMIG version and DVCLASI status
-  evidence: 'CDISC-SDTMIG40-PR/doc_40.txt slide 42 (PDF 41): ''targeted Publication: Q4 2026''; no local source shows SDTMIG
-    v4.0 published. FDA-SDTCG/doc_41.txt lines 2629-2630: supported SDTMIGs are listed in the Catalog, which is not local.'
-- text: '[verify] SDTMIG v4.0 publication status and final DVCLASI definition (R5-067)'
-  class: open
-  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
-    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
-  topic: SDTM/SDTMIG version and DVCLASI status
-  evidence: 'CDISC-SDTMIG40-PR/doc_40.txt slide 42 (PDF 41): ''targeted Publication: Q4 2026''; no local source shows SDTMIG
-    v4.0 published. FDA-SDTCG/doc_41.txt lines 2629-2630: supported SDTMIGs are listed in the Catalog, which is not local.'
 - text: '[verify binding] schema has no ''binding guidance'' class; mapped to binding-law because the statute (745A(a)) plus
     guidance text state binding effect'
   class: note
@@ -1490,13 +1522,18 @@ items:
 - text: '[verify] US sponsor record retention (21 CFR 312.57) not extracted by R4 (C-23); no US sponsor retention task is
     modelled.'
   class: open
-  wording: 'Retention duty not modelled: under 21 CFR 312.57(c) sponsors keep Part 312 records 2 years after marketing approval
-    or after investigational shipment stops and FDA is notified.'
+  wording: 'Retention duty not settled: whether sponsor deviation records fall under 21 CFR 312.57(c) (2 years after approval
+    or after shipment ends) was not checked; no US sponsor task is modelled.'
   topic: C-23 US sponsor record retention 21 CFR 312.57(c)
   evidence: 'vendor/sources/eCFR-api/part312.txt line 729, 312.57(c): sponsor retains ''the records and reports required by
     this part'' 2 years after approval, or 2 years after shipment and delivery for investigational use is discontinued and
     FDA notified. No finding or REQ cites 312.57 (only synthesis/conflicts.md C-23); spec/L4-08.yaml has a US task only for
     the investigator (A8, 312.62(c)); whether deviation records fall under ''records required by this part'' is for the reviewer.'
+  also_on:
+  - L3_A8
+  - L4_08_A1
+  also_on_reason: Model note of L4-08 (diagram level); the sponsor archiving task L4_08_A1 and its L3 step L3_A8 carry the
+    open point. Contradiction check SF-2.
 - text: '[verify] directly accessible on request by regulatory authorities (E6R3 AppC-C.2.6; EU CTR Art. 58); request-driven
     hand-off shown as data store, not as message flow'
   class: note

@@ -22,7 +22,7 @@
   var STORE_KEY = 'ipd-viewer-filters-v1';
   var BADGE_TEXT = {
     LAW: 'Binding law - regulation or statute (EU CTR, 21 CFR)',
-    ICH: 'ICH guideline - binding through regional adoption; the route is shown in the side panel',
+    ICH: 'ICH guideline - applies through regional adoption (EU: GCP via EU CTR Art. 47; US: nonbinding FDA guidance); the route is shown in the side panel',
     GUIDANCE: 'Agency guidance - not legally binding',
     DRAFT: 'Rests (also) on draft guidance - shown next to the binding badge; draft guidance is never the only basis of a binding step',
     BP: 'Industry best practice or data standard',
@@ -725,7 +725,12 @@
     return h;
   }
 
-  function findingHtml(f) {
+  // open points of a finding that do not concern this element or requirement (verify triage not_on) are not shown
+  function openOf(list, blocked) {
+    return (list || []).filter(function (v) { return !blocked || blocked.indexOf(v) < 0; });
+  }
+  function findingHtml(f, blocked) {
+    var fv = openOf(f.verify, blocked), hidden = fv.length < (f.verify || []).length;
     if (!f || f.missing) return '<div class="find"><h4>' + esc(f ? f.id : '') + '</h4><p class="muted">Finding not in merged_findings.yaml.</p></div>';
     var b = BINDING_BADGE[f.binding];
     var h = '<div class="find"><h4>' + esc(f.id) + ' ' + (b ? badge(b) : '') + (f.draft ? ' ' + badge('DRAFT') : '') + '</h4>';
@@ -736,10 +741,10 @@
     if (f.binding) kv.push('Binding: ' + bindingText(f.binding, f.draft));
     if (f.binding_route) kv.push('Route: ' + f.binding_route);
     if (f.party) kv.push('Party: ' + f.party);
-    if (f.deadline) kv.push('Deadline: ' + f.deadline);
+    if (f.deadline) kv.push('Deadline: ' + (hidden ? f.deadline.replace(/\s*\[verify[^\]]*\]/gi, '') : f.deadline));
     if (f.record) kv.push('Record: ' + f.record);
     if (kv.length) h += '<p class="kv">' + kv.map(esc).join('<br>') + '</p>';
-    (f.verify || []).forEach(function (v) { h += verifyBox(v); });
+    fv.forEach(function (v) { h += verifyBox(v); });
     h += noteLines(f.verify_notes);
     if (isHttp(f.url)) h += '<p>' + link(f.url) + '</p>';
     return h + '</div>';
@@ -762,7 +767,8 @@
     if (list.length <= 3) return esc(list.join('; '));
     return esc(list.slice(0, 3).join('; ')) + ' <span class="muted">+' + (list.length - 3) + ' more (see requirements)</span>';
   }
-  function reqItem(r) {
+  function reqItem(r, rec) {
+    var blocked = (r.verify_blocked || []).concat((rec && rec.verify_blocked) || []);
     // one line per requirement: its statement; expand for modal, trigger, binding, findings and verify items
     var b = BINDING_BADGE[r.binding];
     var text = r.found && r.statement ? esc(r.statement)
@@ -787,11 +793,12 @@
     h += noteLines(r.verify_notes);
     if (r.findings.length) {
       h += '<details><summary class="kv">Findings behind ' + esc(r.id) + ' (' + r.findings.length + ')</summary>' +
-        r.findings.map(findingHtml).join('') + '</details>';
+        r.findings.map(function (f) { return findingHtml(f, blocked); }).join('') + '</details>';
     }
     return h + '</div></details></li>';
   }
-  function sourceHtml(s) {
+  function sourceHtml(s, rec) {
+    var blocked = (rec && rec.verify_blocked) || [];
     var b = BINDING_BADGE[s.binding_default];
     var h = '<div class="card"><div><span class="k">' + esc(s.key) + '</span> ' + esc(locOf(s)) +
       (pageOf(s) ? ' <span class="kv">| page ' + esc(pageOf(s)) + '</span>' : '') + '</div>';
@@ -809,7 +816,7 @@
         h += '<div class="find"><div class="tag">' + esc(f.id) + ' | ' + esc(locOf(f)) + (pageOf(f) ? ' | page ' + esc(pageOf(f)) : '') + '</div>';
         if (f.paraphrase) h += '<p>' + esc(f.paraphrase) + '</p>';
         if (f.quote) h += '<blockquote class="quote">"' + esc(f.quote) + '"</blockquote>';
-        (f.verify || []).forEach(function (v) { h += verifyBox(v); });
+        openOf(f.verify, blocked).forEach(function (v) { h += verifyBox(v); });
         h += noteLines(f.verify_notes);
         h += '</div>';
       });
@@ -851,7 +858,7 @@
       if (META.trace_only) h += traceNote();
       h += '<p class="sub">' + (rec.reqs.length === 1 ? 'One requirement rests' : rec.reqs.length + ' requirements rest') +
         ' on this element; click a line for its detail and evidence.</p>';
-      h += '<ul class="what">' + rec.reqs.map(reqItem).join('') + '</ul>';
+      h += '<ul class="what">' + rec.reqs.map(function (r) { return reqItem(r, rec); }).join('') + '</ul>';
     } else if (rec.type === 'bpmn:Lane' || rec.type === 'bpmn:Participant') {
       h += '<p>A role or party in this process. The sources that name it are listed below.</p>';
     } else {
@@ -898,10 +905,10 @@
     }
     if (step && rec.reqs.length) {
       h += '<details class="sec-d"><summary>Requirements (' + rec.reqs.length + ')</summary><div class="sec-b">' +
-        (META.trace_only ? traceNote() : '') + '<ul class="what">' + rec.reqs.map(reqItem).join('') + '</ul></div></details>';
+        (META.trace_only ? traceNote() : '') + '<ul class="what">' + rec.reqs.map(function (r) { return reqItem(r, rec); }).join('') + '</ul></div></details>';
     }
     h += '<details class="sec-d"' + (!rec.reqs.length && rec.sources.length ? ' open' : '') + '><summary>Sources (' + rec.sources.length + ')</summary><div class="sec-b">' +
-      (rec.sources.length ? rec.sources.map(sourceHtml).join('') : '<p class="muted">No source on this element.</p>') + '</div></details>';
+      (rec.sources.length ? rec.sources.map(function (s) { return sourceHtml(s, rec); }).join('') : '<p class="muted">No source on this element.</p>') + '</div></details>';
     var vnotes = rec.verify_notes || [];
     if (vnotes.length || rec.notes.length) {
       h += '<details class="sec-d"><summary>Notes (' + (vnotes.length + rec.notes.length) + ')</summary><div class="sec-b">' +

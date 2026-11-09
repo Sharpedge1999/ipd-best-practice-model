@@ -595,7 +595,9 @@ def load_verify_triage(path, warnings):
         if c == "general" and text(it.get("general")) not in general:
             warnings.append("verify triage: unknown general statement %r for: %s" % (it.get("general"), t[:60]))
         items[t] = {"class": c, "wording": text(it.get("wording")), "general": text(it.get("general")),
-                    "not_on": [text(x) for x in as_list(it.get("not_on")) if text(x)]}
+                    "not_on": [text(x) for x in as_list(it.get("not_on")) if text(x)],
+                    "not_on_note": text(it.get("not_on_note")),
+                    "also_on": [text(x) for x in as_list(it.get("also_on")) if text(x)]}
     inline = []
     for it in data.get("inline") or []:
         if text(it.get("tag")) and text(it.get("action")) in ("strip", "replace", "keep"):
@@ -609,15 +611,21 @@ def load_verify_triage(path, warnings):
 
 def apply_verify_triage(citations, triage, warnings):
     """Show VERIFY only for open points. Notes become plain notes, general points go to the legend, dropped points
-    are not shown. The raw texts stay in the model, the requirements, the findings and the register (verify_raw)."""
+    are not shown. The raw texts stay in the model, the requirements, the findings and the register (verify_raw).
+    not_on: element or REQ ids that carry a text although it does not concern them; there it is not shown (a
+    not_on_note may say why) and does not set the VERIFY badge. also_on: further elements an open point marks."""
     items, used_general, untriaged = triage["items"], set(), set()
 
-    def split(raw, eid=None):
-        # not_on: elements that carry the text although it does not concern them (shown there as dropped)
+    def excluded(t, ids):
+        return any(i and i in t.get("not_on", []) for i in ids)
+
+    def split(raw, *ids):
         opened, notes = [], []
         for v in raw:
             t = items.get(v)
-            if t is not None and eid and eid in t.get("not_on", []):
+            if t is not None and excluded(t, ids):
+                if t.get("not_on_note") and t["not_on_note"] not in notes:
+                    notes.append(t["not_on_note"])
                 continue
             if t is None:
                 untriaged.add(v)
@@ -629,6 +637,31 @@ def apply_verify_triage(citations, triage, warnings):
             elif t["class"] == "general":
                 used_general.add(t["general"])
         return opened, notes
+
+    def blocked_for(*ids):
+        return sorted(set(t["wording"] for t in items.values() if t["class"] == "open" and excluded(t, ids)))
+
+    def inline_clean(val, field, notes=None):
+        # inline [verify] fragments in displayed fields: strip or replace the ones the triage settled (rules in order)
+        if not isinstance(val, str) or not val:
+            return val
+        for rule in triage.get("inline", []):
+            if rule["action"] in ("strip", "replace") and field in rule["fields"] and rule["tag"] in val:
+                val = re.sub(r"\s{2,}", " ", val.replace(rule["tag"], rule["with"] if rule["action"] == "replace" else "")).strip()
+                if rule["note"] and notes is not None and rule["note"] not in notes:
+                    notes.append(rule["note"])
+        return val
+
+    def triage_finding(f, *ids):
+        if "verify_raw" not in f:
+            f["verify_raw"] = f.get("verify", [])
+            f["verify"], f["verify_notes"] = split(f["verify_raw"], *ids)
+        f["binding_route"] = inline_clean(f.get("binding_route", ""), "binding_route")
+        loc, page = inline_clean(f.get("loc", ""), "loc"), inline_clean(f.get("page", ""), "page")
+        if loc != f.get("loc", ""):
+            f["loc_shown"] = loc
+        if page != f.get("page", ""):
+            f["page_shown"] = page
 
     def loc_class(s):
         key = "SOURCE-LOC %s | %s | %s" % (s["key"], s["loc"], s.get("page", ""))
@@ -642,42 +675,55 @@ def apply_verify_triage(citations, triage, warnings):
 
     before = sum(1 for r in citations["elements"].values() if "VERIFY" in r["badges"])
     for f in citations["findings"].values():
-        f["verify_raw"] = f["verify"]
-        f["verify"], f["verify_notes"] = split(f["verify_raw"])
+        triage_finding(f)
     for rec in citations["elements"].values():
         rec["verify_raw"] = rec["verify"]
         rec["verify"], rec["verify_notes"] = split(rec["verify_raw"], rec["id"])
-        blocked = set(t["wording"] for t in items.values() if rec["id"] in t.get("not_on", []))
+        rec["verify_blocked"] = blocked_for(rec["id"])
         for rq in rec["reqs"]:
             rq["verify_raw"] = rq["verify"]
-            rq["verify"], rq["verify_notes"] = split(rq["verify_raw"])
-            # the REQ carries copies of its findings: triage them like the findings table
+            rq["verify"], rq["verify_notes"] = split(rq["verify_raw"], rec["id"], rq["id"])
+            rq["verify_blocked"] = blocked_for(rec["id"], rq["id"])
+            for fld in ("binding_route", "recipient", "deadline", "record", "party", "trigger", "action"):
+                rq[fld] = inline_clean(rq.get(fld, ""), fld, rq["verify_notes"])
+            # the REQ carries copies of its findings: triage them in the context of this element and REQ
             fops = []
             for f in rq.get("findings", []):
-                if isinstance(f, dict) and not f.get("missing") and "verify_raw" not in f:
-                    f["verify_raw"] = f.get("verify", [])
-                    f["verify"], f["verify_notes"] = split(f["verify_raw"])
-                if isinstance(f, dict):
+                if isinstance(f, dict) and not f.get("missing"):
+                    triage_finding(f, rec["id"], rq["id"])
                     fops += f.get("verify", [])
             # an open point of a requirement, or of a finding behind it, also marks the element (unless not_on)
             for w in rq["verify"] + fops:
-                if w not in rec["verify"] and w not in blocked:
+                if w not in rec["verify"] and w not in rq["verify_blocked"]:
                     rec["verify"].append(w)
-        open_loc = False
+        rec["binding_routes"] = [inline_clean(r, "binding_route") for r in rec["binding_routes"]]
+        for fld in ("deadline", "record", "party"):
+            rec[fld] = inline_clean(rec.get(fld, ""), fld, rec["verify_notes"])
         for s in rec["sources"]:
             if "[verify" in s["loc"].lower() or "[verify" in (s.get("page") or "").lower():
                 t = loc_class(s)
                 if t["class"] == "open":
-                    open_loc = True
                     if t["wording"] and t["wording"] not in rec["verify"]:
                         rec["verify"].append(t["wording"])
                 else:
-                    s["loc_shown"] = VERIFY_TAG.sub("", s["loc"]).strip()
-                    s["page_shown"] = VERIFY_TAG.sub("", s.get("page") or "").strip()
+                    s["loc_shown"] = VERIFY_TAG.sub("", inline_clean(s["loc"], "loc")).strip()
+                    s["page_shown"] = VERIFY_TAG.sub("", inline_clean(s.get("page") or "", "page")).strip()
                     if t["class"] == "note" and t["wording"] and t["wording"] not in rec["verify_notes"]:
                         rec["verify_notes"].append(t["wording"])
-        keep = bool(rec["verify"]) or rec["binding"] == "verify-binding" or open_loc
-        if not keep and "VERIFY" in rec["badges"]:
+    # also_on: an open point that belongs to further elements (e.g. a diagram-level model note)
+    for t in items.values():
+        if t["class"] == "open":
+            for eid in t.get("also_on", []):
+                rec = citations["elements"].get(eid)
+                if rec is None:
+                    warnings.append("verify triage: also_on element %s not found" % eid)
+                elif t["wording"] not in rec["verify"]:
+                    rec["verify"].append(t["wording"])
+    for rec in citations["elements"].values():
+        keep = bool(rec["verify"]) or rec["binding"] == "verify-binding"
+        if keep and "VERIFY" not in rec["badges"]:
+            rec["badges"] = sorted(rec["badges"] + ["VERIFY"], key=BADGE_ORDER.index)
+        elif not keep and "VERIFY" in rec["badges"]:
             rec["badges"] = [b for b in rec["badges"] if b != "VERIFY"]
     for dg in citations["diagrams"]:
         md = []
@@ -696,37 +742,6 @@ def apply_verify_triage(citations, triage, warnings):
             else:
                 md.append([kind, val])
         dg["model_doc"] = md
-    # inline fragments in displayed fields: strip the ones the triage settled (a note may replace them)
-    def inline_clean(val, field, notes=None):
-        if not isinstance(val, str) or "[verify" not in val.lower():
-            return val
-        for rule in triage.get("inline", []):
-            if rule["action"] in ("strip", "replace") and field in rule["fields"] and rule["tag"] in val:
-                val = re.sub(r"\s{2,}", " ", val.replace(rule["tag"], rule["with"] if rule["action"] == "replace" else "")).strip()
-                if rule["note"] and notes is not None and rule["note"] not in notes:
-                    notes.append(rule["note"])
-        return val
-
-    def clean_finding(f):
-        f["binding_route"] = inline_clean(f.get("binding_route", ""), "binding_route")
-        loc, page = inline_clean(f.get("loc", ""), "loc"), inline_clean(f.get("page", ""), "page")
-        if loc != f.get("loc", ""):
-            f["loc_shown"] = loc
-        if page != f.get("page", ""):
-            f["page_shown"] = page
-
-    for f in citations["findings"].values():
-        clean_finding(f)
-    for rec in citations["elements"].values():
-        rec["binding_routes"] = [inline_clean(r, "binding_route") for r in rec["binding_routes"]]
-        for fld in ("deadline", "record", "party"):
-            rec[fld] = inline_clean(rec.get(fld, ""), fld, rec["verify_notes"])
-        for rq in rec["reqs"]:
-            for fld in ("binding_route", "recipient", "deadline", "record", "party", "trigger", "action"):
-                rq[fld] = inline_clean(rq.get(fld, ""), fld, rq.setdefault("verify_notes", []))
-            for f in rq.get("findings", []):
-                if isinstance(f, dict) and not f.get("missing"):
-                    clean_finding(f)
     leftover = sorted(set(m.group(0) for r in citations["elements"].values()
                           for v in [r.get("deadline", ""), r.get("record", ""), r.get("party", "")] + r["binding_routes"] +
                           [q.get(k, "") for q in r["reqs"] for k in ("binding_route", "recipient", "deadline", "record", "party")]
@@ -740,7 +755,6 @@ def apply_verify_triage(citations, triage, warnings):
     citations["meta"]["verify_general"] = {k: triage["general"][k] for k in sorted(used_general) if triage["general"].get(k)}
     citations["meta"]["counts"]["verify_elements"] = {"before_triage": before, "after_triage": after}
     citations["meta"]["counts"]["verify_untriaged"] = len(untriaged)
-
 
 # ----------------------------------------------------------------- build
 def strongest(bindings):
