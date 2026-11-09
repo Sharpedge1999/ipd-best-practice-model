@@ -2,7 +2,7 @@
 
 Best-practice reference model of important protocol deviation (iPD) management in clinical development, derived outside-in from ICH, EU and US sources plus industry best practice. Every modelled element carries the sources it rests on (BPMN extension `ipd:trace`, namespace `urn:ipd-best-practice:trace:1.0`), and the interactive map shows them under each step.
 
-Status: final build 07 Nov 2026; viewer fix (readable labels on highlighted and selected elements) 09 Nov 2026. Independent validation (3 rounds): pass with documented exceptions, 0 open MUST. **Not validated by process owners (GEN-06)** - fit to the real process is open. Open decisions, [verify] items and gaps: `register/HANDOVER_iPD_Best_Practice_Model.md`.
+Status: final build 07 Nov 2026; viewer fix (readable labels on highlighted and selected elements) 09 Nov 2026; side panel closed by default and opened by a click on a step, with a step description (what happens, at a glance; requirements and sources folded) 09 Nov 2026. Independent validation (3 rounds): pass with documented exceptions, 0 open MUST. **Not validated by process owners (GEN-06)** - fit to the real process is open. Open decisions, [verify] items and gaps: `register/HANDOVER_iPD_Best_Practice_Model.md`.
 
 ## Deliverables
 

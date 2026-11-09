@@ -13,7 +13,8 @@
 // zero console errors / page errors, no network requests except the file itself and data:/blob:,
 // every diagram opens and renders, overlay count per diagram = elements with sources (citations.json,
 // cross-checked against ipd:trace in the imported model), overlays inside their zones and clear of
-// other shapes, labels, edges and overlays, click panel content, filters and match counts, hash
+// other shapes, labels, edges and overlays, side panel (closed on load, opened by a click on a step with its description,
+// closed by x, Esc or an empty-canvas click; requirements list button), filters and match counts, hash
 // routing, copy button, responsive panel, runtime href/src audit; default view (Fit when legible, else 75 %
 // at the left edge, centred on the Sponsor pool, process start event and its first step kept in view), minimap (inlined, closed by default on every diagram,
 // toggle, choice held across diagrams, navigation), MAY chip for elements whose REQs are all modal "may" (--expect-may lists
@@ -234,6 +235,10 @@ check(await page.evaluate(() => location.hash) === '#' + CIT.diagrams[0].hash, '
 check(await page.evaluate(() => document.documentElement.getAttribute('data-diagram')) === CIT.diagrams.find(d => d.level === 'L3').id, 'routing: L3 opens first');
 const importWarnings = await page.evaluate(() => window.ipdImportWarnings);
 check(importWarnings.length === 0, 'import: zero bpmn-js import warnings', importWarnings);
+// side panel closed on load: the canvas takes the full width until a step is clicked
+const panel0 = await page.evaluate(() => ({ mode: document.documentElement.getAttribute('data-panel'), shown: getComputedStyle(document.querySelector('#panel')).display !== 'none',
+  canvas: document.querySelector('.canvas-wrap').getBoundingClientRect().width, main: document.querySelector('#main').getBoundingClientRect().width }));
+check(panel0.mode === 'closed' && !panel0.shown && Math.abs(panel0.canvas - panel0.main) < 1, 'panel: closed on load, canvas uses the full width', panel0);
 const hdr = await page.evaluate(() => ({ t: document.querySelector('#page-title').textContent, s: document.querySelector('#page-status').textContent }));
 check(hdr.t === 'Important protocol deviation (iPD) management - best-practice reference model (BPMN 2.0)', 'header: title text');
 check(hdr.s === 'Outside-in reference model derived from ICH, EU and US sources - not validated by process owners', 'header: status line');
@@ -569,7 +574,8 @@ for (const d of CIT.diagrams) {
     await openD(page, rec.diagram);
     await page.evaluate(id => window.ipdApp.select(id), id);
     await page.waitForTimeout(60);
-    return page.evaluate(() => ({ text: document.querySelector('#panel-body').innerText, chip: !!document.querySelector('#panel-body .badges .ipd-may'),
+    // textContent: REQ modals sit in the folded detail of each requirement line
+    return page.evaluate(() => ({ text: document.querySelector('#panel-body').textContent, chip: !!document.querySelector('#panel-body .badges .ipd-may'),
       canvasChip: Array.from(document.querySelectorAll('.ipd-ov[data-ipd-el]')).some(n => n.getAttribute('data-ipd-el') === window.ipdApp.state.selected && n.querySelector('.ipd-may')) }));
   };
   const modalLines = (rec, t) => rec.reqs.filter(q => q.found).every(q => t.includes('Modal: ' + (q.modal || 'not stated in requirements.yaml')));
@@ -613,13 +619,19 @@ if (taskDiagram) {
   if (!box.ok) note(`click point on ${taskId} is covered: ${JSON.stringify(box)}`);
   await page.mouse.click(box.x, box.y);
   await page.waitForTimeout(100);
-  const panel = await page.evaluate(() => ({ h2: (document.querySelector('#panel-body h2') || {}).textContent || '', text: document.querySelector('#panel-body').innerText, sel: window.ipdApp.state.selected }));
+  // visible: innerText (header, what happens, at a glance); all: textContent (also the folded requirement and source detail)
+  const panel = await page.evaluate(() => ({ h2: (document.querySelector('#panel-body h2') || {}).textContent || '', visible: document.querySelector('#panel-body').innerText,
+    text: document.querySelector('#panel-body').textContent, sel: window.ipdApp.state.selected, mode: document.documentElement.getAttribute('data-panel'),
+    shown: getComputedStyle(document.querySelector('#panel')).display !== 'none' }));
   const missingSrc = rec.sources.filter(s => !panel.text.includes(s.key) || !panel.text.includes(s.loc) || (s.title && !panel.text.includes(s.title)) || (s.page && !panel.text.includes(s.page)));
-  check(panel.sel === taskId && panel.h2 === rec.label, `panel: click on task ${taskId} opens its panel`, panel.h2);
-  check(missingSrc.length === 0 && panel.text.includes(`Sources (${rec.sources.length})`), `panel: shows all ${rec.sources.length} sources of ${taskId} (key, loc, page, document title)`, missingSrc);
-  const reqOk = rec.reqs.every(r => panel.text.includes(r.id));
+  check(panel.sel === taskId && panel.h2 === rec.label && panel.mode === 'element' && panel.shown, `panel: click on task ${taskId} opens the side panel with its description`, panel.h2);
+  const stmts = rec.reqs.filter(r => r.found && r.statement).map(r => r.statement);
+  check(panel.visible.includes('What happens') && stmts.every(t => panel.visible.includes(t)) && panel.visible.includes('At a glance'),
+    `panel: "What happens" shows the ${stmts.length} requirement statement(s) of ${taskId} without unfolding`, stmts.filter(t => !panel.visible.includes(t)));
+  check(missingSrc.length === 0 && panel.visible.includes(`Sources (${rec.sources.length})`), `panel: shows all ${rec.sources.length} sources of ${taskId} (key, loc, page, document title)`, missingSrc);
+  const reqOk = rec.reqs.every(r => panel.visible.includes(r.id));
   check(reqOk, `panel: shows the REQ ids of ${taskId}`, rec.reqs.map(r => r.id));
-  check(panel.text.includes('Binding') && panel.text.includes(rec.binding || 'not set'), `panel: shows binding of ${taskId}`);
+  check(panel.visible.includes('Binding') && panel.visible.includes(rec.binding || 'not set'), `panel: shows binding of ${taskId}`);
   if (rec.verify.length) {
     const vcount = await page.evaluate(() => Array.from(document.querySelectorAll('#panel-body .verify')).filter(n => n.textContent.startsWith('VERIFY')).length);
     check(vcount >= rec.verify.length, `panel: open verify items highlighted with the text VERIFY (${vcount})`);
@@ -649,11 +661,44 @@ if (taskDiagram) {
   check(await page.evaluate(() => window.ipdApp.state.selected) === ovId, `panel: click on the source box of ${ovId} selects it`);
   const zFit = await page.evaluate(() => window.ipdApp.viewer.get('canvas').zoom());
   check(Math.abs(zFit - 1) < 0.01, `zoom: selecting a step from the Fit view zooms to 100% (${zFit.toFixed(2)})`);
-  // empty-canvas click -> list
-  await page.evaluate(() => window.ipdApp.select(null));
-  const list = await page.evaluate(() => document.querySelector('#panel-body').textContent);  // includes collapsed REQs
+  // empty-canvas click closes the panel
+  const ec = await page.evaluate(() => {
+    const c = window.ipdApp.viewer.get('canvas'), r = document.querySelector('#canvas').getBoundingClientRect(), reg = window.ipdApp.viewer.get('elementRegistry');
+    for (let y = r.top + 30; y < r.bottom - 30; y += 15) for (let x = r.left + 30; x < r.right - 30; x += 15) {
+      const n = document.elementFromPoint(x, y), own = n && n.closest('.djs-element');
+      if (n && n.closest('#canvas') && !n.closest('.djs-overlay') && !n.closest('a') && !n.closest('.djs-minimap') && (!own || own.getAttribute('data-element-id') === c.getRootElement().id)) return { x, y };
+    }
+    return null;
+  });
+  if (ec) {
+    await page.mouse.click(ec.x, ec.y);
+    await page.waitForTimeout(80);
+    const st = await page.evaluate(() => ({ mode: document.documentElement.getAttribute('data-panel'), sel: window.ipdApp.state.selected, shown: getComputedStyle(document.querySelector('#panel')).display !== 'none' }));
+    check(st.mode === 'closed' && st.sel === null && !st.shown, 'panel: a click on empty canvas closes the side panel', st);
+  } else {
+    note('no empty canvas point found for the close-on-empty-click check');
+  }
+  // Esc and the close button close the panel
+  await page.evaluate(id => window.ipdApp.select(id), taskId);
+  await page.keyboard.press('Escape');
+  await page.waitForTimeout(60);
+  check(await page.evaluate(() => document.documentElement.getAttribute('data-panel')) === 'closed', 'panel: Esc closes the side panel');
+  await page.evaluate(id => window.ipdApp.select(id), taskId);
+  await page.click('#panel-body .panel-close');
+  await page.waitForTimeout(60);
+  check(await page.evaluate(() => document.documentElement.getAttribute('data-panel')) === 'closed', 'panel: the close button (x) closes the side panel');
+  // "Requirements list" button -> list of all REQs; a second click closes it
+  await page.click('#list-toggle');
+  await page.waitForTimeout(60);
+  const list = await page.evaluate(() => ({ text: document.querySelector('#panel-body').textContent, mode: document.documentElement.getAttribute('data-panel'),
+    pressed: document.querySelector('#list-toggle').getAttribute('aria-pressed') }));  // textContent includes collapsed REQs
   const reqIds = [...new Set(taskDiagram.elements.flatMap(id => EL[id].filterable ? EL[id].reqs.map(r => r.id) : []))];
-  check(reqIds.every(r => list.includes(r)) && list.includes('Requirements on this diagram'), `panel: no selection lists all ${reqIds.length} REQ ids of ${taskDiagram.id} grouped by element`);
+  check(list.mode === 'list' && list.pressed === 'true' && reqIds.every(r => list.text.includes(r)) && list.text.includes('Requirements on this diagram'),
+    `panel: "Requirements list" lists all ${reqIds.length} REQ ids of ${taskDiagram.id} grouped by element`);
+  await page.screenshot({ path: path.join(screens, `${taskDiagram.id}_list.png`) });
+  await page.click('#list-toggle');
+  await page.waitForTimeout(60);
+  check(await page.evaluate(() => document.documentElement.getAttribute('data-panel')) === 'closed', 'panel: a second click on "Requirements list" closes the panel');
 } else {
   check(false, 'panel: no task with sources found to click');
 }
@@ -666,11 +711,35 @@ if (ct) {
   const c = await clickPoint(page, ct.element_id, 'corner');
   if (!c.ok) note(`click point on ${ct.element_id} is covered: ${JSON.stringify(c)}`);
   await page.mouse.click(c.x, c.y);
+  await page.waitForTimeout(150);
+  await page.evaluate(() => window.ipdApp.idle());
+  // a click on an L3 step shows its description: the steps of its L4 in model order, and stays on L3
+  const ACT = /^bpmn:(Task|UserTask|ManualTask|ServiceTask|SendTask|ReceiveTask|ScriptTask|BusinessRuleTask|CallActivity|SubProcess)$/;
+  const l4d = CIT.diagrams.find(d => d.id === ct.diagram);
+  const l4steps = l4d.elements.filter(id => ACT.test(EL[id].type)).sort((a, b) => (EL[a].order - EL[b].order) || (a < b ? -1 : 1));
+  const l3p = await page.evaluate(() => ({ d: document.documentElement.getAttribute('data-diagram'), sel: window.ipdApp.state.selected,
+    steps: Array.from(document.querySelectorAll('#panel-body .steps [data-goto]')).map(n => n.getAttribute('data-goto').split('|')[1]),
+    text: document.querySelector('#panel-body').innerText }));
+  check(l3p.d === l3.id && l3p.sel === ct.element_id && l3p.text.includes('What happens') && JSON.stringify(l3p.steps) === JSON.stringify(l4steps) &&
+    l4steps.every(id => l3p.text.includes(EL[id].label)),
+    `panel: click on L3 step ${ct.element_id} stays on L3 and lists the ${l4steps.length} steps of ${ct.model} in model order`, { d: l3p.d, sel: l3p.sel, steps: l3p.steps.length });
+  await page.screenshot({ path: path.join(screens, `${l3.id}_step_panel.png`) });
+  // a step in that list opens the L4 with the step selected
+  await page.click('#panel-body .steps [data-goto]');
+  await page.waitForFunction(id => document.documentElement.getAttribute('data-diagram') === id, ct.diagram, { timeout: 5000 }).catch(() => {});
+  await page.evaluate(() => window.ipdApp.idle());
+  const gs = await page.evaluate(() => ({ d: document.documentElement.getAttribute('data-diagram'), sel: window.ipdApp.state.selected,
+    h2: (document.querySelector('#panel-body h2') || {}).textContent }));
+  check(gs.d === ct.diagram && gs.sel === l4steps[0] && gs.h2 === EL[l4steps[0]].label, `panel: the first step in the list opens ${ct.diagram} with ${l4steps[0]} selected`, gs);
+  // the panel button "Open L4-.. detail diagram" opens the L4
+  await openD(page, l3.id);
+  await page.evaluate(id => window.ipdApp.select(id), ct.element_id);
+  await page.click('#panel-body [data-open]');
   await page.waitForFunction(id => document.documentElement.getAttribute('data-diagram') === id, ct.diagram, { timeout: 5000 }).catch(() => {});
   await page.evaluate(() => window.ipdApp.idle());
   check(await page.evaluate(() => document.documentElement.getAttribute('data-diagram')) === ct.diagram &&
-    await page.evaluate(() => location.hash) === '#' + CIT.diagrams.find(d => d.id === ct.diagram).hash,
-    `drill-down: click on call activity ${ct.element_id} opens ${ct.diagram}`);
+    await page.evaluate(() => location.hash) === '#' + l4d.hash && await page.evaluate(() => document.documentElement.getAttribute('data-panel')) === 'closed',
+    `drill-down: the panel button of ${ct.element_id} opens ${ct.diagram} (panel closed)`);
   const crumbs = await page.evaluate(() => document.querySelector('#crumbs').innerText.replace(/\s+/g, ' '));
   check(crumbs.includes(l3.model) && crumbs.includes(ct.model), 'breadcrumb: shows L3 > L4', crumbs);
   await page.click('#back');
@@ -690,6 +759,12 @@ if (ct) {
   } else {
     check(false, 'drill-down: chip not found');
   }
+  // double-click on the L3 step opens its L4
+  const c2 = await clickPoint(page, ct.element_id, 'corner');
+  await page.mouse.dblclick(c2.x, c2.y);
+  await page.waitForFunction(id => document.documentElement.getAttribute('data-diagram') === id, ct.diagram, { timeout: 5000 }).catch(() => {});
+  await page.evaluate(() => window.ipdApp.idle());
+  check(await page.evaluate(() => document.documentElement.getAttribute('data-diagram')) === ct.diagram, `drill-down: double-click on call activity ${ct.element_id} opens ${ct.diagram}`);
   // browser history back (hashchange)
   await openD(page, ct.diagram);
   await page.goBack();
@@ -709,7 +784,7 @@ if (ct) {
     await page.mouse.click(c.x, c.y);
     await page.waitForTimeout(150);
     await page.evaluate(() => window.ipdApp.idle());
-    const st = await page.evaluate(() => ({ d: document.documentElement.getAttribute('data-diagram'), hash: location.hash, sel: window.ipdApp.state.selected, text: document.querySelector('#panel-body').innerText }));
+    const st = await page.evaluate(() => ({ d: document.documentElement.getAttribute('data-diagram'), hash: location.hash, sel: window.ipdApp.state.selected, text: document.querySelector('#panel-body').textContent }));
     check(st.d === idg.id && st.sel === it.element_id, `interface: click on ${it.element_id} stays on ${idg.id} and opens its panel`, { d: st.d, sel: st.sel });
     const miss = rec.reqs.map(r => r.id).concat(rec.sources.map(s => s.key + ' ' + s.loc)).filter(t => !st.text.includes(t));
     check(st.text.includes('Interface - outside this model') && st.text.includes('Interface requirements') && miss.length === 0,
@@ -723,7 +798,7 @@ if (ct) {
     const pid = pd.elements.find(id => EL[id].party && EL[id].overlay);
     await openD(page, pd.id);
     await page.evaluate(id => window.ipdApp.select(id), pid);
-    const t = await page.evaluate(() => document.querySelector('#panel-body').innerText);
+    const t = await page.evaluate(() => document.querySelector('#panel-body').textContent);
     check(t.includes(EL[pid].party) && (!EL[pid].record || t.includes(EL[pid].record)), `trace: panel of ${pid} shows party and record from ipd:trace`);
   }
 }
@@ -762,8 +837,10 @@ if (fkey) {
   const s = await uiState(page);
   check(Number(s.count) === exp && s.match === exp && s.dim === s.total - exp, `filter: source key ${fkey} on ${fd.id} -> ${exp} matches (count, highlight, dim)`, s);
   await page.screenshot({ path: path.join(screens, `${fd.id}_filter.png`) });
+  await page.click('#list-toggle');
   const listText = await page.evaluate(() => document.querySelector('#panel-body').innerText);
-  check(listText.includes(`Matching elements (${exp})`), 'filter: panel lists the matching elements');
+  check(listText.includes(`Matching elements (${exp})`), 'filter: "Requirements list" lists the matching elements');
+  await page.click('#list-toggle');
   await page.click('#f-clear');
 }
 for (const f of [{ binding: 'DRAFT' }, { binding: 'VERIFY' }, { binding: 'LAW' }, { jur: 'US' }, { jur: 'EU' }]) {
@@ -863,17 +940,17 @@ await page2.close();
 const page3 = await newPage(); wire(page3);
 await page3.setViewportSize({ width: 820, height: 1000 });
 await load(page3, fd.hash);
-const resp = await page3.evaluate(() => {
-  const cw = document.querySelector('.canvas-wrap').getBoundingClientRect(), p = document.querySelector('#panel').getBoundingClientRect();
-  return { below: p.top >= cw.bottom - 1, bodyHidden: getComputedStyle(document.querySelector('#panel-body')).display === 'none', toggle: getComputedStyle(document.querySelector('#panel-toggle')).display !== 'none' };
-});
-check(resp.below && resp.bodyHidden && resp.toggle, 'responsive: under 900 px the panel collapses below the canvas', resp);
+const resp = await page3.evaluate(() => ({ hidden: getComputedStyle(document.querySelector('#panel')).display === 'none' }));
+check(resp.hidden, 'responsive: under 900 px the panel stays closed until a step is selected', resp);
 const tid = fd.overlay_elements.find(id => EL[id].type === 'bpmn:Task') || fd.overlay_elements[0];
 if (tid) {
   await page3.evaluate(id => window.ipdApp.select(id), tid);
   await page3.waitForTimeout(80);
-  const open = await page3.evaluate(() => getComputedStyle(document.querySelector('#panel-body')).display !== 'none');
-  check(open, 'responsive: selecting an element expands the panel');
+  const open = await page3.evaluate(() => {
+    const cw = document.querySelector('.canvas-wrap').getBoundingClientRect(), p = document.querySelector('#panel');
+    return { shown: getComputedStyle(p).display !== 'none', below: p.getBoundingClientRect().top >= cw.bottom - 1 };
+  });
+  check(open.shown && open.below, 'responsive: selecting an element opens the panel below the canvas', open);
   await page3.screenshot({ path: path.join(screens, `${fd.id}_narrow.png`), fullPage: true });
 }
 await page3.close();
