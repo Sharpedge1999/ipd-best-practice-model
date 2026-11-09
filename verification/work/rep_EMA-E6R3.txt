@@ -1,0 +1,24 @@
+====================================================================================================
+R3-087 | EMA-E6R3 | loc=SCover | page=PDF 1 (cover of EMA/CHMP/ICH/135/1995); web page unpaginated
+PARA: ICH E6(R3) principles and Annex 1 were finally adopted by CHMP on 12 December 2024 and came into effect in the EU on 23 July 2025 as an EMA scientific guideline. Its legal effect for trials under the EU CTR runs through Art. 47 (conduct per GCP principles; take appropriate account of ICH GCP).
+QUOTE: came into effect on 23 July 2025
+QCHECK: exact ['PDF 1 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.41 @ PDF 1 / printed None: 15/07/2026 View ICH E6(R3) - Principles and Annex 1 - Current version - effective from 23 July 2025 ICH E6 (R3) Guideline for good clinical practice (GCP) - Step 5Adopted Reference Number: EMA/CHMP/ICH/135/1995 Legal effective date:
+  DOCBEST 0.34 @ PDF 1 / printed None: The guideline provides a unified framework to facilitate the mutual acceptance of clinical trial results by regulatory authorities across ICH member regions, supporting global collaboration in drug development and ensuring consistent regulatory standards. Scientific guidelineHumanScientific guidelines Page contentsPage contents ICH E6(R3) - Consolidated guideline ICH E6(R3) - Principles and Annex 1 - Current version - effective from 23 July 2025 ICH E6(R3) - Annex 2 - effective from 15 January 2
+====================================================================================================
+R3-088 | EMA-E6R3 | loc=SCover | page=PDF 1 (cover of EMA/CHMP/ICH/162879/2026, 80 pages); web page unpaginated
+PARA: ICH E6(R3) Annex 2 was adopted by ICH on 3 June 2026 and by CHMP on 25 June 2026; Annex 2 and the consolidated guideline (principles, Annex 1, Annex 2) come into effect in the EU on 15 January 2027. On the research date (6 Nov 2026) Annex 2 is adopted but not yet effective in the EU.
+QUOTE: will come into effect on 15 January 2027
+QCHECK: none [] 
+LOC: not located automatically
+  DOCBEST 0.64 @ PDF 1 / printed None: 14 July 2026 EMA/CHMP/ICH/162879/2026 Committee for Human Medicinal Products ICH E6(R3) Guideline for Good Clinical Practice Step 5 Principles, annex 1 Annex 2 Transmission to CHMP 25 May 2023 24 October 2024 Adoption by CHMP 25 May 2023 14 November 2024 Release for public consultation 26 May 2023 29 November 2024 Deadline for comments 26 September 2023 28 February 2025 Final adoption by CHMP 12 December 2024 25 June 2026 Date for coming into effect 23 July 2025 15 January 2027 Official address 
+  DOCBEST 0.28 @ PDF 2 / printed 2: Typographical corrections to 24 October 2025 references in Section 1.2.5 and 3.16.4 E6(R3) Annex 2 Endorsement by the Regulatory Members of the ICH 03 June 2026 Assembly under Step 4. E6(R3) E6 (R3) Step 4 document consolidated with E6 (R3) 16 June 2026 Annex 2 Step 4 document.
+====================================================================================================
+R3-089 | EMA-E6R3 | loc=SWebpage | page=web page unpaginated
+PARA: The EMA page states that Annex 2 was developed alongside the principles to offer a comprehensive package that can serve as a replacement for ICH E6(R2); it gives no date on which E6(R2) stops applying.
+QUOTE: can serve as a replacement for ICH E6(R2)
+QCHECK: exact ['PDF 1 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.63 @ PDF 1 / printed None: It fosters transparency through clinical trial registration and result reporting and offers additional guidance to enhance the informed consent process.​ To provide clarity and better readability ICH E6(R3) has a new structure and is composed of:​ An overarching principles and objectives document; ​ Annex 1 (interventional clinical trials);​ Annex 2 (additional considerations for non-traditional interventional clinical trials). ​​ The principles are intended to support efficient approaches to tr
+  DOCBEST 0.63 @ PDF 1 / printed None: They are interdependent and should be considered in their totality to assure ethical trial conduct and reliable results. ​ Annex 1, including its Appendices, is intended to provide information on how the principles can be appropriately applied to clinical trials. ​ This Annex has been developed alongside the principles and objectives document to ensure consistency and to offer stakeholders a comprehensive package that can serve as a replacement for ICH E6(R2). Annex 2 covers designs such as prag

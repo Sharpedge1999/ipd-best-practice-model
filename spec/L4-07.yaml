@@ -1,0 +1,433 @@
+# L4-07 - Finalise iPDs for clinical study report
+# Best-practice reference model of important protocol deviation (iPD) management, GEN-01 spec (B1).
+# Trace fields are derived from synthesis/requirements.yaml and synthesis/merged_findings.yaml.
+# Modelling choices, SHOULD deviations and open questions: spec/notes.md; REQ coverage: spec/coverage.md.
+id: L4-07
+title: "Finalise iPDs for clinical study report"
+level: L4
+parent: {model: L3, node: A7}
+interface: {start: [S1], ends: [E1], message_flows: [M1]}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-3.9.2", page: "printed 26 / PDF 34"}
+      - {key: E6R3, loc: "P10.1", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "P10.3", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "A1-3.9.5", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: TCB-RBQM, loc: "SQTL-Process", page: "journal pp. 251-261 (section page not confirmed)"}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Investigator", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", page: "OJ L 158/13"}
+      - {key: 21CFR312, loc: "21CFR312.60", page: "n/a - eCFR web text without pagination"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-2.5.2", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.10.6", page: "printed 20 / PDF 28"}
+      - {key: E6R3, loc: "A1-2.3.1", page: "printed 12 / PDF 20"}
+      - {key: E6R3, loc: "A2-2.4", page: "printed 55 / PDF 63"}
+      - {key: E6R3, loc: "A2-2.4.1", page: "printed 56 / PDF 64"}
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", page: "OJ L 158/12"}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", page: "printed 89 / PDF 97"}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", page: "n/a - eCFR web text without pagination"}
+
+lanes:
+  - id: L_SPON
+    name: "Sponsor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+
+nodes:
+  - id: S1
+    type: start
+    label: "Data finalisation initiated"
+    lane: L_SPON
+    path: main
+  - id: A1
+    type: task
+    label: "Compile and finalise deviations"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-4.2.6(b)", page: "printed 48 / PDF 56"}
+      - {key: TCB-PD, loc: "STaking-a-holistic-approach-CLOSEOUT [verify]", page: "web page (carousel tab inferred)"}
+      - {key: TCB-PD-TIRS, loc: "SClose-Out", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-154, REQ-155]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "before interim or final analysis; best practice: after the last study data have been reviewed"
+    record: "final deviation list; closed-out PDAP; data finalisation documentation"
+    party: "responsible party; Each company"
+  - id: A2
+    type: task
+    label: "Conduct blind review of deviations"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E9, loc: "S5.2", page: "printed 22"}
+      - {key: E9, loc: "S5.2.1", page: "printed 23"}
+      - {key: E9, loc: "GL:Blind Review", page: "printed 32"}
+      - {key: E9, loc: "S5.2.2", page: "printed 24"}
+    req: [REQ-156, REQ-162, REQ-163]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "before breaking the blind"
+    verify:
+      - "[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F19) (R2-085)"
+      - "[verify] glossary wording from a single fetch (F20) (R2-096)"
+      - "[verify] sentence content from a single fetch (F20) (R2-089)"
+  - id: A3
+    type: task
+    label: "Determine analysis sets"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-4.2.6(c)", page: "printed 48 / PDF 56"}
+      - {key: E9, loc: "S5.2.2", page: "printed 23-24 [verify]"}
+      - {key: E9, loc: "S5.2.1", page: "printed 22-23; printed 23"}
+      - {key: E9, loc: "S7.1", page: "printed 30"}
+      - {key: TCB-PD-TIRS, loc: "SReview-and-Analyze", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-159, REQ-157, REQ-158, REQ-164]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "before breaking the blind"
+    record: "analysis set decisions; documented per protocol exclusion reasons; exclusion reasons"
+    party: "responsible party"
+    verify:
+      - "[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)"
+      - "[verify] printed page: 23 per F19, 24 per F21 (R2-087)"
+      - "[verify] printed page: 23 per F19, 24 per F21 (R2-086)"
+      - "[verify] sentence content from a single fetch (F19) (R2-084)"
+  - id: A4
+    type: call-activity
+    label: "Handle statistical analysis and estimands"
+    lane: L_SPON
+    calls: null
+    interface: true
+    path: main
+    src:
+      - {key: E9, loc: "S5.2.3", page: "printed 24 [verify]"}
+      - {key: E9R1, loc: "SA.3.1", page: "printed 6"}
+      - {key: E9R1, loc: "SA.4", page: "printed 13; printed 14"}
+      - {key: E9R1, loc: "SA.6", page: "printed 19"}
+    req: [REQ-237, REQ-239, REQ-240]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "statistical analysis plan; trial data on reason, magnitude and timing of the event; clinical trial report"
+    verify:
+      - "[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)"
+      - "[verify] section content from a single fetch (F20); start page 24 per TOC and F22, 25 per F20 (R2-090)"
+      - "[verify binding] EU/US adoption of E9R1 not checked by the research stems (C-06)"
+      - "[verify] exact sentence boundaries; confirmed only as short phrases (F24) (R2-103)"
+  - id: A5
+    type: task
+    label: "Characterise impact of each iPD"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E9, loc: "S5.2", page: "printed 22"}
+      - {key: E9, loc: "S7.1", page: "printed 30"}
+      - {key: E9R1, loc: "SA.1", page: "printed 3"}
+      - {key: E9R1, loc: "SA.5.3", page: "printed 18"}
+      - {key: TCB-PD, loc: "STaking-a-holistic-approach-REVIEW-ANALYZE [verify]", page: "web page (carousel tab inferred)"}
+    req: [REQ-160, REQ-161, REQ-165]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "impact assessment"
+    verify:
+      - "[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)"
+      - "[verify binding] EU/US adoption of E9R1 not checked by the research stems (C-06)"
+  - id: A6
+    type: task
+    label: "Describe iPDs in clinical study report section 10.2"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E3, loc: "S10.2", page: "printed 13"}
+      - {key: E3QA, loc: "S3", page: "printed 7"}
+      - {key: E3, loc: "SIntroduction", page: "printed 1-2"}
+      - {key: E9, loc: "S5.2", page: "printed 22"}
+      - {key: EMA-SB, loc: "S5.1", page: "printed 8/21"}
+      - {key: TCB-PD-TIRS, loc: "SReview-and-Analyze", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SReport", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-166, REQ-167, REQ-170, REQ-171, REQ-176, REQ-177, REQ-179]
+    binding: binding-ICH
+    jurisdiction: [ICH, EU]
+    record: "CSR section 10.2; CSR"
+    party: "sponsor"
+    verify:
+      - "[verify binding] EU/US adoption of E3, E3QA not checked by the research stems (C-06)"
+      - "[verify] single fetch (R5-036)"
+      - "[verify] single fetch (R5-038)"
+      - "[verify binding] EU/US adoption of E3 not checked by the research stems (C-06)"
+      - "[verify] single fetch (R5-040)"
+      - "[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)"
+      - "[verify] single fetch (R5-039)"
+      - "[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)"
+      - "[verify] single fetch (R5-041)"
+  - id: A7
+    type: task
+    label: "List patients with deviations in appendix 16.2.2"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E3, loc: "S10.2", page: "printed 13"}
+      - {key: E3, loc: "S16.2", page: "printed 29"}
+      - {key: E3QA, loc: "S3", page: "printed 7-8; printed 6-7"}
+      - {key: E3, loc: "SAnnex-IVa", page: "printed 35 [verify]"}
+    req: [REQ-168, REQ-178]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "CSR appendix 16.2.2; CSR disposition flowchart"
+    party: "sponsors"
+    verify:
+      - "[verify binding] EU/US adoption of E3 not checked by the research stems (C-06)"
+      - "[verify binding] EU/US adoption of E3QA, E3 not checked by the research stems (C-06)"
+      - "[verify] annex page numbers read from footers; fetch F13 warned they may be off by one (R2-064)"
+  - id: A8
+    type: task
+    label: "List and analyse efficacy exclusions"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E3, loc: "S11.1", page: "printed 13"}
+      - {key: E9, loc: "S7.1", page: "printed 30"}
+      - {key: E3, loc: "S11.4.2.6", page: "printed 17"}
+    req: [REQ-173, REQ-174, REQ-175, REQ-172]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "CSR appendix 16.2.3; section 11.1; CSR section 11.1; CSR section 11.4.2.6; CSR"
+    verify:
+      - "[verify binding] EU/US adoption of E3 not checked by the research stems (C-06)"
+      - "[verify binding] EU/US adoption of E3, E9 not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F11) (R2-059)"
+      - "[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)"
+  - id: A9
+    type: task
+    label: "Describe quality management approach in clinical study report"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.10", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A1-3.10.1.6", page: "printed 29 / PDF 37"}
+      - {key: E8R1, loc: "S6.3", page: "printed 19"}
+      - {key: TCB-RBQM, loc: "SReport-Process-Stage", page: "journal pp. 251-261 (section page not confirmed)"}
+    req: [REQ-181, REQ-182, REQ-183]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "CSR; study report"
+    party: "sponsor"
+    verify:
+      - "[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)"
+  - id: G1
+    type: xor-split
+    label: "EU CTR applies?"
+    lane: L_SPON
+    path: main
+    group: GR_EU
+  - id: A10
+    type: task
+    label: "Report serious breaches in clinical study report"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EMA-SB, loc: "S5.1", page: "printed 8/21"}
+    req: [REQ-180]
+    binding: guidance
+    jurisdiction: [EU]
+    record: "CSR"
+    party: "sponsor"
+  - id: G2
+    type: xor-join
+    lane: L_SPON
+    path: main
+    group: GR_EU
+  - id: A11
+    type: task
+    label: "Prepare clinical study report"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.17.2(a)", page: "printed 44 / PDF 52"}
+      - {key: E3QA, loc: "S1", page: "printed 1-2"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 241-243, footnote 16; printed 7; lines 243-245, footnote 17"}
+    req: [REQ-184, REQ-169]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "with the marketing application"
+    record: "clinical study report (CSR); CSR body; appendix patient data listing"
+    party: "sponsor"
+    verify:
+      - "[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)"
+      - "[verify] answer content from a single fetch (F33); topic confirmed in F16 (R2-065)"
+      - "[verify] Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked (R4-055)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: G3
+    type: xor-split
+    label: "Study data submitted to FDA?"
+    lane: L_SPON
+    path: main
+    group: GR_US
+  - id: A12
+    type: task
+    label: "Provide deviations in SDTM DV dataset"
+    lane: L_SPON
+    path: alt
+    group: GR_US
+    src:
+      - {key: FDA-SDTCG, loc: "S4.1.1.3", page: "16 or 17 of 97 [verify]"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 246-248, footnote 18; printed 7; lines 248-250"}
+      - {key: NCIT-DV, loc: "SC49585", page: "web page"}
+      - {key: CDISC-SDTMIG40-PR, loc: "S35", page: "slides 35-36"}
+    req: [REQ-185, REQ-186, REQ-187]
+    binding: guidance
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "with the study data submission"
+    record: "SDTM DV dataset; SDTM DV dataset (importance variable)"
+    party: "Sponsors"
+    verify:
+      - "[verify] page number: fetches gave 16 and 17 of 97 (R5-069)"
+      - "[verify] secondary mirror of NCIt; SDTMIG v3.4 DV text (purpose, assumptions) behind CDISC login, not read (R5-068)"
+      - "[verify] DVCLASI is in the SDTMIG v4.0 public review draft only (R5-067)"
+      - "[verify] SDTMIG v4.0 publication status and final DVCLASI definition (R5-067)"
+      - "[verify] slide 36 wording from one fetch (R5-067)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+      - "[verify] page number: fetches gave 16 and 17 of 97 (R5-070)"
+      - "[verify] variable meanings glossed from CDISC naming, SDTMIG text not read (R5-070)"
+  - id: G4
+    type: xor-join
+    lane: L_SPON
+    path: main
+    group: GR_US
+  - id: A13
+    type: call-activity
+    label: "Handle clinical study report and study data submission"
+    lane: L_SPON
+    calls: null
+    interface: true
+    path: main
+    src:
+      - {key: EUCTR, loc: "Art. 37(4)", page: "OJ L 158/35"}
+      - {key: FDA-ESTUDY, loc: "SII.E.1", page: "printed 7 (S II.E.1, lines 234-248); printed 2 (S I, lines 36-42); printed 3-5 (S II.C)"}
+      - {key: E9, loc: "S7.2", page: "printed 31"}
+    req: [REQ-235, REQ-236, REQ-238]
+    binding: binding-law
+    jurisdiction: [ICH, EU, US]
+    deadline: "within 30 days after the day the marketing authorisation has been granted (or procedure completed / application withdrawn) (REQ-235); studies starting on or after 18 Dec 2016 (NDA/ANDA/BLA) or 18 Dec 2017 (certain INDs) (REQ-236)"
+    record: "clinical study report (CSR); SDTM datasets incl. DV where submitted"
+    party: "the applicant for marketing authorisation"
+    verify:
+      - "[verify binding] schema has no 'binding guidance' class; mapped to binding-law because the statute (745A(a)) plus guidance text state binding effect (R5-071)"
+      - "[verify] Data Standards Catalog not read; confirm SDTM/SDTMIG versions supported (R5-071)"
+      - "[verify] start dates from one fetch (R5-071)"
+      - "[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)"
+  - id: E1
+    type: end
+    label: "iPDs reported in clinical study report"
+    lane: L_SPON
+    path: main
+
+flows:
+  - {id: F1, from: S1, to: A1}
+  - {id: F2, from: A1, to: A2}
+  - {id: F3, from: A2, to: A3}
+  - {id: F4, from: A3, to: A4}
+  - {id: F5, from: A4, to: A5}
+  - {id: F6, from: A5, to: A6}
+  - {id: F7, from: A6, to: A7}
+  - {id: F8, from: A7, to: A8}
+  - {id: F9, from: A8, to: A9}
+  - {id: F10, from: A9, to: G1}
+  - {id: F11, from: G1, to: A10, label: "Yes"}
+  - {id: F12, from: G1, to: G2, label: "No"}
+  - {id: F13, from: A10, to: G2}
+  - {id: F14, from: G2, to: A11}
+  - {id: F15, from: A11, to: G3}
+  - {id: F16, from: G3, to: A12, label: "Yes"}
+  - {id: F17, from: G3, to: G4, label: "No"}
+  - {id: F18, from: A12, to: G4}
+  - {id: F19, from: G4, to: A13}
+  - {id: F20, from: A13, to: E1}
+
+message_flows:
+  - id: M1
+    label: "Clinical study report provided"
+    src:
+      - {key: E6R3, loc: "A1-3.17.2(a)", page: "printed 44 / PDF 52"}
+      - {key: E3QA, loc: "S1", page: "printed 1-2"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 241-243, footnote 16; printed 7; lines 243-245, footnote 17"}
+    req: [REQ-184, REQ-169]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "with the marketing application"
+    party: "sponsor"
+    verify:
+      - "[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)"
+      - "[verify] answer content from a single fetch (F33); topic confirmed in F16 (R2-065)"
+      - "[verify] Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked (R4-055)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+    from: A11
+    to: P_RA
+  - id: M2
+    label: "DV dataset submitted"
+    src:
+      - {key: FDA-SDTCG, loc: "S4.1.1.3", page: "16 or 17 of 97 [verify]"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 246-248, footnote 18"}
+      - {key: NCIT-DV, loc: "SC49585", page: "web page"}
+    req: [REQ-185]
+    binding: guidance
+    jurisdiction: [ICH, US]
+    deadline: "with the study data submission"
+    party: "Sponsors"
+    verify:
+      - "[verify] page number: fetches gave 16 and 17 of 97 (R5-069)"
+      - "[verify] secondary mirror of NCIt; SDTMIG v3.4 DV text (purpose, assumptions) behind CDISC login, not read (R5-068)"
+    from: A12
+    to: P_RA
+
+groups:
+  - {id: GR_EU, label: "EU CTR", members: [G1, A10, G2]}
+  - {id: GR_US, label: "US 21 CFR", members: [G3, A12, G4]}
+
+open_items:
+  - "[verify interface] Neighbouring process 'CSR authoring' writes the sections on changes in conduct (E3 9.8) and patient disposition (E3 10.1); only the deviation content and the disposition label (REQ-178) belong to this step. Interface REQs: REQ-241, REQ-242."
+
+notes:
+  - "A4 'Handle statistical analysis and estimands' and A13 'Handle clinical study report and study data submission' are interface call activities (calls null, interface true, S0-18)."
+  - "Investigator/institution is a collapsed pool here (orchestrator decision 06 Nov 2026): collapsed where it carries no tasks; D1 intent - investigator duties visible as tasks - unaffected."
+  - "Sequence follows ICH E9 S5.2 and S7.1: deviation handling and analysis set decisions in the blind review (A2, A3) before unblinding and analysis (A4), impact characterisation after it (A5)."
+  - "Jurisdiction pattern: two independent XOR pairs in sequence (EU G1-G2, US G3-G4), so a trial under both regimes passes both branches."

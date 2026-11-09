@@ -1,0 +1,2268 @@
+# Y1 authoring input for synthesis/requirements.yaml (built by tools/y1_build.py).
+# One entry = one atomic requirement in own words. REQ ids are assigned in file order.
+# Re-entry 06 Nov 2026: steps renumbered after the user merged identification (old A2+A3 -> A2); REQ order unchanged.
+# Keys: k mnemonic | s statement | p party_norm | a action | t trigger | d deadline |
+#       r recipient | rec record | f finding ids | st l3 step (A1..A8), OOS, or INT:<near step> |
+#       why reason (OOS/INT) | v open verify items | dup {finding: canonical finding}
+# Omitted t/d/r/rec default to the first finding's value (deadline 'none' if empty).
+# binding, draft, binding_route and jurisdiction are derived from the findings by the build.
+
+# ============================================================ A1 Define trial-specific iPD criteria
+- k: A1-ADHERENCE-CTQ
+  s: "When the CtQ factors are identified, count the relevant aspects of adherence to the protocol and related documents among them."
+  p: sponsor
+  a: "Count protocol adherence aspects among the CtQ factors"
+  t: "CtQ factors identified (protocol design)"
+  rec: "CtQ factor list"
+  f: [R2-027]
+  st: A1
+  v: ["[verify] carried by the A1 start event 'CtQ factors identified' (no separate task); closest ICH text to a CtQ-to-iPD link (C-02)"]
+- k: A1-RISK-ID
+  s: "Identify the risks that may have a meaningful impact on the CtQ factors, before trial initiation and throughout conduct, covering processes and systems."
+  p: sponsor
+  a: "Identify risks to CtQ factors"
+  t: "CtQ factors identified"
+  d: "before trial initiation; ongoing during conduct"
+  rec: "risk assessment"
+  f: [R1-038]
+  st: A1
+- k: A1-RISK-EVAL
+  s: "Evaluate each identified risk and its existing controls by likelihood, detectability and impact on participant protection and reliability of results, and decide whether the risk is accepted or mitigated."
+  p: sponsor
+  a: "Evaluate risks to CtQ factors"
+  t: "Risks to CtQ factors identified"
+  rec: "risk assessment"
+  f: [R1-039, R2-007, R2-008, R4-081]
+  st: A1
+- k: A1-CRIT-ELEMENTS
+  s: "Identify and document, before or during protocol development, the critical data and processes whose errors would threaten participant protection or trial integrity."
+  p: sponsor
+  a: "Document critical data and processes"
+  t: "Protocol development"
+  d: "before or during protocol development"
+  rec: "documented critical data and processes"
+  f: [R4-080, R4-064, R5-063]
+  st: A1
+- k: A1-RISK-CTRL
+  s: "Put risk controls in place that are proportionate to each risk (for example through protocol design, monitoring plans, agreements and training) and develop study-specific plans that minimise the occurrence and impact of important deviations."
+  p: sponsor
+  a: "Define risk controls for CtQ risks"
+  t: "Risks evaluated"
+  rec: "risk control measures; study-specific plans"
+  f: [R1-040, R2-009, R4-065]
+  st: A1
+- k: A1-QTL
+  s: "Where relevant, set pre-specified acceptable ranges (for example quality tolerance limits at trial level) that support the control of risks to CtQ factors, together with the action plan for an exceedance."
+  p: sponsor
+  a: "Set acceptable ranges for CtQ risks"
+  t: "Risks evaluated"
+  rec: "acceptable ranges / QTL definitions and action plan"
+  f: [R1-041, R5-049, R5-051, R5-059]
+  st: A1
+  v: ["[verify] trial-level sense of 'acceptable ranges' (A1-3.10.1.3), distinct from the protocol-provision sense of AppB-Intro (C-04)"]
+- k: A1-RISK-DOC
+  s: "Document the identified risks, the risk assessment and the mitigating activities, and update the assessment as issues arise."
+  p: sponsor
+  a: "Document risk assessment and mitigations"
+  t: "Risks evaluated"
+  rec: "risk documentation"
+  f: [R1-043, R4-089]
+  st: A1
+- k: A1-RISK-COMM
+  s: "Communicate the identified risks, CtQ factors and mitigating activities to the parties who act on them or are affected, including the sites."
+  p: sponsor
+  a: "Communicate risks and mitigations"
+  t: "Risks and mitigations documented"
+  r: "parties taking action or affected; sites"
+  f: [R1-043, R2-010, R2-011]
+  st: A1
+- k: A1-STRATEGY
+  s: "Implement strategies to avoid, detect, address and prevent recurrence of serious noncompliance with GCP, the protocol and applicable regulatory requirements."
+  p: sponsor
+  a: "Plan strategies against serious noncompliance"
+  t: "Trial planning"
+  f: [R1-003]
+  st: A1
+  v: ["[verify] principle without named party; Sponsor lane assigned by context"]
+- k: A1-IPD-CRITERIA
+  s: "Determine the trial-specific criteria for classifying protocol deviations as important, taking into account the study design, critical procedures, study data, participant protections and planned analyses."
+  p: sponsor
+  a: "Define trial-specific iPD criteria"
+  t: "Risks to CtQ factors evaluated"
+  d: "none stated in E6(R3) (best practice: before protocol finalisation)"
+  rec: "trial-specific iPD criteria"
+  f: [R1-032, R2-073, R2-074, R5-011, R5-012]
+  st: A1
+- k: A1-IPD-EXAMPLES
+  s: "Use the regulatory examples of important and non-important deviations as a starting list for the trial-specific criteria, amending or adding examples where the trial needs it."
+  p: sponsor
+  a: "Adapt iPD examples to the trial"
+  t: "iPD criteria being defined"
+  rec: "trial-specific iPD criteria (examples)"
+  f: [R2-068, R4-044, R4-045, R4-046, R5-027]
+  st: A1
+- k: A1-IPD-PROTOCOL-US
+  s: "Specify in advance in the protocol which types of deviation will be considered important, with study-specific examples."
+  p: sponsor
+  a: "Specify iPD types in the protocol"
+  t: "Protocol development"
+  d: "before trial start"
+  rec: "protocol (list of important deviation types)"
+  f: [R4-053, R4-043]
+  st: A1
+- k: A1-IPD-CTQ-LINK
+  s: "Classify as important those deviations that could affect CtQ factors, and identify in advance which deviations relate to those factors and to critical procedures (for example which errors in protocol-defined assessments would matter for analysis or safety monitoring)."
+  p: sponsor
+  a: "Link iPD criteria to CtQ factors"
+  t: "CtQ factors and critical elements documented"
+  d: "best practice: before protocol finalisation"
+  rec: "trial-specific iPD criteria"
+  f: [R4-042, R5-009, R5-015, R5-058, R5-059, R5-064]
+  st: A1
+  v: ["[verify] no ICH guideline or regulation states that iPD criteria derive from CtQ factors; the link rests on FDA-PD24 (draft) and best practice (C-02)"]
+- k: A1-PDAP
+  s: "Document how deviations will be managed in a protocol-specific deviation assessment plan, drafted alongside the protocol and kept as a version-controlled living document until the last study data have been reviewed."
+  p: sponsor
+  a: "Prepare deviation assessment plan"
+  t: "Protocol development starts"
+  d: "drafted with the protocol; maintained until last study data reviewed"
+  rec: "Protocol Deviation Assessment Plan (PDAP)"
+  f: [R5-010, R5-013, R5-014]
+  st: A1
+- k: A1-PROT-DEVIATION
+  s: "Describe in the protocol, or in a document it refers to, how protocol deviations and other noncompliance are detected, reviewed, reported and handled."
+  p: sponsor
+  a: "Describe deviation handling in the protocol"
+  t: "Protocol development"
+  rec: "protocol (quality section) or referenced document"
+  f: [R2-117, R1-114]
+  st: A1
+- k: A1-PROT-CTQ
+  s: "Describe in the protocol, or refer to where it is documented and updated, the identified CtQ factors, the associated risks and the risk mitigation strategies."
+  p: sponsor
+  a: "Describe CtQ factors and risks in the protocol"
+  t: "Protocol development"
+  rec: "protocol (quality section) or referenced document"
+  f: [R1-112, R2-116, R2-011]
+  st: A1
+- k: A1-PROT-MONITORING
+  s: "Summarise in the protocol the monitoring approaches that form part of quality control."
+  p: sponsor
+  a: "Summarise monitoring approach in the protocol"
+  t: "Protocol development"
+  rec: "protocol (quality section)"
+  f: [R1-113]
+  st: A1
+- k: A1-PROT-COMPLIANCE
+  s: "Include in the protocol a statement that the trial will be conducted in compliance with the protocol, GCP and applicable regulatory requirements."
+  p: sponsor
+  a: "State compliance commitment in the protocol"
+  t: "Protocol development"
+  rec: "protocol"
+  f: [R1-110]
+  st: A1
+- k: A1-PROT-ANALYSIS-SETS
+  s: "Pre-define in the protocol or statistical analysis plan the analysis sets and the criteria for including or excluding participants or data, aligned with the estimands."
+  p: sponsor
+  a: "Pre-define analysis sets and exclusion criteria"
+  t: "Protocol development"
+  rec: "protocol statistical section; statistical analysis plan"
+  f: [R1-084, R1-111, R2-076, R2-115]
+  st: A1
+- k: A1-PROT-IRREGULARITIES
+  s: "Specify in the protocol the procedures that reduce anticipated irregularities in conduct (protocol violations, withdrawals, missing values) and state how those that occur will be handled in the analysis."
+  p: sponsor
+  a: "Specify handling of protocol violations in the protocol"
+  t: "Protocol development"
+  rec: "protocol"
+  f: [R2-077, R2-078, R2-102]
+  st: A1
+- k: A1-PROT-FLEXIBILITY
+  s: "May build flexibility into the protocol (for example acceptable ranges or windows for specific provisions, fewer and simpler procedures) to reduce avoidable and intentional deviations or amendments, provided participant safety and scientific validity are not adversely affected."
+  p: sponsor
+  a: "Build flexibility into protocol provisions"
+  t: "Protocol development"
+  rec: "protocol"
+  f: [R1-109, R4-062, R4-037]
+  st: A1
+  v: ["[verify] protocol-provision sense of 'acceptable ranges' (AppB-Intro), distinct from A1-3.10.1.3 (C-04)"]
+- k: A1-PROT-ADHERENCE-RECORDS
+  s: "Describe in the protocol how adherence to the trial intervention is monitored and documented and which adherence records are source records."
+  p: sponsor
+  a: "Describe intervention adherence records in the protocol"
+  t: "Protocol development"
+  rec: "protocol section 6.8; adherence records"
+  f: [R2-114]
+  st: A1
+- k: A1-MONPLAN
+  s: "Develop, generally before the trial starts, a monitoring plan tailored to the identified risks and focused on what is critical to quality, including monitoring of important data and processes outside the sites."
+  p: sponsor
+  a: "Develop risk-based monitoring plan"
+  t: "Risks evaluated"
+  d: "generally before trial start (Appendix C asterisked record)"
+  rec: "monitoring plan"
+  f: [R1-053, R1-054, R1-048, R1-127, R1-134, R5-060]
+  st: A1
+- k: A1-MONPLAN-EU
+  s: "Determine the extent and nature of monitoring from an assessment of all trial characteristics, including low-intervention status, objective and methodology, and the degree to which the intervention deviates from normal clinical practice."
+  p: sponsor
+  a: "Determine extent and nature of monitoring"
+  t: "Trial planning"
+  f: [R3-022]
+  st: A1
+- k: A1-MONPLAN-DEVIATIONS-US
+  s: "Specify in the monitoring plan the deviations critical to study integrity and how they are recorded and reported, the issues that trigger immediate escalation and reporting, how issues found at one site are checked at others, and how root cause analysis and CAPA follow important deviations."
+  p: sponsor
+  a: "Specify deviation content of the monitoring plan"
+  t: "Monitoring plan development"
+  rec: "monitoring plan"
+  f: [R4-084, R4-085, R4-086, R4-094]
+  st: A1
+- k: A1-REPORTING-INSTRUCTIONS-US
+  s: "Tell investigators the timeframe and method for reporting deviations to the sponsor (for example important deviations within a sponsor-set number of days of occurrence, other deviations at monitoring visits)."
+  p: sponsor
+  a: "Instruct investigators on deviation reporting"
+  t: "Trial set-up"
+  d: "sponsor-defined (no FDA day count)"
+  r: "investigators"
+  rec: "deviation reporting instructions"
+  f: [R4-054]
+  st: A1
+- k: A1-SB-CONTRACTS-EU
+  s: "Require in written contracts (for the principal investigator the protocol can serve) that all parties report events that might meet the serious breach definition immediately to the sponsor's designated contact point."
+  p: sponsor
+  a: "Set serious breach reporting duties in contracts"
+  t: "Trial set-up (contracts, protocol)"
+  d: "none"
+  r: "investigators; service providers"
+  rec: "contracts; protocol"
+  f: [R3-051]
+  st: A1
+- k: A1-SB-CONTACT-EU
+  s: "Give the principal investigator a dedicated contact for serious breach reporting and document the training of the principal investigator and site staff on it in the clinical trial master file."
+  p: sponsor
+  a: "Provide serious breach contact and training"
+  t: "Site initiation"
+  r: "principal investigator; site staff"
+  rec: "training records in the clinical trial master file"
+  f: [R3-052]
+  st: A1
+- k: A1-SB-PROCESS-EU
+  s: "Maintain a formal serious breach process in the sponsor's quality system (specific SOP and/or protocol text) that ensures prompt reporting of suspected serious breaches by investigators and service providers."
+  p: sponsor
+  a: "Establish serious breach procedure"
+  t: "Before trial start"
+  rec: "sponsor procedure"
+  f: [R3-066]
+  st: A1
+- k: A1-INCIDENT-PROCESS
+  s: "Ensure, for all computerised systems, a process by which service providers and investigators inform the sponsor of incidents that could constitute serious noncompliance."
+  p: sponsor
+  a: "Establish incident reporting route to sponsor"
+  t: "Trial set-up"
+  r: "sponsor"
+  f: [R1-083]
+  st: A1
+- k: A1-ROLES
+  s: "Determine the roles and allocate the trial-related activities before trial activities are initiated."
+  p: sponsor
+  a: "Allocate trial roles and activities"
+  t: "Trial set-up"
+  d: "before initiating trial activities"
+  f: [R1-097]
+  st: A1
+- k: A1-AGREEMENT
+  s: "Obtain the agreement of the investigator/institution (and of service providers where applicable) to conduct the trial in accordance with the approved protocol, GCP and applicable regulatory requirements."
+  p: sponsor
+  a: "Obtain investigator agreement to comply"
+  t: "Site selection and contracting"
+  r: "investigator/institution"
+  rec: "agreement"
+  f: [R1-098]
+  st: A1
+- k: A1-TRAINING
+  s: "Train the people involved in conducting the study appropriately to their role before they take part."
+  p: sponsor
+  a: "Train study personnel"
+  t: "Personnel join the study"
+  d: "before involvement in the study"
+  f: [R2-029, R2-040]
+  st: A1
+- k: A1-TRAINING-DEVIATIONS
+  s: "Train investigators, site staff, monitors and sponsor staff on the protocol and its critical elements and on recognising important deviations, and train the broader study team on the deviation assessment plan."
+  p: sponsor
+  a: "Train staff on iPD recognition"
+  t: "Trial start-up; protocol or plan updates"
+  r: "investigators; site staff; monitors; sponsor staff; study team"
+  rec: "training records"
+  f: [R4-049, R4-066, R5-017, R5-018]
+  st: A1
+
+# ============================================================ A2 Identify protocol deviations - channel 1: centralised data review (Group GR_CENTRAL)
+- k: A2-QC-FOCUS
+  s: "Apply risk-based quality control at each stage of data handling and focus data review on data of higher criticality, customised to the trial's CtQ factors and identified risks."
+  p: sponsor
+  a: "Focus data review on critical data"
+  t: "Trial data received"
+  f: [R1-047, R1-081, R1-089]
+  st: A2
+  v: ["[verify] R1-089 is Annex 2: effective in the EU from 15 Jan 2027; FDA Annex 2 guidance still draft (C-06)"]
+- k: A2-CENTRAL-MONITORING
+  s: "Perform centralised monitoring, that is a timely evaluation of accumulated data by qualified sponsor staff, to detect protocol noncompliance, potential protocol deviations and systemic or site-specific issues, directing effort to the errors that matter."
+  p: sponsor
+  a: "Perform centralised monitoring"
+  t: "Trial data received"
+  d: "timely"
+  rec: "centralised monitoring report"
+  f: [R1-050, R1-051, R4-082, R2-031, R2-019]
+  st: A2
+- k: A2-DATA-REVIEW
+  s: "Review trial data (on-site and/or centralised, possibly sample-based) to identify missing, inconsistent or outlying data, unexpected lack of variability and protocol deviations."
+  p: sponsor
+  a: "Review trial data for protocol deviations"
+  t: "Trial data received"
+  f: [R1-065]
+  st: A2
+  v: ["[verify] gerund item under A1-3.11.4.5; actor not named (R1 C7)"]
+- k: A2-DATA-INTEGRITY
+  s: "Identify significant errors in data collection and reporting at one or across sites, potential data manipulation and data integrity problems."
+  p: sponsor
+  a: "Identify data integrity problems"
+  t: "Trial data received"
+  f: [R1-066]
+  st: A2
+- k: A2-AUDIT-TRAIL-REVIEW
+  s: "Review trial-specific data, audit trails and other relevant metadata under planned, risk-based procedures that are adjusted with experience."
+  p: sponsor
+  a: "Review audit trails and metadata"
+  t: "Trial data received"
+  f: [R1-102]
+  st: A2
+  v: ["[verify] section 4 duty of the 'responsible party' (investigator or sponsor); Sponsor lane chosen (R1 C14)"]
+- k: A2-PROGRAMMATIC
+  s: "Identify deviations programmatically from the clinical database wherever possible and align programmatic and manual identification as described in the deviation assessment plan."
+  p: sponsor
+  a: "Run programmed deviation checks"
+  t: "Trial data received"
+  rec: "deviation listings"
+  f: [R5-020, R5-021]
+  st: A2
+- k: A2-FOCUS-CRITICAL
+  s: "Focus planned oversight, site monitoring and centralised monitoring on critical elements so that important deviations are detected early, at individual sites or as patterns that point to a systemic problem."
+  p: sponsor
+  a: "Focus monitoring on critical elements"
+  t: "Ongoing monitoring"
+  d: "early"
+  f: [R4-050, R4-067, R5-022]
+  st: A2
+- k: A2-TARGETED-MONITORING
+  s: "Centralised monitoring results, including deviation metrics that differ markedly between sites, may be used to select sites and processes for targeted site monitoring (US guidance: such sites should be considered for targeted visits)."
+  p: sponsor
+  a: "Select sites for targeted monitoring"
+  t: "Centralised monitoring results available"
+  f: [R1-052, R4-083]
+  st: A2
+- k: A2-SITE-VISIT-US
+  s: "When centralised monitoring shows repeated issues at a site, promptly determine whether a site visit and corrective actions are needed."
+  p: sponsor
+  a: "Decide on site visit for repeated issues"
+  t: "Repeated issues at a site detected"
+  d: "promptly"
+  f: [R4-092]
+  st: A2
+- k: A2-QTL-EXCEEDANCE
+  s: "When a pre-specified acceptable range is exceeded, evaluate whether there is a possible systemic issue and whether action is needed, at trial level and, through key risk indicators, at site or country level."
+  p: sponsor
+  a: "Evaluate acceptable range exceedance"
+  t: "Acceptable range (QTL) exceeded"
+  f: [R1-042, R5-050, R5-052]
+  st: A2
+  v: ["[verify] 'deviation beyond these ranges' is a range exceedance, not a protocol deviation (C-04)"]
+- k: A2-BLINDING-US
+  s: "Treat blinding as a critical process and identify and track the deviations that could cause unintended unblinding."
+  p: sponsor
+  a: "Track deviations that could unblind"
+  t: "Blinded trial ongoing"
+  f: [R4-093]
+  st: A2
+- k: A2-TREND-REVIEW
+  s: "Review non-important deviations periodically in aggregate (types, numbers, frequency) to detect trends or systemic errors that justify reclassifying them as important."
+  p: sponsor
+  a: "Review deviation trends"
+  t: "Periodic review due"
+  d: "periodically (frequency per deviation assessment plan)"
+  rec: "trend review output"
+  f: [R5-031, R5-025, R5-034, R4-060]
+  st: A2
+- k: A2-COMMUNICATE-INVESTIGATOR
+  s: "The sponsor may communicate to the investigator the protocol deviations it detects that are relevant to the investigator's participants and conduct of the trial (US guidance: sponsors should inform the investigator of relevant monitoring findings)."
+  p: sponsor
+  a: "Communicate detected deviations to investigator"
+  t: "Deviation detected by the sponsor"
+  r: "investigator"
+  f: [R1-019, R4-098]
+  st: A2
+
+# ============================================================ A2 Identify protocol deviations - channel 2: investigator site (Group GR_SITE)
+- k: A2-MONITORING-EU
+  s: "Adequately monitor the conduct of the trial to verify that subjects' rights, safety and well-being are protected, reported data are reliable and robust, and conduct complies with EU CTR."
+  p: sponsor
+  a: "Monitor trial conduct"
+  t: "Throughout trial conduct"
+  rec: "monitoring records"
+  f: [R3-021]
+  st: A2
+- k: A2-MONITORING-US
+  s: "Ensure proper monitoring of the investigations and monitor the progress of all clinical investigations under the IND."
+  p: sponsor
+  a: "Monitor IND investigations"
+  t: "Ongoing investigations under the IND"
+  d: "continuous"
+  f: [R4-007, R4-012]
+  st: A2
+- k: A2-SITE-MONITORING
+  s: "Perform investigator site monitoring at a frequency based on the identified risks and adapt activities and frequency using the knowledge gained."
+  p: monitor
+  a: "Perform site monitoring visit"
+  t: "Site monitoring visit due"
+  f: [R1-049, R1-133]
+  st: A2
+- k: A2-FOLLOW-MONPLAN
+  s: "Follow the sponsor's monitoring plan and the applicable monitoring procedures when performing monitoring."
+  p: monitor
+  a: "Follow monitoring plan"
+  t: "Monitoring activity performed"
+  f: [R1-055]
+  st: A2
+- k: A2-MONITOR-CONTACT
+  s: "Maintain communication with the investigator, with an assigned monitor as each site's point of contact."
+  p: monitor
+  a: "Maintain site contact"
+  t: "Site active"
+  f: [R1-056]
+  st: A2
+- k: A2-INFORM-INVESTIGATOR
+  s: "Inform the investigator and other involved parties of relevant deviations from the protocol, GCP and applicable regulatory requirements detected through monitoring."
+  p: monitor
+  a: "Inform investigator of detected deviations"
+  t: "Deviation detected through monitoring"
+  r: "investigator; other involved parties"
+  f: [R1-057]
+  st: A2
+  v: ["[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"]
+- k: A2-CONFIRM-PROTOCOL
+  s: "Confirm during monitoring that site staff are informed about and follow the current approved protocol and that the investigator provides the required reports and notifications."
+  p: monitor
+  a: "Verify protocol adherence at site"
+  t: "Site monitoring visit"
+  f: [R1-062, R1-063]
+  st: A2
+  v: ["[verify] gerund item; Monitor lane inferred (R1 C7)"]
+- k: A2-VERIFY-ELIGIBILITY
+  s: "Verify during monitoring that the investigator enrols only eligible participants."
+  p: monitor
+  a: "Verify participant eligibility"
+  t: "Site monitoring visit"
+  f: [R1-064]
+  st: A2
+  v: ["[verify] gerund item; Monitor lane inferred (R1 C7)"]
+- k: A2-SOURCE-CORRECTIONS
+  s: "Inform the investigator of errors or omissions in source records or data acquisition tools and ensure that corrections are dated, explained where necessary and their approval documented."
+  p: monitor
+  a: "Request correction of source record errors"
+  t: "Error or omission found"
+  r: "investigator"
+  f: [R1-060]
+  st: A2
+  v: ["[verify] gerund item; Monitor lane inferred (R1 C7)"]
+- k: A2-EARLY-VISIT-US
+  s: "An early monitoring visit at a site may be used so that protocol deviations are detected sooner, with source data verification focused on critical data and processes."
+  p: sponsor
+  a: "Plan early site monitoring visit"
+  t: "Site starts enrolling"
+  d: "early in site conduct"
+  f: [R4-091]
+  st: A2
+- k: A2-ONSITE-FOCUS
+  s: "During on-site visits, concentrate on deviation-relevant elements that cannot be identified programmatically."
+  p: monitor
+  a: "Check non-programmable elements on site"
+  t: "Site monitoring visit"
+  f: [R5-021]
+  st: A2
+- k: A2-MONITORING-REPORT
+  s: "Document each monitoring activity in a report that summarises what was reviewed, the significant findings including noncompliance, the conclusions, the actions required with responsible person and timing, and the follow-up of earlier findings."
+  p: monitor
+  a: "Document monitoring report"
+  t: "Monitoring activity performed"
+  rec: "monitoring report"
+  f: [R1-067, R1-135, R4-088, R4-097]
+  st: A2
+- k: A2-PROVIDE-REPORT
+  s: "Provide site and centralised monitoring reports to the appropriate sponsor staff in a timely manner for review and follow-up."
+  p: monitor
+  a: "Provide monitoring report to sponsor"
+  t: "Monitoring report completed"
+  d: "timely (US guidance: promptly)"
+  r: "appropriate sponsor staff (management)"
+  rec: "monitoring report"
+  f: [R1-068, R4-088, R4-097]
+  st: A2
+- k: A2-REPORT-ESCALATION
+  s: "Describe in the monitoring report, when needed, the findings that require escalation for action and resolution."
+  p: monitor
+  a: "Flag findings for escalation"
+  t: "Finding needs escalation"
+  rec: "monitoring report"
+  f: [R1-069]
+  st: A2
+- k: A2-INVESTIGATOR-DOCUMENT
+  s: "Document every protocol deviation at the site."
+  p: investigator
+  a: "Document protocol deviation"
+  t: "Protocol deviation identified at site"
+  rec: "protocol deviation documentation (site records)"
+  f: [R1-018]
+  st: A2
+- k: A2-SOURCE-RECORDS
+  s: "Keep source records attributable, legible, contemporaneous, original, accurate and complete with traceable changes, and keep data reported to the sponsor consistent with them or explain discrepancies."
+  p: investigator
+  a: "Maintain source records"
+  t: "Trial data generated at site"
+  rec: "source records; reported data with audit trail"
+  f: [R1-025, R1-026]
+  st: A2
+- k: A2-CASE-HISTORIES-US
+  s: "Prepare and maintain adequate and accurate case histories recording all observations and other pertinent data for each subject who receives the drug or serves as control."
+  p: investigator
+  a: "Maintain case histories"
+  t: "Subject participates"
+  rec: "case histories (CRFs, consent forms, medical records)"
+  f: [R4-020]
+  st: A2
+  v: ["[verify] 21 CFR 312.62(b) does not name deviations; applied as the US record basis for site documentation"]
+- k: A2-INVESTIGATOR-DATA-REVIEW
+  s: "Review trial data in a timely manner, including relevant external data that can affect eligibility, treatment or safety."
+  p: investigator
+  a: "Review participant data"
+  t: "Data available to the investigator"
+  d: "timely"
+  f: [R1-094]
+  st: A2
+- k: A2-REPORT-ALL-US
+  s: "Report to the sponsor every protocol deviation the investigator is aware of, using a process that flags the important ones."
+  p: investigator
+  a: "Report deviation to sponsor"
+  t: "Investigator aware of a protocol deviation"
+  d: "per sponsor-specified timeframe"
+  r: "sponsor"
+  rec: "deviation report"
+  f: [R4-047]
+  st: A2
+- k: A2-UNBLINDING
+  s: "Follow the randomisation procedures, break the code only in accordance with the protocol, and promptly document and explain to the sponsor any premature unblinding."
+  p: investigator
+  a: "Explain premature unblinding to sponsor"
+  t: "Premature unblinding"
+  d: "promptly"
+  r: "sponsor"
+  rec: "documentation and explanation of premature unblinding"
+  f: [R1-093]
+  st: A2
+  v: ["[verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)"]
+- k: A2-SYSTEM-INCIDENT
+  s: "Report incidents in the use of computerised systems that may have a significant and/or persistent impact on trial data or system security to the sponsor and, where applicable, to the IRB/IEC."
+  p: investigator
+  a: "Report computerised system incident"
+  t: "System incident with significant impact"
+  r: "sponsor; IRB/IEC where applicable"
+  f: [R1-095]
+  st: A2
+- k: A2-SUSPECTED-SB-EU
+  s: "Have a site process that enables site staff and providers delegated by the principal investigator to identify suspected serious breaches and report them promptly to the sponsor or delegated party."
+  p: investigator
+  a: "Report suspected serious breach to sponsor"
+  t: "Suspected serious breach at the site"
+  d: "promptly"
+  r: "sponsor or delegated party"
+  rec: "site process / SOP"
+  f: [R3-071]
+  st: A2
+
+# ============================================================ A3 Manage intentional protocol deviations
+- k: A3-PRIOR-APPROVAL-ICH
+  s: "Do not initiate a deviation from, or change to, the protocol without prior documented IRB/IEC approval or favourable opinion of an appropriate amendment, except to eliminate immediate hazards to participants or for changes that are only logistical or administrative."
+  p: investigator
+  a: "Obtain IRB/IEC approval before deviating"
+  t: "Intentional protocol deviation considered"
+  d: "before implementation"
+  r: "IRB/IEC"
+  f: [R1-011]
+  st: A3
+  v: ["[verify] E6(R3) A1-1.4.7 frames this as an IRB/IEC written procedure; the party initiating the change is not named"]
+- k: A3-NO-CHANGE-US
+  s: "Make no change in the research without IRB approval, except where necessary to eliminate apparent immediate hazards to subjects."
+  p: investigator
+  a: "Obtain IRB approval before change"
+  t: "Intentional protocol deviation considered"
+  d: "before the change (immediate-hazard exception)"
+  r: "IRB"
+  rec: "IRB approval"
+  f: [R4-024, R4-011]
+  st: A3
+- k: A3-IRB-CHANGE-REVIEW-US
+  s: "The IRB follows written procedures that ensure changes in approved research are not initiated without IRB review and approval, except to eliminate apparent immediate hazards."
+  p: irb-iec
+  a: "IRB reviews proposed change"
+  t: "Proposed change in approved research"
+  r: "investigator"
+  rec: "IRB approval decision"
+  f: [R4-026]
+  st: A3
+  v: ["[verify] represented by the IRB/IEC approval message flow; IRB/IEC is a collapsed pool (D1)"]
+- k: A3-NOTIFY-SPONSOR-US
+  s: "Make protocol changes only after notifying the sponsor, except where needed to protect the safety, rights or welfare of subjects."
+  p: investigator
+  a: "Notify sponsor before protocol change"
+  t: "Intentional protocol deviation considered"
+  d: "before the change (safety exception)"
+  r: "sponsor"
+  rec: "Form FDA-1572 commitment"
+  f: [R4-010]
+  st: A3
+- k: A3-SPONSOR-APPROVAL-US
+  s: "Obtain prior sponsor approval and prior IRB approval for an intentional departure from the protocol for a single participant, unless urgently needed to eliminate an apparent immediate hazard."
+  p: investigator
+  a: "Request approval of intentional deviation"
+  t: "Intentional single-participant departure contemplated"
+  d: "before the departure"
+  r: "sponsor; IRB"
+  f: [R4-048]
+  st: A3
+- k: A3-NO-ELIGIBILITY-WAIVER
+  s: "Do not grant prospective approval of deviations from recruitment and enrolment criteria (protocol waivers or exemptions)."
+  p: sponsor
+  a: "Reject eligibility waiver requests"
+  t: "Deviation from eligibility criteria requested"
+  f: [R2-113]
+  st: A3
+  v: ["[verify] whether the M11 Template sentence is fixed text or instructional text (R2-113)"]
+- k: A3-SPONSOR-DECIDE-REQUEST
+  s: "Consider each investigator request for an intentional deviation and decide whether a protocol amendment is needed so that the trial is conducted consistently across sites."
+  p: sponsor
+  a: "Decide on deviation request"
+  t: "Investigator request for an intentional deviation"
+  r: "investigator"
+  rec: "decision on request; protocol amendment if needed"
+  f: [R4-061]
+  st: A3
+- k: A3-ENGAGE-IRB-US
+  s: "Engage the IRB as early as possible when urgent or emergent changes to the protocol or informed consent are anticipated."
+  p: sponsor
+  a: "Engage IRB early on urgent changes"
+  t: "Urgent protocol change anticipated"
+  d: "as early as possible"
+  r: "IRB"
+  f: [R4-076]
+  st: A3
+- k: A3-DEVIATE-ONLY-FOR-HAZARD
+  s: "Follow the protocol and deviate only where necessary to eliminate an immediate hazard to trial participants."
+  p: investigator
+  a: "Deviate to eliminate immediate hazard"
+  t: "Immediate hazard to participants"
+  f: [R1-022]
+  st: A3
+- k: A3-IMPLEMENT-HAZARD-CHANGE-US
+  s: "A protocol change intended to eliminate an apparent immediate hazard to subjects may be implemented immediately, before submission to FDA and IRB approval."
+  p: sponsor
+  a: "Implement immediate-hazard change"
+  t: "Apparent immediate hazard requiring a protocol change"
+  d: "none"
+  f: [R4-004]
+  st: A3
+- k: A3-INFORM-SPONSOR-HAZARD
+  s: "Inform the sponsor promptly of a deviation undertaken to eliminate an immediate hazard."
+  p: investigator
+  a: "Inform sponsor of immediate-hazard deviation"
+  t: "Immediate-hazard deviation implemented"
+  d: "promptly"
+  r: "sponsor"
+  f: [R1-023]
+  st: A3
+- k: A3-REPORT-HAZARD-IRB
+  s: "Report promptly to the IRB/IEC a deviation made to eliminate an immediate hazard, with information on the hazard, the implemented change and any proposed protocol amendment."
+  p: investigator
+  a: "Report immediate-hazard deviation to IRB/IEC"
+  t: "Immediate-hazard deviation implemented"
+  d: "promptly"
+  r: "IRB/IEC"
+  rec: "report on hazard, implemented change and proposed amendment"
+  f: [R1-012, R1-024]
+  st: A3
+- k: A3-REPORT-HAZARD-RA
+  s: "Submit the information on the immediate hazard and any subsequent protocol amendment to the regulatory authorities where applicable regulatory requirements require it, by the investigator/institution or the sponsor."
+  p: sponsor
+  a: "Submit immediate-hazard information to authority"
+  t: "Immediate hazard addressed"
+  r: "regulatory authority(ies) where applicable"
+  rec: "hazard information; protocol amendment"
+  f: [R1-024, R1-080]
+  st: A3
+  v: ["[verify] in the EU all submissions are made by the sponsor, not the investigator (EUCTR-QA Q&A 1.5) (C-12)"]
+- k: A3-SPONSOR-HAZARD-ACTION
+  s: "Take prompt action to address an immediate hazard to participants, determine its causes and take appropriate remedial actions."
+  p: sponsor
+  a: "Address immediate hazard and its causes"
+  t: "Immediate hazard reported"
+  d: "promptly"
+  f: [R1-079]
+  st: A3
+- k: A3-CONSIDER-AMENDMENT
+  s: "Consider whether the protocol requires amendment in response to an immediate hazard."
+  p: sponsor
+  a: "Assess need for protocol amendment"
+  t: "Immediate hazard addressed"
+  rec: "protocol amendment (if any)"
+  f: [R1-080]
+  st: A3
+- k: A3-AMENDMENT-FDA-US
+  s: "After implementing an immediate-hazard change, notify FDA subsequently by a protocol amendment."
+  p: sponsor
+  a: "Submit protocol amendment to FDA"
+  t: "Immediate-hazard change implemented"
+  d: "subsequently (no period stated)"
+  r: "FDA"
+  rec: "protocol amendment"
+  f: [R4-005]
+  st: A3
+- k: A3-NOTIFY-IRB-US
+  s: "Notify the reviewing IRB of an immediate-hazard change in accordance with 21 CFR 56.104(c)."
+  p: investigator
+  a: "Notify IRB of immediate-hazard change"
+  t: "Immediate-hazard change implemented"
+  d: "[verify] 5 working days if 21 CFR 56.104(c) applies"
+  r: "IRB"
+  rec: "IRB notification"
+  f: [R4-005, R4-030]
+  st: A3
+  v: ["[verify] whether the 5-working-day window of 21 CFR 56.104(c) applies to immediate-hazard protocol changes (C-11)", "[verify] notifying party not named (passive voice); Investigator chosen because 21 CFR 312.66 places IRB reporting on the investigator"]
+- k: A3-HAZARD-CHANGE-IS-DEVIATION-US
+  s: "Treat a hazard-eliminating change implemented before IRB approval, and any change to protocol procedures made without prior IRB approval and FDA submission, as a protocol deviation and report it as one."
+  p: investigator
+  a: "Report implemented change as protocol deviation"
+  t: "Change implemented before approval"
+  r: "sponsor; IRB"
+  rec: "deviation report"
+  f: [R4-077, R4-075]
+  st: A3
+
+# ============================================================ A4 Document and classify protocol deviations
+- k: A4-IS-DEVIATION
+  s: "Before classifying, decide whether the event is a protocol deviation, that is a change, divergence or departure from the design or procedures defined in the protocol or in documents it references; handle GCP compliance issues not governed by the protocol outside the deviation process."
+  p: sponsor
+  a: "Confirm event is a protocol deviation"
+  t: "Potential protocol deviation identified"
+  f: [R2-066, R4-035, R4-038, R5-001, R5-007]
+  st: A4
+- k: A4-RECEIVE-ALL-US
+  s: "Obtain information on all protocol deviations, from site staff, site and centralised monitoring, audits and inspections."
+  p: sponsor
+  a: "Collect all deviation reports"
+  t: "Deviation identified through any channel"
+  r: "sponsor"
+  f: [R4-052, R4-039]
+  st: A4
+- k: A4-RECORD-EU
+  s: "Record, process, handle and store deviation information, as clinical trial information, so that it can be accurately reported, interpreted and verified while protecting confidentiality and personal data."
+  p: sponsor
+  a: "Record deviation information"
+  t: "Deviation information generated"
+  rec: "clinical trial information (deviation records)"
+  f: [R3-031]
+  st: A4
+  v: ["[verify] Art. 56(1) applies to 'the sponsor or the investigator, as applicable'; applies equally in the Investigator/institution pool"]
+- k: A4-DOCUMENT-NONSERIOUS-EU
+  s: "Document deviations that are not serious breaches (for example in the case report form or the clinical trial master file) so that corrective and preventive actions can be taken."
+  p: sponsor
+  a: "Document non-serious deviations"
+  t: "Deviation assessed as not a serious breach"
+  rec: "case report form or clinical trial master file"
+  f: [R3-065]
+  st: A4
+- k: A4-STORE-REPOSITORY
+  s: "Store every deviation, with its classification, category and linked data points, in a validated repository from which important and non-important deviations can be retrieved for analysis and reporting."
+  p: sponsor
+  a: "Store deviation in validated repository"
+  t: "Deviation identified and classified"
+  rec: "validated deviation repository"
+  f: [R5-032]
+  st: A4
+- k: A4-INVESTIGATOR-REVIEW
+  s: "Review each deviation, whether identified at the site or communicated by the sponsor, and explain those deemed important."
+  p: investigator
+  a: "Review deviation and explain if important"
+  t: "Deviation documented or communicated"
+  r: "sponsor"
+  rec: "explanation of important deviation"
+  f: [R1-020]
+  st: A4
+- k: A4-CLASSIFY-IMPORTANCE
+  s: "Classify each protocol deviation as important when it may significantly affect the completeness, accuracy and/or reliability of the trial data or a participant's rights, safety or well-being, applying the trial-specific criteria, and treat every other deviation as non-important."
+  p: sponsor
+  a: "Classify deviation importance"
+  t: "Protocol deviation confirmed"
+  rec: "deviation record (classification)"
+  f: [R1-033, R2-067, R4-036, R5-002, R5-003, R5-005, R5-016]
+  st: A4
+  dup: {R5-002: R2-067}
+- k: A4-CLASSIFY-AT-IDENTIFICATION
+  s: "Classify and categorise each deviation at the time of identification, ideally by the person who identified it."
+  p: sponsor
+  a: "Classify deviation on identification"
+  t: "Deviation identified"
+  d: "upon identification"
+  f: [R5-024]
+  st: A4
+  v: ["[verify] 'the identifier' may sit in the Sponsor or the Investigator/institution pool; source does not say"]
+- k: A4-CATEGORISE
+  s: "Assign each deviation to a deviation category (for example entry criteria, withdrawal criteria, wrong treatment or dose, excluded concomitant treatment, informed consent, safety reporting) using a controlled category list."
+  p: sponsor
+  a: "Categorise deviation"
+  t: "Deviation classified"
+  rec: "deviation record (category)"
+  f: [R2-057, R5-026, R5-065, R5-066]
+  st: A4
+  v: ["[verify] alignment of ICH E3, best-practice and CDISC DVCAT categories unknown (C-16)"]
+- k: A4-CONFIRM-CLASSIFICATION
+  s: "Have the classification and categorisation confirmed by an independent study team member or group other than the identifier."
+  p: sponsor
+  a: "Confirm deviation classification"
+  t: "Deviation classified by identifier"
+  rec: "deviation record (confirmed classification)"
+  f: [R5-028]
+  st: A4
+- k: A4-FEEDBACK-IDENTIFIER
+  s: "Give the identifier feedback, and retraining where needed, when a deviation was misclassified, miscategorised or reported in error."
+  p: sponsor
+  a: "Give classification feedback"
+  t: "Misclassification found"
+  r: "the identifier"
+  f: [R5-029]
+  st: A4
+- k: A4-RECONCILE
+  s: "Reconcile important deviations across collection channels (programmatic and manual) and resolve discrepancies such as duplicates or deviations caused by transcription errors."
+  p: sponsor
+  a: "Reconcile deviation records"
+  t: "Deviation collected through more than one channel"
+  rec: "deviation log; clinical database"
+  f: [R5-030]
+  st: A4
+- k: A4-RECLASSIFY-NOTIFY-US
+  s: "When accumulated non-important deviations warrant reclassification as important, reclassify them and notify the investigator."
+  p: sponsor
+  a: "Notify investigator of reclassification"
+  t: "Reclassification warranted"
+  r: "investigator"
+  f: [R4-060]
+  st: A4
+- k: A4-UPDATE-CRITERIA
+  s: "Update the list of important deviation types and the deviation assessment plan when important deviations not yet described emerge as data accumulate."
+  p: sponsor
+  a: "Update iPD criteria"
+  t: "New type of important deviation found"
+  rec: "protocol list of important deviations; PDAP (new version)"
+  f: [R4-053, R5-023]
+  st: A4
+- k: A4-FILE-ICH
+  s: "Collect and file deviation records as essential records in a timely manner in the trial master file and investigator site file, or in repositories referred to from them."
+  p: sponsor
+  a: "File deviation records"
+  t: "Deviation record completed"
+  d: "timely"
+  rec: "trial master file; investigator site file"
+  f: [R1-116, R1-117]
+  st: A4
+- k: A4-TMF-EU-SPONSOR
+  s: "Keep a clinical trial master file that at all times contains the essential documents allowing verification of trial conduct and data quality, readily available and directly accessible to the Member States on request."
+  p: sponsor
+  a: "Maintain sponsor clinical trial master file"
+  t: "Throughout the trial"
+  r: "Member States (on request)"
+  rec: "clinical trial master file (sponsor)"
+  f: [R3-032, R3-034]
+  st: A4
+- k: A4-TMF-EU-INVESTIGATOR
+  s: "Keep an investigator clinical trial master file that at all times contains the essential documents, readily available and directly accessible to the Member States on request."
+  p: investigator
+  a: "Maintain investigator clinical trial master file"
+  t: "Throughout the trial"
+  r: "Member States (on request)"
+  rec: "clinical trial master file (investigator)"
+  f: [R3-033, R3-034]
+  st: A4
+
+# ============================================================ A5 Assess and notify reportable noncompliance
+- k: A5-SB-ASSESS-EU
+  s: "Assess each potential breach of EU CTR or of the protocol version applicable at the time against the serious breach definition (likely to affect to a significant degree the safety and rights of a subject or the reliability and robustness of the data), as a decision separate from the iPD classification, and notify only breaches assessed as serious."
+  p: sponsor
+  a: "Assess potential serious breach"
+  t: "Sponsor becomes aware of a potential breach"
+  d: "within the 7-day notification window"
+  rec: "serious breach assessment"
+  f: [R3-024, R3-043, R3-044, R3-050, R3-062, R3-067, R3-081, R3-107, R3-059, R3-079, R3-080]
+  st: A5
+  v: ["[verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)"]
+- k: A5-SB-DATA-FACTORS-EU
+  s: "Judge whether a breach significantly affects data reliability by the trial design, the type and extent of the affected data, their contribution to key analyses and the impact of excluding them."
+  p: sponsor
+  a: "Assess breach impact on data reliability"
+  t: "Breach affecting trial data"
+  rec: "breach impact assessment"
+  f: [R3-058]
+  st: A5
+- k: A5-SB-PERSISTENT-EU
+  s: "Treat persistent or systematic non-compliance with the Regulation, GCP principles or the protocol as a serious breach when it is likely to significantly affect participants in the EU/EEA or the reliability and robustness of the data."
+  p: sponsor
+  a: "Assess persistent noncompliance as serious breach"
+  t: "Pattern of persistent or systematic deviations"
+  d: "7 calendar days of sponsor awareness"
+  f: [R3-075]
+  st: A5
+- k: A5-SB-FRAUD-EU
+  s: "Report every concern about potential fraud that the sponsor becomes aware of as a serious breach."
+  p: sponsor
+  a: "Report potential fraud as serious breach"
+  t: "Concern about potential fraud"
+  d: "7 calendar days of sponsor awareness"
+  r: "Member States concerned (CTIS)"
+  f: [R3-072]
+  st: A5
+- k: A5-SB-SAFETY-EU
+  s: "Treat a breach that may result in an SAE or SUSAR, or a failure to manage safety events that puts participants at significant risk, as a serious breach, without replacing the EU CTR Art. 53/54 notifications or SUSAR reporting."
+  p: sponsor
+  a: "Assess safety-related breach"
+  t: "Breach involving safety events"
+  f: [R3-074]
+  st: A5
+- k: A5-SB-DATA-REMOVAL-EU
+  s: "Notify a serious breach at a single site, inside or outside the EU/EEA, where it leads to removal of data from the trial analysis."
+  p: sponsor
+  a: "Notify breach causing data removal"
+  t: "Site-level breach causing data exclusion from analysis"
+  d: "7 calendar days of sponsor awareness"
+  r: "Member States concerned (CTIS)"
+  f: [R3-076]
+  st: A5
+- k: A5-SB-NOTIFY-EU
+  s: "Notify a serious breach to the Member States concerned through the EU portal without undue delay and at the latest seven days after becoming aware of it (EU CTR Art. 52(1)); per EMA and Commission guidance the period runs from awareness of the potential breach, the sponsor should assess seriousness in a timely manner without extending the period, and where there are reasonable grounds it should notify first and continue investigating."
+  p: sponsor
+  a: "Notify serious breach via EU portal"
+  t: "Sponsor becomes aware of a potential serious breach"
+  d: "without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach"
+  r: "Member States concerned (EU portal / CTIS)"
+  rec: "serious breach notification in CTIS"
+  f: [R3-023, R3-048, R3-098, R3-049, R3-047, R3-086, R3-090]
+  st: A5
+  v: ["[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)", "[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)"]
+- k: A5-SB-NON-EU-SITE
+  s: "Notify serious breaches that occur only at sites outside the EU/EEA when they are likely to affect the safety and rights of EU/EEA subjects or the reliability and robustness of the data."
+  p: sponsor
+  a: "Notify serious breach at non-EU site"
+  t: "Serious breach at a non-EU/EEA site"
+  d: "7 calendar days of sponsor awareness"
+  r: "Member States concerned (CTIS)"
+  f: [R3-054, R3-099, R3-090]
+  st: A5
+  dup: {R3-099: R3-054}
+- k: A5-SB-CONTENT-EU
+  s: "Complete all mandatory CTIS structured fields and add a report covering general information, breach details, impact assessment, root cause investigation and CAPA plan, listing other affected trials and stating when missing details will follow."
+  p: sponsor
+  a: "Prepare serious breach notification content"
+  t: "Serious breach notification prepared"
+  r: "Member States concerned (CTIS)"
+  rec: "CTIS structured fields; Appendix III b report"
+  f: [R3-056, R3-084, R3-091]
+  st: A5
+- k: A5-SB-MOST-AFFECTED-EU
+  s: "Indicate the most affected Member State in the notification following the EMA decision rules, or state that there is none."
+  p: sponsor
+  a: "State most affected Member State"
+  t: "Serious breach notification prepared"
+  rec: "notification title"
+  f: [R3-057]
+  st: A5
+- k: A5-SB-DOCUMENT-ASSESSMENT-EU
+  s: "Perform and document a thorough root cause analysis and an assessment of the breach's impact on data reliability and on participant safety and rights, so that the sponsor's decision can be examined later, for example in GCP inspections."
+  p: sponsor
+  a: "Document breach assessment"
+  t: "Breach under assessment"
+  rec: "documented breach assessment"
+  f: [R3-060]
+  st: A5
+- k: A5-SB-NON-NOTIFICATION-EU
+  s: "Document the reasons for not notifying a breach, including any disagreement with a delegated party and each party's position."
+  p: sponsor
+  a: "Document non-notification rationale"
+  t: "Decision not to notify"
+  rec: "non-notification rationale"
+  f: [R3-061]
+  st: A5
+- k: A5-SB-OTHER-NOTIFICATIONS-EU
+  s: "When a serious breach is confirmed, consider whether other EU CTR notifications are needed (unexpected events Art. 53, urgent safety measures Art. 54, temporary halt or early termination Art. 38)."
+  p: sponsor
+  a: "Check need for other EU notifications"
+  t: "Serious breach confirmed"
+  d: "per the respective article"
+  f: [R3-055]
+  st: A5
+- k: A5-SNC-ASSESS
+  s: "Assess whether identified noncompliance is serious noncompliance, that is likely to significantly impact participants' rights, safety or well-being or the reliability of trial results, as a decision separate from the iPD classification and from the EU serious breach decision."
+  p: sponsor
+  a: "Assess serious noncompliance"
+  t: "Noncompliance identified"
+  f: [R1-074, R1-075]
+  st: A5
+- k: A5-SNC-NOTIFY
+  s: "Where serious noncompliance is identified, notify the regulatory authority(ies) and/or the IRB/IEC in accordance with applicable regulatory requirements, and/or the investigator, as appropriate."
+  p: sponsor
+  a: "Notify serious noncompliance"
+  t: "Serious noncompliance identified"
+  d: "none stated in E6(R3); regional requirements set time limits"
+  r: "regulatory authority(ies) and/or IRB/IEC; investigator as appropriate"
+  f: [R1-075]
+  st: A5
+- k: A5-IRB-CHANGES-ICH
+  s: "Promptly inform the IRB/IEC and, where applicable, the institution of changes that significantly affect the conduct of the trial or increase the risk to participants."
+  p: investigator
+  a: "Inform IRB/IEC of significant changes"
+  t: "Change significantly affecting conduct or increasing risk"
+  d: "promptly"
+  r: "IRB/IEC; institution where applicable"
+  f: [R1-016, R1-013]
+  st: A5
+  dup: {R1-013: R1-016}
+  v: ["[verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03)", "[verify] duty may lie with investigator or sponsor (A1-2.4.6)"]
+- k: A5-IRB-CHANGES-US
+  s: "Promptly report to the IRB all changes in the research activity."
+  p: investigator
+  a: "Report changes in research activity to IRB"
+  t: "Change in the research activity"
+  d: "promptly (no day count)"
+  r: "IRB"
+  rec: "IRB report"
+  f: [R4-023, R4-011]
+  st: A5
+  v: ["[verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)"]
+- k: A5-IPD-TO-IRB-US
+  s: "Submit important protocol deviations to the IRB when they are identified, following the IRB's written procedures."
+  p: investigator
+  a: "Submit iPD to IRB"
+  t: "Important protocol deviation identified"
+  d: "when identified, where possible"
+  r: "IRB"
+  rec: "IRB submission"
+  f: [R4-072]
+  st: A5
+- k: A5-NON-IPD-TO-IRB-US
+  s: "Deviations not classified as important and posing no apparent immediate hazard need not be reported to the IRB immediately."
+  p: investigator
+  a: "Defer IRB reporting of non-important deviations"
+  t: "Non-important deviation without apparent immediate hazard"
+  d: "not immediately; IRB procedures decide"
+  r: "IRB"
+  f: [R4-074]
+  st: A5
+- k: A5-IRB-ONWARD-US
+  s: "The IRB follows written procedures for prompt reporting to the IRB, appropriate institutional officials and FDA of any instance of serious or continuing noncompliance with FDA regulations or with the IRB's requirements or determinations."
+  p: irb-iec
+  a: "Report serious or continuing noncompliance"
+  t: "Serious or continuing noncompliance determined by the IRB"
+  d: "prompt (no day count)"
+  r: "appropriate institutional officials; FDA"
+  rec: "noncompliance report"
+  f: [R4-028]
+  st: A5
+  v: ["[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1)", "[verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)"]
+- k: A5-PERIODIC-REPORTING
+  s: "Report important and non-important deviations periodically to IRBs/IECs and health authorities wherever their requirements call for it, at the cadence and with the content they set."
+  p: sponsor
+  a: "Report deviations periodically where required"
+  t: "Reporting requirement of an IRB/IEC or authority applies"
+  d: "per recipient requirement"
+  r: "IRBs/IECs; health authorities"
+  f: [R5-037]
+  st: A5
+  v: ["[verify] reporting party not stated in the source (R5-037)"]
+- k: A5-EXPEDITED-ROUTE-BP
+  s: "Route GCP compliance issues that may need expedited reporting to authorities under local requirements (for example serious breaches) through a defined escalation and assessment path to the reporting decision."
+  p: sponsor
+  a: "Escalate potentially reportable GCP issues"
+  t: "GCP issue that may qualify for expedited reporting"
+  d: "per local requirement"
+  r: "regulatory authorities"
+  f: [R5-008]
+  st: A5
+
+# ============================================================ A6 Remediate deviations and noncompliance
+- k: A6-ESCALATE
+  s: "Ensure appropriate and timely escalation and follow-up of issues through a defined escalation process so that appropriate actions can be taken."
+  p: sponsor
+  a: "Escalate issues"
+  t: "Issue requiring escalation"
+  d: "timely"
+  f: [R1-035, R5-061]
+  st: A6
+- k: A6-DECIDE-ESCALATED
+  s: "Decide on the appropriate action for escalated findings and document the decisions and the resolution of actions where needed."
+  p: sponsor
+  a: "Decide action on escalated finding"
+  t: "Finding escalated"
+  rec: "documented decision and resolution"
+  f: [R1-070]
+  st: A6
+- k: A6-PROPORTIONATE
+  s: "Keep the actions taken on deviations, errors or omissions proportionate to their importance, using risk-proportionate mitigation to preserve the integrity of the CtQ factors."
+  p: sponsor
+  a: "Set proportionate remedial actions"
+  t: "Deviation classified"
+  f: [R1-061, R2-026]
+  st: A6
+- k: A6-PREVENT-RECURRENCE
+  s: "Take appropriate action designed to prevent recurrence of detected deviations."
+  p: monitor
+  a: "Act to prevent recurrence"
+  t: "Deviation detected"
+  f: [R1-058]
+  st: A6
+  v: ["[verify] gerund item; Monitor lane inferred (R1 C7)"]
+- k: A6-IPD-FOCUS
+  s: "Highlight important deviations and make them the focus of remediation efforts."
+  p: monitor
+  a: "Prioritise iPDs for remediation"
+  t: "Deviation classified as important"
+  f: [R1-059]
+  st: A6
+  v: ["[verify] gerund item; Monitor lane inferred (R1 C7)"]
+- k: A6-IPD-PROMPT-US
+  s: "Remedy or address important protocol deviations promptly during the trial where possible, to reduce risk to participants and protect data quality."
+  p: sponsor
+  a: "Remedy iPD promptly"
+  t: "Important protocol deviation identified"
+  d: "promptly, during the trial where possible"
+  f: [R4-051]
+  st: A6
+- k: A6-INVESTIGATOR-PREVENT
+  s: "Implement appropriate measures at the site to prevent recurrence of important deviations, where applicable."
+  p: investigator
+  a: "Implement site measures against recurrence"
+  t: "Deviation deemed important"
+  f: [R1-021]
+  st: A6
+- k: A6-SECURE-COMPLIANCE
+  s: "Take appropriate and proportionate action to secure compliance when an investigator/institution or sponsor staff do not comply with the protocol, SOPs, GCP or applicable regulatory requirements."
+  p: sponsor
+  a: "Secure compliance"
+  t: "Noncompliance identified"
+  f: [R1-071]
+  st: A6
+- k: A6-SECURE-COMPLIANCE-US
+  s: "On discovering that an investigator is not complying with the signed agreement, the general investigational plan or the regulations, promptly either secure compliance or stop drug shipments and end the investigator's participation."
+  p: sponsor
+  a: "Secure compliance or end investigator participation"
+  t: "Investigator noncompliance discovered"
+  d: "promptly"
+  r: "investigator"
+  f: [R4-013]
+  st: A6
+- k: A6-RCA
+  s: "Perform a root cause analysis when noncompliance significantly affects, or may significantly affect, participants' rights, safety or well-being or the reliability of trial results."
+  p: sponsor
+  a: "Perform root cause analysis"
+  t: "Significant noncompliance identified"
+  rec: "root cause analysis"
+  f: [R1-072]
+  st: A6
+- k: A6-CAPA
+  s: "Implement appropriate corrective and preventive actions for such noncompliance and confirm their adequacy, unless otherwise justified."
+  p: sponsor
+  a: "Implement and verify CAPA"
+  t: "Root cause established"
+  rec: "CAPA and effectiveness check"
+  f: [R1-073]
+  st: A6
+- k: A6-RCA-US
+  s: "Evaluate significant issues found through monitoring promptly and conduct a root cause analysis for recurrent, similar deviations to decide on actions that prevent recurrence."
+  p: sponsor
+  a: "Analyse root cause of recurrent deviations"
+  t: "Recurrent similar deviations or significant issue"
+  d: "promptly"
+  rec: "root cause analysis"
+  f: [R4-068, R4-095]
+  st: A6
+  v: ["[verify] FDA-PD24 names 'the sponsor or clinical investigator' for the root cause analysis (C-15)"]
+- k: A6-DOCUMENT-RCA-US
+  s: "Document the root cause determination and any further action, such as a CAPA plan, an updated risk assessment and mitigation plan or a protocol amendment."
+  p: sponsor
+  a: "Document root cause and actions"
+  t: "Root cause analysis completed"
+  rec: "RCA documentation; CAPA plan; updated risk assessment"
+  f: [R4-069]
+  st: A6
+- k: A6-CAPA-DECISION-RULE
+  s: "Define the process for deciding when corrective and preventive actions are to be created."
+  p: sponsor
+  a: "Define CAPA decision rule"
+  t: "Issue that may need CAPA"
+  f: [R5-062]
+  st: A6
+- k: A6-CAPA-SB-EU
+  s: "Identify, as part of the serious breach process, a CAPA plan that protects affected subjects or data reliability, considers suspending or terminating the trial or removing affected data from the CSR, prevents recurrence and has timelines proportionate to the breach."
+  p: sponsor
+  a: "Define serious breach CAPA plan"
+  t: "Root cause of serious breach established"
+  d: "CAPA timelines proportionate to the breach"
+  rec: "CAPA plan"
+  f: [R3-068, R3-082]
+  st: A6
+- k: A6-INFORM-SUBJECTS-EU
+  s: "Where a breach compromised subject safety or rights, take proportionate actions, which may include informing the affected subjects."
+  p: sponsor
+  a: "Inform affected subjects where needed"
+  t: "Subject safety or rights compromised"
+  f: [R3-083]
+  st: A6
+- k: A6-CROSS-TRIAL-EU
+  s: "Verify the impact of a serious breach on the other ongoing or ended trials of the party where it occurred."
+  p: other
+  a: "Check impact on other trials"
+  t: "Serious breach confirmed"
+  rec: "cross-trial impact assessment"
+  f: [R3-073]
+  st: A6
+  v: ["[verify] party is the party where the breach occurred (sponsor, CRO or investigator); Sponsor lane by default"]
+- k: A6-SB-FOLLOW-UP-EU
+  s: "Update the serious breach notification and submit follow-up reports through CTIS as investigation and CAPA progress, as projected in the initial report."
+  p: sponsor
+  a: "Submit serious breach follow-up report"
+  t: "New information or CAPA progress"
+  d: "as projected in the initial report (no fixed deadline)"
+  r: "Member States concerned (CTIS)"
+  rec: "follow-up serious breach report"
+  f: [R3-053, R3-092, R3-097]
+  st: A6
+  dup: {R3-092: R3-053}
+- k: A6-CONSIDER-TERMINATION
+  s: "Consider terminating the participation of an investigator/institution or service provider (closing the site) whose significant noncompliance persists despite remediation."
+  p: sponsor
+  a: "Consider terminating site participation"
+  t: "Significant noncompliance persists despite remediation"
+  f: [R1-076, R4-071]
+  st: A6
+- k: A6-NOTIFY-PERSISTENT-NONCOMPLIANCE
+  s: "When significant noncompliance persists and termination is considered, promptly notify the regulatory authority(ies) and the IRB/IEC of the serious noncompliance, as appropriate."
+  p: sponsor
+  a: "Notify persistent serious noncompliance"
+  t: "Persistent significant noncompliance; termination considered"
+  d: "promptly"
+  r: "regulatory authority(ies); IRB/IEC"
+  f: [R1-077]
+  st: A6
+- k: A6-MINIMISE-IMPACT
+  s: "Take action to minimise the impact of persistent noncompliance on trial participants and on the reliability of trial results."
+  p: sponsor
+  a: "Minimise impact of persistent noncompliance"
+  t: "Persistent significant noncompliance"
+  f: [R1-078]
+  st: A6
+- k: A6-NOTIFY-TERMINATION-US
+  s: "When an investigator's participation is ended for noncompliance, require disposition or return of the investigational drug and notify FDA."
+  p: sponsor
+  a: "Notify FDA of investigator termination"
+  t: "Investigator participation ended for noncompliance"
+  r: "FDA; investigator"
+  rec: "notification to FDA"
+  f: [R4-014]
+  st: A6
+- k: A6-REVIEW-RISK-CONTROLS
+  s: "Review the risk controls periodically, taking emerging knowledge and experience into account, and adjust them when new or unanticipated issues arise during the trial."
+  p: sponsor
+  a: "Review and adjust risk controls"
+  t: "New or unanticipated issues; periodic review"
+  d: "periodically"
+  f: [R1-044, R1-005, R2-022, R5-055]
+  st: A6
+- k: A6-REVISE-MONPLAN-US
+  s: "Revise the risk assessment and the monitoring plan when monitoring reveals significant issues or new risks, when the protocol is amended or when the definition of important deviations changes."
+  p: sponsor
+  a: "Revise risk assessment and monitoring plan"
+  t: "Significant issue, new risk, amendment or changed iPD definition"
+  rec: "revised risk assessment and monitoring plan"
+  f: [R4-090, R4-087, R4-095]
+  st: A6
+- k: A6-RETRAINING
+  s: "Updated training or retraining may be provided to address CtQ issues that arise during the study or protocol amendments (best practice: retraining and feedback mechanisms are in place)."
+  p: sponsor
+  a: "Retrain study personnel"
+  t: "CtQ issue or protocol amendment"
+  f: [R2-030, R5-019]
+  st: A6
+- k: A6-COMMUNICATE-ACTIONS-US
+  s: "Document significant issues and the actions taken and communicate them to the relevant parties (sponsor management, sites, IRBs, data monitoring committees, CROs and regulators, including FDA when appropriate)."
+  p: sponsor
+  a: "Communicate significant issues and actions"
+  t: "Significant issue and actions determined"
+  r: "sponsor management; sites; IRBs; DMCs; CROs; regulators incl. FDA when appropriate"
+  rec: "issue documentation"
+  f: [R4-096]
+  st: A6
+- k: A6-SITE-RESOURCES-US
+  s: "A high number of deviations at a site may be treated as a signal that more resources, such as staffing or training, are needed."
+  p: sponsor
+  a: "Assess site resourcing"
+  t: "High deviation count at a site"
+  f: [R4-070]
+  st: A6
+
+# ============================================================ A7 Finalise iPDs for clinical study report
+- k: A7-COMPILE
+  s: "Data finalisation before interim or final analysis may include compiling the protocol deviations and addressing their impact; best practice closes out the deviation process (the living deviation assessment plan) at a company-defined point, recommended after the last study data have been reviewed."
+  p: sponsor
+  a: "Compile and finalise deviations"
+  t: "Data finalisation initiated"
+  d: "before interim or final analysis; best practice: after the last study data have been reviewed"
+  rec: "final deviation list; closed-out PDAP"
+  f: [R1-105, R5-046, R5-042]
+  st: A7
+- k: A7-DOCUMENT-FINALISATION
+  s: "Confirm and document the data finalisation activities in accordance with pre-specified procedures."
+  p: sponsor
+  a: "Document data finalisation"
+  t: "Data finalisation activities completed"
+  rec: "data finalisation documentation"
+  f: [R1-104]
+  st: A7
+- k: A7-BLIND-REVIEW
+  s: "Review the handling of protocol violations in the blind review before the blind is broken, identify any needed change to how the analysis deals with them, and resolve irregularities that the protocol deferred to this review."
+  p: sponsor
+  a: "Conduct blind review of deviations"
+  t: "Trial completed, blind not yet broken"
+  d: "before breaking the blind"
+  f: [R2-079, R2-085, R2-096]
+  st: A7
+- k: A7-PP-EXCLUSIONS
+  s: "Define fully and document the precise reasons for excluding subjects from the per protocol set before the blind is broken."
+  p: sponsor
+  a: "Document per protocol exclusions"
+  t: "Analysis preparation"
+  d: "before breaking the blind"
+  rec: "documented per protocol exclusion reasons"
+  f: [R2-087, R2-086]
+  st: A7
+- k: A7-FAS-EXCLUSIONS
+  s: "Exclude randomised subjects from the full analysis set only in limited, justified circumstances (for example failure of major entry criteria under objective, equal-scrutiny conditions) and otherwise keep the data of subjects with post-randomisation violations."
+  p: sponsor
+  a: "Restrict full analysis set exclusions"
+  t: "Analysis set definition"
+  f: [R2-082, R2-083, R2-084]
+  st: A7
+- k: A7-DETERMINE-SETS
+  s: "Determine and document the analysis sets in accordance with the planned statistical analysis, using important deviations as one input to the per protocol exclusions."
+  p: sponsor
+  a: "Determine analysis sets"
+  t: "Deviation list final"
+  rec: "analysis set decisions"
+  f: [R1-106, R5-035]
+  st: A7
+- k: A7-CHARACTERISE-IPD
+  s: "Each important protocol deviation may be characterised by when it occurred, its cause and its influence on the trial result (ICH E9: desirable); best practice assesses its impact on the analysis sets defined in the statistical analysis plan."
+  p: sponsor
+  a: "Characterise impact of each iPD"
+  t: "Important deviation confirmed"
+  rec: "impact assessment"
+  f: [R2-080, R5-047]
+  st: A7
+- k: A7-EFFECT-MAIN-ANALYSES
+  s: "Consider carefully the effect of major protocol violations, losses of subjects or data and treatment withdrawals on the main analyses."
+  p: sponsor
+  a: "Assess effect on main analyses"
+  t: "Analysis and reporting"
+  f: [R2-093]
+  st: A7
+- k: A7-PATTERN-ACROSS-GROUPS
+  s: "The pattern of protocol violations across treatment groups may be assessed by frequency and time of occurrence (ICH E9: good practice)."
+  p: sponsor
+  a: "Compare deviation patterns across groups"
+  t: "Protocol violations summarised"
+  f: [R2-089]
+  st: A7
+- k: A7-SUMMARISE-OTHER-VIOLATIONS
+  s: "Identify fully and summarise the protocol violations other than those used to define the per protocol set (for example treatment assignment errors, excluded medication, poor compliance, loss to follow-up, missing data)."
+  p: sponsor
+  a: "Summarise other protocol violations"
+  t: "Analysis preparation"
+  f: [R2-088]
+  st: A7
+- k: A7-DOCUMENT-EXCLUSION-REASONS
+  s: "Document all reasons for excluding subjects or data from any analysis, including the reasons for exclusion from the per protocol set."
+  p: sponsor
+  a: "Document exclusion reasons"
+  t: "Subject or data excluded from an analysis"
+  rec: "exclusion reasons"
+  f: [R2-092]
+  st: A7
+- k: A7-DEVIATION-VS-INTERCURRENT
+  s: "Keep protocol deviations distinct from intercurrent events when assessing analysis impact, and address events that affect the interpretation of measurements in the estimand rather than through per protocol exclusion alone."
+  p: sponsor
+  a: "Separate deviations from intercurrent events"
+  t: "Analysis impact assessment"
+  f: [R2-097, R2-106, R2-107]
+  st: A7
+- k: A7-CSR-DESCRIBE-IPD
+  s: "Describe in the CSR all important deviations related to inclusion or exclusion criteria, conduct of the study, patient management or patient assessment, with a study-specific summary and a discussion of their impact, also where they are not serious breaches."
+  p: sponsor
+  a: "Describe iPDs in CSR section 10.2"
+  t: "Clinical study report preparation"
+  rec: "CSR section 10.2"
+  f: [R2-055, R2-072, R5-036, R5-038, R3-064]
+  st: A7
+  dup: {R2-072: R2-055}
+- k: A7-CSR-SUMMARY-BY-CENTRE
+  s: "Summarise protocol deviations in the CSR body by centre and grouped into categories."
+  p: sponsor
+  a: "Summarise deviations by centre and category"
+  t: "Clinical study report preparation"
+  rec: "CSR section 10.2"
+  f: [R2-056, R5-040]
+  st: A7
+- k: A7-CSR-LISTING
+  s: "List the individual patients with these protocol deviations in CSR appendix 16.2.2, broken down by centre for multicentre studies."
+  p: sponsor
+  a: "List patients with deviations in appendix 16.2.2"
+  t: "Clinical study report preparation"
+  rec: "CSR appendix 16.2.2"
+  f: [R2-058, R2-063]
+  st: A7
+- k: A7-CSR-US
+  s: "Discuss important protocol deviations in the body of CSRs submitted in an NDA or BLA and list all participants with important deviations by unique subject identifier, organised by site."
+  p: sponsor
+  a: "Report iPDs in CSR for NDA/BLA"
+  t: "CSR prepared for NDA/BLA"
+  d: "with the marketing application"
+  r: "FDA"
+  rec: "CSR body; appendix patient data listing"
+  f: [R4-055, R4-056]
+  st: A7
+- k: A7-CSR-CONDUCT-VS-PROTOCOL
+  s: "Identify in the CSR how the study as conducted differed from the protocol and discuss the statistical methods used to account for these deviations."
+  p: sponsor
+  a: "Report conduct differences from protocol"
+  t: "Clinical study report preparation"
+  rec: "CSR"
+  f: [R2-052]
+  st: A7
+- k: A7-CSR-FREQUENCY
+  s: "Document in the CSR the frequency and type of protocol violations, missing values and other problems, with their possible influence on the results."
+  p: sponsor
+  a: "Report frequency and type of violations"
+  t: "Clinical study report preparation"
+  rec: "CSR"
+  f: [R2-081]
+  st: A7
+- k: A7-CSR-SEVERE-VIOLATIONS
+  s: "Identify and describe the subjects lost to follow-up, withdrawn from treatment or with a severe protocol violation, with the reasons and their relationship to treatment and outcome."
+  p: sponsor
+  a: "Describe subjects with severe violations"
+  t: "Clinical study report preparation"
+  rec: "CSR"
+  f: [R2-094]
+  st: A7
+- k: A7-CSR-EXCLUSION-LISTING
+  s: "Provide a listing of all patients, visits and observations excluded from the efficacy analysis (appendix 16.2.3) and analyse the reasons for exclusion over time."
+  p: sponsor
+  a: "List and analyse efficacy exclusions"
+  t: "Clinical study report preparation"
+  rec: "CSR appendix 16.2.3; section 11.1"
+  f: [R2-060, R2-061]
+  st: A7
+- k: A7-CSR-EXCLUSION-TIMING
+  s: "Explain in the CSR when, relative to unblinding, and how the analysis exclusion rules were developed, and distinguish decisions taken in the blind review from decisions taken after unblinding."
+  p: sponsor
+  a: "Report timing of exclusion decisions"
+  t: "Clinical study report preparation"
+  rec: "CSR section 11.1"
+  f: [R2-059, R2-091]
+  st: A7
+- k: A7-CSR-EXCLUSION-EFFECT
+  s: "Where patients with available data are dropped from an efficacy subset (for example for poor compliance, missed visits or ineligibility), examine the effect on the results and discuss differences arising from the choice of population."
+  p: sponsor
+  a: "Discuss effect of efficacy exclusions"
+  t: "Patients dropped from an efficacy subset"
+  rec: "CSR section 11.4.2.6"
+  f: [R2-062]
+  st: A7
+- k: A7-CSR-EXCLUSION-COUNT
+  s: "Show in the CSR the number of participants whose important deviations led to exclusion of some or all of their data from some or all analyses."
+  p: sponsor
+  a: "Report participants excluded due to iPDs"
+  t: "Clinical study report preparation"
+  rec: "CSR section 10.2"
+  f: [R5-039]
+  st: A7
+- k: A7-CSR-CHANGED-EXAMPLES
+  s: "Describe clearly for the reviewer any substantial additions to, or changes of, the ICH E3 examples of important deviations."
+  p: sponsor
+  a: "Explain changes to E3 iPD examples"
+  t: "E3 examples substantially changed"
+  r: "the reviewer"
+  rec: "CSR"
+  f: [R2-075]
+  st: A7
+- k: A7-CSR-DISPOSITION-LABEL
+  s: "Sponsors may replace 'protocol violation' with 'protocol deviation' as the withdrawal reason in the subject disposition flowchart (encouraged by the E3 Q&A), or use another descriptor consistent with the stated definition."
+  p: sponsor
+  a: "Label disposition reason as protocol deviation"
+  t: "Clinical study report preparation"
+  rec: "CSR disposition flowchart"
+  f: [R2-071, R2-064, R2-070]
+  st: A7
+- k: A7-CSR-GCP-ISSUES
+  s: "GCP issues may be described in a separate CSR section, with the important deviation section pointing to the participants affected by them."
+  p: sponsor
+  a: "Cross-reference GCP issues in CSR"
+  t: "Important deviation caused by a GCP issue"
+  rec: "CSR"
+  f: [R5-041]
+  st: A7
+- k: A7-CSR-SERIOUS-BREACHES-EU
+  s: "Include all serious breaches in the corresponding CSR."
+  p: sponsor
+  a: "Report serious breaches in CSR"
+  t: "Clinical study report preparation"
+  rec: "CSR"
+  f: [R3-063]
+  st: A7
+- k: A7-CSR-QM-APPROACH
+  s: "Describe in the CSR the quality management approach implemented in the trial."
+  p: sponsor
+  a: "Describe quality management approach in CSR"
+  t: "Clinical study report preparation"
+  rec: "CSR"
+  f: [R1-037, R5-053]
+  st: A7
+- k: A7-CSR-QUALITY-ISSUES
+  s: "Summarise and report in the CSR the important quality issues, including exceedances of acceptable ranges, and the remedial actions taken."
+  p: sponsor
+  a: "Report important quality issues in CSR"
+  t: "Clinical study report preparation"
+  rec: "CSR"
+  f: [R1-045, R5-053]
+  st: A7
+- k: A7-CSR-CTQ
+  s: "Describe the CtQ factors of the study in the study report."
+  p: sponsor
+  a: "Describe CtQ factors in CSR"
+  t: "Clinical study report preparation"
+  rec: "study report"
+  f: [R2-032]
+  st: A7
+- k: A7-CSR-PREPARE
+  s: "Ensure that clinical trial reports are prepared and provided to regulatory authorities as required and meet ICH E3 standards, covering every E3 topic or stating why it is omitted."
+  p: sponsor
+  a: "Prepare clinical study report"
+  t: "Trial completed, terminated or interim-analysed"
+  r: "regulatory authority(ies)"
+  rec: "clinical study report (CSR)"
+  f: [R1-100, R2-065]
+  st: A7
+- k: A7-DV-DOMAIN-US
+  s: "Report all protocol deviations in the SDTM protocol deviation (DV) domain of the study data submitted to FDA."
+  p: sponsor
+  a: "Provide deviations in SDTM DV dataset"
+  t: "Study data submission"
+  d: "with the study data submission"
+  r: "FDA"
+  rec: "SDTM DV dataset"
+  f: [R5-069, R4-057, R5-068]
+  st: A7
+- k: A7-DV-IMPORTANCE-US
+  s: "Include in the DV domain a variable that records the sponsor's determination of whether each deviation is important."
+  p: sponsor
+  a: "Flag importance in DV dataset"
+  t: "Study data submission"
+  d: "with the study data submission"
+  r: "FDA"
+  rec: "SDTM DV dataset (importance variable)"
+  f: [R4-058, R5-067]
+  st: A7
+  v: ["[verify] DVCLASI is in the SDTMIG v4.0 public review draft only (R5-067)"]
+- k: A7-DV-VARIABLES-US
+  s: "Populate in the DV domain, besides the required variables, DVSPID, DVTERM, DVDECOD, DVCAT, DVSCAT, DVSTDTC, DVENDTC and EPOCH."
+  p: sponsor
+  a: "Populate DV variables"
+  t: "DV data submitted to FDA"
+  d: "with the study data submission"
+  r: "FDA"
+  rec: "SDTM DV dataset"
+  f: [R5-070]
+  st: A7
+
+# ============================================================ A8 Archive deviation records
+- k: A8-RETAIN-DEVIATION-RECORDS
+  s: "Retain the records and reports of noncompliance, including protocol deviations and corrective and preventive actions, as essential records when they are produced."
+  p: sponsor
+  a: "Retain deviation and CAPA records"
+  t: "Records produced"
+  d: "retention period per applicable regulatory requirements"
+  rec: "deviation and noncompliance records; CAPA records"
+  f: [R1-123, R1-120, R1-122, R1-136]
+  st: A8
+  v: ["[verify] duty of 'sponsor and investigator/institution'; applies in both pools"]
+- k: A8-RETAIN-RELATED-RECORDS
+  s: "Retain the related essential records: monitoring reports, data finalisation documentation, analysis set decisions, protocol amendments with authority and IRB/IEC submissions and decisions, compliance documentation and interim and final clinical trial reports."
+  p: sponsor
+  a: "Retain related essential records"
+  t: "Records produced"
+  d: "retention period per applicable regulatory requirements"
+  rec: "essential records (Appendix C)"
+  f: [R1-124, R1-125, R1-126, R1-128, R1-129, R1-119, R1-121]
+  st: A8
+- k: A8-RETAIN-SPONSOR-RECORDS
+  s: "Retain the sponsor-specific essential records securely for the required period in accordance with applicable regulatory requirements and make them available on request to regulatory authorities, monitors, auditors and IRBs/IECs."
+  p: sponsor
+  a: "Retain sponsor essential records"
+  t: "Trial records produced"
+  d: "per applicable regulatory requirements"
+  rec: "sponsor-specific essential records"
+  f: [R1-085, R1-008]
+  st: A8
+- k: A8-RETAIN-INVESTIGATOR-RECORDS
+  s: "Keep control of the essential records the investigator/institution generates and retain them for the longest of the required period or until the sponsor says they are no longer needed, protecting availability and readability and preventing premature destruction."
+  p: investigator
+  a: "Retain investigator essential records"
+  t: "Trial records generated at site"
+  d: "longest of the required period or sponsor notice"
+  rec: "investigator/institution essential records"
+  f: [R1-027, R1-028, R1-115]
+  st: A8
+- k: A8-ACCESSIBLE-RECORDS
+  s: "Keep essential records complete, readable, readily available and directly accessible on request by regulatory authorities, monitors and auditors, with traceable alterations."
+  p: sponsor
+  a: "Keep records accessible"
+  t: "Retention period"
+  rec: "essential records"
+  f: [R1-118]
+  st: A8
+- k: A8-ARCHIVE-DATA
+  s: "Archive trial data and relevant metadata so that they remain retrievable, readable and protected from unauthorised access and alteration throughout the retention period."
+  p: sponsor
+  a: "Archive trial data and metadata"
+  t: "Trial data finalised"
+  d: "throughout the retention period"
+  rec: "archived data and metadata"
+  f: [R1-107]
+  st: A8
+- k: A8-ARCHIVE-25Y-SPONSOR-EU
+  s: "Archive the content of the clinical trial master file for at least 25 years after the end of the trial (last visit of the last subject or a later protocol-defined point), unless other Union law requires longer."
+  p: sponsor
+  a: "Archive sponsor master file for 25 years"
+  t: "End of the clinical trial"
+  d: "at least 25 years after the end of the trial"
+  rec: "archived clinical trial master file (sponsor)"
+  f: [R3-035, R3-008]
+  st: A8
+- k: A8-ARCHIVE-25Y-INVESTIGATOR-EU
+  s: "Archive the content of the investigator's clinical trial master file for at least 25 years after the end of the trial, unless other Union law requires longer."
+  p: investigator
+  a: "Archive investigator master file for 25 years"
+  t: "End of the clinical trial"
+  d: "at least 25 years after the end of the trial"
+  rec: "archived clinical trial master file (investigator)"
+  f: [R3-036]
+  st: A8
+- k: A8-ARCHIVE-ACCESS-EU
+  s: "Archive the master file content so that it is readily available and accessible to the competent authorities on request, on media that keep it complete and legible for the whole period."
+  p: sponsor
+  a: "Keep archive accessible to authorities"
+  t: "Archiving period"
+  d: "for the archiving period"
+  r: "competent authorities (on request)"
+  rec: "archived clinical trial master file"
+  f: [R3-037]
+  st: A8
+- k: A8-ARCHIVE-RESPONSIBLE-EU
+  s: "Appoint individuals within the sponsor organisation who are responsible for archives and restrict archive access to them."
+  p: sponsor
+  a: "Appoint archive responsible persons"
+  t: "Archiving set-up"
+  rec: "archive responsibility assignment"
+  f: [R3-038]
+  st: A8
+- k: A8-ARCHIVE-TRACEABILITY-EU
+  s: "Keep any alteration of the master file content traceable and document any transfer of ownership of the content."
+  p: sponsor
+  a: "Trace changes to archived master file"
+  t: "Change or transfer of master file content"
+  rec: "audit trail of master file changes"
+  f: [R3-039]
+  st: A8
+- k: A8-RETAIN-2Y-INVESTIGATOR-US
+  s: "Retain the investigator records for 2 years after a marketing application is approved for the indication investigated, or for 2 years after the investigation is discontinued and FDA is notified."
+  p: investigator
+  a: "Retain investigator records for 2 years"
+  t: "Approval for the indication, or discontinuation with FDA notified"
+  d: "2 years after approval, or 2 years after discontinuation and FDA notification"
+  rec: "investigator records (21 CFR 312.62)"
+  f: [R4-021]
+  st: A8
+- k: A8-CLOSE-OUT-ARCHIVE
+  s: "At close-out, summarise the important deviations, include them in the CSR and archive them, and archive the non-important deviations in a validated repository so that they remain available for later reviews and deviation datasets."
+  p: sponsor
+  a: "Archive important and non-important deviations"
+  t: "Study close-out"
+  rec: "validated repository; SDTM deviation dataset"
+  f: [R5-042, R5-043]
+  st: A8
+- k: A8-FILE-PDAP
+  s: "File the deviation assessment plan with the other records of protocol-related decisions."
+  p: sponsor
+  a: "File deviation assessment plan"
+  t: "PDAP version approved"
+  rec: "PDAP"
+  f: [R5-033]
+  st: A8
+- k: A8-LESSONS-LEARNED
+  s: "Hold a lessons-learned session at close-out and consider protocol-level important deviations for reuse in organisation-level definitions, which are reviewed periodically per therapeutic area for consistency."
+  p: sponsor
+  a: "Capture deviation lessons learned"
+  t: "Study close-out"
+  rec: "lessons learned record; organisation-level iPD definitions"
+  f: [R5-045, R5-044, R5-006]
+  st: A8
+
+# ============================================================ Interfaces (placeholders at the named step)
+- k: INT-CTQ-IDENTIFY
+  s: "Identify the CtQ factors prospectively as part of quality by design, prioritised and free of minor issues."
+  p: sponsor
+  a: "Identify CtQ factors"
+  t: "Study design and planning"
+  f: [R1-002, R1-091, R1-030, R1-036, R2-001, R2-002, R2-003, R2-004, R2-005, R2-006, R2-012, R2-013, R2-025, R5-048]
+  st: "INT:A1"
+  why: "Upstream of the process boundary (D3): its output is the A1 start event 'CtQ factors identified'. Placeholder 'Quality by design and protocol development'."
+- k: INT-CTQ-CONSIDERATIONS
+  s: "Consider the listed CtQ aspects (stakeholder engagement, prerequisite studies, objectives, design, participant protection, information to participants, feasibility, sample size and visits, eligibility, data needs, endpoints, bias control, statistical plan, systems, monitoring, data monitoring committee, results reporting) during study planning."
+  p: sponsor
+  a: "Consider CtQ aspects in study planning"
+  t: "Study planning"
+  f: [R2-033, R2-034, R2-035, R2-036, R2-037, R2-038, R2-039, R2-041, R2-042, R2-043, R2-044, R2-045, R2-046, R2-047, R2-048, R2-049, R2-050, R2-051]
+  st: "INT:A1"
+  why: "Upstream CtQ identification (quality by design), before the A1 start event (D3)."
+- k: INT-PROTOCOL-DESIGN
+  s: "Design proportionate, operationally feasible protocols, plans and data collection without unnecessary complexity, focused on the activities and data essential to reliable results and participant protection."
+  p: sponsor
+  a: "Design feasible protocol"
+  t: "Protocol design"
+  f: [R1-004, R1-006, R1-007, R1-096, R1-088, R2-014, R2-015, R2-016, R2-017, R2-018, R2-023, R2-024, R5-056]
+  st: "INT:A1"
+  why: "General protocol design (quality by design), upstream of D3; A1 carries only the deviation-specific design measures (protocol flexibility, deviation handling text)."
+- k: INT-STAKEHOLDER-INPUT
+  s: "Patients, investigators and site staff may contribute to protocol design so that procedures are feasible and not unduly burdensome, and early engagement with regulators is encouraged for novel critical elements."
+  p: sponsor
+  a: "Obtain stakeholder input on protocol"
+  t: "Protocol development"
+  f: [R2-020, R2-021, R5-057, R4-063]
+  st: "INT:A1"
+  why: "Protocol development activity upstream of D3."
+- k: INT-PROTOCOL-TEMPLATE
+  s: "Author the protocol with the ICH M11 Template, keeping the required level 1 and 2 headings and removing instructional text."
+  p: sponsor
+  a: "Use M11 protocol template"
+  t: "Protocol authoring"
+  f: [R2-111, R2-112]
+  st: "INT:A1"
+  why: "Protocol authoring format; the deviation-relevant M11 sections (5.1, 6.8, 10.2, 11.6, 11.10) are carried by A1/A3 REQs."
+- k: INT-QUALITY-ASSURANCE
+  s: "Apply risk-based quality assurance throughout the trial to identify potential or actual causes of serious noncompliance and enable corrective and preventive actions."
+  p: sponsor
+  a: "Perform risk-based quality assurance"
+  t: "Throughout the trial"
+  f: [R1-046]
+  st: "INT:A6"
+  why: "Quality assurance and audit process; its findings enter A4/A5 as potential deviations or noncompliance and its CAPA requests A6."
+- k: INT-METADATA-REVIEW
+  s: "For data of higher criticality, evaluate system metadata so that entries and changes are documented with reasons, audit trails are not disabled, and the metadata to review and retain are defined."
+  p: sponsor
+  a: "Configure audit trail and metadata review"
+  t: "Computerised system set-up"
+  f: [R1-101]
+  st: "INT:A2"
+  why: "Data governance and computerised systems process; A2 uses its outputs for audit trail review."
+- k: INT-DATA-CORRECTION
+  s: "Maintain processes to correct data errors that could affect reliability, with attributed, justified and timely corrections supported by source records."
+  p: sponsor
+  a: "Correct data errors"
+  t: "Data error found"
+  f: [R1-103]
+  st: "INT:A4"
+  why: "Data management process; a corrected transcription error can remove a deviation during reconciliation (A4)."
+- k: INT-SYSTEM-VALIDATION
+  s: "Keep computerised systems in a validated state with a risk-based validation approach."
+  p: sponsor
+  a: "Validate computerised systems"
+  t: "Computerised system life cycle"
+  f: [R1-108]
+  st: "INT:A4"
+  why: "Computerised systems process; A4 requires a validated deviation repository."
+- k: INT-DATA-INCIDENTS
+  s: "Have procedures for reporting incidents, including security breaches, with significant impact on trial data to relevant parties, including regulatory authorities."
+  p: sponsor
+  a: "Report data incidents"
+  t: "Data incident with significant impact"
+  f: [R1-082]
+  st: "INT:A5"
+  why: "Data security incident process; an incident that is also serious noncompliance or a serious breach enters A5."
+- k: INT-SERVICE-PROVIDERS
+  s: "Service providers and delegated parties report incidents and suspected serious breaches to the sponsor under a written process and keep the sponsor informed of the breaches they manage."
+  p: other
+  a: "Report incidents to sponsor (service provider)"
+  t: "Incident or suspected serious breach observed by a service provider"
+  f: [R1-099, R3-046, R3-069, R3-070]
+  st: "INT:A4"
+  why: "Service providers and delegated parties are not modelled as pools (D1); their reports enter A4/A5 as potential deviations. No pool: orchestrator default, not contested (06 Nov 2026)."
+- k: INT-SAE-REPORTING-EU
+  s: "The investigator reports serious adverse events to the sponsor within 24 hours of knowledge (EU CTR Art. 41(2))."
+  p: investigator
+  a: "Report SAE to sponsor"
+  t: "SAE known to the investigator"
+  f: [R3-015]
+  st: "INT:A2"
+  why: "Safety reporting process; a deviation that causes an SAE triggers both processes."
+- k: INT-UNEXPECTED-EVENTS-EU
+  s: "Notify unexpected events affecting the benefit-risk balance (not SUSARs) to the Member States concerned within 15 days of awareness (EU CTR Art. 53(1))."
+  p: sponsor
+  a: "Notify unexpected event"
+  t: "Unexpected event affecting benefit-risk"
+  f: [R3-025]
+  st: "INT:A5"
+  why: "Safety notification process; A5 checks whether it is needed alongside a serious breach (EMA-SB S4)."
+- k: INT-TEMPORARY-HALT-EU
+  s: "Notify a temporary halt or early termination for reasons of a changed benefit-risk balance without undue delay and not later than 15 days from the date of the halt or termination (EU CTR Art. 38(1))."
+  p: sponsor
+  a: "Notify temporary halt or early termination"
+  t: "Temporary halt or early termination for subject safety"
+  f: [R3-013]
+  st: "INT:A5"
+  why: "Trial status / safety process; A5 and A6 hand off to it when a breach leads to halting the trial."
+- k: INT-USM-TAKE-SPONSOR-EU
+  s: "The sponsor takes appropriate urgent safety measures when an unexpected event is likely to seriously affect the benefit-risk balance (EU CTR Art. 54(1))."
+  p: sponsor
+  a: "Take urgent safety measures"
+  t: "Unexpected event likely to seriously affect benefit-risk"
+  f: [R3-027]
+  st: "INT:A3"
+  why: "Urgent safety measure process (EU CTR Art. 54) is triggered by an unexpected event, not by a deviation as such; A3 hands off when an immediate-hazard action qualifies as a USM. Interface confirmed: decided by user 06 Nov 2026 (C-08)."
+- k: INT-USM-TAKE-INVESTIGATOR-EU
+  s: "The investigator takes appropriate urgent safety measures when an unexpected event is likely to seriously affect the benefit-risk balance (EU CTR Art. 54(1))."
+  p: investigator
+  a: "Take urgent safety measures (investigator)"
+  t: "Unexpected event likely to seriously affect benefit-risk"
+  f: [R3-028]
+  st: "INT:A3"
+  why: "As for the sponsor USM duty; interface decided by user 06 Nov 2026 (C-08)."
+- k: INT-USM-NOTIFY-EU
+  s: "Notify the event and the urgent safety measures taken to the Member States concerned within 7 days of the measures, using a single notification where a temporary halt accompanies them (EU CTR Art. 54(2); Q&A 10.1, 10.9, 7.27)."
+  p: sponsor
+  a: "Notify urgent safety measures"
+  t: "Urgent safety measures taken"
+  f: [R3-029, R3-100, R3-101, R3-102, R3-104]
+  st: "INT:A3"
+  why: "USM notification process; interface placeholder after A3, decided by user 06 Nov 2026 (C-08)."
+- k: INT-USM-AMENDMENT-EU
+  s: "Follow an urgent safety measure that requires a protocol update with a substantial modification; Art. 54 does not replace Chapters III and VII."
+  p: sponsor
+  a: "Submit substantial modification after USM"
+  t: "USM requiring protocol update"
+  f: [R3-030, R3-103]
+  st: "INT:A3"
+  why: "Substantial modification process (EU CTR Chapter III)."
+- k: INT-AMENDMENT-US
+  s: "Amend the IND so that investigations follow the protocols, submitting a protocol amendment before implementation for changes that significantly affect safety, scope or scientific quality, and implementing such changes only after FDA submission and IRB approval."
+  p: sponsor
+  a: "Submit IND protocol amendment"
+  t: "Protocol change needed"
+  f: [R4-001, R4-002, R4-003, R4-006]
+  st: "INT:A6"
+  why: "Protocol amendment process (21 CFR 312.30); placeholder after A3 and A6 when an amendment is the corrective action."
+- k: INT-AMENDMENT-ICH
+  s: "Explain the rationale of a necessary protocol amendment and consider its impact on study conduct."
+  p: sponsor
+  a: "Justify protocol amendment"
+  t: "Protocol amendment needed"
+  f: [R2-028]
+  st: "INT:A6"
+  why: "Protocol amendment process."
+- k: INT-RESTART-EU
+  s: "Treat the restart of a trial after a temporary halt for safety as a substantial modification (EU CTR Art. 38(2))."
+  p: sponsor
+  a: "Apply for restart after halt"
+  t: "Restart of halted trial"
+  f: [R3-014]
+  st: "INT:A6"
+  why: "Substantial modification process."
+- k: INT-NEW-RISK-US
+  s: "Promptly inform FDA and all participating investigators of significant new adverse effects or risks of the drug (21 CFR 312.50)."
+  p: sponsor
+  a: "Inform FDA and investigators of new risks"
+  t: "Significant new adverse effect or risk"
+  f: [R4-009]
+  st: "INT:A5"
+  why: "Safety reporting process; a deviation can reveal such a risk."
+- k: INT-SAFETY-EVALUATION-US
+  s: "Review and evaluate safety and effectiveness evidence as obtained and report it through IND safety and annual reports (21 CFR 312.56(c))."
+  p: sponsor
+  a: "Evaluate safety and effectiveness evidence"
+  t: "Evidence received from investigators"
+  f: [R4-015]
+  st: "INT:A5"
+  why: "Safety and IND reporting process (21 CFR 312.32/312.33, not extracted)."
+- k: INT-DISCONTINUE-US
+  s: "Discontinue investigations that present an unreasonable and significant risk as soon as possible and no later than 5 working days after the determination, and notify FDA, all IRBs and all investigators of the discontinuance (21 CFR 312.56(d))."
+  p: sponsor
+  a: "Discontinue investigation for risk"
+  t: "Unreasonable and significant risk determined"
+  f: [R4-016]
+  st: "INT:A6"
+  why: "Trial discontinuation / safety process."
+- k: INT-UNANTICIPATED-PROBLEMS-INVESTIGATOR-US
+  s: "Promptly report to the IRB all unanticipated problems involving risks to subjects or others (21 CFR 312.66)."
+  p: investigator
+  a: "Report unanticipated problem to IRB"
+  t: "Unanticipated problem involving risks"
+  f: [R4-023]
+  st: "INT:A5"
+  why: "Unanticipated problem reporting process (safety); the change-reporting part of 312.66 is in A5."
+- k: INT-UNANTICIPATED-PROBLEMS-IRB-US
+  s: "The IRB follows written procedures for prompt reporting of unanticipated problems to institutional officials and FDA (21 CFR 56.108(b)(1))."
+  p: irb-iec
+  a: "Report unanticipated problems onward"
+  t: "Unanticipated problem reported"
+  f: [R4-027]
+  st: "INT:A5"
+  why: "Unanticipated problem reporting process (safety)."
+- k: INT-IND-SAFETY-REPORT-US
+  s: "State in IND safety reports when a protocol deviation contributed to the reported event."
+  p: sponsor
+  a: "Note contributing deviation in IND safety report"
+  t: "Deviation contributed to a reportable safety event"
+  f: [R4-059]
+  st: "INT:A5"
+  why: "IND safety reporting process (21 CFR 312.32); A5 hands the deviation information to it."
+- k: INT-IRB-SUSPENSION-US
+  s: "The IRB follows written procedures for prompt reporting of any suspension or termination of IRB approval to institutional officials and FDA (21 CFR 56.108(b)(3))."
+  p: irb-iec
+  a: "Report suspension of IRB approval"
+  t: "IRB approval suspended or terminated"
+  f: [R4-029]
+  st: "INT:A5"
+  why: "IRB/IEC approval process inside the collapsed IRB/IEC pool."
+- k: INT-AUTHORITY-ASSESSMENT-EU
+  s: "Member States assess serious breach and urgent safety measure notifications in CTIS (ad hoc assessment) and publish them after assessment."
+  p: authority
+  a: "Assess notification (authority)"
+  t: "Notification received"
+  f: [R3-077, R3-094, R3-095, R3-096]
+  st: "INT:A5"
+  why: "Authority-side process inside the collapsed Regulatory authority pool."
+- k: INT-AUTHORITY-RFI-EU
+  s: "Answer Member State requests for information on a notification by the set deadline and withdraw a serious breach notification only on Member State request."
+  p: sponsor
+  a: "Respond to authority request for information"
+  t: "RFI received in CTIS"
+  f: [R3-093, R3-106]
+  st: "INT:A5"
+  why: "Authority-initiated interaction after notification (CTIS RFI); placeholder after A5 because it starts with an incoming request (SCP-02 single trigger)."
+- k: INT-CORRECTIVE-MEASURE-AUTHORITY-EU
+  s: "A Member State with justified grounds may revoke the authorisation, suspend the trial or require the sponsor to modify it (EU CTR Art. 77(1))."
+  p: authority
+  a: "Impose corrective measure (authority)"
+  t: "Justified grounds that requirements are no longer met"
+  f: [R3-040]
+  st: "INT:A5"
+  why: "Authority corrective measure procedure (collapsed pool)."
+- k: INT-CORRECTIVE-MEASURE-OPINION-EU
+  s: "Give the Member State an opinion within seven days on an intended corrective measure, except where immediate action is required (EU CTR Art. 77(2))."
+  p: sponsor
+  a: "Give opinion on corrective measure"
+  t: "Member State request for opinion"
+  f: [R3-041, R3-078]
+  st: "INT:A5"
+  why: "Authority-initiated corrective measure procedure; starts with an incoming request (SCP-02)."
+  dup: {R3-078: R3-041}
+- k: INT-CSR-SUBMISSION-EU
+  s: "Submit the CSR to the EU database within 30 days after the marketing authorisation is granted, the procedure is completed or the application is withdrawn (EU CTR Art. 37(4))."
+  p: other
+  a: "Submit CSR to EU database"
+  t: "Marketing authorisation procedure concluded"
+  f: [R3-012]
+  st: "INT:A7"
+  why: "CSR submission / results process after the end of A7; party is the marketing authorisation applicant."
+- k: INT-ESTUDY-US
+  s: "Use the FDA-supported data standards (SDTM and CDISC controlled terminology) for study data in NDA, ANDA, certain BLA and certain IND submissions."
+  p: sponsor
+  a: "Submit standardised study data"
+  t: "Regulatory submission with study data"
+  f: [R5-071]
+  st: "INT:A7"
+  why: "Electronic submission process; A7 supplies the DV dataset to it."
+- k: INT-SENSITIVITY-ANALYSIS
+  s: "Plan analyses of both the full analysis set and the per protocol set in confirmatory trials and show that the main results are not sensitive to the choice of analysed subjects."
+  p: sponsor
+  a: "Plan sensitivity to analysis set"
+  t: "Confirmatory trial analysis planning"
+  f: [R2-090]
+  st: "INT:A7"
+  why: "Statistical analysis process (ICH E9)."
+- k: INT-INTEGRATED-SUMMARIES
+  s: "Keep the handling of protocol violators and deviators compatible across trials when summarising the clinical database."
+  p: sponsor
+  a: "Harmonise deviation handling across trials"
+  t: "Summary across trials"
+  f: [R2-095]
+  st: "INT:A7"
+  why: "Integrated summaries for the marketing application, after A7."
+- k: INT-ESTIMAND-DATA
+  s: "Collect the data needed for the estimands, including after intercurrent events, record the reason, magnitude and timing of relevant intercurrent events, plan to collect reasons for missing data and take measures to retain subjects."
+  p: sponsor
+  a: "Collect estimand-relevant data"
+  t: "Trial planning and conduct"
+  f: [R2-100, R2-103, R2-104, R2-105]
+  st: "INT:A7"
+  why: "Estimand framework (ICH E9(R1)); intercurrent events are not protocol deviations."
+- k: INT-INTERCURRENT-REPORTING
+  s: "Report the number and timing of intercurrent events per group and discuss analysis choices for unforeseen intercurrent events in the clinical trial report."
+  p: sponsor
+  a: "Report intercurrent events"
+  t: "Trial report preparation"
+  f: [R2-108, R2-109]
+  st: "INT:A7"
+  why: "Estimand reporting in the CSR, outside iPD content."
+- k: INT-CSR-CHANGES
+  s: "Describe in the CSR any change in conduct or planned analyses made after study start, with timing, reasons and decision procedure."
+  p: sponsor
+  a: "Report changes in conduct after start"
+  t: "Clinical study report preparation"
+  f: [R2-053]
+  st: "INT:A7"
+  why: "CSR authoring of protocol changes (amendments), not deviations."
+- k: INT-CSR-DISPOSITION
+  s: "Account in the CSR for all patients entered, randomised and completing each phase, with the reasons for discontinuation."
+  p: sponsor
+  a: "Report patient disposition"
+  t: "Clinical study report preparation"
+  f: [R2-054]
+  st: "INT:A7"
+  why: "CSR authoring of disposition; only the deviation label is in A7."
+
+# ============================================================ Out of scope (with reason)
+- k: OOS-NORM-PRINCIPLE
+  s: "Conduct the trial in compliance with the protocol that has received prior IRB/IEC approval or favourable opinion."
+  p: other
+  a: "Conduct trial per approved protocol"
+  f: [R1-001]
+  st: OOS
+  why: "Overarching conduct norm that every deviation departs from; cited on the L3 collaboration and pools, not a separate task (SCP-01)."
+- k: OOS-NORM-SPONSOR-ICH
+  s: "Ensure that trial processes are conducted in compliance with the protocol and related documents, applicable regulatory requirements and ethical standards."
+  p: sponsor
+  a: "Ensure compliant trial processes"
+  f: [R1-031]
+  st: OOS
+  why: "Overarching conduct norm (sponsor); its execution is the oversight in A2 and the compliance actions in A6. Cited on the Sponsor pool."
+- k: OOS-NORM-INVESTIGATOR-ICH
+  s: "Comply with the protocol, GCP and applicable regulatory requirements and use the investigational product only in accordance with the approved protocol."
+  p: investigator
+  a: "Comply with protocol (investigator)"
+  f: [R1-017, R1-092]
+  st: OOS
+  why: "Overarching conduct norm (investigator); cited on the Investigator/institution pool."
+- k: OOS-NORM-SPONSOR-EU
+  s: "Ensure that the trial is conducted in accordance with the protocol and the principles of good clinical practice (EU CTR Art. 47, first paragraph)."
+  p: sponsor
+  a: "Ensure conduct per protocol and GCP"
+  f: [R3-016]
+  st: OOS
+  why: "Overarching legal conduct norm (sponsor); cited on the Sponsor pool and as EU legal basis of the process."
+- k: OOS-NORM-INVESTIGATOR-EU
+  s: "Ensure, jointly with the sponsor, that the trial is conducted in accordance with the protocol and the principles of good clinical practice (EU CTR Art. 47, first paragraph)."
+  p: investigator
+  a: "Ensure conduct per protocol and GCP (investigator)"
+  f: [R3-017]
+  st: OOS
+  why: "Overarching legal conduct norm (investigator); cited on the Investigator/institution pool."
+- k: OOS-NORM-SPONSOR-US
+  s: "Ensure that each investigation is conducted in accordance with the general investigational plan and the protocols in the IND (21 CFR 312.50)."
+  p: sponsor
+  a: "Ensure conduct per IND protocols"
+  f: [R4-008]
+  st: OOS
+  why: "Overarching legal conduct norm (sponsor); cited on the Sponsor pool."
+- k: OOS-NORM-INVESTIGATOR-US
+  s: "Ensure that the investigation is conducted according to the signed investigator statement, the investigational plan and the regulations, protecting the rights, safety and welfare of subjects (21 CFR 312.60)."
+  p: investigator
+  a: "Conduct investigation per plan (investigator)"
+  f: [R4-017, R4-018]
+  st: OOS
+  why: "Overarching legal conduct norm (investigator); cited on the Investigator/institution pool."
+- k: OOS-OVERSIGHT-SPONSOR
+  s: "Retain overall responsibility and maintain proportionate oversight of transferred activities and service providers, including their essential records."
+  p: sponsor
+  a: "Oversee transferred activities"
+  f: [R1-009, R1-010, R1-034, R1-090, R5-054, R3-045]
+  st: OOS
+  why: "Cross-cutting accountability rule applied to pool and lane design (transferred tasks stay in the Sponsor pool); no separate task."
+- k: OOS-OVERSIGHT-INVESTIGATOR
+  s: "Retain ultimate responsibility and maintain proportionate oversight of persons or parties undertaking delegated activities at the site."
+  p: investigator
+  a: "Oversee delegated site activities"
+  f: [R1-015, R1-086, R1-087]
+  st: OOS
+  why: "Cross-cutting accountability rule applied to the Investigator/institution pool; no separate task."
+- k: OOS-ROUTE-ICH-EU-SPONSOR
+  s: "Take appropriate account of quality standards and the ICH GCP guidelines when drawing up and applying the protocol; EU CTR prevails over conflicting guideline rules, and documents not foreseen by it shall not be requested or submitted on the basis of guidelines; ICH E6(R3) Principles and Annex 1 (presented by EMA as able to replace ICH E6(R2), no end date given) are effective in the EU from 23 Jul 2025, Annex 2 and the consolidated text from 15 Jan 2027."
+  p: sponsor
+  a: "Apply ICH GCP in the EU"
+  f: [R3-018, R3-085, R3-087, R3-088, R3-089]
+  st: OOS
+  why: "Binding route of ICH E6(R3) in the EU; recorded in binding_route of every ICH REQ and in C-06, not a process step."
+- k: OOS-ROUTE-ICH-EU-INVESTIGATOR
+  s: "Take appropriate account of quality standards and the ICH GCP guidelines when applying EU CTR and the protocol (investigator)."
+  p: investigator
+  a: "Apply ICH GCP in the EU (investigator)"
+  f: [R3-019]
+  st: OOS
+  why: "Binding route of ICH E6(R3) in the EU (C-06)."
+- k: OOS-ROUTE-ICH-EU-COMMISSION
+  s: "The Commission makes the detailed ICH GCP guidelines publicly available (EU CTR Art. 47, third paragraph)."
+  p: authority
+  a: "Publish ICH GCP (Commission)"
+  f: [R3-020]
+  st: OOS
+  why: "Commission duty; affects the binding route only (C-06)."
+- k: OOS-ROUTE-ICH-US
+  s: "FDA issued ICH E6(R3) Principles and Annex 1 as final nonbinding guidance (Sept 2025); Annex 2 remains draft guidance."
+  p: authority
+  a: "Adopt ICH E6(R3) (FDA)"
+  f: [R4-078, R4-079]
+  st: OOS
+  why: "Binding route of ICH E6(R3) in the US (C-06)."
+- k: OOS-CONSENT-OBTAIN-US
+  s: "Obtain legally effective informed consent before involving a subject, under conditions that allow a free decision and in understandable language (21 CFR 50.20, 312.60)."
+  p: investigator
+  a: "Obtain informed consent"
+  f: [R4-019, R4-031, R4-032]
+  st: OOS
+  why: "Substantive informed consent obligation; a failure is a deviation category used in the iPD criteria (A1), not a deviation-management step."
+- k: OOS-CONSENT-DOCUMENT-US
+  s: "Document informed consent with an IRB-approved written form signed and dated at the time of consent, or the short-form route (21 CFR 50.27)."
+  p: investigator
+  a: "Document informed consent"
+  f: [R4-033, R4-034]
+  st: OOS
+  why: "Substantive consent documentation obligation; consent-documentation failures are deviation examples (A1)."
+- k: OOS-DIRECT-ACCESS
+  s: "Make all requested trial-related records available for direct access on request of the monitor, auditor, IRB/IEC or regulatory authority."
+  p: investigator
+  a: "Provide direct access to records"
+  f: [R1-029]
+  st: OOS
+  why: "General direct access duty; precondition for monitoring, audit and inspection, not a deviation-management step."
+- k: OOS-IRB-DECISIONS-ICH
+  s: "The IRB/IEC promptly notifies the investigator/institution or sponsor in writing of its trial-related decisions, reasons and appeal procedures."
+  p: irb-iec
+  a: "Notify IRB/IEC decisions"
+  f: [R1-014]
+  st: OOS
+  why: "IRB/IEC-internal procedure; IRB/IEC is a collapsed pool (D1); its approval decision appears only as a message flow in A3."
+- k: OOS-IRB-PROCEDURE-CHANGES-US
+  s: "The IRB follows written procedures for ensuring prompt reporting to the IRB of changes in research activity (21 CFR 56.108(a)(3))."
+  p: irb-iec
+  a: "Maintain IRB reporting procedure"
+  f: [R4-025]
+  st: OOS
+  why: "IRB-internal written procedure (collapsed pool); the investigator reporting duty it governs is carried in A5 (21 CFR 312.66)."
+- k: OOS-IRB-REVIEW-IPD-US
+  s: "The IRB reviews important deviations submitted by investigators as soon as possible to determine their effect on participant safety or study conduct."
+  p: irb-iec
+  a: "Review submitted iPDs (IRB)"
+  f: [R4-073]
+  st: OOS
+  why: "IRB-internal review (collapsed pool, D1); its onward reporting is in A5."
+- k: OOS-IRB-ASSURANCE-US
+  s: "Assure that an IRB complying with Part 56 is responsible for initial and continuing review of the study (21 CFR 312.66)."
+  p: investigator
+  a: "Assure IRB review"
+  f: [R4-022]
+  st: OOS
+  why: "Trial start-up (IRB approval process), outside iPD management."
+- k: OOS-THIRD-COUNTRY-INSPECTIONS-EU
+  s: "Submit all third-country authority inspection reports concerning the trial in CTIS (EU CTR Art. 53(2); Q&A 11.4)."
+  p: sponsor
+  a: "Submit third-country inspection reports"
+  f: [R3-026, R3-105]
+  st: OOS
+  why: "Inspection reporting, not deviation management."
+- k: OOS-INSPECTION-REPORT-EU
+  s: "After an inspection, the responsible Member State drafts and shares the inspection report through the EU portal (EU CTR Art. 78(6))."
+  p: authority
+  a: "Issue inspection report (authority)"
+  f: [R3-042]
+  st: OOS
+  why: "Authority inspection process."
+- k: OOS-FDA-REVIEW
+  s: "FDA may weigh the number and types of deviations when judging data quality in premarket review."
+  p: authority
+  a: "Weigh deviations in review (FDA)"
+  f: [R4-040]
+  st: OOS
+  why: "Authority review rationale; motivates complete identification and documentation but is not a sponsor or site step."
+- k: TERM-ROLES-ICH
+  s: "Use the ICH E6(R3) role definitions (sponsor, investigator, IRB/IEC, regulatory authorities, service provider) for pools and lanes."
+  p: other
+  a: "Apply ICH role terms"
+  f: [R1-140, R1-141, R1-142, R1-143, R1-144]
+  st: OOS
+  why: "Terminology; carried by glossary.yaml and pool/lane names (LBL-04), not a process step."
+- k: TERM-ROLES-EU
+  s: "Use the EU CTR definitions of ethics committee, Member State concerned, sponsor, investigator, principal investigator and inspection."
+  p: other
+  a: "Apply EU role terms"
+  f: [R3-001, R3-002, R3-004, R3-005, R3-006, R3-010]
+  st: OOS
+  why: "Terminology; carried by glossary.yaml (LBL-04)."
+- k: TERM-RECORDS-ICH
+  s: "Use the ICH E6(R3) definitions of compliance, protocol, protocol amendment, audit trail, source records and clinical trial/study report (CSR)."
+  p: other
+  a: "Apply ICH record terms"
+  f: [R1-130, R1-131, R1-132, R1-137, R1-138, R1-139]
+  st: OOS
+  why: "Terminology; carried by glossary.yaml (LBL-04)."
+- k: TERM-RECORDS-EU
+  s: "Use the EU CTR definitions of substantial modification, protocol, good clinical practice and clinical study report."
+  p: other
+  a: "Apply EU record terms"
+  f: [R3-003, R3-007, R3-009, R3-011]
+  st: OOS
+  why: "Terminology; carried by glossary.yaml (LBL-04)."
+- k: TERM-DEVIATION-WORDING
+  s: "Use 'important' as the single term for deviations otherwise called major, critical or significant, and 'protocol deviation' rather than 'protocol violation'."
+  p: other
+  a: "Use 'important protocol deviation' wording"
+  f: [R2-069, R4-041, R5-004]
+  st: OOS
+  why: "Terminology rule applied to labels and gateways (LBL-04) via glossary.yaml."
+- k: TERM-ESTIMAND
+  s: "Use the ICH E9(R1) distinctions between treatment discontinuation, study withdrawal, missing data and intercurrent events."
+  p: other
+  a: "Apply estimand terms"
+  f: [R2-098, R2-099, R2-101, R2-110]
+  st: OOS
+  why: "Terminology; intercurrent events are not protocol deviations (A7 REQ keeps them apart)."

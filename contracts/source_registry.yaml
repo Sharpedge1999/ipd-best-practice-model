@@ -1,0 +1,491 @@
+# Source registry - iPD best-practice model (contract S0, reconciled by Y1)
+#
+# One record per source key (workflow_plan section 2). Seeded by S0; reconciled by the synthesis agent
+# Y1 on 06 Nov 2026 from research/R1..R5_notes.md (new keys, confirmed URLs, titles and versions read).
+# Y1 is the only agent allowed to edit this file. Existing keys are kept.
+#
+# Fields:
+#   key             source key used in findings (src) and specs (src[].key)
+#   title           document title as read
+#   owner_stem      research stem that owns the document (R1-R5)
+#   jurisdiction    ICH | EU | US (ICH = international scope for non-regional sources, S0-05)
+#   url             URL actually read by a research agent (or "[verify]")
+#   url_status      seeded (not read) | confirmed (read by a research agent)
+#   binding_default default binding class of findings from this source
+#   draft           true if the document is draft agency guidance (findings must carry draft: true)
+#   version_read    version / date of the document actually read
+#   retrieval       retrieval channel and date
+#   local_text      local text copy (vendor/sources/INDEX.md) or null
+#   notes           free text
+# Top-level 'gaps' lists the source and coverage gaps recorded by the stems and Y1.
+
+schema_version: 1
+reconciled_by: "Y1 synthesis, 2026-11-06"
+sources:
+  # ---------------------------------------------------------------- R1 ICH GCP
+  - key: E6R3
+    title: "ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2"
+    owner_stem: R1
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Consolidated Step 4 with Annex 2, 16 June 2026 (99 pages; printed page = PDF page - 8)"
+    retrieval: "Local pdftotext of the official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a), 2026-11-06; round 1 by WebFetch"
+    local_text: "vendor/sources/e6r3/E6R3_consolidated_2026-06-16.txt"
+    notes: "Primary E6(R3) text; loc grammar with annex prefix (P, GL, A1, A2, AppB, AppC). Annex 2 passages cross-checked in the EMA Step 5 Annex 2 copy (vendor/sources/E6R3-A2-EMA/doc_2.txt; proposed key E6R3-A2-EMA withdrawn by R1). EU effective dates: Principles and Annex 1 23 Jul 2025, Annex 2 15 Jan 2027 (EMA-E6R3). US: FDA guidance (FDA-E6R3, FDA-E6R3-A2)."
+  - key: E6R3-S4
+    title: "ICH E6(R3) Guideline for Good Clinical Practice, Step 4 (6 Jan 2025), read as EMA Step 5 copy EMA/CHMP/ICH/135/1995 (23 Jan 2025)"
+    owner_stem: R1
+    jurisdiction: ICH
+    url: "https://www.ema.europa.eu/en/documents/scientific-guideline/ich-e6-r3-guideline-good-clinical-practice-gcp-step-5_en.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Step 4 text of 6 Jan 2025 in the EMA Step 5 copy of 23 Jan 2025"
+    retrieval: "WebFetch 2026-11-06 (R1 round 1; R3 F38 cover)"
+    local_text: null
+    notes: "Numbering crosswalk only (loc_alt filled for 18 checked locations, all identical). Official ICH database URL of the 2025 Step 4 text not found [verify]."
+
+  # ------------------------------------------------- R2 ICH design and reporting
+  - key: E8R1
+    title: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4"
+    owner_stem: R2
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Step 4, adopted 6 October 2021"
+    retrieval: "WebFetch 2026-11-06 (F01-F09, F32)"
+    local_text: "vendor/sources/E8R1/doc_3.txt"
+    notes: "Sections 3.2-3.3 critical to quality factors read in full; S6 and S7 read. Alternative official URL ICH_E8-R1_Guideline_Step4_2021_1006.pdf not read. EU/US adoption not checked [verify binding]."
+  - key: E3
+    title: "ICH E3 Structure and Content of Clinical Study Reports"
+    owner_stem: R2
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Current Step 4 version, 30 November 1995"
+    retrieval: "WebFetch 2026-11-06 (F10-F15)"
+    local_text: "vendor/sources/E3/doc_4.txt"
+    notes: "Section 10.2 (protocol deviations) and related sections read. EU/US adoption not checked [verify binding]."
+  - key: E3QA
+    title: "ICH E3 Structure and Content of Clinical Study Reports - Questions and Answers (R1)"
+    owner_stem: R2
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Step 4, approved June 2012; current version (R1) 6 July 2012"
+    retrieval: "WebFetch 2026-11-06 (F16-F18, F33, F35)"
+    local_text: "vendor/sources/E3QA/doc_5.txt"
+    notes: "Changed by Y1 from verify-binding to binding-ICH because the Q&A is an ICH Step 4 document (R2 notes, open question 3); regional adoption not checked [verify binding] (C-06). Protocol deviation item is unnumbered under heading '3. Terminology' (loc S3)."
+  - key: E9
+    title: "ICH E9 Statistical Principles for Clinical Trials"
+    owner_stem: R2
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Current Step 4 version, 5 February 1998"
+    retrieval: "WebFetch 2026-11-06 (F19-F22)"
+    local_text: "vendor/sources/E9/doc_6.txt"
+    notes: "Section 5.2 analysis sets, 7.1-7.2 and glossary read. Uses 'protocol violation'. EU/US adoption not checked [verify binding]."
+  - key: E9R1
+    title: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials"
+    owner_stem: R2
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Step 4, adopted 20 November 2019"
+    retrieval: "WebFetch 2026-11-06 (F23-F25, F34)"
+    local_text: "vendor/sources/E9R1/doc_7.txt"
+    notes: "Deviations vs intercurrent events (SA.5.3). EU/US adoption not checked [verify binding]."
+  - key: M11
+    title: "ICH M11 Structure and Content of Clinical Protocols - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Guideline"
+    owner_stem: R2
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Guideline_2025_1119.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Step 4, adopted 19 November 2025"
+    retrieval: "WebFetch 2026-11-06 (F26, F30)"
+    local_text: "vendor/sources/M11/doc_8.txt"
+    notes: "Step 4 confirmed by R2, so binding_default moved from verify-binding to binding-ICH; regional implementation date not checked [verify binding]. Technical Specification not read."
+  - key: M11-TEMPLATE
+    title: "ICH M11 Template - Clinical Electronic Structured Harmonised Protocol (CeSHarP)"
+    owner_stem: R2
+    jurisdiction: ICH
+    url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Template_2025_1119.pdf"
+    url_status: confirmed
+    binding_default: binding-ICH
+    draft: false
+    version_read: "Final version, Step 4, adopted 19 November 2025"
+    retrieval: "WebFetch 2026-11-06 (F27-F29, F31)"
+    local_text: "vendor/sources/M11-TEMPLATE/doc_9.txt"
+    notes: "New key (R2). Sections 5.1, 6.8, 10.2, 11.6, 11.10 and conventions read; regional route [verify binding]. TOC and footer page numbers differ by one [verify]."
+
+  # --------------------------------------------------------------------- R3 EU
+  - key: EUCTR
+    title: "Regulation (EU) No 536/2014 of the European Parliament and of the Council of 16 April 2014 on clinical trials on medicinal products for human use"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:02014R0536-20221205"
+    url_status: confirmed
+    binding_default: binding-law
+    draft: false
+    version_read: "EUR-Lex consolidated text 02014R0536-20221205 (05.12.2022) for wording; original OJ L 158, 27.5.2014 for page numbers"
+    retrieval: "WebFetch 2026-11-06 (F04-F14, F42-F47); local OJ text vendor/sources/EUCTR-OJ/reg_2014_536_en.txt (re-entry 1)"
+    local_text: "vendor/sources/EUCTR-OJ/reg_2014_536_en.txt"
+    notes: "Seeded URL https://health.ec.europa.eu/system/files/2016-11/reg_2014_536_en_0.pdf is the OJ original used for pages. Article numbers from the text: urgent safety measures Art. 54, temporary halt Art. 38 (C-07). Write 'EU CTR', never bare 'CTR'."
+  - key: EMA-SB
+    title: "Guideline for the notification of serious breaches of Regulation (EU) No 536/2014 or the clinical trial protocol"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://www.ema.europa.eu/en/documents/scientific-guideline/guideline-notification-serious-breaches-regulation-eu-no-5362014-or-clinical-trial-protocol_en.pdf"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "EMA/698382/2021; adopted CTFG 7 Dec 2021 and GCP IWG 13 Dec 2021; effective 31 Jan 2022; document date 30 Jun 2023"
+    retrieval: "WebFetch 2026-11-06 (F15-F23, F41); local copy vendor/sources/EMA-SB/doc_11.txt (re-entry 1)"
+    local_text: "vendor/sources/EMA-SB/doc_11.txt"
+    notes: "No newer version found (2026-11-06). References ICH E6(R2) (C-06). Appendix III a form fields not in the text layer [verify]."
+  - key: EUCTR-QA
+    title: "Clinical Trials Regulation (EU) No 536/2014 Questions & Answers (EudraLex Volume 10)"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://health.ec.europa.eu/document/download/4ec3992a-ef9b-41f9-8e34-1dd6d0a479ae_en?filename=mp_ctr_qa_rules.pdf"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Version 7.4, October 2026 (supersedes 7.3; WebFetch had served v7.3 of July 2026)"
+    retrieval: "WebFetch 2026-11-06 (F25-F27, F40); local copy vendor/sources/EUCTR-QA/doc_12.txt (re-entry 1)"
+    local_text: "vendor/sources/EUCTR-QA/doc_12.txt"
+    notes: "Q&A numbers cited as S<n> (e.g. S11.3). Page footers restart per chapter."
+  - key: EMA-E6R3
+    title: "EMA scientific guideline page 'ICH E6 Good clinical practice' with ICH E6(R3) Step 5 documents EMA/CHMP/ICH/135/1995 and EMA/CHMP/ICH/162879/2026"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://www.ema.europa.eu/en/scientific-guidelines/ich-e6-good-clinical-practice"
+    url_status: confirmed
+    binding_default: verify-binding
+    draft: false
+    version_read: "Web page modified 15 Jul 2026; Step 5 PDFs of 23 Jan 2025 and 14 Jul 2026 (covers)"
+    retrieval: "WebFetch 2026-11-06 (F35-F38); local copies vendor/sources/EMA-E6R3/doc_13.txt, doc_14.txt"
+    local_text: "vendor/sources/EMA-E6R3/doc_13.txt"
+    notes: "Adoption notice; EU binding route of ICH GCP via EU CTR Art. 47 (C-06). PDF covers: https://www.ema.europa.eu/en/documents/scientific-guideline/ich-e6r3-guideline-good-clinical-practice-step-5_en.pdf"
+  - key: CTIS-HB
+    title: "Clinical Trial Information System (CTIS) Sponsor Handbook"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://www.ema.europa.eu/en/documents/other/clinical-trial-information-system-ctis-sponsor-handbook_en.pdf"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "EMA/148347/2026, version 6.4, 7 July 2026 (table of contents only)"
+    retrieval: "WebFetch 2026-11-06 (F29, F30); text extraction ended near p. 50"
+    local_text: null
+    notes: "No findings. Section 4.9 (notifications incl. serious breaches, p. 140) not readable - gap; CTIS steps rest on CTIS-BT-SB24, CTIS-TM17, CTIS-TM05 and EUCTR-QA."
+  - key: CTIS-BT-SB24
+    title: "CTIS Bitesize Talk: End of transition period and notifications including serious breaches (EMA presentation)"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://www.ema.europa.eu/en/documents/presentation/presentation-ctis-bitesize-talk-end-transition-period-notifications-including-serious-breaches_en.pdf"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "16 October 2024"
+    retrieval: "WebFetch 2026-11-06 (F33, F45); local copy vendor/sources/CTIS-BT-SB24/doc_15.txt"
+    local_text: "vendor/sources/CTIS-BT-SB24/doc_15.txt"
+    notes: "New key (R3). Training material."
+  - key: CTIS-TM17
+    title: "Supervise a CT - Ad Hoc Assessment: FAQs, CTIS Training Programme Module 17"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://www.ema.europa.eu/system/files/documents/other/cttm17-faqs_en.pdf"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Version 1.3, August 2024"
+    retrieval: "WebFetch 2026-11-06 (F32); local copy vendor/sources/CTIS-TM17/doc_16.txt"
+    local_text: "vendor/sources/CTIS-TM17/doc_16.txt"
+    notes: "New key (R3). Training material."
+  - key: CTIS-TM05
+    title: "How to manage a clinical trial - step-by-step guide, CTIS Training Programme Module 05"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://www.ema.europa.eu/documents/other/step-step-guide-how-manage-ct-ctis-training-programme-module-05_en.pdf"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Version 1.0, October 2021 (possibly outdated)"
+    retrieval: "WebFetch 2026-11-06 (F34); local copy is an HTTP 404 page"
+    local_text: null
+    notes: "New key (R3). One low-confidence finding (R3-097)."
+  - key: EC-EUDRALEX-V10
+    title: "EudraLex Volume 10 - Clinical trials guidelines (European Commission web page)"
+    owner_stem: R3
+    jurisdiction: EU
+    url: "https://health.ec.europa.eu/medicinal-products/eudralex/eudralex-volume-10_en"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Fetched 2026-11-06; latest update item 28 Oct 2026"
+    retrieval: "WebFetch 2026-11-06 (F24, F39)"
+    local_text: null
+    notes: "New key (R3). No findings; read for document versions and the Art. 47 third paragraph publication status (lists only ICH E6(R2), C-06)."
+
+  # --------------------------------------------------------------------- R4 US
+  - key: 21CFR312
+    title: "21 CFR Part 312 - Investigational New Drug Application"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312"
+    url_status: confirmed
+    binding_default: binding-law
+    draft: false
+    version_read: "eCFR current text, sections stamped up to date as of 10/08/2026-10/23/2026; local eCFR API text as of 2026-11-04"
+    retrieval: "WebFetch 2026-11-06 per section (eCFR, second fetch Cornell LII)"
+    local_text: "vendor/sources/eCFR-api/part312.txt"
+    notes: "Sections 312.30, 312.50, 312.53(c)(1)(vi)-(vii), 312.56, 312.60, 312.62, 312.66 read. 312.32, 312.33 and 312.57 not extracted (gap)."
+  - key: 21CFR56
+    title: "21 CFR Part 56 - Institutional Review Boards"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-56"
+    url_status: confirmed
+    binding_default: binding-law
+    draft: false
+    version_read: "eCFR current text (56.108 up to date as of 10/20/2026); 56.104 via Cornell LII and FindLaw; local eCFR API text as of 2026-11-04"
+    retrieval: "WebFetch 2026-11-06 (eCFR; 56.104 eCFR robots-blocked)"
+    local_text: "vendor/sources/eCFR-api/part56.txt"
+    notes: "56.104(c) wording (emergency use, 5 working days) is present in the local eCFR API text."
+  - key: 21CFR50
+    title: "21 CFR Part 50 - Protection of Human Subjects"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50"
+    url_status: confirmed
+    binding_default: binding-law
+    draft: false
+    version_read: "eCFR current text (50.20 and 50.27 up to date as of 10/19-10/22/2026); local eCFR API text as of 2026-11-04"
+    retrieval: "WebFetch 2026-11-06 (eCFR, second fetch Cornell LII)"
+    local_text: "vendor/sources/eCFR-api/part50.txt"
+  - key: FDA-PD24
+    title: "Protocol Deviations for Clinical Investigations of Drugs, Biological Products, and Devices - Draft Guidance for Industry"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.fda.gov/media/184745/download"
+    url_status: confirmed
+    binding_default: guidance
+    draft: true
+    version_read: "Draft, December 2024 (CDER, CBER, CDRH, OCE; docket FDA-2023-D-5016; 89 FR 106510); still draft on fda.gov as of 2026-11-06"
+    retrieval: "WebFetch 2026-11-06 (full text, lines 1-379, 26 footnotes); local copy vendor/sources/FDA-PD24/doc_29.txt"
+    local_text: "vendor/sources/FDA-PD24/doc_29.txt"
+    notes: "Draft guidance: never the only basis of a binding step (risk 3). Device-only passages out of scope (D2)."
+  - key: FDA-E6R3
+    title: "E6(R3) Good Clinical Practice - Guidance for Industry (ICH)"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.fda.gov/media/169090/download"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Final, September 2025 (docket FDA-2023-D-1955; 90 FR 43460, 9 Sep 2025); Principles and Annex 1"
+    retrieval: "WebFetch 2026-11-06 (front matter, chars 0-100000)"
+    local_text: "vendor/sources/FDA-E6R3/doc_30.txt"
+    notes: "US adoption of ICH E6(R3): nonbinding guidance; 21 CFR binds (C-06). Does not state that it supersedes the E6(R2) guidance."
+  - key: FDA-E6R3-A2
+    title: "E6(R3) Good Clinical Practice: Annex 2 - Draft Guidance for Industry (ICH)"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/e6r3-good-clinical-practice-annex-2"
+    url_status: confirmed
+    binding_default: guidance
+    draft: true
+    version_read: "Draft, December 2024 (docket FDA-2024-D-5601); landing page current as of 12/30/2024"
+    retrieval: "WebFetch 2026-11-06 (landing page)"
+    local_text: "vendor/sources/FDA-E6R3-A2/doc_31.txt"
+    notes: "New key (R4). PDF https://www.fda.gov/media/184746/download not read."
+  - key: FDA-RBM13
+    title: "Oversight of Clinical Investigations - A Risk-Based Approach to Monitoring, Guidance for Industry"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.fda.gov/media/116754/download"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Final, August 2013 (docket FDA-2011-D-0597)"
+    retrieval: "WebFetch 2026-11-06 (4 fetches)"
+    local_text: "vendor/sources/FDA-RBM13/doc_32.txt"
+    notes: "Uses 'significant protocol deviations' (2013 terminology, C-17). Some page numbers [verify]."
+  - key: FDA-RBM23
+    title: "A Risk-Based Approach to Monitoring of Clinical Investigations - Questions and Answers, Guidance for Industry"
+    owner_stem: R4
+    jurisdiction: US
+    url: "https://www.fda.gov/media/121479/download"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Final, April 2023 (docket FDA-2019-D-0362)"
+    retrieval: "WebFetch 2026-11-06 (3 fetches)"
+    local_text: "vendor/sources/FDA-RBM23/doc_33.txt"
+    notes: "Final status confirmed (seeded [verify] closed)."
+
+  # ---------------------------------------------- R5 industry and data standards
+  - key: TCB-PD
+    title: "Protocol Deviations solutions page (industry consortium toolkit overview)"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://www.transceleratebiopharmainc.com/assets/protocol-deviations/"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "Web page last modified 17 Jan 2023; initiative complete January 2023"
+    retrieval: "WebFetch 2026-11-06 (F01, F53, F54, F59)"
+    local_text: null
+    notes: "Toolkit files (process guide, decision tree, process map, PDAP template, poster) robots-blocked and not read - gap. Toolkit predates ICH E6(R3) and FDA-PD24."
+  - key: TCB-PD-TIRS
+    title: "Protocol Deviations: A Holistic Approach from Defining to Reporting. Therapeutic Innovation and Regulatory Science 55(4):733-742 (2021), CC BY 4.0"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8238759"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "Published 2021 (DOI 10.1007/s43441-021-00269-w); PMC and Springer HTML"
+    retrieval: "WebFetch 2026-11-06 (PMC F02-F08, F14, F51, F60; Springer F13, F15, F52)"
+    local_text: "vendor/sources/TCB-PD-TIRS/doc_34.txt"
+    notes: "New key (R5). Peer-reviewed consortium paper; builds on ICH E6(R2)."
+  - key: TCB-RBQM
+    title: "Quality Tolerance Limits: Framework for Successful Implementation in Clinical Development. Therapeutic Innovation and Regulatory Science 55(2):251-261 (2021)"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://link.springer.com/article/10.1007/s43441-020-00209-0"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "Online 3 Sep 2020, issue 2021 (CC BY 4.0)"
+    retrieval: "WebFetch 2026-11-06 Springer (F16, F21, F55); PMC copy blocked by captcha"
+    local_text: null
+    notes: "'Important deviation' in this paper means a QTL exceedance, not a protocol deviation (C-04). Local copy vendor/sources/TCB-RBQM/doc_35.txt is a browser challenge page (not in INDEX.md)."
+  - key: CTTI-QbD
+    title: "CTTI Recommendations: Quality by Design"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://ctti-clinicaltrials.org/wp-content/uploads/2021/06/CTTI_QbD_Recs.pdf"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "June 2015 (2 pages); web page https://ctti-clinicaltrials.org/?p=16481 published 24 Mar 2025"
+    retrieval: "WebFetch 2026-11-06 (F17, F20)"
+    local_text: "vendor/sources/CTTI-QbD/doc_36.txt"
+    notes: "Key spelling with lower-case 'b' is fixed by the workflow plan; keep it verbatim."
+  - key: CTTI-CTQ
+    title: "CTTI Quality by Design Project: Critical to Quality (CTQ) Factors Principles Document"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://ctti-clinicaltrials.org/wp-content/uploads/2021/07/CTTI_QbD_Workshop_Principles_Document-1.pdf"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "Version 19 May 2015 (24 pages)"
+    retrieval: "WebFetch 2026-11-06 (F19, F22, F57)"
+    local_text: "vendor/sources/CTTI-CTQ/doc_38.txt"
+    notes: "New key (R5)."
+  - key: CDISC-DV
+    title: "CDISC SDTM Implementation Guide - Protocol Deviations (DV) domain"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://www.cdisc.org/standards/foundational/sdtmig/sdtmig-v3-4"
+    url_status: seeded
+    binding_default: best-practice
+    draft: false
+    version_read: "not read (files behind sign-in)"
+    retrieval: "WebFetch 2026-11-06 (F23, F26): version list only"
+    local_text: null
+    notes: "No findings. DV specification table and assumptions not read - gap. CDISC content used via CDISC-CT, CDISC-SDTMIG40-PR and NCIT-DV."
+  - key: CDISC-CT
+    title: "CDISC SDTM Controlled Terminology (NCI EVS distribution)"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://evs.nci.nih.gov/ftp1/CDISC/SDTM/SDTM%20Terminology.pdf"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "Release 2026-09-25 (first 14 of 1741 pages)"
+    retrieval: "WebFetch 2026-11-06 (F39, F58)"
+    local_text: "vendor/sources/CDISC-CT/doc_39.txt"
+    notes: "New key (R5). Codelists C225352 (DVCAT) and C225353 (DVDECOD) located; terms not read."
+  - key: CDISC-SDTMIG40-PR
+    title: "CDISC webinar: SDTMIG v4.0 and SDTM v3.0 Public Review"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://www.cdisc.org/sites/default/files/pdf/SDTMIGv4.0_Webinar_Feb2026.pdf"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "February 2026 (public review draft standard; review closed 6 Apr 2026)"
+    retrieval: "WebFetch 2026-11-06 (F47, F49)"
+    local_text: "vendor/sources/CDISC-SDTMIG40-PR/doc_40.txt"
+    notes: "New key (R5). Draft standard; draft flag kept false because rule DRAFT reserves draft: true for agency guidance (R5 notes)."
+  - key: NCIT-DV
+    title: "NCI Thesaurus concept C49585 Protocol Deviations Domain (CDISC definition), CISMeF mirror"
+    owner_stem: R5
+    jurisdiction: ICH
+    url: "https://www.cismef.org/page/detail/en/NCI_CO_C49585"
+    url_status: confirmed
+    binding_default: best-practice
+    draft: false
+    version_read: "Mirror page dated 3 Nov 2026"
+    retrieval: "WebFetch 2026-11-06 (F50)"
+    local_text: null
+    notes: "New key (R5). Secondary mirror [verify]."
+  - key: FDA-SDTCG
+    title: "Study Data Technical Conformance Guide - Technical Specifications Document (FDA)"
+    owner_stem: R5
+    jurisdiction: US
+    url: "https://www.fda.gov/media/153632/download"
+    url_status: confirmed
+    binding_default: guidance
+    draft: false
+    version_read: "Version 6.3, October 2026 (nonbinding)"
+    retrieval: "WebFetch 2026-11-06 (F31-F33); v6.0 copy for comparison"
+    local_text: "vendor/sources/FDA-SDTCG/doc_41.txt"
+    notes: "New key (R5; FDA document recorded by R5 at the orchestrator's instruction)."
+  - key: FDA-ESTUDY
+    title: "Providing Regulatory Submissions in Electronic Format - Standardized Study Data, Guidance for Industry (FDA)"
+    owner_stem: R5
+    jurisdiction: US
+    url: "https://www.fda.gov/media/82716/download"
+    url_status: confirmed
+    binding_default: binding-law
+    draft: false
+    version_read: "Revision 2, June 2021"
+    retrieval: "WebFetch 2026-11-06 (F36, F37)"
+    local_text: "vendor/sources/FDA-ESTUDY/doc_42.txt"
+    notes: "New key (R5). Binding effect for electronic format under FD&C Act 745A(a); class binding-law [verify binding] (no 'binding guidance' class)."
+
+gaps:
+  - "UK (MHRA) out of scope; research stem R6 not run (O0)."
+  - "Devices (21 CFR 812, EU MDR/IVDR) out of scope (D2); device-only passages of FDA-PD24 excluded, incl. its 5-working-day emergency deviation notice under 21 CFR 812.150(a)(4)."
+  - "CTIS sponsor handbook v6.4 section 4.9 (notifications incl. serious breaches) not readable; CTIS steps rest on EMA training material and EUCTR-QA."
+  - "Industry consortium toolkit files (process guide, decision tree, process map, PDAP template) robots-blocked; decision tree branch logic and template fields unknown."
+  - "CDISC SDTMIG DV specification and assumptions behind sign-in; CDISC controlled terminology terms for DVCAT and DVDECOD not read."
+  - "FDA Bioresearch Monitoring Technical Conformance Guide and FDA Data Standards Catalog not read."
+  - "21 CFR 312.32 (IND safety reports), 312.33 (annual reports; a later amendment 91 FR 60003 seen but not read [verify]) and 312.57 (sponsor record retention) not extracted - lead for R4."
+  - "EU and US adoption status of ICH E8(R1), E3, E3 Q&A (R1), E9, E9(R1) and M11 not checked [verify binding]."
+  - "No EMA guidance dedicated to protocol deviations found (search 2026-11-06); European Commission 'Risk proportionate approaches in clinical trials' (2017) and the EMA reflection paper on risk-based quality management not read."
+  - "No best-practice source read describes sites reporting deviations to the sponsor (R5); the model rests on E6(R3) A1-2.5.3 and FDA-PD24 (draft) for this flow (C-24)."
+  - "National law of EU Member States (incl. retention of medical files under EU CTR Art. 58) out of scope."
+  - "ICH E6(R3) Appendix A (investigator's brochure) not read (out of scope); official ICH URL of the 2025 Step 4 text not found."
+  - "EUR-Lex consolidated text not retrievable from the shell; OJ original used for pages (no wording difference found)."

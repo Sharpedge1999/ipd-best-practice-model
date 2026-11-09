@@ -1,0 +1,27 @@
+# X1 judgements for src E6R3 (144 items). Items not listed under 'except' are confirmed.
+# Keys: v verdict, s severity, note, corr correction, ev_page evidence page override, ev_loc evidence loc override
+src: E6R3
+method: local-text
+all_ids: R1-001..R1-144
+notes:
+  R1-012: "Sub-item (a) sits on PDF 19 / printed 11; the 1.4.8 lead-in is on printed 10."
+  R1-048: "Extent and nature of monitoring based on identified risks: PDF 39 / printed 31 (within cited range)."
+  R1-049: "Source adds 'as appropriate' to modifying monitoring activities; paraphrase drops it (no material change)."
+  R1-056: "Source frames this as a monitoring activity (3.11.4.5.1 list), not a stand-alone sponsor duty; acceptable."
+  R1-059: "Source ends 'as appropriate'; paraphrase drops the qualifier (no material change)."
+  R1-065: "Sub-item (ii) follows 'Monitoring should:' under (b); found PDF 42 / printed 34."
+  R1-078: "Source is conditional ('In these circumstances', i.e. after considering termination for persistent noncompliance); read together with R1-076/077."
+  R1-083: "Located under 3.16.1(x) 'For all systems:' item (ix), PDF 50 / printed 42."
+  R1-086: "Quote also occurs in the Introduction (PDF 10); the A2-2.4 occurrence is on PDF 63 / printed 55."
+  R1-087: "Arrangements in source apply to activities not requiring protocol knowledge; paraphrase generalises slightly, acceptable."
+  R1-089: "Proportionality in source attaches to the QC/QA measures that form part of sponsor oversight; acceptable."
+  R1-122: "'No fixed retention period is given' is the extractor's observation (absence), not text of C.3.2; C.3.3 supports the 'may not be produced' part."
+  R1-123: "Essential Records Table is listed by C.3.2 but printed after C.3.3 (PDF 87-89); C.3.2 citation acceptable."
+  R1-124: "Table marks site selection and initiation reports with an asterisk (in place before trial start)."
+  R1-126: "Table marks sample size calculations with an asterisk."
+except:
+  R1-127:
+    v: paraphrase-distorted
+    s: low
+    note: "Table row reads 'risk management,* monitoring,* safety,* data management,* data validation* and statistical analysis'; paraphrase lists the asterisked plans but omits the safety plan."
+    corr: "Asterisked (in place before trial start): risk management, monitoring, safety, data management and data validation plans; statistical analysis plan not asterisked."

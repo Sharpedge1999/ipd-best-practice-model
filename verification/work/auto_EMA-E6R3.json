@@ -1,0 +1,24 @@
+{
+ "R3-087": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": false
+ },
+ "R3-088": {
+  "local": true,
+  "quote_level": "none",
+  "quote_pages": [],
+  "loc_found": false
+ },
+ "R3-089": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": false
+ }
+}

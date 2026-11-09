@@ -1,0 +1,17 @@
+src: EMA-SB
+method: local-text
+notes:
+  R3-043: "Glossary PDF 3 / printed 3; entries are Clinical Trial, Sponsor, Service provider, Delegated party, Investigator, Suspected serious breach, Serious breach, MSC, RMS, AMS - no entry for 'breach' alone."
+  R3-051: "Source: sponsor should ensure by written contract that all parties immediately report; for the PI 'the protocol may take the place of a written agreement'."
+  R3-055: "Section 2 Scope (printed 4) confirms the guideline does not cover Art. 53/54 notifications."
+  R3-057: "Decision diagram in section 4 is an image (not in the text layer); Appendix III b item A.7 (PDF 20 / printed 20-21) carries the questions as paraphrased."
+  R3-077: "Section 8 body text on PDF 10 / printed 10 (locator first hit was the TOC)."
+  R3-078: "Opinion request and 7-day opinion on PDF 11 / printed 11."
+  R3-080: "Quote verbatim in the answer column of the Appendix I table (pdftotext interleaves 'trials.' from the left column)."
+  R3-083: "Appendix II wording is passive ('proper risk proportional actions are taken'), framed as points to consider for sponsors."
+except:
+  R3-048:
+    v: paraphrase-distorted
+    s: medium
+    note: "Guideline says the sponsor 'should perform the assessment ... in a timely manner' and the assessment 'should not extend the reporting period of 7 calendar days'; paraphrase renders both as 'must'. The 7-day limit itself is binding via EU CTR Art. 52(1), so practical impact is limited, but the cited guideline uses 'should'."
+    corr: "Notification without undue delay and at the latest within 7 calendar days of sponsor awareness; any assessment needed to confirm seriousness should be done in a timely manner and should not extend the 7-day period."

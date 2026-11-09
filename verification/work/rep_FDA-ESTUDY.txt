@@ -1,0 +1,10 @@
+====================================================================================================
+R5-071 | FDA-ESTUDY | loc=SII.E.1 | page=printed 8 (S II.E.1, lines 234-248); printed 3 (S I, lines 36-42); printed 5 (S II.C)
+PARA: To the extent it specifies the electronic format, this guidance has binding effect under FD&C Act section 745A(a). Study data in NDA, ANDA, certain BLA and certain IND submissions must use the FDA-supported standards in the Data Standards Catalog (SDTM and CDISC CT are named), for studies starting from 18 Dec 2016 (NDA, ANDA, BLA) or 18 Dec 2017 (certain INDs); noncommercial INDs are exempt. Nonconforming submissions may be refused to file or receive.
+QUOTE: it will have binding effect
+QCHECK: exact ['PDF 7 / printed 2'] 
+LOC: found PDF 5 / printed None .. PDF 6 / printed 1 (2204 chars) part E not found
+  quote inside loc passage: False
+  PASSAGE-HEAD: II. REQUIREMENT TO SUBMIT ELECTRONIC STANDARDIZED STUDY DATA A. For What Submission Types Is an Electronic Submission of Standardized Study Data Required? .....
+  WINDOW 0.14 @ PDF 5 / printed None: ....... 9 III. ADDITIONAL SUPPORT ......................................................................................... 9 A. Meetings With FDA ...................................................................................................... 9 B. Implementation Support ..............................................................................................10 Providing Regulatory Submissions in Electronic Format - Standardized Study Data Guidance for Industry 1 
+  DOCBEST-OUTSIDE 0.52 @ PDF 12 / printed 7: Initial Timetable for the Implementation of Electronic Submission Requirements After the publication of the initial final version of this guidance on December 18, 2014 (2014 Final eStudy Data Guidance), all studies with a start date 24 months after that publication date (December 18, 2016) for NDA, ANDA, and certain BLA submissions and studies with a start date 36 months after the publication of t

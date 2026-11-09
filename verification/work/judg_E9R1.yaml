@@ -1,0 +1,17 @@
+src: E9R1
+method: local-text
+notes:
+  R2-097: "A.1, PDF 5 / printed 3: per protocol set 're-visited' and 'less biased and more interpretable than naive analysis of the per protocol set'."
+  R2-109: "Source subject is 'Addressing intercurrent events that were not foreseen ... should discuss'; report context from preceding sentence; acceptable."
+  R2-110: "Glossary entry on PDF 22 / printed 20; same definition also opens A.3.1 (printed 5)."
+except:
+  R2-102:
+    v: page-wrong
+    s: low
+    note: "A.3.4 passage on non-inferiority/equivalence trials is on PDF 14 / printed 12, not printed 13. Source presents this as a restatement of ICH E9 section 3.3.2."
+    corr: "page: printed 12 / PDF 14"
+    ev_page: "PDF 14 / printed 12"
+evpage:
+  R2-110: "PDF 22 / printed 20"
+evsnip:
+  R2-110: "Intercurrent Events: Events occurring after treatment initiation that affect either the interpretation"

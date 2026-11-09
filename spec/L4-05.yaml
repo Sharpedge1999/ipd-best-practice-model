@@ -1,0 +1,559 @@
+# L4-05 - Assess and notify reportable noncompliance
+# Best-practice reference model of important protocol deviation (iPD) management, GEN-01 spec (B1).
+# Trace fields are derived from synthesis/requirements.yaml and synthesis/merged_findings.yaml.
+# Modelling choices, SHOULD deviations and open questions: spec/notes.md; REQ coverage: spec/coverage.md.
+id: L4-05
+title: "Assess and notify reportable noncompliance"
+level: L4
+parent: {model: L3, node: A5}
+interface: {start: [S1], ends: [E1, E2], message_flows: [M1, M2, M3]}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-3.9.2", page: "printed 26 / PDF 34"}
+      - {key: E6R3, loc: "P10.1", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "P10.3", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "A1-3.9.5", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: TCB-RBQM, loc: "SQTL-Process", page: "journal pp. 251-261 (section page not confirmed)"}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Investigator", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", page: "OJ L 158/13"}
+      - {key: 21CFR312, loc: "21CFR312.60", page: "n/a - eCFR web text without pagination"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-2.5.2", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.10.6", page: "printed 20 / PDF 28"}
+      - {key: E6R3, loc: "A1-2.3.1", page: "printed 12 / PDF 20"}
+      - {key: E6R3, loc: "A2-2.4", page: "printed 55 / PDF 63"}
+      - {key: E6R3, loc: "A2-2.4.1", page: "printed 56 / PDF 64"}
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", page: "OJ L 158/12"}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", page: "printed 89 / PDF 97"}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", page: "n/a - eCFR web text without pagination"}
+
+lanes:
+  - id: L_SPON
+    name: "Sponsor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+
+nodes:
+  - id: S1
+    type: start
+    label: "Potential protocol deviation identified"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: EUCTR, loc: "Art. 52(1)", page: "OJ L 158/40"}
+      - {key: EMA-SB, loc: "S3.2", page: "printed 5/21"}
+      - {key: EUCTR-QA, loc: "S11.3", page: "printed 1-2 (chapter 11)"}
+      - {key: EMA-SB, loc: "S3.1", page: "printed 5/21"}
+      - {key: EUCTR-QA, loc: "S1.5", page: "printed 4-5 (chapter 1; page numbers restart per chapter)"}
+      - {key: CTIS-BT-SB24, loc: "SSlide-20", page: "slide 20; notification type label on an unnumbered CTCG slide"}
+    req: [REQ-111]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "starts the EU serious breach clock: at the latest 7 (calendar) days from sponsor awareness of the potential breach (REQ-111)"
+    party: "sponsor"
+    verify:
+      - "[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)"
+      - "[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)"
+  - id: G1
+    type: and-split
+    lane: L_SPON
+    path: main
+  - id: G2
+    type: xor-split
+    label: "EU CTR applies?"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+  - id: A1
+    type: task
+    label: "Assess potential serious breach"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EUCTR, loc: "Art. 52(2)", page: "OJ L 158/40"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: EMA-SB, loc: "S3.2", page: "printed 5/21"}
+      - {key: EMA-SB, loc: "S5.1", page: "printed 8/21; printed 7-8/21"}
+      - {key: EMA-SB, loc: "S6.1", page: "printed 9/21"}
+      - {key: EMA-SB, loc: "SAppII", page: "printed 18/21"}
+      - {key: CTIS-BT-SB24, loc: "SSlide-33", page: "slide 33"}
+      - {key: EMA-SB, loc: "SAppI-8.2", page: "printed 15/21"}
+      - {key: EMA-SB, loc: "SAppI-8.4", page: "printed 15/21"}
+      - {key: EMA-SB, loc: "S7", page: "printed 10/21"}
+    req: [REQ-105, REQ-106, REQ-107, REQ-108, REQ-109, REQ-110, REQ-115]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "within the 7-day notification window (REQ-105); 7 calendar days of sponsor awareness (REQ-107, REQ-108, REQ-110)"
+    record: "serious breach assessment; breach impact assessment; deviation trend analysis; documented breach assessment"
+    party: "sponsor"
+    verify:
+      - "[verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)"
+  - id: G3
+    type: xor-split
+    label: "Serious breach?"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EUCTR, loc: "Art. 52(2)", page: "OJ L 158/40"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: EMA-SB, loc: "S3.2", page: "printed 5/21"}
+      - {key: EMA-SB, loc: "S5.1", page: "printed 8/21"}
+      - {key: EMA-SB, loc: "S6.1", page: "printed 9/21"}
+      - {key: EMA-SB, loc: "SAppII", page: "printed 18/21"}
+      - {key: CTIS-BT-SB24, loc: "SSlide-33", page: "slide 33"}
+      - {key: EMA-SB, loc: "SAppI-8.2", page: "printed 15/21"}
+      - {key: EMA-SB, loc: "SAppI-8.4", page: "printed 15/21"}
+    req: [REQ-105]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "within the 7-day notification window"
+    party: "sponsor"
+    verify:
+      - "[verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)"
+  - id: A2
+    type: task
+    label: "Notify serious breach via EU portal"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EUCTR, loc: "Art. 52(1)", page: "OJ L 158/40"}
+      - {key: EMA-SB, loc: "S3.2", page: "printed 5/21"}
+      - {key: EUCTR-QA, loc: "S11.3", page: "printed 1-2 (chapter 11); printed 1 (chapter 11)"}
+      - {key: EMA-SB, loc: "S3.1", page: "printed 5/21"}
+      - {key: EUCTR-QA, loc: "S1.5", page: "printed 4-5 (chapter 1; page numbers restart per chapter)"}
+      - {key: CTIS-BT-SB24, loc: "SSlide-20", page: "slide 20; notification type label on an unnumbered CTCG slide"}
+      - {key: EMA-SB, loc: "S4", page: "printed 6/21; printed 6/21 and 20-21/21"}
+      - {key: EMA-SB, loc: "SAppIIIb", page: "printed 20-21/21"}
+      - {key: CTIS-BT-SB24, loc: "SSlide-28", page: "slides 20, 26, 28; EU CT number point on an unnumbered CTCG slide"}
+    req: [REQ-111, REQ-112, REQ-113, REQ-114]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach (REQ-111); 7 calendar days of sponsor awareness (REQ-112)"
+    record: "serious breach notification in CTIS; serious breach notification; CTIS structured fields; Appendix III b report; notification title"
+    party: "sponsor"
+    verify:
+      - "[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)"
+      - "[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)"
+      - "[verify] Appendix III a form content not in the text layer (local copy also empty; form is an image or form object) (R3-056)"
+  - id: A3
+    type: task
+    label: "Check need for other EU notifications"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EMA-SB, loc: "S4", page: "printed 6/21"}
+    req: [REQ-117]
+    binding: guidance
+    jurisdiction: [EU]
+    deadline: "per the respective article"
+    party: "sponsor"
+  - id: A12
+    type: call-activity
+    label: "Handle other EU notifications"
+    lane: L_SPON
+    calls: null
+    interface: true
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EUCTR, loc: "Art. 53(1)", page: "OJ L 158/40"}
+      - {key: EUCTR, loc: "Art. 38(1)", page: "OJ L 158/36"}
+    req: [REQ-215, REQ-216]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "without undue delay but no later than 15 days from the date the sponsor became aware of this event (REQ-215); without undue delay but not later than in 15 days of the date of the temporary halt or early termination (REQ-216)"
+    record: "unexpected event notification in CTIS; temporary halt / early termination notification in CTIS"
+    party: "The sponsor"
+  - id: A4
+    type: task
+    label: "Document non-notification rationale"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EMA-SB, loc: "S5.1", page: "printed 8/21"}
+    req: [REQ-116]
+    binding: guidance
+    jurisdiction: [EU]
+    record: "non-notification rationale"
+    party: "sponsor"
+  - id: G4
+    type: xor-join
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+  - id: G5
+    type: xor-join
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+  - id: A11
+    type: task
+    label: "Escalate potentially reportable GCP issues"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: TCB-PD-TIRS, loc: "SGCP-Compliance", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-126]
+    binding: best-practice
+    jurisdiction: [ICH]
+    deadline: "per local requirement"
+    party: "Companies"
+  - id: A5
+    type: task
+    label: "Assess serious noncompliance"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", page: "printed 35 / PDF 43"}
+    req: [REQ-118]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+  - id: G6
+    type: xor-split
+    label: "Serious noncompliance?"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", page: "printed 35 / PDF 43"}
+    req: [REQ-118]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+  - id: A6
+    type: task
+    label: "Notify serious noncompliance"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", page: "printed 35 / PDF 43"}
+    req: [REQ-119]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+  - id: G7
+    type: xor-join
+    lane: L_SPON
+    path: main
+  - id: A7
+    type: task
+    label: "Report deviations periodically where required"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: TCB-PD-TIRS, loc: "SReport", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-125]
+    binding: best-practice
+    jurisdiction: [ICH]
+    deadline: "per recipient requirement"
+    record: "periodic deviation report"
+    verify:
+      - "[verify] reporting party not stated in the source (R5-037)"
+      - "[verify] single fetch (R5-037)"
+  - id: G8
+    type: and-join
+    lane: L_SPON
+    path: main
+  - id: G9
+    type: xor-split
+    label: "Reportable noncompliance notified?"
+    lane: L_SPON
+    path: main
+  - id: E1
+    type: end
+    label: "Reportable noncompliance notified"
+    lane: L_SPON
+    path: main
+  - id: E2
+    type: end
+    label: "No notification required"
+    lane: L_SPON
+    path: exception
+  - id: S2
+    type: start
+    label: "Protocol deviation identified at site"
+    pool: P_INV
+    path: main
+  - id: A8
+    type: task
+    label: "Inform IRB/IEC of significant changes"
+    pool: P_INV
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.4.6", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-1.4.8(b)", page: "printed 11 / PDF 19"}
+    req: [REQ-120]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "promptly"
+    party: "investigator or sponsor; investigator/institution"
+    verify:
+      - "[verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03)"
+      - "[verify] duty may lie with investigator or sponsor (A1-2.4.6)"
+  - id: G10
+    type: xor-split
+    label: "IND under 21 CFR 312?"
+    pool: P_INV
+    path: main
+    group: GR_US
+  - id: A9
+    type: task
+    label: "Report changes in research activity to IRB"
+    pool: P_INV
+    path: alt
+    group: GR_US
+    src:
+      - {key: 21CFR312, loc: "21CFR312.66", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR312, loc: "21CFR312.53(c)(1)(vii)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-121]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "promptly (no day count)"
+    record: "IRB report"
+    party: "investigator"
+    verify:
+      - "[verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)"
+  - id: A10
+    type: task
+    label: "Submit iPD to IRB"
+    pool: P_INV
+    path: alt
+    group: GR_US
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.3", page: "printed 10; lines 351-353; printed 10; lines 355-356"}
+    req: [REQ-122, REQ-123]
+    binding: guidance
+    jurisdiction: [US]
+    draft: true
+    deadline: "when identified, where possible (REQ-122); not immediately; IRB procedures decide (REQ-123)"
+    record: "IRB submission"
+    party: "the investigator"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: G11
+    type: xor-join
+    pool: P_INV
+    path: main
+    group: GR_US
+  - id: E3
+    type: end
+    label: "IRB/IEC reporting completed"
+    pool: P_INV
+    path: main
+
+flows:
+  - {id: F1, from: S1, to: G1}
+  - {id: F2, from: G1, to: G2}
+  - {id: F3, from: G1, to: A11}
+  - {id: F4, from: A11, to: A5}
+  - {id: F5, from: G2, to: A1, label: "Yes"}
+  - {id: F6, from: G2, to: G5, label: "No"}
+  - {id: F7, from: A1, to: G3}
+  - {id: F8, from: G3, to: A2, label: "Yes"}
+  - {id: F9, from: G3, to: A4, label: "No"}
+  - {id: F10, from: A2, to: A3}
+  - {id: F11, from: A3, to: A12}
+  - {id: F12, from: A4, to: G4}
+  - {id: F13, from: G4, to: G5}
+  - {id: F14, from: G5, to: G8}
+  - {id: F15, from: A5, to: G6}
+  - {id: F16, from: G6, to: A6, label: "Yes"}
+  - {id: F17, from: G6, to: G7, label: "No"}
+  - {id: F18, from: A6, to: G7}
+  - {id: F19, from: G7, to: A7}
+  - {id: F20, from: A7, to: G8}
+  - {id: F21, from: G8, to: G9}
+  - {id: F22, from: G9, to: E1, label: "Yes"}
+  - {id: F23, from: G9, to: E2, label: "No"}
+  - {id: F24, from: S2, to: G10}
+  - {id: F25, from: G10, to: A9, label: "Yes"}
+  - {id: F26, from: G10, to: G11, label: "No"}
+  - {id: F27, from: A9, to: A10}
+  - {id: F28, from: A10, to: G11}
+  - {id: F29, from: G11, to: A8}
+  - {id: F30, from: A8, to: E3}
+  - {id: F31, from: A12, to: G4}
+
+message_flows:
+  - id: M1
+    label: "Serious breach notified"
+    src:
+      - {key: EUCTR, loc: "Art. 52(1)", page: "OJ L 158/40"}
+      - {key: EMA-SB, loc: "S3.2", page: "printed 5/21"}
+      - {key: EUCTR-QA, loc: "S11.3", page: "printed 1-2 (chapter 11)"}
+      - {key: EMA-SB, loc: "S3.1", page: "printed 5/21"}
+      - {key: EUCTR-QA, loc: "S1.5", page: "printed 4-5 (chapter 1; page numbers restart per chapter)"}
+      - {key: CTIS-BT-SB24, loc: "SSlide-20", page: "slide 20; notification type label on an unnumbered CTCG slide"}
+      - {key: EMA-SB, loc: "S8", page: "printed 10/21"}
+      - {key: CTIS-BT-SB24, loc: "SPublication", page: "publication section (slides unnumbered)"}
+      - {key: CTIS-TM17, loc: "S2.5", page: "printed 6-10 (Q&A 1.4, 2.5, 2.10)"}
+      - {key: CTIS-TM17, loc: "S4.7", page: "printed 13-14"}
+    req: [REQ-111, REQ-231]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach"
+    party: "sponsor; Member States concerned"
+    verify:
+      - "[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)"
+      - "[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)"
+    from: A2
+    to: P_RA
+  - id: M2
+    label: "Serious noncompliance notified"
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", page: "printed 35 / PDF 43"}
+    req: [REQ-119]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+    from: A6
+    to: P_RA
+  - id: M3
+    label: "Serious noncompliance notified"
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", page: "printed 35 / PDF 43"}
+    req: [REQ-119]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+    from: A6
+    to: P_IEC
+  - id: M4
+    label: "Serious noncompliance notified"
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", page: "printed 35 / PDF 43"}
+    req: [REQ-119]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+    from: A6
+    to: P_INV
+  - id: M5
+    label: "Change significantly affecting conduct reported"
+    src:
+      - {key: E6R3, loc: "A1-2.4.6", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-1.4.8(b)", page: "printed 11 / PDF 19"}
+    req: [REQ-120]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "promptly"
+    party: "investigator or sponsor; investigator/institution"
+    verify:
+      - "[verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03)"
+      - "[verify] duty may lie with investigator or sponsor (A1-2.4.6)"
+    from: A8
+    to: P_IEC
+  - id: M6
+    label: "Change in research activity reported"
+    src:
+      - {key: 21CFR312, loc: "21CFR312.66", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR312, loc: "21CFR312.53(c)(1)(vii)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-121]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "promptly (no day count)"
+    party: "investigator"
+    verify:
+      - "[verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)"
+    from: A9
+    to: P_IEC
+  - id: M7
+    label: "Important protocol deviation submitted"
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.3", page: "printed 10; lines 351-353"}
+    req: [REQ-122]
+    binding: guidance
+    jurisdiction: [US]
+    draft: true
+    deadline: "when identified, where possible"
+    party: "the investigator"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+    from: A10
+    to: P_IEC
+  - id: M8
+    label: "Serious or continuing noncompliance reported"
+    src:
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-124]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "prompt (no day count)"
+    party: "each IRB"
+    verify:
+      - "[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1)"
+      - "[verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)"
+    from: P_IEC
+    to: P_RA
+  - id: M9
+    label: "Serious or continuing noncompliance reported to institutional officials"
+    src:
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-124]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "prompt (no day count)"
+    party: "each IRB"
+    verify:
+      - "[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1)"
+      - "[verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)"
+    from: P_IEC
+    to: P_INV
+
+groups:
+  - {id: GR_EU, label: "EU CTR", members: [G2, A1, G3, A2, A3, A12, A4, G4, G5]}
+  - {id: GR_US, label: "US 21 CFR", members: [G10, A9, A10, G11]}
+
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks"}
+  - {rule: DEC-06, element: G9, reason: "XOR split G9: each branch is a distinct business outcome (E1, E2) and ends in its own end event without a join"}
+
+open_items:
+  - "[verify interface] Neighbouring process 'Data security incident handling': an incident that is also serious noncompliance or a serious breach enters this step through S1. Interface REQs: REQ-212."
+  - "[verify interface] Neighbouring process 'IND safety reporting and unanticipated problems' (21 CFR 312.32, 312.55, 312.66, 56.108(b)(1)): runs when a deviation reveals or contributes to a reportable safety event; no flow hand-off is defined in the sources. Interface REQs: REQ-224, REQ-225, REQ-227, REQ-228, REQ-229."
+  - "[verify interface] IRB/IEC-internal process 'Suspension or termination of IRB approval' inside the collapsed IRB/IEC pool (D1); its reports are not part of this step. Interface REQs: REQ-230."
+  - "[verify interface] Authority-initiated processes after a notification (CTIS request for information; corrective measures, EU CTR Art. 77): each starts with an incoming authority request, so it is a separate process (SCP-02). The authority's assessment of the notification (REQ-231) is attached to message flow M1. Interface REQs: REQ-232, REQ-233, REQ-234."
+
+notes:
+  - "C-01 decisions 2-4 of 4: G3 'Serious breach?' (EU, REQ-105, REQ-111), G6 'Serious noncompliance?' (ICH, REQ-118, REQ-119); decision 4 (IRB serious or continuing noncompliance, REQ-124) stays inside the collapsed IRB/IEC pool and appears only as message flows M8 and M9."
+  - "C-05: start event S1 is the same event as the L4-04 start and starts the EU 7-day clock; whose awareness counts stays [verify] (REQ-111)."
+  - "C-03: the binding US duty (REQ-121, [verify]) and the DRAFT split (REQ-122, REQ-123) are separate tasks A9 and A10, so A10 and its flow M7 show DRAFT; the model does not state that minor deviations are exempt."
+  - "Jurisdiction pattern: AND split G1 into an EU path (XOR 'EU CTR applies?') and the ICH path, so the EU serious breach decision and the ICH serious noncompliance decision never exclude each other."

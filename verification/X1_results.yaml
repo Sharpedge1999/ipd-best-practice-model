@@ -1,0 +1,5201 @@
+# X1 blind verification results - one record per worklist item (427).
+# verdicts: confirmed | loc-wrong | page-wrong | paraphrase-distorted | quote-mismatch | binding-wrong | not-found
+# evidence.page = page where the verifier found the content (PDF page / printed page label from the local text).
+results:
+- id: R1-001
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P3.1
+    page: PDF 12 / printed 4
+    snippet: A trial should be conducted in compliance with the protocol
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-002
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P6.2
+    page: PDF 13 / printed 5
+    snippet: Factors critical to the quality of the trial should be identified prospectively.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-003
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P6.3
+    page: PDF 13 / printed 5
+    snippet: avoid, detect, address and prevent recurrence of serious noncompliance
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-004
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P7.1
+    page: PDF 13 / printed 5
+    snippet: Trial processes should be proportionate to the risks inherent in the trial
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-005
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P7.3
+    page: PDF 13 / printed 5
+    snippet: Risks to critical to quality factors should be managed proactively
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-006
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P7.4
+    page: PDF 13 / printed 5
+    snippet: 7.4 Trial processes should be operationally feasible and avoid unnecessary complexity, procedures
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-007
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P8.3
+    page: PDF 14 / printed 6
+    snippet: should be clear, concise and operationally feasible.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-008
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P9.5
+    page: PDF 14 / printed 6
+    snippet: Essential records should be retained securely by sponsors and investigators
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-009
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P10.1
+    page: PDF 15 / printed 7
+    snippet: they retain overall responsibility for their respective activities.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-010
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P10.3
+    page: PDF 15 / printed 7
+    snippet: should maintain appropriate oversight of the aforementioned activities.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-011
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-1.4.7
+    page: PDF 18 / printed 10
+    snippet: no deviations from or changes to the protocol should be initiated
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-012
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-1.4.8(a)
+    page: PDF 19 / printed 11
+    snippet: Deviations from the protocol to eliminate immediate hazards to the trial participants
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Sub-item (a) sits on PDF 19 / printed 11; the 1.4.8 lead-in is on printed 10.
+- id: R1-013
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-1.4.8(b)
+    page: PDF 19 / printed 11
+    snippet: Changes increasing the risk to participants and/or significantly affecting the conduct of
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-014
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-1.4.9
+    page: PDF 19 / printed 11
+    snippet: 1.4.9 Ensuring that the IRB/IEC (see section 1.1) promptly notifies in writing
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-015
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.3.1
+    page: PDF 20 / printed 12
+    snippet: The investigator retains the ultimate responsibility
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-016
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.4.6
+    page: PDF 21 / printed 13
+    snippet: 2.4.6 The investigator or the sponsor should promptly communicate to the IRB/IEC
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-017
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.2
+    page: PDF 21 / printed 13
+    snippet: 2.5.2 The investigator should comply with the protocol, GCP and applicable regulatory
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-018
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.3
+    page: PDF 21 / printed 13
+    snippet: document all protocol deviations.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-019
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.3
+    page: PDF 21 / printed 13
+    snippet: 2.5.3 The investigator should document all protocol deviations. In addition to those
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-020
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.3
+    page: PDF 21 / printed 13
+    snippet: the investigator should review the deviations, and for those deviations deemed important
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-021
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.3
+    page: PDF 21 / printed 13
+    snippet: implement appropriate measures to prevent a recurrence, where applicable
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-022
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.4
+    page: PDF 21 / printed 13
+    snippet: deviate only where necessary to eliminate an immediate hazard(s)
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-023
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.4
+    page: PDF 21 / printed 13
+    snippet: inform the sponsor promptly.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-024
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.5.5
+    page: PDF 21 / printed 13
+    snippet: report information on the immediate hazard,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-025
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.12.2
+    page: PDF 29 / printed 21
+    snippet: Source records should be attributable, legible, contemporaneous, original, accurate and complete.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-026
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.12.6
+    page: PDF 30 / printed 22
+    snippet: Changes or corrections in the reported data should be traceable,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-027
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.12.11
+    page: PDF 30 / printed 22
+    snippet: should have control of all essential records generated
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-028
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.12.12
+    page: PDF 31 / printed 23
+    snippet: 2.12.12 The investigator/institution should retain the essential records for the required retention
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-029
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.12.14
+    page: PDF 31 / printed 23
+    snippet: should make available for direct access all requested
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-030
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.1.2
+    page: PDF 31 / printed 23
+    snippet: factors that are critical to the quality of the trial
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-031
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.9.2
+    page: PDF 34 / printed 26
+    snippet: 3.9.2 The sponsor should ensure that trial processes are conducted in compliance
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-032
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.9.3
+    page: PDF 35 / printed 27
+    snippet: The sponsor should determine necessary trial-specific criteria for classifying protocol deviations as
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-033
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.9.3
+    page: PDF 35 / printed 27
+    snippet: Important protocol deviations are a subset of protocol deviations
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-034
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.9.5
+    page: PDF 35 / printed 27
+    snippet: The range and extent of oversight measures should be fit for purpose
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-035
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.9.6
+    page: PDF 35 / printed 27
+    snippet: 3.9.6 The sponsor should ensure appropriate and timely escalation and follow-up of
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-036
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10
+    page: PDF 35 / printed 27
+    snippet: critical to quality factors as described in ICH E8(R1)).
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-037
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10
+    page: PDF 35 / printed 27
+    snippet: describe the quality management approach implemented in the trial in the clinical trial report
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-038
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.1
+    page: PDF 36 / printed 28
+    snippet: identify risks that may have a meaningful impact on critical to quality
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-039
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.2
+    page: PDF 36 / printed 28
+    snippet: 3.10.1.2 Risk Evaluation The sponsor should evaluate identified risks and existing controls
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-040
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.3
+    page: PDF 36 / printed 28
+    snippet: 3.10.1.3 Risk Control Risk control should be proportionate to the importance of
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-041
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.3
+    page: PDF 36 / printed 28
+    snippet: Where relevant, the sponsor should set pre-specified acceptable ranges (e.g., quality tolerance
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-042
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.3
+    page: PDF 36 / printed 28
+    snippet: an evaluation should be performed to determine if there is a possible
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-043
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.4
+    page: PDF 36 / printed 28
+    snippet: 3.10.1.4 Risk Communication The sponsor should document and communicate the identified risks
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-044
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.5
+    page: PDF 37 / printed 29
+    snippet: 3.10.1.5 Risk Review The sponsor should periodically review risk control measures to
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-045
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.10.1.6
+    page: PDF 37 / printed 29
+    snippet: document them in the clinical trial report (see ICH E3).
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-046
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.1
+    page: PDF 37 / printed 29
+    snippet: implementing risk-based strategies to identify potential or actual causes
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-047
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.3
+    page: PDF 38 / printed 30
+    snippet: Within clinical trials, monitoring and data management processes are the main quality
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-048
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4
+    page: PDF 38 / printed 30
+    snippet: However, monitoring should be performed by persons not involved in the clinical
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'Extent and nature of monitoring based on identified risks: PDF 39 / printed 31 (within cited range).'
+- id: R1-049
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.1(a)
+    page: PDF 39 / printed 31
+    snippet: be determined based on identified risks.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Source adds 'as appropriate' to modifying monitoring activities; paraphrase drops it (no material change).
+- id: R1-050
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.2(a)
+    page: PDF 39 / printed 31
+    snippet: Centralised monitoring is an evaluation of accumulated data,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-051
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.2(b)
+    page: PDF 39 / printed 31
+    snippet: including protocol noncompliance and potentially unreliable data.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-052
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.2(c)
+    page: PDF 39 / printed 31
+    snippet: (c) Centralised monitoring may support the selection of sites and/or processes for
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-053
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.3
+    page: PDF 39 / printed 31
+    snippet: The plan should focus on aspects that are critical to quality.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-054
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.3
+    page: PDF 40 / printed 32
+    snippet: should be addressed in the monitoring plan.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-055
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.4
+    page: PDF 40 / printed 32
+    snippet: 3.11.4.4 Monitoring Procedures Persons performing monitoring should follow the sponsor's monitoring plan
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-056
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.1(a)
+    page: PDF 40 / printed 32
+    snippet: (a) Establishing and maintaining a line of communication between the sponsor and
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Source frames this as a monitoring activity (3.11.4.5.1 list), not a stand-alone sponsor duty; acceptable.
+- id: R1-057
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.1(b)
+    page: PDF 40 / printed 32
+    snippet: relevant deviations from the protocol, GCP and the applicable regulatory requirements
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-058
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.1(b)
+    page: PDF 40 / printed 32
+    snippet: taking appropriate action designed to prevent recurrence of the detected deviations
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-059
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.1(b)
+    page: PDF 40 / printed 32
+    snippet: Important deviations should be highlighted and should be the focus of remediation
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Source ends 'as appropriate'; paraphrase drops the qualifier (no material change).
+- id: R1-060
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.1(c)
+    page: PDF 40 / printed 32
+    snippet: (c) Informing the investigator or other parties and individuals involved in the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-061
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.1(d)
+    page: PDF 40 / printed 32
+    snippet: should be proportionate to their importance.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-062
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.2(b)
+    page: PDF 41 / printed 33
+    snippet: follow the current approved protocol and other protocol-related documents,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-063
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.2(i)
+    page: PDF 41 / printed 33
+    snippet: Confirming that the investigator provides the required reports, notifications or other information
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-064
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.4(a)
+    page: PDF 42 / printed 34
+    snippet: Verifying that the investigator is enrolling only eligible trial participants.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-065
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.4(b)(ii)
+    page: PDF 42 / printed 34
+    snippet: Identify missing data, inconsistent data, data outliers, unexpected lack of variability and
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Sub-item (ii) follows 'Monitoring should:' under (b); found PDF 42 / printed 34.
+- id: R1-066
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.5.4(c)
+    page: PDF 42 / printed 34
+    snippet: (c) Identifying significant errors in data collection and reporting at a site
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-067
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.6(a)
+    page: PDF 42 / printed 34
+    snippet: a description of significant findings, conclusions and actions required to resolve them
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-068
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.6(b)
+    page: PDF 43 / printed 35
+    snippet: in a timely manner for review and follow-up.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-069
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.6(c)
+    page: PDF 43 / printed 35
+    snippet: findings requiring escalation for action and resolution.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-070
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.11.4.6(c)
+    page: PDF 43 / printed 35
+    snippet: The sponsor should decide on the appropriate action to be taken
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-071
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.1
+    page: PDF 43 / printed 35
+    snippet: should lead to appropriate and proportionate action by the sponsor to secure
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-072
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.2
+    page: PDF 43 / printed 35
+    snippet: perform a root cause analysis, implement appropriate corrective and preventive actions
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-073
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.2
+    page: PDF 43 / printed 35
+    snippet: implement appropriate corrective and preventive actions and confirm their adequacy unless otherwise justified
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-074
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.2
+    page: PDF 43 / printed 35
+    snippet: likely to significantly impact the rights, safety or well-being
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-075
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.2
+    page: PDF 43 / printed 35
+    snippet: (i.e., serious noncompliance), the sponsor should notify the
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-076
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.3
+    page: PDF 43 / printed 35
+    snippet: should consider terminating the investigator's/institution's or service provider's participation
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-077
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.3
+    page: PDF 43 / printed 35
+    snippet: the sponsor should promptly notify the regulatory authority(ies) and IRB/IEC of the serious noncompliance
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-078
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.12.3
+    page: PDF 43 / printed 35
+    snippet: take actions to minimise the impact on the trial participants and the reliability
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Source is conditional ('In these circumstances', i.e. after considering termination for persistent noncompliance); read together with
+    R1-076/077.
+- id: R1-079
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.13.3
+    page: PDF 44 / printed 36
+    snippet: take prompt action to address immediate hazards to participants.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-080
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.13.3
+    page: PDF 45 / printed 37
+    snippet: The sponsor should consider whether the protocol requires amendment in response to
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-081
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.16.1(b)
+    page: PDF 47 / printed 39
+    snippet: (b) The sponsor should apply quality control to the relevant stages of
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-082
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.16.1(w)
+    page: PDF 49 / printed 41
+    snippet: incidents (including security breaches) that have a significant impact on the trial
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-083
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.16.1(x)(ix)
+    page: PDF 50 / printed 42
+    snippet: a process in place for service providers and investigator(s)/institution(s)
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Located under 3.16.1(x) 'For all systems:' item (ix), PDF 50 / printed 42.
+- id: R1-084
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.16.2(d)
+    page: PDF 51 / printed 43
+    snippet: criteria for inclusion or exclusion of trial participants
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-085
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.16.3(a)
+    page: PDF 51 / printed 43
+    snippet: (a) The sponsor (or subsequent owners of the data) should retain the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-086
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A2-2.4
+    page: PDF 63 / printed 55
+    snippet: proportionate to the importance of the data being collected
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Quote also occurs in the Introduction (PDF 10); the A2-2.4 occurrence is on PDF 63 / printed 55.
+- id: R1-087
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A2-2.4.1
+    page: PDF 64 / printed 56
+    snippet: In either case mentioned above, the level of investigator oversight should be
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Arrangements in source apply to activities not requiring protocol knowledge; paraphrase generalises slightly, acceptable.
+- id: R1-088
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A2-3.2.2
+    page: PDF 65 / printed 57
+    snippet: 3.2.2 Sponsors considering incorporating trial-related activities that are part of usual clinical
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-089
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A2-3.8
+    page: PDF 70 / printed 62
+    snippet: specifically customised to the clinical trial and its critical to quality factors
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Proportionality in source attaches to the QC/QA measures that form part of sponsor oversight; acceptable.
+- id: R1-090
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A2-3.8
+    page: PDF 70 / printed 62
+    snippet: Sponsors should maintain appropriate oversight of service providers including ensuring maintenance of
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-091
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: P6.2
+    page: PDF 13 / printed 5
+    snippet: attributes of a trial that are fundamental to the protection of participants,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-092
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.10.6
+    page: PDF 28 / printed 20
+    snippet: used only in accordance with the approved protocol.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-093
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.11
+    page: PDF 29 / printed 21
+    snippet: promptly document and explain to the sponsor any premature unblinding
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-094
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.12.3
+    page: PDF 29 / printed 21
+    snippet: be responsible for the timely review of data,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-095
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-2.12.10(e)
+    page: PDF 30 / printed 22
+    snippet: are reported to the sponsor and, where applicable, to the IRB/IEC.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-096
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.1.4
+    page: PDF 31 / printed 23
+    snippet: should avoid unnecessary complexity, procedures and data collection.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-097
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.3
+    page: PDF 32 / printed 24
+    snippet: the sponsor should determine the roles and allocate their trial-related activities accordingly.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-098
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.6.3(a)
+    page: PDF 32 / printed 24
+    snippet: To conduct the trial in accordance with the approved protocol
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-099
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.6.6
+    page: PDF 33 / printed 25
+    snippet: report to the sponsor incidents that might have an impact on the
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-100
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-3.17.2(a)
+    page: PDF 52 / printed 44
+    snippet: meet the standards of ICH E3
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-101
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.2.2
+    page: PDF 54 / printed 46
+    snippet: 4.2.2 Relevant Metadata, Including Audit Trails The approach used by the responsible
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-102
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.2.3
+    page: PDF 55 / printed 47
+    snippet: Procedures for review of trial-specific data, audit trails and other relevant metadata
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-103
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.2.4
+    page: PDF 55 / printed 47
+    snippet: 4.2.4 Data Corrections There should be processes to correct data errors that
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-104
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.2.6(b)
+    page: PDF 56 / printed 48
+    snippet: should be confirmed and documented in accordance with pre-specified procedures.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-105
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.2.6(b)
+    page: PDF 56 / printed 48
+    snippet: compilation of and addressing the impact of noncompliance issues, including protocol deviations.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-106
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.2.6(c)
+    page: PDF 56 / printed 48
+    snippet: (c) Data extraction and determination of data analysis sets should take place
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-107
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.2.7
+    page: PDF 56 / printed 48
+    snippet: 4.2.7 Retention and Access The trial data and relevant metadata should be
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-108
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: A1-4.3.4(a)
+    page: PDF 57 / printed 49
+    snippet: (a) The responsible party is responsible for the validation status of the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-109
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppB-Intro
+    page: PDF 78 / printed 70
+    snippet: can reduce the number of deviations
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-110
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppB-B.2.5
+    page: PDF 78 / printed 70
+    snippet: B.2.5 A statement that the trial will be conducted in compliance with
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-111
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppB-B.10.4
+    page: PDF 81 / printed 73
+    snippet: B.10.4 The selection of participants to be included in the planned analyses,
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-112
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppB-B.12.1
+    page: PDF 82 / printed 74
+    snippet: Description of identified critical to quality factors, associated risks and risk mitigation
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-113
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppB-B.12.2
+    page: PDF 82 / printed 74
+    snippet: B.12.2 Summary of the monitoring approaches that are part of the quality
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-114
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppB-B.12.3
+    page: PDF 82 / printed 74
+    snippet: Description of the process for the handling of noncompliance with the protocol
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-115
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.1.3
+    page: PDF 83 / printed 75
+    snippet: C.1.3 The essential records permit and contribute to the evaluation of the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-116
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.2.3
+    page: PDF 83 / printed 75
+    snippet: C.2.3 These essential records should be maintained in or referred to from
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-117
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.2.5
+    page: PDF 83 / printed 75
+    snippet: C.2.5 The sponsor and investigator/institution should ensure that the essential records are
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-118
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.2.6
+    page: PDF 84 / printed 76
+    snippet: C.2.6 The sponsor and investigator/institution should retain the essential records in a
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-119
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.1(a)
+    page: PDF 85 / printed 77
+    snippet: (a) Is a document that is submitted to or issued by the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-120
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.1(r)
+    page: PDF 86 / printed 78
+    snippet: arising issues/noncompliance and deviations detected and implementation of corrective and preventative actions;
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-121
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.1(s)
+    page: PDF 86 / printed 78
+    snippet: (s) Documents the compliance with the protocol and/or procedures for management and
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-122
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 87 / printed 79
+    snippet: the trial records that are considered essential are listed in the Essential Records Table
+  correction: null
+  method: local-text
+  quote_check: null
+  note: '''No fixed retention period is given'' is the extractor''s observation (absence), not text of C.3.2; C.3.3 supports the ''may not be
+    produced'' part.'
+- id: R1-123
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 89 / printed 81
+    snippet: Records and reports of noncompliance including protocol deviations and corrective and preventative
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Essential Records Table is listed by C.3.2 but printed after C.3.3 (PDF 87-89); C.3.2 citation acceptable.
+- id: R1-124
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 89 / printed 81
+    snippet: Site monitoring reports (including site selection,* initiation,* routine and close-out)
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Table marks site selection and initiation reports with an asterisk (in place before trial start).
+- id: R1-125
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 89 / printed 81
+    snippet: Documentation relating to data finalisation for analysis (e.g., query resolutions, SAE
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-126
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 89 / printed 81
+    snippet: Documentation relating to the statistical considerations and analysis (e.g., sample size calculations,*
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Table marks sample size calculations with an asterisk.
+- id: R1-127
+  src: E6R3
+  verdict: paraphrase-distorted
+  severity: low
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 89 / printed 81
+    snippet: Trial-specific plans (e.g., risk management,* monitoring,* safety,* data management,* data validation*
+  correction: 'Asterisked (in place before trial start): risk management, monitoring, safety, data management and data validation plans; statistical
+    analysis plan not asterisked.'
+  method: local-text
+  quote_check: null
+  note: Table row reads 'risk management,* monitoring,* safety,* data management,* data validation* and statistical analysis'; paraphrase lists
+    the asterisked plans but omits the safety plan.
+- id: R1-128
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 87 / printed 79
+    snippet: Signed protocol* and subsequent amendments during the trial
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-129
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2
+    page: PDF 87 / printed 79
+    snippet: Interim (where applicable) and final clinical trial reports
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-130
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Compliance (in relation to trials)
+    page: PDF 92 / printed 84
+    snippet: Adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-131
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Protocol
+    page: PDF 96 / printed 88
+    snippet: the term "protocol" refers to protocol and protocol amendments.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-132
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Protocol Amendment
+    page: PDF 96 / printed 88
+    snippet: A documented description of a change(s) to a protocol.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-133
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Monitoring
+    page: PDF 96 / printed 88
+    snippet: Monitoring The act of overseeing the progress of a clinical trial and
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-134
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Monitoring Plan
+    page: PDF 96 / printed 88
+    snippet: Monitoring Plan A document that describes the strategy, methods, responsibilities and requirements
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-135
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Monitoring Report
+    page: PDF 96 / printed 88
+    snippet: A documented report following site and/or centralised monitoring activities.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R1-136
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Essential Records
+    page: PDF 93 / printed 85
+    snippet: Essential Records Essential records are the documents and data (and relevant metadata),
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-137
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Audit Trail
+    page: PDF 91 / printed 83
+    snippet: The audit trail should show activities, initial entry and changes to data
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-138
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Source Records
+    page: PDF 97 / printed 89
+    snippet: Source Records Original documents or data (which includes relevant metadata) or certified
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-139
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Clinical Trial/Study Report (CSR)
+    page: PDF 92 / printed 84
+    snippet: Clinical Trial/Study Report (CSR) A documented description of a trial of any
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-140
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Sponsor
+    page: PDF 98 / printed 90
+    snippet: Sponsor An individual, company, institution or organisation that takes responsibility for the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-141
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Investigator
+    page: PDF 95 / printed 87
+    snippet: Investigator A person responsible for the conduct of the clinical trial, including
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-142
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)
+    page: PDF 95 / printed 87
+    snippet: Institutional Review Board (IRB)/Independent Ethics Committee (IEC) An independent body (a review
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-143
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Regulatory Authorities
+    page: PDF 97 / printed 89
+    snippet: Regulatory Authorities Bodies having the power to regulate, including those that review
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R1-144
+  src: E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Service Provider
+    page: PDF 97 / printed 89
+    snippet: Service Provider A person or organisation (commercial, academic or other) providing a
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-001
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 9 / printed 3
+    snippet: DESIGNING QUALITY INTO CLINICAL STUDIES The quality by design approach to clinical
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Section 3 lead-in text, PDF 9 / printed 3 (supports framework from design and planning through conduct, analysis and reporting).
+- id: R2-002
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.1
+    page: PDF 9 / printed 3
+    snippet: The likelihood that a clinical study will answer the research questions while
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-003
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: attributes of a study whose integrity is fundamental
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R2-004
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: 3.2 Critical to Quality Factors A basic set of factors relevant to
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-005
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: should also be considered holistically, so that dependencies among them can be identified
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-006
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: The design of a clinical study should reflect the state of knowledge and experience
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-007
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: accepted or should be mitigated, based on their probability, detectability and impact
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-008
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: The term risk is used here in the context of general risk management methodology
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-009
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: Where it is decided that risks should be mitigated, the necessary control
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-010
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: Proactive communication of the critical to quality factors and risk mitigation activities will support
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Source says 'Proactive communication'; 'ongoing' is added but does not change meaning.
+- id: R2-011
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 10 / printed 4
+    snippet: Proactive support (e.g., training to site staff, relevant to their role,
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-012
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 11 / printed 5
+    snippet: Perfection in every aspect of an activity is rarely achievable or can
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-013
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 11 / printed 5
+    snippet: should be clear and should not be cluttered with minor issues
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-014
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3
+    page: PDF 11 / printed 5
+    snippet: 3.3 Approach to Identifying the Critical to Quality Factors A key aspect
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-015
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3
+    page: PDF 11 / printed 5
+    snippet: Study designs should be operationally feasible and avoid unnecessary complexity. Protocols and
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-016
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.1
+    page: PDF 11 / printed 5
+    snippet: Inflexible, "one size fits all" approaches should be discouraged. Standardised operating procedures
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-017
+  src: E8R1
+  verdict: paraphrase-distorted
+  severity: low
+  evidence:
+    loc: S3.3.1
+    page: PDF 11 / printed 5
+    snippet: Evidence used to inform the study design should be gathered and reviewed
+  correction: Evidence used to inform the study design should be gathered and reviewed transparently before and during the study, acknowledging
+    known gaps and conflicting data and anticipating new ones.
+  method: local-text
+  quote_check: null
+  note: Source object is 'Evidence used to inform the study design'; paraphrase widens it to 'evidence supporting quality decisions'.
+- id: R2-018
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.2
+    page: PDF 11 / printed 5
+    snippet: 3.3.2 Focusing on Activities Essential to the Study Efforts should be focused
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-019
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.2
+    page: PDF 12 / printed 6
+    snippet: Resources should be deployed to identify and prevent or control errors that
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R2-020
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.3
+    page: PDF 12 / printed 6
+    snippet: 3.3.3 Engaging Stakeholders in Study Design Clinical study design is best informed
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-021
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.3
+    page: PDF 12 / printed 6
+    snippet: Early engagement with regulatory authorities is encouraged
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-022
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.4
+    page: PDF 12 / printed 6
+    snippet: 3.3.4 Reviewing Critical to Quality Factors Accumulated experience and knowledge, together with
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-023
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.4
+    page: PDF 12 / printed 6
+    snippet: Studies with adaptive features and/or interim decision points need specific attention
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-024
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.5
+    page: PDF 12 / printed 6
+    snippet: A feasibility assessment involves consideration of study design and implementation elements that
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-025
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.5
+    page: PDF 12 / printed 6
+    snippet: retention and follow up of study participants are also key critical to quality factors
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-026
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1
+    page: PDF 24 / printed 18
+    snippet: 6.1 Study Conduct The principles and approaches set out in this guideline,
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-027
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1.1
+    page: PDF 24 / printed 18
+    snippet: aspects of adherence should be considered among the study's critical to quality
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R2-028
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1.1
+    page: PDF 24 / printed 18
+    snippet: Successful application of the quality by design principles may minimise the need
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-029
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1.2
+    page: PDF 24 / printed 18
+    snippet: 6.1.2 Training Individuals involved in study conduct should receive training commensurate with
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-030
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1.2
+    page: PDF 24 / printed 18
+    snippet: Updated training or retraining may be needed
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-031
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1.3
+    page: PDF 24 / printed 18
+    snippet: 6.1.3 Data Management The manner and timelines in which study data are
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-032
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.3
+    page: PDF 25 / printed 19
+    snippet: The report should describe the critical to quality factors in the study.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R2-033
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: In designing a study, the following aspects should be considered, where applicable,
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Section 7 and all 18 bullets sit on PDF 26 / printed 20; 'not exhaustive' sentence closes the list.
+- id: R2-034
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: Engagement of all relevant stakeholders, including patients, is considered during study planning and design.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'Source: engagement of stakeholders ''is considered during study planning and design''.'
+- id: R2-035
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The prerequisite non-clinical studies, and where applicable, clinical studies, are complete and adequate
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-036
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The study objectives address relevant scientific questions appropriate for a given study's role
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-037
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The clinical study design supports a meaningful comparison of the effects of the drug
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-038
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: Adequate measures are used to protect participants' rights, safety, and welfare
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-039
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: Information provided to the study participants should be clear and understandable.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-040
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: Competencies and training required for the study by sponsor and investigator staff
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-041
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The feasibility of the study should be assessed
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-042
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The number of participants included, the duration of the study, and the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-043
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The eligibility criteria should be reflective of the study objectives
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-044
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The protocol specifies the collection of data needed to meet the study objectives
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-045
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The choice of response variables and the methods to assess them are well-defined
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-046
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: Clinical study procedures include adequate measures to minimise bias (e.g., randomisation, blinding).
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-047
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The statistical analysis plan is pre-specified and defines the analysis methods appropriate
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-048
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: Systems and processes are in place that support the study conduct
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-049
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The extent and nature of study monitoring are tailored to the specific study design
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-050
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The need for and appropriate role of a data monitoring committee is assessed.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-051
+  src: E8R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 26 / printed 20
+    snippet: The reporting of the study results is planned, comprehensive, accurate, timely, and publicly accessible.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-052
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIntroduction
+    page: PDF 9 / printed 1
+    snippet: In each section describing the design and conduct of the study, it
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Introduction to the Guideline, PDF 9 / printed 1. Source wording is 'it is particularly important to clarify ... and to discuss'; paraphrase
+    renders this as 'should' (equivalent recommendation).
+- id: R2-053
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S9.8
+    page: PDF 20 / printed 12
+    snippet: 9.8 CHANGES IN THE CONDUCT OF THE STUDY OR PLANNED ANALYSES Any
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 9.8 body text PDF 20 / printed 12 (TOC entry on printed ii also matches).
+- id: R2-054
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S10.1
+    page: PDF 20 / printed 12
+    snippet: 10.1 DISPOSITION OF PATIENTS There should be a clear accounting of all
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-055
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S10.2
+    page: PDF 21 / printed 13
+    snippet: All important deviations related to study inclusion or exclusion criteria,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R2-056
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S10.2
+    page: PDF 21 / printed 13
+    snippet: 10.2 PROTOCOL DEVIATIONS All important deviations related to study inclusion or exclusion
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-057
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S10.2
+    page: PDF 21 / printed 13
+    snippet: '- those who developed withdrawal criteria during the study but were not'
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-058
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S10.2
+    page: PDF 21 / printed 13
+    snippet: '- those who received an excluded concomitant treatment. In appendix 16.2.2, individual'
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-059
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.1
+    page: PDF 21 / printed 13
+    snippet: Exactly which patients were included in each efficacy analysis should be precisely defined
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-060
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.1
+    page: PDF 21 / printed 13
+    snippet: There should be a tabular listing of all patients, visits and observations excluded
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-061
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.1
+    page: PDF 21 / printed 13
+    snippet: The reasons for exclusions should also be analysed for the whole treatment group
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-062
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.4.2.6
+    page: PDF 25 / printed 17
+    snippet: Particular attention should be devoted to the effects of dropping patients with available data
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-063
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S16.2
+    page: PDF 37 / printed 29
+    snippet: 16.2. PATIENT DATA LISTINGS 16.2.1 Discontinued patients 16.2.2 Protocol deviations 16.2.3 Patients
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-064
+  src: E3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SAnnex-IVa
+    page: PDF 43 / printed 35
+    snippet: PROTOCOL VIOLATION (10)
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Annex IVa flowchart 'PROTOCOL VIOLATION' on PDF 43 / printed 35 (page [verify] resolved). Q&A clarification part confirmed in E3QA S3
+    (printed 7).
+- id: R2-065
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S1
+    page: PDF 4 / printed 1
+    snippet: ICH E3 is a Guideline, not a set of rigid requirements or
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-066
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 9 / printed 6
+    snippet: A protocol deviation is any change, divergence, or departure from the study design
+  correction: null
+  method: local-text
+  quote_check: verbatim (multi-column table; verified by reading the column)
+  note: Quote verbatim in the answer column (two-column table; pdftotext interleaves columns), PDF 9 / printed 6.
+- id: R2-067
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 9 / printed 6
+    snippet: Important protocol deviations are a subset of protocol deviations that may significantly impact
+  correction: null
+  method: local-text
+  quote_check: verbatim (multi-column table; verified by reading the column)
+  note: Quote verbatim in the answer column, PDF 9 / printed 6.
+- id: R2-068
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 9 / printed 6
+    snippet: may include enrolling subjects in violation of key eligibility criteria
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-069
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 9 / printed 6
+    snippet: Protocol violation and important protocol deviation are sometimes used interchangeably
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-070
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 9 / printed 6
+    snippet: the term protocol violation was intended to mean only a change, divergence, or departure
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-071
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 10 / printed 7
+    snippet: sponsors are encouraged to replace the phrase "protocol violation" in Annex IVa
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Example flowchart with 'PROTOCOL DEVIATION' labels on PDF 11 / printed 8.
+- id: R2-072
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 10 / printed 7
+    snippet: should be described in Section 10.2 and included in the listing in Appendix 16.2.2
+  correction: null
+  method: local-text
+  quote_check: null
+  note: '''Does not say whether non-important deviations are reported'' is the extractor''s observation; consistent with the text.'
+- id: R2-073
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 10 / printed 7
+    snippet: The definition of important protocol deviations for a particular trial is determined in part
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-074
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 10 / printed 7
+    snippet: sponsors may amend or add to the examples of important deviations provided in E3
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-075
+  src: E3QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3
+    page: PDF 10 / printed 7
+    snippet: Substantial additions or changes should be clearly described for the reviewer.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-076
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2
+    page: PDF 26 / printed 22
+    snippet: 5.2 Analysis Sets The set of subjects whose data are to be
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-077
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2
+    page: PDF 26 / printed 22
+    snippet: should also specify procedures aimed at minimising any anticipated irregularities in study conduct
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-078
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2
+    page: PDF 26 / printed 22
+    snippet: The protocol should consider ways both to reduce the frequency of such problems
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-079
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2
+    page: PDF 26 / printed 22
+    snippet: Possible amendments to the way in which the analysis will deal with protocol violations
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-080
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2
+    page: PDF 26 / printed 22
+    snippet: It is desirable to identify any important protocol violation with respect to the time
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-081
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2
+    page: PDF 26 / printed 22
+    snippet: The frequency and type of protocol violations, missing values, and other problems
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-082
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.1
+    page: PDF 26 / printed 22
+    snippet: There are a limited number of circumstances that might lead to excluding
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-083
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.1
+    page: PDF 27 / printed 23
+    snippet: (iii) all subjects receive equal scrutiny for eligibility violations; (This may be
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-084
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.1
+    page: PDF 27 / printed 23
+    snippet: When the full analysis set of subjects is used, violations of the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-085
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.1
+    page: PDF 27 / printed 23
+    snippet: defer detailed consideration of the manner of dealing with irregularities until the blind review
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'Source: deferral to blind review ''may sometimes be preferable ... and, if so, this should be stated in the protocol''; paraphrase equivalent.'
+- id: R2-086
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.2
+    page: PDF 28 / printed 24
+    snippet: the absence of any major protocol violations including the violation of entry
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: 'Page [verify] resolved: 5.2.2 starts printed 23; criterion (iii) incl. the quote on PDF 28 / printed 24.'
+- id: R2-087
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.2
+    page: PDF 28 / printed 24
+    snippet: precise reasons for excluding subjects from the per protocol set should be fully defined
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Sentence on printed 24 (cited 23-24 acceptable).
+- id: R2-088
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.2
+    page: PDF 28 / printed 24
+    snippet: The problems that lead to the exclusion of subjects to create the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-089
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.2
+    page: PDF 28 / printed 24
+    snippet: good practice to assess the pattern of such problems among the treatment groups
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-090
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.2.3
+    page: PDF 28 / printed 24
+    snippet: 5.2.3 Roles of the Different Analysis Sets In general, it is advantageous
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'Page [verify] resolved: 5.2.3 on PDF 28 / printed 24; source says ''throws some doubt'' (paraphrase ''casts'', not a quote).'
+- id: R2-091
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7.1
+    page: PDF 34 / printed 30
+    snippet: Decisions made at this time should be described in the report
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-092
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7.1
+    page: PDF 34 / printed 30
+    snippet: All reasons for exclusion from analysis should be documented
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-093
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7.1
+    page: PDF 34 / printed 30
+    snippet: all losses of subjects or data, withdrawals from treatment and major protocol violations
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-094
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7.1
+    page: PDF 34 / printed 30
+    snippet: with a severe protocol violation should be identified
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-095
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7.2
+    page: PDF 35 / printed 31
+    snippet: the handling of protocol violators and deviators
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-096
+  src: E9
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Blind Review
+    page: PDF 36 / printed 32
+    snippet: The checking and assessment of data during the period of time between trial completion
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-097
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.1
+    page: PDF 5 / printed 3
+    snippet: meaning and role of an analysis of the per protocol set is also re-visited
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'A.1, PDF 5 / printed 3: per protocol set ''re-visited'' and ''less biased and more interpretable than naive analysis of the per protocol
+    set''.'
+- id: R2-098
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.1
+    page: PDF 5 / printed 3
+    snippet: Firstly, the addendum distinguishes discontinuation of randomised treatment from study withdrawal. The
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-099
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.3.1
+    page: PDF 8 / printed 6
+    snippet: The description of intercurrent events might in theory reflect very specific details
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-100
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.3.1
+    page: PDF 8 / printed 6
+    snippet: this additional information should be defined and recorded accurately in the clinical trial
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-101
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.3.1
+    page: PDF 9 / printed 7
+    snippet: neither study withdrawal nor other reasons for missing data
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-102
+  src: E9R1
+  verdict: page-wrong
+  severity: low
+  evidence:
+    loc: SA.3.4
+    page: PDF 14 / printed 12
+    snippet: the importance of minimising the number of protocol violations and deviations, non-adherence
+  correction: 'page: printed 12 / PDF 14'
+  method: local-text
+  quote_check: null
+  note: A.3.4 passage on non-inferiority/equivalence trials is on PDF 14 / printed 12, not printed 13. Source presents this as a restatement of
+    ICH E9 section 3.3.2.
+- id: R2-103
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.4
+    page: PDF 15 / printed 13
+    snippet: Efforts should be made to collect all data that are relevant to support estimation
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-104
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.4
+    page: PDF 16 / printed 14
+    snippet: A prospective plan to collect informative reasons for why data intended for
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-105
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.4
+    page: PDF 16 / printed 14
+    snippet: To reduce missing data, measures can be implemented to retain subjects in the trial.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-106
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.5.3
+    page: PDF 20 / printed 18
+    snippet: Protocol violations and deviations might exclude subjects from the PPS, for example
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-107
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.5.3
+    page: PDF 20 / printed 18
+    snippet: Notwithstanding the differences between violations and deviations from the protocol and intercurrent
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R2-108
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.6
+    page: PDF 21 / printed 19
+    snippet: Summaries of the number and timings of each intercurrent event in each treatment group
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-109
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.6
+    page: PDF 21 / printed 19
+    snippet: Addressing intercurrent events that were not foreseen at the design stage
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Source subject is 'Addressing intercurrent events that were not foreseen ... should discuss'; report context from preceding sentence;
+    acceptable.
+- id: R2-110
+  src: E9R1
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: GL:Intercurrent Events
+    page: PDF 22 / printed 20
+    snippet: 'Intercurrent Events: Events occurring after treatment initiation that affect either the interpretation'
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Glossary entry on PDF 22 / printed 20; same definition also opens A.3.1 (printed 5).
+- id: R2-111
+  src: M11
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S2.1
+    page: PDF 5 / printed 2
+    snippet: Higher-level heading structure is retained, while many lower-level sections can be added,
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-112
+  src: M11-TEMPLATE
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SConventions [verify]
+    page: PDF 3 / printed iv
+    snippet: Instructional text that is to be removed prior to finalisation of the protocol
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'Precise loc: Section 0.3 ''Template Conventions and General Instructions'' (heading table on printed v-vii; ''Suggestions for Finalising
+    Document'' incl. ''remove all instructional text'' on printed viii). Template forbids adding L1 headings; additions allowed for L2 and lower
+    at the end of the higher-level section.'
+- id: R2-113
+  src: M11-TEMPLATE
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.1
+    page: PDF 34 / printed 25
+    snippet: Prospective approval of protocol deviations to recruitment and enrollment criteria
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Footer page printed 25 (PDF 34) correct.
+- id: R2-114
+  src: M11-TEMPLATE
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.8
+    page: PDF 41 / printed 32
+    snippet: 6.8 Investigational Trial Intervention Adherence Describe the measures to monitor and document
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R2-115
+  src: M11-TEMPLATE
+  verdict: page-wrong
+  severity: low
+  evidence:
+    loc: S10.2
+    page: PDF 55 / printed 46
+    snippet: 10.2 Analysis Sets Describe analysis sets to be considered at the trial
+  correction: 'page: printed 46 / PDF 55'
+  method: local-text
+  quote_check: null
+  note: 10.2 Analysis Sets is on PDF 55 with footer 46; TOC also gives 46. Cited page is one too high.
+- id: R2-116
+  src: M11-TEMPLATE
+  verdict: page-wrong
+  severity: low
+  evidence:
+    loc: S11.6
+    page: PDF 61 / printed 52
+    snippet: Describe the identified critical to quality factors, associated risks and risk mitigation
+  correction: 'page: printed 52 / PDF 61'
+  method: local-text
+  quote_check: verbatim
+  note: 11.6 Risk-Based Quality Management is on PDF 61 with footer 52; TOC also gives 52.
+- id: R2-117
+  src: M11-TEMPLATE
+  verdict: page-wrong
+  severity: low
+  evidence:
+    loc: S11.10
+    page: PDF 62 / printed 53
+    snippet: Describe plans for detecting, reviewing, and reporting any deviations from the protocol
+  correction: 'page: printed 53 / PDF 62'
+  method: local-text
+  quote_check: verbatim
+  note: 11.10 Protocol Deviations is on PDF 62 with footer 53; TOC also gives 53.
+- id: R3-001
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(11)
+    page: PDF 12 / printed L158/12
+    snippet: (11) 'Ethics committee' means an independent body established in a Member State
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-002
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(12)
+    page: PDF 12 / printed L158/12
+    snippet: (12) 'Member State concerned' means the Member State where an application for
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-003
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(13)
+    page: PDF 12 / printed L158/12
+    snippet: likely to have a substantial impact on the safety or rights of
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Definition faithful; the sentence on planned changes vs deviation route is the extractor's interpretation, not text of Art. 2(2)(13).
+- id: R3-004
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(14)
+    page: PDF 12 / printed L158/12
+    snippet: takes responsibility for the initiation, for the management
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-005
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(15)
+    page: PDF 13 / printed L158/13
+    snippet: an individual responsible for the conduct of a clinical trial
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-006
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(16)
+    page: PDF 13 / printed L158/13
+    snippet: (16) 'Principal investigator' means an investigator who is the responsible leader of
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-007
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(22)
+    page: PDF 13 / printed L158/13
+    snippet: a document that describes the objectives, design, methodology,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-008
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(26)
+    page: PDF 13 / printed L158/13
+    snippet: (26) 'End of a clinical trial' means the last visit of the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-009
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(30)
+    page: PDF 13 / printed L158/13
+    snippet: (30) 'Good clinical practice' means a set of detailed ethical and scientific
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-010
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(31)
+    page: PDF 13 / printed L158/13
+    snippet: the act by a competent authority of conducting an official review
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-011
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 2(2)(35)
+    page: PDF 14 / printed L158/14
+    snippet: (35) 'Clinical study report' means a report on the clinical trial presented
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-012
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 37(4)
+    page: PDF 35 / printed L158/35
+    snippet: shall submit to the EU database the clinical study report within 30 days
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'Fourth subparagraph of Art. 37(4) confirmed (subparagraphs: summary; lay summary; ''However''; ''In addition''); page L 158/35.'
+- id: R3-013
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 38(1)
+    page: PDF 36 / printed L158/36
+    snippet: 1. For the purposes of this Regulation, the temporary halt or early
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Paraphrase omits the deadline in the same paragraph ('without undue delay but not later than in 15 days'); no distortion.
+- id: R3-014
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 38(2)
+    page: PDF 36 / printed L158/36
+    snippet: 2. The restart of the clinical trial following a temporary halt as
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-015
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 41(2)
+    page: PDF 37 / printed L158/37
+    snippet: not later than within 24 hours of obtaining knowledge of the events,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Second subparagraph of Art. 41(2) confirmed in OJ layout.
+- id: R3-016
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 47
+    page: PDF 39 / printed L158/39
+    snippet: in accordance with the protocol and with the principles of good clinical
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-017
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 47
+    page: PDF 39 / printed L158/39
+    snippet: in accordance with the protocol and with the principles of good clinical
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-018
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 47
+    page: PDF 39 / printed L158/39
+    snippet: shall also take appropriate account of the quality standards and the ICH
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-019
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 47
+    page: PDF 39 / printed L158/39
+    snippet: shall also take appropriate account of the quality standards and the ICH
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-020
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 47
+    page: PDF 39 / printed L158/39
+    snippet: The Commission shall make publicly available the detailed ICH guidelines on good clinical practice
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-021
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 48
+    page: PDF 39 / printed L158/39
+    snippet: shall adequately monitor the conduct of a clinical trial.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-022
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 48
+    page: PDF 39 / printed L158/39
+    snippet: The extent and nature of the monitoring shall be determined by the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-023
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 52(1)
+    page: PDF 40 / printed L158/40
+    snippet: the version of the protocol applicable at the time of the breach
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-024
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 52(2)
+    page: PDF 40 / printed L158/40
+    snippet: likely to affect to a significant degree the safety and rights of
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: No 'serious breach' definition in Art. 2; term otherwise only in recital 47 and Art. 52.
+- id: R3-025
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 53(1)
+    page: PDF 40 / printed L158/40
+    snippet: 1. The sponsor shall notify the Member States concerned through the EU
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Paraphrase omits the 15-day deadline in the same paragraph ('no later than 15 days from the date the sponsor became aware'); no distortion.
+- id: R3-026
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 53(2)
+    page: PDF 40 / printed L158/40
+    snippet: The sponsor shall submit to the Member States concerned, through the EU
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-027
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 54(1)
+    page: PDF 40 / printed L158/40
+    snippet: Where an unexpected event is likely to seriously affect the benefit-risk balance,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-028
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 54(1)
+    page: PDF 40 / printed L158/40
+    snippet: Where an unexpected event is likely to seriously affect the benefit-risk balance,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-029
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 54(2)
+    page: PDF 40 / printed L158/40
+    snippet: no later than seven days from the date the measures have been
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-030
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 54(3)
+    page: PDF 40 / printed L158/40
+    snippet: This Article is without prejudice to Chapters III and VII.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Cross-reference to EUCTR-QA 7.27 checked under R3-104.
+- id: R3-031
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 56(1)
+    page: PDF 41 / printed L158/41
+    snippet: accurately reported, interpreted and verified
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-032
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 57
+    page: PDF 41 / printed L158/41
+    snippet: readily available, and directly accessible upon request, to the Member States.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Art. 57 has two unnumbered paragraphs in the OJ text; paragraph split as stated.
+- id: R3-033
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 57
+    page: PDF 41 / printed L158/41
+    snippet: readily available, and directly accessible upon request, to the Member States.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-034
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 57
+    page: PDF 41 / printed L158/41
+    snippet: may have a different content if this is justified by the different nature
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-035
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 58
+    page: PDF 41 / printed L158/41
+    snippet: for at least 25 years after the end of the clinical trial.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-036
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 58
+    page: PDF 41 / printed L158/41
+    snippet: for at least 25 years after the end of the clinical trial.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-037
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 58
+    page: PDF 41 / printed L158/41
+    snippet: shall be archived in a way that ensures that it is readily available
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Art. 58 has six unnumbered paragraphs in the OJ text; paragraph numbering in R3-035..R3-039 matches.
+- id: R3-038
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 58
+    page: PDF 41 / printed L158/41
+    snippet: The sponsor shall appoint individuals within its organisation to be responsible for
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-039
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 58
+    page: PDF 41 / printed L158/41
+    snippet: Any alteration to the content of the clinical trial master file shall
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Paragraph numbering matches the OJ layout.
+- id: R3-040
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 77(1)
+    page: PDF 46 / printed L158/46
+    snippet: Where a Member State concerned has justified grounds for considering that the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-041
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 77(2)
+    page: PDF 46 / printed L158/46
+    snippet: Before the Member State concerned takes any of the measures referred to
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-042
+  src: EUCTR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 78(6)
+    page: PDF 47 / printed L158/47
+    snippet: Following an inspection, the Member State under whose responsibility the inspection has
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-043
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SGlossary
+    page: PDF 3 / printed 3
+    snippet: Any deviation of the approved protocol version or the clinical trial regulation
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Glossary PDF 3 / printed 3; entries are Clinical Trial, Sponsor, Service provider, Delegated party, Investigator, Suspected serious breach,
+    Serious breach, MSC, RMS, AMS - no entry for 'breach' alone.
+- id: R3-044
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SGlossary
+    page: PDF 3 / printed 3
+    snippet: has not yet been assessed by the sponsor to be a serious
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-045
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SGlossary
+    page: PDF 3 / printed 3
+    snippet: does not remove the ultimate responsibility of the sponsor
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-047
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.1
+    page: PDF 5 / printed 5
+    snippet: may delegate this task to a service provider
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-048
+  src: EMA-SB
+  verdict: paraphrase-distorted
+  severity: medium
+  evidence:
+    loc: S3.2
+    page: PDF 5 / printed 5
+    snippet: should not extend the reporting period of 7 calendar days
+  correction: Notification without undue delay and at the latest within 7 calendar days of sponsor awareness; any assessment needed to confirm
+    seriousness should be done in a timely manner and should not extend the 7-day period.
+  method: local-text
+  quote_check: verbatim
+  note: Guideline says the sponsor 'should perform the assessment ... in a timely manner' and the assessment 'should not extend the reporting
+    period of 7 calendar days'; paraphrase renders both as 'must'. The 7-day limit itself is binding via EU CTR Art. 52(1), so practical impact
+    is limited, but the cited guideline uses 'should'.
+- id: R3-049
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 5 / printed 5
+    snippet: should not wait to obtain all of the details
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-050
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 5 / printed 5
+    snippet: only serious breaches must be notified, not suspected serious breaches.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-051
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 5 / printed 5
+    snippet: immediately report any events that might meet the definition of a serious
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: 'Source: sponsor should ensure by written contract that all parties immediately report; for the PI ''the protocol may take the place of
+    a written agreement''.'
+- id: R3-052
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 5 / printed 5
+    snippet: should be kept in the clinical trial master file (CTMF)
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-054
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S4
+    page: PDF 6 / printed 6
+    snippet: should be notified to the MSC via the CTIS
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-055
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S4
+    page: PDF 6 / printed 6
+    snippet: they should also consider if there are any other relevant notifications that need
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Section 2 Scope (printed 4) confirms the guideline does not cover Art. 53/54 notifications.
+- id: R3-057
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S4
+    page: PDF 6 / printed 6
+    snippet: indicate which is the Member State most affected
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Decision diagram in section 4 is an image (not in the text layer); Appendix III b item A.7 (PDF 20 / printed 20-21) carries the questions
+    as paraphrased.
+- id: R3-059
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.1
+    page: PDF 8 / printed 8
+    snippet: do not negate the fact that a breach occurred
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-061
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.1
+    page: PDF 8 / printed 8
+    snippet: the sponsor's reasons for not proceeding with the notification,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-062
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.1
+    page: PDF 8 / printed 8
+    snippet: an important deviation is not necessarily also a serious breach and vice
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-063
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.1
+    page: PDF 8 / printed 8
+    snippet: all serious breaches should be included in the corresponding clinical study report.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-065
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S5.1
+    page: PDF 8 / printed 8
+    snippet: Deviations that do not significantly affect the safety and/or the rights
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-066
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1
+    page: PDF 9 / printed 9
+    snippet: There should be a formal process in place
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-067
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1
+    page: PDF 9 / printed 9
+    snippet: a root cause analysis
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-068
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.1
+    page: PDF 9 / printed 9
+    snippet: corrective and preventive actions should be identified
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-069
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.2
+    page: PDF 9 / printed 9
+    snippet: keeps the sponsor informed about the management of all the breaches
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-070
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.3
+    page: PDF 9 / printed 9
+    snippet: should have a written process in place to identify
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-071
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S6.4
+    page: PDF 10 / printed 10
+    snippet: a (suspected) serious breach is promptly reported to the sponsor or delegated
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-072
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 10 / printed 10
+    snippet: all concerns about potential cases of fraud in clinical trials
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-073
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 10 / printed 10
+    snippet: should verify the impact of the breach on other clinical trials
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-075
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 10 / printed 10
+    snippet: is likely to significantly affect the safety and rights of a trial
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-076
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7
+    page: PDF 10 / printed 10
+    snippet: this leads to the removal of data from the trial analysis,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R3-077
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S8
+    page: PDF 10 / printed 10
+    snippet: managed in-house via acceptable Corrective and Preventive Actions
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Section 8 body text on PDF 10 / printed 10 (locator first hit was the TOC).
+- id: R3-078
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S8
+    page: PDF 11 / printed 11
+    snippet: the MSC will ask the sponsor for their opinion.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Opinion request and 7-day opinion on PDF 11 / printed 11.
+- id: R3-080
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SAppI-8.4
+    page: PDF 15 / printed 15
+    snippet: 8.4 Minor visit date deviation.
+  correction: null
+  method: local-text
+  quote_check: verbatim (multi-column table; verified by reading the column)
+  note: Quote verbatim in the answer column of the Appendix I table (pdftotext interleaves 'trials.' from the left column).
+- id: R3-083
+  src: EMA-SB
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SAppII
+    page: PDF 18 / printed 18
+    snippet: proper risk proportional actions are taken, which may include informing the subjects affected
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Appendix II wording is passive ('proper risk proportional actions are taken'), framed as points to consider for sponsors.
+- id: R3-085
+  src: EUCTR-QA
+  verdict: paraphrase-distorted
+  severity: low
+  evidence:
+    loc: S1.5
+    page: PDF 15 / printed 5 (chapter 1, point 11)
+    snippet: shall not be requested or submitted based on recommendations in different guidelines
+  correction: Documents or data not foreseen by the Regulation (e.g. the ICH E6 progress report) shall not be requested or submitted based on
+    recommendations in different guidelines.
+  method: local-text
+  quote_check: verbatim
+  note: Source (point 11) says such documents or data 'shall not be requested or submitted'; paraphrase weakens this to 'should not'. Rest of
+    the paraphrase faithful (PDF 14-15 / chapter 1 printed 4-5).
+- id: R3-086
+  src: EUCTR-QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S1.5
+    page: PDF 14 / printed 4
+    snippet: 'Answer: In the EU, all submissions concerning a clinical trial, including information'
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Point 9, PDF 14 / chapter 1 printed 4. 'Investigators therefore do not notify authorities directly' is the extractor's inference.
+- id: R3-087
+  src: EMA-E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SCover
+    page: unpaginated (EMA web page)
+    snippet: came into effect on 23 July 2025.
+  correction: null
+  method: local-text + webfetch
+  quote_check: verbatim
+  note: Quote verbatim on the EMA web page (doc_13). Cover of EMA/CHMP/ICH/135/1995 not in the local set; WebFetch of that PDF cover confirms
+    'Final adoption by CHMP 12 December 2024' and 'Date for coming into effect 23 July 2025' (also on the 2026 consolidated cover, doc_14). Art.
+    47 link is the extractor's legal reasoning.
+- id: R3-088
+  src: EMA-E6R3
+  verdict: loc-wrong
+  severity: low
+  evidence:
+    loc: SCover
+    page: EMA web page (unpaginated); cover table on PDF 1 of EMA/CHMP/ICH/162879/2026
+    snippet: will come into effect on 15 January 2027
+  correction: 'loc: SWebpage for the quote (cover table supports the date in different wording)'
+  method: local-text
+  quote_check: verbatim on the EMA web page (doc_13), not on the cited cover
+  note: 'Quote ''will come into effect on 15 January 2027'' is verbatim on the EMA web page (doc_13), not on the cover of EMA/CHMP/ICH/162879/2026,
+    whose table reads ''Date for coming into effect ... 15 January 2027''. Content otherwise correct: web page lists the consolidated guideline
+    with legal effective date 15/01/2027; cover confirms 80 pages and CHMP final adoption 25 June 2026. Both locations belong to the cited source
+    package, so severity low.'
+- id: R3-089
+  src: EMA-E6R3
+  verdict: paraphrase-distorted
+  severity: medium
+  evidence:
+    loc: SWebpage
+    page: unpaginated (EMA web page)
+    snippet: This Annex has been developed alongside the principles and objectives document
+  correction: The EMA page states that Annex 1 was developed alongside the principles to offer a comprehensive package that can serve as a replacement
+    for ICH E6(R2); no date is given on which E6(R2) stops applying.
+  method: local-text
+  quote_check: verbatim
+  note: On the EMA page the sentence 'This Annex has been developed alongside the principles ... can serve as a replacement for ICH E6(R2)' refers
+    to Annex 1 (it follows 'Annex 1, including its Appendices, ...'); the paraphrase attributes it to Annex 2. This changes which part replaces
+    E6(R2) (principles and Annex 1, effective 23 July 2025). The 'no date on which E6(R2) stops applying' observation is correct.
+- id: R3-090
+  src: CTIS-BT-SB24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SSlide-20
+    page: PDF 21 / printed 20
+    snippet: the SB should be reported via CTIS to all MSC
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Quote on slide 20 (PDF 21); notification type label 'Serious Breaches, safety relevant (SB)' on an unnumbered CTCG slide (PDF 13).
+- id: R3-092
+  src: CTIS-BT-SB24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SSlide-19
+    page: PDF 20 / printed 19
+    snippet: Updates to the SB report can be made
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Slide 19 (PDF 20) for updates; slide 26 (PDF 27) 'accepted to supplement the submission with a more thorough CAPA'.
+- id: R3-093
+  src: CTIS-BT-SB24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SSlide-29
+    page: PDF 30 / printed 29
+    snippet: Communication with the sponsors regarding the SBs is mainly done through RFIs
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Slides 28-29 (PDF 29-30) carry RFI deadline by MAMS or coordinating MS and the no-timeline statement; 'watch these RFI folder' and selection
+    of a coordinating MS are on an unnumbered CTCG slide (PDF 15).
+- id: R3-094
+  src: CTIS-BT-SB24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SPublication
+    page: PDF 40 (no printed page number)
+    snippet: The notification is published only once the Member State assessment is finalized
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Publication table and 'published only once the Member State assessment is finalized' on unnumbered slides PDF 39-40.
+- id: R3-096
+  src: CTIS-TM17
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S4.7
+    page: PDF 13 / printed 13
+    snippet: 4.7. How can users link the assessment outcome to the notification? When
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R3-098
+  src: EUCTR-QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.3
+    page: PDF 137 / printed 2
+    snippet: The 7-day timeframe starts when the sponsor becomes aware of a potential
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Points 522-523, PDF 136-137 / chapter 11 printed 1-2; source uses 'should' for completing the analysis and submitting within the period.
+- id: R3-100
+  src: EUCTR-QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S10.9
+    page: PDF 131 / printed 8
+    snippet: If the entire clinical trial is halted (recruitment and/or treatment), a temporary
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Points 498-499, PDF 131-132 / chapter 10 printed 8-9.
+- id: R3-104
+  src: EUCTR-QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S7.27
+    page: PDF 95 / printed 22
+    snippet: When submitting a notification like an urgent safety measure (USM), unexpected event
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Points 365-367, PDF 95 / chapter 7 printed 22. Point 368 (USM requiring protocol update to be followed by SM submission, printed 23) supports
+    the cross-reference in R3-030.
+- id: R3-105
+  src: EUCTR-QA
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.4
+    page: PDF 137 / printed 2
+    snippet: The obligation applies to all GCP inspection reports of all sites involved
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Points 525-527, PDF 137 / chapter 11 printed 2; the Q&A bases the obligation on Art. 53.
+- id: R3-106
+  src: CTIS-BT-SB24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SPublication
+    page: PDF 39 (no printed page number)
+    snippet: The sponsor should withdraw a submitted SB only if requested by the MS
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Case scenario on unnumbered slides PDF 40-41.
+- id: R3-107
+  src: CTIS-BT-SB24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SSlide-33
+    page: PDF 34 / printed 33
+    snippet: Over-reporting to be avoided!
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Take home messages, slide 33 (PDF 34).
+- id: R4-001
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.30
+    page: unpaginated (eCFR API text)
+    snippet: § 312.30 Protocol amendments. Once an IND is in effect, a sponsor
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-002
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.30(b)(1)
+    page: unpaginated (eCFR API text)
+    snippet: (1) A sponsor shall submit a protocol amendment describing any change in
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-003
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.30(b)(2)(i)
+    page: unpaginated (eCFR API text)
+    snippet: may be made provided two conditions are met
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-004
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.30(b)(2)(ii)
+    page: unpaginated (eCFR API text)
+    snippet: intended to eliminate an apparent immediate hazard to subjects may be implemented immediately
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-005
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.30(b)(2)(ii)
+    page: unpaginated (eCFR API text)
+    snippet: provided FDA is subsequently notified by protocol amendment and the reviewing IRB is notified
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 56.104(c) 5-working-day wording confirmed in the local eCFR API text of part 56.
+- id: R4-006
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.30(e)
+    page: unpaginated (eCFR API text)
+    snippet: (e) When submitted. A sponsor shall submit a protocol amendment for a
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-007
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.50
+    page: unpaginated (eCFR API text)
+    snippet: ensuring proper monitoring of the investigation(s)
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-008
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.50
+    page: unpaginated (eCFR API text)
+    snippet: ensuring that the investigation(s) is conducted in accordance with the general investigational plan
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-009
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.50
+    page: unpaginated (eCFR API text)
+    snippet: promptly informed of significant new adverse effects or risks with respect to the drug
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-010
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.53(c)(1)(vi)(a)
+    page: unpaginated (eCFR API text)
+    snippet: Will conduct the study(ies) in accordance with the relevant, current protocol(s)
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-011
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.53(c)(1)(vii)
+    page: unpaginated (eCFR API text)
+    snippet: will promptly report to the IRB all changes in the research activity
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 312.53(c)(1)(vii) text in the local eCFR API copy matches (initial/continuing IRB review, prompt reporting of changes and unanticipated
+    problems, no changes without IRB approval except apparent immediate hazards).
+- id: R4-012
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.56(a)
+    page: unpaginated (eCFR API text)
+    snippet: § 312.56 Review of ongoing investigations. (a) The sponsor shall monitor the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-013
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.56(b)
+    page: unpaginated (eCFR API text)
+    snippet: (b) A sponsor who discovers that an investigator is not complying with
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-014
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.56(b)
+    page: unpaginated (eCFR API text)
+    snippet: the sponsor shall require that the investigator dispose of or return the investigational drug
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-015
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.56(c)
+    page: unpaginated (eCFR API text)
+    snippet: (c) The sponsor shall review and evaluate the evidence relating to the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-016
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.56(d)
+    page: unpaginated (eCFR API text)
+    snippet: (d) A sponsor who determines that its investigational drug presents an unreasonable
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 'Paraphrase omits the deadline in the same paragraph: discontinue ''as soon as possible, and in no event later than 5 working days after
+    making the determination''; no distortion.'
+- id: R4-017
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.60
+    page: unpaginated (eCFR API text)
+    snippet: § 312.60 General responsibilities of investigators. An investigator is responsible for ensuring
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-018
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.60
+    page: unpaginated (eCFR API text)
+    snippet: for protecting the rights, safety, and welfare of subjects under the investigator's care
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-019
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.60
+    page: unpaginated (eCFR API text)
+    snippet: An investigator shall obtain the informed consent of each human subject
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-020
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.62(b)
+    page: unpaginated (eCFR API text)
+    snippet: An investigator is required to prepare and maintain adequate and accurate case
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-021
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.62(c)
+    page: unpaginated (eCFR API text)
+    snippet: (c) Record retention. An investigator shall retain records required to be maintained
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-022
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.66
+    page: unpaginated (eCFR API text)
+    snippet: § 312.66 Assurance of IRB review. An investigator shall assure that an
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-023
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.66
+    page: unpaginated (eCFR API text)
+    snippet: promptly report to the IRB all changes in the research activity
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-024
+  src: 21CFR312
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.66
+    page: unpaginated (eCFR API text)
+    snippet: except where necessary to eliminate apparent immediate hazards to human subjects.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R4-025
+  src: 21CFR56
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR56.108(a)(3)
+    page: unpaginated (eCFR API text)
+    snippet: (3) for ensuring prompt reporting to the IRB of changes in research
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-026
+  src: 21CFR56
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR56.108(a)(4)
+    page: unpaginated (eCFR API text)
+    snippet: may not be initiated without IRB review and approval except where necessary
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-027
+  src: 21CFR56
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR56.108(b)(1)
+    page: unpaginated (eCFR API text)
+    snippet: Any unanticipated problems involving risks to human subjects or others;
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-028
+  src: 21CFR56
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR56.108(b)(2)
+    page: unpaginated (eCFR API text)
+    snippet: serious or continuing noncompliance
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R4-029
+  src: 21CFR56
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR56.108(b)(3)
+    page: unpaginated (eCFR API text)
+    snippet: any suspension or termination of IRB approval.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-030
+  src: 21CFR56
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR56.104(c)
+    page: unpaginated (eCFR API text)
+    snippet: reported to the IRB within 5 working days.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Cited rendering is Cornell LII; wording identical in the local eCFR API text (as of 2026-11-04).
+- id: R4-031
+  src: 21CFR50
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR50.20
+    page: unpaginated (eCFR API text)
+    snippet: Except as provided in §§ 50.22, 50.23, and 50.24, no investigator may
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-032
+  src: 21CFR50
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR50.20
+    page: unpaginated (eCFR API text)
+    snippet: An investigator shall seek such consent only under circumstances that provide the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-033
+  src: 21CFR50
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR50.27(a)
+    page: unpaginated (eCFR API text)
+    snippet: documented by the use of a written consent form approved by the IRB
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-034
+  src: 21CFR50
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR50.27(b)
+    page: unpaginated (eCFR API text)
+    snippet: shall give either the subject or the representative adequate opportunity to read it
+  correction: null
+  method: local-text
+  quote_check: null
+  note: 50.27(b)(1) actor is the investigator ('the investigator shall give ... adequate opportunity to read it before it is signed'); paraphrase
+    is passive but equivalent.
+- id: R4-035
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SII
+    page: PDF 5 / printed 2
+    snippet: any change, divergence, or departure from the study design or procedures
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: 'Lines 17-19 are in section I (Introduction), as the paraphrase itself states; lines 57-63 in section II (PDF 5 / printed 2). Document
+    is a December 2024 draft guidance (cover: DRAFT GUIDANCE, ''Draft - Not for Implementation'').'
+- id: R4-036
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SII
+    page: PDF 5 / printed 2
+    snippet: a subset of protocol deviations that might significantly affect the completeness,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R4-041
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.A.1
+    page: PDF 7 / printed 4
+    snippet: FDA recommends using important to encompass all these terms.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-043
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.A.1
+    page: PDF 7 / printed 4
+    snippet: It may be helpful for a protocol to define important protocol deviations
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-044
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.A.1
+    page: PDF 7 / printed 4
+    snippet: Failure to adhere to the protocol-specified randomization scheme
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-051
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B.2
+    page: PDF 9 / printed 6
+    snippet: identified important protocol deviations should be promptly remedied or addressed during the conduct
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Lines 228-231 are on printed 7 (section III.B.2 starts printed 6).
+- id: R4-053
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B.2
+    page: PDF 10 / printed 7
+    snippet: pre-specify which types of protocol deviations will be considered important,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R4-054
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B.2
+    page: PDF 10 / printed 7
+    snippet: within x days of occurrence;
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: null
+- id: R4-055
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B.2
+    page: PDF 10 / printed 7
+    snippet: include a discussion of important protocol deviations in the body of the clinical
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Footnote 16 says 'as described in the most current version of' the BIMO Technical Conformance Guide and cites v3.1 (September 2024) as
+    reference; source modality 'should'.
+- id: R4-058
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B.2
+    page: PDF 10 / printed 7
+    snippet: Sponsors should include a variable in the DV domain that provides the sponsor's determination
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-065
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B.2
+    page: PDF 12 / printed 9 (lines 305-310)
+    snippet: Sponsors should assess the risks that such critical protocol elements may not be
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Footnote 22 cites the 2013 and 2023 FDA monitoring guidances; footnote 23 'See ICH E6(R2)'.
+- id: R4-072
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B.3
+    page: PDF 13 / printed 10
+    snippet: classified as important be submitted by the investigator to the IRB
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-075
+  src: FDA-PD24
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.C
+    page: PDF 13 / printed 10
+    snippet: Any modifications to protocol-specified procedures that occur without prior IRB approval
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-078
+  src: FDA-E6R3
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SI.B
+    page: PDF 9 / printed 2
+    snippet: do not establish legally enforceable responsibilities.
+  correction: null
+  method: local-text + webfetch
+  quote_check: verbatim
+  note: 'Quote verbatim in SI.B (PDF 9 / printed 2); PDF front matter dated September 2025 and contains no ''supersede''. WebFetch (two differently
+    worded fetches) of the FR notice 2025-17311: finalizes the draft of June 7, 2023, Annex 2 is a separate draft, no mention of E6(R2); FDA guidance
+    page shows ''Final Level 1 Guidance'', September 2025, docket FDA-2023-D-1955.'
+- id: R4-082
+  src: FDA-RBM13
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIII.B
+    page: PDF 11 / printed 8
+    snippet: potential protocol deviations that may be indicative of systemic or significant errors
+  correction: null
+  method: local-text
+  quote_check: null
+  note: null
+- id: R4-083
+  src: FDA-RBM13
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIV.D.1
+    page: PDF 18 / printed 15
+    snippet: in the number of protocol deviations, or in the rate of missing CRFs
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Section IV.D.1 'Description of Monitoring Approaches', PDF 18 / printed 15; both points are given as examples ('For example').
+- id: R4-087
+  src: FDA-RBM13
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIV.D.5
+    page: PDF 20 / printed 17
+    snippet: Monitoring Plan Amendments Sponsors should consider what events would indicate a need
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Section IV.D.5 'Monitoring Plan Amendments', PDF 20 / printed 17.
+- id: R4-095
+  src: FDA-RBM23
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SQ7
+    page: PDF 12 / printed 9
+    snippet: A root cause analysis followed by appropriate corrective and preventive actions
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Q7 under C. Follow-Up and Communication of Monitoring Results, PDF 12 / printed 9.
+- id: R5-002
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SDefine
+    page: unpaginated (PMC HTML text)
+    snippet: 'The updated definition becomes: "Important protocol deviations are a subset of protocol'
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-003
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SDefine
+    page: unpaginated (PMC HTML text)
+    snippet: It appears reasonable, however, to consider a PD non-important if it does
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-006
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SDefine
+    page: unpaginated (PMC HTML text)
+    snippet: Conducting periodic therapeutic area or indication reviews is a best practice
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-009
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SProtocol
+    page: unpaginated (PMC HTML text)
+    snippet: conduct risk assessment reviews and define PD classification approaches
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim. Source frames it as 'a best practice is to conduct ...'; paraphrase 'should be done' acceptable
+    for a best-practice source.
+- id: R5-012
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SPrepare
+    page: unpaginated (PMC HTML text)
+    snippet: the PDAP should describe PDs classified as important.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-013
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SPrepare
+    page: unpaginated (PMC HTML text)
+    snippet: 'The PDAP template includes the following recommended elements: Guidance for consistent classification'
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-019
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: STrain
+    page: unpaginated (PMC HTML text)
+    snippet: Retraining and feedback mechanisms should also be implemented.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-020
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIdentify-and-Collect
+    page: unpaginated (PMC HTML text)
+    snippet: In both cases, a well-defined PDAP is essential for consistency and timely
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim. Identify and Collect section; paraphrase compresses 'a well-defined PDAP is essential ... Describing
+    the method of identification of potential important PDs ensures alignment of efforts and focuses team members on items which cannot be identified
+    via the alternate approach'.
+- id: R5-022
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SIdentify-and-Collect
+    page: unpaginated (PMC HTML text)
+    snippet: Application of risk-based monitoring methodology may not identify all PDs.
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-028
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SConfirm
+    page: unpaginated (PMC HTML text)
+    snippet: an independent study team member (or group), other than the identifier,
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-031
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SConfirm
+    page: unpaginated (PMC HTML text)
+    snippet: periodic aggregate reviews should be completed to identify trends or systemic errors
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-032
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SStore
+    page: unpaginated (PMC HTML text)
+    snippet: should be stored in a validated repository or system to support review and reporting
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-034
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SReview-and-Analyze
+    page: unpaginated (PMC HTML text)
+    snippet: may be leveraged to identify important PDs not previously included in the PDAP
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-040
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SReport
+    page: unpaginated (PMC HTML text)
+    snippet: Summarize important PDs by category. GCP issues are usually described in a
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim. Report section, recommendations for CSR Section 10.2 (interim and final CSRs).
+- id: R5-043
+  src: TCB-PD-TIRS
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SClose-Out
+    page: unpaginated (PMC HTML text)
+    snippet: Non-important PDs should be archived in a validated repository or system
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further
+    from the local text. All quotes verbatim.
+- id: R5-045
+  src: TCB-PD
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: STaking-a-holistic-approach-CLOSEOUT
+    page: web page, closeout best-practice task list
+    snippet: Conduct a "lessons learned" session.
+  correction: null
+  method: webfetch
+  quote_check: null
+  note: 'No local text. WebFetch (two fetches): close-out best-practice tasks include ''Conduct a "lessons learned" session.'' Page last modified
+    2023-01-17.'
+- id: R5-046
+  src: TCB-PD
+  verdict: paraphrase-distorted
+  severity: medium
+  evidence:
+    loc: STaking-a-holistic-approach-CLOSEOUT [verify]
+    page: web page, closeout paragraph
+    snippet: We recommend that finalization occur after the last study data has been reviewed.
+  correction: Each company should determine when to finalize its PD process (close out the living PDAP or other documents used); the page recommends
+    that finalization occur after the last study data has been reviewed.
+  method: webfetch
+  quote_check: verbatim per two WebFetch calls
+  note: Quote verbatim (two differently worded WebFetch calls agree). The source parenthetical defines finalising the PD process as '(close out
+    the living PDAP or other documents used)', not 'the point after which deviations are finalised for analysis and reporting'. The next sentence
+    'We recommend that finalization occur after the last study data has been reviewed.' is present on the page; the paraphrase marks it as unconfirmed
+    and drops it.
+- id: R5-048
+  src: TCB-RBQM
+  verdict: paraphrase-distorted
+  severity: low
+  evidence:
+    loc: SHow-QTLs-Fit-in-a-Quality-Management-System
+    page: publisher HTML, section How QTLs Fit in a Quality Management System
+    snippet: In parallel, sponsors should define appropriate risk management strategies
+  correction: At protocol design CtQ consideration is foundational to building quality in; in parallel, sponsors should define risk management
+    strategies (integrated quality risk management plans enabling a risk-based monitoring strategy), including controls such as QTLs and KRIs.
+  method: webfetch
+  quote_check: verbatim per two WebFetch calls
+  note: 'Local copy vendor/sources/TCB-RBQM/doc_35.txt is a browser challenge page (unusable); checked on the publisher HTML. Quote verbatim.
+    Source: ''In parallel, sponsors should define appropriate risk management strategies ... (i.e., Integrated Quality Risk Management Plans enabling
+    risk-based monitoring strategy). This includes the use of controls like QTLs and Key Risk Indicators (KRIs).'' Paraphrase turns ''in parallel''
+    into a sequence (''then''). Confirmed by a second, differently worded WebFetch.'
+- id: R5-058
+  src: CTTI-CTQ
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SProcedures-Supporting-Study-Endpoints-and-Data-Integrity
+    page: PDF 9 / printed 9
+    snippet: What errors in conducting protocol-defined assessments would constitute important protocol deviations
+  correction: null
+  method: local-text
+  quote_check: verbatim (multi-column table; verified by reading the column)
+  note: Quote verbatim in the right-hand column 'Examples of Issues to Consider in Evaluating Risks to CTQ Factor', item 2 (three-column table
+    interleaved by pdftotext), page 9 of 24. Hand-offs = item 3; detection/swift action = item 4.
+- id: R5-065
+  src: CDISC-CT
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SC225352
+    page: PDF 9 (no printed page number)
+    snippet: Terminology relevant to the category of protocol deviations.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Codelist index entry on PDF 9 (C225352, DVCAT, 'Category of Protocol Deviation', extensible Yes). 'Its terms could not be read' describes
+    the extractor's access; the local full text lists the DVCAT terms on PDF 488 (e.g. DISCONTINUATION, INCLUSION/EXCLUSION, INFORMED CONSENT/ASSENT,
+    PROHIBITED CONCOMITANT INTERVENTION, SAFETY REPORTING, STUDY INTERVENTION ...).
+- id: R5-067
+  src: CDISC-SDTMIG40-PR
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S35
+    page: PDF 34 (no printed page number)
+    snippet: Retrospective classification of deviations
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: Slides 35-36 (PDF 34-35); review close 06-April-2026 and targeted publication Q4 2026 on slide 41. Document is a public review draft,
+    as labelled.
+- id: R5-068
+  src: NCIT-DV
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: SC49585
+    page: mirror web page dated 03/11/2026
+    snippet: An events domain that contains protocol violations and deviations
+  correction: null
+  method: webfetch
+  quote_check: null
+  note: 'No local text. WebFetch of the mirror page (dated 03/11/2026): CDISC definition ''An events domain that contains protocol violations
+    and deviations during the course of the study.'' Secondary mirror, not the NCI EVS primary source.'
+- id: R5-069
+  src: FDA-SDTCG
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S4.1.1.3
+    page: PDF 29 / Page 16 of 97
+    snippet: The DV domain should be included in your submission.
+  correction: null
+  method: local-text
+  quote_check: verbatim
+  note: 'Page [verify] resolved: DV Domain text is on ''Page 16 of 97'' (PDF 29), within 4.1.1.3 SDTM Domain Specifications (TOC p. 11; 4.1.2
+    starts p. 16). Source says ''should be included in your submission'' (quoted); paraphrase ''is to be included'' slightly firmer. Version 6.3,
+    October 2026 confirmed.'
+- id: R5-070
+  src: FDA-SDTCG
+  verdict: confirmed
+  severity: null
+  evidence:
+    loc: S4.1.1.3
+    page: PDF 29 / Page 16 of 97
+    snippet: The following variables besides CDISC required variables should be included in the
+  correction: null
+  method: local-text
+  quote_check: null
+  note: Page 16 of 97 (PDF 29).
+- id: R5-071
+  src: FDA-ESTUDY
+  verdict: page-wrong
+  severity: low
+  evidence:
+    loc: SII.E.1
+    page: PDF 7 / printed 2; PDF 12 / printed 7
+    snippet: it will have binding effect.
+  correction: 'page: printed 7 (II.E.1, lines 234-248); printed 2 (I, lines 36-42); printed 3-5 (II.C)'
+  method: local-text
+  quote_check: verbatim
+  note: 'Content confirmed (binding effect lines 41-42; noncommercial IND exemption II.B lines 74-79; RTF/RTR lines 96-99; CDISC CT named II.C.3
+    line 146; timetable II.E.1 lines 234-241). Page references are one too high: lines 36-42 are on printed 2 (PDF 7), lines 234-248 on printed
+    7 (PDF 12); II.C spans printed 3-5.'

@@ -1,0 +1,126 @@
+{
+ "R4-035": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 5 / printed 2"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed 2",
+   "PDF 5 / printed 2"
+  ],
+  "quote_in_loc": false
+ },
+ "R4-036": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 5 / printed 2"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed 2",
+   "PDF 5 / printed 2"
+  ],
+  "quote_in_loc": false
+ },
+ "R4-041": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-043": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-044": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-051": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-053": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 10 / printed 7"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ],
+  "quote_in_loc": false
+ },
+ "R4-054": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 10 / printed 7"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ],
+  "quote_in_loc": false
+ },
+ "R4-055": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-058": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-065": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-072": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R4-075": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 6 / printed 3"
+  ]
+ }
+}

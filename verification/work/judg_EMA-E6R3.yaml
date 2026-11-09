@@ -1,0 +1,17 @@
+src: EMA-E6R3
+method: local-text
+notes:
+  R3-087: "Quote verbatim on the EMA web page (doc_13). Cover of EMA/CHMP/ICH/135/1995 not in the local set; WebFetch of that PDF cover confirms 'Final adoption by CHMP 12 December 2024' and 'Date for coming into effect 23 July 2025' (also on the 2026 consolidated cover, doc_14). Art. 47 link is the extractor's legal reasoning."
+methods:
+  R3-087: local-text + webfetch
+except:
+  R3-088:
+    v: loc-wrong
+    s: low
+    note: "Quote 'will come into effect on 15 January 2027' is verbatim on the EMA web page (doc_13), not on the cover of EMA/CHMP/ICH/162879/2026, whose table reads 'Date for coming into effect ... 15 January 2027'. Content otherwise correct: web page lists the consolidated guideline with legal effective date 15/01/2027; cover confirms 80 pages and CHMP final adoption 25 June 2026. Both locations belong to the cited source package, so severity low."
+    corr: "loc: SWebpage for the quote (cover table supports the date in different wording)"
+  R3-089:
+    v: paraphrase-distorted
+    s: medium
+    note: "On the EMA page the sentence 'This Annex has been developed alongside the principles ... can serve as a replacement for ICH E6(R2)' refers to Annex 1 (it follows 'Annex 1, including its Appendices, ...'); the paraphrase attributes it to Annex 2. This changes which part replaces E6(R2) (principles and Annex 1, effective 23 July 2025). The 'no date on which E6(R2) stops applying' observation is correct."
+    corr: "The EMA page states that Annex 1 was developed alongside the principles to offer a comprehensive package that can serve as a replacement for ICH E6(R2); no date is given on which E6(R2) stops applying."

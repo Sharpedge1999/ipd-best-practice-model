@@ -1,0 +1,7 @@
+src: E3QA
+method: local-text
+notes:
+  R2-066: "Quote verbatim in the answer column (two-column table; pdftotext interleaves columns), PDF 9 / printed 6."
+  R2-067: "Quote verbatim in the answer column, PDF 9 / printed 6."
+  R2-071: "Example flowchart with 'PROTOCOL DEVIATION' labels on PDF 11 / printed 8."
+  R2-072: "'Does not say whether non-important deviations are reported' is the extractor's observation; consistent with the text."

@@ -1,0 +1,7 @@
+src: TCB-PD-TIRS
+method: local-text
+notes:
+  _all: "Local copy is the PMC HTML text (no page breaks); journal-page claims 'pp. 733-742, section page not confirmed' cannot be narrowed further from the local text. All quotes verbatim."
+  R5-009: "Source frames it as 'a best practice is to conduct ...'; paraphrase 'should be done' acceptable for a best-practice source."
+  R5-020: "Identify and Collect section; paraphrase compresses 'a well-defined PDAP is essential ... Describing the method of identification of potential important PDs ensures alignment of efforts and focuses team members on items which cannot be identified via the alternate approach'."
+  R5-040: "Report section, recommendations for CSR Section 10.2 (interim and final CSRs)."

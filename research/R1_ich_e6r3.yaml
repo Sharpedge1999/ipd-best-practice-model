@@ -1,0 +1,4556 @@
+# R1 - ICH E6(R3) findings (research stem R1). One atomic obligation per record, sorted by id.
+# Verified against the local pdftotext of the official consolidated PDF (sha256 f62d668b7b3495ce...),
+# 99 pages, printed page = PDF page - 8. Coverage, change log and gaps: research/R1_notes.md.
+- id: R1-001
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P3.1
+  loc_alt: ''
+  page: printed 4 / PDF 12
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A trial should be conducted in compliance with the protocol that has received prior IRB/IEC approval
+    or favourable opinion.
+  quote: A trial should be conducted in compliance with the protocol
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not named (principle)
+  party_norm: other
+  trigger: ''
+  action: Conduct the trial in compliance with the approved protocol.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [compliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-002
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P6.2
+  loc_alt: P6.2
+  page: printed 5 / PDF 13
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Factors critical to the quality of the trial should be identified prospectively; quality by design
+    means focusing on these critical to quality factors so the trial is likely to meet its objectives.
+  quote: Factors critical to the quality of the trial should be identified prospectively.
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not named (principle)
+  party_norm: other
+  trigger: ''
+  action: Identify critical to quality factors prospectively as the basis for quality by design.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-003
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P6.3
+  loc_alt: ''
+  page: printed 5 / PDF 13
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Strategies should be implemented to avoid, detect, address and prevent recurrence of serious noncompliance
+    with GCP, the trial protocol and applicable regulatory requirements.
+  quote: avoid, detect, address and prevent recurrence of serious noncompliance
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not named (principle)
+  party_norm: other
+  trigger: ''
+  action: Put strategies in place to avoid, detect, address and prevent recurrence of serious noncompliance.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: [RBQM, noncompliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-004
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P7.1
+  loc_alt: ''
+  page: printed 5 / PDF 13
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Trial processes should be proportionate to the risks inherent in the trial and to the importance of
+    the information collected; risks cover participant rights, safety and well-being and the reliability of results.
+  quote: Trial processes should be proportionate to the risks inherent in the trial
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not named (principle)
+  party_norm: other
+  trigger: ''
+  action: Scale trial processes to trial risks and data importance.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-005
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P7.3
+  loc_alt: P7.3
+  page: printed 5 / PDF 13
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Risks to critical to quality factors should be managed proactively and adjusted when new or unanticipated
+    issues arise once the trial has begun.
+  quote: Risks to critical to quality factors should be managed proactively
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not named (principle)
+  party_norm: other
+  trigger: ''
+  action: Manage risks to critical to quality factors proactively and adjust when new issues arise during conduct.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: [CtQ, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-006
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P7.4
+  loc_alt: ''
+  page: printed 5-6 / PDF 13-14
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Trial processes should be operationally feasible and avoid unnecessary complexity, procedures and
+    data collection; the sponsor should not place unnecessary burden on participants and investigators.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (for the burden clause; otherwise not named)
+  party_norm: sponsor
+  trigger: ''
+  action: Design trial processes that are operationally feasible and avoid unnecessary complexity and data collection.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-007
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P8.3
+  loc_alt: ''
+  page: printed 6 / PDF 14
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The clinical trial protocol and the plans or documents for protocol execution (e.g. statistical analysis
+    plan, data management plan, monitoring plan) should be clear, concise and operationally feasible.
+  quote: should be clear, concise and operationally feasible
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not named (principle)
+  party_norm: other
+  trigger: ''
+  action: Write a clear, concise and operationally feasible protocol and trial plans.
+  deadline: none
+  recipient: ''
+  record: protocol; statistical analysis plan; data management plan; monitoring plan
+  step_hint: define
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-008
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P9.5
+  loc_alt: ''
+  page: printed 6 / PDF 14
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Essential records should be retained securely by sponsors and investigators for the required period
+    per applicable regulatory requirements and be available on request to regulatory authorities, monitors, auditors
+    and IRBs/IECs (as appropriate).
+  quote: Essential records should be retained securely by sponsors and investigators
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsors and investigators
+  party_norm: other
+  trigger: ''
+  action: Retain essential records securely for the required retention period.
+  deadline: none
+  recipient: ''
+  record: essential records
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-009
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P10.1
+  loc_alt: ''
+  page: printed 7 / PDF 15
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor may transfer, or the investigator may delegate, their activities, but they retain overall
+    responsibility for their respective activities.
+  quote: they retain overall responsibility for their respective activities
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor; investigator
+  party_norm: other
+  trigger: ''
+  action: Delegate or transfer activities only while retaining overall responsibility for them.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-010
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P10.3
+  loc_alt: ''
+  page: printed 7 / PDF 15
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Sponsors or investigators should maintain appropriate oversight of the activities they delegate or
+    transfer.
+  quote: should maintain appropriate oversight of the aforementioned activities
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor or investigator
+  party_norm: other
+  trigger: ''
+  action: Maintain appropriate oversight of delegated or transferred activities.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-011
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-1.4.7
+  loc_alt: A1-1.4.7
+  page: printed 10 / PDF 18
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The IRB/IEC's written procedures should specify that no deviation from or change to the protocol is
+    initiated without prior documented IRB/IEC approval/favourable opinion of an appropriate amendment, except where
+    necessary to eliminate immediate hazards to participants or where the change involves only logistical or administrative
+    aspects, in accordance with applicable regulatory requirements.
+  quote: no deviations from or changes to the protocol should be initiated
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: IRB/IEC (procedures; duty-holder of the rule not named)
+  party_norm: irb-iec
+  trigger: ''
+  action: Establish in IRB/IEC procedures that protocol deviations or changes need prior documented approval, with
+    the immediate-hazard and logistical/administrative exceptions.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: [safety, immediate-hazard]
+  related: [R1-012]
+  conflict_note: Lead-in of 1.4 makes this an IRB/IEC procedural requirement; the party who must not initiate deviations
+    is not named (F14).
+  confidence: high
+  verify: []
+- id: R1-012
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-1.4.8(a)
+  loc_alt: A1-1.4.8(a)
+  page: printed 10-11 / PDF 18-19
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The IRB/IEC's procedures should specify that the investigator/institution promptly reports to the
+    IRB/IEC deviations from the protocol made to eliminate immediate hazards to trial participants (cross-references
+    to 1.4.7, 2.5.4 and 2.5.5).
+  quote: Deviations from the protocol to eliminate immediate hazards to the trial participants
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator/institution
+  party_norm: investigator
+  trigger: deviation implemented to eliminate an immediate hazard to participants
+  action: Promptly report deviations made to eliminate immediate hazards to the IRB/IEC.
+  deadline: promptly (no fixed time limit)
+  recipient: IRB/IEC
+  record: ''
+  step_hint: notify
+  themes: [safety, immediate-hazard]
+  related: [R1-011, R1-022, R1-024]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-013
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-1.4.8(b)
+  loc_alt: ''
+  page: printed 11 / PDF 19
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The IRB/IEC's procedures should specify that the investigator/institution promptly reports changes
+    that increase the risk to participants and/or significantly affect the conduct of the trial (cross-reference
+    to 2.4.6).
+  quote: Changes increasing the risk to participants and/or significantly affecting the conduct of the trial
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator/institution
+  party_norm: investigator
+  trigger: change increasing participant risk and/or significantly affecting trial conduct
+  action: Promptly report to the IRB/IEC changes increasing participant risk or significantly affecting trial conduct.
+  deadline: promptly (no fixed time limit)
+  recipient: IRB/IEC
+  record: ''
+  step_hint: notify
+  themes: [safety]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-014
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-1.4.9
+  loc_alt: ''
+  page: printed 11 / PDF 19
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The IRB/IEC's procedures should include ensuring that the IRB/IEC promptly notifies the investigator/institution
+    or sponsor in writing (paper or electronic) of its trial-related decisions/opinions, the reasons for them and
+    the procedures for appeal.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: IRB/IEC
+  party_norm: irb-iec
+  trigger: IRB/IEC decision or opinion on the trial
+  action: Notify the investigator/institution or sponsor promptly in writing of decisions/opinions, reasons and
+    appeal procedures.
+  deadline: promptly (no fixed time limit)
+  recipient: investigator/institution or sponsor
+  record: written IRB/IEC decision/opinion
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-015
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.3.1
+  loc_alt: A1-2.3.1
+  page: printed 12 / PDF 20
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator retains ultimate responsibility and should maintain appropriate oversight of persons
+    or parties undertaking delegated activities; the level of oversight should depend on the nature of the delegated
+    activities and be proportionate to the importance of the data and the risks to participant safety and data reliability.
+  quote: The investigator retains the ultimate responsibility
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Oversee delegated persons and parties proportionately while retaining ultimate responsibility.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-016
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.4.6
+  loc_alt: ''
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator or sponsor should promptly inform the IRB/IEC (see 1.4.8) and, where applicable,
+    the institution of changes that significantly affect the conduct of the trial or increase the risk to participants.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator or sponsor
+  party_norm: investigator
+  trigger: change significantly affecting trial conduct or increasing participant risk
+  action: Promptly inform the IRB/IEC and, where applicable, the institution of significant changes affecting conduct
+    or risk.
+  deadline: promptly (no fixed time limit)
+  recipient: IRB/IEC; institution where applicable
+  record: ''
+  step_hint: notify
+  themes: [safety]
+  related: []
+  conflict_note: Either investigator or sponsor may hold this duty; party_norm set to investigator, see 1.4.8.
+  confidence: high
+  verify: []
+- id: R1-017
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.2
+  loc_alt: ''
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator should comply with the protocol, GCP and applicable regulatory requirements.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Comply with the protocol, GCP and applicable regulatory requirements.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [compliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-018
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.3
+  loc_alt: A1-2.5.3
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator should document all protocol deviations.
+  quote: document all protocol deviations
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: any protocol deviation
+  action: Document every protocol deviation at the site.
+  deadline: none
+  recipient: ''
+  record: protocol deviation documentation (site records)
+  step_hint: document
+  themes: []
+  related: [R1-019]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-019
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.3
+  loc_alt: A1-2.5.3
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: In addition to deviations identified by the investigator, protocol deviations relevant to the investigator's
+    participants and their conduct of the trial may be communicated by the sponsor (cross-reference to 3.11.4.5.1(b)).
+  quote: ''
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: sponsor detects a deviation relevant to the site (e.g. through monitoring)
+  action: Communicate to the investigator protocol deviations relevant to the site's participants or conduct.
+  deadline: none
+  recipient: investigator
+  record: ''
+  step_hint: notify
+  themes: []
+  related: [R1-018, R1-057]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-020
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.3
+  loc_alt: A1-2.5.3
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: In either case (investigator-identified or sponsor-communicated), the investigator should review the
+    deviations and, for those deemed important, explain the deviation (cross-reference to 3.9.3).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: deviation documented (site-identified or sponsor-communicated)
+  action: Review documented deviations and explain each deviation deemed important.
+  deadline: none
+  recipient: ''
+  record: explanation of important deviation
+  step_hint: assess
+  themes: []
+  related: [R1-032, R1-033]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-021
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.3
+  loc_alt: A1-2.5.3
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: For important deviations the investigator should implement appropriate measures to prevent recurrence,
+    where applicable.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: deviation deemed important
+  action: Implement measures to prevent recurrence of important deviations where applicable.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: []
+  related: [R1-032]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-022
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.4
+  loc_alt: A1-2.5.4
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator should follow the protocol and deviate only where necessary to eliminate an immediate
+    hazard to trial participants.
+  quote: deviate only where necessary to eliminate an immediate hazard(s)
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: immediate hazard to participants
+  action: Deviate from the protocol only where necessary to eliminate an immediate hazard.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [safety, immediate-hazard]
+  related: [R1-012, R1-023]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-023
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.4
+  loc_alt: A1-2.5.4
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: In case of a deviation undertaken to eliminate an immediate hazard, the investigator should inform
+    the sponsor promptly.
+  quote: inform the sponsor promptly
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: deviation undertaken to eliminate an immediate hazard
+  action: Inform the sponsor promptly of a deviation made to eliminate an immediate hazard.
+  deadline: promptly (no fixed time limit)
+  recipient: sponsor
+  record: ''
+  step_hint: notify
+  themes: [safety, immediate-hazard]
+  related: [R1-022, R1-024]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-024
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.5.5
+  loc_alt: A1-2.5.5
+  page: printed 13 / PDF 21
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: In the case of an immediate hazard, the investigator should report information on the immediate hazard,
+    the implemented change and any subsequent proposed protocol amendment to the IRB/IEC and, where applicable,
+    to regulatory authorities.
+  quote: report information on the immediate hazard
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: immediate hazard and change implemented
+  action: Report the immediate hazard, the change implemented and any proposed amendment to the IRB/IEC and, where
+    applicable, regulatory authorities.
+  deadline: none stated in 2.5.5 (1.4.8 says promptly)
+  recipient: IRB/IEC; regulatory authority(ies) where applicable
+  record: report on immediate hazard, implemented change and proposed amendment
+  step_hint: notify
+  themes: [safety, immediate-hazard]
+  related: [R1-012, R1-023]
+  conflict_note: No timing in 2.5.5 itself; 1.4.8(a) asks for prompt reporting to IRB/IEC; regional time limits
+    owned by R3/R4.
+  confidence: high
+  verify: []
+- id: R1-025
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.12.2
+  loc_alt: ''
+  page: printed 21 / PDF 29
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Source records should be attributable, legible, contemporaneous, original, accurate and complete;
+    changes to source records should be traceable and explained if necessary.
+  quote: Source records should be attributable, legible, contemporaneous, original, accurate and complete.
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Keep source records to the stated quality attributes with traceable changes.
+  deadline: none
+  recipient: ''
+  record: source records
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-026
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.12.6
+  loc_alt: ''
+  page: printed 22 / PDF 30
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Data reported to the sponsor should be consistent with source records or discrepancies explained;
+    changes or corrections to reported data should be traceable and should not obscure the original entry.
+  quote: Changes or corrections in the reported data should be traceable
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Keep reported data consistent with source and make corrections traceable.
+  deadline: none
+  recipient: ''
+  record: reported data with audit trail
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-027
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.12.11
+  loc_alt: ''
+  page: printed 22 / PDF 30
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Trial records should be maintained as specified in Appendix C and applicable regulatory requirements;
+    the investigator/institution should have control of all essential records it generates.
+  quote: should have control of all essential records generated
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator/institution
+  party_norm: investigator
+  trigger: ''
+  action: Maintain trial records per Appendix C and keep control of essential records generated at the site.
+  deadline: none
+  recipient: ''
+  record: essential records (investigator/institution)
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-028
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.12.12
+  loc_alt: ''
+  page: printed 23 / PDF 31
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator/institution should retain essential records for the retention period required by
+    applicable regulatory requirements or until the sponsor informs them they are no longer needed, whichever is
+    the longest, and take measures to ensure availability, accessibility and readability and to prevent unauthorised
+    access and premature destruction (see Appendix C).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator/institution
+  party_norm: investigator
+  trigger: ''
+  action: Retain essential records for the required retention period.
+  deadline: retention period per applicable regulatory requirements or sponsor notice, whichever is longest
+  recipient: ''
+  record: essential records (investigator/institution)
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-029
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.12.14
+  loc_alt: ''
+  page: printed 23 / PDF 31
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: On request of the monitor, auditor, IRB/IEC or regulatory authority, the investigator/institution
+    should make all requested trial-related records available for direct access.
+  quote: should make available for direct access all requested
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator/institution
+  party_norm: investigator
+  trigger: request from monitor, auditor, IRB/IEC or regulatory authority
+  action: Provide direct access to requested trial records for monitoring, audit, IRB/IEC review and inspection.
+  deadline: none
+  recipient: monitor; auditor; IRB/IEC; regulatory authority
+  record: ''
+  step_hint: other
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-030
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.1.2
+  loc_alt: A1-3.1.2
+  page: printed 23 / PDF 31
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: In building quality into trial design, the sponsor should identify factors critical to the quality
+    of the trial and manage risks to those factors.
+  quote: factors that are critical to the quality of the trial
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Identify critical to quality factors during trial design and manage risks to them.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-031
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.9.2
+  loc_alt: ''
+  page: printed 26 / PDF 34
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should ensure that trial processes are conducted in compliance with the protocol and related
+    documents, applicable regulatory requirements and ethical standards.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Ensure trial processes comply with the protocol, related documents, regulations and ethics.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [compliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-032
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.9.3
+  loc_alt: A1-3.9.3
+  page: printed 27 / PDF 35
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should determine the necessary trial-specific criteria for classifying protocol deviations
+    as important.
+  quote: The sponsor should determine necessary trial-specific criteria for classifying protocol deviations as important.
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Define trial-specific criteria for classifying protocol deviations as important.
+  deadline: none
+  recipient: ''
+  record: trial-specific important protocol deviation criteria
+  step_hint: define
+  themes: []
+  related: [R1-020, R1-021, R1-033]
+  conflict_note: 3.9.3 does not mention critical to quality factors, the clinical study report or ICH E3 (F17);
+    any link of iPD criteria to CtQ factors must be sourced elsewhere (E8(R1) via R2, or best practice via R5).
+  confidence: high
+  verify: []
+- id: R1-033
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.9.3
+  loc_alt: A1-3.9.3
+  page: printed 27 / PDF 35
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Important protocol deviations are a subset of protocol deviations that may significantly affect the
+    completeness, accuracy and/or reliability of trial data or significantly affect a participant's rights, safety
+    or well-being.
+  quote: Important protocol deviations are a subset of protocol deviations
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (definition in sponsor oversight section)
+  party_norm: other
+  trigger: ''
+  action: Apply this definition when classifying deviations as important.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: classify
+  themes: [data, safety]
+  related: [R1-020, R1-032]
+  conflict_note: The Glossary (printed 82-91) has no entry for protocol deviation or important protocol deviation;
+    this sentence in A1-3.9.3 is the only E6(R3) description.
+  confidence: high
+  verify: []
+- id: R1-034
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.9.5
+  loc_alt: ''
+  page: printed 27 / PDF 35
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The range and extent of oversight measures should be fit for purpose and tailored to trial complexity
+    and risks; selection and oversight of investigators and service providers are fundamental features, and oversight
+    includes QA and QC of their trial-related activities.
+  quote: The range and extent of oversight measures should be fit for purpose
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Scale oversight of investigators and service providers to trial complexity and risks.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-035
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.9.6
+  loc_alt: ''
+  page: printed 27 / PDF 35
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should ensure appropriate and timely escalation and follow-up of issues so that appropriate
+    actions can be taken.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Escalate and follow up issues in a timely way until appropriate actions are taken.
+  deadline: timely (no fixed time limit)
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-036
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10
+  loc_alt: ''
+  page: printed 27 / PDF 35
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should implement a system to manage quality throughout all stages of the trial, using
+    a proportionate, risk-based approach that builds quality into design and identifies factors likely to have a
+    meaningful impact on participant protection and reliability of results, i.e. critical to quality factors as
+    described in ICH E8(R1).
+  quote: critical to quality factors as described in ICH E8(R1)
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Run a proportionate, risk-based quality management system anchored on critical to quality factors.
+  deadline: none
+  recipient: ''
+  record: quality management approach
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: [R1-091]
+  conflict_note: Link to ICH E8(R1) is the E6(R3) anchor for the CtQ definition (R2 owns E8(R1)).
+  confidence: high
+  verify: []
+- id: R1-037
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10
+  loc_alt: ''
+  page: printed 27 / PDF 35
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should describe the quality management approach implemented in the trial in the clinical
+    trial report (see ICH E3).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Describe the quality management approach in the clinical trial report.
+  deadline: none
+  recipient: ''
+  record: clinical trial report (quality management approach)
+  step_hint: report-csr
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-038
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.1
+  loc_alt: ''
+  page: printed 28 / PDF 36
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should identify risks that may have a meaningful impact on critical to quality factors,
+    prior to trial initiation and throughout conduct, considering processes and systems including computerised systems
+    (e.g. trial design, participant selection, informed consent, randomisation, blinding, investigational product
+    administration, data handling, service provider activities).
+  quote: identify risks that may have a meaningful impact on critical to quality factors
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: trial planning; ongoing during conduct
+  action: Identify risks to critical to quality factors before initiation and during conduct.
+  deadline: none
+  recipient: ''
+  record: risk assessment
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: []
+  conflict_note: Risk identification (RBQM), not deviation identification; step_hint define because it feeds the
+    planning step.
+  confidence: high
+  verify: []
+- id: R1-039
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.2
+  loc_alt: ''
+  page: printed 28 / PDF 36
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should evaluate identified risks and existing controls by considering the likelihood of
+    harm/hazard occurring, the extent to which it would be detectable and its impact on participant protection and
+    reliability of trial results.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Evaluate each identified risk by likelihood, detectability and impact.
+  deadline: none
+  recipient: ''
+  record: risk assessment
+  step_hint: define
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-040
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.3
+  loc_alt: A1-3.10.1.3
+  page: printed 28 / PDF 36
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Risk control should be proportionate to the importance of the risk to participants' rights, safety
+    and well-being and the reliability of trial results; risk mitigation may be incorporated e.g. in protocol design
+    and implementation, monitoring plans, agreements defining roles and responsibilities, and training.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Define proportionate risk control measures (e.g. in protocol design, monitoring plans, agreements, training).
+  deadline: none
+  recipient: ''
+  record: risk control measures (e.g. in monitoring plan, protocol)
+  step_hint: define
+  themes: [RBQM]
+  related: [R1-041]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-041
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.3
+  loc_alt: A1-3.10.1.3
+  page: printed 28 / PDF 36
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Where relevant, the sponsor should set pre-specified acceptable ranges (e.g. quality tolerance limits
+    at the trial level) to support the control of risks to critical to quality factors; the ranges reflect limits
+    that, when exceeded, may impact participant safety or reliability of results.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Set pre-specified acceptable ranges (e.g. trial-level quality tolerance limits) where relevant.
+  deadline: none
+  recipient: ''
+  record: acceptable ranges / quality tolerance limits
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: [R1-040, R1-042]
+  conflict_note: Brief and plan use 'risk thresholds/QTL'; E6(R3) says 'acceptable ranges' with QTL only as example;
+    the Glossary defines neither term.
+  confidence: high
+  verify: []
+- id: R1-042
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.3
+  loc_alt: A1-3.10.1.3
+  page: printed 28 / PDF 36
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Where deviation beyond the pre-specified acceptable ranges is detected, an evaluation should be performed
+    to determine whether there is a possible systemic issue and whether action is needed.
+  quote: an evaluation should be performed to determine if there is a possible systemic issue
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: acceptable range exceeded
+  action: Evaluate any exceedance of acceptable ranges for a possible systemic issue and decide on action.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: assess
+  themes: [RBQM]
+  related: [R1-041, R1-045]
+  conflict_note: '''Deviation beyond these ranges'' means a range exceedance, not a protocol deviation.'
+  confidence: high
+  verify: []
+- id: R1-043
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.4
+  loc_alt: ''
+  page: printed 28 / PDF 36
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should document identified risks and mitigating activities and communicate them to those
+    who are involved in taking action or are affected; communication supports risk review and improvement.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Document and communicate risks and mitigations to those who act on or are affected by them.
+  deadline: none
+  recipient: parties involved in taking action or affected
+  record: risk documentation
+  step_hint: document
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-044
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.5
+  loc_alt: ''
+  page: printed 29 / PDF 37
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should periodically review risk control measures to ascertain whether the implemented
+    quality management activities remain effective and relevant, taking into account emerging knowledge and experience;
+    additional risk control measures may be implemented as needed.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Periodically review risk controls and add measures where needed.
+  deadline: periodically (no fixed interval)
+  recipient: ''
+  record: ''
+  step_hint: assess
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-045
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.10.1.6
+  loc_alt: A1-3.10.1.6
+  page: printed 29 / PDF 37
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should summarise and report important quality issues (including instances in which acceptable
+    ranges are exceeded, see 3.10.1.3) and the remedial actions taken, and document them in the clinical trial report
+    (see ICH E3).
+  quote: document them in the clinical trial report (see ICH E3)
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Summarise important quality issues, exceeded acceptable ranges and remedial actions in the clinical trial
+    report.
+  deadline: none
+  recipient: ''
+  record: clinical trial report
+  step_hint: report-csr
+  themes: [RBQM]
+  related: [R1-042]
+  conflict_note: Speaks of 'important quality issues', not explicitly of important protocol deviations; CSR reporting
+    of iPDs to be anchored in ICH E3 10.2 (R2) and E6(R3) 3.17.2 (not reachable here).
+  confidence: high
+  verify: []
+- id: R1-046
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.1
+  loc_alt: ''
+  page: printed 29 / PDF 37
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Quality assurance should be applied throughout the trial, implementing risk-based strategies to identify
+    potential or actual causes of serious noncompliance with the protocol, GCP and applicable regulatory requirements
+    to enable their corrective and preventive actions.
+  quote: implementing risk-based strategies to identify potential or actual causes
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Use risk-based QA strategies to find causes of serious noncompliance and enable CAPA.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: assess
+  themes: [RBQM, noncompliance]
+  related: [R1-072]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-047
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.3
+  loc_alt: ''
+  page: printed 30 / PDF 38
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Quality control should be applied using a risk-based approach at each stage of data handling; monitoring
+    and data management are the main QC activities, which can extend to facilities outside investigator sites (e.g.
+    central image reading).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Apply risk-based QC, chiefly through monitoring and data management.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [RBQM, data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-048
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4
+  loc_alt: ''
+  page: printed 30-31 / PDF 38-39
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring is a principal QC activity; it should be performed by persons not involved in the clinical
+    conduct of the trial at the site being monitored, the monitoring approach should be included in the monitoring
+    plan, and the sponsor should determine the extent and nature of monitoring based on identified risks.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Organise independent, risk-based monitoring described in the monitoring plan.
+  deadline: none
+  recipient: ''
+  record: monitoring plan
+  step_hint: identify
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-049
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.1(a)
+  loc_alt: ''
+  page: printed 31 / PDF 39
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Investigator site monitoring (including pharmacies and local laboratories as appropriate) should have
+    its frequency determined based on identified risks, and activities and frequency should be modified using knowledge
+    gained.
+  quote: be determined based on identified risks
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Set and adapt site monitoring frequency based on identified risks.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-050
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.2(a)
+  loc_alt: ''
+  page: printed 31 / PDF 39
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Centralised monitoring is an evaluation of accumulated data, performed in a timely manner by the sponsor's
+    qualified and trained persons (e.g. medical monitor, data scientist/data manager, biostatistician).
+  quote: Centralised monitoring is an evaluation of accumulated data
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Use centralised monitoring as timely review of accumulated data.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [RBQM, data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-051
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.2(b)
+  loc_alt: ''
+  page: printed 31 / PDF 39
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Centralised monitoring can complement and reduce site monitoring or be used on its own; centralised
+    data analytics can help identify systemic or site-specific issues, including protocol noncompliance and potentially
+    unreliable data.
+  quote: including protocol noncompliance and potentially unreliable data
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Use centralised data analytics to detect systemic or site-specific protocol noncompliance.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [RBQM, data]
+  related: []
+  conflict_note: Text uses 'protocol noncompliance', not 'deviation' (F23).
+  confidence: high
+  verify: []
+- id: R1-052
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.2(c)
+  loc_alt: ''
+  page: printed 31 / PDF 39
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Centralised monitoring may support the selection of sites and/or processes for targeted investigator
+    site monitoring.
+  quote: ''
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Use centralised monitoring results to target site monitoring.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-053
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.3
+  loc_alt: ''
+  page: printed 31 / PDF 39
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should develop a monitoring plan tailored to identified potential safety risks, risks
+    to data quality and other risks to reliability of results, describing strategy, monitoring activities of all
+    parties, methods, tools and rationale; the plan should focus on aspects that are critical to quality.
+  quote: The plan should focus on aspects that are critical to quality.
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Write a risk-based monitoring plan focused on critical to quality aspects.
+  deadline: none
+  recipient: ''
+  record: monitoring plan
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-054
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.3
+  loc_alt: ''
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring of important data and processes performed outside the investigator site (e.g. those related
+    to primary and key secondary endpoints or participant safety, such as central image reading or central laboratories)
+    should be addressed in the monitoring plan.
+  quote: should be addressed in the monitoring plan
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Cover important data and processes handled outside the site in the monitoring plan.
+  deadline: none
+  recipient: ''
+  record: monitoring plan
+  step_hint: define
+  themes: [RBQM, data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-055
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.4
+  loc_alt: ''
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Persons performing monitoring should follow the sponsor's monitoring plan and applicable monitoring
+    procedures.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: persons performing monitoring
+  party_norm: monitor
+  trigger: ''
+  action: Follow the sponsor's monitoring plan and procedures.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-056
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.1(a)
+  loc_alt: ''
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should maintain communication with the investigator and other trial parties; each site
+    should generally have an assigned monitor as point of contact.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (gerund item); assigned monitor as site contact point
+  party_norm: sponsor
+  trigger: ''
+  action: Maintain a communication line to each site through an assigned monitor.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: Names the monitor role (lane source for 'Monitor' in the Sponsor pool).
+  confidence: high
+  verify: []
+- id: R1-057
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.1(b)
+  loc_alt: A1-3.11.4.5.1(b)
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring activities (per the sponsor's requirements and monitoring plan) include informing the investigator
+    or other parties and individuals involved in the trial of relevant deviations from the protocol, GCP and applicable
+    regulatory requirements.
+  quote: relevant deviations from the protocol, GCP and the applicable regulatory requirements
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; item phrased as gerund, no actor named)
+  party_norm: monitor
+  trigger: deviation detected through monitoring
+  action: Inform the investigator and other involved parties of relevant deviations detected.
+  deadline: none
+  recipient: investigator; other parties involved in the trial
+  record: ''
+  step_hint: notify
+  themes: []
+  related: [R1-019]
+  conflict_note: Actor not named in (b) (F23); lane 'monitor' inferred from 3.11.4.5 lead-in and 3.11.4.5.1(a).
+  confidence: high
+  verify: []
+- id: R1-058
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.1(b)
+  loc_alt: A1-3.11.4.5.1(b)
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring should, if necessary, include taking appropriate action designed to prevent recurrence
+    of the detected deviations.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: deviation detected
+  action: Take action to prevent recurrence of detected deviations where necessary.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-059
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.1(b)
+  loc_alt: A1-3.11.4.5.1(b)
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Important deviations should be highlighted and should be the focus of remediation efforts.
+  quote: Important deviations should be highlighted and should be the focus of remediation efforts
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: deviation classified as important
+  action: Flag important deviations and prioritise them for remediation.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-060
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.1(c)
+  loc_alt: ''
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring includes informing the investigator and others of errors or omissions in source records
+    or data acquisition tools and ensuring corrections, additions or deletions are dated, explained if necessary
+    and their approval documented.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Raise data entry errors and omissions with the site and ensure traceable corrections.
+  deadline: none
+  recipient: investigator; other involved parties
+  record: corrected data with audit trail
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-061
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.1(d)
+  loc_alt: ''
+  page: printed 32 / PDF 40
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Actions taken in relation to deviations, errors or omissions should be proportionate to their importance.
+  quote: should be proportionate to their importance
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Scale actions on deviations, errors and omissions to their importance.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-062
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.2(b)
+  loc_alt: ''
+  page: printed 32-33 / PDF 40-41
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring includes confirming that site staff are informed about and follow the current approved
+    protocol and other protocol-related documents.
+  quote: follow the current approved protocol and other protocol-related documents
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Confirm that site staff know and follow the current approved protocol.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-063
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.2(i)
+  loc_alt: ''
+  page: printed 33 / PDF 41
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring includes confirming that the investigator provides the required reports, notifications
+    or other information in accordance with the protocol and trial procedures.
+  quote: Confirming that the investigator provides the required reports, notifications or other information
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Confirm the investigator submits required reports and notifications.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-064
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.4(a)
+  loc_alt: ''
+  page: printed 34 / PDF 42
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring of trial data includes verifying that the investigator is enrolling only eligible trial
+    participants.
+  quote: Verifying that the investigator is enrolling only eligible trial participants
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Verify eligibility of enrolled participants.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-065
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.4(b)(ii)
+  loc_alt: A1-3.11.4.5.4(b)(ii)
+  page: printed 34 / PDF 42
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring of trial data (on-site and/or centralised, possibly sample-based) should identify missing
+    data, inconsistent data, data outliers, unexpected lack of variability and protocol deviations.
+  quote: Identify missing data, inconsistent data, data outliers, unexpected lack of variability and protocol deviations
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Identify protocol deviations (and data anomalies) through review of trial data.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [data, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-066
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.5.4(c)
+  loc_alt: ''
+  page: printed 34 / PDF 42
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring of trial data should identify significant errors in data collection and reporting at a
+    site or across sites, potential data manipulation and data integrity problems.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring activities; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Identify significant data errors, potential manipulation and data integrity problems.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-067
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.6(a)
+  loc_alt: ''
+  page: printed 34 / PDF 42
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Reports of monitoring activities should include a summary of what was reviewed, a description of significant
+    findings, conclusions and actions required to resolve them and follow-up on their resolution including items
+    not resolved in previous reports; content and frequency are set in sponsor procedures.
+  quote: a description of significant findings, conclusions and actions required to resolve them
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring reports; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Document monitoring findings and required actions in a monitoring report.
+  deadline: none
+  recipient: ''
+  record: monitoring report
+  step_hint: document
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-068
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.6(b)
+  loc_alt: ''
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Investigator site and centralised monitoring reports should be provided to the appropriate sponsor
+    staff in a timely manner for review and follow-up.
+  quote: in a timely manner for review and follow-up
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring reports; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Provide monitoring reports to responsible sponsor staff in time for review and follow-up.
+  deadline: timely (no fixed time limit)
+  recipient: appropriate sponsor staff
+  record: monitoring report
+  step_hint: document
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-069
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.6(c)
+  loc_alt: A1-3.11.4.6(c)
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: When needed, the monitoring report should describe findings requiring escalation for action and resolution.
+  quote: findings requiring escalation for action and resolution
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (monitoring reports; no actor named)
+  party_norm: monitor
+  trigger: ''
+  action: Identify in the monitoring report findings that require escalation.
+  deadline: none
+  recipient: ''
+  record: monitoring report
+  step_hint: document
+  themes: []
+  related: [R1-035]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-070
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.11.4.6(c)
+  loc_alt: A1-3.11.4.6(c)
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should decide on the appropriate action to be taken on escalated findings; decisions and
+    the resolution of actions should be documented where needed.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Decide on actions for escalated findings and document decisions and resolution.
+  deadline: none
+  recipient: ''
+  record: documented decision and resolution
+  step_hint: assess
+  themes: []
+  related: [R1-035]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-071
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.1
+  loc_alt: ''
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Noncompliance with the protocol, SOPs, GCP and/or applicable regulatory requirements by an investigator/institution
+    or by member(s) of the sponsor's staff should lead to appropriate and proportionate action by the sponsor to
+    secure compliance.
+  quote: should lead to appropriate and proportionate action by the sponsor to secure compliance
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: noncompliance by investigator/institution or sponsor staff
+  action: Take appropriate and proportionate action to secure compliance after noncompliance.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: [noncompliance]
+  related: [R1-114]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-072
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.2
+  loc_alt: A1-3.12.2
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: If noncompliance significantly affects or has the potential to significantly affect participant rights,
+    safety or well-being or the reliability of trial results, the sponsor should perform a root cause analysis.
+  quote: perform a root cause analysis, implement appropriate corrective and preventive actions
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: noncompliance with significant actual or potential impact on participants or reliability
+  action: Perform root cause analysis of noncompliance with significant (potential) impact.
+  deadline: none
+  recipient: ''
+  record: root cause analysis
+  step_hint: assess
+  themes: [noncompliance]
+  related: [R1-046]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-073
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.2
+  loc_alt: A1-3.12.2
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: For such noncompliance the sponsor should implement appropriate corrective and preventive actions
+    and confirm their adequacy, unless otherwise justified.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: noncompliance with significant actual or potential impact
+  action: Implement CAPA for significant noncompliance and confirm adequacy unless otherwise justified.
+  deadline: none
+  recipient: ''
+  record: CAPA and effectiveness check
+  step_hint: mitigate
+  themes: [noncompliance]
+  related: [R1-072, R1-075]
+  conflict_note: '''unless otherwise justified'' attaches to the sentence; F25 places it at the adequacy confirmation.'
+  confidence: high
+  verify: []
+- id: R1-074
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.2
+  loc_alt: A1-3.12.2
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Serious noncompliance is described as issues likely to significantly impact the rights, safety or
+    well-being of trial participants or the reliability of trial results.
+  quote: likely to significantly impact the rights, safety or well-being
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (definition in body text)
+  party_norm: other
+  trigger: ''
+  action: Apply this description when deciding whether noncompliance is serious.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: classify
+  themes: [noncompliance, safety]
+  related: []
+  conflict_note: Distinct from 'important protocol deviation' (A1-3.9.3) and from EU CTR 'serious breach' (R3);
+    the Glossary has no entry for noncompliance or serious noncompliance (only 'Compliance').
+  confidence: high
+  verify: []
+- id: R1-075
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.2
+  loc_alt: A1-3.12.2
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Where the sponsor identifies serious noncompliance, it should notify the regulatory authority and/or
+    IRB/IEC in accordance with applicable regulatory requirements, and/or the investigator, as appropriate.
+  quote: (i.e., serious noncompliance), the sponsor should notify the
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: serious noncompliance identified
+  action: Notify serious noncompliance to the regulatory authority and/or IRB/IEC per applicable requirements, and
+    the investigator as appropriate.
+  deadline: none stated in E6(R3) (regional law sets time limits)
+  recipient: regulatory authority(ies) and/or IRB/IEC; investigator as appropriate
+  record: ''
+  step_hint: notify
+  themes: [noncompliance]
+  related: [R1-046, R1-073, R1-074]
+  conflict_note: No time limit in E6(R3); EU CTR serious breach clock and US rules owned by R3/R4.
+  confidence: high
+  verify: []
+- id: R1-076
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.3
+  loc_alt: A1-3.12.3
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: If significant noncompliance by an investigator/institution or service provider persists despite efforts
+    at remediation, the sponsor should consider terminating that party's participation in the trial.
+  quote: should consider terminating the investigator’s/institution’s or service provider’s participation
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: significant noncompliance persisting despite remediation
+  action: Consider terminating the participation of a persistently noncompliant investigator/institution or service
+    provider.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: [noncompliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-077
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.3
+  loc_alt: A1-3.12.3
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: In that case the sponsor should promptly notify the regulatory authority(ies) and IRB/IEC of the serious
+    noncompliance, as appropriate.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: significant noncompliance persisting despite remediation, where termination is considered (3.12.3 'in
+    these circumstances')
+  action: Promptly notify regulatory authority(ies) and IRB/IEC of the serious noncompliance when participation
+    is terminated.
+  deadline: promptly (no fixed time limit)
+  recipient: regulatory authority(ies); IRB/IEC
+  record: ''
+  step_hint: notify
+  themes: [noncompliance]
+  related: [R1-076]
+  conflict_note: Text ties notification to 'these circumstances' (persistent significant noncompliance); it does
+    not make notification conditional on completed termination.
+  confidence: high
+  verify: []
+- id: R1-078
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.12.3
+  loc_alt: A1-3.12.3
+  page: printed 35 / PDF 43
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should also take action to minimise the impact on trial participants and on the reliability
+    of trial results.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Act to limit the impact of the noncompliance on participants and result reliability.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: [noncompliance]
+  related: [R1-076]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-079
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.13.3
+  loc_alt: A1-3.13.3
+  page: printed 36 / PDF 44
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should take prompt action to address immediate hazards to participants, determine the
+    causes of the hazard and take appropriate remedial actions.
+  quote: take prompt action to address immediate hazards to participants
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: immediate hazard to participants
+  action: Act promptly on an immediate hazard, determine its causes and take remedial action.
+  deadline: promptly (no fixed time limit)
+  recipient: ''
+  record: ''
+  step_hint: mitigate
+  themes: [safety, immediate-hazard]
+  related: [R1-023]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-080
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.13.3
+  loc_alt: A1-3.13.3
+  page: printed 37 / PDF 45
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should consider whether the protocol requires amendment in response to an immediate hazard;
+    the information on the immediate hazard, if required, and any subsequent amendment should be submitted to the
+    IRB/IEC and/or regulatory authorities by the investigator/institution or sponsor per applicable regulatory requirements.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor; investigator/institution or sponsor (submission)
+  party_norm: sponsor
+  trigger: immediate hazard addressed
+  action: Consider a protocol amendment and submit hazard information and any amendment to IRB/IEC and/or authorities.
+  deadline: none
+  recipient: IRB/IEC and/or regulatory authority(ies)
+  record: protocol amendment (if any); hazard information
+  step_hint: notify
+  themes: [safety, immediate-hazard]
+  related: [R1-024]
+  conflict_note: Submitting party is investigator/institution or sponsor depending on applicable law; compare A1-2.5.5.
+  confidence: high
+  verify: []
+- id: R1-081
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.16.1(b)
+  loc_alt: ''
+  page: printed 39 / PDF 47
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should apply QC to the relevant stages of data handling and focus QA and QC activities,
+    including data review, on data of higher criticality and relevant metadata.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Focus data review and QC on data of higher criticality.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [data, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-082
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.16.1(w)
+  loc_alt: ''
+  page: printed 41 / PDF 49
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should have processes and procedures for reporting incidents (including security breaches)
+    that have a significant impact on trial data to relevant parties, regulatory authorities being named among them.
+  quote: incidents (including security breaches) that have a significant impact on the trial data
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: incident with significant impact on trial data
+  action: Maintain a process to report significant data incidents to relevant parties.
+  deadline: none
+  recipient: relevant parties, including regulatory authorities
+  record: ''
+  step_hint: notify
+  themes: [data]
+  related: [R1-095]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-083
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.16.1(x)(ix)
+  loc_alt: ''
+  page: printed 42-43 / PDF 50-51
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: For all computerised systems, the sponsor should ensure a process for service providers and investigator(s)/institution(s)
+    to inform the sponsor of incidents that could potentially constitute a serious noncompliance with the protocol,
+    trial procedures, applicable regulatory requirements or GCP (see 3.12).
+  quote: a process in place for service providers and investigator(s)/institution(s)
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Provide a channel for sites and service providers to report incidents that may be serious noncompliance.
+  deadline: none
+  recipient: sponsor
+  record: ''
+  step_hint: identify
+  themes: [data, noncompliance]
+  related: [R1-075]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-084
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.16.2(d)
+  loc_alt: ''
+  page: printed 43 / PDF 51
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Criteria for inclusion or exclusion of trial participants from any analysis set should be pre-defined
+    (e.g. in the protocol or statistical analysis plan), and the rationale for excluding any participant or data
+    point clearly described and documented.
+  quote: criteria for inclusion or exclusion of trial participants
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Pre-define analysis-set inclusion/exclusion criteria and document the rationale for exclusions.
+  deadline: none
+  recipient: ''
+  record: analysis set definitions
+  step_hint: assess
+  themes: [data]
+  related: []
+  conflict_note: Does not mention protocol deviations; relevance to iPD impact on analysis sets is via E3/E9 (R2).
+  confidence: high
+  verify: []
+- id: R1-085
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.16.3(a)
+  loc_alt: ''
+  page: printed 43 / PDF 51
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor (or subsequent data owner) should retain the sponsor-specific essential records in accordance
+    with applicable regulatory requirements (see Appendix C).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Retain sponsor-specific essential records per applicable requirements.
+  deadline: none
+  recipient: ''
+  record: sponsor-specific essential records (Appendix C)
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-086
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A2-2.4
+  loc_alt: ''
+  page: printed 55 / PDF 63
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Investigator oversight should be proportionate to the importance of the data being collected and to
+    the risks to participant rights, safety and well-being and data reliability; it may range from direct supervision
+    to review of essential records, in person or via remote communication.
+  quote: proportionate to the importance of the data being collected
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption (EMA page lists Annex 2 Step 5 effective 15 Jan
+    2027 [verify R3]); US: FDA guidance (non-binding) [verify R4 whether Annex 2 adopted]'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Scale investigator oversight of decentralised/pragmatic activities to data importance and risk.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-087
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A2-2.4.1
+  loc_alt: ''
+  page: printed 56 / PDF 64
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Where healthcare professionals conduct trial activities within usual clinical practice, the protocol
+    should describe these activities and appropriate arrangements should cover information sharing, record retention,
+    privacy and data integrity; investigator oversight should be proportionate to data criticality and ensure that
+    resulting records meet the relevant protocol requirements.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption (EMA page lists Annex 2 Step 5 effective 15 Jan
+    2027 [verify R3]); US: FDA guidance (non-binding) [verify R4 whether Annex 2 adopted]'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Arrange information flow and record retention with healthcare professionals acting within usual practice.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [data, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-088
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A2-3.2.2
+  loc_alt: ''
+  page: printed 57 / PDF 65
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Sponsors considering pragmatic elements should assess whether the approach is fit for purpose and
+    complies with applicable regulatory requirements, and ensure the protocol clearly describes how, by whom and
+    under what circumstances these activities will be performed.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption (EMA page lists Annex 2 Step 5 effective 15 Jan
+    2027 [verify R3]); US: FDA guidance (non-binding) [verify R4 whether Annex 2 adopted]'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Specify in the protocol how, by whom and when pragmatic trial activities are performed.
+  deadline: none
+  recipient: ''
+  record: protocol
+  step_hint: define
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-089
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A2-3.8
+  loc_alt: ''
+  page: printed 62 / PDF 70
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Sponsor oversight should be proportionate to the potential impact on participant protection and reliability
+    of results; quality control and assurance should be customised to the trial and its critical to quality factors
+    and identified risks.
+  quote: specifically customised to the clinical trial and its critical to quality factors
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption (EMA page lists Annex 2 Step 5 effective 15 Jan
+    2027 [verify R3]); US: FDA guidance (non-binding) [verify R4 whether Annex 2 adopted]'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Tailor oversight and QA/QC of decentralised or pragmatic elements to critical to quality factors and risks.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-090
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A2-3.8
+  loc_alt: ''
+  page: printed 62 / PDF 70
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Sponsors should maintain appropriate oversight of service providers, including of their essential
+    records; where the sponsor arranges activities under investigator responsibility (e.g. home nursing), the investigator
+    retains the ability to decide whether the proposed provider is appropriate.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption (EMA page lists Annex 2 Step 5 effective 15 Jan
+    2027 [verify R3]); US: FDA guidance (non-binding) [verify R4 whether Annex 2 adopted]'
+  jurisdiction: ICH
+  party: sponsors
+  party_norm: sponsor
+  trigger: ''
+  action: Oversee service providers and their essential records in decentralised settings.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-091
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: P6.2
+  loc_alt: ''
+  page: printed 5 / PDF 13
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Critical to quality factors are attributes of a trial that are fundamental to the protection of participants,
+    the reliability and interpretability of the trial results and the decisions made based on those results.
+  quote: attributes of a trial that are fundamental to the protection of participants
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (definition in principle)
+  party_norm: other
+  trigger: ''
+  action: Apply this description when identifying critical to quality factors.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: [CtQ]
+  related: [R1-002, R1-036]
+  conflict_note: E6(R3) describes CtQ factors here and in A1-3.10 (via ICH E8(R1)); the Glossary has no CtQ entry.
+  confidence: high
+  verify: []
+- id: R1-092
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.10.6
+  loc_alt: ''
+  page: printed 20 / PDF 28
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator should ensure that the investigational product(s) are used only in accordance with
+    the approved protocol.
+  quote: used only in accordance with the approved protocol
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Ensure investigational product use only per the approved protocol.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: [compliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-093
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.11
+  loc_alt: ''
+  page: printed 21 / PDF 29
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator should follow the randomisation procedures, break the code only in accordance with
+    the protocol, and promptly document and explain to the sponsor any premature unblinding (e.g. accidental, emergency,
+    due to an SAE).
+  quote: promptly document and explain to the sponsor any premature unblinding
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: premature unblinding
+  action: Promptly document and explain any premature unblinding to the sponsor.
+  deadline: promptly (no fixed time limit)
+  recipient: sponsor
+  record: documentation and explanation of premature unblinding
+  step_hint: notify
+  themes: [data, safety]
+  related: []
+  conflict_note: E6(R3) does not label premature unblinding a protocol deviation; trial-specific iPD criteria may.
+  confidence: high
+  verify: []
+- id: R1-094
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.12.3
+  loc_alt: ''
+  page: printed 21 / PDF 29
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator should be provided with timely access to data by the sponsor and is responsible for
+    timely review of data, including relevant external data that can affect e.g. participant eligibility, treatment
+    or safety.
+  quote: be responsible for the timely review of data
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator
+  party_norm: investigator
+  trigger: ''
+  action: Review trial data, including external data affecting eligibility, treatment or safety, in a timely manner.
+  deadline: timely (no fixed time limit)
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-095
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-2.12.10(e)
+  loc_alt: ''
+  page: printed 22 / PDF 30
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: When using computerised systems, the investigator/institution should ensure that incidents in their
+    use and operation which, in its judgement, may have a significant and/or persistent impact on trial data or
+    system security are reported to the sponsor and, where applicable, to the IRB/IEC.
+  quote: are reported to the sponsor and, where applicable, to the IRB/IEC
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator/institution
+  party_norm: investigator
+  trigger: system incident with significant and/or persistent impact on data or security
+  action: Report significant computerised-system incidents to the sponsor and, where applicable, the IRB/IEC.
+  deadline: none
+  recipient: sponsor; IRB/IEC where applicable
+  record: ''
+  step_hint: notify
+  themes: [data]
+  related: [R1-082, R1-083]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-096
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.1.4
+  loc_alt: ''
+  page: printed 23 / PDF 31
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should ensure all aspects of the trial are operationally feasible and avoid unnecessary
+    complexity, procedures and data collection; protocols, data acquisition tools and other operational documents
+    should be fit for purpose, clear, concise and consistent.
+  quote: should avoid unnecessary complexity, procedures and data collection
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Design an operationally feasible trial and fit-for-purpose, consistent protocol documents.
+  deadline: none
+  recipient: ''
+  record: protocol; data acquisition tools
+  step_hint: define
+  themes: [RBQM]
+  related: [R1-006]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-097
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.3
+  loc_alt: ''
+  page: printed 24 / PDF 32
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Prior to initiating clinical trial activities, the sponsor should determine the roles and allocate
+    trial-related activities accordingly.
+  quote: the sponsor should determine the roles and allocate their trial-related activities accordingly
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Determine roles and allocate trial-related activities before initiation.
+  deadline: before initiating trial activities
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-098
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.6.3(a)
+  loc_alt: ''
+  page: printed 24 / PDF 32
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor should obtain the investigator's/institution's and, where applicable, service provider's
+    agreement to conduct the trial in accordance with the approved protocol and in compliance with GCP and applicable
+    regulatory requirements.
+  quote: To conduct the trial in accordance with the approved protocol
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Obtain documented agreement of sites and service providers to conduct the trial per protocol and GCP.
+  deadline: none
+  recipient: ''
+  record: agreement
+  step_hint: define
+  themes: [compliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-099
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.6.6
+  loc_alt: ''
+  page: printed 25 / PDF 33
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor retains ultimate responsibility for transferred activities; any service provider performing
+    trial activities should implement appropriate quality management and report to the sponsor incidents that might
+    impact participant safety and/or trial results.
+  quote: report to the sponsor incidents that might have an impact on the safety
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: service provider
+  party_norm: other
+  trigger: incident that might impact participant safety and/or trial results
+  action: Report to the sponsor incidents that might impact participant safety or trial results.
+  deadline: none
+  recipient: sponsor
+  record: ''
+  step_hint: notify
+  themes: []
+  related: [R1-083]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-100
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-3.17.2(a)
+  loc_alt: ''
+  page: printed 44 / PDF 52
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Whether the trial is completed, prematurely terminated or interim-analysed for submission, the sponsor
+    should ensure clinical trial reports (including interim reports) are prepared and provided to regulatory authorities
+    as required, and that reports in marketing applications meet the standards of ICH E3 or applicable requirements.
+  quote: meet the standards of ICH E3
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Prepare clinical trial reports to ICH E3 standards and provide them to regulatory authorities as required.
+  deadline: none
+  recipient: regulatory authority(ies)
+  record: clinical trial report (CSR), interim reports
+  step_hint: report-csr
+  themes: []
+  related: [R1-045]
+  conflict_note: 3.17.2 does not mention protocol deviations; CSR content on important deviations comes from ICH
+    E3 (R2).
+  confidence: high
+  verify: []
+- id: R1-101
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.2.2
+  loc_alt: ''
+  page: printed 46-47 / PDF 54-55
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: For data of higher criticality, the responsible party should evaluate system metadata so that initial
+    entries and subsequent changes or deletions are documented with reasons where appropriate, ensure audit trails
+    and logs are not disabled and are interpretable, and determine which metadata require review and retention.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party (investigator or sponsor, per section 4 intro)
+  party_norm: sponsor
+  trigger: ''
+  action: Keep audit trails enabled and interpretable for critical data and decide which metadata to review and
+    retain.
+  deadline: none
+  recipient: ''
+  record: audit trails, logs, metadata
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: Section 4 addresses 'responsible parties (i.e., investigators and sponsors)'; party_norm sponsor
+    chosen for the sponsor-deployed systems case.
+  confidence: high
+  verify: []
+- id: R1-102
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.2.3
+  loc_alt: ''
+  page: printed 47 / PDF 55
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Procedures for review of trial-specific data, audit trails and other relevant metadata should be in
+    place; review should be planned, risk-based, trial-adapted and adjusted with experience.
+  quote: Procedures for review of trial-specific data, audit trails and other relevant metadata
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party (investigator or sponsor)
+  party_norm: sponsor
+  trigger: ''
+  action: Plan and perform risk-based review of data, audit trails and metadata.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: [data, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-103
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.2.4
+  loc_alt: ''
+  page: printed 47 / PDF 55
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: There should be processes to correct data errors that could impact reliability; corrections should
+    be attributed, justified, supported by source records around the time of original entry and performed in a timely
+    manner.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party (investigator or sponsor)
+  party_norm: sponsor
+  trigger: ''
+  action: Correct data errors in an attributed, justified, source-supported and timely way.
+  deadline: timely (no fixed time limit)
+  recipient: ''
+  record: data corrections with audit trail
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-104
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.2.6(b)
+  loc_alt: ''
+  page: printed 48 / PDF 56
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Activities undertaken to finalise data sets prior to analysis should be confirmed and documented in
+    accordance with pre-specified procedures.
+  quote: should be confirmed and documented in accordance with pre-specified procedures
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party (investigator or sponsor)
+  party_norm: sponsor
+  trigger: data finalisation prior to interim or final analysis
+  action: Confirm and document data set finalisation activities per pre-specified procedures.
+  deadline: none
+  recipient: ''
+  record: data finalisation documentation
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-105
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.2.6(b)
+  loc_alt: ''
+  page: printed 48 / PDF 56
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Data finalisation activities may include reconciliation, rectification of data errors and omissions,
+    medical coding, and compilation of and addressing the impact of noncompliance issues, including protocol deviations.
+  quote: compilation of and addressing the impact of noncompliance issues, including protocol deviations
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party (investigator or sponsor)
+  party_norm: sponsor
+  trigger: data finalisation prior to interim or final analysis
+  action: Compile protocol deviations and address their impact as part of data finalisation before analysis.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: assess
+  themes: [data, noncompliance]
+  related: [R1-084]
+  conflict_note: Only E6(R3) text that places deviation compilation and impact handling before analysis; anchor
+    for the finalisation step.
+  confidence: high
+  verify: []
+- id: R1-106
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.2.6(c)
+  loc_alt: ''
+  page: printed 48 / PDF 56
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Data extraction and determination of data analysis sets should take place in accordance with the planned
+    statistical analysis and should be documented.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party (investigator or sponsor)
+  party_norm: sponsor
+  trigger: ''
+  action: Determine analysis sets per the planned statistical analysis and document the decisions.
+  deadline: none
+  recipient: ''
+  record: analysis set decisions
+  step_hint: assess
+  themes: [data]
+  related: [R1-084, R1-105]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-107
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.2.7
+  loc_alt: ''
+  page: printed 48 / PDF 56
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Trial data and relevant metadata should be archived so they remain retrievable and readable and protected
+    from unauthorised access and alteration throughout the retention period.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party (investigator or sponsor)
+  party_norm: sponsor
+  trigger: ''
+  action: Archive trial data and metadata in a retrievable, readable and protected way.
+  deadline: throughout the retention period
+  recipient: ''
+  record: archived data and metadata
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-108
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: A1-4.3.4(a)
+  loc_alt: ''
+  page: printed 49 / PDF 57
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The responsible party is responsible for the validation status of a computerised system throughout
+    its life cycle; the validation approach should be risk-based, considering intended use, importance of the data
+    and potential impact on participants and reliability of results.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: responsible party
+  party_norm: sponsor
+  trigger: ''
+  action: Validate computerised systems on a risk basis and maintain their validation status.
+  deadline: none
+  recipient: ''
+  record: validation documentation
+  step_hint: define
+  themes: [data, RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-109
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppB-Intro
+  loc_alt: ''
+  page: printed 70 / PDF 78
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Building adaptability into the protocol, for example acceptable ranges for specific protocol provisions,
+    can reduce the number of deviations or the need for amendments; such adaptability should not adversely affect
+    participant safety or scientific validity.
+  quote: can reduce the number of deviations
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (protocol content)
+  party_norm: sponsor
+  trigger: ''
+  action: Consider acceptable ranges for specific protocol provisions to reduce avoidable deviations.
+  deadline: none
+  recipient: ''
+  record: protocol
+  step_hint: define
+  themes: [RBQM]
+  related: []
+  conflict_note: Here 'acceptable ranges' are windows for protocol provisions, distinct from the trial-level acceptable
+    ranges/QTL of A1-3.10.1.3.
+  confidence: high
+  verify: []
+- id: R1-110
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppB-B.2.5
+  loc_alt: ''
+  page: printed 70 / PDF 78
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The protocol should generally include a statement that the trial will be conducted in compliance with
+    the protocol, GCP and applicable regulatory requirements.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (protocol content)
+  party_norm: sponsor
+  trigger: ''
+  action: Include a compliance statement in the protocol.
+  deadline: none
+  recipient: ''
+  record: protocol
+  step_hint: define
+  themes: [compliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-111
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppB-B.10.4
+  loc_alt: ''
+  page: printed 73 / PDF 81
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The protocol should generally describe the selection of participants for the planned analyses, the
+    statistical methods and procedures for handling intercurrent events and missing, unused and spurious data, aligned
+    with target estimands where defined (see ICH E9(R1)).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (protocol content)
+  party_norm: sponsor
+  trigger: ''
+  action: Specify analysis populations and handling of intercurrent events and missing data in the protocol.
+  deadline: none
+  recipient: ''
+  record: protocol (statistical section)
+  step_hint: define
+  themes: [data]
+  related: [R1-084]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-112
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppB-B.12.1
+  loc_alt: ''
+  page: printed 74 / PDF 82
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The protocol should generally describe identified critical to quality factors, associated risks and
+    risk mitigation strategies, unless documented elsewhere.
+  quote: Description of identified critical to quality factors, associated risks and risk mitigation strategies
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (protocol content)
+  party_norm: sponsor
+  trigger: ''
+  action: Document CtQ factors, risks and mitigations in the protocol or a referenced document.
+  deadline: none
+  recipient: ''
+  record: protocol (quality section)
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: [R1-091]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-113
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppB-B.12.2
+  loc_alt: ''
+  page: printed 74 / PDF 82
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The protocol should generally include a summary of the monitoring approaches that are part of the
+    quality control process.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (protocol content)
+  party_norm: sponsor
+  trigger: ''
+  action: Summarise the monitoring approach in the protocol.
+  deadline: none
+  recipient: ''
+  record: protocol (quality section)
+  step_hint: define
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-114
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppB-B.12.3
+  loc_alt: ''
+  page: printed 74 / PDF 82
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The protocol should generally include a description of the process for handling noncompliance with
+    the protocol or GCP.
+  quote: Description of the process for the handling of noncompliance with the protocol or GCP.
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor (protocol content)
+  party_norm: sponsor
+  trigger: ''
+  action: Describe the handling process for protocol/GCP noncompliance in the protocol.
+  deadline: none
+  recipient: ''
+  record: protocol (quality section)
+  step_hint: define
+  themes: [noncompliance]
+  related: [R1-071]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-115
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.1.3
+  loc_alt: ''
+  page: printed 75 / PDF 83
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Essential records permit evaluation of investigator and sponsor compliance with GCP and regulations
+    and of result reliability; they are used in investigator and sponsor oversight (including monitoring), audit,
+    inspection and IRB/IEC review; the investigator/institution should have access to, maintain and retain its essential
+    records per applicable regulatory requirements.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: investigator/institution
+  party_norm: investigator
+  trigger: ''
+  action: Maintain and retain site essential records per applicable requirements.
+  deadline: none
+  recipient: ''
+  record: essential records
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-116
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.2.3
+  loc_alt: ''
+  page: printed 75 / PDF 83
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Essential records should be maintained in or referred to from repositories held by the sponsor and
+    the investigator/institution, which may be referred to as trial master file (TMF) and investigator site file
+    (ISF).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor and investigator/institution
+  party_norm: sponsor
+  trigger: ''
+  action: File essential records in the sponsor TMF and the investigator site file.
+  deadline: none
+  recipient: ''
+  record: trial master file; investigator site file
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-117
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.2.5
+  loc_alt: ''
+  page: printed 75-76 / PDF 83-84
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor and investigator/institution should ensure essential records are collected and filed in
+    a timely manner.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor and investigator/institution
+  party_norm: sponsor
+  trigger: ''
+  action: File essential records in a timely manner.
+  deadline: timely (no fixed time limit)
+  recipient: ''
+  record: essential records
+  step_hint: document
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-118
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.2.6
+  loc_alt: ''
+  page: printed 76 / PDF 84
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Essential records should be retained complete, readable, readily available and directly accessible
+    on request by regulatory authorities, monitors and auditors; alterations should be traceable.
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor and investigator/institution
+  party_norm: sponsor
+  trigger: ''
+  action: Retain essential records accessible and with traceable alterations.
+  deadline: none
+  recipient: ''
+  record: essential records
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-119
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.1(a)
+  loc_alt: ''
+  page: printed 77 / PDF 85
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A record is essential if it is a document submitted to or issued by the regulatory authority or IRB/IEC,
+    including related correspondence and documentation of regulatory decisions or approvals/favourable opinions.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (essentiality criterion)
+  party_norm: other
+  trigger: ''
+  action: Treat submissions to and correspondence with authorities and IRB/IEC as essential records.
+  deadline: none
+  recipient: ''
+  record: regulatory and IRB/IEC submissions and correspondence
+  step_hint: archive
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-120
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.1(r)
+  loc_alt: ''
+  page: printed 78 / PDF 86
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A record is essential if it documents sponsor oversight of site selection, monitoring and audit and
+    provides information on arising issues/noncompliance and deviations detected and implementation of corrective
+    and preventative actions.
+  quote: arising issues/noncompliance and deviations detected and implementation of corrective and preventative
+    actions
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (essentiality criterion)
+  party_norm: other
+  trigger: ''
+  action: Treat oversight records on detected deviations and CAPA as essential records.
+  deadline: none
+  recipient: ''
+  record: oversight records on deviations and CAPA
+  step_hint: document
+  themes: [noncompliance]
+  related: [R1-123]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-121
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.1(s)
+  loc_alt: ''
+  page: printed 78 / PDF 86
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A record is essential if it documents compliance with the protocol and/or procedures for data management,
+    statistical analysis and production of interim and final reports.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (essentiality criterion)
+  party_norm: other
+  trigger: ''
+  action: Treat records documenting protocol compliance as essential records.
+  deadline: none
+  recipient: ''
+  record: compliance documentation
+  step_hint: archive
+  themes: [compliance]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-122
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 78-79 / PDF 86-87
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Trial records listed in the Essential Records Table should be retained when produced; the table is
+    not exhaustive, and some records depend on trial design, conduct and risk-proportionate management (C.3.3);
+    no fixed retention period is given (retention per applicable regulatory requirements).
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor and investigator/institution
+  party_norm: sponsor
+  trigger: ''
+  action: Retain the essential records listed in the Essential Records Table when produced.
+  deadline: retention period per applicable regulatory requirements
+  recipient: ''
+  record: Essential Records Table records
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-123
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 81 / PDF 89
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: 'Essential Records Table row: ''Records and reports of noncompliance including protocol deviations
+    and corrective and preventative actions'' - essential and to be retained if produced (not marked as required
+    before trial start).'
+  quote: Records and reports of noncompliance including protocol deviations and corrective and preventative actions
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor and investigator/institution
+  party_norm: sponsor
+  trigger: ''
+  action: Retain records and reports of noncompliance, protocol deviations and CAPA as essential records.
+  deadline: none
+  recipient: ''
+  record: deviation and noncompliance records and reports; CAPA records
+  step_hint: archive
+  themes: [noncompliance]
+  related: [R1-018, R1-085, R1-120, R1-122]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-124
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 81 / PDF 89
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: 'Essential Records Table rows: ''Site monitoring reports (including site selection, initiation, routine
+    and close-out)'' and ''Centralised monitoring reports'' - essential and to be retained if produced.'
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Retain site and centralised monitoring reports as essential records.
+  deadline: none
+  recipient: ''
+  record: site monitoring reports; centralised monitoring reports
+  step_hint: archive
+  themes: []
+  related: [R1-067, R1-122]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-125
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 81 / PDF 89
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: 'Essential Records Table row: ''Documentation relating to data finalisation for analysis'' (e.g. query
+    resolutions, SAE reconciliation, QC reports, coding completion, output data sets) - essential and to be retained
+    if produced.'
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Retain data finalisation documentation as essential records.
+  deadline: none
+  recipient: ''
+  record: data finalisation documentation
+  step_hint: archive
+  themes: [data]
+  related: [R1-105, R1-122]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-126
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 81 / PDF 89
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: 'Essential Records Table row: ''Documentation relating to the statistical considerations and analysis''
+    including analysis sets decisions - essential and to be retained if produced.'
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Retain analysis set decisions and analysis documentation as essential records.
+  deadline: none
+  recipient: ''
+  record: analysis sets decisions; analysis data sets
+  step_hint: archive
+  themes: [data]
+  related: [R1-122]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-127
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 81 / PDF 89
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: 'Essential Records Table row: ''Trial-specific plans (e.g., risk management, monitoring, safety, data
+    management, data validation and statistical analysis) and procedures''; risk management, monitoring, data management
+    and data validation plans are asterisked, i.e. should generally be in place before trial start (C.2.5).'
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Have risk management, monitoring, data management and data validation plans in place before trial start.
+  deadline: generally before the start of the trial (asterisked records)
+  recipient: ''
+  record: trial-specific plans
+  step_hint: define
+  themes: [RBQM]
+  related: [R1-122]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-128
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 79 / PDF 87
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: 'Essential Records Table rows: ''Signed protocol and subsequent amendments during the trial'' and
+    ''Regulatory authority(ies) authorisation, approval and/or notification of the protocol and of subsequent amendments
+    (where required)'' - essential and to be retained.'
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor and investigator/institution
+  party_norm: sponsor
+  trigger: ''
+  action: Retain protocol amendments and their authority authorisations/notifications as essential records.
+  deadline: none
+  recipient: ''
+  record: protocol amendments; authority authorisations/notifications
+  step_hint: archive
+  themes: []
+  related: [R1-080, R1-122]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-129
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: AppC-C.3.2
+  loc_alt: ''
+  page: printed 79 / PDF 87
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: 'Essential Records Table row: ''Interim (where applicable) and final clinical trial reports'' - essential
+    and to be retained.'
+  quote: ''
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: sponsor
+  party_norm: sponsor
+  trigger: ''
+  action: Retain interim and final clinical trial reports as essential records.
+  deadline: none
+  recipient: ''
+  record: clinical trial reports
+  step_hint: archive
+  themes: []
+  related: [R1-122]
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-130
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Compliance (in relation to trials)
+  loc_alt: ''
+  page: printed 84 / PDF 92
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Compliance in relation to trials means adherence to the trial-related requirements, GCP requirements
+    and the applicable regulatory requirements.
+  quote: Adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements.
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the reference concept for noncompliance and deviation decisions.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: classify
+  themes: [compliance]
+  related: []
+  conflict_note: Glossary defines Compliance only; no entries for protocol deviation, important protocol deviation,
+    noncompliance, critical to quality factors, acceptable ranges, quality tolerance limits or serious breach.
+  confidence: high
+  verify: []
+- id: R1-131
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Protocol
+  loc_alt: ''
+  page: printed 88 / PDF 96
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The protocol is the document describing objectives, design, methodology, statistical considerations
+    and organisation of a trial; throughout the guideline 'protocol' refers to protocol and protocol amendments.
+  quote: the term “protocol” refers to protocol and protocol amendments
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use the current protocol including amendments as the baseline for deviations.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-132
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Protocol Amendment
+  loc_alt: ''
+  page: printed 88 / PDF 96
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A protocol amendment is a documented description of a change(s) to a protocol.
+  quote: A documented description of a change(s) to a protocol.
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Distinguish planned changes (amendments) from deviations.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: define
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-133
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Monitoring
+  loc_alt: ''
+  page: printed 88 / PDF 96
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Monitoring is the act of overseeing the progress of a clinical trial and ensuring it is conducted,
+    recorded and reported per the protocol, SOPs, GCP and applicable regulatory requirements.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of the monitoring channel for deviation identification.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: identify
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-134
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Monitoring Plan
+  loc_alt: ''
+  page: printed 88 / PDF 96
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A monitoring plan is a document that describes the strategy, methods, responsibilities and requirements
+    for monitoring the trial.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of the monitoring plan record.
+  deadline: none
+  recipient: ''
+  record: monitoring plan
+  step_hint: define
+  themes: [RBQM]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-135
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Monitoring Report
+  loc_alt: ''
+  page: printed 88 / PDF 96
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A monitoring report is a documented report following site and/or centralised monitoring activities.
+  quote: A documented report following site and/or centralised monitoring activities.
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of the monitoring report record.
+  deadline: none
+  recipient: ''
+  record: monitoring report
+  step_hint: document
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-136
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Essential Records
+  loc_alt: ''
+  page: printed 85-86 / PDF 93-94
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Essential records are the documents and data (and relevant metadata), in any format, that facilitate
+    trial management and allow evaluation of methods used, factors affecting the trial and actions taken, to determine
+    reliability of results and verify conduct per GCP and regulations (see Appendix C).
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of essential records.
+  deadline: none
+  recipient: ''
+  record: essential records
+  step_hint: archive
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-137
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Audit Trail
+  loc_alt: ''
+  page: printed 83 / PDF 91
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: An audit trail is metadata that captures actions on data and records (by whom, when and, where applicable,
+    why); in computerised systems it should be secure, computer-generated and time stamped.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Apply audit trail requirements to deviation data in computerised systems.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-138
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Source Records
+  loc_alt: ''
+  page: printed 89 / PDF 97
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Source records are original documents or data (including relevant metadata) or certified copies, irrespective
+    of media, e.g. medical records, participant-entered data, pharmacy and laboratory records and data from automated
+    instruments.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of source records.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: document
+  themes: [data]
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-139
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Clinical Trial/Study Report (CSR)
+  loc_alt: ''
+  page: printed 84 / PDF 92
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A clinical trial/study report (CSR) is a documented description of a trial in which clinical and statistical
+    description, presentations and analyses are fully integrated into a single report (see ICH E3).
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Treat 'clinical trial report' in E6(R3) as the CSR (ICH E3).
+  deadline: none
+  recipient: ''
+  record: clinical study report
+  step_hint: report-csr
+  themes: []
+  related: []
+  conflict_note: 'Resolves C8: E6(R3) uses ''clinical trial report'' and ''Clinical Trial/Study Report (CSR)'' as
+    one term.'
+  confidence: high
+  verify: []
+- id: R1-140
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Sponsor
+  loc_alt: ''
+  page: printed 90 / PDF 98
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The sponsor is an individual, company, institution or organisation that takes responsibility for initiation,
+    management and arrangement of financing of a trial; with several sponsors, unattributed responsibilities lie
+    with all.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of the Sponsor pool.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-141
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Investigator
+  loc_alt: ''
+  page: printed 87 / PDF 95
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: The investigator is the person responsible for the conduct of the trial at a site, including the participants
+    under their responsibility; 'investigator/institution' expectations may apply to the investigator and/or institution.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of the Investigator/institution pool.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-142
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)
+  loc_alt: ''
+  page: printed 87 / PDF 95
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: An IRB/IEC is an independent body of medical and non-medical members responsible for protecting participants'
+    rights, safety and well-being, inter alia by reviewing and approving/providing favourable opinion on the protocol.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of the IRB/IEC pool.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-143
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Regulatory Authorities
+  loc_alt: ''
+  page: printed 89 / PDF 97
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: Regulatory authorities are bodies having the power to regulate, including those reviewing protocols
+    and clinical data and conducting inspections; sometimes called competent authorities.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of the Regulatory authority pool.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []
+- id: R1-144
+  src: E6R3
+  doc: ICH E6(R3) Guideline for Good Clinical Practice (GCP), Final version, Step 4, consolidated with Annex 2,
+    16 June 2026
+  url: https://database.ich.org/sites/default/files/ICH%20E6%28R3%29_Step4_FinalConsolidatedGuideline_2026_0616_.pdf
+  loc: GL:Service Provider
+  loc_alt: ''
+  page: printed 89 / PDF 97
+  retrieval: local pdftotext of official PDF (sha256 f62d668b7b3495cef26cb52417e051981ce5edd989ff023bf6d68a3b294ff84a)
+    2026-11-06
+  paraphrase: A service provider is a person or organisation (commercial, academic or other) providing a service
+    used by the sponsor or investigator to fulfil trial-related activities.
+  quote: ''
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: 'EU: [verify] via EU CTR Art. 47 / EMA adoption; US: FDA guidance (non-binding)'
+  jurisdiction: ICH
+  party: not applicable (glossary definition)
+  party_norm: other
+  trigger: ''
+  action: Use as the definition of service providers.
+  deadline: none
+  recipient: ''
+  record: ''
+  step_hint: other
+  themes: []
+  related: []
+  conflict_note: ''
+  confidence: high
+  verify: []

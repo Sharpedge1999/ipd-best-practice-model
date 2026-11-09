@@ -1,0 +1,442 @@
+{
+  "tool": "spec2bpmn",
+  "version": "1.0",
+  "specs_dir": "out/b2_selftest/specs",
+  "skipped_files": [],
+  "lint": "pass",
+  "pool_slots": {
+    "P_IEC": [
+      0,
+      2
+    ],
+    "P_INV": [
+      1,
+      1
+    ],
+    "P_RA": [
+      3,
+      3
+    ],
+    "P_SPON": [
+      2,
+      0
+    ]
+  },
+  "models": [
+    {
+      "model": "L3",
+      "spec_file": "L3.yaml",
+      "spec_sha256": "a94c9a79bfd918637ea1be5ed7b938752c96bf501d74a2b26d4ad231e0177572",
+      "collaboration": "L3_COLLAB",
+      "diagram": "L3_DIAGRAM",
+      "plane": "L3_PLANE",
+      "pool_order": [
+        "L3_P_IEC",
+        "L3_P_INV",
+        "L3_P_SPON",
+        "L3_P_RA"
+      ],
+      "collapsed_pools": [
+        "L3_P_IEC",
+        "L3_P_RA"
+      ],
+      "processes": [
+        "L3_P_SPON_PROCESS",
+        "L3_P_INV_PROCESS"
+      ],
+      "counts": {
+        "callActivity": 6,
+        "endEvent": 2,
+        "exclusiveGateway": 2,
+        "lane": 2,
+        "messageFlow": 4,
+        "participant": 4,
+        "sequenceFlow": 13,
+        "startEvent": 2,
+        "task": 2
+      },
+      "overlay_zones": {
+        "L3_A1": [
+          324,
+          893,
+          160,
+          70
+        ],
+        "L3_A2": [
+          528,
+          1118,
+          160,
+          70
+        ],
+        "L3_A3": [
+          732,
+          1113,
+          160,
+          70
+        ],
+        "L3_A4": [
+          1130,
+          687,
+          160,
+          70
+        ],
+        "L3_A5": [
+          1528,
+          893,
+          160,
+          70
+        ],
+        "L3_A6": [
+          1732,
+          893,
+          160,
+          70
+        ],
+        "L3_A7": [
+          329,
+          338,
+          150,
+          70
+        ],
+        "L3_A8": [
+          533,
+          338,
+          150,
+          70
+        ],
+        "L3_E1": [
+          1936,
+          912,
+          150,
+          70
+        ],
+        "L3_E2": [
+          737,
+          349,
+          150,
+          70
+        ],
+        "L3_G1": [
+          936,
+          906,
+          150,
+          70
+        ],
+        "L3_G2": [
+          1334,
+          875,
+          150,
+          70
+        ],
+        "L3_M1": [
+          512,
+          474,
+          150,
+          70
+        ],
+        "L3_M2": [
+          614,
+          138,
+          150,
+          70
+        ],
+        "L3_M3": [
+          1308,
+          1243,
+          150,
+          70
+        ],
+        "L3_M4": [
+          1216,
+          138,
+          150,
+          70
+        ],
+        "L3_S1": [
+          130,
+          912,
+          150,
+          70
+        ],
+        "L3_S2": [
+          130,
+          349,
+          150,
+          70
+        ]
+      }
+    },
+    {
+      "model": "L4-01",
+      "spec_file": "L4-01.yaml",
+      "spec_sha256": "0681970f7d722342156e98d0c16d3a62d2af22ec6ac051a1858e8472ae9a024d",
+      "collaboration": "L4_01_COLLAB",
+      "diagram": "L4_01_DIAGRAM",
+      "plane": "L4_01_PLANE",
+      "pool_order": [
+        "L4_01_P_IEC",
+        "L4_01_P_INV",
+        "L4_01_P_SPON",
+        "L4_01_P_RA"
+      ],
+      "collapsed_pools": [
+        "L4_01_P_IEC",
+        "L4_01_P_RA"
+      ],
+      "processes": [
+        "L4_01_P_SPON_PROCESS",
+        "L4_01_P_INV_PROCESS"
+      ],
+      "counts": {
+        "dataInputAssociation": 2,
+        "dataObjectReference": 1,
+        "dataOutputAssociation": 3,
+        "dataStoreReference": 1,
+        "endEvent": 4,
+        "exclusiveGateway": 7,
+        "group": 2,
+        "intermediateCatchEvent": 1,
+        "lane": 3,
+        "messageFlow": 6,
+        "parallelGateway": 2,
+        "participant": 4,
+        "sequenceFlow": 29,
+        "startEvent": 3,
+        "task": 11
+      },
+      "overlay_zones": {
+        "L4_01_A1": [
+          518,
+          1309,
+          150,
+          70
+        ],
+        "L4_01_A10": [
+          324,
+          325,
+          150,
+          70
+        ],
+        "L4_01_A11": [
+          518,
+          325,
+          150,
+          70
+        ],
+        "L4_01_A12": [
+          3050,
+          325,
+          150,
+          70
+        ],
+        "L4_01_A2": [
+          906,
+          1309,
+          150,
+          70
+        ],
+        "L4_01_A3": [
+          1100,
+          896,
+          150,
+          70
+        ],
+        "L4_01_A4": [
+          1682,
+          901,
+          160,
+          70
+        ],
+        "L4_01_A5": [
+          1687,
+          1523,
+          150,
+          70
+        ],
+        "L4_01_A6": [
+          2274,
+          669,
+          150,
+          70
+        ],
+        "L4_01_A7": [
+          2856,
+          896,
+          150,
+          70
+        ],
+        "L4_01_A8": [
+          3244,
+          1309,
+          150,
+          70
+        ],
+        "L4_01_D1": [
+          1100,
+          1113,
+          150,
+          70
+        ],
+        "L4_01_D2": [
+          1886,
+          687,
+          150,
+          70
+        ],
+        "L4_01_E1": [
+          3826,
+          907,
+          150,
+          70
+        ],
+        "L4_01_E2": [
+          906,
+          1106,
+          150,
+          70
+        ],
+        "L4_01_E3": [
+          712,
+          336,
+          150,
+          70
+        ],
+        "L4_01_E4": [
+          3244,
+          336,
+          150,
+          70
+        ],
+        "L4_01_G1": [
+          712,
+          1327,
+          150,
+          70
+        ],
+        "L4_01_G2": [
+          1294,
+          914,
+          150,
+          70
+        ],
+        "L4_01_G3": [
+          1488,
+          883,
+          150,
+          70
+        ],
+        "L4_01_G4": [
+          1886,
+          883,
+          150,
+          70
+        ],
+        "L4_01_G5": [
+          2080,
+          901,
+          150,
+          70
+        ],
+        "L4_01_G6": [
+          2468,
+          883,
+          150,
+          70
+        ],
+        "L4_01_G7": [
+          3438,
+          1327,
+          150,
+          70
+        ],
+        "L4_01_G8": [
+          3632,
+          883,
+          150,
+          70
+        ],
+        "L4_01_G9": [
+          2662,
+          883,
+          150,
+          70
+        ],
+        "L4_01_I1": [
+          3050,
+          1320,
+          150,
+          70
+        ],
+        "L4_01_M1": [
+          318,
+          448,
+          150,
+          70
+        ],
+        "L4_01_M2": [
+          599,
+          125,
+          150,
+          70
+        ],
+        "L4_01_M3": [
+          2442,
+          1648,
+          150,
+          70
+        ],
+        "L4_01_M4": [
+          2850,
+          461,
+          150,
+          70
+        ],
+        "L4_01_M5": [
+          3218,
+          461,
+          150,
+          70
+        ],
+        "L4_01_M6": [
+          2355,
+          125,
+          150,
+          70
+        ],
+        "L4_01_S1": [
+          324,
+          1320,
+          150,
+          70
+        ],
+        "L4_01_S2": [
+          130,
+          336,
+          150,
+          70
+        ],
+        "L4_01_S3": [
+          2856,
+          336,
+          150,
+          70
+        ]
+      }
+    }
+  ],
+  "outputs": {
+    "out/b2_selftest/models/L3.bpmn": "53c8a68df239a4d154ec733b03695f3da0b0a784de50851a0e12ef65afe10f94",
+    "out/b2_selftest/models/L4-01.bpmn": "5a231b402015933e93d0ace86e31fe39bd6eedeb000ac0c78083cab1c6d46ba0",
+    "out/b2_selftest/selftest.bpmn": "144518e917f4fbb4336f7675e55dcda4a33906b73e36835c15617b7eb8a09243"
+  },
+  "warnings": [
+    "L3 A2: called model L4-02 not in the spec set; calledElement set to L4_02_P_SPON_PROCESS by convention",
+    "L3 A3: called model L4-03 not in the spec set; calledElement set to L4_03_P_SPON_PROCESS by convention",
+    "L3 A4: called model L4-04 not in the spec set; calledElement set to L4_04_P_SPON_PROCESS by convention",
+    "L3 A5: called model L4-05 not in the spec set; calledElement set to L4_05_P_SPON_PROCESS by convention",
+    "L3 A6: called model L4-06 not in the spec set; calledElement set to L4_06_P_SPON_PROCESS by convention"
+  ],
+  "notes": [
+    "Per-model files are self-contained (own collaboration, processes, diagram). L3.bpmn keeps calledElement on its call activities, but the called L4 processes are only in the combined file and in the L4 files."
+  ]
+}

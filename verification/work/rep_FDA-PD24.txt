@@ -1,0 +1,91 @@
+====================================================================================================
+R4-035 | FDA-PD24 | loc=SII | page=printed 1-2; lines 17-19 and 57-63
+PARA: FDA notes that its regulations neither define protocol deviation nor classify deviation types (SI lines 17-19), and adopts the ICH E3(R1) Q&A definition: a protocol deviation is any change, divergence or departure from the study design or procedures defined in the protocol.
+QUOTE: any change, divergence, or departure from the study design or procedures
+QCHECK: exact ['PDF 5 / printed 2'] 
+LOC: found PDF 5 / printed 2 .. PDF 5 / printed 2 (0 chars) 
+  quote inside loc passage: False
+  PASSAGE: 
+  DOCBEST-OUTSIDE 0.50 @ PDF 5 / printed 2: Questions and Answers (R1), which includes clarifications for implementing the recommendations in the ICH guidance for industry E3 Structure and Content of Clinical Study Reports (July 1996) regarding the structure and content of a clinical study report. To help clarify recommendations regarding the reporting of protocol deviations as recommended in ICH E3, ICH E3(R1) defines a protocol deviation 
+====================================================================================================
+R4-036 | FDA-PD24 | loc=SII | page=printed 2; line 60 (restated in SIII.A.1, printed 4)
+PARA: An important protocol deviation is the subset of protocol deviations that might significantly affect the completeness, accuracy or reliability of study data, or a subject's rights, safety or well-being (adopted from ICH E3(R1)).
+QUOTE: a subset of protocol deviations that might significantly affect the completeness
+QCHECK: exact ['PDF 5 / printed 2'] 
+LOC: found PDF 5 / printed 2 .. PDF 5 / printed 2 (0 chars) 
+  quote occurrences: 2 at ['PDF 5 / printed 2', 'PDF 7 / printed 4']
+  quote inside loc passage: False
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.95 @ PDF 5 / printed 2: Questions and Answers (R1), which includes clarifications for implementing the recommendations in the ICH guidance for industry E3 Structure and Content of Clinical Study Reports (July 1996) regarding the structure and content of a clinical study report. To help clarify recommendations regarding the reporting of protocol deviations as recommended in ICH E3, ICH E3(R1) defines a protocol deviation 
+====================================================================================================
+R4-041 | FDA-PD24 | loc=SIII.A.1 | page=printed 4; lines 121-122
+PARA: FDA recommends using the single term 'important' for deviations otherwise labelled major, critical or significant.
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part A not found
+  PASSAGE: 
+  DOCBEST-OUTSIDE 0.67 @ PDF 7 / printed 4: Important Protocol Deviations As noted above, in this guidance an important protocol deviation is a subset of protocol deviations that might significantly affect the completeness, accuracy, and/or reliability of the study data or that might significantly affect a subject's rights, safety, or well-being. While other terms such as major, critical, and significant have sometimes been used to classify
+====================================================================================================
+R4-043 | FDA-PD24 | loc=SIII.A.1 | page=printed 4; lines 136-137
+PARA: It may be helpful for the protocol to define important protocol deviations and to give study-specific examples.
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part A not found
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.78 @ PDF 7 / printed 4: These quality factors are critical to the reliability and interpretability of the study data. It may be helpful for a protocol to define important protocol deviations and provide examples of what constitutes such for the particular study.
+====================================================================================================
+R4-044 | FDA-PD24 | loc=SIII.A.1 | page=printed 4-5; lines 139-161
+PARA: Non-exhaustive list of deviations FDA considers important because they affect subject protection or safety assessment: failure to perform safety assessments or adequately monitor participants (e.g. missing important safety labs, product not administered as specified); prohibited concomitant treatment raising risk; failure to obtain informed consent or meet Part 50; failure to protect identifiable private health information; failure to withdraw product when withdrawal criteria are met; wrong treatment, incorrect dose or wrong device; failure to follow the randomization scheme.
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part A not found
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.62 @ PDF 7 / printed 4: Ibid. Failure to obtain informed consent or meet other applicable requirements under FDA regulations for the protection of human subjects 11 under 21 CFR part 50 Failure to protect a participant's identifiable private protected health information Failure to withdraw investigational product administration from trial participants who meet withdrawal criteria Administration of the wrong treatment or 
+====================================================================================================
+R4-051 | FDA-PD24 | loc=SIII.B.2 | page=printed 6-7; lines 228-231
+PARA: Where possible, important protocol deviations should be remedied or addressed promptly during the trial to reduce risk to participants and protect data quality.
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part B not found
+  PASSAGE: 
+  DOCBEST-OUTSIDE 0.67 @ PDF 9 / printed 6: See the information sheet guidance for IRBs and clinical investigators Sponsor - Investigator - IRB Interrelationship (January 1998). improve detection of important protocol deviations. Whenever possible, identified important protocol deviations should be promptly remedied or addressed during the conduct of the clinical investigation to minimize risks to participants and to preserve the quality of
+====================================================================================================
+R4-053 | FDA-PD24 | loc=SIII.B.2 | page=printed 7; lines 234-236
+PARA: The protocol should specify in advance which types of deviation will be considered important; the list may be updated as data accumulate during the trial.
+QUOTE: pre-specify which types of protocol deviations will be considered important
+QCHECK: exact ['PDF 10 / printed 7'] 
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part B not found
+  quote inside loc passage: False
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.75 @ PDF 10 / printed 7: The protocol should pre-specify which types of protocol deviations will be considered important, although with accumulating data and review, the list of important protocol deviations can be updated over time. Sponsors should inform investigators of the time frame and the manner in which they expect to receive information about protocol deviations (e.g., important protocol deviations should be repo
+====================================================================================================
+R4-054 | FDA-PD24 | loc=SIII.B.2 | page=printed 7; lines 236-239
+PARA: Sponsors should tell investigators the timeframe and method for reporting deviations; FDA's example is important deviations reported to the sponsor expeditiously within a sponsor-set number of days of occurrence, other deviations at site monitoring visits.
+QUOTE: within x days of occurrence
+QCHECK: exact ['PDF 10 / printed 7'] 
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part B not found
+  quote inside loc passage: False
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.55 @ PDF 10 / printed 7: The protocol should pre-specify which types of protocol deviations will be considered important, although with accumulating data and review, the list of important protocol deviations can be updated over time. Sponsors should inform investigators of the time frame and the manner in which they expect to receive information about protocol deviations (e.g., important protocol deviations should be repo
+====================================================================================================
+R4-055 | FDA-PD24 | loc=SIII.B.2 | page=printed 7; lines 241-243, footnote 16
+PARA: Sponsors should discuss important protocol deviations in the body of clinical study reports submitted in an NDA or BLA. Footnote 16 adds that for CDER applications all deviations are to be provided as described in the Bioresearch Monitoring Technical Conformance Guide (v3.1, September 2024).
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part B not found
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.48 @ PDF 10 / printed 7: Sponsors should note in such mandatory reports when protocol deviations contributed to the occurrence of these events (e.g., a safety laboratory test to monitor for a potential drug safety event was not collected, and the safety event subsequently occurred and was serious). For applications submitted to the Center for Drug Evaluation and Research, all protocol deviations should also be provided as
+====================================================================================================
+R4-058 | FDA-PD24 | loc=SIII.B.2 | page=printed 7; lines 248-250
+PARA: The DV domain should include a variable recording the sponsor's determination of whether each deviation is important.
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part B not found
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.89 @ PDF 10 / printed 7: 17 Sponsors should also report all protocol deviations in the Study Data Tabulation Model 18 Protocol Deviation (DV) domain, which will assist FDA in confirming whether protocol deviations had a significant impact on data quality. Sponsors should include a variable in the DV domain that provides the sponsor's determination of whether the protocol deviation was important.
+====================================================================================================
+R4-065 | FDA-PD24 | loc=SIII.B.2 | page=printed 9; lines 305-310, footnotes 22-23
+PARA: Sponsors should assess the risk that critical elements are not conducted correctly, mitigate those risks, and develop study-specific plans to minimise occurrence and impact of important deviations, e.g. medical monitoring plan, safety monitoring plan, data management plan, risk-based monitoring plan, independent endpoint adjudication charter (footnotes cite FDA-RBM13, FDA-RBM23 and ICH E6(R2)).
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part B not found
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.73 @ PDF 11 / printed 8: For more information on broadening eligibility criteria, see the guidance for industry Enhancing the Diversity of Clinical Trial Populations - Eligibility Criteria, Enrollment Practices, and Trial Designs (November 2020). Sponsors should assess the risks that such critical protocol elements may not be properly conducted (e.g., complicated enrollment criteria, complex procedures), work to mitigate 
+====================================================================================================
+R4-072 | FDA-PD24 | loc=SIII.B.3 | page=printed 10; lines 351-353
+PARA: Where possible, FDA recommends that the investigator submit important protocol deviations to the IRB when they are identified, following the IRB's written procedures.
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part B not found
+  PASSAGE: 
+  DOCBEST-OUTSIDE 0.86 @ PDF 13 / printed 10: 24 For device studies, if the changes or deviations may affect the scientific soundness of the plan or the rights, safety, or welfare of human subjects, the investigator is required to get prior IRB and FDA approval (21 CFR 812.150(a)(4)). Where possible, FDA recommends that protocol deviations that are classified as important be submitted by the investigator to the IRB when they are identified, a
+====================================================================================================
+R4-075 | FDA-PD24 | loc=SIII.C | page=printed 10; lines 360-363
+PARA: Protocol changes are generally not implemented until IRB review and approval and, in some cases, FDA review; changes to protocol-specified procedures made without prior IRB approval and without submitting the implementing amendment to FDA are protocol deviations.
+LOC: found PDF 6 / printed 3 .. PDF 6 / printed 3 (0 chars) part C not found
+  PASSAGE: 
+  DOCBEST-OUTSIDE 0.80 @ PDF 13 / printed 10: Protocol Amendments and Changes to an Investigational Plan Changes in a protocol are typically not implemented before review and approval by the IRB and, in some cases, by FDA. Any modifications to protocol-specified procedures that occur without prior IRB approval and submission to FDA of the protocol amendment implementing the modification are considered protocol deviations.

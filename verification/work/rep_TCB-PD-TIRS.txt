@@ -1,0 +1,98 @@
+====================================================================================================
+R5-002 | TCB-PD-TIRS | loc=SDefine | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Important protocol deviations are the subset that may significantly affect the completeness, accuracy or reliability of key study data, or a participant's rights, safety or well-being; examples are enrolling participants who violate key eligibility criteria and failing to collect data needed to interpret primary endpoints. The paper bases this on ICH E3 Q&A (R1) and applies ICH E6(R2) risk-based thinking.
+LOC: not located automatically
+  DOCBEST 0.67 @ PDF 1 / printed None: The updated definition becomes: "Important protocol deviations are a subset of protocol deviations that may significantly impact the completeness, accuracy, and/or reliability of key study data or that may significantly affect a subject's rights, safety, or well-being. For example, important PDs may include enrolling subjects in violation of key eligibility criteria or failing to collect data necessary to interpret primary endpoints, as this may compromise the scientific value of the trial." ICH
+  DOCBEST 0.51 @ PDF 1 / printed None: Risk-based approaches from ICH E6 R2 can be applied to the definition of important PDs. The updated definition becomes: "Important protocol deviations are a subset of protocol deviations that may significantly impact the completeness, accuracy, and/or reliability of key study data or that may significantly affect a subject's rights, safety, or well-being.
+====================================================================================================
+R5-003 | TCB-PD-TIRS | loc=SDefine | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Because ICH E3 gives no formal definition of non-important deviations, the authors consider it reasonable to treat every deviation that does not meet the important criteria as non-important. Both kinds are collected, processed and reported, although by different pathways.
+LOC: not located automatically
+  DOCBEST 0.50 @ PDF 1 / printed None: It appears reasonable, however, to consider a PD non-important if it does not meet the criteria for important. Both important and non-important PDs are collected, processed and reported, although the pathways may differ as discussed later.
+  DOCBEST 0.42 @ PDF 1 / printed None: ICH E3 does not provide a formal definition of a non-important PD. It appears reasonable, however, to consider a PD non-important if it does not meet the criteria for important.
+====================================================================================================
+R5-006 | TCB-PD-TIRS | loc=SDefine | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Holding periodic reviews per therapeutic area or indication is named a best practice to keep classification of important deviations consistent within a company.
+LOC: not located automatically
+  DOCBEST 0.60 @ PDF 1 / printed None: 2) can be applied to support consistent application of critical thinking within an organization, and potentially across the industry. Conducting periodic therapeutic area or indication reviews is a best practice to maintain consistency within a company.
+  DOCBEST 0.53 @ PDF 1 / printed None: Conducting periodic therapeutic area or indication reviews is a best practice to maintain consistency within a company. Fig.
+====================================================================================================
+R5-009 | TCB-PD-TIRS | loc=SProtocol | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Because the protocol and its referenced documents decide what is a deviation, risk assessment reviews and the deviation classification approach should be done before the protocol is finalised, so the protocol can still be changed to prevent deviations.
+QUOTE: conduct risk assessment reviews and define PD classification approaches
+QCHECK: exact ['PDF 1 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.46 @ PDF 1 / printed None: Companies should follow their escalation and assessment paths for decision making and reporting.Protocol The protocol and documents referenced in the protocol are the primary sources when determining whether something is or is not a PD. Therefore, a best practice is to conduct risk assessment reviews and define PD classification approaches prior to protocol finalization.
+  DOCBEST 0.42 @ PDF 1 / printed None: Therefore, a best practice is to conduct risk assessment reviews and define PD classification approaches prior to protocol finalization. This allows for changes to reduce occurrence of PDs.Prepare A protocol-specific protocol deviation assessment plan (PDAP) documenting the management of PDs is recommended to support consistency within a study, across a program, and within a company or organization.
+====================================================================================================
+R5-012 | TCB-PD-TIRS | loc=SPrepare | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: The PDAP lists the deviations classed as important. Non-important deviations are described pragmatically: only those often misclassified or tied to a classification threshold are included.
+QUOTE: the PDAP should describe PDs classified as important
+QCHECK: exact ['PDF 1 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.56 @ PDF 1 / printed None: Under this proposed approach, the PDAP should describe PDs classified as important. A pragmatic approach should be applied when describing non-important PDs, for example, only include those commonly misclassified or part of a classification threshold.
+  DOCBEST 0.44 @ PDF 1 / printed None: A pragmatic approach should be applied when describing non-important PDs, for example, only include those commonly misclassified or part of a classification threshold. The PDAP template includes the following recommended elements:
+====================================================================================================
+R5-013 | TCB-PD-TIRS | loc=SPrepare | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Recommended PDAP content: guidance for consistent classification and categorisation; how potential important deviations will be identified and which main team members are involved; and the thresholds at which non-important deviations may become important.
+LOC: not located automatically
+  DOCBEST 0.65 @ PDF 1 / printed None: The PDAP template includes the following recommended elements: Guidance for consistent classification and categorization of PDs, Method of identification for potential important PDs and primary team members involved, Thresholds at which non-important PDs may become important.
+  DOCBEST 0.55 @ PDF 1 / printed None: Guidance for consistent classification and categorization of PDs, Method of identification for potential important PDs and primary team members involved, Thresholds at which non-important PDs may become important. Additional elements may be included:
+====================================================================================================
+R5-019 | TCB-PD-TIRS | loc=STrain | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Retraining and feedback mechanisms should also be put in place.
+LOC: not located automatically
+  DOCBEST 0.60 @ PDF 1 / printed None: Train study site personnel on the protocol including amendments, not the PDAP, Train study team (including CRAs, CROs, vendor, etc.) on the protocol including amendments and the PDAP including updates. Retraining and feedback mechanisms should also be implemented.Identify and Collect PDs can be identified via programmatic or manual processes.
+  DOCBEST 0.60 @ PDF 1 / printed None: Retraining and feedback mechanisms should also be implemented.Identify and Collect PDs can be identified via programmatic or manual processes. Programmatic identification is based on data captured in a database using an electronic/computerized process or program.
+====================================================================================================
+R5-020 | TCB-PD-TIRS | loc=SIdentify-and-Collect | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Deviations are identified programmatically (computerised processing of database data) or manually (human judgement). A clearly defined PDAP states how potential important deviations will be identified, so that the two channels are aligned and each covers what the other cannot.
+LOC: not located automatically
+  DOCBEST 0.24 @ PDF 1 / printed None: In both cases, a well-defined PDAP is essential for consistency and timely identification of PDs. Describing the method of identification of potential important PDs ensures alignment of efforts and focuses team members on items which cannot be identified via the alternate approach.
+  DOCBEST 0.20 @ PDF 1 / printed None: Protocol deviation classification and categorization examples Category Protocol deviation classification examples Important Non-important Not a protocol deviation Informed consent Clinical study procedures conducted prior to obtaining initial informed consent New clinical study procedures performed before participant was re-consented Re-consent containing updated risk language or important safety information not signed If required by local regulation or IRB/EC, participant did not initial all pa
+====================================================================================================
+R5-022 | TCB-PD-TIRS | loc=SIdentify-and-Collect | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Risk-based monitoring may miss some deviations but should catch the important ones. Risk assessments point to the critical data and processes, so effort can be focused on deviations with most impact on participant safety and data reliability.
+LOC: not located automatically
+  DOCBEST 0.48 @ PDF 1 / printed None: Protocol deviation classification and categorization examples Category Protocol deviation classification examples Important Non-important Not a protocol deviation Informed consent Clinical study procedures conducted prior to obtaining initial informed consent New clinical study procedures performed before participant was re-consented Re-consent containing updated risk language or important safety information not signed If required by local regulation or IRB/EC, participant did not initial all pa
+  DOCBEST 0.39 @ PDF 1 / printed None: Risk assessment activities identify critical data and processes that matter most in the clinical study. Armed with this prioritized information, the study team can focus activities on PDs with the greatest impact on participant safety and reliability of study data.
+====================================================================================================
+R5-028 | TCB-PD-TIRS | loc=SConfirm | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Classification and categorisation need confirmation; the review is recommended to be done by an independent study team member or group, not the person who identified the deviation.
+QUOTE: an independent study team member (or group), other than the identifier
+QCHECK: exact ['PDF 1 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.56 @ PDF 1 / printed None: Table 1 in Appendix contains examples of classification and categorization to guide in identifying situations which are important, non-important and not a PD.Confirm PD classification and categorization should be confirmed. It is recommended that an independent study team member (or group), other than the identifier, perform this review.
+  DOCBEST 0.50 @ PDF 1 / printed None: It is recommended that an independent study team member (or group), other than the identifier, perform this review. Feedback and possible retraining should be provided to the identifier if the PD is misclassified, miscategorized, or otherwise erroneously reported.
+====================================================================================================
+R5-031 | TCB-PD-TIRS | loc=SConfirm | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Non-important deviations undergo periodic aggregate review to detect trends or systemic errors that could cross a threshold and justify upgrading them to important.
+QUOTE: periodic aggregate reviews should be completed to identify trends or systemic errors
+QCHECK: exact ['PDF 1 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.60 @ PDF 1 / printed None: Based on collection method (programmatic and/or manual), important PDs should be reconciled, and all discrepancies should be addressed. Reconciliation may include: removal of duplicate PDs (e.g., those identified via both programmatic and manual methods) consistency between data point(s) and PD (e.g., transcription error corrected eliminating the PD) For non-important PDs, periodic aggregate reviews should be completed to identify trends or systemic errors which may meet a threshold to upgrade t
+  DOCBEST 0.60 @ PDF 1 / printed None: Reconciliation may include: removal of duplicate PDs (e.g., those identified via both programmatic and manual methods) consistency between data point(s) and PD (e.g., transcription error corrected eliminating the PD) For non-important PDs, periodic aggregate reviews should be completed to identify trends or systemic errors which may meet a threshold to upgrade the classification to important.Store PDs, including the classification and categorization and any associated data points, should be stor
+====================================================================================================
+R5-032 | TCB-PD-TIRS | loc=SStore | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Deviations, with their classification, category and linked data points, are stored in a validated repository or system (examples: CTMS, EDC, TMF or a custom system) that allows both important and non-important deviations to be retrieved or regenerated for analysis and reporting.
+LOC: not located automatically
+  DOCBEST 0.65 @ PDF 1 / printed None: Based on collection method (programmatic and/or manual), important PDs should be reconciled, and all discrepancies should be addressed. Reconciliation may include: removal of duplicate PDs (e.g., those identified via both programmatic and manual methods) consistency between data point(s) and PD (e.g., transcription error corrected eliminating the PD) For non-important PDs, periodic aggregate reviews should be completed to identify trends or systemic errors which may meet a threshold to upgrade t
+  DOCBEST 0.65 @ PDF 1 / printed None: Reconciliation may include: removal of duplicate PDs (e.g., those identified via both programmatic and manual methods) consistency between data point(s) and PD (e.g., transcription error corrected eliminating the PD) For non-important PDs, periodic aggregate reviews should be completed to identify trends or systemic errors which may meet a threshold to upgrade the classification to important.Store PDs, including the classification and categorization and any associated data points, should be stor
+====================================================================================================
+R5-034 | TCB-PD-TIRS | loc=SReview-and-Analyze | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Study teams' periodic reviews, data monitoring and analyses during conduct may be used to find important deviations not yet in the PDAP and to judge whether the frequency or volume of non-important deviations should trigger reclassification; if existing activities cannot serve this, extra effort should be considered.
+LOC: not located automatically
+  DOCBEST 0.54 @ PDF 1 / printed None: The PDAP should be stored with other protocol related decision-making records.Review and Analyze Study teams typically conduct periodic reviews, monitor clinical study data and conduct analyses during study conduct. The results may be leveraged to identify important PDs not previously included in the PDAP and to assess whether frequency or volume of non-important PDs should trigger reclassification.
+  DOCBEST 0.39 @ PDF 1 / printed None: Key elements for storage considerations are the ability to retrieve or regenerate both important and non-important PDs for various analyses and reporting needs. The PDAP should be stored with other protocol related decision-making records.Review and Analyze Study teams typically conduct periodic reviews, monitor clinical study data and conduct analyses during study conduct.
+====================================================================================================
+R5-040 | TCB-PD-TIRS | loc=SReport | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Summarise the important deviations by category in the CSR.
+LOC: not located automatically
+  DOCBEST 0.60 @ PDF 1 / printed None: Summarize important PDs by category. GCP issues are usually described in a separate section of the CSR.
+  DOCBEST 0.60 @ PDF 1 / printed None: Protocol deviation classification and categorization examples Category Protocol deviation classification examples Important Non-important Not a protocol deviation Informed consent Clinical study procedures conducted prior to obtaining initial informed consent New clinical study procedures performed before participant was re-consented Re-consent containing updated risk language or important safety information not signed If required by local regulation or IRB/EC, participant did not initial all pa
+====================================================================================================
+R5-043 | TCB-PD-TIRS | loc=SClose-Out | page=journal pp. 733-742 (section page not confirmed; PMC HTML read)
+PARA: Non-important deviations are archived in a validated repository or system so they remain available for later reviews and for deviation datasets, SDTM being the example given.
+LOC: not located automatically
+  DOCBEST 0.44 @ PDF 1 / printed None: However, Section 10.2 may include a reference to those participants whose important PDs resulted from a GCP issue(s).Close Out Important PDs are summarized and included in the CSR and archived. Non-important PDs should be archived in a validated repository or system to support future reviews and PD data sets (e.g., SDTM).
+  DOCBEST 0.44 @ PDF 1 / printed None: Non-important PDs should be archived in a validated repository or system to support future reviews and PD data sets (e.g., SDTM). Additionally, protocol level important PDs may be considered for use at intermediate or organizational levels.Conclusion Stakeholders, including sites and CROs, reported frustration, inefficiencies and challenges in multiple areas related to identification and processing of important PDs that could lead to missed issues and create potential patient safety concerns.

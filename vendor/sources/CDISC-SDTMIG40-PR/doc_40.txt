@@ -1,0 +1,528 @@
+    SDTMIG v4.0 and SDTM 3.0
+    Public Review
+    Dave Scocca, Dianna DiRusso,
+    Maria Sekac, Michael Wise
+    18 February 2026
+
+
+
+
+18 Feb 2026                        1
+              Agenda
+
+              1. Housekeeping
+              2. Background
+              3. Restructured Metadata and General Content
+              4. Nonstandard Variables
+              5. Multiple Subject Instances
+              6. Additional SDTM and SDTMIG Updates
+              7. Review Instructions
+
+
+18 Feb 2026
+              Housekeeping
+
+
+
+
+18 Feb 2026                  3
+Housekeeping
+
+
+
+
+                      You will remain on mute
+
+
+
+
+        18 Feb 2026                             4
+Housekeeping
+
+
+
+
+      Submit questions at any time via the Q&A section on
+                       your Teams app
+
+
+         18 Feb 2026                                        5
+Housekeeping
+
+
+
+
+                       Audio Issues?
+
+           First, close and restart your Teams App
+     Second, check your local internet connection strength
+
+         18 Feb 2026                                         6
+Housekeeping
+
+
+
+
+                       Webinar Recording
+
+   A recording of this webinar and a PDF of the slides will be
+     available in the Public Webinar Archive on the CDISC
+                             website.
+         18 Feb 2026                                             7
+SDTM and related topics will be covered during Interchange main
+conference!
+
+𓅪 Secure Your Spot - Early Bird Rates available until 20 March 2026 𓅪
+
+
+
+                                                           Register:
+Training: SDTM Fundamentals in Practice (Beginner to Practitioner - Part I)
+October 7, 2026 | 9:00 AM-6:00 PMMT
+Course Description
+This interactive training introduces the foundations of the Study Data Tabulation Model (SDTM) by demonstrating how clinical trial data is transformed from source data into
+SDTM datasets. The training emphasizes the conceptual process of transforming raw data, CRFs, and protocol requirements into SDTM datasets and documentation.
+Through guided examples and hands-on activities, learners explore observation classes, timing concepts, and relationships, gaining a practical understanding of how and
+why data changes as it moves toward regulatory-ready SDTM. This training builds a strong foundation in SDTM v4.0 concepts and usage, preparing learners for Part II:
+SDTM Implementation in Clinical Data Flow, which will include much more detailed coverage of General Observation class domains and Special Purpose domains.
+Learning Outcomes
+
+1. Locate and use key SDTM documents, including the SDTM Model and Implementation Guide.
+2. Explain how SDTM-structured data relates to the collected data.
+3. Identify appropriate SDTM observation classes, timing concepts, and modeling approaches.
+                                                                                                                                              Register:
+SDTM Implementation in Clinical Data Flow (Practitioner to Experienced - Part II)
+October 8, 2026 | 9:00 AM-6:00 PMMT
+Course Description
+This hands-on training focuses on the practical application of SDTM v4.0, guiding learners through the creation of SDTM-conformant datasets using the SDTM
+Implementation Guide. Building on foundational SDTM concepts (provided in Part I: SDTM Fundamentals in Practice), participants work through realistic implementation
+scenarios including CRF annotation, domain creation, timing variables, Findings About, relationship datasets, trial design domains, metadata, and conformance
+considerations.
+Learning Outcomes
+
+1. Create SDTM domains using the SDTM Implementation Guide v4.0.
+2. Apply timing variables, standard and custom domains, non-standard variables (NSVs), and relationship datasets correctly.
+3. Assess SDTM datasets for conformance prior to regulatory submission.
+
+                                                                                                                                          Register:
+                Speakers
+                                      • Dave has been a programmer at Rho for 26
+                                        years, and has worked with CDISC data
+                                        standards since 2010. As a CDISC volunteer
+                                        since 2018, he has worked on the SDTM and
+                                        SDS, including on the SDS subteams for
+                                        multiple subject instances and Jira issue
+                                        management. Dave currently serves as the
+                                        Current Lead role on the CDISC SDS
+                                        Leadership Team and lives in Durham, NC.
+
+              Dave Scocca
+              Title: Principal Statistical Programmer
+              Company: Rho, Inc.
+
+18 Feb 2026                                                                   11
+                Speakers
+                                       • Dianna has been with CDISC for 3 years and
+                                         is the Project Manager for the SDS (SDTMIG),
+                                         SDTM, SEND, Medical Devices, and Open
+                                         Rules teams. Prior to CDISC, she has over 15
+                                         years experience in Clinical Data Management
+                                         and vendor management on both the sponsor
+                                         and CRO side.
+
+
+
+              Dianna DiRusso
+              Title: Project Manager
+              Company: CDISC
+
+18 Feb 2026                                                                      12
+                Speakers
+                                      • Maria is a Clinical Data Standards Lead at
+                                        Merck with over 25 years of experience in the
+                                        pharmaceutical industry. She has led initiatives
+                                        across the entire clinical trial lifecycle and has
+                                        developed hundreds of CDASH- and SDTM-
+                                        compliant data collection specifications. Maria
+                                        currently serves as the Future Lead role on the
+                                        CDISC SDS Leadership Team and lives in
+                                        Linden, NJ.
+
+              Maria Sekac
+              Title: Director, Clinical Data Standards
+              Company: Merck & Co., Inc., USA
+
+18 Feb 2026                                                                           13
+                Speakers
+                                      • Michael is the past lead of the CDISC Study
+                                        Data Submissions (SDS) team and has over
+                                        20 years of experience in statistical
+                                        programming for clinical research including,
+                                        CROs, pharmaceuticals, biotech, and medical
+                                        devices.     Through the years, he has
+                                        volunteered for multiple sub-teams within
+                                        CDISC and had served as president for the
+                                        Chicago chapter of the American Statistical
+                                        Association.
+
+              Michael Wise
+              Title: Director, Statistical Programming
+              Company: Edwards LifeSciences
+
+18 Feb 2026                                                                     14
+              Background
+
+              SDTMIG 4.0 and SDTM 3.0
+
+
+
+
+18 Feb 2026                             15
+Background
+• SDTMIG 4.0
+      • Major revision to SDTMIG 3.4
+      • Scoping started 2020
+• SDTM 3.0
+      • Revision to 2.0 (SDTMIG 3.4) and 2.1 (Tobacco)
+      • Completed Variable Definitions
+      • Added Variable Groups
+      • Added Variable Relationships
+
+
+18 Feb 2026                                              16
+              Restructuring
+
+              Metadata and General Content
+
+
+
+
+18 Feb 2026                                  17
+Metadata Restructuring
+• Old Structure
+
+
+
+
+• New Structure
+Where is the CDISC Notes Content?
+ • Moved to:
+   • The new Variable Definition column
+   • The new Allowed Controlled Terms column for CT restrictions
+      ▪ e.g. "Y" for --DRVFL, "NOT DONE" for --STAT
+
+   • The new Examples column
+   • The new Notes column
+   • To general assumptions sections 1-4
+   • To domain-specific assumptions list
+            18 Feb 2026                                            20
+Reorganization and Rewrite of Sections 1-4
+• Sections 1-4 were rewritten to accommodate restructuring of the metadata tables, to add more
+  clarity, improve the content’s organization, and to ensure that general assumptions are consistent,
+  and in one place, rather than dispersed within the CDISC notes for every domain’s specification
+  tables.
+
+
+
+
+                   18 Feb 2026                                                                          21
+              Non-standard Variables
+
+              No more SUPPQUAL
+
+
+
+
+18 Feb 2026                            22
+Non-Standard Variables (NS--)
+Previous Versions                                      SDTM 3.0 and SDTMIG 4.0
+Dataset named SUPP--, one per parent dataset           Dataset named NS--, one per parent dataset
+Vertical: one row per populated nonstandard variable   Horizontal: one row, per row in the parent dataset with
+value                                                  at least one nonstandard variable populated
+A row in SUPP-- may match more than one row in the     Each row in NS-- matches exactly one row in the parent
+parent dataset (IDVAR could be --GRPID) and            dataset. IDVAR is always --SEQ and IDVARVLN is
+IDVARVAL is character.                                 numeric.
+QVAL is always a character field.                      Nonstandard variable columns can be character or
+                                                       numeric.
+Value-level metadata in Define-xml for QVAL, based on Variable-level metadata in Define-xml for nonstandard
+value of QNAM.                                        variables.
+Merge requires transposing and often converting        Can merge without transposing or character-to-
+IDVARVAL from character to numeric.                    numeric conversion.
+
+
+                     18 Feb 2026                                                                                 23
+AE Example: Comparing SUPPAE to NSAE
+                Convert IDVARVAL from character to numeric
+
+
+
+
+                                                             Transpose
+
+
+
+
+     #ClearDataClearImpact
+
+
+
+
+                                                                         24
+              Multiple Subject Instances
+
+              SUBJID Everywhere, and DC Domain
+
+
+
+
+18 Feb 2026                                      25
+SUBJID Everywhere
+
+• SDTM 3.0
+  • SUBJID has been added to “Identifiers for all Classes”
+• SDTMIG 4.0
+  • SUBJID required in DM domain (and new DC domain)
+  • SUBJID added as permissible variable in all subject domains
+  • New section 4.4.3 about USUBJID and SUBJID
+  • SUBJID is used when there are multiple enrollments
+  • Uniqueness of --SEQ is still relative to USUBJID
+  • SUBJID is not used in RELREC, RELSUB, or RELSPEC.
+
+
+              18 Feb 2026                                         26
+Multiple Participations: DM and DC
+• FDA Request
+  • “A custom domain with a structure similar to DM”
+• New Special Purpose domain in SDTM 3.0 and SDTMIG 4.0
+  • Model restricts use to human clinical trials
+• DC Domain: Demographics for Multiple Participations
+  • One record per participation for all subjects: no need to combine with DM
+  • Structure matches DM
+  • Required when (and only when) there are multiple enrollments
+  • DM can often be derived from DC
+     • Strategy 1: Always create DC and do not submit DC if not needed
+     • Strategy 2: Create DM first and then only create DC when needed
+
+
+               18 Feb 2026                                                      27
+Multiple Participations: DM and DC
+• Shared Demographics Assumptions
+  • All DM assumptions are shared
+  • Additional assumptions specific to DC
+• FDA: “the primary enrollment should be submitted in DM”
+  • Per FDA, if multiple screenings and single enrollment, enrollment is “primary”
+  • No CDISC definition of “primary” in other instances
+     • Multiple screenings without enrollment
+     • Multiple enrollments over time
+• All study day variables are still derived from DM.RFSTDTC
+
+
+
+                18 Feb 2026                                                          28
+Differences between DC and DM
+• DCSEQ is required
+  • NSDC will have IDVAR=DCSEQ
+  • NSDM will still have IDVAR and IDVARVLN missing
+• DC.SEX is expected (not required) because it may not be collected at
+  re-screening
+  • MULTIPLE can be used in DM when responses differ across participations for
+    SEX, RACE, CRACE, ETHNIC, CETHNIC
+• DC.RFSTDTC and DC.RFENDTC are permissible (not required)
+  • If one is present, both must be present
+• No DCDY (avoids DC depending on DM)
+
+              18 Feb 2026                                                        29
+Effects in Other Domains
+• All study days are still derived from DM.RFSTDTC
+  • There is no DCDY to avoid interdependency
+  • For other relative days, use NSVs or derive in ADaM
+• Subject Visits (SV) now requires SVSEQ
+  • Assigned in a chronological sequence
+  • Cannot assume USUBJID and VISITNUM uniquely identify a record
+• Subject Elements (SE) allows gaps between participations only
+
+
+
+
+              18 Feb 2026                                           30
+              Additional SDTM and SDTMIG Updates
+
+
+
+
+18 Feb 2026                                   31
+Additional updates to DM (and DC)
+• Addition of CRACE and CETHNIC variables
+  • Collected values
+  • CRACE and CETHNIC have extensive, extensible codelists
+  • RACE and ETHNIC no longer have assigned codelists
+     • Previously had assigned codelists matching FDA requirements
+     • Now will use terminology as defined by data recipient (e.g. FDA)
+  • All four race and ethnicity variables are now permissible
+• Age updates
+  • Added AGERLO and AGERHI for when precise age is unknown
+  • Removed AGETXT
+
+
+                18 Feb 2026                                               32
+Other New Domains
+• Event Adjudication (EA)
+   • Uses Findings About structure
+   • EAOBJ is the event being adjudicated
+   • Uses EAEVAL, EAEVALID, and EAACPTFL
+   • Terminology will be available for EATEST and EATESTCD
+   • Examples show adjudication of event occurrence, relationship to treatment,
+     event start date, event type, event classification
+• Gastrointestinal Findings (GI)
+   • Additional morphology/physiology body system domain
+   • Already used in Therapeutic Area User Guides
+
+
+               18 Feb 2026                                                        33
+EA Domain Use Case
+   • This example depicts the adjudication of a study endpoint.
+
+
+
+
+                                                                  34
+Updates to Protocol Deviations (DV)
+• New variable, DVCLASI
+  • Retrospective classification of deviations
+     • No assigned Controlled Terminology
+     • Examples: MAJOR/ MINOR, IMPORTANT/ NON-IMPORTANT, CRITICAL/ NON-CRITICAL
+• Controlled terminology for DVDECOD and DVCAT
+
+
+
+
+               18 Feb 2026                                                    35
+General Observation Class New Variables
+  Variable                    Label                    Observation Class                                           Definition
+
+
+ --RSCNT     Result Count                           Findings, EG domain only   The number of occurrences of a result.
+
+                                                                                An indication that this instance of an item within a QRS instrument was
+                                                                                conditionally branched. An item is conditionally branched when the instrument
+                                                    Findings, Restricted to the
+ --CBRFL     Conditionally Branched Item Flag                                   does not solicit a response from the respondent based on a given condition,
+                                                    QRS domains: QS, FT, RS
+                                                                                although for certain instruments, the instrument may provide a result for the
+                                                                                item.
+
+                                                    Interventions, CM domain   A standardized or dictionary-derived short sequence of characters used to
+ --TRTCD     Standardized Treatment Code
+                                                    only                       represent the intervention.
+
+                                                                               A classification of protocol deviations based on the potential impact to the
+ --CLASI     Classification of Protocol Deviation   Events, DV domain only     completeness, accuracy, and/or reliability of the study data, or to a subject's
+                                                                               rights, safety, or well-being. (ICH E3 Q&As (R1))
+
+
+
+
+                            18 Feb 2026                                                                                                                          36
+Removed Variables
+• Findings
+   • --BLFL removed from model and from all domains
+      • Deprecated in SDTMIG 3.4 in favor of --LOBXFL
+   • --MODIFY and --BODSYS
+      • No expectation that Findings results would be coded
+• Events and Interventions
+   • --PORTOT
+• Trial Inclusion/ Exclusion Criteria (TI)
+   • TIRL
+
+
+
+                18 Feb 2026                                   37
+Updated Conformance Rules
+• Rules for multiple versions of SDTM and SDTMIG
+  • Updated and new rules specific to SDTM 3.0 and SDTMIG 4.0
+  • Format has been updated to a rules catalog template used across standards
+• Separate review page and instructions
+• Rules are in a spreadsheet
+• Issues are in a separate Jira project
+
+
+
+
+              18 Feb 2026                                                       38
+SDTMIG 4.0 Extended Scope Project
+• A handful of tightly focused additional changes
+  • Not yet posted for public review
+  • Will have a separate public review period
+  • Will be part of SDTMIG 4.0 release
+  • Includes new LC domain
+
+
+
+
+              18 Feb 2026                           39
+Knowledge Base Articles
+
+• Three (3) draft Knowledge Base Articles related to SDTMIG v4.0 new
+  content
+• These articles will be finalized and published with SDTMIG v4.0
+• Available in the SDTMIG v4.0 Wiki space and via links in the
+  Instructions for Reviewers and Public Review announcement email
+
+  • NS-- Datasets: Why they were built as they were.
+  • Why change the structure of SDTMIG metadata?
+  • Why does the DC domain differ from what's described in FDA's TCG?
+
+             18 Feb 2026                                                40
+              Review Instructions
+
+
+
+
+18 Feb 2026                         41
+Submitting Comments
+Public Review closes 06-April-2026; targeted Publication: Q4 2026
+• WIKI
+ • https://wiki.cdisc.org/
+ • The CDISC Wiki is a collaborative tool to share information relevant to the development and use of clinical research data
+   standards. WIKI is built on Confluence. By creating a CDISC Wiki account and logging into the system, you are accepting
+   our Terms of Use.
+• JIRA
+ • https://jira.cdisc.org/
+ • Jira is an issue management system used for tracking comments on standards submitted from Staff, Volunteers, and the
+   Public. It is also used for internal issue tracking of IT, and Project Management of Publications, Events, and
+   Communication to name a few.
+
+
+You only need one account to access both WIKI and JIRA
+                       18 Feb 2026                                                                                        42
+Submitting Comments – Best Practices
+• Publication timeline is dependent on resolution of Public Review comments
+• How you can help – provide specific, actionable feedback
+   • Include section and subsection, if applicable
+   • Be specific about proposed edits
+      • Suggested wording, additions, or deletions
+      • Identified gaps or inconsistencies
+      • Clear recommendation for changes
+   • Provide rationale for the proposed change where it may facilitate comment resolution
+
+  Clear, actionable comments increase the likelihood of the comment being
+                         addressed as intended
+
+
+                 18 Feb 2026                                                                43
+Thank you!
+
+And Thank You to the Volunteers
+who have made this possible!
+
+Become a volunteer!
+www.cdisc.org/volunteer
+
+18 Feb 2026                       44
+              Questions?
+
+
+
+
+18 Feb 2026                45
+

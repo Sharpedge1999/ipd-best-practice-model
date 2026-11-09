@@ -1,0 +1,60 @@
+{
+ "R4-025": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 1 / printed None",
+   "PDF 1 / printed None"
+  ]
+ },
+ "R4-026": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 1 / printed None",
+   "PDF 1 / printed None"
+  ]
+ },
+ "R4-027": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 1 / printed None",
+   "PDF 1 / printed None"
+  ]
+ },
+ "R4-028": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 1 / printed None",
+   "PDF 1 / printed None"
+  ],
+  "quote_in_loc": true
+ },
+ "R4-029": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 1 / printed None",
+   "PDF 1 / printed None"
+  ]
+ },
+ "R4-030": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 1 / printed None",
+   "PDF 1 / printed None"
+  ],
+  "quote_in_loc": true
+ }
+}

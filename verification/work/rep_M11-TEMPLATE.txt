@@ -1,0 +1,38 @@
+====================================================================================================
+R2-112 | M11-TEMPLATE | loc=SConventions [verify] | page=printed iv-vii
+PARA: Template conventions: instructional text is removed before the protocol is finalised; level 1 and level 2 headings are required, must not be deleted or modified, and are kept with 'Not applicable' where they do not apply; optional lower-level headings may be omitted and additional headings added.
+LOC: not located automatically
+  DOCBEST 0.52 @ PDF 3 / printed iv: Use of consistent font sizes throughout the document is recommended, but not required. Type of Text Typeface Details Description (Intended Use) (Applicability) Universal text Black Times New Roman font Text (including headings) that should appear in all protocols Conditional Black Times New Roman font Text that should appear in all universal text in {braces} protocols if applicable to trial In some cases, a choice between options Optional text Blue Arial font Text (including optional headings) t
+  DOCBEST 0.48 @ PDF 4 / printed v: Type of Text Typeface Details Description (Intended Use) (Applicability) Universal text Black Times New Roman font Text (including headings) that should appear in all protocols Conditional Black Times New Roman font Text that should appear in all universal text in {braces} protocols if applicable to trial In some cases, a choice between options Optional text Blue Arial font Text (including optional headings) that may be modified, deleted, or Restyle to black text consistent replaced according to
+====================================================================================================
+R2-113 | M11-TEMPLATE | loc=S5.1 | page=printed 25
+PARA: Prospective approval of protocol deviations from recruitment and enrolment criteria, known as protocol waivers or exemptions, is not permitted.
+LOC: found PDF 33 / printed 24 .. PDF 34 / printed 25 (1750 chars) 
+  PASSAGE-HEAD: 5.1 Description of Trial Population and Rationale Describe the population selected (e.g., healthy participants, adult participants, paediatric participants, pre
+  WINDOW 0.91 @ PDF 34 / printed 25: ionale for the trial population ensuring that the population selected is well defined and clinically recognisable. Describe how the selected population can meet the trial objectives and how the enrollment criteria reflect the population of interest. If a clinical question targets a subset of the entire trial population, such as one defined by a baseline characteristic (e.g., a specific biomarker), the rationale for selecting this subset should be provided in this section. Justify whether the trial intervention is to be evaluated in paediatric participants, in adults unable to consent for themselves, other vulnerable participant populations, or those that may respond to the trial intervention differently (e.g., elderly, hepatic or renally impaired, or immunocompromised participants). <Enter Description of Trial Population and Rationale> Prospective approval of protocol deviations to recruitment and enrollment criteria, also known as protocol waivers or exemptions, is not permitted. 
+====================================================================================================
+R2-114 | M11-TEMPLATE | loc=S6.8 | page=printed 32
+PARA: The protocol describes how adherence to the trial intervention will be monitored and documented (for example accountability records, diaries, concentration measurements), lists the mandatory adherence records and identifies which records are source records (imperative template instruction).
+LOC: found PDF 41 / printed 32 .. PDF 41 / printed 32 (555 chars) 
+  PASSAGE: 6.8 Investigational Trial Intervention Adherence Describe the measures to monitor and document participants' adherence to investigational trial intervention (e.g., trial intervention accountability records, paper or electronic diaries, or investigational trial intervention concentration measurements). List what documents are mandatory to complete (e.g., participant drug log) and identify which records will be used as the source records for documenting investigational trial intervention adherence. <Enter Investigational Trial Intervention Adherence> 
+====================================================================================================
+R2-115 | M11-TEMPLATE | loc=S10.2 | page=printed 47
+PARA: The protocol describes the trial-level analysis sets, aligned with the estimands, and specifies the analysis set used for each analysis; the instruction does not mention protocol deviations (imperative template instruction).
+LOC: found PDF 55 / printed 46 .. PDF 55 / printed 46 (316 chars) 
+  PASSAGE: 10.2 Analysis Sets Describe analysis sets to be considered at the trial level, i.e., the set of participants whose data are to be included in the analyses, aligned with estimands. Clearly specify the analysis set to be used for each analysis described in Section 10 Statistical Considerations. <Enter Analysis Sets> 
+====================================================================================================
+R2-116 | M11-TEMPLATE | loc=S11.6 | page=printed 53
+PARA: Under the heading Risk-Based Quality Management, the protocol describes the identified critical to quality factors, the associated risks and the risk mitigation strategies for the trial, or refers to the location where this information is described and updated during the trial based on emerging data (imperative template instruction).
+QUOTE: Describe the identified critical to quality factors, associated risks and risk mitigation strategies
+QCHECK: exact ['PDF 61 / printed 52'] 
+LOC: found PDF 61 / printed 52 .. PDF 61 / printed 52 (302 chars) 
+  quote inside loc passage: True
+  PASSAGE: 11.6 Risk-Based Quality Management Describe the identified critical to quality factors, associated risks and risk mitigation strategies for the trial or refer to the location where this information is described and updated during the trial based on emerging data. <Enter Risk-Based Quality Management> 
+====================================================================================================
+R2-117 | M11-TEMPLATE | loc=S11.10 | page=printed 54
+PARA: Under the heading Protocol Deviations, the protocol describes the plans for detecting, reviewing and reporting any deviations from the protocol, or refers to a separate document; the template gives no definition of important deviations (imperative template instruction).
+QUOTE: Describe plans for detecting, reviewing, and reporting any deviations from the protocol
+QCHECK: exact ['PDF 62 / printed 53'] 
+LOC: found PDF 62 / printed 53 .. PDF 62 / printed 53 (187 chars) 
+  quote inside loc passage: True
+  PASSAGE: 11.10 Protocol Deviations Describe plans for detecting, reviewing, and reporting any deviations from the protocol or include reference to a separate document. <Enter Protocol Deviations> 

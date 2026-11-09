@@ -1,0 +1,363 @@
+                             E3 Implementation Working Group
+ICH E3 Guideline: Structure and Content of Clinical Study Reports
+                                       Questions & Answers (R1)
+
+
+
+
+                                                Current version
+                                                dated 6 July 2012
+
+
+
+
+International Conference on Harmonisation of Technical Requirements for Registration of Pharmaceuticals for Human Use
+                          ICH Secretariat, Chemin Louis-Dunant 15, P.O. Box 195, 1211 Geneva 20, Switzerland
+                                       Telephone: +41 (22) 338 32 06, Telefax: +41 (22) 338 32 30
+                                                   admin@ich.org, http://www.ich.org
+ In order to facilitate the implementation of the E3 Guideline,
+       the ICH Experts have developed a series of Q&As:
+
+
+
+
+                            E3 Q&As
+                        Document History
+
+
+Code        History                                                       Date
+ E3 Q&As    Approval by the ICH Steering Committee under Step 4           7 June 2012
+            Correction of minor typographical errors in the Answer to
+  E3
+            Question 6: “Section 14.3.2” was replaced by “Section 14.3.1” 6 July 2012
+Q&As (R1)
+            in the second and third paragraphs.
+
+
+
+                                  Reference
+                                                                         November
+ ICH E3     Structure and Content of Clinical Study Reports
+                                                                         1995
+                                                                                                                               Last Update : 6 July 2012
+                                                                                                                                         E3 Q&As (R1)
+
+
+
+TABLE OF CONTENTS
+
+
+
+1.   CONTENT AND STRUCTURE .................................................................................. 1
+
+2.   APPENDICES .......................................................................................................... 3
+
+3.   TERMINOLOGY ....................................................................................................... 4
+
+
+
+
+                                                                                            i
+                                                                                                                Last Update : 6 July 2012
+                                                                                                                          E3 Q&As (R1)
+
+                                      E3 Questions and Answers (R1)
+1.   CONTENT AND STRUCTURE
+ Date of     Questions                                         Answers
+ Approval
+
+ 1    June   Some in the pharmaceutical industry have          Yes. ICH E3 is a Guideline, not a set of rigid requirements or a template,
+      2012   expressed concern that the ICH E3 Guidance,       and flexibility is inherent in its use. “The Guideline is intended to assist
+             Structure and Content of Clinical Study           sponsors in the development of a report that is complete, free from
+             Reports (hereafter, E3), is intended as a         ambiguity, well organized, and easy to review.” Modifications and
+             requirement, i.e., a template that must be        adaptations to the structure presented in the Guideline that lead to
+             followed.                                         better display and communication of information are encouraged.
+             The fact that the ICH M4 Guidelines for the       The introduction to E3 (page 2) clearly indicates that E3 is to be
+             CTD refer to specific structural elements         interpreted as a Guideline, not a set of requirements: “Each report should
+             described in E3 (e.g., Clinical Study Report      consider all of the topics described (unless clearly not relevant) although
+             [CSR] section headings) may have contributed      the specific sequence and grouping of topics may be changed if
+             to this interpretation.                           alternatives are more logical for a particular study. Some data in the
+             Interpretation of E3 as a rigid template can      appendices are specific requirements of individual regulatory authorities
+             result in presentation of redundant and           and should be submitted as appropriate. The numbering should then be
+             suboptimal information in CSRs. This is a         adapted accordingly.”
+             particular problem when E3 is used for            To illustrate this flexibility, consider demographic baseline information.
+             studies for which it was not designed (e.g.,      E3 suggests presentation of this information in the efficacy evaluation,
+             pharmacokinetic studies or studies with           but many variations of this presentation are possible. For example, if the
+             health economic or quality of life outcomes).     efficacy and safety populations differ substantially, it would be
+             Can ICH reaffirm that E3 is a Guideline and       appropriate to present demographic and baseline characteristics for the
+             not a required template and that E3 may be        safety and efficacy populations in the safety and efficacy sections or in a
+             adapted to report studies that fall outside the   new section preceding the efficacy and safety results sections.
+             original scope of E3?                             If particular types of information or topics are not addressed in E3 or if
+                                                               their location is not specified, this information or topic should be placed
+                                                               in the section that is most relevant. For example, pharmacokinetic or
+                                                               quality of life results could be placed in appropriately identified
+                                                               subsections of the efficacy and safety results sections, or they could be
+
+
+                                                                                                                                         1
+                                                                                                               Last Update : 6 July 2012
+                                                                                                                         E3 Q&As (R1)
+
+                                                             placed in new, appropriately identified results sections.
+                                                             If a report does not address all the aspects of E3 that are relevant for a
+                                                             given study, this should be clearly indicated and the rationale for doing
+                                                             so should be provided, for example, if there is no presentation of efficacy
+                                                             for an efficacy study. A rationale is not necessary if sections presented in
+                                                             E3 are re-ordered, renamed, or deleted (if warranted by the study design)
+                                                             or if new sections are added.
+                                                             It should be noted that E3 was developed for submission of adequate and
+                                                             well-controlled clinical effectiveness studies. Nevertheless, the basic
+                                                             principles described can be applied to other kinds of trials, such as
+                                                             clinical pharmacology studies and open-label safety studies, recognizing
+                                                             that not all sections or data presentations may be appropriate or needed
+                                                             for these other types of trials. Sponsors are encouraged to adapt the
+                                                             recommendations in the Guideline as needed (e.g., by deleting sections
+                                                             that are not relevant or adding needed sections that are not mentioned in
+                                                             the Guideline).
+
+2   June   The ICH E3 Guideline provides limited             The guidance given in the ICH E3 Guideline, which was developed before
+    2012   guidance on the synopsis. In the ICH M4E          M4E, should be combined with the suggestions made in the M4E
+           Guideline, additional guidance on the             Guideline. Since the synopsis will be used as a stand-alone document
+           synopsis of a CSR is given including its use as   within a Common Technical Document, it should be written so that it can
+           a stand-alone document and its length. While      be understood and interpreted on its own, i.e., without the other sections
+           E3 asks for a usual maximum length of 3           of a CSR. In addition to a brief description of the study design and
+           pages, M4E extends this page limit for more       critical methodological information, the synopsis should provide efficacy
+           complex and important studies, e.g., to 10        and safety results, as well as other critical information including data on
+           pages. How should both Guidelines be read         the study population, disposition of subjects, important protocol
+           together?                                         deviations, and treatment compliance. Cross-references to other sections
+                                                             of the CSR should be avoided. As explained in M4E, complex or large
+                                                             and important studies may require a synopsis longer than 3 pages. The
+                                                             10-page example given in M4E is not an absolute requirement or limit
+                                                             but should not need to be exceeded considerably. The use of a tabular
+                                                             format for the synopsis is not mandatory.
+
+
+
+
+                                                                                                                                       2
+                                                                                                             Last Update : 6 July 2012
+                                                                                                                       E3 Q&As (R1)
+
+2.   APPENDICES
+ Date of      Questions                                     Answers
+ Approval
+
+ 3     June   The CSR appendices described in the ICH E3    Documentation needed to review the CSR should be included in the CSR
+       2012   include material now available in the Trial   appendices. It is not sufficient for such documents to be included only in
+              Master File (TMF) in accordance with ICH      the TMF, which is not submitted in the marketing application.
+              E6.                                           Documents that provide critical information on a study, such as the
+              Do documents available in the TMF need to     protocol (16.1.1), statistical methods (16.1.9), list of investigators and
+              be included in the CSR appendices?            study sites and sample case report forms, would always be needed by
+                                                            reviewers assessing a study and should be included in the trial report
+                                                            even if they are in a TMF. Certain documents may be required for the
+                                                            CSR by individual countries or regions, in which case they should be
+                                                            included. For example, according to ICH-GCP, an audit certificate
+                                                            (16.1.8) should be provided when required by applicable law or
+                                                            regulation. If there is any uncertainty about whether documents should
+                                                            be included or not, the appropriate regulatory agency may be consulted.
+                                                            Supportive documents, such as investigator CVs, ethics committee
+                                                            approvals, informed consent forms, and batch numbers per subject are in
+                                                            the TMF or clinical supply database and should generally not be included
+                                                            in the CSR appendices.
+                                                            Any documents not submitted and subsequently requested by the
+                                                            regulatory authority would be expected to be provided promptly.
+
+ 4     June   How can I include data not mentioned in the   It is appropriate to create new headings in the CSR and new Appendices
+       2012   ICH E3 text or Appendices since the           for these topics. The Guideline provides for and focuses on Efficacy and
+              Guideline pre-dates the ICH M4 Guidelines     Safety variables known at the time. Other topics should be well
+              associated with the CTD and eCTD?             referenced in the CSR body and clearly identified in the Table of
+              Specifically, what are the options for        Contents.
+              submission of data for topics such as         Current submission options include:
+              pharmacokinetics,       pharmacodynamics,
+              pharmacogenomics (genomic markers), gene         1)   Stand alone reports. These can be placed in “parallel” with the
+              therapy, stem cells, biomarkers, devices,             main clinical study report in the eCTD. For example, a clinical
+                                                                    pharmacology study might have the clinical study report, a PK
+
+
+                                                                                                                                     3
+                                                                                                              Last Update : 6 July 2012
+                                                                                                                        E3 Q&As (R1)
+
+              quality of life, assay validation, data              report, and an assay validation report. For an efficacy study with
+              monitoring/review               committees,          patient reported outcome (PRO) measures, there might be a PRO
+              electrocardiogram, other safety reports,             report. Each of these reports can be referenced under the same
+              images, pictures/scans, diagnostic tests for         heading in the eCTD and placed alongside one another in the
+              individualized therapy, and patient-reported         eCTD folder for that study. Be sure to clearly describe the nature
+              outcomes?                                            of the information in the title of the document that is provided
+                                                                   through the eCTD.
+                                                                2) In a region where study tagging files are used. It is recommended
+                                                                   that a file tag option from the “valid values list” be used, for
+                                                                   example, safety report, antibacterial, special-pathogen, etc. (see
+                                                                   Specifications       for        Study        Tagging        Files,
+                                                                   http://www.ich.org/products/electronic-standards.html ).
+                                                                   Alternatively, if a file-tag that adequately describes the material
+                                                                   you are planning to submit is not available, you may request that
+                                                                   a new file-tag be made available. This request should be
+                                                                   submitted to your regional authority. In the event that this
+                                                                   change cannot be accommodated within your timeframe you may
+                                                                   place the document with the main body of the report, i.e., the
+                                                                   document would be tagged with the “study-report-body” file-tag.
+                                                                   The nature of the information should be contained in the title of
+                                                                   the document that is provided through the eCTD.
+                                                                   Please refer to the most recent version of the “valid values list”, as
+                                                                   it is periodically updated as changes are requested.
+
+
+3.   TERMINOLOGY
+ Date of      Questions                                      Answers
+ Approval
+
+ 5     June   A subject’s death could potentially       be   It is true that the structure and definitions provided in the ICH E3
+       2012   captured in two separate data listings:        Guideline could result in deaths appearing in Section 12.3.1.2 (as per E3
+                 a. The listing referenced in Section        numbering), Other Serious Adverse Events, if an event terminated with,
+                    12.3.1.1, Deaths. This section calls     or was associated with, a subject’s death.
+
+
+                                                                                                                                        4
+                                                                                                                Last Update : 6 July 2012
+                                                                                                                          E3 Q&As (R1)
+
+                  for sponsors to include a listing of “all   However, this should not result in double- or mis-counting of deaths.
+                  deaths during the study, including the      Although deaths may or may not be included in the listing for Section
+                  post-treatment follow-up period, and        12.3.1.2, all deaths should be captured in the listing for Section 12.3.1.1.
+                  deaths that resulted from a process         That is, any subject death reported under Section 12.3.1.2 as an “other
+                  that began during the study.”               serious adverse event” with a fatal outcome would also have been
+              b. The listing referenced in Section            captured under deaths in Section 12.3.1.1.
+                 12.3.1.2, Other Serious Adverse
+                 Events. This section defines other
+                 serious adverse events as events “other
+                 than death but including the serious
+                 adverse events temporally associated
+                 with or preceding the deaths.”
+           There is concern that including events with
+           fatal outcomes in 12.3.1.2 may lead to double
+           or mis-counting of deaths. Can this issue be
+           clarified?
+
+6   June   Section 12.2.2 of the ICH E3 Guideline states   The body of the clinical study report (ICH E3 Section 12.2.2) should
+    2012   that all adverse events occurring after         include a summary table of relatively common adverse events – those
+           initiation of study treatments should be        occurring in at least a particular percentage of subjects who received the
+           displayed in summary tables.                    investigational drug. This summary tabulation compares treatment and
+           The example table in Section 12.2.2 of E3 control groups and does not include subject identifying numbers or
+           (Adverse Events: Number Observed and verbatim adverse event terms.
+           Rate, with Subject Identifications) is really a Of note, the example table provided in Section 12.2.2 of the Guideline is
+           listing that will rarely be brief enough to not meant to be presented in Section 12.2.2 of the report, but in Section
+           place in the body of the study report. 14.3.1, which is not part of the text of the clinical study report.
+           Moreover,     in   addition     to    severity, The ICH E3 Guideline did not attempt to display all possible
+           relatedness, and subject identifiers (shown in presentations of adverse event information, but rather outlined the
+           the example table), each adverse event is to summary table intended for Section 12.2.2 and provided an illustration of
+           include the original investigator’s verbatim the far more detailed display that would be placed in Section 14.3.1. The
+           term. How is it possible to include all of this example provided for Section 14.3.1, however, does not try to illustrate all
+           information in a summary table? Can this possibilities, but shows individuals with adverse events by body system,
+           table be modified?                              severity, and perceived drug-relatedness, for treatment group “X.”
+
+
+                                                                                                                                        5
+                                                                                                                Last Update : 6 July 2012
+                                                                                                                          E3 Q&As (R1)
+
+                                                             Listings should also display investigator’s verbatim terms for each event
+                                                             and could be used to show demographic or disease-specific information,
+                                                             dosage, duration of treatment, or treatment cycle (for cancer
+                                                             chemotherapy).
+                                                             Because it can be impractical to display all of this information in a single
+                                                             listing, such analyses can be presented in individual listings, e.g., by dose
+                                                             or other subgroup of interest. When adverse event data are presented by
+                                                             subgroup, however, a display of overall adverse events should also be
+                                                             included. For example, for a drug for subjects with chronic kidney
+                                                             disease, adverse events could be tabulated separately for subjects
+                                                             receiving or not receiving dialysis, but a table that includes adverse
+                                                             events in all subjects should also be included.
+                                                             The listings that provide more comprehensive adverse event information,
+                                                             specifically subject identifiers and verbatim terms for each adverse event,
+                                                             should be provided in the study report, in Sections 14.3.1 and 16.2.7. If
+                                                             each adverse event is to be characterized extensively (i.e., many items in
+                                                             the listing), electronic approaches may be needed.
+
+7   June   Section 10.2 of the ICH E3 Guideline              A protocol deviation is any change, divergence, or departure from the
+    2012   requests an accounting of important protocol      study design or procedures defined in the protocol.
+           deviations. However, the flowchart in Annex  Important protocol deviations are a subset of protocol deviations that may
+           IVa of E3 (Subject Disposition) recommends   significantly impact the completeness, accuracy, and/or reliability of the
+           that data be provided on the number of       study data or that may significantly affect a subject's rights, safety, or
+           subjects withdrawn from the study due to     well-being. For example, important protocol deviations may include
+           “protocol violations.”    Neither the term   enrolling subjects in violation of key eligibility criteria designed to ensure
+           “protocol deviations” nor “protocol violations”
+                                                        a specific subject population or failing to collect data necessary to
+           has been previously defined by ICH.          interpret primary endpoints, as this may compromise the scientific value
+           What is the distinction between a protocol of the trial.
+           deviation, important protocol deviation, and Protocol violation and important protocol deviation are sometimes used
+           a protocol violation? Can these terms be interchangeably to refer to a significant departure from protocol
+           clarified?                                   requirements. The word “violation” may also have other meanings in a
+           Additionally, does the Guideline         allow regulatory context. However, in Annex IVa, Subject Disposition of the
+           sponsors’ flexibility in defining        what ICH E3 Guideline, the term protocol violation was intended to mean only
+
+
+                                                                                                                                        6
+                                                                                             Last Update : 6 July 2012
+                                                                                                       E3 Q&As (R1)
+
+constitutes an important protocol deviation a change, divergence, or departure from the study requirements, whether
+for a trial?                                by the subject or investigator, that resulted in a subject’s withdrawal
+                                            from study participation. (Whether such subjects should be included in
+                                            the study analysis is a separate question.)
+                                            To avoid confusion over terminology, sponsors are encouraged to replace
+                                            the phrase “protocol violation” in Annex IVa with “protocol deviation”, as
+                                            shown in the example flowchart below. Sponsors may also choose to use
+                                            another descriptor, provided that that the information presented is
+                                            generally consistent with the definition of protocol violation provided
+                                            above.
+                                            The E3 Guideline provides examples of the types of deviations that are
+                                            generally considered important protocol deviations and that should be
+                                            described in Section 10.2 and included in the listing in Appendix 16.2.2.
+                                            The definition of important protocol deviations for a particular trial is
+                                            determined in part by study design, the critical procedures, study data,
+                                            subject protections described in the protocol, and the planned analyses of
+                                            study data. In keeping with the flexibility of the Guideline, sponsors may
+                                            amend or add to the examples of important deviations provided in E3 in
+                                            consideration of a trial’s requirements. Substantial additions or changes
+                                            should be clearly described for the reviewer.
+
+
+
+
+                                                                                                                     7
+                                                                                                                     Last Update : 6 July 2012
+                                                                                                                               E3 Q&As (R1)
+
+
+                                                           EXAMPLE FLOWCHART
+                                                          DISPOSITION OF PATIENTS
+                                                                  N=1,724
+                                                        PATIENTS RECEIVING DOUBLE-
+                                                           BLINDED MEDICATION
+
+
+
+
+       N = 340                      N=                              N=                           N=                             N=
+     REGIMEN A                   REGIMEN B                       REGIMEN C                    REGIMEN D                      REGIMEN E
+
+
+
+
+  N = 281         N = 59        N=              N=              N=              N=          N=               N=             N=              N=
+COMPLETED       WITHDRAWN   COMPLETED       WITHDRAWN       COMPLETED       WITHDRAWN   COMPLETED        WITHDRAWN       COMPLETED      WITHDRAWN
+  STUDY                       STUDY                           STUDY                       STUDY                            STUDY
+
+
+
+
+ADVERSE EVENT (20)          ADVERSE EVENT (19)              ADVERSE EVENT (26)          ADVERSE EVENT (24)              ADVERSE EVENT (42)
+UNSAT. RESPONSE             UNSAT. RESPONSE                 UNSAT. RESPONSE             UNSAT. RESPONSE                 UNSAT. RESPONSE
+EFFICACY (1)                EFFICACY (2)                    EFFICACY (1)                EFFICACY (1)                    EFFICACY (0)
+FAILURE TO RETURN (6)       FAILURE TO RETURN (8)           FAILURE TO RETURN (7)       FAILURE TO RETURN (6)           FAILURE TO RETURN (6)
+OTHER MED. EVENT (5)        OTHER MED. EVENT (8)            OTHER MED. EVENT (4)        OTHER MED. EVENT (8)            OTHER MED. EVENT (14)
+OTHER NONMED. EVENT (5)     OTHER NONMED. EVENT (4)         OTHER NONMED. EVENT (6)     OTHER NONMED. EVENT (7)         OTHER NONMED. EVENT (1)
+PROTOCOL DEVIATION (10)     PROTOCOL DEVIATION (10)         PROTOCOL DEVIATION (10)     PROTOCOL DEVIATION (6)          PROTOCOL DEVIATION (14)
+PATIENT REQUEST (12)        PATIENT REQUEST (10)            PATIENT REQUEST (25)        PATIENT REQUEST (27)            PATIENT REQUEST (15)
+
+
+
+
+                                                                                                                                                  8
+

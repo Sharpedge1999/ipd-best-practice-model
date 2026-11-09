@@ -1,0 +1,583 @@
+ A Risk-Based Approach to
+   Monitoring of Clinical
+       Investigations
+  Questions and Answers
+                    Guidance for Industry
+
+
+
+
+                              U.S. Department of Health and Human Services
+                                      Food and Drug Administration
+                             Center for Drug Evaluation and Research (CDER)
+                           Center for Biologics Evaluation and Research (CBER)
+                            Center for Devices and Radiological Health (CDRH)
+                                     Office of Clinical Policy (OCLiP)
+                                    Office of Regulatory Affairs (ORA)
+
+                                               April 2023
+                                               Procedural
+
+
+
+
+35086309fnl04-07-23.docx
+A Risk-Based Approach to Monitoring
+      of Clinical Investigations
+       Questions and Answers
+                           Guidance for Industry
+                                        Additional copies are available from:
+
+                             Office of Communications, Division of Drug Information
+                                     Center for Drug Evaluation and Research
+                                          Food and Drug Administration
+                              10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                          Silver Spring, MD 20993-0002
+                            Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                          Email: druginfo@fda.hhs.gov
+               https://www.fda.gov/Drugs/GuidanceComplianceRegulatoryInformation/Guidances/default.htm
+                                                       and/or
+                                Office of Communication, Outreach and Development
+                                    Center for Biologics Evaluation and Research
+                                            Food and Drug Administration
+                                 10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                           Silver Spring, MD 20993-0002
+                                       Phone: 800-835-4709 or 240-402-8010
+                                              Email: ocod@fda.hhs.gov
+  https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+                                                        and/or
+                                                   Office of Policy
+                                     Center for Devices and Radiological Health
+                                           Food and Drug Administration
+                                  10903 New Hampshire Ave., Bldg. 66, Room 5431
+                                           Silver Spring, MD 20993-0002
+                                       Email: CDRH-Guidance@fda.hhs.gov
+https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/guidance-documents-medical-devices-
+                                              and-radiation-emitting-products
+
+
+
+                           U.S. Department of Health and Human Services
+                                    Food and Drug Administration
+                          Center for Drug Evaluation and Research (CDER)
+                        Center for Biologics Evaluation and Research (CBER)
+                         Center for Devices and Radiological Health (CDRH)
+                                   Office of Clinical Policy (OCLiP)
+                                 Office of Regulatory Affairs (ORA)
+
+
+                                                     April 2023
+                                                     Procedural
+                                         Contains Nonbinding Recommendations
+
+
+                                                    TABLE OF CONTENTS
+
+
+
+I.        INTRODUCTION............................................................................................................. 1
+II.       BACKGROUND ............................................................................................................... 2
+III.      QUESTIONS AND ANSWERS ....................................................................................... 4
+     A.   Monitoring Approach .................................................................................................................... 4
+     B.   Monitoring Plan Content .............................................................................................................. 8
+     C.   Follow-Up and Communication of Monitoring Results ............................................................. 9
+                                   Contains Nonbinding Recommendations
+
+
+      A Risk-Based Approach to Monitoring of Clinical Investigations
+                        Questions and Answers
+                        Guidance for Industry 1
+
+This guidance represents the current thinking of the Food and Drug Administration (FDA or Agency) on
+this topic. It does not establish any rights for any person and is not binding on FDA or the public. You
+can use an alternative approach if it satisfies the requirements of the applicable statutes and regulations.
+To discuss an alternative approach, contact the FDA office responsible for this guidance as listed on the
+title page.
+
+
+
+
+I.         INTRODUCTION
+
+This guidance provides information on risk-based approaches to monitoring the conduct of
+clinical investigations 2 of human drug and biological products, medical devices, and
+combination products. 3 Clinical investigation monitoring is a quality control tool for
+determining whether investigation activities are being carried out as planned. This guidance
+contains recommendations on planning a monitoring approach, developing the content of a
+monitoring plan, and addressing and communicating monitoring results. This guidance expands
+on the guidance for industry Oversight of Clinical Investigations – A Risk-Based Approach to
+Monitoring (August 2013) (the 2013 RBM guidance) 4 by providing additional information to
+facilitate sponsors’ implementation of risk-based monitoring.
+
+In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+the word should in Agency guidances means that something is suggested or recommended, but
+not required.
+
+
+
+1
+  This guidance has been prepared by the Office of Medical Policy in the Center for Drug Evaluation and Research
+in cooperation with the Center for Biologics Evaluation and Research, the Center for Devices and Radiological
+Health, the Office of Clinical Policy, the Office of Combination Products, and the Office of Regulatory Affairs at
+the Food and Drug Administration.
+2
+ For FDA’s regulatory definitions of clinical investigation or investigation, see 21 CFR 50.3(c), 56.102(c), 312.3(b)
+and 812.3(h). For the purposes of this guidance, we use the terms clinical investigation, investigation, trial or trials,
+and study or studies interchangeably consistent with how these terms are used in the guidance for industry Oversight
+of Clinical Investigations – A Risk-Based Approach to Monitoring (August 2013) (the 2013 RBM guidance).
+3
+    For the definition of combination product, see 21 CFR 3.2(e).
+4
+ We update guidances periodically. For the most recent version of a guidance, check the FDA guidance web page
+at https://www.fda.gov/RegulatoryInformation/Guidances/default.htm.
+
+
+
+
+                                                            1
+                                  Contains Nonbinding Recommendations
+
+
+II.        BACKGROUND
+
+Sponsors of clinical investigations involving human drugs, biological products, medical devices,
+and combination products are required to provide oversight, including ensuring proper
+monitoring of the investigation. 5 Such oversight helps to ensure adequate protection of the
+rights, safety, and welfare of participants in the clinical investigation and the integrity of the data
+submitted to FDA. Therefore, sponsors should implement a system to manage, throughout all
+stages of the clinical investigation, both risks to participants (e.g., a safety problem) and to data
+integrity (e.g., incomplete and/or inaccurate data).
+
+This system to manage the quality of the investigation should help ensure data integrity while
+safeguarding the rights, safety, and welfare of trial participants, 6 for example, by focusing on the
+design of efficient clinical trial protocols, tools for identifying and tracking potential risks, and
+procedures for data collection and processing. This system should include a risk-based approach
+to monitoring tailored to the potential risks for the specific clinical investigation. Effective
+implementation of risk-based monitoring, including the prioritization of monitoring and other
+oversight activities directed at processes and procedures critical for human subject protection and
+maintaining data integrity, should help maximize the quality of a clinical investigation.
+
+Although FDA’s regulations require sponsors to monitor the conduct and progress of their
+clinical investigations, 7, 8 FDA regulations are not specific about how sponsors are to conduct
+monitoring. FDA recommends that sponsors use a risk-based approach to develop their
+monitoring plans and to revise their monitoring plans, if needed, as the clinical investigation
+proceeds. This risk-based approach should be informed by the sponsor’s overarching quality
+management activities undertaken in the development of the protocol and associated
+investigational plans and should be adjusted throughout the conduct of the investigation as
+needed.
+
+As described in the 2013 RBM guidance, FDA recommends that at the protocol design stage,
+sponsors identify the critical data and processes necessary for human subject protection and
+maintaining data integrity for the investigation. Once these are identified, sponsors should
+perform a risk assessment and determine whether risks to critical data and processes may be
+
+5
+  21 CFR part 312, subpart D, generally (Responsibilities of Sponsors and Investigators) and 21 CFR part 812,
+subpart C, generally (Responsibilities of Sponsors).
+6
+  For FDA’s regulatory definitions of human subject and subject, see 21 CFR 50.3(g), 56.102(e), 312.3(b) and
+812.3(p). For the purposes of this guidance, the terms human subject and participant are used interchangeably.
+7
+  21 CFR 312.50 requires a sponsor to, among other things, ensure “proper monitoring of the investigation(s)” and
+“that the investigation(s) is conducted in accordance with the general investigational plan and protocols contained in
+the IND.” 21 CFR 812.40 states that sponsors are responsible for, among other things, “ensuring proper monitoring
+of the investigation,” and 21 CFR 812.46 requires, among other things, that sponsors take certain actions when they
+discover that an investigator is not complying with the signed agreement, the investigational plan, the requirements
+of 21 CFR part 812 or other applicable FDA regulations, or any conditions of approval imposed by the reviewing
+institutional review board or FDA.
+8
+    See also 21 CFR 312.53(d), 312.56(a), 812.43(d), and 812.46.
+
+
+
+
+                                                          2
+                                 Contains Nonbinding Recommendations
+
+
+mitigated through revisions to the protocol and investigational plans. When risks cannot be
+resolved through such revisions, sponsors should determine how remaining critical risks will be
+identified, tracked, and managed via the sponsors’ monitoring plan or related study oversight
+plans during the conduct of the investigation. Such efforts to build quality into the design and
+execution of clinical investigations should be informed by representative study team members 9
+involved with conduct, monitoring, and/or reporting of the investigation. Perspectives from
+patients within the target population to be recruited for a clinical investigation would also be
+valuable.
+
+Monitoring should be conducted per the pre-established monitoring plan, and important issues
+identified through monitoring should be addressed as they are identified. Monitoring plans
+should also include directions for when and to whom important issues identified during
+monitoring should be escalated. In addition, FDA recommends that monitoring plans provide
+guidance on when and how to adjust monitoring activities based on observed monitoring
+findings. For example, when important issues are identified during monitoring of a clinical site,
+there may be a need to increase the duration or frequency of on-site visits at that site.
+
+Sponsors’ risk management processes should continue throughout the conduct of the
+investigation. FDA also encourages sponsors to use the information gained from each
+investigation, including the monitoring experience, to inform, as appropriate, the conduct of
+other ongoing investigations, future clinical investigations, risk assessments, and monitoring
+plans.
+
+The study-level monitoring plan and associated monitoring activities are among the elements
+utilized by sponsors in their overall risk-based quality management approach to product
+development; they are important tools to facilitate sponsors identifying and addressing issues
+during the conduct of clinical investigations. The 2013 RBM guidance outlines factors that
+sponsors should consider in developing a monitoring plan and tailoring monitoring plans to the
+needs of the investigation and provides examples of monitoring methods and techniques. Since
+finalizing the 2013 RBM guidance, FDA has concluded that additional guidance may be
+beneficial regarding its recommendations for planning a monitoring approach, developing the
+content of monitoring plans, and addressing and communicating monitoring results. The
+following questions and answers are intended to assist sponsors in planning and conducting risk-
+based approaches to monitoring.
+
+
+
+
+9
+ For example, clinical investigator, research nurse, project managers, study physician/medical monitor, data
+managers/data scientists, statisticians, monitoring staff, quality assurance personnel, and contracted service
+providers tasked with critical study functions.
+
+
+                                                          3
+                                  Contains Nonbinding Recommendations
+
+
+III.       QUESTIONS AND ANSWERS
+
+           A.      Monitoring Approach
+
+Q1.        What is the purpose of the risk assessment and should sponsors document their
+           methodologies and activities for assessing risk?
+
+The purpose of the risk assessment is to optimize the study quality in terms of eliminating or
+mitigating important risks to both human subject protection and data integrity. Therefore,
+consistent with the 2013 RBM guidance, during the protocol design phase, sponsors should
+identify risks, including to protocol-driven processes, that could affect human subject protection
+and data integrity. The risk assessment should include an evaluation of the potential causes,
+likelihood of detection, and severity of the consequences of risks to critical data or human
+subject protections. There are various risk assessment methodologies and tools that can be
+applied to clinical trials. 10,11
+
+The risk assessment should inform the development of the clinical trial protocol and associated
+investigational plans, including the monitoring plan, and may also support efforts to manage
+risks during the conduct of a clinical investigation or across a product’s development program.
+Therefore, sponsors should document their risk assessment, including methodologies used for the
+risk assessment, conclusions from the risk assessment, and how the assessment was used to make
+decisions on the management of the risks identified. Sponsors should reevaluate their risk
+assessment and management processes throughout the conduct of the investigation as issues are
+identified, and monitoring plans (and if necessary, protocol design) should be revised when
+needed to continue to protect the rights, safety, and welfare of participants in the clinical
+investigation and the integrity of data generated during the investigation. When new risks are
+identified, their potential impact across that product development program, as well as on the
+sponsor’s other product development programs, as appropriate, should be considered. If a risk-
+based monitoring approach is being used, FDA may request, during inspection, documentation of
+the sponsor’s initial risk assessment, and any relevant updated risk assessments.
+
+The monitoring plan should include information regarding the identified risks and how the
+monitoring methods will address those risks. (See Q6 for further details.) The inclusion of these
+components in the monitoring plan will enhance the utility of the plan by providing a clear
+explanation of the identified risks and how they will be monitored, managed, and mitigated or
+eliminated.
+
+Q2.        Should sponsors monitor only risks that are important and identified during their
+           initial risk assessment as likely to occur?
+
+No. Sponsors should monitor the important and likely risks identified during their initial risk
+assessment, and they should also monitor for additional risks detected during the conduct of the
+clinical investigation that were not identified before the investigation began. For example, if an
+
+10
+     See the ICH guidance for industry Q9 Quality Risk Management (June 2006).
+11
+     IEC 31010:2019 Risk Management — Risk Assessment Techniques.
+
+
+                                                         4
+                                Contains Nonbinding Recommendations
+
+
+additional risk is detected during the investigation that was not anticipated and that risk could
+impact the conduct, collection, or reporting of critical processes, procedures, or data, that risk
+should be addressed.
+
+Sponsors should also monitor risks that are less likely to occur, but that could have a significant
+impact on the quality of the investigation including on the rights, safety, and welfare of trial
+participants.
+
+Monitoring plans should consider important risks and should be sufficiently comprehensive so
+that risks that arise during the investigation that were not anticipated can be identified and
+addressed.
+
+Monitoring plans should take into account important risks identified in the initial risk assessment
+while also enabling sponsors to identify and address risks that arise during the investigation that
+were not anticipated. Monitoring plans should therefore be revised, as needed, if new
+information about risks becomes available.
+
+Q3.      What factors should sponsors consider when determining the timing, types,
+         frequency, and extent of monitoring activities?
+
+As described in detail in the 2013 RBM guidance, during the risk assessment, sponsors should
+consider a range of factors to inform the development of the monitoring plan. While some
+factors described below (see bulleted factors) relate to the investigation overall, other factors
+relate to specific clinical sites; therefore, FDA recommends that the monitoring plan be
+organized to account for both the overall investigation and site-specific risks, recognizing that
+some mitigating activities may not be relevant for all sites.
+
+Sponsors should consider:
+
+     •   How well established the clinical investigation infrastructures are at different clinical
+         sites
+
+     •   Relative experience of the clinical investigator and of the sponsor with the clinical
+         investigator
+
+     •   Electronic data capture to be utilized 12
+
+             − Use of electronic data capture (EDC) systems with the capability to assess quality
+               metrics (e.g., missing data, data error rates, protocol violations) in real time could
+               help identify potentially higher risk sites for the purpose of targeting sites in need
+               of more intensive monitoring.
+
+12
+  See the guidance for industry Electronic Source Data in Clinical Investigations (September 2013) and the revised
+draft guidance for industry Electronic Systems, Electronic Records, and Electronic Signatures in Clinical
+Investigations: Questions and Answers (March 2023). When final, this guidance will represent FDA’s current
+thinking on this topic.
+
+
+                                                        5
+                                 Contains Nonbinding Recommendations
+
+
+
+     •   Stage of the study (e.g., for a complex study, more intensive and on-site monitoring
+         might be warranted early, but once procedures are established, less intensive monitoring
+         might suffice)
+
+     •   Quantity, extent, complexity, and criticality of data to be collected
+
+When developing the monitoring plan, sponsors should determine the types and intensity of
+monitoring activities best suited to address the identified risks while also facilitating
+identification of unanticipated risks. When suitable, statistical and analytical methods to monitor
+critical data in a centralized manner may be particularly advantageous. Monitoring activities
+should evolve based on additional issues and risks that may be identified during the conduct of
+the investigation. The types and intensity of monitoring activities also should be proportionate to
+the risks to participants’ rights, safety, and welfare and to data integrity inherent in the
+investigation.
+
+While source data verification (SDV) 13 may be a part of a risk-based monitoring approach, the
+extent to which SDV is used should be guided by the sponsor’s risk assessment process and
+focused on critical study data and processes. Focusing more monitoring activities on risks to the
+most critical data elements and processes should enable sponsors to achieve the objective of
+conducting a quality clinical investigation, including human subject protection and data integrity,
+without necessarily having to conduct frequent routine visits to all clinical sites and extensive
+SDV.
+
+FDA also recommends that sponsors consider the following additional factors:
+
+     •   Adequate staffing to support the clinical investigation. Specific considerations include
+         relevant study-specific trainings of site staff, the experience and qualifications of the
+         research coordinator and specialized research professionals working with and under the
+         direction of the clinical investigator, and turnover of personnel at the investigational site
+         or among monitoring staff.
+
+     •   Location where participants will be seen and whether they will be seen at more than one
+         location to complete investigation procedures (for example, data collection at the imaging
+         center, at a local physician’s office, or at the participant’s home), including when all
+         activities take place at locations remote from the investigator without the need for a
+         physical clinical site.
+
+         − When designing the monitoring plan, sponsors should take into consideration where
+           and how the data are going to be collected in the investigation relative to where the
+           sponsor oversight activities will be conducted (for example, to confirm that
+           appropriate controls, instructions, and training tools are in place).
+
+
+13
+  For the purposes of this guidance, SDV refers to the process of confirming that study data included in
+efficacy/effectiveness and safety analyses reflect source data obtained during the clinical investigation.
+
+
+                                                           6
+                                 Contains Nonbinding Recommendations
+
+
+     •   Benefit of an early monitoring visit or other early monitoring activities
+
+         − By scheduling an early monitoring visit (for example, soon after the first few trial
+           participants enroll in the investigation) or by carrying out other early monitoring
+           activities, sponsors can help ensure early in the investigation that the protocol is being
+           followed and procedures are being performed correctly at clinical sites. Additionally,
+           if early monitoring identifies issues, such as a number of protocol deviations,
+           corrective actions can be implemented sooner. For complex studies, early and more
+           intensive on-site monitoring might be warranted.
+
+Q4.      How can a risk-based approach to monitoring that includes centralized monitoring
+         help minimize missing data or protocol deviations?
+
+Centralized monitoring is a systematic analytical evaluation of study conduct across multiple
+clinical sites, carried out by sponsor personnel or representatives (e.g., clinical monitors, data
+management personnel, or statisticians). Centralized monitoring may allow sponsors to (1)
+review study-wide data for inconsistencies or omissions; (2) perform activities such as data
+checks, for completeness and consistency; (3) verify source data; (4) ensure that institutional
+review board and informed consent documents are current; and (5) determine which clinical sites
+need on-site review.
+
+Depending on how centralized monitoring is used, incorporating centralized monitoring as a part
+of a risk-based approach to monitoring may help ensure the quality of a clinical investigation by
+allowing sponsors to aggregate and compare site data and detect potential anomalies more
+quickly. By reviewing study data and metadata 14 in real time across clinical sites, sponsors may
+be able to identify quality issues, such as delays in entering data or incomplete entries, earlier
+than when relying on on-site monitoring alone. Sites with multiple issues detected through
+centralized monitoring, such as delays in assessments or missing assessments, may also provide
+an early signal that the sponsor should promptly determine whether there is a need for a site visit
+and corrective actions to minimize the likelihood of similar issues occurring during the
+remainder of the clinical investigation.
+
+Q5.      Should the risk-based monitoring approach include processes to ensure that
+         appropriate blinding is maintained?
+
+Yes. As identified in the 2013 RBM guidance, for investigations that include blinding of
+interventions and/or outcome assessments, ensuring that the blinding of the investigation is
+maintained is a critical process that sponsors should consider in their risk assessment.
+
+Specific risks to the maintenance of the blinding that are identified during the risk assessment
+should be mitigated in advance of investigation initiation, when feasible. In addition, identifying
+and tracking deviations during the conduct of the investigation that could result in unintentional
+
+14
+   For the purposes of this guidance, metadata is structured information that describes, explains, or otherwise makes
+it easier to retrieve, use, or manage data. Metadata provides the contextual information required to understand data.
+See the guidance for industry Data Integrity and Compliance with Drug CGMP: Questions and Answers
+(December 2018).
+
+
+                                                          7
+                             Contains Nonbinding Recommendations
+
+
+unblinding of treatment assignment should be considered as a part of the monitoring plan, to
+ensure that appropriate blinding is maintained at clinical sites and by the sponsor, organizations
+such as contract research organizations and other vendors. For example, in a blinded
+investigation that requires the site staff personnel dispensing the test article to know whether the
+test article is the investigational product or the placebo, the adequacy of maintaining the blinding
+for the remainder of the site staff should be monitored.
+
+FDA recognizes that Data Monitoring Committees (DMC) may access unblinded data as
+described in the DMC Charter. (For additional information about DMCs, see the guidance for
+clinical trial sponsors Establishment and Operation of Clinical Trial Data Monitoring
+Committees (March 2006).)
+
+       B.      Monitoring Plan Content
+
+Q6.    What elements should sponsors include in monitoring plans?
+
+Monitoring plans should be developed for each investigation based on the risk assessment for
+that investigation. Monitoring plans should address both study-specific and site-specific risks.
+Monitoring plans also should be designed to enable the management of anticipated and
+unanticipated risks. As stated earlier, sponsors are encouraged to develop risk-based monitoring
+plans that emphasize critical risks with the greatest potential to adversely affect investigation
+quality, including (1) the rights, safety, and welfare of participants in a clinical investigation; and
+(2) the collection or analysis of critical clinical data such as safety and efficacy/effectiveness
+endpoints. Section IV.D of the 2013 RBM guidance discusses in detail the recommended
+components of a monitoring plan. Sponsors also may reference in the monitoring plan other
+clinical trial management plans used for risk management (e.g., a data management plan) that
+address the components recommended in the 2013 RBM guidance rather than repeat the same
+information in the monitoring plan.
+
+In addition to the components recommended in the 2013 RBM guidance, FDA recommends that
+monitoring plans also include the following components, which will help explain how the
+sponsor intends to address the risks that could affect the clinical investigation:
+
+   •   A description of the investigation design, including the blinding and randomization
+       procedures, if applicable
+
+   •   Processes for confirming that randomization is performed according to the protocol and
+       investigational plan or plans
+
+   •   The sampling plan or plans that will be used to identify the specific records and data that
+       will be monitored, including (1) the rationale for how the sampling plan provides a
+       representative picture of the overall information and (2) how the sampling plan will be
+       implemented
+
+   •   A description of the types of issues identified through monitoring that would trigger
+       immediate issue escalation
+
+
+                                                   8
+                             Contains Nonbinding Recommendations
+
+
+
+   •   An approach for determining whether (1) an important issue that is detected at a clinical
+       site may also be present at other clinical sites; and (2) the finding suggests a systemic
+       problem with the protocol or associated investigational plans that requires remediation
+
+       C.      Follow-Up and Communication of Monitoring Results
+
+Q7.    How should sponsors follow up on significant issues identified through monitoring,
+       including communication of such issues?
+
+Significant issues should be thoroughly evaluated in a timely manner at the appropriate levels
+(for example, sponsor, clinical sites) as described in the monitoring plan. A root cause analysis
+followed by appropriate corrective and preventive actions should be undertaken promptly to
+reduce the impact of the identified issue on the rights, safety, and welfare of participants in the
+clinical investigation and/or the integrity of the data. Additionally, the risk assessment and
+monitoring plan should be reviewed and revised, as needed, to help ensure the risk of recurrence
+is decreased, or if possible, eliminated. In instances in which corrective actions modify study
+processes, the protocol and/or associated investigational plans should be amended to reflect
+changed processes. Related systemic issues should be identified and resolved promptly to help
+ensure that investigation quality, including the rights, safety, and welfare of investigation
+participants and data integrity, is maintained.
+
+Examples of preventive and corrective actions that may be warranted include but are not limited
+to (1) improved training for the clinical investigator and site staff; (2) halting enrollment at a
+clinical site pending resolution of identified issues; (3) clarifying or revising the protocol and/or
+other related investigational plans and documents; and/or (4) modifying vendor service
+agreements to ensure adequate trial support.
+
+Significant issues identified through monitoring and oversight activities and the actions to be
+taken should be documented and communicated to the appropriate parties, which may include,
+but are not limited to (1) sponsor management; (2) sponsor teams; (3) clinical sites; (4)
+institutional review boards; (5) other relevant parties (for example, DMCs and relevant contract
+research organizations); and (6) applicable regulatory agencies, including FDA, when
+appropriate.
+
+See the 2013 RBM guidance for additional recommendations regarding follow-up and
+communication of significant issues identified via monitoring.
+
+Q8.    How should monitoring activities and the results of these activities be documented
+       and shared with those involved in the investigation?
+
+As described in the 2013 RBM guidance, documentation of monitoring activities should
+generally include the following: (1) the date of the activity; (2) the individuals conducting and
+participating in the activity; (3) a summary of the data or activities reviewed; (4) a description of
+any noncompliance, potential noncompliance, data irregularities, and/or other deficiencies
+identified; and (5) a description of any actions taken, to be taken, or recommended (see section V
+
+
+
+                                                  9
+                            Contains Nonbinding Recommendations
+
+
+of the 2013 RBM guidance for additional information). Such documentation should include the
+results of monitoring activities in sufficient detail to allow verification of adherence to the
+monitoring plan describing those activities. Monitoring activities to be documented should
+include on-site and remote monitoring of clinical sites and centralized monitoring across clinical
+sites.
+
+Reports of monitoring activities should be provided to appropriate management (including
+sponsor staff responsible for the conduct and oversight of the clinical investigation) in a timely
+manner for review and follow-up. In addition, sponsors should inform the clinical investigator of
+monitoring findings from monitoring activities that are relevant to the clinical investigator’s
+activities.
+
+
+
+
+                                                10
+

@@ -1,0 +1,8 @@
+====================================================================================================
+R5-067 | CDISC-SDTMIG40-PR | loc=S35 | page=slides 35-36
+PARA: The SDTMIG v4.0 public review draft adds DV variable DVCLASI for retrospective classification of deviations (examples MAJOR/MINOR, IMPORTANT/NON-IMPORTANT, CRITICAL/NON-CRITICAL) with no assigned controlled terminology; the generic --CLASI is defined for DV only, classifying by potential impact on data completeness, accuracy or reliability or on participant rights, safety or well-being. Review closed 6 Apr 2026; publication targeted Q4 2026.
+QUOTE: Retrospective classification of deviations
+QCHECK: exact ['PDF 34 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.48 @ PDF 35 / printed None: A classification of protocol deviations based on the potential impact to the --CLASI Classification of Protocol Deviation Events, DV domain only completeness, accuracy, and/or reliability of the study data, or to a subject's rights, safety, or well-being. (ICH E3 Q&As (R1)) 18 Feb 2026 36 Removed Variables Findings --BLFL removed from model and from all domains Deprecated in SDTMIG 3.4 in favor of --LOBXFL --MODIFY and --BODSYS No expectation that Findings results would be coded Events and Inter
+  DOCBEST 0.40 @ PDF 34 / printed None: Updates to Protocol Deviations (DV) New variable, DVCLASI Retrospective classification of deviations No assigned Controlled Terminology Examples: MAJOR/ MINOR, IMPORTANT/ NON-IMPORTANT, CRITICAL/ NON-CRITICAL Controlled terminology for DVDECOD and DVCAT 18 Feb 2026 35 General Observation Class New Variables Variable Label Observation Class Definition --RSCNT Result Count Findings, EG domain only The number of occurrences of a result.

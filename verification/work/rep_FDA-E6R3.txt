@@ -1,0 +1,9 @@
+====================================================================================================
+R4-078 | FDA-E6R3 | loc=SI.B | page=printed 2 (FDA PDF); FR notice 90 FR 43460-43462
+PARA: FDA issued ICH E6(R3) (Principles and Annex 1 with Appendices A-C and Glossary) as final Level 1 guidance for industry in September 2025, finalising the June 2023 draft; Annex 2 remains a separate draft. As FDA guidance it contains nonbinding recommendations. Neither the guidance page, the FR notice nor the PDF front matter states that it supersedes the E6(R2) guidance.
+QUOTE: do not establish legally enforceable responsibilities
+QCHECK: exact ['PDF 9 / printed 2'] 
+LOC: found PDF 9 / printed 2 .. PDF 9 / printed 2 (0 chars) 
+  quote inside loc passage: False
+  PASSAGE: 
+  DOCBEST-OUTSIDE 0.20 @ PDF 9 / printed 2: This guidance should be read in conjunction with other ICH guidances relevant to the design and conduct of clinical trials, including multiregional trials. In general, FDA's guidance documents do not establish legally enforceable responsibilities.

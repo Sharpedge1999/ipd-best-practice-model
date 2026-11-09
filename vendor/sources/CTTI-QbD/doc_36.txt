@@ -1,0 +1,78 @@
+           CTTI R ECOMMEND ATIONS : Q U ALI TY BY D ESIGN
+“Quality”   in clinical trials is defined as the absence of errors that matter to
+decision making—that is, errors which have a meaningful impact on the safety of
+trial participants or credibility of the results (and thereby the care of future
+patients).
+
+CTTI recommends that quality be built into the scientific and operational design
+and conduct of clinical trials (“quality by design”) as follows:
+
+1. Create a culture that values and rewards critical thinking and open
+   dialogue about quality, and that goes beyond sole reliance on tools and
+   checklists.
+   Encourage proactive dialogue about what is critical to quality for a particular
+   trial or development program and, when needed, the development of
+   innovative methods for ensuring quality. Discourage overreliance on
+   checklists and inflexible   “one size fits all” approaches that undermine creation
+   of specific strategies and actions intended to effectively and efficiently support
+   quality in a given study. Verify that quality and performance measures are
+   aligned with incentives driving a culture that rewards critical thinking. For
+   example, rewarding study teams who minimize the time to first patient
+   enrolled may serve as a disincentive to devoting time to identifying and
+   preventing errors that matter through trial design.
+
+2. Focus effort on activities that are essential to the credibility of the study
+   outcomes.
+   Rigorously evaluate study design to verify that planned activities and data
+   collection are essential. Streamline trial design wherever feasible. Similarly,
+   deploy resources to identify and prevent or control errors that matter in the
+   study; in other words, determine those study activities that are essential to
+   ensure the safety of trial participants and the credibility of key study results.
+   Consider whether nonessential activities may be eliminated from the study to
+   simplify conduct, improve trial efficiency, and target resources to most critical
+   areas.
+
+3. Involve the broad range of stakeholders in protocol development and
+   discussions around study quality.
+   Engaging all stakeholders with study development is an important feature of
+   quality by design. The process of building quality into the study plan may be
+   informed not only by the sponsor organization but also by participation of
+   those directly involved in successful completion of the study such as clinical
+
+                                                                         Page 1 of 2
+    investigators, study coordinators and other site staff, and patients. Clinical
+    investigators and potential trial participants have valuable insights into the
+    feasibility of enrolling patients who meet proposed eligibility criteria, whether
+    scheduled study visits and procedures may be overly burdensome and lead
+    to early dropouts, and the general relevance of study endpoints to the
+    targeted patient population. When a study has novel features in elements
+    considered critical to quality (e.g., defining patient populations, procedures, or
+    endpoints), early engagement with regulators should also be considered.
+
+4. Prospectively identify and periodically review the critical to quality
+   factors.
+   The CTTI Quality by Design Principles Document and Toolkit can be used to
+   identify those aspects in each study that are critical to generating reliable data
+   and providing appropriate protections for research participants (“critical to
+   quality factors”), and to develop strategies and actions to effectively and
+   efficiently support quality in these critical areas. For example, in a
+   cardiovascular major morbidity outcomes trial, strategies to ensure that the
+   survival status of all trial participants is captured would be critical, but source
+   verifying   participants’   temperature   readings   obtained   as   a   part   of   vital   sign  
+   assessments at routine study visits is unlikely to be considered critical to the
+   successful outcome of the study. In addition, because new or unanticipated
+   issues may arise once the study has begun, it is important to periodically
+   review critical to quality factors to determine whether adjustments to risk
+   control mechanisms are needed.
+
+
+
+
+X   These recommendations are based on results from CTTI’s  QbD Project.
+X   CTTI’s  Executive Committee approved the recommendations.
+X   Released in June 2015
+
+
+
+                                                                                        Page 2 of 2
+

@@ -1,0 +1,167 @@
+# X1 one-time re-check (gate G4) of the 16 entries in synthesis/x1_corrections.yaml, 2026-11-06.
+recheck:
+- id: R1-127
+  old_verdict: paraphrase-distorted
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: AppC-C.3.2 (Essential Records Table)
+    page: PDF 89 / printed 81
+    snippet: Trial-specific plans (e.g., risk management,* monitoring,* safety,* data management,* data validation*
+  method: local-text
+  note: 'Corrected paraphrase matches the table row: safety plan now listed as asterisked; statistical analysis plan and procedures not asterisked.'
+- id: R2-017
+  old_verdict: paraphrase-distorted
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.3.1
+    page: PDF 11 / printed 5
+    snippet: Evidence used to inform the study design should be gathered and reviewed
+  method: local-text
+  note: Object restored to 'evidence used to inform the study design'; 'acknowledging gaps in data and conflicting data, where present and known' faithfully
+    rendered.
+- id: R2-102
+  old_verdict: page-wrong
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: SA.3.4
+    page: PDF 15 / printed 13 (sentence begins PDF 14 / printed 12)
+    snippet: the importance of minimising the number of protocol violations and deviations
+  method: local-text
+  note: 'X1 error withdrawn: the cited phrase is on PDF 15 (footer 13); only the opening words of the sentence are at the foot of printed 12. Cited page
+    printed 13 is correct.'
+- id: R2-115
+  old_verdict: page-wrong
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: S10.2
+    page: PDF 55 / printed 46
+    snippet: 10.2 Analysis Sets Describe analysis sets to be considered at the trial
+  method: local-text
+  note: Corrected page printed 46 / PDF 55 matches footer and TOC.
+- id: R2-116
+  old_verdict: page-wrong
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.6
+    page: PDF 61 / printed 52
+    snippet: Describe the identified critical to quality factors, associated risks and risk mitigation
+  method: local-text
+  note: Corrected page printed 52 / PDF 61 matches footer and TOC.
+- id: R2-117
+  old_verdict: page-wrong
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: S11.10
+    page: PDF 62 / printed 53
+    snippet: Describe plans for detecting, reviewing, and reporting any deviations from the protocol
+  method: local-text
+  note: Corrected page printed 53 / PDF 62 matches footer and TOC.
+- id: R3-048
+  old_verdict: paraphrase-distorted
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: S3.2
+    page: PDF 5 / printed 5
+    snippet: should not extend the reporting period of 7 calendar days
+  method: local-text
+  note: Modality now 'should' as in the guideline; the parenthetical on the binding 7-day limit (EU CTR Art. 52(1)) is correct and marked as such.
+- id: R3-085
+  old_verdict: paraphrase-distorted
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: S1.5 (points 9-11)
+    page: PDF 14-15 / chapter 1 printed 4-5
+    snippet: shall not be requested or submitted based on recommendations in different guidelines
+  method: local-text
+  note: '''shall not be requested or submitted'' restored; progress-report example matches point 11.'
+- id: R3-088
+  old_verdict: loc-wrong
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: SWebpage
+    page: EMA web page (unpaginated); cover table PDF 1 of EMA/CHMP/ICH/162879/2026
+    snippet: will come into effect on 15 January 2027
+  method: local-text
+  note: Loc now SWebpage; quote verbatim on the EMA web page; cover table gives the same date.
+- id: R3-089
+  old_verdict: paraphrase-distorted
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: SWebpage
+    page: EMA web page (unpaginated)
+    snippet: This Annex has been developed alongside the principles and objectives document
+  method: local-text
+  note: Now attributed to Annex 1 (with its appendices), as on the EMA page; 'no date on which E6(R2) stops applying' correct.
+- id: R5-046
+  old_verdict: paraphrase-distorted
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: STaking-a-holistic-approach-CLOSEOUT
+    page: web page, closeout paragraph
+    snippet: We recommend that finalization occur after the last study data has been reviewed.
+  method: webfetch
+  note: 'Paraphrase, deadline and record fields match the page: ''(close out the living PDAP or other documents used)'' and the finalisation recommendation.
+    ''final deviation documentation'' is an acceptable rendering of ''other documents used''. Checked by two differently worded WebFetch calls (plus the
+    two earlier ones).'
+- id: R5-048
+  old_verdict: paraphrase-distorted
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: SHow-QTLs-Fit-in-a-Quality-Management-System
+    page: publisher HTML
+    snippet: In parallel, sponsors should define appropriate risk management strategies
+  method: webfetch
+  note: '''In parallel'' restored; integrated QRM plan parenthetical and QTL/KRI controls match. Re-checked by WebFetch (wording identical to the two earlier
+    fetches).'
+- id: R5-071
+  old_verdict: page-wrong
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: SII.E.1; SI; SII.C
+    page: PDF 12 / printed 7; PDF 7 / printed 2; PDF 8-10 / printed 3-5
+    snippet: it will have binding effect.
+  method: local-text
+  note: Corrected pages match the local text (lines 36-42 printed 2, lines 234-248 printed 7, II.C printed 3-5).
+- id: R3-013
+  old_verdict: confirmed
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 38(1)
+    page: OJ L 158/36
+    snippet: without undue delay but not later than in 15 days of the date
+  method: local-text
+  note: Added 15-day deadline matches Art. 38(1) second sentence; rest unchanged.
+- id: R3-025
+  old_verdict: confirmed
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: Art. 53(1)
+    page: OJ L 158/40
+    snippet: no later than 15 days from the date the sponsor became aware
+  method: local-text
+  note: Added 15-day deadline (from sponsor awareness) matches Art. 53(1) second sentence.
+- id: R4-016
+  old_verdict: confirmed
+  new_verdict: confirmed
+  severity: null
+  evidence:
+    loc: 21CFR312.56(d)
+    page: unpaginated (eCFR API text)
+    snippet: in no event later than 5 working days after making the determination
+  method: local-text
+  note: Added deadline correctly attached to discontinuing the investigation (not to the notifications), as in 312.56(d).

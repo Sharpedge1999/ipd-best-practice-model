@@ -1,0 +1,42 @@
+====================================================================================================
+R3-085 | EUCTR-QA | loc=S1.5 | page=printed 4-5 (chapter 1; page numbers restart per chapter)
+PARA: Q&A 1.5: sponsors and investigators must comply with applicable regulatory requirements; the EU CTR aims at maximum harmonisation and takes precedence over conflicting rules in guidelines, including ICH GCP. Documents not foreseen by the Regulation should not be requested or submitted on the basis of other guidelines.
+QUOTE: takes precedence over conflicting rules in guidelines
+QCHECK: exact ['PDF 14 / printed 4'] 
+LOC: found PDF 3 / printed 3 .. PDF 3 / printed 3 (449 chars) 
+  quote inside loc passage: False
+  PASSAGE: 1.5. How to proceed in case of discrepancies between the CTR and ICH Good clinical practice guidance? ................................................................................................................................ 1.6. Question: What is a "low-intervention clinical trial"?....................................................... 1.7. Question: What can be considered as a "non-interventional study"? ............................... 
+  DOCBEST-OUTSIDE 0.69 @ PDF 14 / printed 4: As recognized also in ICH, sponsors and investigators need to comply with the applicable regulatory requirements. The CTR aims to ensure maximum possible harmonisation across the EU/EEA (recital 5) and, takes precedence over conflicting rules in guidelines, albeit ICH or other guidelines.
+====================================================================================================
+R3-086 | EUCTR-QA | loc=S1.5 | page=printed 4-5 (chapter 1; page numbers restart per chapter)
+PARA: Q&A 1.5: all submissions for a trial, including site information, are made by or on behalf of the sponsor, not the investigator, via CTIS or EudraVigilance. Investigators therefore do not notify authorities directly under the EU CTR.
+LOC: found PDF 3 / printed 3 .. PDF 3 / printed 3 (449 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.55 @ PDF 14 / printed 4: Answer: In the EU, all submissions concerning a clinical trial, including information on the clinical trial sites, are done by or on behalf of the sponsor (and not by the investigator) via CTIS or EudraVigilance.
+====================================================================================================
+R3-098 | EUCTR-QA | loc=S11.3 | page=printed 1-2 (chapter 11)
+PARA: Q&A 11.3 (point 523): the 7-day timeframe of Art. 52(1) starts when the sponsor becomes aware of a potential breach; only confirmed serious breaches are reported, so the sponsor completes its first analysis, confirms seriousness and submits the initial report in CTIS within those 7 days.
+QUOTE: The 7-day timeframe starts when the sponsor becomes aware of a potential breach.
+QCHECK: exact ['PDF 137 / printed 2'] 
+LOC: found PDF 136 / printed 1 .. PDF 136 / printed 1 (61 chars) 
+  quote inside loc passage: False
+  PASSAGE: 11.3. Submission of notification of Serious Breaches in CTIS 
+  DOCBEST-OUTSIDE 0.45 @ PDF 136 / printed 1: Article 52.1 of the CTR requires sponsors to report serious breaches within seven days of becoming aware of them. The 7-day timeframe starts when the sponsor becomes aware of a potential breach.
+====================================================================================================
+R3-100 | EUCTR-QA | loc=S10.9 | page=printed 8-9 (chapter 10)
+PARA: Q&A 10.9 (points 498-499): urgent safety measures may involve a temporary halt for safety reasons; one notification is sufficient. If the entire trial is halted (recruitment and/or treatment) a temporary halt notification is submitted; if only parts are halted (e.g. arms, groups, subprotocols) it is reported as an urgent safety measure so that the trial status stays 'ongoing' in CTIS.
+LOC: found PDF 10 / printed 10 .. PDF 10 / printed 10 (224 chars) 
+  PASSAGE: 10.9. Question: How should urgent safety measures (article 54) involving temporary halts (articles 38) be notified? ........................................................................................................... 
+  DOCBEST-OUTSIDE 0.66 @ PDF 131 / printed 8: If the entire clinical trial is halted (recruitment and/or treatment), a temporary halt notification should be submitted. However, if only parts of the trial are halted (e.g. certain treatment arms, treatment groups or subprotocols), this should be reported as urgent safety measure to ensure that the overall trial status as ongoing is correctly reflected in CTIS.
+====================================================================================================
+R3-104 | EUCTR-QA | loc=S7.27 | page=printed 22 (chapter 7)
+PARA: Q&A 7.27 (points 365-367): safety notifications are made via CTIS; when submitting a USM, unexpected event, temporary halt or premature end notification, sponsors inform the Member States whether other trials are affected, list their EU CT numbers, state whether the same or similar notification is or will be submitted for them, and provide available documents and proposed risk minimisation measures where possible.
+LOC: found PDF 95 / printed 22 .. PDF 95 / printed 22 (88 chars) 
+  PASSAGE: 7.27 Question: How to report safety issues not falling within the definition of SUSARs? 
+  DOCBEST-OUTSIDE 0.55 @ PDF 95 / printed 22: When submitting a notification like an urgent safety measure (USM), unexpected event (UE) changing benefit risk, temporary halt or premature end of a CT, sponsors are asked to inform MSs if other CTs are also affected by the issue and if so, list all EU CT numbers of affected trials. The sponsor should indicate if the same or a similar notification will be/has been submitted regarding these listed
+====================================================================================================
+R3-105 | EUCTR-QA | loc=S11.4 | page=printed 2 (chapter 11)
+PARA: Q&A 11.4 (points 525-527): GCP inspection reports by third-country authorities must be submitted in CTIS for all sites of a trial under the EU CTR (sponsor, CRO, investigator sites), regardless of location or relevance; the full report is submitted in its original language and Member States may request a translation of the report or a summary of key findings.
+LOC: found PDF 137 / printed 2 .. PDF 137 / printed 2 (61 chars) 
+  PASSAGE: 11.4. Submission of third-country Inspection Reports in CTIS 
+  DOCBEST-OUTSIDE 0.45 @ PDF 137 / printed 2: The obligation applies to all GCP inspection reports of all sites involved in the clinical trial-sponsor sites, CROs, and clinical investigator sites-regardless of whether the inspection was conducted in the EU/EEA or in a third country. If the trial inspected is/was conducted in the EEA and falls under the CTR, the third-country GCP inspection report must be submitted in CTIS.

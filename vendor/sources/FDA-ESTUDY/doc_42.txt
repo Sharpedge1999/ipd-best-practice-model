@@ -1,0 +1,625 @@
+  Providing Regulatory
+      Submissions
+In Electronic Format —
+Standardized Study Data
+   Guidance for Industry
+
+
+
+
+     U.S. Department of Health and Human Services
+               Food and Drug Administration
+    Center for Drug Evaluation and Research (CDER)
+   Center for Biologics Evaluation and Research (CBER)
+           Oncology Center of Excellence (OCE)
+
+                       June 2021
+                 Electronic Submissions
+
+                       Revision 2
+         Providing Regulatory
+              Submissions
+        in Electronic Format —
+       Standardized Study Data
+                     Guidance for Industry
+                                   Additional copies are available from:
+                         Office of Communications, Division of Drug Information
+                                Center for Drug Evaluation and Research
+                                     Food and Drug Administration
+                          10001 New Hampshire Ave., Hillandale Bldg., 4 th Floor
+                                        Silver Spring, MD 20993
+                        Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                      Email: druginfo@fda.hhs.gov
+          https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+
+                                                  and/or
+
+                           Office of Communication, Outreach and Development
+                               Center for Biologics Evaluation and Research
+                                       Food and Drug Administration
+                             10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                         Silver Spring, MD 20993
+                                  Phone: 800-835-4709 or 240-402-8010
+                                         Email: ocod@fda.hhs.gov
+https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-
+                                                 guidances
+
+                      U.S. Department of Health and Human Services
+                                Food and Drug Administration
+                     Center for Drug Evaluation and Research (CDER)
+                    Center for Biologics Evaluation and Research (CBER)
+                            Oncology Center of Excellence (OCE)
+
+                                             June 2021
+                                       Electronic Submissions
+
+                                               Revision 2
+Technical specifications associated with this guidance are provided as separate, stand-alone
+documents and are updated periodically. These are:
+
+   •   Data Standards Catalog
+   •   Study Data Technical Conformance Guide
+   •   FDA Specific SEND Validation Rules
+   •   FDA Specific SDTM Validation Rules
+
+To make sure you have the most recent versions, please check:
+
+  https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources
+
+
+                                     REVISION HISTORY
+
+
+          DATE                             SUMMARY OF REVISIONS
+       October 2020          Updates to Guidance
+
+                             Section II.B. What types of submissions are exempted from the
+                             electronic submission requirements for standardized study data?
+
+                                 •    Updated the term “noncommercial products” to
+                                      “noncommercial IND” to clarify the products that are
+                                      exempt from requirements under this guidance.
+
+
+                             Section II.E. When will electronic submission of standardized
+                             study data be required?
+
+                                 •    Updated to clarify the information FDA relies on for
+                                      assessing compliance with study data requirements
+
+                                 •  Updated example of timetable to reflect actual timetable
+                                    for the implementation of the electronic submissions
+                                    requirement and otherwise clarify the date of the initial
+                                    requirements
+         May 2021            Section II.A. For what submission types is an electronic
+                             submission of standardized study data required?
+
+                                 •    Updated to clarify where stakeholders can find more
+                                      information about when electronic standardized study
+                                      data are required as part of a submission during a
+                                      declared public health emergency
+Section II.E. When will electronic submission of standardized
+study data be required?
+
+   •   Updated to clarify the implementation periods for new
+       study standards and version updates, in alignment with
+       the Federal Register notice entitled “Electronic Study
+       Data Submission; Data Standards; Timetable for Updates
+       to the Food and Drug Administration Data Standards
+       Catalog for Study Data Submitted Electronically Under
+       the Federal Food, Drug, and Cosmetic Act” that appeared
+       on January 23, 2018 (83 FR 3161)
+                                                     TABLE OF CONTENTS
+
+I.           INTRODUCTION...................................................................................................... 1
+II.          REQUIREMENT TO SUBMIT ELECTRONIC STANDARDIZED STUDY DATA
+             2
+     A.      For What Submission Types Is an Electronic Submission of Standardized Study Data
+             Required? .................................................................................................................... 2
+     B.      What Types of Submissions Are Exempted from the Electronic Submission Requirements
+             for Standardized Study Data?........................................................................................ 3
+     C. What Are the Requirements That Must Be Followed for Electronic Submission of
+          Standardized Study Data?................................................................................................. 3
+        1. Exchange Format Standards ............................................................................................ 4
+        2. Study Data Standard ....................................................................................................... 4
+        3. Controlled Terminology Standard ..................................................................................... 5
+     D. Will FDA Issue Waivers of the Electronic Submission Requirements for Standardized Study
+          Data?............................................................................................................................... 5
+     E.      When Will Electronic Submission of Standardized Study Data Be Required?.................... 6
+          1. Initial Timetable for the Implementation of Electronic Submission Requirements...................... 7
+          2. Version Updates to FDA-Supported Standards.................................................................... 8
+          3. New Standards ............................................................................................................... 9
+III.         ADDITIONAL SUPPORT ......................................................................................... 9
+     A.      Meetings With FDA ...................................................................................................... 9
+     B.      Implementation Support ..............................................................................................10
+ 1           Providing Regulatory Submissions in Electronic Format —
+ 2                           Standardized Study Data
+ 3                            Guidance for Industry 1
+ 4
+ 5
+ 6
+ 7   I.       INTRODUCTION
+ 8
+ 9   Under section 745A(a) of the Federal Food, Drug, and Cosmetic Act (FD&C Act) (21 U.S.C.
+10   379k-1(a)), at least 24 months after the issuance of a final guidance document in which the Food
+11   and Drug Administration (FDA or the Agency) has specified the electronic format for submitting
+12   certain submission types to the Agency, such content must be submitted electronically and in the
+13   format specified by FDA. 2 This guidance and the technical specifications documents it
+14   incorporates by reference describe the requirements for an electronic submission of standardized
+15   clinical and nonclinical study data under section 745A(a) of the FD&C Act. In accordance with
+16   section 745A(a), following the issuance of a final guidance on this topic, study data contained in
+17   the submission types identified in this guidance must be submitted electronically in a format that
+18   FDA can process, review, and archive.
+19
+20   This guidance implements the electronic submission requirements of section 745A(a) of the
+21   FD&C Act for study data contained in new drug applications (NDAs), abbreviated new drug
+22   applications (ANDAs), biologics license applications (BLAs), and investigational new drug
+23   applications (INDs) to the Center for Drug Evaluation and Research (CDER) or the Center for
+24   Biologics Evaluation and Research (CBER) 3 by specifying the format for electronic submissions.
+25   Submissions that are not submitted electronically and electronic submissions that are not in a
+26   format that FDA can process, review, and archive will not be filed or received, unless exempt
+27   from the electronic submission requirements or if FDA has granted a waiver (see sections II.B
+28   and II.D).
+29
+30   In section 745A(a) of the FD&C Act, Congress granted explicit authorization to FDA to
+31   implement the statutory electronic submission requirements in guidance. Accordingly, as
+32   indicated by the use of the words must or required, this document is not subject to the usual
+
+     1
+       This guidance has been prepared by the Center for Drug Evaluation and Research and the Center for Biologics
+     Evaluation and Research at the Food and Drug Administration. You may submit comments on this guidance at any
+     time. Submit comments to Docket No. FDA-2012-D-0097 (available at https://www.regulations.gov/docket/FDA-
+     2012-D-0097) (see the instructions for submitting comments in the docket).
+     2
+      For additional information on how FDA interprets and intends to implement the electronic submission
+     requirements of section 745A(a) of the FD&C Act, please see the guidance for industry Providing Regulatory
+     Submissions in Electronic Format – Submissions Under Section 745A(a) of the Federal Food, Drug, and Cosmetic
+     Act (December 2014) (745A(a) Implementation Guidance). We update guidances periodically. For the most recent
+     version of a guidance, check the FDA guidance web page at https://www.fda.gov/regulatory-information/search-fda-
+     guidance-documents.
+     3
+      For purposes of this guidance, quality control or validation data submitted in support of licensure of blood
+     components are not considered study data.
+
+
+
+                                                               1
+33   restrictions in FDA’s good guidance practice regulations, such as the requirement that guidances
+34   not establish legally enforceable responsibilities. See 21 CFR 10.115(d).
+35
+36   To comply with the good guidance practice regulations and make sure that regulated entities and
+37   the public understand that guidance documents are nonbinding, FDA guidances ordinarily
+38   contain standard language explaining that guidances should be viewed only as recommendations
+39   unless specific regulatory or statutory requirements are cited. FDA is not including this standard
+40   language in this guidance because it is not an accurate description of the effects of this guidance.
+41   Insofar as this guidance specifies the format for electronic submissions or provides for
+42   exemptions pursuant to section 745A(a) of the FD&C Act, it will have binding effect.
+43
+44
+45   II.        REQUIREMENT TO SUBMIT ELECTRONIC STANDARDIZED STUDY DATA
+46
+47              A.      For What Submission Types Is an Electronic Submission of Standardized
+48                      Study Data Required?
+49
+50   Electronic submissions of standardized study data will be required for the following submission
+51   types:
+52
+53          •   Certain investigational new drug applications (INDs) 4, 5
+54          •   New drug applications (NDAs)
+55          •   Abbreviated new drug applications (ANDAs)
+56          •   Certain biologics license applications (BLAs) 6
+57
+58   This requirement also includes all subsequent submissions, including amendments, supplements,
+59   and reports to one of the submission types identified above. Study data in submissions that are
+
+
+     4
+      This guidance is not applicable to INDs for devices that are regulated by CBER as biological products under
+     section 351 of the Public Health Service (PHS) Act and that also require submission of an IND before submission of
+     a BLA. Although a discussion of which devices CBER regulates as biological products is outside the scope of this
+     guidance, we note that as a general matter, this category of INDs would include those investigational devices
+     regulated under IND that are used to screen blood donors for certain transfusion-transmissible diseases and to test
+     human cells, tissues, or cellular or tissue-based products to make a donor-eligibility determination. These
+     submissions are subject to the requirements under section 745A(b) of the FD&C Act. See the guidance for industry
+     and Food and Drug Administration Staff eCopy Program for Medical Device Submissions (April 2020), which
+     implements the electronic copy provisions of section 745A(b) of the FD&C Act for medical device submissions to
+     FDA.
+     5
+         This guidance is not applicable to noncommercial INDs. See section II.B.
+     6
+       This guidance is not applicable to those devices that are regulated by CBER as biological products under section
+     351 of the PHS Act, including those that do not require submission of an IND before the submission of the BLA.
+     Although a discussion of which devices CBER regulates as biological products under section 351 of the PHS Act is
+     outside the scope of this guidance, we note that as a general matter, this category would include those reagents used
+     in determining donor/recipient compatibility in transfusion medicine. These submissions are subject to the
+     requirements under section 745A(b) of the FD&C Act. See the final guidance entitled eCopy Program for Medical
+     Device Submissions.
+
+
+
+                                                               2
+60   not submitted electronically will not be filed, unless exempt from the electronic submission
+61   requirements or unless FDA has granted a waiver.
+62
+63   Sponsors and applicants must submit study data electronically using the format described in this
+64   guidance for both clinical and nonclinical studies.
+65
+66   Please see the Study Data Technical Conformance Guide (Conformance Guide)7 for clarification
+67   regarding when electronic standardized study data are required as part of a submission to address
+68   a public health emergency declared by the Secretary of Health and Human Services in
+69   accordance with section 319(a) of the Public Health Service Act (42 U.S.C. 247d(a)).
+70
+71              B.       What Types of Submissions Are Exempted from the Electronic Submission
+72                       Requirements for Standardized Study Data?
+73
+74   Section 745A(a) of the FD&C Act allows FDA to establish exemptions from the electronic
+75   submission requirements. Accordingly, FDA has exempted all submissions regarding
+76   noncommercial INDs from the requirements under section 745A(a). 8 For purposes of this
+77   guidance, the term noncommercial IND refers to an IND for a product that is not intended for
+78   commercial distribution and includes investigator-sponsored INDs and expanded access INDs
+79   (e.g., emergency use INDs and treatment INDs).9 Although such submissions will be exempt,
+80   FDA will accept their voluntary submission in a standardized electronic format as described in
+81   this guidance document.
+82
+83              C.       What Are the Requirements That Must Be Followed for Electronic
+84                       Submission of Standardized Study Data?
+85
+86   Under section 745A(a) of the FD&C Act, electronic submissions “shall be submitted in such
+87   electronic format as specified by [FDA].” FDA has determined that study data contained in the
+88   electronic submissions described in section II.A must be in a format that the Agency can process,
+89   review, and archive. Currently, the Agency can process, review, and archive electronic
+90   submissions of clinical and nonclinical study data that use the standards specified in the Data
+91   Standards Catalog (Catalog). 10
+92
+93   The Catalog provides a listing of currently supported 11 and/or required standards, their uses, the
+94   date FDA will begin (or has begun) to support a particular standard, the date such support ends
+     7
+       The Study Data Technical Conformance Guide is available at https://www.fda.gov/industry/fda-resources-data-
+     standards/study-data-standards-resources.
+     8
+         See 745A(a) Implementation Guidance, section III.B.
+     9
+      The previous version of this guidance used the term noncommercial products rather than noncommercial INDs.
+     This change was made to clarify our meaning.
+     10
+          Available at https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+     11
+       For the purposes of this document, supported means the receiving Center has established processes and
+     technology to support receiving, processing, reviewing, and archiving files in the specified standard.
+
+
+
+                                                                3
+ 95   (or will end), the date the requirement to use a particular standard will begin (or has begun), the
+ 96   date such requirement ends (or will end), and other pertinent information. The Agency may
+ 97   refuse to file (RTF) for NDAs and BLAs, or refuse to receive (RTR) for ANDAs, an electronic
+ 98   submission that does not have study data in conformance to the required standards specified in
+ 99   the Catalog.
+100
+101   When planning a study (including the design of case report forms, data management systems,
+102   and statistical analysis plans), the sponsor or applicant must determine which FDA-supported
+103   standards to use or request a waiver of those requirements as described in section II.D. There
+104   may be versions of a standard available that are not yet supported by FDA (e.g., specific SDTM
+105   or ADaM versions) or there may be FDA-supported standards that, currently, have only specific
+106   components developed (e.g., SEND study types).12 See section III for additional support on data
+107   standards questions or issues. FDA-supported standards listed in the Catalog are categorized as
+108   follows:
+109
+110           1.      Exchange Format Standards
+111
+112   An exchange format standard specifies a particular way that information is encoded in a
+113   computer file. Specifications for a format permit the file to be written according to a standard,
+114   opened for use or alteration, and written back to a storage medium for later access. Some
+115   exchange formats in widespread use are proprietary; others are open source. Examples of format
+116   standards currently supported by FDA include: Adobe Portable Document Format (pdf), SAS
+117   Institute Transport File format (xpt), and Extensible Markup Language (xml).
+118
+119           2.      Study Data Standard
+120
+121   Study data standards describe a standard way of exchanging study data between computer
+122   systems. Study data standards may describe the data elements and relationships necessary to
+123   achieve the unambiguous exchange of information between disparate information systems. The
+124   Clinical Data Interchange Standards Consortium (CDISC) Study Data Tabulation Model
+125   (SDTM) and Standard Exchange for Nonclinical Data (SEND) are examples of study data
+126   standards for tabulations data.
+127
+128   Analysis standards describe a standard data structure intended to support analysis. Analysis
+129   standards include extraction, transformation, and derivations of the original data. The CDISC
+130   Analysis Data Model (ADaM) is an example of a study data standard for analysis data.
+131
+
+
+
+
+      12
+       Study Data Tabulation Model (SDTM), Analysis Data Model (ADaM), Standard for Exchange of Nonclinical
+      Data (SEND), available at http://www.cdisc.org.
+
+
+                                                         4
+132              3.       Controlled Terminology Standard
+133
+134   The use of controlled terminology standards, also known as vocabularies, is an important
+135   component of study data standardization and is a critical component of achieving semantically
+136   interoperable data exchange. 13 Controlled terminology standards specify the key concepts that
+137   are represented as preferred terms, definitions, synonyms, codes, and code systems. Controlled
+138   terminology standards are maintained by external organizations (i.e., external to the sponsor or
+139   applicant). Sponsor- or applicant-defined custom terms are not considered controlled
+140   terminologies. However, some controlled terminologies are extensible and permit additions to
+141   existing codelists. It is the expectation that sponsors or applicants will use the controlled
+142   terminologies maintained by external organizations as the standard. Examples of controlled
+143   terminology standards include:
+144
+145          •   The National Drug File (NDF) — Reference Terminology for drug classifications14
+146          •   CDISC Controlled Terminology 15
+147          •   Medical Dictionary for Regulatory Activities (MedDRA)16
+148
+149              D.       Will FDA Issue Waivers of the Electronic Submission Requirements for
+150                       Standardized Study Data?
+151
+152   Electronic submissions of study data must be in a format that FDA can review, process, and
+153   archive. Currently, the Agency can process, review, and archive electronic submissions of study
+154   data that use the standards specified in the Catalog posted to the FDA’s Study Data Standards
+155   Resources web page. 17
+156
+157   FDA will not provide waivers to submit data that do not conform to any FDA-supported study
+158   data standard. However, sponsors or applicants may apply for a waiver from the requirement to
+159   use specific versions of FDA-supported standards for the submission of study data. Generally, a
+160   waiver will enable a sponsor or applicant to submit study data electronically using a version of a
+161   standard that was previously supported by FDA.
+162
+163   To apply for a waiver from the requirement to submit study data using a version of a standard
+164   that is not supported as set forth in the Catalog, an email request must be sent to the FDA
+165   technical staff at cder-edata@fda.hhs.gov for requests related to CDER-regulated submissions
+
+      13
+           See the Study Data Technical Conformance Guide for a detailed discussion of semantic interoperability.
+      14
+        NDF is available at
+      http://ncit.nci.nih.gov/ncitbrowser/pages/vocabulary.jsf?dictionary=National%20Drug%20File%20-
+      %20Reference%20Terminology.
+      15
+        CDISC Controlled Terminology is available at
+      http://www.cancer.gov/cancertopics/cancerlibrary/terminologyresources/cdisc.
+      16
+           MedDRA is available at http://www.meddra.org/.
+      17
+           See https://www.fda.gov/industry/fda-resources-data-standards/study-data-standards-resources.
+
+
+
+                                                                 5
+166   and at cber-edata@fda.hhs.gov for requests related to CBER-regulated submissions. The subject
+167   line of the email should start with “Waiver Request.” The body of the email should contain the
+168   following:
+169
+170        1. Contact person’s name (this will be the main contact)
+171        2. Contact person’s company name
+172        3. Contact person’s mailing address
+173        4. Contact person’s phone number
+174        5. Contact person’s email address
+175        6. Relevant submission types and numbers
+176        7. The specific requirement or requirements from which the sponsor or applicant is requesting a
+177           waiver
+178        8. The reason the sponsor or applicant believes that the waiver is necessary
+179        9. A description of the alternative or alternatives that the sponsor intends to use
+180
+181   FDA encourages the sponsor or applicant to submit the waiver request to the FDA technical staff
+182   as early as possible during product development (e.g., when the study is being planned, which
+183   may be during the pre-IND phase) and certainly no later than the time of protocol submission to
+184   the IND. FDA will notify the sponsor or applicant in writing (e.g., in an email) as to whether the
+185   waiver request is denied or granted. The technical staff will coordinate with the applicable
+186   review division and contact the requestor concerning the status of the waiver request. Generally,
+187   FDA intends to notify the requestor within 30 days from the date the waiver request is received.
+188
+189            E.       When Will Electronic Submission of Standardized Study Data Be Required?
+190
+191   The requirement to submit using a particular standard is dependent on its support by FDA as
+192   listed in the Catalog at the time of study start. 18 FDA recognizes that standards development
+193   organizations may release version updates to standards in the interval between the start of a study
+194   and the submission of study data to the Agency. The Catalog may list more than one version of a
+195   supported standard (e.g., PDF versions 1.4 - 1.7, SDTM versions 1.2 and 1.3, Define versions 1.0
+196   and 2.0, and MedDRA versions 8 or later). Sponsors or applicants are encouraged to use the
+197   latest version listed in the Catalog. However, when there are multiple versions of a standard
+198   listed, sponsors or applicants can select the version to use for their study.
+199
+200   The initial timetable for the implementation of electronic submission requirements for study data
+201   is described in section II.E.1. Since the initial timetable has passed, FDA may announce the
+202   future availability of new standards and version updates to existing standards through Federal
+203   Register notices. Such a Federal Register notice will specify the next calendar March 15 date
+204   following the publication of the Federal Register notice as the start date for the implementation
+205   period (transition date) used to calculate when the new standard or version update will be
+206   required in a submission. The transition date does not indicate the date on which the requirement
+      18
+         For purposes of this guidance, the study start date for clinical studies is the earliest date of informed consent
+      among any subject that enrolled in the study. For example, see Study Start Date in the SDTM Trial Summary
+      Domain (TSPARMCD = SSTDTC), available at http://www.cdisc.org. For nonclinical studies, the study start date
+      is the date on which the study protocol or plan is approved (signed) by the Study Director, also known as the study
+      initiation date. For example, see Study Start Date in the SEND Trial Summary Domain (TSPARMCD =
+      STSTDTC), available at http://www.cdisc.org.
+
+
+                                                                6
+207   to use a particular standard commences. Instead, the transition date indicates the beginning date
+208   of the implementation period, which will be consistent with the timetables set forth in the
+209   745A(a) Implementation Guidance, to provide industry with notice before requiring the new
+210   standard or version update in submissions. The use of a standard will be required in submissions
+211   only after the implementation period has ended. This use of the transition date approach should
+212   provide sponsors and applicants with a consistent and predictable implementation timetable for
+213   new standards and version updates to existing standards. Examples using the transition date
+214   approach are listed below:
+215
+216        Example 1: A Federal Register notice is published on September 5, 2022, announcing the
+217        availability of a new standard. The transition date is the next calendar March 15 date, March
+218        15, 2023, which starts the implementation period for the new standard. The new standard
+219        will be required in submissions for studies that start 24 months after the transition date,
+220        which is March 15, 2025.
+221
+222        Example 2: A Federal Register notice is published on February 14, 2022, announcing the
+223        availability of a new standard. The transition date is the next calendar March 15 date, March
+224        15, 2022, which starts the implementation period for the new standard. The new standard
+225        will be required in submissions for studies that start 24 months after the transition date,
+226        which is March 15, 2024.
+227
+228        Example 3: A Federal Register notice is published on April 6, 2022, announcing the
+229        availability of a version update to an existing standard. The transition date is the next
+230        calendar March 15 date, March 15, 2023, which starts the implementation period for the
+231        version update. The version update will be required in submissions for studies that start 12
+232        months after the transition date, which is March 15, 2024.
+233
+234           1.       Initial Timetable for the Implementation of Electronic Submission Requirements
+235
+236   After the publication of the initial final version of this guidance on December 18, 2014 (2014
+237   Final eStudy Data Guidance), all studies with a start date 24 months after that publication date
+238   (December 18, 2016) for NDA, ANDA, and certain BLA submissions and studies with a start
+239   date 36 months after the publication of the 2014 Final eStudy Data Guidance (December 18,
+240   2017) for certain IND submissions must use the appropriate FDA-supported standards, formats,
+241   and terminologies specified in the Catalog (see section II.C)). As noted above, to ensure that
+242   FDA can assess whether sponsors and applicants are subject to particular study data format
+243   requirements, FDA must rely on information provided by the submitter about study start date and
+244   the file type being submitted. Generally, the datasets necessary to assess conformance to the
+245   standard include the demographic dataset file (SDTM and SEND dm.xpt), the subject level
+246   analysis dataset file (ADaM adsl.xpt), and the define.xml file (SDTM, SEND, and ADaM). For
+247   further details, see the Technical Rejection Criteria for Study Data, the Conformance Guide, and
+248   the Data Standards Catalog. 19
+249
+
+
+      19
+        See footnote 17. See also Study Data for Submission to CDER and CBER, available at
+      https://www.fda.gov/industry/study-data-standards-resources/study-data-submission-cder-and-cber.
+
+
+                                                             7
+250             2.     Version Updates to FDA-Supported Standards
+251
+252   Periodically, version updates to FDA-supported study data standards are released by Standards
+253   Development Organizations (SDOs). Version updates may include (1) content or structural
+254   changes (e.g., new SDTM domains or variables) and (2) typographical errors, corrections, or
+255   clarifications that do not result in content or structural changes. Generally, version updates that
+256   include content or structural changes would require FDA to execute a testing and acceptance
+257   process, whereas errata, corrections, or clarifications would not.
+258
+259   Given that the 24- and 36-month initial implementation timetables described in section II.E.1
+260   have passed since the publication of the 2014 Final eStudy Data Guidance, version updates will
+261   be required in submissions for studies with a start date that is no earlier than 12 months after the
+262   transition date specified in a Federal Register notice announcing FDA’s determination of the
+263   new format as one that it can process, review, and archive. 20 The Federal Register notice will
+264   specify the transition date for all version updates (with the month and day for the transition date
+265   corresponding to March 15). When multiple versions of an FDA-supported standard are listed in
+266   the Catalog as formats which FDA can process, review, and archive, sponsors or applicants can
+267   select a version to use.
+268
+269   Below is an example and accompanying table (Table 1) of how a version update to a study data
+270   standard would be implemented.
+271
+272         Example: On February 15, 2024, an SDO releases a version update to a study data standard
+273         already supported in the Catalog. On May 6, 2025, FDA publishes a Federal Register notice
+274         announcing support for the version update and updates the Catalog. The date support
+275         begins for this version update will be May 6, 2025. The transition date posted in the Federal
+276         Register notice is March 15, 2026. The date the requirement begins will be March 15, 2027.
+277         Sponsors or applicants are encouraged to begin using the updated version on May 6, 2025.
+278         The version update will only be required in submissions for studies that start after March 15,
+279         2027. When multiple versions of an FDA-supported standard are listed in the Catalog,
+280         sponsors or applicants can select a version to use.
+281
+282   Table 1: Example of a Timetable for a Version Update to an FDA-Supported Standard
+             Date Version       Date FR Notice       Date Support for        Transition Date      Date Requirement
+           Update Released        Published         the Version Update       (yyyy-mm-dd)          for the Version
+               by SDO            Announcing               Begins                                   Update Begins
+            (yyyy-mm-dd)      Support of Version      (yyyy-mm-dd)                                 (yyyy-mm-dd)
+                                   Update
+                                (yyyy-mm-dd)
+       2024-02-15             2025-05-06            2025-05-06             2026-03-15             2027-03-15
+283
+
+
+
+
+      20
+        See the 745A(a) Implementation Guidance, section III.F (describing the timetable for implementation of revisions
+      and updates).
+
+
+                                                              8
+284             3.     New Standards
+285
+286   Given that the 24- and 36-month initial implementation timetables described in section II.E.1
+287   have passed since the publication of the 2014 Final eStudy Data Guidance, FDA may announce
+288   in a Federal Register notice (and guidance, if necessary) its support for new standards. New
+289   standards are those that have not been supported by FDA and are not listed in the Catalog at the
+290   time this guidance is finalized. New standards will be required in submissions for studies that
+291   start no earlier than 24 months after the transition date specified in a Federal Register notice
+292   announcing FDA’s determination of the new standard as one that it can process, review, and
+293   archive. The Federal Register notice of availability will specify the transition date for all
+294   version updates (with the month and day for the transition date corresponding to March 15).
+295
+296   Below is an example and accompanying table (Table 2) of how a new study data standard would
+297   be implemented.
+298
+299          On February 15, 2024, an SDO releases a new study data standard. On May 6, 2025, FDA
+300          publishes a Federal Register notice announcing support of the new study data standard and
+301          updates the Catalog. The date support begins for this new standard will be May 6, 2025.
+302          The transition date posted in the Federal Register notice is March 15, 2026. The date the
+303          requirement begins will be March 15, 2028. Sponsors or applicants are encouraged to begin
+304          using the new standard on May 6, 2025. The new standard will only be required in
+305          submissions for studies that start after March 15, 2028.
+306
+307   Table 2: Example of a Timetable for FDA Support of a New Standard
+           Date New           Date FR Notice    Date Support for    Transition Date    Date Requirement
+       Standard Released         Published     the New Standard     (yyyy-mm-dd)          for the New
+            by SDO              Announcing           Begins                            Standard Begins
+         (yyyy-mm-dd)         Support of New     (yyyy-mm-dd)                           (yyyy-mm-dd)
+                                 Standard
+                               (yyyy-mm-dd)
+       2024-02-15            2025-05-06        2025-05-06          2026-03-15          2028-03-15
+308
+309
+310   III.      ADDITIONAL SUPPORT
+311
+312             A.     Meetings With FDA
+313
+314   Sponsors and applicants may use established FDA-sponsor meetings (e.g., pre-IND and end-of-
+315   phase 2) to discuss the study data standardization plan and to raise data standardization issues (if
+316   any) related to NDAs and BLAs. Discussions about nonclinical study data standardization plans
+317   may be initiated at the pre-IND stage and should continue throughout development. Initial
+318   discussions about which data standards to use for study data should take place as early as
+319   possible during drug development, especially for safety data, but should in any event occur no
+320   later than the end of phase 2. In general, the premarketing application meeting is considered too
+321   late to initiate data standardization discussions. For ANDAs, sponsors and applicants should
+322   discuss the study data standardization plan before the initiation of their bioequivalence program.
+323
+
+
+
+                                                       9
+324   Sponsors and applicants may submit technical questions related to data standards at any time to
+325   the technical support team identified by each Center (see the Study Data Standards Resources
+326   web page for specific contact information). Sponsors and applicants may also request a separate
+327   Type C meeting to discuss substantive data standardization issues for NDAs and BLAs. An
+328   example of such an issue might be a sponsor’s desire to use a standard (e.g., therapeutic area
+329   standard in SDTM format) that is not currently supported by FDA. The request should include
+330   adequate information to identify the appropriate FDA staff necessary to discuss the proposed
+331   agenda items.
+332
+333          B.      Implementation Support
+334
+335   Technical specification documents provide nonbinding specifications, recommendations, and
+336   general considerations on how to submit standardized clinical and nonclinical study data using
+337   the standards specified in the Data Standards Catalog. The Conformance Guide is a technical
+338   specification document that supplements the requirements described in this guidance and is
+339   intended to assist sponsors and applicants in the electronic submission of standardized study data
+340   (see section I). The Conformance Guide will be updated, as needed, and its availability
+341   announced in a Federal Register notice.
+342
+343   Sponsors and applicants with questions on how to implement the FDA-supported study data
+344   standards should contact and work with FDA technical staff. Contact information is provided on
+345   the Study Data Standards Resources web page. Sponsors and applicants may also arrange to
+346   submit sample data for a presubmission technical review. The technical staff welcomes any
+347   additional feedback or comments regarding the information posted on the web page.
+
+
+
+
+                                                     10
+

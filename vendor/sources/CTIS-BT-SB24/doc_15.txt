@@ -1,0 +1,709 @@
+CTIS Bitesize Talk: End of transition period and notifications
+including serious breaches
+16 October 2024
+
+
+
+
+                                                         An agency of the European Union
+A few housekeeping rules
+          Questions were collected in advance on www.sli.do
+                                  With event code #bt16oct
+
+
+
+
+                                    Tips for optimal screen viewing
+
+                                    ❖ Make use of the instructions under the Live broadcast section on the
+                                      event page and connect directly to the EMA's Vimeo channel 1 for the
+                                      full-screen experience
+                                    ❖ Have a stable internet connection
+
+
+
+
+  CTIS Bitesize Talk: End of transition period and notifications including serious breaches
+                                                    Classified as public by the European Medicines Agency
+Agenda
+
+
+1.End of transition period
+2.Safety relevant Notifications
+3.Reporting Serious Breaches
+4.Publication of safety-relevant notifications and Serious Breaches
+5.Q&A
+
+
+
+
+   CTIS Bitesize Talk: End of transition period and notifications including serious breaches
+                                                     Classified as public by the European Medicines Agency
+The experts for this event are:
+Moderator: Teresa Calandri
+
+
+
+
+   Ornela Ademi                               Elke Stahl                           Camelia Mihaescu           Giovanni Varricchio
+  Change Manager                                                                    Head of Service            Scientific Specialist
+                                            Senior Expert
+
+
+
+
+    CTIS Bitesize Talk: End of transition period and notifications including serious breaches
+                                                      Classified as public by the European Medicines Agency
+ The experts for this event are:
+
+
+
+
+  Anne Lenaers                 Cátia Gonçalves                     Elena Marín                          Lotte Skoulund
+                                                                                                                           Sabrina Giacomelli
+Regulatory Expert at            Scientific Officer                  Rodríguez                              Laursen
+                                                                                                                           Senior GCP Inspector
+the Belgian National                                               GCP and PhV                          GCP-inspector at
+Competent Authority                                                  Inspector                            the Danish
+                                                                                                        Medicines Agency
+
+
+
+      CTIS Bitesize Talk: End of transition period and notifications including serious breaches
+                                                        Classified as public by the European Medicines Agency
+End of transition period
+
+
+
+
+Presented by Ornela Ademi on 16 October 2024
+CTIS programme, Data Analytics and Methods Task Force (TDA)
+European Medicines Agency                                     An agency of the European Union
+Transition of clinical trials
+
+ All trials expected to continue after 30 January 2025 need to transition in CTR
+ (CTIS). As of 31 January 2025, all clinical trials need to be in CTR (CTIS).
+
+
+ Start transition no later than 16 October 2024 (the last date for
+ expedite transition procedure).
+
+
+ Consider the time necessary for completion of the MS(s) procedure - can take up
+ to 3 months.
+
+
+
+
+ 6
+                             Classified as public by the European Medicines Agency
+Transitional trials reminder
+
+                                                                                Remember to tick the
+                                                                                box on the
+                                                                                application to indicate
+                                                                                that the trial is a
+                                                                                transitional trial!
+
+                                                                                If technical issues
+                                                                                during the
+                                                                                submission of a
+                                                                                transitional trial,
+                                                                                raise a ticket with
+                                                                                ServiceNow.
+
+7
+                        Classified as public by the European Medicines Agency
+Information to help you transit a trial
+
+ •   Resources to support on transitioning trials are available on the CTIS website
+ •   Event on Training for non-commercial sponsors on transitioning trials to CTR
+     and CTIS – 9 February 2024
+ •   Latest bitesize talk - 29 February 2024 on Transitioning of trials
+ •   CTIS webinar: last year of transition - 25 March 2024
+ •   CTIS walk in clinic dedicated to transition - 18 September 2024
+ •   CTCG updated best practice guide and annex I: cover letter template for
+     sponsors transitioning trials to the CTR
+ •   Annex II: Fees for transitional trials in EU/EEA Member States
+ •   Chapter 5 of the CTIS Sponsor Handbook
+ •   Module 23 of the CTIS online training programme (Step-by-step
+     instructions: quick guide for sponsors)
+ 8
+                                 Classified as public by the European Medicines Agency
+Additional support and CTIS Training Environment
+
+
+    EMA webpage CTIS Training and Support
+
+    Regular updates on the CTIS Programme (subscribe): Clinical Trials Highlights
+
+
+    The training environment is a simulation of CTIS used in production and
+    allows users to get familiar with system functionalities.
+
+    Sponsors can express interest in gaining access to the
+    CTIS Training Environment by filling in the ongoing survey.
+
+
+
+
+9
+                               Classified as public by the European Medicines Agency
+            Any questions?
+
+Further information
+
+Official address Domenico Scarlattilaan 6 ● 1083 HS Amsterdam        ●   The Netherlands
+Telephone +31 (0)88 781 6000
+Send us a question Go to www.ema.europa.eu/contact
+
+
+
+
+          Follow us on                     @EMA_News
+             Classified as public by the European Medicines Agency
+Safety relevant Notifications
+
+
+
+
+Presented by Elke Stahl, BfArM
+16 October 2024                  An agency of the European Union
+Type of notification
+• Start of trial
+• Start of recruitment
+
+• Temporary halt, due to potential safety issue (TH)
+                          → restart only after approved substantial amendment aligned to the TH
+• Premature end, due to safety
+
+• Re-start of trial → link with approved substantial amendment after the TH
+• Re-start of recruitment
+
+• End of recruitment
+• End of trial in MS (EoT)
+• End of trial global
+
+• Unexpected event , not a SUSAR , changing benefit risk (UE)
+• Urgent safety measures (USM)
+
+• Serious Breaches, safety relevant (SB)
+• 3rd country inspection
+                                                                                   Orange = Safety relevant notifications   CTCG
+                                       Classified as confidential by the European Medicines Agency
+Safety relevant notification
+Submission of notification
+• Sponsor please complete all structured fields with information on the notification, tick
+  safety related if applicable
+• Upload of document in addition for further details is possible (but not instead!)
+• Sponsor inform with notification of other CTs (list EUCT numbers) affected by same issue,
+  location : best in structured field, or in an attached document (see public portal)
+
+Safety related notifications will be assessed by MSs
+• CTCG BP on Pharmacovigilance, part 5:
+   “Coordinated assessment of notifications submitted by sponsor via CTIS “
+
+Assessment of UE, USM and SB will be linked to notification which will push publication in
+public portal
+➢ Public portal will display all structured fields completed by sponsor only and ‘assessed my
+   MSs’; no documents or information which trials are affected too if not in structured fields
+
+                                                                                                    CTCG
+                                      Classified as confidential by the European Medicines Agency
+Safety relevant notification - Assessment
+Safety related notifications will be assessed by MSs
+▪ CTCG BP “Coordinated assessment of notifications submitted by sponsor via CTIS “
+
+▪ Risk based approach
+   • responsible RMS (in testing phase), including safety assessing MS if appropriate
+   • Review and inform in ‘CTIS text field’ - public
+        • Notification is reviewed and noted
+        • No further review, RFI, discussion w/MSs or actions is needed
+   • Assessment and use of adhoc workflow
+        • Request of further information via ‘adhoc’ workflow – please watch these RFI
+          folder!
+        • Discussion with MSCs and /or saMSs                       (even you don’t expect RFI)
+        • Outcome of assessment – internal
+           ➢ Requirements need to be sent as RFI of the adhoc workflow, or Corrective
+              measure if applicable
+        • Possible to select a coordinating MS e.g. if multiple RMS, saMS concerned with the
+          issue of the notification
+                                                                                                   CTCG
+   • Assessment can be linked to notification and will push publication
+                                     Classified as confidential by the European Medicines Agency
+Substantial amendment after temporary halt in order to apply for restart - Please select the right issue in the drop down:
+
+
+
+
+                                                                                                                       CTC
+                                                                                                                       G
+                                               Classified as confidential by the European Medicines Agency
+  Questions ?
+
+
+
+
+                                                              CTC
+                                                              G
+Classified as confidential by the European Medicines Agency
+ Reporting Serious Breaches according to
+ the Regulation (EU) No. 536/2014
+
+
+
+
+Presented by Camelia Mihaescu on 16 October 2024
+Senior GCP Scientific Specialist
+European Medicines Agency                          An agency of the European Union
+Presentation overview
+
+•    Reporting requirements for serious breaches
+•    Terminology used
+•    Algorithm for the identification of the most affected Member State
+•    Key points to consider when reporting serious breaches
+•    Responsibilities of parties involved in the notification of serious breaches
+•    Possible actions taken by Member States Concerned in relation to serious
+     breaches
+•    Reporting serious breaches in CTIS
+•    Examples of incidents: for discussion
+•    Take home messages
+18
+                                Classified as public by the European Medicines Agency
+Reporting requirements for serious breaches
+
+➢ According to Art. 52 of the CTR:
+     ▪   A serious breach (SB) is a breach likely to affect to a significant degree the safety and
+         rights of trial participants or the data reliability and robustness.
+➢ The sponsor (or delegated party) should report serious breaches (SBs) through
+  CTIS without undue delay, but no later than 7 (calendar) days of becoming
+  aware of the breach.
+
+➢ If there are reasonable grounds based on evidence to believe that a SB has
+  occurred, the sponsor should report it and investigate further, not wait until all
+  details of the breach are obtained. Updates to the SB report can be made when
+  further information becomes available.
+➢ Only SBs should be notified, not suspected SBs.
+19
+                                     Classified as public by the European Medicines Agency
+Reporting requirements for serious breaches (cont.)
+
+•    For SBs occurring exclusively outside the EU/EEA and having an impact on trial
+     participants safety and/or rights or on data reliability:
+     •   For on-going CTA assessments: sponsor should address the concerns during the
+         evaluation of the CTA (no submission of the SB through CTIS) ;
+     •   For clinical trials already authorised/ conducted in EU/EEA: the SB should be reported via
+         CTIS to all MSC (=no distinction between SBs occurring in or outside the EU/EEA, if the trial is authorised in the
+         EU/EEA).
+
+•    All relevant fields in CTIS (see Appendix IIIa) should be filled in; the sponsor is
+     encouraged to upload a report (see Appendix IIIb) containing additional documents
+     which help MSs assessing the SB.
+•    All SBs should be included in the CSR.
+20
+                                            Classified as public by the European Medicines Agency
+Terminology used
+
+❑ RMS, MSC (as per the CTA assessment)
+
+
+❑ AMS – Affected Member State: is the Member
+  State directly affected by the serious breach (e.g.
+  the MS where the sponsor is based, the MS
+  where trial participants are affected by the SB,
+  the MS where the breach occurred (this may not
+  be a MSC).
+
+
+❑ MAMS – Most Affected Member State:
+  Member State most affected by the serious
+  breach (see algorithm presented in the
+  guideline).
+
+
+
+
+21
+                                      Classified as public by the European Medicines Agency
+Algorithm for the identification of the most affected Member
+State
+
+
+
+
+                      Classified as public by the European Medicines Agency
+Key points to consider when reporting serious breaches
+
+➢ Factors to be consider when determining whether an incident qualifies as a SB:
+     ▪   Trial design;
+     ▪   Type and extent of data affected by the incident;
+     ▪   Contribution of the affected data to the statistical analysis;
+     ▪   Whether a systematic and/or significant error occurred in the treatment of the trial
+         participants.
+
+
+➢ The sponsor should perform a root cause analysis and assess the impact of the SB
+  on the safety and/or rights of trial participants and/or on data reliability and
+  robustness.
+
+23
+                                      Classified as public by the European Medicines Agency
+Responsibilities of parties involved in the notification of a
+serious breach
+➢ Sponsor:
+     ▪   Performs an investigation of potential SBs reported to them by an investigator or a third
+         party (e.g. CRO) and decides whether the case qualifies as a SB and thus should be
+         reported through CTIS;
+     ▪   Ensures that the management of SBs is included in their quality system;
+     ▪   Performs a root cause analysis for incidents meeting the criteria of a SB and implements
+         appropriate CAPAs;
+     ▪   Reports the SB through CTIS within 7 calendar days of becoming aware of the SB.
+➢ Delegated party:
+     ▪   Performs the above listed tasks on behalf of the sponsor, as per a written agreement with
+         the sponsor.
+
+24
+                                     Classified as public by the European Medicines Agency
+Responsibilities of parties involved in the notification of a
+serious breach (cont.)
+➢ Service providers:
+     ▪   Should have a system in place to identify suspected SBs;
+     ▪   Inform, in a timely manner the sponsor or the delegated party about a suspected SB.
+
+
+➢ Principal Investigator:
+     ▪   Ensures that the site staff (or delegated service provider) is able to identify a suspected
+         SB;
+     ▪   Informs, in a timely manner the sponsor or the delegated party about a suspected SB.
+
+
+
+
+25
+                                      Classified as public by the European Medicines Agency
+Responsibilities of parties involved in the notification of a
+serious breach (cont.)
+Please note that
+     ➢ CTIS does not provide a functionality for the indication of the Most Affected Member State
+       (MAMS), so this information can either be included in the structured fields or in the
+       uploaded document/report/Appendix IIIb (if any).
+          • If in doubt, the diagram in the Guideline for the notification of serious breaches should be used.
+          • If not provided, the RMS will contact the sponsor via a RFI (or in rare circumstances identify the MAMS itself).
+
+
+
+     ➢ The provided CAPA should be thorough and with dual emphasis on corrective and
+       preventive action points.
+          • The more sufficient the CAPA is, the more efficient the regulator assessment will be.
+          • It is accepted to supplement the submission with a more thorough CAPA, as soon as the SB is fully
+            investigated.
+26
+                                            Classified as public by the European Medicines Agency
+Possible actions taken by Member States Concerned in
+relation to serious breaches
+➢ GCP inspection:
+     ▪   Its outcome may lead to further regulatory or legal actions.
+
+
+➢ Regulatory actions:
+     ▪   Corrective measures described in Art.77 of the CTR (e.g. revocation, suspension of the
+         authorisation or modifications to a clinical trial);
+     ▪   Except where immediate action is required, the MSC will provide the sponsor with the
+         possibility to comment/add any further clarifications. This input is expected to be provided
+         within 7 calendar days;
+     ▪   Actions with reference to national legislation might be also applicable.
+
+27
+                                      Classified as public by the European Medicines Agency
+Reporting serious breaches in CTIS
+
+     ➢ Mandatory fields in CTIS are to be filled in and additional information can be added
+       either as free text or as a separate document uploaded in CTIS;
+
+
+     ➢ Appendix III b – Information to be submitted with a notification of a SB:
+       ▪    can be used by sponsors to submit, in a structured way, additional information related to the
+            SB (highly recommended to be used! It facilitates the assessment process for a SB!)
+
+
+     ➢ RFI – Request For Information:
+        ▪   information to be submitted after the notification of a SB with a deadline proposed by the
+            MAMS or the MS coordinating the assessment of a SB.
+        ▪   It’s necessary to further assess the SB.
+
+28
+                                       Classified as public by the European Medicines Agency
+Responsibilities of parties involved in the notification of a SB
+Please note that
+
+
+     ➢ Although the regulatory authorities envisage to assess SBs in a timely and harmonized
+       manner, the legislation does not stipulate exact timelines for this assessment.
+
+
+     ➢ Communication with the sponsors regarding the SBs is mainly done through RFIs (please
+       note that CTIS does not support notifications outside the system).
+
+
+
+
+29
+                                   Classified as public by the European Medicines Agency
+Examples of incidents: for discussion
+
+     1. One trial participant was administered unmasked IMP and therefore he was
+        unintentionally unblinded. The sponsor considered that this event could impact the
+        reliability and robustness of the data.
+(Background information: The trial participants and the team at the clinical site are blinded to the treatment,
+except for a trial nurse and part of the pharmacy team, who are responsible for masking and dispensing the
+medication to the trial participants; the medication is administered at the trial site)
+
+
+
+This incident does not meet the definition of a serious breach because it is not likely to
+affect, to a significant degree, the safety and rights of trial participants, nor the reliability and
+robustness of the data generated in the clinical trial.
+
+Acknowledgements to: Alicia Sanchez-Caro Estruch,GCP Inspector, AEMPS, Spain
+
+
+30
+                                           Classified as public by the European Medicines Agency
+Examples of incidents: for discussion (cont.)
+     2. Three lab samples for pharmacogenomic testing (a sub-study of the mail clinical trial)
+        were obtained at three consecutive visits from a trial participant. The samples were
+        sent to the central lab. The central lab personnel detected that this trial participant
+        has not consented to participate in the sub-study, while cross-checking selected data
+        from the samples received with the data in the eCRF, before performing the analysis.
+        They immediately put the sample analysis on hold and queried the site and the CRA to
+        check this inconsistency.
+     (Background information: the sub-study (collection of pharmacogenomic data) is an optional one, that
+     require separate consenting from the trial participants. )
+
+
+This incident does not meet the definition of a serious breach because it is not likely to
+affect, to a significant degree, the safety and rights of trial participants, nor the reliability and
+robustness of the data generated in the clinical trial.
+
+Acknowledgements to: Alicia Sanchez-Caro Estruch,GCP Inspector, AEMPS, Spain
+31
+                                           Classified as public by the European Medicines Agency
+Examples of incidents: for discussion (cont.)
+
+     3. In a clinical trial the IMP was an authorised drug. The pharmacist dispensed to a trial
+        participant a kit intended for the routine clinical care, instead of the kit provided by
+        the sponsor for the clinical trial. The formulation and drug concentration were the
+        same. Lack of training of the pharmacist (who was new to the team) was identified as
+        root cause; the CAPAs were: retraining and double checking at the dispensing step.
+
+
+
+
+This incident does not meet the definition of a serious breach because it is not likely to
+affect, to a significant degree, the safety and rights of trial participants, nor the reliability and
+robustness of the data generated in the clinical trial.
+
+
+
+Acknowledgements to: Sabrina Giacomelli, GCP Inspector, AIFA, Italy
+32
+                                            Classified as public by the European Medicines Agency
+Take home messages
+
+➢ Importance of observing the reporting timeline stipulated in the CTR;
+
+
+
+➢ The decision whether an incident qualifies as a serious breach depends on various
+  factors related to the clinical trial and the details of the incident- always to be
+  judged on a case by case basis;
+
+
+➢ Reporting incidents that are not real serious breaches puts burden on assessors and
+  deviates their focus from confirmed cases of serious breaches; Over-reporting to be
+  avoided!
+
+
+
+33
+                               Classified as public by the European Medicines Agency
+Take home messages (cont.)
+
+
+➢ Most affected Member State should be always indicated, if determined;
+
+
+
+➢ Appendix III b of the guideline: a helpful tool for both sponsors and assessors;
+
+
+
+➢ Importance of performing a root cause analysis in order to identify the most
+  appropriate CAPAs.
+
+
+
+
+34
+                               Classified as public by the European Medicines Agency
+                 Thank you!
+
+Further information
+camelia.mihaescu@ema.europa.eu
+
+Official address Domenico Scarlattilaan 6 ● 1083 HS Amsterdam        ●   The Netherlands
+Telephone +31 (0)88 781 6000
+Send us a question Go to www.ema.europa.eu/contact
+
+
+
+
+          Follow us on                     @EMA_News
+             Classified as public by the European Medicines Agency
+Publication of safety-relevant notifications
+and Serious Breaches
+
+
+
+
+Presented by Giovanni Varricchio on 16 October 2024
+Scientific Specialist
+European Medicines Agency                             An agency of the European Union
+Launch of new CTIS Public Portal on 18 June 2024
+
+•    Revised CTIS transparency rules became
+     applicable on 18 June 2024 with the launch of a
+     new version of CTIS public portal
+•    Reference training: Quick user guide + CTIS
+     Bitesize Talk on revised transparency rules
+•    Over 6,300 trials are public, of which over
+     2,300 with documents. Overall, more than
+     51,500 documents are now publicly available
+
+                               CTIS publication rules are summarised in the Annex 1
+    to the Guidance document on how to approach the protection of personal data and CCI while using the CTIS
+
+      More info is in the Q&A on the protection of CCI and Personal Data, and detailed list of fields subject to
+                publication is the List of CTIS application fields and documents + notifications fields
+                                         Classified as public by the European Medicines Agency
+Structured data of Notifications: what is published & when
+                                                                         Category 1                                 Category              Category 2 &
+           Structured data                       Paediatrics and/or                                              2 integrated p           3 (excl. integr.
+                                                                                              Adults                  h1&2                    ph1&2)
+                                                        PIP
+                                                                                      First MSC decision
+                                                                                                                     First
+        CTIS application fields                    First MSC decision                  30 months after            MSC decision
+                                                                                     EU/EEA End of Trial                                First MSC decision
+     CTIS application fields on
+                                                                    30 months after EU/EEA End of Trial
+   dose and treatment duration1
+
+         MSC(s) conclusions
+                                                                                                That MSC decision
+        and decision outcomes
+
+     Notifications on trial status
+                                                                                      As soon as submitted by sponsor
+           and recruitment
+
+    Notific. on serious breaches,                                                      30 months after
+     urgent safety measures,                    After MSC assessment                  EU/EEA EoT & MSC                    After MSC assessment
+         unexpected events                                                               assessment
+
+            Corrective
+ measures (suspension, revocation,                                                          When applied by MSC(s)
+       modification request)
+ 1As a temporary measure, the publication of fields ‘strength of product’ and ‘strength of active substance’ has been suspended: further information will follow
+                                                        Classified as public by the European Medicines Agency
+The notification is published only once the Member State
+assessment is finalized in CTIS
+All structured data filled in by the sponsor are subject to publication; no structured
+data filled in by the Authority is published:
+                                       Notification is published
+
+
+
+
+                                                                                                          Note
+                    MS                                                                  Since NO document on notifications is
+              finalises the                                                                published, sponsors should avoid
+                                                                                          referring to ‘attached documents’:
+              assessment
+                 in CTIS
+
+
+
+
+                                Classified as public by the European Medicines Agency
+Case scenario: if a Member State assesses that the Serious
+Breach should not have been submitted as such
+
+                   MS assesses that the Serious Breach
+                    should not have been submitted                                    The sponsor should
+                                                                                     withdraw a submitted
+                                                                                    SB only if requested by
+                                                                                      the MS after the MS
+                 MS asks the sponsor to withdraw the SB                                   assessment
+                          Through an ad hoc assessment RFI
+
+
+
+
+                         Sponsor withdraws the SB
+
+
+                    MS finalises the ad hoc assessment
+               Ad hoc assessment is now ‘completed’, and the SB is NOT
+                         published, because it was withdrawn
+
+
+                            Classified as public by the European Medicines Agency
+                 Thank you!
+
+Further information
+
+Official address Domenico Scarlattilaan 6 ● 1083 HS Amsterdam        ●   The Netherlands
+Telephone +31 (0)88 781 6000
+Send us a question Go to www.ema.europa.eu/contact
+
+
+
+
+          Follow us on                     @EMA_News
+             Classified as public by the European Medicines Agency
+Upcoming CTIS events
+
+
+                                                    •    20 November 2024, 16:00 – 17:00 CET – CTIS
+                                                         Walk-in Clinic
+
+                                                    •    For 2024 CTIS events, please consult Clinical Trials
+                                                         Information System: training and support | European
+                                                         Medicines Agency (europa.eu) and EMA events pages
+
+
+
+
+  CTIS Bitesize Talk: End of transition period and notifications including serious breaches
+                                                    Classified as public by the European Medicines Agency
+Thank you for attending today’s event
+  Please provide your feedback for this event in our
+                   Slido survey
+
+                        Use the passcode: #bt16oct
+
+      Further information
+      For the CTIS Newsletter sign up at https://ec.europa.eu/newsroom/ema/user-subscriptions/3201/create
+
+      For upcoming CTIS events visit the EMA event page.
+
+      Official address Domenico Scarlattilaan 6 ● 1083 HS Amsterdam ● The Netherlands
+      Telephone +31 (0)88 781 6000
+
+
+
+
+                              Follow us on                            @EMA_News
+                           Classified as public by the European Medicines Agency
+

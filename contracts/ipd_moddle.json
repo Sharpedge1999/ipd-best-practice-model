@@ -1,0 +1,50 @@
+{
+  "name": "IPD trace",
+  "uri": "urn:ipd-best-practice:trace:1.0",
+  "prefix": "ipd",
+  "xml": {
+    "tagAlias": "lowerCase"
+  },
+  "associations": [],
+  "types": [
+    {
+      "name": "Trace",
+      "superClass": ["Element"],
+      "properties": [
+        { "name": "binding", "isAttr": true, "type": "String" },
+        { "name": "jurisdiction", "isAttr": true, "type": "String" },
+        { "name": "deadline", "isAttr": true, "type": "String" },
+        { "name": "draft", "isAttr": true, "type": "Boolean" },
+        { "name": "record", "isAttr": true, "type": "String" },
+        { "name": "party", "isAttr": true, "type": "String" },
+        { "name": "sources", "isMany": true, "type": "Source" },
+        { "name": "reqs", "isMany": true, "type": "Req" },
+        { "name": "verifyItems", "isMany": true, "type": "Verify" }
+      ]
+    },
+    {
+      "name": "Source",
+      "superClass": ["Element"],
+      "properties": [
+        { "name": "key", "isAttr": true, "type": "String" },
+        { "name": "loc", "isAttr": true, "type": "String" },
+        { "name": "page", "isAttr": true, "type": "String" }
+      ]
+    },
+    {
+      "name": "Req",
+      "superClass": ["Element"],
+      "properties": [
+        { "name": "id", "isAttr": true, "type": "String" }
+      ]
+    },
+    {
+      "name": "Verify",
+      "superClass": ["Element"],
+      "properties": [
+        { "name": "text", "isBody": true, "type": "String" }
+      ]
+    }
+  ],
+  "enumerations": []
+}

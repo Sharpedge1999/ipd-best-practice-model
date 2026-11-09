@@ -1,0 +1,17 @@
+src: EUCTR-QA
+method: local-text
+notes:
+  R3-085: "Q&A 1.5 answer points 9-11, PDF 14-15 / chapter 1 printed 4-5 (locator first hit was the TOC). Version 7.4, October 2026, supersedes 7.3 confirmed on the cover."
+  R3-086: "Point 9, PDF 14 / chapter 1 printed 4. 'Investigators therefore do not notify authorities directly' is the extractor's inference."
+  R3-098: "Points 522-523, PDF 136-137 / chapter 11 printed 1-2; source uses 'should' for completing the analysis and submitting within the period."
+  R3-100: "Points 498-499, PDF 131-132 / chapter 10 printed 8-9."
+  R3-104: "Points 365-367, PDF 95 / chapter 7 printed 22. Point 368 (USM requiring protocol update to be followed by SM submission, printed 23) supports the cross-reference in R3-030."
+  R3-105: "Points 525-527, PDF 137 / chapter 11 printed 2; the Q&A bases the obligation on Art. 53."
+except:
+  R3-085:
+    v: paraphrase-distorted
+    s: low
+    note: "Source (point 11) says such documents or data 'shall not be requested or submitted'; paraphrase weakens this to 'should not'. Rest of the paraphrase faithful (PDF 14-15 / chapter 1 printed 4-5)."
+    corr: "Documents or data not foreseen by the Regulation (e.g. the ICH E6 progress report) shall not be requested or submitted based on recommendations in different guidelines."
+evpage:
+  R3-085: "PDF 15 / printed 5 (chapter 1, point 11)"

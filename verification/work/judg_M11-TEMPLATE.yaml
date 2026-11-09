@@ -1,0 +1,24 @@
+src: M11-TEMPLATE
+method: local-text
+notes:
+  R2-112: "Precise loc: Section 0.3 'Template Conventions and General Instructions' (heading table on printed v-vii; 'Suggestions for Finalising Document' incl. 'remove all instructional text' on printed viii). Template forbids adding L1 headings; additions allowed for L2 and lower at the end of the higher-level section."
+  R2-113: "Footer page printed 25 (PDF 34) correct."
+except:
+  R2-115:
+    v: page-wrong
+    s: low
+    note: "10.2 Analysis Sets is on PDF 55 with footer 46; TOC also gives 46. Cited page is one too high."
+    corr: "page: printed 46 / PDF 55"
+    ev_page: "PDF 55 / printed 46"
+  R2-116:
+    v: page-wrong
+    s: low
+    note: "11.6 Risk-Based Quality Management is on PDF 61 with footer 52; TOC also gives 52."
+    corr: "page: printed 52 / PDF 61"
+    ev_page: "PDF 61 / printed 52"
+  R2-117:
+    v: page-wrong
+    s: low
+    note: "11.10 Protocol Deviations is on PDF 62 with footer 53; TOC also gives 53."
+    corr: "page: printed 53 / PDF 62"
+    ev_page: "PDF 62 / printed 53"

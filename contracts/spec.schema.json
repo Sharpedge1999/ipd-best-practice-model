@@ -1,0 +1,390 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ipd-best-practice:contracts:spec:1.0",
+  "title": "iPD model spec (L3 or L4)",
+  "description": "GEN-01 spec template plus the extensions of workflow_plan section 4. One file per model (spec/L3.yaml, spec/L4-0n.yaml). Structure only; reference resolution is checked by tools/lint_spec.py, graph and BPMN design rules by the validator (V1).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "title", "level", "pools", "nodes", "flows"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^(L3|L4-0[1-9])$"
+    },
+    "title": { "$ref": "#/$defs/nonEmpty" },
+    "level": { "enum": ["L3", "L4"] },
+    "parent": {
+      "description": "SCP-06: the L3 call activity this L4 refines. null or absent on L3.",
+      "oneOf": [
+        { "type": "null" },
+        { "$ref": "#/$defs/parent" }
+      ]
+    },
+    "interface": { "$ref": "#/$defs/interface" },
+    "pools": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/pool" }
+    },
+    "lanes": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/lane" }
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/node" }
+    },
+    "flows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/flow" }
+    },
+    "message_flows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/messageFlow" }
+    },
+    "data": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/data" }
+    },
+    "groups": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/group" }
+    },
+    "rule_exceptions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/ruleException" }
+    },
+    "open_items": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^\\[(verify|proposal|unresolved)[^\\]]*\\]\\s*\\S"
+      }
+    },
+    "notes": {
+      "description": "Model-level notes; exported by the converter as documentation on the internal pool's process (S0-18). A string, or (as before) a list of one-line notes joined with newlines on export.",
+      "oneOf": [
+        { "$ref": "#/$defs/nonEmpty" },
+        { "type": "array", "items": { "$ref": "#/$defs/nonEmpty" } }
+      ]
+    },
+    "annotations": {
+      "type": "array",
+      "description": "Text annotations (S0-18). Each sits in the pool/process of its first associated element.",
+      "items": { "$ref": "#/$defs/annotation" }
+    }
+  },
+  "allOf": [
+    {
+      "if": { "required": ["level"], "properties": { "level": { "const": "L4" } } },
+      "then": {
+        "required": ["parent", "interface"],
+        "properties": {
+          "id": { "pattern": "^L4-0[1-9]$" },
+          "parent": { "$ref": "#/$defs/parent" }
+        }
+      }
+    },
+    {
+      "if": { "required": ["level"], "properties": { "level": { "const": "L3" } } },
+      "then": {
+        "properties": {
+          "id": { "const": "L3" },
+          "parent": { "type": "null" }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "nonEmpty": { "type": "string", "minLength": 1, "pattern": "\\S" },
+    "modelId": { "type": "string", "pattern": "^(L3|L4-0[1-9])$" },
+    "nodeId": { "type": "string", "pattern": "^[SEAGI][0-9]{1,3}[a-z]?$" },
+    "poolId": { "type": "string", "pattern": "^P_[A-Z][A-Z0-9_]*$" },
+    "laneId": { "type": "string", "pattern": "^L_[A-Z][A-Z0-9_]*$" },
+    "flowId": { "type": "string", "pattern": "^F[0-9]{1,3}[a-z]?$" },
+    "messageFlowId": { "type": "string", "pattern": "^M[0-9]{1,3}[a-z]?$" },
+    "dataId": { "type": "string", "pattern": "^D[0-9]{1,3}[a-z]?$" },
+    "groupId": { "type": "string", "pattern": "^GR_[A-Z0-9_]+$" },
+    "annotationId": { "type": "string", "pattern": "^TA[0-9]{1,3}[a-z]?$" },
+    "anyElementId": {
+      "type": "string",
+      "pattern": "^([SEAGI][0-9]{1,3}[a-z]?|F[0-9]{1,3}[a-z]?|M[0-9]{1,3}[a-z]?|D[0-9]{1,3}[a-z]?|TA[0-9]{1,3}[a-z]?|GR_[A-Z0-9_]+|P_[A-Z][A-Z0-9_]*|L_[A-Z][A-Z0-9_]*)$"
+    },
+    "reqId": { "type": "string", "pattern": "^REQ-[0-9]{3}$" },
+    "binding": {
+      "enum": ["binding-law", "binding-ICH", "guidance", "best-practice", "verify-binding"]
+    },
+    "jurisdictionList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "enum": ["ICH", "EU", "US"] }
+    },
+    "srcRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["key", "loc"],
+      "properties": {
+        "key": { "type": "string", "pattern": "^[A-Za-z0-9]+(-[A-Za-z0-9]+)*$" },
+        "loc": { "$ref": "#/$defs/nonEmpty" },
+        "page": { "type": "string" }
+      }
+    },
+    "srcList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/srcRef" }
+    },
+    "verifyList": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/nonEmpty" }
+    },
+    "parent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "node"],
+      "properties": {
+        "model": { "$ref": "#/$defs/modelId" },
+        "node": { "$ref": "#/$defs/nodeId" }
+      }
+    },
+    "interface": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["start", "ends"],
+      "description": "SCP-06: start and end events of the internal process that match the parent step's input and output; message flows that realise the parent's hand-offs.",
+      "properties": {
+        "start": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/nodeId" } },
+        "ends": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/nodeId" } },
+        "message_flows": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/messageFlowId" } }
+      }
+    },
+    "pool": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "kind", "expanded"],
+      "properties": {
+        "id": { "$ref": "#/$defs/poolId" },
+        "name": { "$ref": "#/$defs/nonEmpty" },
+        "kind": { "enum": ["internal", "external"] },
+        "expanded": { "type": "boolean" },
+        "src": { "$ref": "#/$defs/srcList" }
+      }
+    },
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "name", "pool", "src"],
+      "properties": {
+        "id": { "$ref": "#/$defs/laneId" },
+        "name": { "$ref": "#/$defs/nonEmpty" },
+        "pool": { "$ref": "#/$defs/poolId" },
+        "src": { "$ref": "#/$defs/srcList", "minItems": 1 }
+      }
+    },
+    "node": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type"],
+      "anyOf": [
+        { "required": ["lane"] },
+        { "required": ["pool"] }
+      ],
+      "properties": {
+        "id": { "$ref": "#/$defs/nodeId" },
+        "type": {
+          "enum": [
+            "task", "call-activity",
+            "start", "start-message", "start-timer", "end",
+            "xor-split", "xor-join", "and-split", "and-join", "or-split", "or-join",
+            "intermediate-catch-message", "intermediate-throw-message", "intermediate-catch-timer"
+          ]
+        },
+        "label": {
+          "$ref": "#/$defs/nonEmpty",
+          "description": "Required except for and-split, and-join, xor-join, or-join (unlabelled by convention). Splitting XOR/OR gateways: a question ending in '?' (LBL-03, checked by V1)."
+        },
+        "lane": { "$ref": "#/$defs/laneId" },
+        "pool": {
+          "$ref": "#/$defs/poolId",
+          "description": "Only for nodes in an expanded pool without lanes; otherwise give lane."
+        },
+        "calls": {
+          "oneOf": [
+            { "type": "null" },
+            { "type": "string", "pattern": "^L4-0[1-9]$" }
+          ],
+          "description": "Called model. null only on an interface call activity (interface: true)."
+        },
+        "interface": {
+          "type": "boolean",
+          "description": "Call activities only: true marks an interface placeholder for a neighbouring process outside this model set; then calls must be null (S0-18)."
+        },
+        "src": { "$ref": "#/$defs/srcList" },
+        "req": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/reqId" } },
+        "binding": { "$ref": "#/$defs/binding" },
+        "jurisdiction": { "$ref": "#/$defs/jurisdictionList" },
+        "deadline": { "type": "string" },
+        "record": { "type": "string" },
+        "party": {
+          "type": "string",
+          "description": "Verbatim party term(s) of the element's REQs, several joined with '; ' (ipd:trace/@party)."
+        },
+        "group": {
+          "oneOf": [ { "type": "null" }, { "$ref": "#/$defs/groupId" } ]
+        },
+        "path": { "enum": ["main", "alt", "exception"] },
+        "draft": { "type": "boolean" },
+        "verify": { "$ref": "#/$defs/verifyList" },
+        "justification": {
+          "$ref": "#/$defs/nonEmpty",
+          "description": "FLW-02 reason; required for intermediate events and OR splits."
+        }
+      },
+      "allOf": [
+        {
+          "if": { "required": ["type"], "properties": { "type": { "enum": ["and-split", "and-join", "xor-join", "or-join"] } } },
+          "else": { "required": ["label"] }
+        },
+        {
+          "if": { "required": ["type"], "properties": { "type": { "enum": ["task", "call-activity"] } } },
+          "then": {
+            "required": ["src", "req", "binding"],
+            "properties": {
+              "src": { "minItems": 1 },
+              "req": { "minItems": 1 }
+            }
+          }
+        },
+        {
+          "if": { "required": ["type"], "properties": { "type": { "const": "call-activity" } } },
+          "then": {
+            "required": ["calls"],
+            "allOf": [
+              {
+                "if": { "required": ["calls"], "properties": { "calls": { "type": "null" } } },
+                "then": { "required": ["interface"], "properties": { "interface": { "const": true } } }
+              },
+              {
+                "if": { "required": ["interface"], "properties": { "interface": { "const": true } } },
+                "then": { "properties": { "calls": { "type": "null" } } }
+              }
+            ]
+          },
+          "else": {
+            "properties": { "calls": { "type": "null" } },
+            "not": { "required": ["interface"] }
+          }
+        },
+        {
+          "if": {
+            "required": ["type"],
+            "properties": {
+              "type": { "enum": ["intermediate-catch-message", "intermediate-throw-message", "intermediate-catch-timer", "or-split"] }
+            }
+          },
+          "then": { "required": ["justification"] }
+        }
+      ]
+    },
+    "annotation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "text", "assoc"],
+      "properties": {
+        "id": { "$ref": "#/$defs/annotationId" },
+        "text": { "$ref": "#/$defs/nonEmpty", "description": "Free text, English, hyphen instead of em dash." },
+        "assoc": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "oneOf": [ { "$ref": "#/$defs/nodeId" }, { "$ref": "#/$defs/flowId" } ] }
+        },
+        "src": { "$ref": "#/$defs/srcList" }
+      }
+    },
+    "flow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "from", "to"],
+      "properties": {
+        "id": { "$ref": "#/$defs/flowId" },
+        "from": { "$ref": "#/$defs/nodeId" },
+        "to": { "$ref": "#/$defs/nodeId" },
+        "label": { "type": "string" },
+        "default": { "type": "boolean" }
+      }
+    },
+    "messageFlow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "from", "to", "label"],
+      "properties": {
+        "id": { "$ref": "#/$defs/messageFlowId" },
+        "from": {
+          "oneOf": [ { "$ref": "#/$defs/nodeId" }, { "$ref": "#/$defs/poolId" } ]
+        },
+        "to": {
+          "oneOf": [ { "$ref": "#/$defs/nodeId" }, { "$ref": "#/$defs/poolId" } ]
+        },
+        "label": { "$ref": "#/$defs/nonEmpty" },
+        "src": { "$ref": "#/$defs/srcList" },
+        "req": { "type": "array", "uniqueItems": true, "items": { "$ref": "#/$defs/reqId" } },
+        "binding": { "$ref": "#/$defs/binding" },
+        "jurisdiction": { "$ref": "#/$defs/jurisdictionList" },
+        "deadline": { "type": "string" },
+        "party": {
+          "type": "string",
+          "description": "Verbatim party term(s) of the message flow's REQs, several joined with '; ' (ipd:trace/@party)."
+        },
+        "draft": { "type": "boolean" },
+        "verify": { "$ref": "#/$defs/verifyList" }
+      }
+    },
+    "data": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "label", "assoc"],
+      "properties": {
+        "id": { "$ref": "#/$defs/dataId" },
+        "type": { "enum": ["data-object", "data-store"] },
+        "label": { "$ref": "#/$defs/nonEmpty" },
+        "assoc": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["node", "dir"],
+            "properties": {
+              "node": { "$ref": "#/$defs/nodeId" },
+              "dir": { "enum": ["in", "out"] }
+            }
+          }
+        },
+        "src": { "$ref": "#/$defs/srcList" },
+        "verify": { "$ref": "#/$defs/verifyList" }
+      }
+    },
+    "group": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "members"],
+      "properties": {
+        "id": { "$ref": "#/$defs/groupId" },
+        "label": { "$ref": "#/$defs/nonEmpty" },
+        "members": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "$ref": "#/$defs/nodeId" } }
+      }
+    },
+    "ruleException": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rule", "element", "reason"],
+      "description": "Recorded deviation from a design rule, e.g. ROL-03 for an expanded external pool, or DEC-05 / DEC-06 annotations for unstructured fragments (element = gateway or end event).",
+      "properties": {
+        "rule": { "type": "string", "pattern": "^[A-Z]{3}-[0-9]{2}$" },
+        "element": { "$ref": "#/$defs/anyElementId" },
+        "reason": { "$ref": "#/$defs/nonEmpty" }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+ "R5-071": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 7 / printed 2"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 6 / printed 1"
+  ],
+  "quote_in_loc": false
+ }
+}

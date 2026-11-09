@@ -1,0 +1,427 @@
+R1-001 | P3.1 | PDF 12 / printed 4 | A trial should be conducted in compliance with the protocol
+R1-002 | P6.2 | PDF 13 / printed 5 | Factors critical to the quality of the trial should be identified prospectively.
+R1-003 | P6.3 | PDF 13 / printed 5 | avoid, detect, address and prevent recurrence of serious noncompliance
+R1-004 | P7.1 | PDF 13 / printed 5 | Trial processes should be proportionate to the risks inherent in the trial
+R1-005 | P7.3 | PDF 13 / printed 5 | Risks to critical to quality factors should be managed proactively
+R1-006 | P7.4 | PDF 13 / printed 5 | 7.4 Trial processes should be operationally feasible and avoid unnecessary complexity, procedures
+R1-007 | P8.3 | PDF 14 / printed 6 | should be clear, concise and operationally feasible.
+R1-008 | P9.5 | PDF 14 / printed 6 | Essential records should be retained securely by sponsors and investigators
+R1-009 | P10.1 | PDF 15 / printed 7 | they retain overall responsibility for their respective activities.
+R1-010 | P10.3 | PDF 15 / printed 7 | should maintain appropriate oversight of the aforementioned activities.
+R1-011 | A1-1.4.7 | PDF 18 / printed 10 | no deviations from or changes to the protocol should be initiated
+R1-012 | A1-1.4.8(a) | PDF 19 / printed 11 | Deviations from the protocol to eliminate immediate hazards to the trial participants
+R1-013 | A1-1.4.8(b) | PDF 19 / printed 11 | Changes increasing the risk to participants and/or significantly affecting the conduct of
+R1-014 | A1-1.4.9 | PDF 19 / printed 11 | 1.4.9 Ensuring that the IRB/IEC (see section 1.1) promptly notifies in writing
+R1-015 | A1-2.3.1 | PDF 20 / printed 12 | The investigator retains the ultimate responsibility
+R1-016 | A1-2.4.6 | PDF 21 / printed 13 | 2.4.6 The investigator or the sponsor should promptly communicate to the IRB/IEC
+R1-017 | A1-2.5.2 | PDF 21 / printed 13 | 2.5.2 The investigator should comply with the protocol, GCP and applicable regulatory
+R1-018 | A1-2.5.3 | PDF 21 / printed 13 | document all protocol deviations.
+R1-019 | A1-2.5.3 | PDF 21 / printed 13 | 2.5.3 The investigator should document all protocol deviations. In addition to those
+R1-020 | A1-2.5.3 | PDF 21 / printed 13 | In addition to those identified by the investigator themselves, protocol deviations relevant
+R1-021 | A1-2.5.3 | PDF 21 / printed 13 | In addition to those identified by the investigator themselves, protocol deviations relevant
+R1-022 | A1-2.5.4 | PDF 21 / printed 13 | deviate only where necessary to eliminate an immediate hazard(s)
+R1-023 | A1-2.5.4 | PDF 21 / printed 13 | inform the sponsor promptly.
+R1-024 | A1-2.5.5 | PDF 21 / printed 13 | report information on the immediate hazard,
+R1-025 | A1-2.12.2 | PDF 29 / printed 21 | Source records should be attributable, legible, contemporaneous, original, accurate and complete.
+R1-026 | A1-2.12.6 | PDF 30 / printed 22 | Changes or corrections in the reported data should be traceable,
+R1-027 | A1-2.12.11 | PDF 30 / printed 22 | should have control of all essential records generated
+R1-028 | A1-2.12.12 | PDF 31 / printed 23 | 2.12.12 The investigator/institution should retain the essential records for the required retention
+R1-029 | A1-2.12.14 | PDF 31 / printed 23 | should make available for direct access all requested
+R1-030 | A1-3.1.2 | PDF 31 / printed 23 | factors that are critical to the quality of the trial
+R1-031 | A1-3.9.2 | PDF 34 / printed 26 | 3.9.2 The sponsor should ensure that trial processes are conducted in compliance
+R1-032 | A1-3.9.3 | PDF 35 / printed 27 | The sponsor should determine necessary trial-specific criteria for classifying protocol deviations as
+R1-033 | A1-3.9.3 | PDF 35 / printed 27 | Important protocol deviations are a subset of protocol deviations
+R1-034 | A1-3.9.5 | PDF 35 / printed 27 | The range and extent of oversight measures should be fit for purpose
+R1-035 | A1-3.9.6 | PDF 35 / printed 27 | 3.9.6 The sponsor should ensure appropriate and timely escalation and follow-up of
+R1-036 | A1-3.10 | PDF 35 / printed 27 | critical to quality factors as described in ICH E8(R1)).
+R1-037 | A1-3.10 | PDF 35 / printed 27 | The sponsor should adopt a proportionate and risk- based approach to quality
+R1-038 | A1-3.10.1.1 | PDF 36 / printed 28 | identify risks that may have a meaningful impact on critical to quality
+R1-039 | A1-3.10.1.2 | PDF 36 / printed 28 | 3.10.1.2 Risk Evaluation The sponsor should evaluate identified risks and existing controls
+R1-040 | A1-3.10.1.3 | PDF 36 / printed 28 | 3.10.1.3 Risk Control Risk control should be proportionate to the importance of
+R1-041 | A1-3.10.1.3 | PDF 36 / printed 28 | Where relevant, the sponsor should set pre-specified acceptable ranges (e.g., quality tolerance
+R1-042 | A1-3.10.1.3 | PDF 36 / printed 28 | an evaluation should be performed to determine if there is a possible
+R1-043 | A1-3.10.1.4 | PDF 36 / printed 28 | 3.10.1.4 Risk Communication The sponsor should document and communicate the identified risks
+R1-044 | A1-3.10.1.5 | PDF 37 / printed 29 | 3.10.1.5 Risk Review The sponsor should periodically review risk control measures to
+R1-045 | A1-3.10.1.6 | PDF 37 / printed 29 | document them in the clinical trial report (see ICH E3).
+R1-046 | A1-3.11.1 | PDF 37 / printed 29 | implementing risk-based strategies to identify potential or actual causes
+R1-047 | A1-3.11.3 | PDF 38 / printed 30 | Within clinical trials, monitoring and data management processes are the main quality
+R1-048 | A1-3.11.4 | PDF 38 / printed 30 | However, monitoring should be performed by persons not involved in the clinical
+R1-049 | A1-3.11.4.1(a) | PDF 39 / printed 31 | be determined based on identified risks.
+R1-050 | A1-3.11.4.2(a) | PDF 39 / printed 31 | Centralised monitoring is an evaluation of accumulated data,
+R1-051 | A1-3.11.4.2(b) | PDF 39 / printed 31 | including protocol noncompliance and potentially unreliable data.
+R1-052 | A1-3.11.4.2(c) | PDF 39 / printed 31 | (c) Centralised monitoring may support the selection of sites and/or processes for
+R1-053 | A1-3.11.4.3 | PDF 39 / printed 31 | The plan should focus on aspects that are critical to quality.
+R1-054 | A1-3.11.4.3 | PDF 40 / printed 32 | should be addressed in the monitoring plan.
+R1-055 | A1-3.11.4.4 | PDF 40 / printed 32 | 3.11.4.4 Monitoring Procedures Persons performing monitoring should follow the sponsor's monitoring plan
+R1-056 | A1-3.11.4.5.1(a) | PDF 40 / printed 32 | (a) Establishing and maintaining a line of communication between the sponsor and
+R1-057 | A1-3.11.4.5.1(b) | PDF 40 / printed 32 | relevant deviations from the protocol, GCP and the applicable regulatory requirements
+R1-058 | A1-3.11.4.5.1(b) | PDF 40 / printed 32 | (b) Informing the investigator or other parties and individuals involved in the
+R1-059 | A1-3.11.4.5.1(b) | PDF 40 / printed 32 | Important deviations should be highlighted and should be the focus of remediation
+R1-060 | A1-3.11.4.5.1(c) | PDF 40 / printed 32 | (c) Informing the investigator or other parties and individuals involved in the
+R1-061 | A1-3.11.4.5.1(d) | PDF 40 / printed 32 | should be proportionate to their importance.
+R1-062 | A1-3.11.4.5.2(b) | PDF 41 / printed 33 | follow the current approved protocol and other protocol-related documents,
+R1-063 | A1-3.11.4.5.2(i) | PDF 41 / printed 33 | Confirming that the investigator provides the required reports, notifications or other information
+R1-064 | A1-3.11.4.5.4(a) | PDF 42 / printed 34 | Verifying that the investigator is enrolling only eligible trial participants.
+R1-065 | A1-3.11.4.5.4(b)(ii) | PDF 42 / printed 34 | Identify missing data, inconsistent data, data outliers, unexpected lack of variability and
+R1-066 | A1-3.11.4.5.4(c) | PDF 42 / printed 34 | (c) Identifying significant errors in data collection and reporting at a site
+R1-067 | A1-3.11.4.6(a) | PDF 42 / printed 34 | a description of significant findings, conclusions and actions required to resolve them
+R1-068 | A1-3.11.4.6(b) | PDF 43 / printed 35 | in a timely manner for review and follow-up.
+R1-069 | A1-3.11.4.6(c) | PDF 43 / printed 35 | findings requiring escalation for action and resolution.
+R1-070 | A1-3.11.4.6(c) | PDF 43 / printed 35 | (c) When needed, the report should describe findings requiring escalation for action
+R1-071 | A1-3.12.1 | PDF 43 / printed 35 | should lead to appropriate and proportionate action by the sponsor to secure
+R1-072 | A1-3.12.2 | PDF 43 / printed 35 | perform a root cause analysis, implement appropriate corrective and preventive actions
+R1-073 | A1-3.12.2 | PDF 43 / printed 35 | 3.12.2 If noncompliance that significantly affects or has the potential to significantly
+R1-074 | A1-3.12.2 | PDF 43 / printed 35 | likely to significantly impact the rights, safety or well-being
+R1-075 | A1-3.12.2 | PDF 43 / printed 35 | (i.e., serious noncompliance), the sponsor should notify the
+R1-076 | A1-3.12.3 | PDF 43 / printed 35 | should consider terminating the investigator's/institution's or service provider's participation
+R1-077 | A1-3.12.3 | PDF 43 / printed 35 | 3.12.3 If significant noncompliance is identified on the part of an investigator/institution
+R1-078 | A1-3.12.3 | PDF 43 / printed 35 | 3.12.3 If significant noncompliance is identified on the part of an investigator/institution
+R1-079 | A1-3.13.3 | PDF 44 / printed 36 | take prompt action to address immediate hazards to participants.
+R1-080 | A1-3.13.3 | PDF 45 / printed 37 | The sponsor should consider whether the protocol requires amendment in response to
+R1-081 | A1-3.16.1(b) | PDF 47 / printed 39 | (b) The sponsor should apply quality control to the relevant stages of
+R1-082 | A1-3.16.1(w) | PDF 49 / printed 41 | incidents (including security breaches) that have a significant impact on the trial
+R1-083 | A1-3.16.1(x)(ix) | PDF 50 / printed 42 | a process in place for service providers and investigator(s)/institution(s)
+R1-084 | A1-3.16.2(d) | PDF 51 / printed 43 | criteria for inclusion or exclusion of trial participants
+R1-085 | A1-3.16.3(a) | PDF 51 / printed 43 | (a) The sponsor (or subsequent owners of the data) should retain the
+R1-086 | A2-2.4 | PDF 63 / printed 55 | proportionate to the importance of the data being collected
+R1-087 | A2-2.4.1 | PDF 64 / printed 56 | In either case mentioned above, the level of investigator oversight should be
+R1-088 | A2-3.2.2 | PDF 65 / printed 57 | 3.2.2 Sponsors considering incorporating trial-related activities that are part of usual clinical
+R1-089 | A2-3.8 | PDF 70 / printed 62 | specifically customised to the clinical trial and its critical to quality factors
+R1-090 | A2-3.8 | PDF 70 / printed 62 | Sponsors should maintain appropriate oversight of service providers including ensuring maintenance of
+R1-091 | P6.2 | PDF 13 / printed 5 | attributes of a trial that are fundamental to the protection of participants,
+R1-092 | A1-2.10.6 | PDF 28 / printed 20 | used only in accordance with the approved protocol.
+R1-093 | A1-2.11 | PDF 29 / printed 21 | promptly document and explain to the sponsor any premature unblinding
+R1-094 | A1-2.12.3 | PDF 29 / printed 21 | be responsible for the timely review of data,
+R1-095 | A1-2.12.10(e) | PDF 30 / printed 22 | are reported to the sponsor and, where applicable, to the IRB/IEC.
+R1-096 | A1-3.1.4 | PDF 31 / printed 23 | should avoid unnecessary complexity, procedures and data collection.
+R1-097 | A1-3.3 | PDF 32 / printed 24 | the sponsor should determine the roles and allocate their trial-related activities accordingly.
+R1-098 | A1-3.6.3(a) | PDF 32 / printed 24 | To conduct the trial in accordance with the approved protocol
+R1-099 | A1-3.6.6 | PDF 33 / printed 25 | report to the sponsor incidents that might have an impact on the
+R1-100 | A1-3.17.2(a) | PDF 52 / printed 44 | meet the standards of ICH E3
+R1-101 | A1-4.2.2 | PDF 54 / printed 46 | 4.2.2 Relevant Metadata, Including Audit Trails The approach used by the responsible
+R1-102 | A1-4.2.3 | PDF 55 / printed 47 | Procedures for review of trial-specific data, audit trails and other relevant metadata
+R1-103 | A1-4.2.4 | PDF 55 / printed 47 | 4.2.4 Data Corrections There should be processes to correct data errors that
+R1-104 | A1-4.2.6(b) | PDF 56 / printed 48 | should be confirmed and documented in accordance with pre-specified procedures.
+R1-105 | A1-4.2.6(b) | PDF 56 / printed 48 | compilation of and addressing the impact of noncompliance issues, including protocol deviations.
+R1-106 | A1-4.2.6(c) | PDF 56 / printed 48 | (c) Data extraction and determination of data analysis sets should take place
+R1-107 | A1-4.2.7 | PDF 56 / printed 48 | 4.2.7 Retention and Access The trial data and relevant metadata should be
+R1-108 | A1-4.3.4(a) | PDF 57 / printed 49 | (a) The responsible party is responsible for the validation status of the
+R1-109 | AppB-Intro | PDF 78 / printed 70 | can reduce the number of deviations
+R1-110 | AppB-B.2.5 | PDF 78 / printed 70 | B.2.5 A statement that the trial will be conducted in compliance with
+R1-111 | AppB-B.10.4 | PDF 81 / printed 73 | B.10.4 The selection of participants to be included in the planned analyses,
+R1-112 | AppB-B.12.1 | PDF 82 / printed 74 | Description of identified critical to quality factors, associated risks and risk mitigation
+R1-113 | AppB-B.12.2 | PDF 82 / printed 74 | B.12.2 Summary of the monitoring approaches that are part of the quality
+R1-114 | AppB-B.12.3 | PDF 82 / printed 74 | Description of the process for the handling of noncompliance with the protocol
+R1-115 | AppC-C.1.3 | PDF 83 / printed 75 | C.1.3 The essential records permit and contribute to the evaluation of the
+R1-116 | AppC-C.2.3 | PDF 83 / printed 75 | C.2.3 These essential records should be maintained in or referred to from
+R1-117 | AppC-C.2.5 | PDF 83 / printed 75 | C.2.5 The sponsor and investigator/institution should ensure that the essential records are
+R1-118 | AppC-C.2.6 | PDF 84 / printed 76 | C.2.6 The sponsor and investigator/institution should retain the essential records in a
+R1-119 | AppC-C.3.1(a) | PDF 85 / printed 77 | (a) Is a document that is submitted to or issued by the
+R1-120 | AppC-C.3.1(r) | PDF 86 / printed 78 | arising issues/noncompliance and deviations detected and implementation of corrective and preventative actions;
+R1-121 | AppC-C.3.1(s) | PDF 86 / printed 78 | (s) Documents the compliance with the protocol and/or procedures for management and
+R1-122 | AppC-C.3.2 | PDF 87 / printed 79 | This table is not an exhaustive list, and other trial records may
+R1-123 | AppC-C.3.2 | PDF 89 / printed 81 | Records and reports of noncompliance including protocol deviations and corrective and preventative
+R1-124 | AppC-C.3.2 | PDF 89 / printed 81 | An asterisk (*) identifies those essential records that should generally be in
+R1-125 | AppC-C.3.2 | PDF 89 / printed 81 | An asterisk (*) identifies those essential records that should generally be in
+R1-126 | AppC-C.3.2 | PDF 89 / printed 81 | An asterisk (*) identifies those essential records that should generally be in
+R1-127 | AppC-C.3.2 | PDF 89 / printed 81 | An asterisk (*) identifies those essential records that should generally be in
+R1-128 | AppC-C.3.2 | PDF 87 / printed 79 | An asterisk (*) identifies those essential records that should generally be in
+R1-129 | AppC-C.3.2 | PDF 87 / printed 79 | An asterisk (*) identifies those essential records that should generally be in
+R1-130 | GL:Compliance (in relation to trials) | PDF 92 / printed 84 | Adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements.
+R1-131 | GL:Protocol | PDF 96 / printed 88 | the term "protocol" refers to protocol and protocol amendments.
+R1-132 | GL:Protocol Amendment | PDF 96 / printed 88 | A documented description of a change(s) to a protocol.
+R1-133 | GL:Monitoring | PDF 96 / printed 88 | Monitoring The act of overseeing the progress of a clinical trial and
+R1-134 | GL:Monitoring Plan | PDF 96 / printed 88 | Monitoring Plan A document that describes the strategy, methods, responsibilities and requirements
+R1-135 | GL:Monitoring Report | PDF 96 / printed 88 | A documented report following site and/or centralised monitoring activities.
+R1-136 | GL:Essential Records | PDF 93 / printed 85 | Essential Records Essential records are the documents and data (and relevant metadata),
+R1-137 | GL:Audit Trail | PDF 91 / printed 83 | The audit trail should show activities, initial entry and changes to data
+R1-138 | GL:Source Records | PDF 97 / printed 89 | Source Records Original documents or data (which includes relevant metadata) or certified
+R1-139 | GL:Clinical Trial/Study Report (CSR) | PDF 92 / printed 84 | Clinical Trial/Study Report (CSR) A documented description of a trial of any
+R1-140 | GL:Sponsor | PDF 98 / printed 90 | Sponsor An individual, company, institution or organisation that takes responsibility for the
+R1-141 | GL:Investigator | PDF 95 / printed 87 | Investigator A person responsible for the conduct of the clinical trial, including
+R1-142 | GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC) | PDF 95 / printed 87 | Institutional Review Board (IRB)/Independent Ethics Committee (IEC) An independent body (a review
+R1-143 | GL:Regulatory Authorities | PDF 97 / printed 89 | Regulatory Authorities Bodies having the power to regulate, including those that review
+R1-144 | GL:Service Provider | PDF 97 / printed 89 | Service Provider A person or organisation (commercial, academic or other) providing a
+R2-001 | S3 | PDF 9 / printed 3 | DESIGNING QUALITY INTO CLINICAL STUDIES The quality by design approach to clinical
+R2-002 | S3.1 | PDF 9 / printed 3 | The likelihood that a clinical study will answer the research questions while
+R2-003 | S3.2 | PDF 10 / printed 4 | attributes of a study whose integrity is fundamental
+R2-004 | S3.2 | PDF 10 / printed 4 | 3.2 Critical to Quality Factors A basic set of factors relevant to
+R2-005 | S3.2 | PDF 10 / printed 4 | These quality factors are considered to be critical because, if their integrity
+R2-006 | S3.2 | PDF 10 / printed 4 | Section 7 of this document provides considerations that can help identify critical
+R2-007 | S3.2 | PDF 10 / printed 4 | The sponsor and other parties designing quality into a clinical study should
+R2-008 | S3.2 | PDF 10 / printed 4 | Where it is decided that risks should be mitigated, the necessary control
+R2-009 | S3.2 | PDF 10 / printed 4 | Where it is decided that risks should be mitigated, the necessary control
+R2-010 | S3.2 | PDF 10 / printed 4 | The term risk is used here in the context of general risk
+R2-011 | S3.2 | PDF 10 / printed 4 | Proactive communication of the critical to quality factors and risk mitigation activities
+R2-012 | S3.2 | PDF 11 / printed 5 | Perfection in every aspect of an activity is rarely achievable or can
+R2-013 | S3.2 | PDF 11 / printed 5 | The quality factors should be prioritised to identify those that are critical
+R2-014 | S3.3 | PDF 11 / printed 5 | 3.3 Approach to Identifying the Critical to Quality Factors A key aspect
+R2-015 | S3.3 | PDF 11 / printed 5 | Study designs should be operationally feasible and avoid unnecessary complexity. Protocols and
+R2-016 | S3.3.1 | PDF 11 / printed 5 | Inflexible, "one size fits all" approaches should be discouraged. Standardised operating procedures
+R2-017 | S3.3.1 | PDF 11 / printed 5 | Standardised operating procedures are necessary and beneficial for conducting good quality clinical
+R2-018 | S3.3.2 | PDF 11 / printed 5 | 3.3.2 Focusing on Activities Essential to the Study Efforts should be focused
+R2-019 | S3.3.2 | PDF 12 / printed 6 | Resources should be deployed to identify and prevent or control errors that
+R2-020 | S3.3.3 | PDF 12 / printed 6 | 3.3.3 Engaging Stakeholders in Study Design Clinical study design is best informed
+R2-021 | S3.3.3 | PDF 12 / printed 6 | They may also provide insight into the value of a treatment in
+R2-022 | S3.3.4 | PDF 12 / printed 6 | 3.3.4 Reviewing Critical to Quality Factors Accumulated experience and knowledge, together with
+R2-023 | S3.3.4 | PDF 12 / printed 6 | 3.3.4 Reviewing Critical to Quality Factors Accumulated experience and knowledge, together with
+R2-024 | S3.3.5 | PDF 12 / printed 6 | A feasibility assessment involves consideration of study design and implementation elements that
+R2-025 | S3.3.5 | PDF 12 / printed 6 | Feasibility considerations also include but are not limited to regional differences in
+R2-026 | S6.1 | PDF 24 / printed 18 | 6.1 Study Conduct The principles and approaches set out in this guideline,
+R2-027 | S6.1.1 | PDF 24 / printed 18 | aspects of adherence should be considered among the study's critical to quality
+R2-028 | S6.1.1 | PDF 24 / printed 18 | Successful application of the quality by design principles may minimise the need
+R2-029 | S6.1.2 | PDF 24 / printed 18 | 6.1.2 Training Individuals involved in study conduct should receive training commensurate with
+R2-030 | S6.1.2 | PDF 24 / printed 18 | 6.1.2 Training Individuals involved in study conduct should receive training commensurate with
+R2-031 | S6.1.3 | PDF 24 / printed 18 | 6.1.3 Data Management The manner and timelines in which study data are
+R2-032 | S6.3 | PDF 25 / printed 19 | The report should describe the critical to quality factors in the study.
+R2-033 | S7 | PDF 26 / printed 20 | In designing a study, the following aspects should be considered, where applicable,
+R2-034 | S7 | PDF 26 / printed 20 | In designing a study, the following aspects should be considered, where applicable,
+R2-035 | S7 | PDF 26 / printed 20 | Engagement of all relevant stakeholders, including patients, is considered during study planning
+R2-036 | S7 | PDF 26 / printed 20 | The prerequisite non-clinical studies, and where applicable, clinical studies, are complete and
+R2-037 | S7 | PDF 26 / printed 20 | The study objectives address relevant scientific questions appropriate for a given study's
+R2-038 | S7 | PDF 26 / printed 20 | The clinical study design supports a meaningful comparison of the effects of
+R2-039 | S7 | PDF 26 / printed 20 | Adequate measures are used to protect participants' rights, safety, and welfare (informed
+R2-040 | S7 | PDF 26 / printed 20 | Information provided to the study participants should be clear and understandable. Competencies
+R2-041 | S7 | PDF 26 / printed 20 | Competencies and training required for the study by sponsor and investigator staff,
+R2-042 | S7 | PDF 26 / printed 20 | The number of participants included, the duration of the study, and the
+R2-043 | S7 | PDF 26 / printed 20 | The number of participants included, the duration of the study, and the
+R2-044 | S7 | PDF 26 / printed 20 | The eligibility criteria should be reflective of the study objectives and be
+R2-045 | S7 | PDF 26 / printed 20 | The protocol specifies the collection of data needed to meet the study
+R2-046 | S7 | PDF 26 / printed 20 | The choice of response variables and the methods to assess them are
+R2-047 | S7 | PDF 26 / printed 20 | Clinical study procedures include adequate measures to minimise bias (e.g., randomisation, blinding).
+R2-048 | S7 | PDF 26 / printed 20 | The statistical analysis plan is pre-specified and defines the analysis methods appropriate
+R2-049 | S7 | PDF 26 / printed 20 | Systems and processes are in place that support the study conduct to
+R2-050 | S7 | PDF 26 / printed 20 | The extent and nature of study monitoring are tailored to the specific
+R2-051 | S7 | PDF 26 / printed 20 | The need for and appropriate role of a data monitoring committee is
+R2-052 | SIntroduction | PDF 9 / printed 1 | In each section describing the design and conduct of the study, it
+R2-053 | S9.8 | PDF 20 / printed 12 | 9.8 CHANGES IN THE CONDUCT OF THE STUDY OR PLANNED ANALYSES Any
+R2-054 | S10.1 | PDF 20 / printed 12 | 10.1 DISPOSITION OF PATIENTS There should be a clear accounting of all
+R2-055 | S10.2 | PDF 21 / printed 13 | All important deviations related to study inclusion or exclusion criteria,
+R2-056 | S10.2 | PDF 21 / printed 13 | 10.2 PROTOCOL DEVIATIONS All important deviations related to study inclusion or exclusion
+R2-057 | S10.2 | PDF 21 / printed 13 | - those who developed withdrawal criteria during the study but were not
+R2-058 | S10.2 | PDF 21 / printed 13 | - those who received an excluded concomitant treatment. In appendix 16.2.2, individual
+R2-059 | S11.1 | PDF 21 / printed 13 | It should be clear, if not defined in the study protocol, when,
+R2-060 | S11.1 | PDF 21 / printed 13 | Generally, even if the applicant's proposed primary analysis is based on a
+R2-061 | S11.1 | PDF 21 / printed 13 | There should be a tabular listing of all patients, visits and observations
+R2-062 | S11.4.2.6 | PDF 25 / printed 17 | If there was more than one primary endpoint (outcome variable), more than
+R2-063 | S16.2 | PDF 37 / printed 29 | 16.2. PATIENT DATA LISTINGS 16.2.1 Discontinued patients 16.2.2 Protocol deviations 16.2.3 Patients
+R2-064 | SAnnex-IVa | PDF 43 / printed 35 | PROTOCOL VIOLATION (10)
+R2-065 | S1 | PDF 4 / printed 1 | ICH E3 is a Guideline, not a set of rigid requirements or
+R2-066 | S3 | PDF 9 / printed 6 | If each adverse event is to be characterized extensively (i.e., many items
+R2-067 | S3 | PDF 9 / printed 6 | 7 June Section 10.2 of the ICH E3 Guideline A protocol deviation
+R2-068 | S3 | PDF 9 / printed 6 | However, the flowchart in Annex Important protocol deviations are a subset of
+R2-069 | S3 | PDF 9 / printed 6 | For example, important protocol deviations may include "protocol violations." Neither the term
+R2-070 | S3 | PDF 9 / printed 6 | However, in Annex IVa, Subject Disposition of the sponsors' flexibility in defining
+R2-071 | S3 | PDF 10 / printed 7 | (Whether such subjects should be included in the study analysis is a
+R2-072 | S3 | PDF 10 / printed 7 | Sponsors may also choose to use another descriptor, provided that that the
+R2-073 | S3 | PDF 10 / printed 7 | The E3 Guideline provides examples of the types of deviations that are
+R2-074 | S3 | PDF 10 / printed 7 | The definition of important protocol deviations for a particular trial is determined
+R2-075 | S3 | PDF 10 / printed 7 | In keeping with the flexibility of the Guideline, sponsors may amend or
+R2-076 | S5.2 | PDF 26 / printed 22 | 5.2 Analysis Sets The set of subjects whose data are to be
+R2-077 | S5.2 | PDF 26 / printed 22 | Hence, the statistical section of the protocol should address anticipated problems prospectively
+R2-078 | S5.2 | PDF 26 / printed 22 | The protocol should also specify procedures aimed at minimising any anticipated irregularities
+R2-079 | S5.2 | PDF 26 / printed 22 | The protocol should consider ways both to reduce the frequency of such
+R2-080 | S5.2 | PDF 26 / printed 22 | Possible amendments to the way in which the analysis will deal with
+R2-081 | S5.2 | PDF 26 / printed 22 | It is desirable to identify any important protocol violation with respect to
+R2-082 | S5.2.1 | PDF 26 / printed 22 | There are a limited number of circumstances that might lead to excluding
+R2-083 | S5.2.1 | PDF 27 / printed 23 | (iii) all subjects receive equal scrutiny for eligibility violations; (This may be
+R2-084 | S5.2.1 | PDF 27 / printed 23 | When the full analysis set of subjects is used, violations of the
+R2-085 | S5.2.1 | PDF 27 / printed 23 | It is also important to demonstrate the robustness of the corresponding results
+R2-086 | S5.2.2 | PDF 28 / printed 24 | the absence of any major protocol violations including the violation of entry
+R2-087 | S5.2.2 | PDF 28 / printed 24 | (iii) the absence of any major protocol violations including the violation of
+R2-088 | S5.2.2 | PDF 28 / printed 24 | The problems that lead to the exclusion of subjects to create the
+R2-089 | S5.2.2 | PDF 28 / printed 24 | Relevant protocol violations may include errors in treatment assignment, the use of
+R2-090 | S5.2.3 | PDF 28 / printed 24 | 5.2.3 Roles of the Different Analysis Sets In general, it is advantageous
+R2-091 | S7.1 | PDF 34 / printed 30 | This pre-analysis review, blinded to treatment, should cover decisions concerning, for example,
+R2-092 | S7.1 | PDF 34 / printed 30 | All subjects who entered the trial should be accounted for in the
+R2-093 | S7.1 | PDF 34 / printed 30 | Similarly, for all subjects included in an analysis set, the measurements of
+R2-094 | S7.1 | PDF 34 / printed 30 | The effect of all losses of subjects or data, withdrawals from treatment
+R2-095 | S7.2 | PDF 35 / printed 31 | The manner of measuring key efficacy variables, the timing of assessments relative
+R2-096 | GL:Blind Review | PDF 36 / printed 32 | The other sources of bias listed above are referred to as 'statistical'.
+R2-097 | SA.1 | PDF 5 / printed 3 | Clarity is introduced by carefully defining the treatment effect of interest in
+R2-098 | SA.1 | PDF 5 / printed 3 | Firstly, the addendum distinguishes discontinuation of randomised treatment from study withdrawal. The
+R2-099 | SA.3.1 | PDF 8 / printed 6 | The description of intercurrent events might in theory reflect very specific details
+R2-100 | SA.3.1 | PDF 8 / printed 6 | The additional granularity, identifying different intercurrent events, is required if different strategies
+R2-101 | SA.3.1 | PDF 9 / printed 7 | Because the estimand is to be defined in advance of trial design,
+R2-102 | SA.3.4 | PDF 14 / printed 12 | As explained in ICH E9, the problem facing the regulator in their
+R2-103 | SA.4 | PDF 15 / printed 13 | Certainly, subjects cannot be retained in a trial against their will, and
+R2-104 | SA.4 | PDF 16 / printed 14 | A prospective plan to collect informative reasons for why data intended for
+R2-105 | SA.4 | PDF 16 / printed 14 | Where that has been defined as an intercurrent event, this can be
+R2-106 | SA.5.3 | PDF 20 / printed 18 | Protocol violations and deviations might exclude subjects from the PPS, for example
+R2-107 | SA.5.3 | PDF 20 / printed 18 | Notwithstanding the differences between violations and deviations from the protocol and intercurrent
+R2-108 | SA.6 | PDF 21 / printed 19 | Results from the main, sensitivity and supplementary analyses should be reported systematically
+R2-109 | SA.6 | PDF 21 / printed 19 | Changes to the estimand during the trial can be problematic and can
+R2-110 | GL:Intercurrent Events | PDF 22 / printed 20 | Intercurrent Events: Events occurring after treatment initiation that affect either the interpretation
+R2-111 | S2.1 | PDF 5 / printed 2 | Higher-level heading structure is retained, while many lower-level sections can be added,
+R2-112 | SConventions [verify] | PDF 3 / printed iv | Use of consistent font sizes throughout the document is recommended, but not
+R2-113 | S5.1 | PDF 34 / printed 25 | If a clinical question targets a subset of the entire trial population,
+R2-114 | S6.8 | PDF 41 / printed 32 | 6.8 Investigational Trial Intervention Adherence Describe the measures to monitor and document
+R2-115 | S10.2 | PDF 55 / printed 46 | 10.2 Analysis Sets Describe analysis sets to be considered at the trial
+R2-116 | S11.6 | PDF 61 / printed 52 | Describe the identified critical to quality factors, associated risks and risk mitigation
+R2-117 | S11.10 | PDF 62 / printed 53 | Describe plans for detecting, reviewing, and reporting any deviations from the protocol
+R3-001 | Art. 2(2)(11) | PDF 12 / printed L158/12 | (11) 'Ethics committee' means an independent body established in a Member State
+R3-002 | Art. 2(2)(12) | PDF 12 / printed L158/12 | (12) 'Member State concerned' means the Member State where an application for
+R3-003 | Art. 2(2)(13) | PDF 12 / printed L158/12 | likely to have a substantial impact on the safety or rights of
+R3-004 | Art. 2(2)(14) | PDF 12 / printed L158/12 | takes responsibility for the initiation, for the management
+R3-005 | Art. 2(2)(15) | PDF 13 / printed L158/13 | an individual responsible for the conduct of a clinical trial
+R3-006 | Art. 2(2)(16) | PDF 13 / printed L158/13 | (16) 'Principal investigator' means an investigator who is the responsible leader of
+R3-007 | Art. 2(2)(22) | PDF 13 / printed L158/13 | a document that describes the objectives, design, methodology,
+R3-008 | Art. 2(2)(26) | PDF 13 / printed L158/13 | (26) 'End of a clinical trial' means the last visit of the
+R3-009 | Art. 2(2)(30) | PDF 13 / printed L158/13 | (30) 'Good clinical practice' means a set of detailed ethical and scientific
+R3-010 | Art. 2(2)(31) | PDF 13 / printed L158/13 | the act by a competent authority of conducting an official review
+R3-011 | Art. 2(2)(35) | PDF 14 / printed L158/14 | (35) 'Clinical study report' means a report on the clinical trial presented
+R3-012 | Art. 37(4) | PDF 35 / printed L158/35 | In this case, the protocol shall specify when the results are going
+R3-013 | Art. 38(1) | PDF 36 / printed L158/36 | 1. For the purposes of this Regulation, the temporary halt or early
+R3-014 | Art. 38(2) | PDF 36 / printed L158/36 | 2. The restart of the clinical trial following a temporary halt as
+R3-015 | Art. 41(2) | PDF 37 / printed L158/37 | not later than within 24 hours of obtaining knowledge of the events,
+R3-016 | Art. 47 | PDF 39 / printed L158/39 | in accordance with the protocol and with the principles of good clinical
+R3-017 | Art. 47 | PDF 39 / printed L158/39 | in accordance with the protocol and with the principles of good clinical
+R3-018 | Art. 47 | PDF 39 / printed L158/39 | shall also take appropriate account of the quality standards and the ICH
+R3-019 | Art. 47 | PDF 39 / printed L158/39 | shall also take appropriate account of the quality standards and the ICH
+R3-020 | Art. 47 | PDF 39 / printed L158/39 | Without prejudice to any other provision of Union law or Commission guidelines,
+R3-021 | Art. 48 | PDF 39 / printed L158/39 | shall adequately monitor the conduct of a clinical trial.
+R3-022 | Art. 48 | PDF 39 / printed L158/39 | The extent and nature of the monitoring shall be determined by the
+R3-023 | Art. 52(1) | PDF 40 / printed L158/40 | the version of the protocol applicable at the time of the breach
+R3-024 | Art. 52(2) | PDF 40 / printed L158/40 | likely to affect to a significant degree the safety and rights of
+R3-025 | Art. 53(1) | PDF 40 / printed L158/40 | 1. The sponsor shall notify the Member States concerned through the EU
+R3-026 | Art. 53(2) | PDF 40 / printed L158/40 | The sponsor shall submit to the Member States concerned, through the EU
+R3-027 | Art. 54(1) | PDF 40 / printed L158/40 | Where an unexpected event is likely to seriously affect the benefit-risk balance,
+R3-028 | Art. 54(1) | PDF 40 / printed L158/40 | Where an unexpected event is likely to seriously affect the benefit-risk balance,
+R3-029 | Art. 54(2) | PDF 40 / printed L158/40 | no later than seven days from the date the measures have been
+R3-030 | Art. 54(3) | PDF 40 / printed L158/40 | This Article is without prejudice to Chapters III and VII.
+R3-031 | Art. 56(1) | PDF 41 / printed L158/41 | accurately reported, interpreted and verified
+R3-032 | Art. 57 | PDF 41 / printed L158/41 | readily available, and directly accessible upon request, to the Member States.
+R3-033 | Art. 57 | PDF 41 / printed L158/41 | readily available, and directly accessible upon request, to the Member States.
+R3-034 | Art. 57 | PDF 41 / printed L158/41 | It shall be readily available, and directly accessible upon request, to the
+R3-035 | Art. 58 | PDF 41 / printed L158/41 | for at least 25 years after the end of the clinical trial.
+R3-036 | Art. 58 | PDF 41 / printed L158/41 | for at least 25 years after the end of the clinical trial.
+R3-037 | Art. 58 | PDF 41 / printed L158/41 | However, the medical files of subjects shall be archived in accordance with
+R3-038 | Art. 58 | PDF 41 / printed L158/41 | The sponsor shall appoint individuals within its organisation to be responsible for
+R3-039 | Art. 58 | PDF 41 / printed L158/41 | Any alteration to the content of the clinical trial master file shall
+R3-040 | Art. 77(1) | PDF 46 / printed L158/46 | Where a Member State concerned has justified grounds for considering that the
+R3-041 | Art. 77(2) | PDF 46 / printed L158/46 | Before the Member State concerned takes any of the measures referred to
+R3-042 | Art. 78(6) | PDF 47 / printed L158/47 | Following an inspection, the Member State under whose responsibility the inspection has
+R3-043 | SGlossary | PDF 3 / printed 3 | Any deviation of the approved protocol version or the clinical trial regulation
+R3-044 | SGlossary | PDF 3 / printed 3 | has not yet been assessed by the sponsor to be a serious
+R3-045 | SGlossary | PDF 3 / printed 3 | does not remove the ultimate responsibility of the sponsor
+R3-047 | S3.1 | PDF 5 / printed 5 | may delegate this task to a service provider
+R3-048 | S3.2 | PDF 5 / printed 5 | within 7 calendar days of the sponsor becoming aware of a serious
+R3-049 | S3.2 | PDF 5 / printed 5 | should not wait to obtain all of the details
+R3-050 | S3.2 | PDF 5 / printed 5 | only serious breaches must be notified, not suspected serious breaches.
+R3-051 | S3.2 | PDF 5 / printed 5 | immediately report any events that might meet the definition of a serious
+R3-052 | S3.2 | PDF 5 / printed 5 | should be kept in the clinical trial master file (CTMF)
+R3-054 | S4 | PDF 6 / printed 6 | should be notified to the MSC via the CTIS
+R3-055 | S4 | PDF 6 / printed 6 | Serious breaches of an EU/EEA authorised clinical trial occurring exclusively outside the
+R3-057 | S4 | PDF 6 / printed 6 | indicate which is the Member State most affected
+R3-059 | S5.1 | PDF 8 / printed 8 | do not negate the fact that a breach occurred
+R3-061 | S5.1 | PDF 8 / printed 8 | the sponsor's reasons for not proceeding with the notification,
+R3-062 | S5.1 | PDF 8 / printed 8 | an important deviation is not necessarily also a serious breach and vice
+R3-063 | S5.1 | PDF 8 / printed 8 | all serious breaches should be included in the corresponding clinical study report.
+R3-065 | S5.1 | PDF 8 / printed 8 | Nevertheless, all serious breaches should be included in the corresponding clinical study
+R3-066 | S6.1 | PDF 9 / printed 9 | There should be a formal process in place
+R3-067 | S6.1 | PDF 9 / printed 9 | a root cause analysis
+R3-068 | S6.1 | PDF 9 / printed 9 | corrective and preventive actions should be identified
+R3-069 | S6.2 | PDF 9 / printed 9 | keeps the sponsor informed about the management of all the breaches
+R3-070 | S6.3 | PDF 9 / printed 9 | should have a written process in place to identify
+R3-071 | S6.4 | PDF 10 / printed 10 | a (suspected) serious breach is promptly reported to the sponsor or delegated
+R3-072 | S7 | PDF 10 / printed 10 | all concerns about potential cases of fraud in clinical trials
+R3-073 | S7 | PDF 10 / printed 10 | should verify the impact of the breach on other clinical trials
+R3-075 | S7 | PDF 10 / printed 10 | is likely to significantly affect the safety and rights of a trial
+R3-076 | S7 | PDF 10 / printed 10 | this leads to the removal of data from the trial analysis,
+R3-077 | S8 | PDF 10 / printed 10 | managed in-house via acceptable Corrective and Preventive Actions
+R3-078 | S8 | PDF 11 / printed 11 | the MSC will ask the sponsor for their opinion.
+R3-080 | SAppI-8.4 | PDF 15 / printed 15 | 8.3 Major visit date deviation, based on impact assessment of Yes, as
+R3-083 | SAppII | PDF 18 / printed 18 | If the breach is caused by a service provider, the sponsor checks
+R3-085 | S1.5 | PDF 14 / printed 4 | takes precedence over conflicting rules in guidelines,
+R3-086 | S1.5 | PDF 14 / printed 4 | Answer: In the EU, all submissions concerning a clinical trial, including information
+R3-087 | SCover | PDF 1 / printed None | came into effect on 23 July 2025.
+R3-088 | SCover | PDF 1 / printed None | 14 July 2026 EMA/CHMP/ICH/162879/2026 Committee for Human Medicinal Products ICH E6(R3) Guideline
+R3-089 | SWebpage | PDF 1 / printed None | can serve as a replacement for ICH E6(R2).
+R3-090 | SSlide-20 | PDF 21 / printed 20 | the SB should be reported via CTIS to all MSC
+R3-092 | SSlide-19 | PDF 20 / printed 19 | Updates to the SB report can be made
+R3-093 | SSlide-29 | PDF 30 / printed 29 | Communication with the sponsors regarding the SBs is mainly done through RFIs
+R3-094 | SPublication | PDF 40 / printed None | The notification is published only once the Member State assessment is finalized
+R3-096 | S4.7 | PDF 13 / printed 13 | 4.7. How can users link the assessment outcome to the notification? When
+R3-098 | S11.3 | PDF 137 / printed 2 | The 7-day timeframe starts when the sponsor becomes aware of a potential
+R3-100 | S10.9 | PDF 131 / printed 8 | If the entire clinical trial is halted (recruitment and/or treatment), a temporary
+R3-104 | S7.27 | PDF 95 / printed 22 | When submitting a notification like an urgent safety measure (USM), unexpected event
+R3-105 | S11.4 | PDF 137 / printed 2 | The obligation applies to all GCP inspection reports of all sites involved
+R3-106 | SPublication | PDF 39 / printed None | Adults h1&2 ph1&2) PIP First MSC decision First CTIS application fields First
+R3-107 | SSlide-33 | PDF 34 / printed 33 | Over-reporting to be avoided!
+R4-001 | 21CFR312.30 | PDF 1 / printed None | § 312.30 Protocol amendments. Once an IND is in effect, a sponsor
+R4-002 | 21CFR312.30(b)(1) | PDF 1 / printed None | (1) A sponsor shall submit a protocol amendment describing any change in
+R4-003 | 21CFR312.30(b)(2)(i) | PDF 1 / printed None | (1) The sponsor has submitted the protocol to FDA for its review;
+R4-004 | 21CFR312.30(b)(2)(ii) | PDF 1 / printed None | The sponsor may comply with these two conditions in either order. (ii)
+R4-005 | 21CFR312.30(b)(2)(ii) | PDF 1 / printed None | The sponsor may comply with these two conditions in either order. (ii)
+R4-006 | 21CFR312.30(e) | PDF 1 / printed None | (e) When submitted. A sponsor shall submit a protocol amendment for a
+R4-007 | 21CFR312.50 | PDF 1 / printed None | § 312.50 General responsibilities of sponsors. Sponsors are responsible for selecting qualified
+R4-008 | 21CFR312.50 | PDF 1 / printed None | § 312.50 General responsibilities of sponsors. Sponsors are responsible for selecting qualified
+R4-009 | 21CFR312.50 | PDF 1 / printed None | § 312.50 General responsibilities of sponsors. Sponsors are responsible for selecting qualified
+R4-010 | 21CFR312.53(c)(1)(vi)(a) | PDF 1 / printed None | (vi) A commitment by the investigator that he or she: ( a
+R4-011 | 21CFR312.53(c)(1)(vii) | PDF 1 / printed None | ( f ) Has read and understands the information in the investigator's
+R4-012 | 21CFR312.56(a) | PDF 1 / printed None | § 312.56 Review of ongoing investigations. (a) The sponsor shall monitor the
+R4-013 | 21CFR312.56(b) | PDF 1 / printed None | (b) A sponsor who discovers that an investigator is not complying with
+R4-014 | 21CFR312.56(b) | PDF 1 / printed None | (b) A sponsor who discovers that an investigator is not complying with
+R4-015 | 21CFR312.56(c) | PDF 1 / printed None | (c) The sponsor shall review and evaluate the evidence relating to the
+R4-016 | 21CFR312.56(d) | PDF 1 / printed None | (d) A sponsor who determines that its investigational drug presents an unreasonable
+R4-017 | 21CFR312.60 | PDF 1 / printed None | § 312.60 General responsibilities of investigators. An investigator is responsible for ensuring
+R4-018 | 21CFR312.60 | PDF 1 / printed None | § 312.60 General responsibilities of investigators. An investigator is responsible for ensuring
+R4-019 | 21CFR312.60 | PDF 1 / printed None | An investigator is responsible for ensuring that an investigation is conducted according
+R4-020 | 21CFR312.62(b) | PDF 1 / printed None | An investigator is required to prepare and maintain adequate and accurate case
+R4-021 | 21CFR312.62(c) | PDF 1 / printed None | (c) Record retention. An investigator shall retain records required to be maintained
+R4-022 | 21CFR312.66 | PDF 1 / printed None | § 312.66 Assurance of IRB review. An investigator shall assure that an
+R4-023 | 21CFR312.66 | PDF 1 / printed None | An investigator shall assure that an IRB that complies with the requirements
+R4-024 | 21CFR312.66 | PDF 1 / printed None | except where necessary to eliminate apparent immediate hazards to human subjects.
+R4-025 | 21CFR56.108(a)(3) | PDF 1 / printed None | (3) for ensuring prompt reporting to the IRB of changes in research
+R4-026 | 21CFR56.108(a)(4) | PDF 1 / printed None | (3) for ensuring prompt reporting to the IRB of changes in research
+R4-027 | 21CFR56.108(b)(1) | PDF 1 / printed None | (b) Follow written procedures for ensuring prompt reporting to the IRB, appropriate
+R4-028 | 21CFR56.108(b)(2) | PDF 1 / printed None | serious or continuing noncompliance
+R4-029 | 21CFR56.108(b)(3) | PDF 1 / printed None | (3) for ensuring prompt reporting to the IRB of changes in research
+R4-030 | 21CFR56.104(c) | PDF 1 / printed None | reported to the IRB within 5 working days.
+R4-031 | 21CFR50.20 | PDF 1 / printed None | Except as provided in §§ 50.22, 50.23, and 50.24, no investigator may
+R4-032 | 21CFR50.20 | PDF 1 / printed None | An investigator shall seek such consent only under circumstances that provide the
+R4-033 | 21CFR50.27(a) | PDF 1 / printed None | § 50.27 Documentation of informed consent. (a) Except as provided in §
+R4-034 | 21CFR50.27(b) | PDF 1 / printed None | This form may be read to the subject or the subject's legally
+R4-035 | SII | PDF 5 / printed 2 | any change, divergence, or departure from the study design or procedures
+R4-036 | SII | PDF 5 / printed 2 | a subset of protocol deviations that might significantly affect the completeness,
+R4-041 | SIII.A.1 | PDF 7 / printed 4 | Important Protocol Deviations As noted above, in this guidance an important protocol
+R4-043 | SIII.A.1 | PDF 7 / printed 4 | These quality factors are critical to the reliability and interpretability of the
+R4-044 | SIII.A.1 | PDF 7 / printed 4 | Ibid. Failure to obtain informed consent or meet other applicable requirements under
+R4-051 | SIII.B.2 | PDF 9 / printed 6 | See the information sheet guidance for IRBs and clinical investigators Sponsor -
+R4-053 | SIII.B.2 | PDF 10 / printed 7 | pre-specify which types of protocol deviations will be considered important,
+R4-054 | SIII.B.2 | PDF 10 / printed 7 | within x days of occurrence;
+R4-055 | SIII.B.2 | PDF 10 / printed 7 | Sponsors should note in such mandatory reports when protocol deviations contributed to
+R4-058 | SIII.B.2 | PDF 10 / printed 7 | 17 Sponsors should also report all protocol deviations in the Study Data
+R4-065 | SIII.B.2 | PDF 12 / printed 9 (lines 305-310) | Sponsors should assess the risks that such critical protocol elements may not be
+R4-072 | SIII.B.3 | PDF 13 / printed 10 | 24 For device studies, if the changes or deviations may affect the
+R4-075 | SIII.C | PDF 13 / printed 10 | Protocol Amendments and Changes to an Investigational Plan Changes in a protocol
+R4-078 | SI.B | PDF 9 / printed 2 | do not establish legally enforceable responsibilities.
+R4-082 | SIII.B | PDF 11 / printed 8 | Supplement or reduce the frequency and extent of on-site monitoring with monitoring
+R4-083 | SIV.D.1 | PDF 18 / printed 15 | 1. Description of Monitoring Approaches A description of each monitoring method to
+R4-087 | SIV.D.5 | PDF 20 / printed 17 | Monitoring Plan Amendments Sponsors should consider what events would indicate a need
+R4-095 | SQ7 | PDF 12 / printed 9 | How should sponsors follow up on significant issues identified through monitoring, including
+R5-002 | SDefine | PDF 1 / printed None | The updated definition becomes: "Important protocol deviations are a subset of protocol
+R5-003 | SDefine | PDF 1 / printed None | It appears reasonable, however, to consider a PD non-important if it does
+R5-006 | SDefine | PDF 1 / printed None | 2) can be applied to support consistent application of critical thinking within
+R5-009 | SProtocol | PDF 1 / printed None | conduct risk assessment reviews and define PD classification approaches
+R5-012 | SPrepare | PDF 1 / printed None | the PDAP should describe PDs classified as important.
+R5-013 | SPrepare | PDF 1 / printed None | The PDAP template includes the following recommended elements: Guidance for consistent classification
+R5-019 | STrain | PDF 1 / printed None | Train study site personnel on the protocol including amendments, not the PDAP,
+R5-020 | SIdentify-and-Collect | PDF 1 / printed None | In both cases, a well-defined PDAP is essential for consistency and timely
+R5-022 | SIdentify-and-Collect | PDF 1 / printed None | Protocol deviation classification and categorization examples Category Protocol deviation classification examples Important
+R5-028 | SConfirm | PDF 1 / printed None | an independent study team member (or group), other than the identifier,
+R5-031 | SConfirm | PDF 1 / printed None | periodic aggregate reviews should be completed to identify trends or systemic errors
+R5-032 | SStore | PDF 1 / printed None | Based on collection method (programmatic and/or manual), important PDs should be reconciled,
+R5-034 | SReview-and-Analyze | PDF 1 / printed None | The PDAP should be stored with other protocol related decision-making records.Review and
+R5-040 | SReport | PDF 1 / printed None | Summarize important PDs by category. GCP issues are usually described in a
+R5-043 | SClose-Out | PDF 1 / printed None | However, Section 10.2 may include a reference to those participants whose important
+R5-045 | STaking-a-holistic-approach-CLOSEOUT | web page, closeout best-practice task list | Conduct a "lessons learned" session.
+R5-046 | STaking-a-holistic-approach-CLOSEOUT [verify] | web page, closeout paragraph | We recommend that finalization occur after the last study data has been reviewed.
+R5-048 | SHow-QTLs-Fit-in-a-Quality-Management-System | publisher HTML, section How QTLs Fit in a Quality Management System | In parallel, sponsors should define appropriate risk management strategies
+R5-058 | SProcedures-Supporting-Study-Endpoints-and-Data-Integrity | PDF 9 / printed 9 | Resources should be Which are non-critical? assessments would constitute important protocol focused
+R5-065 | SC225352 | PDF 9 / printed None | Terminology relevant to the category of protocol deviations.
+R5-067 | S35 | PDF 34 / printed None | Retrospective classification of deviations
+R5-068 | SC49585 | mirror web page dated 03/11/2026 | An events domain that contains protocol violations and deviations
+R5-069 | S4.1.1.3 | PDF 29 / Page 16 of 97 | The DV domain should be included in your submission.
+R5-070 | S4.1.1.3 | PDF 29 / Page 16 of 97 | The following variables besides CDISC required variables should be included in the
+R5-071 | SII.E.1 | PDF 7 / printed 2; PDF 12 / printed 7 | it will have binding effect.

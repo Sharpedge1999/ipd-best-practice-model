@@ -1,0 +1,334 @@
+       The rules governing medicinal products in the European Union VOLUME 10 –
+                         Guidance document applying to clinical trials
+        CLINICAL TRIALS REGULATION (EU) NO 536/2014 QUESTIONS & ANSWERS
+                                             VERSION 7.4
+                        Amended and endorsed through written procedure
+                      by the Clinical Trials Coordination and Advisory Group
+    Document history:
+    Date of discussion by the Clinical Trials
+                                                        Written procedure in September 2026
+    Coordination and Advisory Group:
+                                                        following the discussion on 15 September
+                                                        2026
+    Date of publication:                                October 2026
+    Supersedes:                                         7.3
+                                                        - Revised Chapter 6 on submission of
+                                                            summary of results and layperson
+                                                            summary of results
+                                                        -   Annex II: new footnote (2) for LU, new
+    Changes compared to superseded version:                 footnote (5) for AT, additional speciﬁcation
+                                                            for BE,BG, and DK for the labelling of the
+                
+######## PDF 14
+     Member States Part II requirements can be accessed through the weblinks
+     provided in annex III of this document, which also provides e-mail
+     addresses for enquiries about Part I and Part II national requirements.
+     Please note that the national competent authorities may not reply to
+     enquiries for which a reply is already available either in the Clinical Trials
+     Regulation (EU) 536/2014 or in the Questions and Answers document
+     available on Eudralex volume 10 or in national Question and Answer
+     documents. The European Commission is not responsible for the quality
+     and completeness of the information reported in the Annex III nor for the
+     functioning of the websites. For questions and remarks on the links and on
+     the information reported in the websites listed below, please contact the
+     national contact point(s).
+  8. Documents and/or information that are not required as per the CTR,
+     including signatures on various part I and II documents (e.g. investigator
+     CV, Declaration of Interest, cover letter), are not part of the clinical trial
+     application, Request for Information, or subsequent steps can therefore not
+     be requested by Member States. The site suitability statement mentioned
+     in Annex I, section N., point 67. shall be submitted according to the system
+     of the Member State concerned, meaning that signature requirements for
+     this document are subject to national law. Importantly, electronic
+     submission of the CTA to CTIS by the sponsor is regarded as equivalent to
+     signing the document in accordance to Annex I.3. CTR is a regulation, which
+     is directly applicable and ensures complete harmonisation of the sector,
+     national laws should be set out to support its full implementation.
+1.5. How to proceed in case of discrepancies
+     between the CTR and ICH Good clinical
+     practice guidance?
+  9. Answer: In the EU, all submissions concerning a clinical trial, including
+     information on the clinical trial sites, are done by or on behalf of the sponsor (and
+     not by the investigator) via CTIS or EudraVigilance.
+  10. The single decision, per Member State, on each clinical trial application and
+      subsequent changes to that application at Member State level represents the
+      outcome of scientiﬁc and ethical review, involving an Ethics Committee, in
+      compliance with the CTR and in accordance with the national law of the MSC.
+  11. As recognized also in ICH, sponsors and investigators need to comply with the
+      applicable regulatory requirements. The CTR aims to ensure maximum possible
+      harmonisation across the EU/EEA (recital 5) and, takes precedence over
+                                           4
+######## PDF 15
+     conﬂicting rules in guidelines, albeit ICH or other guidelines. Documents or data
+     that are not foreseen by the Regulation (e.g. the progress report as deﬁned in the
+     ICH E.6 guidance) shall not be requested or submitted based on
+     recommendations in diﬀerent guidelines. This approach reﬂects also recital 24,
+     stating that the content of the application dossier should be harmonised to
+     simplify the application process for clinical trials.
+  12. When Member States are allowed margin for national practices it is explicitly
+      provided in the CTR itself, see for example Article 34 (military, prison), Article 74
+      (legal representative/contact person) or Article 86 (fees, cost recovery).
+1.6. Question: What is a “low-intervention clinical trial”?
+  13. Answer: A “low intervention clinical trial” is deﬁned in Article 2 (2)(3) of the
+      Clinical Trials Regulation as a clinical trial which fulﬁls all of the following
+      conditions:
+              (a) the investigational medicinal products, excluding placebos, are
+                  authorised;
+              (b) according to the protocol of the clinical trial, (i) the
+                  investigational medicinal products are used in accordance
+                  with the terms of the marketing authorisation; or (ii) the use of
+                  the investigational medicinal products is evidence-based and
+                  supported by published scientiﬁc evidence on the safety and
+                  eﬀicacy of those investigational medicinal products in any of
+                  the Member States concerned; and
+              (c) the additional diagnostic or monitoring procedures do not
+                  pose more than minimal additional risk or burden to the safety
+                  of the subjects compared to normal clinical practice in any
+                  Member State concerned;
+  14. The decision tree in Annex I can be used to identify whether a trial is a low-
+      intervention clinical trial in the sense of the Clinical Trials Regulation.
+1.7. Question: What can be considered as a “non-
+     interventional study”?
+  15. Answer: According to Article 1 of the Clinical Trials Regulation, non-
+      interventional studies are excluded from the scope of this Regulation.
+  16. A “non-interventional study” is deﬁned in Article 2(2)(4) of the Clinical Trials
+      Regulation as "a clinical study other than a clinical trial".
+                                             5
+######## PDF 95
+         363.      Conversely, expedited safety reporting for non-authorised AxMPs (that
+            should be used only exceptionally in clinical trials – in line with Article 59 of CTR)
+            or modiﬁed authorized AxMPs shall be done in accordance with Article 42 and
+            Annex III of the CTR. This means that they shall follow the same requirements as
+            those provided for the IMP. Accordingly, all SUSARs related to non-authorised or
+            modiﬁed authorized AxMPs shall be reported to the EVCTM.
+7.27 Question: How to report safety issues not
+  falling within the deﬁnition of SUSARs?
+         364.       Answer: Events may occur during a clinical trial (CT) which do not fall within the
+            deﬁnition of a SUSAR and, thus, are not subject to the reporting requirements for
+            SUSARs (examples see Question 7.25), even though they may be relevant in terms of
+            subjects’ safety. These events might still require (immediate) risk-mitigation actions
+            followed by regulatory reporting obligations such as:
+                     •   Notiﬁcation of unexpected events with the potential to change the beneﬁt-
+                         risk of the trial (CTR Art 53),
+                     •   Notiﬁcation to the MSs via an Urgent safety measure (CTR Art 54)
+                     •   Substantial modiﬁcations of the clinical trial (CTR Chapter III)15
+                     •   Early termination or temporary halt of a trial due to safety (CTR Chapter VI) 16
+                         (see Chapter 10 in this document)
+         365.         All notiﬁcations of such safety issues should be done via CTIS.
+         366.      When submitting a notiﬁcation like an urgent safety measure (USM), unexpected
+            event (UE) changing beneﬁt risk, temporary halt or premature end of a CT, sponsors are
+            asked to inform MSs if other CTs are also aﬀected by the issue and if so, list all EU CT
+            numbers of aﬀected trials. The sponsor should indicate if the same or a similar
+            notiﬁcation will be/has been submitted regarding these listed CT(s). The information
+            should be provided in a table (example given in the table below). Note: If the structured
+            ﬁelds not ﬁt, please attach a document for the required information.
+             Example table for providing EU CT numbers of notification-relevant trials
+            EU CT number Type of notiﬁcation             Risk Minimization Measure RMS
+            123456-78-00 Urgent safety measure Yes                                       e.g. AT
+         367.       In addition, while submitting a notiﬁcation all relevant available documents and
+            information related to the issue and the proposed Risk Minimization Measures at time
+            of notiﬁcation submission should be provided, if possible.
+  15
+       Clinical Trials Regulation (EU) 536/2014, Chapter III
+  16
+       Clinical Trials Regulation (EU) 536/2014, Chapter IV
+                                                          22
+######## PDF 96
+       368.      In case of an urgent safety measure which requires an update of protocol, it is
+          expected that the notiﬁcation of the USM is submitted immediately to inform of the
+          applied changes and/or planned changes, as of CTR with undue delay but not later than
+          7 days from the date the measures have been taken. That USM information must be
+          followed by a submission of the documents as SM (substantial amendment for
+          approval“.
+7.28 Question: What should be the terminology, format
+     and standards for SUSAR reporting to EVCTM?
+       369.      Use of terminology: For the classiﬁcation, retrieval, presentation,
+          evaluation and assessment, electronic exchange and communication of SUSAR
+          information to EVCTM, sponsors should apply the terminology as of Article 25 of
+          the Implementing Regulation (IR) 520/2012 (amended July 2025)17.
+       370.       Use of internationally agreed formats and standards: For the description,
+          retrieval, presentation, evaluation and assessment, electronic exchange and
+          communication of SUSARs, sponsors should apply the following formats and
+          standards as of Article 26 of the IR 520/2012 (amended July 2025).
+       371.     The current version of the EU Individual Case Safety Report (ICSR)
+          Implementation Guide also see ICH E2B (R3).
+       372.      Reference is also made to EMA’s Guidelines on Good Pharmacovigilance
+          Practices (GVP), particularly module VI on ‘Collection, management and
+          submission of reports of suspected adverse reactions to medicinal products.
+       373.       Sponsors shall report SUSARs electronically to the Eudravigilance
+          database via EVWEB or using the E2B (R3) electronic ICSR forms. To help sponsors
+          with SUSAR reporting, a web-based form was developed in accordance with
+          Article 40.2 of the CTR in the Clinical Trials Module of the Eudravigilance database
+          (“EVWEB report form”). This form was developed in compliance with Annex III 2.3
+          of the CTR and based on international guidance documents (including ICH E2B
+          (R3)). The use of this form supports regulatory compliance with EU law and
+          harmonisation of safety data, and it incorporates the relevant standards and
+          terminology.
+ 17
+      Commission Implementing Regulation (EU) No 520/2012
+                                                  23
+######## PDF 131
+           10.7. Question: If a clinical trial
+             temporarily halted according to articles
+             37 and 38 is not resumed within two
+             years, can the re-start date of the
+             clinical trial occur after the two-year
+             period?
+496. Answer: A sponsor can submit within the two-year period following a
+     temporary halt a SM requesting a restart date after the 2-year period.
+     This SM can only be submitted before the expiry of the 2-year period
+     and applies to temporary halts for reasons of subject safety or not.
+           10.8. Question: If a clinical trial
+             temporarily halted according to article
+             38 is not resumed within two years, will
+             article 37(7) also apply?
+497. Answer: In case of clinical trials that are temporary halted for reasons
+     of subject safety (article 38: change of beneﬁt-risk balance) sponsors
+     are encouraged to notify the Member States concerned any follow up
+     that has been taken or that is needed, before the 2-year expiry.
+           10.9. Question: How should urgent
+             safety measures (article 54) involving
+             temporary halts (articles 38) be
+             notiﬁed?
+498. Answer: Urgent safety measures may involve a temporary halt of the
+     clinical trial due to safety reasons. In such cases, it is not necessary to
+     submit both a US and a TH notiﬁcation, but a single notiﬁcation is
+     suﬀicient.
+499. If the entire clinical trial is halted (recruitment and/or treatment), a
+                                             8
+######## PDF 132
+     temporary halt notiﬁcation should be submitted. However, if only
+     parts of the trial are halted (e.g. certain treatment arms, treatment
+     groups or subprotocols), this should be reported as urgent safety
+     measure to ensure that the overall trial status as ongoing is correctly
+     reﬂected in CTIS.
+500. In any case, the timelines for reporting THs and USMs should be
+     adhered to, i.e. a TH notiﬁcation that is accompanied by additional
+     USMs, should be submitted without undue delay but not later than
+     seven days from the date the measures have been taken (CTR art. 54).
+           10.10. Question: How should temporary
+             halt or other safety relevant
+             notiﬁcations be submitted if the CT has
+             not been initiated or has been on halt in
+             some, but not all MSCs?
+501. Answer: In a multi-national trial, which has not been started in all
+     MSCs (or has been temporarily halted in some MSCs) notiﬁcations on
+     temporary halt (or other safety related notiﬁcations) can only be
+     submitted to those MSCs where the trial has been initiated and/or not
+     halted. If the same measure (e.g. temporary halt for safety reasons,
+     unexpected event, urgent safety measure … ) also applies to the other
+     MSCs the sponsor shall inform the RMS (or any other MSCs where the
+     notiﬁcation can be done) on the overall ‘MS’ status (UE or temporary
+     halt applicable for all MSs) via notiﬁcation supporting document. This
+     should also include a commitment to apply the same measure (e.g.
+     temporary halt for safety reasons) in case the trial is (re-)started before
+     resolution of the reason for the temporary halt in any of the MSCs
+     where the notiﬁcation is not possible due to the trial status (not
+     started at the time of notiﬁcation or halted). This method can also be
+     used across trials.
+      10.11. Question: How is "suspension of a
+           clinical trial" defined?
+502. Answer: Article 2(29) of the Clinical Trials Regulation deﬁnes
+                                             9
+######## PDF 136
+                                      MISCELLANEOUS
+     11.1.     Question: Can the reporting Member State
+     be changed?
+     518. Answer: The Clinical Trials Regulation does not provide for a procedure
+          to change the reporting Member State. The Regulation actually
+          speciﬁes in articles 14(2) and 17(1) that the reporting Member State for
+          an initial authorisation procedure will be the reporting Member State
+          for the authorisation of an additional Member State or for a substantial
+          modiﬁcation.
+     519. Therefore in case a clinical trial is not on-going in a reporting Member
+          State (due to e.g. a withdrawn or lapsed application) it is not possible
+          to change the reporting Member State.
+     520. However, it may be possible for a reporting Member State to
+          delegate/contract out the work to another Member State concerned
+          but the responsibility will still lie with the original reporting Member
+          State, who assessed the original application, and should continue to
+          assess any follow ups or substantial modifications under the same
+          criteria.
+     11.2.        Question: Can a corrective
+     measure be taken by a Member State after the
+     end of a clinical trial?
+     521. Answer: Corrective measures referred to in article 77 of the Clinical
+          Trials Regulation are expected to be taken in the majority of cases by
+          Member States while a clinical trial is on-going. However when follow
+          up of patients for safety reasons is deemed necessary Member States
+          may decide to take a corrective measure after a clinical trial has ended
+          and apply article 77(1).
+11.3. Submission of notiﬁcation of Serious Breaches
+      in CTIS
+     522. If a serious breach identiﬁed at a clinical trial site outside the EU/EEA
+          site is likely to aﬀect the safety and rights of subjects in the EU/EEA
+          and/or the reliability and robustness of the clinical trial data, then this
+          breach requires notiﬁcation to the EU/EEA.
+     523. Article 52.1 of the CTR requires sponsors to report serious breaches
+                                                  1
+######## PDF 137
+          within seven days of becoming aware of them. The 7-day timeframe
+          starts when the sponsor becomes aware of a potential breach.
+          However, only conﬁrmed serious breaches should be reported.
+          Sponsors should complete their ﬁrst analysis, conﬁrm the
+          seriousness, and submit the initial report of the serious breach in CTIS
+          within this period.
+     524. For more guidance on the submission of Serious breaches please
+          consult the Guideline for the notiﬁcation of serious breaches of
+          Regulation (EU) No 536/2014 or the clinical trial protocol.
+11.4. Submission of third-country Inspection Reports
+      in CTIS
+     525. GCP inspection reports conducted by third-country authorities must
+          be submitted in CTIS even if they concern sites outside the EU. Article
+          53 of Regulation (EU) No 536/2014 requires the submission of GCP
+          inspection reports for clinical trials conducted under the CTR,
+          regardless of where the inspection takes place or whether it directly
+          impacts EU sites or activities. There is no provision for discretion
+          based on relevance or location.
+     526. The obligation applies to all GCP inspection reports of all sites
+          involved in the clinical trial—sponsor sites, CROs, and clinical
+          investigator sites—regardless of whether the inspection was
+          conducted in the EU/EEA or in a third country. If the trial inspected
+          is/was conducted in the EEA and falls under the CTR, the third-country
+          GCP inspection report must be submitted in CTIS.
+     527. The full inspection report must be submitted in CTIS in its original
+          language. Member States may request a translation of either the full
+          report or a summary of key ﬁndings, depending on their needs.
+                                                 2
+######## PDF 138
+Annex I: Decision tree to establish a whether a study is a “clinical trial”
+This algorithm and its endnotes will help you answer the question on whether a given investigation on humans is a clinical trial governed by the
+Regulation EU No 536/2014. Please start in column A and follow the instructions. Additional information is provided in the notes at the end of the table.
+If you have doubts about the answer to any of the questions, contact the national contact point(s) of the Member State(s) Concerned.
+ A                                  B                                  C                                     D                                    E
+  Is a medicinal product being       What effects of the                Why are you looking for               How are you looking for              Is your clini
+  investigated ? (1)                 medicinal product are you          those effects?                        those effects?                       intervention 
+                                     looking for?
+  If you answer no to l the          If you answer no to all the        If you answer no to all the           If you answer NO to all the          If your answe
+  question in column A below,        questions in column B below,       questions in column C below,          questions in column D below,         the questions
+  the investigation does not fall    the investigation does not fall    the investigation does not fall       the clinical study is a non-         column E, the
+  within     the    scope     of     within     the    scope     of     within     the    scope     of        interventional study that does       trial within 
+  Regulation EU No 536/2014          Regulation EU No 536/2014          Regulation EU No 536/2014             not fall within the scope of         Regulation EU
+                                                                                                              Regulation EU No 536/2014            but is NOT a 
+                                                                                                                                                   clinical tria
+ If you answer yes to f the         If you answer yes to any of the    If you answer yes to any of the                                             Regulation EU
+ question below go to column B.     questions below go to column       questions below go to column          If you answer yes to any of the
+                                    C                                  D - the investigation is a clinical   questions below go to column E
+                                                                       study as described in article         – the study is a clinical trial      If you answe
+                                                                       2(2)(1) of Regulation EU No           according to Regulation EU No        questions belo
+                                                                       536/2014.                             536/2014                             low- intervent
+                                                                                                                                                  speciﬁc set 
+                                                                                                                                                  can be applied
+ A. Is the investigated substance
+                                     B. Is   the aim of the             C. Is the objective of the            D.1. Is the assignment of any           E.1. Is th
+ or product either presented as a
+                                     investigation on the medicinal     investigation on a medicinal          patient involved in the study           or more me
+ medicinal product or does it
+                                     product :                          product :                             to a particular therapeutic             which all 
+ function as such, in accordance
+                                                                                                              strategy decided in advance             authorizat
+ with point 2 of article 1 of
+                                                                                                              by a clinical trial protocol (5),       State(s) c
+ Directive 2001/83/EC ? (2)          B.1. To discover or                C.1. To ascertain or                  and does the assignment not
+                                     verify/compare its clinical        verify/compare the                    fall within normal clinical
+                                                                                        1

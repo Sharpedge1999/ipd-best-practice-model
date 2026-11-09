@@ -1,0 +1,220 @@
+{
+ "about": "V1 round 3 review judgements. Same seed and population as round 2 (random.Random(20261106).sample over the sorted (model, id) pairs of the 100 spec tasks, n = 25); the sample is identical to round 2 (checked by diffing the --dump output against round 2). Changed since round 2 (diff of spec/ against the B1 base copy of round 2 and of the embedded r2 XML): L3 G1/G2/G5/G6 block, L4-02 G1 (F2, F3), G4 (F20, F21, F24) and A14 position, L4-03 A14 (REQs, src, binding, deadline, party, verify). Of the sample only L4-02 A14 changed (its flows); it was re-judged. The other 24 sampled tasks are byte-identical in their dump (label, lane, binding, deadline, party, REQ statements, finding paraphrases) and keep their round-2 verdict. L4-03 A14 (not in the sample) was re-judged as the round-2 GEN-03 finding.",
+ "tasks": [
+  {
+   "model": "L4-07",
+   "element": "A11",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: REQ-184 E6R3 A1-3.17.2(a) and E3QA S1; REQ-169 FDA-PD24 draft (DRAFT shown), deadline 'with the marketing application' from R4-055."
+  },
+  {
+   "model": "L4-01",
+   "element": "A15",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-01",
+   "element": "A5",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-02",
+   "element": "A10",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: re-judged: now after the OR join G2 (F14 G2 -> A10, F13 A10 -> A11), so both monitoring channels produce the report that A11 reviews - round-1 finding fixed."
+  },
+  {
+   "model": "L4-02",
+   "element": "A8",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-01",
+   "element": "A1",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-06",
+   "element": "A8",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: REQ-145/147 E6R3 A1-3.12.3, REQ-153 FDA-PD24 draft stated as 'may be treated as a signal'."
+  },
+  {
+   "model": "L4-03",
+   "element": "A6",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: REQ-075 = M11-TEMPLATE S5.1 (waivers not permitted); REQ verify item now carried verbatim."
+  },
+  {
+   "model": "L4-04",
+   "element": "A5",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: REQ-096 E3 S10.2 example categories plus TCB/CDISC best practice for the controlled list."
+  },
+  {
+   "model": "L4-03",
+   "element": "A12",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: re-judged: label now 'Request approval of intentional protocol deviation' (glossary form); sources unchanged."
+  },
+  {
+   "model": "L4-07",
+   "element": "A2",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: REQ-156 E9 S5.2/S5.2.1/GL 'before breaking the blind'; REQ-162 now stated as 'may ... (good practice)', matching R2-089; REQ-163 E9 S5.2.2."
+  },
+  {
+   "model": "L4-01",
+   "element": "A10",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-08",
+   "element": "A8",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-01",
+   "element": "A12",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: re-judged: REQ-027 deadline is now 'none' and A12 shows no deadline; 'immediately' stays in the statement as the content of the contractual duty - round-1 finding fixed."
+  },
+  {
+   "model": "L4-01",
+   "element": "A8",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-02",
+   "element": "A5",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: re-judged: REQ-042 now has modal 'may' and reads 'may be used to select sites'; the panel shows the modal; the element keeps ICH because REQ-043 (should) sits next to it, so no MAY chip - correct. Round-1 finding fixed."
+  },
+  {
+   "model": "L4-03",
+   "element": "A11",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: re-judged: verify items now verbatim REQ items; sources unchanged."
+  },
+  {
+   "model": "L4-08",
+   "element": "A5",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-02",
+   "element": "A14",
+   "verdict": "ok",
+   "note": "re-judged (round 3): A14 'Report deviation to sponsor' now runs for every deviation (F20 A13 -> A14, F24 A14 -> G4 'Which additional reports are due?'); REQ-066 (FDA-PD24 SIII.B.1, DRAFT shown: 'report to the sponsor every protocol deviation') is now true on every path - in round 2 A14 was the default flow of G4 and was skipped whenever a system incident or suspected serious breach was reported. REQ-067 (E6R3 A1-2.11, premature unblinding, promptly) unchanged; deadline attribution per REQ correct; party investigator."
+  },
+  {
+   "model": "L4-03",
+   "element": "A3",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: REQ-082 = E6R3 A1-2.5.5 and A1-3.13.3 ('by the investigator/institution or the sponsor', 'if required' -> G9); EU sponsor-only submission carried as [verify] (C-12)."
+  },
+  {
+   "model": "L4-06",
+   "element": "A3",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: REQ-134 E6R3 A1-3.12.1; REQ-135 21CFR312.56(b) 'promptly either secure compliance or end participation' (LAW, US)."
+  },
+  {
+   "model": "L4-07",
+   "element": "A10",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: re-judged: label 'Report serious breaches in clinical study report'; REQ-180 = EMA-SB S5.1."
+  },
+  {
+   "model": "L4-03",
+   "element": "A8",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: new in sample: implied assessment step marked [verify] (no named source step); REQ-078, REQ-070, REQ-071 define the immediate-hazard exception it decides; the deadlines 'before implementation / before the change' are true for the assessment as well."
+  },
+  {
+   "model": "L4-08",
+   "element": "A3",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: unchanged, round-1 verdict."
+  },
+  {
+   "model": "L4-08",
+   "element": "A4",
+   "verdict": "ok",
+   "note": "unchanged since round 2 (identical dump); round-2 verdict: re-judged: label 'Archive content of clinical trial master file' uses the EU CTR Art. 58 term; 25-year period in the deadline."
+  }
+ ],
+ "other_findings": [
+  {
+   "rule_id": "SCP-02",
+   "model": "L4-03",
+   "element": "S1",
+   "severity": "SHOULD",
+   "owner": "B1",
+   "status": "documented-exception",
+   "message": "Sponsor sub-process entered by two message types through one start event: accepted by the orchestrator as one business trigger ('Intentional protocol deviation communicated'), with the deciding task A14 before G1 (conflicts.md C-27, rule_exceptions FLW-09, revisitable by the user). No repair needed."
+  },
+  {
+   "rule_id": "FLW-05",
+   "model": "L3",
+   "element": "G5",
+   "severity": "SHOULD",
+   "owner": "B1",
+   "status": "documented-choice",
+   "message": "New XOR split G5 'Intentional protocol deviation considered?' has no deciding activity before it (predecessor: AND split G1, then A1). notes.md section 6 names a trigger attribute - the investigator's consideration of an intentional protocol deviation (L4-03 S2), communicated by M11/M12 - but M11/M12 reach A3 only after the gateway, and unlike the trial-attribute gateways (EU CTR applies?, IND under 21 CFR 312?) the condition is not fixed at set-up but arises during conduct. Plausible only under the reading convention TA1 ('channels open in parallel ... only when an intentional protocol deviation is considered'); listed, like the round-1 FLW-08 reading-convention item, so that the user confirms the convention. No repair needed if confirmed."
+  },
+  {
+   "rule_id": "FLW-05",
+   "model": "L4-03",
+   "element": "G4",
+   "severity": "SHOULD",
+   "owner": "B1",
+   "status": "open",
+   "message": "notes.md section 6 row for G4 'Deviation from eligibility criteria requested?' quotes A12 as 'Request approval of intentional deviation'; the spec label is 'Request approval of intentional protocol deviation' (renamed in round 2 for LBL-04), so the table uses the short form the LBL-04 repair removed. Since round 2 the sponsor review A14 'Review intentional protocol deviation communication' carries REQ-075 (trigger 'Deviation from eligibility criteria requested') and precedes G1 -> G4, so the sponsor-side deciding activity for G4 is A14, which the row does not name. Repair (documentation only): correct the label and name A14 (content of the request from A12 via M3, reviewed by A14)."
+  },
+  {
+   "rule_id": "LBL-05",
+   "model": "L4-02",
+   "element": "l3_cut.md A2",
+   "severity": "SHOULD",
+   "owner": "Y1",
+   "status": "open",
+   "message": "synthesis/l3_cut.md, A2 'Two channels, one trigger' (rewritten for the round-3 G1/G4 change) says the OR join G2 closes the channels 'before \"Evaluate monitoring findings\" and \"Communicate detected deviations to investigator\"'. No element is labelled 'Evaluate monitoring findings'; after G2 L4-02 has A10 'Document monitoring report' and A11 'Review monitoring reports' (then G3 and A12). One name for one thing: use the spec labels."
+  }
+ ],
+ "passed": [
+  {
+   "check": "FLW-05: notes.md section 6 lists all 29 XOR/OR splits (L3 G1 is now an AND split and no longer listed; new: L3 G5) with the exact question; every 'directly before' claim holds (tools/validate/v1_r3_flw05.py: 29 splits, 29 rows, 1 issue = the L4-03 G4 label above); L4-02 G4 row now names A13 with A14 in between (true: F20 A13 -> A14, F24 A14 -> G4); L4-02 G1 deciding element (monitoring plan L4-01 A10, applied at timer start) unchanged and plausible; L4-03 G1 <- A14 directly before; deciding element or trial attribute plausible for all 29 (L3 G5 only under the reading convention - see the documented-choice item)",
+   "count": 29
+  },
+  {
+   "check": "SCP-02 on the changed models: L4-02 one Sponsor trigger (timer S1), the investigator start S2 is the external participant's own process; named outcomes E1, E2 and investigator E3 'Deviation reported to sponsor' - E3 is now true on every investigator path because A14 precedes G4 (in round 2 the system-incident and suspected-serious-breach paths reached E3 without the deviation report); L4-03 one trigger (accepted exception C-27), outcomes E1-E3 unchanged by the A14 REQ change; L3 A3 (L4-03) is now entered only through G5 'Yes', its trigger in l3_cut ('Intentional protocol deviation considered') matches the G5 question and L4-03 S2",
+   "count": 3
+  },
+  {
+   "check": "LBL-04 on the changed elements: L3 G5 'Intentional protocol deviation considered?' (glossary label form 'intentional protocol deviation'; same wording as L4-03 S2 and REQ-073 trigger); L4-02 F2 'Centralised data review due' / F3 'Site monitoring visit due' (same terms as groups GR_CENTRAL 'Centralised data review', GR_SITE 'Site monitoring' and A6 'Perform site monitoring visit'); G4 'Which additional reports are due?', F21 'No further report', F22 'System incident', F23 'Suspected serious breach (EU CTR)' (glossary 'suspected serious breach', 'EU CTR' not bare 'CTR'); L4-03 A14 'Review intentional protocol deviation communication' (glossary form); no bare 'CSR'/'CTR', no 'intentional deviation' or 'important deviation' short form in any spec label",
+   "count": 9
+  },
+  {
+   "check": "GEN-03 L4-03 A14 (round-2 finding) re-judged: A14 now carries the sponsor REQs of the paths it routes - REQ-083 (E6R3 A1-3.13.3, sponsor, 'take prompt action to address immediate hazards', binding-ICH), REQ-075 (M11-TEMPLATE S5.1, waivers not permitted, binding-ICH with its [verify binding]) and REQ-076 (FDA-PD24 SIII.B.2 draft, 'sponsors should carefully consider investigators' requests', DRAFT shown); src pairs are those of the findings (R1-079, R2-113, R4-061); binding-ICH = strongest REQ binding; deadline 'promptly' is REQ-083's (only REQ with a deadline, shown unattributed, as on the other 28 elements whose REQs carry exactly one deadline); party 'sponsor; Sponsors' verbatim; own [verify] 'review step implied by the routing; no source names it as a separate step' kept. No invented obligation, actor or deadline - round-2 finding fixed",
+   "count": 1
+  },
+  {
+   "check": "GEN-03 systemic (round 1, Y1) still holds: requirements.yaml carries a modal for every REQ; 'may'-only binding REQs stated as permissions",
+   "count": 16
+  }
+ ],
+ "not_checked": [
+  "Fit of the model to the real process (GEN-06): only the process owners can confirm it.",
+  "The source documents themselves: the spot check compares labels and REQ statements with the finding paraphrases, not with the source texts (X1's remit).",
+  "Retained, unchanged sample tasks were not re-read; their round-2 verdict stands (their dump is identical to round 2)."
+ ]
+}

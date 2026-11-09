@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{IPD_TITLE}}</title>
+<link rel="icon" href="data:,">
+<style>
+{{IPD_LIB_CSS}}
+</style>
+<style>
+{{IPD_APP_CSS}}
+</style>
+</head>
+<body>
+<header class="hdr">
+  <h1 id="page-title">{{IPD_TITLE}}</h1>
+  <p class="status" id="page-status">{{IPD_STATUS}}</p>
+  <p class="meta"><span id="basis"></span><span id="mode"></span></p>
+</header>
+<nav class="navbar" aria-label="Diagram navigation">
+  <button type="button" class="btn" id="back" disabled>Back to L3</button>
+  <ol class="crumbs" id="crumbs" aria-label="Breadcrumb"></ol>
+  <output id="z-level" class="zlevel" aria-live="off"></output>
+  <button type="button" class="btn" id="mm-toggle" aria-pressed="false" title="Show or hide the overview map (minimap); click or drag in the map to move the view">Show minimap</button>
+  <div class="zoom" role="group" aria-label="Zoom">
+    <button type="button" id="z-out" title="Zoom out" aria-label="Zoom out">-</button>
+    <button type="button" id="z-in" title="Zoom in" aria-label="Zoom in">+</button>
+    <button type="button" id="z-100" title="Zoom to 100 % (readable source boxes)" aria-label="Zoom to 100 percent">100%</button>
+    <button type="button" id="z-fit" title="Fit diagram to the window" aria-label="Fit diagram">Fit</button>
+  </div>
+</nav>
+<section class="filters" id="filters" aria-label="Filter elements">
+  <label>Binding
+    <select id="f-binding">
+      <option value="">All</option>
+      <option value="LAW">LAW - binding law</option>
+      <option value="ICH">ICH - ICH guideline</option>
+      <option value="GUIDANCE">GUIDANCE - agency guidance</option>
+      <option value="DRAFT">DRAFT - draft guidance</option>
+      <option value="BP">BP - best practice</option>
+      <option value="VERIFY">VERIFY - open check</option>
+    </select>
+  </label>
+  <label>Jurisdiction
+    <select id="f-jur">
+      <option value="">All</option>
+      <option value="ICH">ICH</option>
+      <option value="EU">EU</option>
+      <option value="US">US</option>
+    </select>
+  </label>
+  <details class="keys" id="f-keys">
+    <summary id="f-keys-sum">Source keys: all</summary>
+    <div class="keys-list" id="f-keys-list"></div>
+  </details>
+  <label class="search">Search
+    <input type="search" id="f-q" placeholder="Label, source, REQ, text" autocomplete="off">
+  </label>
+  <button type="button" class="btn" id="f-clear">Clear filters</button>
+  <output id="match-count" class="count" aria-live="polite"></output>
+</section>
+<main class="main" id="main">
+  <div class="canvas-wrap">
+    <div id="canvas" aria-label="BPMN diagram"></div>
+    <div class="canvas-msg" id="canvas-msg" hidden></div>
+  </div>
+  <aside class="panel" id="panel" aria-label="Details">
+    <button type="button" class="panel-toggle" id="panel-toggle" aria-expanded="false" aria-controls="panel-body">Show details</button>
+    <div id="panel-body" class="panel-body" aria-live="polite"></div>
+  </aside>
+</main>
+<footer class="legend" id="legend">
+  <section>
+    <h3>Badges (binding class)</h3>
+    <ul id="lg-badges"></ul>
+  </section>
+  <section>
+    <h3>BPMN symbols used</h3>
+    <ul id="lg-symbols"></ul>
+  </section>
+  <section>
+    <h3>Colour and overlay notes</h3>
+    <ul id="lg-colours"></ul>
+    <h3 class="mt">BPMN 2.0 XML</h3>
+    <p><button type="button" class="btn" id="copy-xml">Copy BPMN XML</button></p>
+    <p id="copy-status" class="copy-status" role="status" aria-live="polite"></p>
+    <textarea id="copy-fallback" class="copy-fallback" readonly hidden aria-label="BPMN XML"></textarea>
+  </section>
+  <section>
+    <h3>Build</h3>
+    <ul id="lg-build" class="build"></ul>
+  </section>
+</footer>
+<script id="ipd-data" type="application/json">{{IPD_DATA}}</script>
+<script id="ipd-bpmn" type="application/json">{{IPD_BPMN}}</script>
+<script id="ipd-moddle" type="application/json">{{IPD_MODDLE}}</script>
+<script>
+{{IPD_BUNDLE}}
+</script>
+<script>
+{{IPD_MINIMAP_JS}}
+</script>
+<script>
+{{IPD_APP_JS}}
+</script>
+</body>
+</html>

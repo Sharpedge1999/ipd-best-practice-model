@@ -1,0 +1,138 @@
+ICH E6 Good clinical practice - Scientific guideline | European Medicines Agency (EMA)
+Skip to main content
+English
+Select your languageбългарскиespañolčeštinadanskDeutscheestiελληνικάEnglishfrançaisGaeilgehrvatskiitalianolatviešulietuviųmagyarMaltiNederlandspolskiportuguêsromânăslovenčinaslovenščinasuomisvenskaÍslenskanorsk
+Search
+Select how you want to search using keywords
+All words
+Any word
+Exact phrase
+MedicinesFind medicineTherapeutic areas: latest updatesDownload medicine dataWhat we publish on medicines and whenMedicines under evaluationNational registers
+Human regulatoryOverviewResearch and developmentMarketing authorisationPost-authorisationMedical devicesHerbal products
+Veterinary regulatoryOverviewResearch and developmentMarketing authorisationPost-authorisation
+CommitteesOverviewHow the committees workCHMPCVMPPRACCOMPHMPCCATPDCOWorking parties and other groups
+News & eventsOverviewNewsEventsWhat's newCommittee highlightsPublicationsPress and social mediaPodcast: Inside EMACampaignsSpeechesOpen consultationsRSS feeds
+Partners & networksOverviewEU partnersInternational activitiesPatients and consumersHealthcare professionalsAcademiaPharmaceutical industryNetworksHealth technology assessment bodiesOne Health approachAnimal health professionalsOne substance - one assessment
+About usOverviewWhat we doWho we areHow we workFeesSupport to SMEsAnnual reports and work programmesHistory of EMACareersProcurementAbout this websiteData protection and privacyContacts
+Home
+Scientific guidelines
+ICH E6 Good clinical practice - Scientific guideline
+ICH E6 Good clinical practice - Scientific guideline
+The ICH Guideline for Good Clinical Practice (GCP) establishes an international standard for the design, conduct, recording, and reporting of clinical trials involving human participants. It outlines the responsibilities of sponsors, investigators, and other stakeholders to protect the rights, safety, and well-being of trial participants, while ensuring the integrity and credibility of clinical trial data.
+The guideline provides a unified framework to facilitate the mutual acceptance of clinical trial results by regulatory authorities across ICH member regions, supporting global collaboration in drug development and ensuring consistent regulatory standards.
+Scientific guidelineHumanScientific guidelines
+Page contentsPage contents
+ICH E6(R3) - Consolidated guideline
+ICH E6(R3) - Principles and Annex 1 - Current version - effective from 23 July 2025
+ICH E6(R3) - Annex 2 - effective from 15 January 2027
+ICH E6(R2)
+ICH E6(R1)
+External links
+Related content
+ICH E6(R3) introduces innovative provisions designed to apply across various types and settings of clinical trials, ensuring continued relevance in the face of ongoing technological and methodological advancements. This guideline provides a new language to facilitate innovations in clinical trial design, technology, and operational approaches. It encourages a risk-based and proportionate approach to conducting clinical trials, promoting fit-for-purpose solutions. It fosters transparency through clinical trial registration and result reporting and offers additional guidance to enhance the informed consent process.​
+To provide clarity and better readability ICH E6(R3) has a new structure and is composed of:​
+An overarching principles and objectives document; ​
+Annex 1 (interventional clinical trials);​
+Annex 2 (additional considerations for non-traditional interventional clinical trials). ​​
+The principles are intended to support efficient approaches to trial design and conduct. They are interdependent and should be considered in their totality to assure ethical trial conduct and reliable results. ​
+Annex 1, including its Appendices, is intended to provide information on how the principles can be appropriately applied to clinical trials. ​
+This Annex has been developed alongside the principles and objectives document to ensure consistency and to offer stakeholders a comprehensive package that can serve as a replacement for ICH E6(R2).
+Annex 2 covers designs such as pragmatic clinical trials and decentralized clinical trials, as well as those trials that incorporate real world data sources. The goal of Annex 2 is to offer GCP considerations for clinical trials with various design elements and data sources, ensuring that they are fit for their intended purpose.​
+This Annex should be read in conjunction with the Principles and Annex 1.
+A consolidated version of the principles, Annex 1 and Annex 2 has been published.
+The overarching principles and Annex 1 adopted by ICH and CHMP came into effect on 23 July 2025.
+Annex 2 reached Step 4 following ICH adoption on 3 June 2026 and CHMP adoption on 25 June 2026 and will come into effect on 15 January 2027.
+ICH E6(R3) guideline builds on key concepts outlined in ICH E8(R1) Revision of General Considerations for Clinical Studies. This includes fostering a quality culture and proactively designing quality into clinical trials and drug development planning, identifying factors critical to trial quality, and engaging interested parties, as appropriate, using a proportionate risk-based approach. ​
+Keywords: Good clinical practice (GCP), decentralised, real-world, pragmatic, investigator, sponsor, protocol, investigator's brochure, trial design, safety reporting, informed consent, statistics, ethics committee, clinical study/trial report, clinical trials, innovation, design, proportionality, ICH E6(R3)
+ICH E6(R3) - Consolidated guideline
+ICH E6(R3) Guideline for Good Clinical Practice - Step 5Adopted
+Reference Number: EMA/CHMP/ICH/162879/2026
+Legal effective date: 15/01/2027
+English (EN) (1.1 MB - PDF)First published: 15/07/2026
+View
+ICH E6(R3) - Principles and Annex 1 - Current version - effective from 23 July 2025
+ICH E6 (R3) Guideline for good clinical practice (GCP) - Step 5Adopted
+Reference Number: EMA/CHMP/ICH/135/1995
+Legal effective date: 23/07/2025
+English (EN) (612.54 KB - PDF)First published: 27/01/2025
+View
+Overview of comments on ICH E6 (R3) guidelineReference Number: EMA/553381/2023 Rev.1
+English (EN) (1.72 MB - PDF)First published: 19/12/2023
+Last updated: 22/12/2023
+View
+Draft ICH E6 (R3) Guideline on good clinical practice (GCP) - Step 2bDraft: consultation closed
+Consultation dates: 26/05/2023
+to  26/09/2023
+Reference Number: EMA/CHMP/ICH/135/1995
+English (EN) (774.37 KB - PDF)First published: 26/05/2023
+View
+ICH E6(R3) - Annex 2 - effective from 15 January 2027
+ICH E6(R3) guideline for good clinical practice - Annex 2 - Step 5Adopted
+Reference Number: EMA/CHMP/ICH/495903/2024
+Legal effective date: 15/01/2027
+English (EN) (755.91 KB - PDF)First published: 15/07/2026
+View
+Draft ICH E6(R3) guideline for good clinical practice - Annex 2 - Step 2bDraft: consultation closed
+Reference Number: EMA/CHMP/ICH/495903/2024
+English (EN) (808.7 KB - PDF)First published: 29/11/2024
+View
+Overview of comments received on ICH E6(R3) guideline for good clinical practice – Annex 2 - Step 2bReference Number: EMA/132793/2025
+English (EN) (876.5 KB - PDF)First published: 23/05/2025
+View
+ICH E6(R2)
+ICH guideline for good clinical practice E6(R2) - Step 5 - Revision 2Adopted
+Reference Number: EMA/CHMP/ICH/135/1995
+Legal effective date: 01/01/1997
+English (EN) (693.2 KB - PDF)First published: 01/07/2002
+Last updated: 15/12/2016
+View
+Draft ICH guideline E6 on good clinical practice - Revision 2Draft
+Reference Number: EMA/CHMP/ICH/337843/2021
+English (EN) (359.02 KB - PDF)First published: 24/06/2021
+View
+ICH E6(R1)
+ICH guideline for good clinical practice E6(R2) 4 - Step 2b - Revision 1Draft: consultation closed
+Consultation dates: 04/08/2015
+to  03/02/2016
+Reference Number: EMA/CHMP/ICH/135/1995
+English (EN) (681.68 KB - PDF)First published: 04/08/2015
+Last updated: 04/08/2015
+View
+ICH  E6 (R1) guideline for Good Clinical Practice - Revision 1Adopted
+Reference Number: CPMP/ICH/135/95
+English (EN) (398.19 KB - PDF)First published: 01/07/2002
+Last updated: 01/07/2002
+View
+External links
+ICH official web site : ICH
+ICH harmonised guideline for good clinical practice E6(R3)
+ICH harmonised guideline - General considerations for clinical studies E8(R1)
+Related content
+Clinical efficacy and safety: general
+ICH: efficacy
+Share this page
+Back to top
+Product emergency hotline
+OUTSIDE WORKING HOURS
+About us
+What we do
+Careers
+Committees & working parties
+Regulatory network
+European experts
+About this website
+Languages
+Accessibility
+Glossaries
+Cookies
+Website data protection notice
+Data protection at EMA
+Frequently asked questions
+Search tips
+Access to documents
+Contacts
+Send a question
+EMA Service Desk (system support)
+Services and databases
+European Medicines AgencyDomenico Scarlattilaan 61083 HS AmsterdamThe NetherlandsTel: +31 (0)88 781 6000How to find usPostal address and deliveriesBusiness hours and holidaysRSS FeedBlueskyFollow EMA on Bluesky. Opens in a new window.YouTubeFollow EMA on YouTube. Opens in a new window.LinkedInFollow EMA on LinkedIn. Opens in a new window.© 1995 - 2026 European Medicines AgencyEuropean Union agencies network
+An agency of the European Union

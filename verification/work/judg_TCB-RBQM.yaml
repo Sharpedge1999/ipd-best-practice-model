@@ -1,0 +1,10 @@
+src: TCB-RBQM
+method: webfetch
+notes:
+  _all: "Local copy vendor/sources/TCB-RBQM/doc_35.txt is a browser challenge page (unusable); checked on the publisher HTML."
+except:
+  R5-048:
+    v: paraphrase-distorted
+    s: low
+    note: "Quote verbatim. Source: 'In parallel, sponsors should define appropriate risk management strategies ... (i.e., Integrated Quality Risk Management Plans enabling risk-based monitoring strategy). This includes the use of controls like QTLs and Key Risk Indicators (KRIs).' Paraphrase turns 'in parallel' into a sequence ('then'). Confirmed by a second, differently worded WebFetch."
+    corr: "At protocol design CtQ consideration is foundational to building quality in; in parallel, sponsors should define risk management strategies (integrated quality risk management plans enabling a risk-based monitoring strategy), including controls such as QTLs and KRIs."

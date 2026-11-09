@@ -1,0 +1,73 @@
+# X1 corrections (Y1 re-entry, gate G4, 06 Nov 2026).
+# Applied by tools/y1_build.py on top of research/R*.yaml when it writes synthesis/merged_findings.yaml
+# (research files stay unchanged; they belong to the research owners). Each entry: id, set (fields replaced),
+# x1 (verdict and severity from verification/X1_results.yaml, corrected true/false, note).
+# Every correction was checked by Y1 against the local text (vendor/sources/INDEX.md) or the cited URL.
+
+- id: R1-127
+  set:
+    paraphrase: "Essential Records Table row: 'Trial-specific plans (e.g., risk management, monitoring, safety, data management, data validation and statistical analysis) and procedures'; the risk management, monitoring, safety, data management and data validation plans are asterisked, i.e. should generally be in place before trial start (C.2.5); the statistical analysis plan is not asterisked."
+  x1: {verdict: paraphrase-distorted, severity: low, corrected: true, note: "Y1 checked local text (E6R3 consolidated, printed 81): 'safety,*' is asterisked; safety plan added."}
+- id: R2-017
+  set:
+    paraphrase: "Evidence used to inform the study design should be gathered and reviewed transparently before and during the study, acknowledging gaps in data and conflicting data where known and anticipating new ones."
+  x1: {verdict: paraphrase-distorted, severity: low, corrected: true, note: "Y1 checked local text (E8R1 S3.3.1, printed 5): object is 'evidence used to inform the study design'."}
+- id: R2-102
+  set: {}
+  x1: {verdict: page-wrong, severity: low, corrected: false, note: "Y1 disagrees: in the local text the sentence starts at the foot of printed 12 / PDF 14 ('such trials are not') but the cited phrase 'the importance of minimising the number of protocol violations and deviations' and X1's own snippet are on printed 13 / PDF 15 (footer 13). Cited page printed 13 kept; orchestrator may prefer 'printed 12-13'."}
+- id: R2-115
+  set: {page: "printed 46 / PDF 55"}
+  x1: {verdict: page-wrong, severity: low, corrected: true, note: "Y1 checked local text: S10.2 Analysis Sets on PDF 55, footer 46."}
+- id: R2-116
+  set: {page: "printed 52 / PDF 61"}
+  x1: {verdict: page-wrong, severity: low, corrected: true, note: "Y1 checked local text: S11.6 on PDF 61, footer 52; TOC agrees. Earlier [verify] on the page closed."}
+  drop_verify: true
+- id: R2-117
+  set: {page: "printed 53 / PDF 62"}
+  x1: {verdict: page-wrong, severity: low, corrected: true, note: "Y1 checked local text: S11.10 on PDF 62, footer 53; TOC agrees. Earlier [verify] on the page closed."}
+  drop_verify: true
+- id: R3-048
+  set:
+    paraphrase: "The notification is due without undue delay and at the latest within 7 calendar days of the sponsor becoming aware; the sponsor should perform any assessment needed to confirm seriousness in a timely manner, and that assessment should not extend the 7-day period (the 7-day limit itself is binding through EU CTR Art. 52(1))."
+  x1: {verdict: paraphrase-distorted, severity: medium, corrected: true, note: "Y1 checked local text (EMA-SB S3.2, printed 5): 'should perform the assessment ... in a timely manner' and 'should not extend the reporting period of 7 calendar days'."}
+- id: R3-085
+  set:
+    paraphrase: "Q&A 1.5: sponsors and investigators must comply with applicable regulatory requirements; the EU CTR aims at maximum harmonisation and takes precedence over conflicting rules in guidelines, including ICH GCP. Documents or data not foreseen by the Regulation (e.g. the ICH E6 progress report) shall not be requested or submitted on the basis of recommendations in other guidelines."
+  x1: {verdict: paraphrase-distorted, severity: low, corrected: true, note: "Y1 checked local text (EUCTR-QA v7.4, chapter 1 printed 4-5): 'shall not be requested or submitted'."}
+- id: R3-088
+  set:
+    loc: "SWebpage"
+    page: "EMA web page (unpaginated); the cover table of EMA/CHMP/ICH/162879/2026 (PDF 1) gives the same date as 'Date for coming into effect'"
+  x1: {verdict: loc-wrong, severity: low, corrected: true, note: "Y1 checked local text: quote 'will come into effect on 15 January 2027' is on the EMA web page (doc_13.txt line 44), not on the PDF cover."}
+- id: R3-089
+  set:
+    paraphrase: "The EMA page states that Annex 1 (with its appendices) was developed alongside the principles to offer a comprehensive package that can serve as a replacement for ICH E6(R2); it gives no date on which E6(R2) stops applying."
+  x1: {verdict: paraphrase-distorted, severity: medium, corrected: true, note: "Y1 checked local text (doc_13.txt lines 38-39): 'This Annex' follows the Annex 1 sentence and refers to Annex 1, not Annex 2."}
+- id: R5-046
+  set:
+    paraphrase: "Each company should determine when to finalise its deviation process, i.e. close out the living deviation assessment plan (PDAP) or other documents used; the page recommends that finalisation occur after the last study data have been reviewed."
+    deadline: "company-defined; recommended after the last study data have been reviewed"
+    record: "closed-out PDAP / final deviation documentation"
+  x1: {verdict: paraphrase-distorted, severity: medium, corrected: true, note: "Y1 re-fetched the cited URL (WebFetch 2026-11-06): parenthetical '(close out the living PDAP or other documents used)' and 'We recommend that finalization occur after the last study data has been reviewed.' confirmed; earlier timing [verify] closed."}
+  drop_verify_containing: "ideally after the last study data"
+- id: R5-048
+  set:
+    paraphrase: "At protocol design, consideration of critical to quality factors is foundational to building quality into the trial; in parallel, sponsors should define risk management strategies (integrated quality risk management plans enabling a risk-based monitoring strategy), including controls such as QTLs and key risk indicators."
+  x1: {verdict: paraphrase-distorted, severity: low, corrected: true, note: "Y1 re-fetched the cited URL (WebFetch 2026-11-06): sentence starts 'In parallel, sponsors should define appropriate risk management strategies'."}
+- id: R5-071
+  set: {page: "printed 7 (S II.E.1, lines 234-248); printed 2 (S I, lines 36-42); printed 3-5 (S II.C)"}
+  x1: {verdict: page-wrong, severity: low, corrected: true, note: "Y1 checked local text: lines 36-42 on PDF 7 footer 2, lines 207-249 on PDF 12 footer 7, II.C on PDF 8-10 footers 3-5."}
+
+# Omission leads (X1_omissions.md): deadline in the text but missing from the paraphrase (deadline field was already correct)
+- id: R3-013
+  set:
+    paraphrase: "Art. 38 covers temporary halt or early termination by the sponsor for reasons of subject safety, not urgent safety measures. A halt or early termination for reasons of a change of the benefit-risk balance must be notified to the Member States concerned through the EU portal without undue delay but not later than 15 days of the date of the halt or termination, with the reasons and the follow-up measures (passive wording; the sponsor per the title)."
+  x1: {verdict: confirmed, corrected: true, note: "omission lead: 15-day deadline added to the paraphrase (deadline field unchanged)."}
+- id: R3-025
+  set:
+    paraphrase: "The sponsor must notify the Member States concerned, through the EU portal, of unexpected events that affect the benefit-risk balance but are not suspected unexpected serious adverse reactions under Art. 42, without undue delay but no later than 15 days from the date the sponsor became aware of the event."
+  x1: {verdict: confirmed, corrected: true, note: "omission lead: 15-day deadline added to the paraphrase (deadline field unchanged)."}
+- id: R4-016
+  set:
+    paraphrase: "If the sponsor determines that the investigational drug presents an unreasonable and significant risk to subjects, it has to discontinue the investigations presenting that risk as soon as possible and in no event later than 5 working days after the determination, notify FDA, all IRBs and all investigators who ever participated of the discontinuance, assure disposition of outstanding drug stocks under 312.59 and give FDA a full report of its actions. Boundary event for the iPD process when deviations reveal such a risk."
+  x1: {verdict: confirmed, corrected: true, note: "omission lead: 5-working-day deadline added; Y1 checked local eCFR text - the 5 working days attach to discontinuing the investigation, not to the notification."}

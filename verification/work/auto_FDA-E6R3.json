@@ -1,0 +1,15 @@
+{
+ "R4-078": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 9 / printed 2"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 9 / printed 2",
+   "PDF 9 / printed 2"
+  ],
+  "quote_in_loc": false
+ }
+}

@@ -1,0 +1,309 @@
+====================================================================================================
+R2-001 | E8R1 | loc=S3 | page=printed 3
+PARA: Quality by design means concentrating on critical to quality factors so that participants' rights, safety and well-being are protected, results are reliable and meaningful, and risks to those factors are managed in proportion to the risk. A framework for identifying and reviewing these factors supports the approach from design and planning through conduct, analysis and reporting.
+LOC: found PDF 7 / printed 1 .. PDF 7 / printed 1 (352 chars) 
+  PASSAGE: 3. Provide an overview of the types of clinical studies performed during the product lifecycle, and describe study design elements that support the identification of quality factors critical to ensuring the protection of study participants, the integrity of the data, the reliability of results, and the ability of the studies to meet their objectives 
+  DOCBEST-OUTSIDE 0.62 @ PDF 9 / printed 3: DESIGNING QUALITY INTO CLINICAL STUDIES The quality by design approach to clinical research (Section 3.1) involves focusing on critical to quality factors to ensure the protection of the rights, safety, and wellbeing of study participants, the generation of reliable and meaningful results, and the management of risks to those factors using a risk-proportionate approach (Section 3.2). The approach 
+====================================================================================================
+R2-002 | E8R1 | loc=S3.1 | page=printed 3
+PARA: Quality is built in prospectively through attention to the protocol, procedures, operational plans and training, which can raise the chance of answering the study questions and avoiding important errors. Retrospective document and data review, monitoring and audits are an important part of quality assurance but, even combined, are not sufficient on their own to ensure study quality (statement, no 'should').
+LOC: found PDF 9 / printed 3 .. PDF 10 / printed 4 (1594 chars) 
+  PASSAGE-HEAD: 3.1 Quality by Design of Clinical Studies Quality is a primary consideration in the design, planning, conduct, analysis, and reporting of clinical studies and a
+  WINDOW 0.73 @ PDF 9 / printed 3: 3.1 Quality by Design of Clinical Studies Quality is a primary consideration in the design, planning, conduct, analysis, and reporting of clinical studies and a necessary component of clinical development programmes. The likelihood that a clinical study will answer the research questions while preventing important errors can be dramatically improved through prospective attention to the design of all components of the study protocol, procedures, associated operational plans and training. Activities such as document and data review and monitoring, where conducted retrospectively, are an important part of a quality assurance process; but, even when combined with audits, they are not sufficient to ensure quality of a clinical study. Good planning and implementation of a clinical study also derive from attention to the design elements of clinical studies as de
+====================================================================================================
+R2-003 | E8R1 | loc=S3.2 | page=printed 4
+PARA: Critical to quality factors are attributes of a study whose integrity is fundamental to protecting participants, to the reliability and interpretability of the results, and to the decisions based on them. They are critical because errors in design or conduct that undermine them would also undermine the reliability or ethics of those decisions.
+QUOTE: attributes of a study whose integrity is fundamental
+QCHECK: exact ['PDF 10 / printed 4'] 
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.83 @ PDF 10 / printed 4: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those factors that stand out as critical to study quality. These critical to quality factors are attributes of a study whose integrity is fundamental to the protection of study participants, the reliability and interpretability of the study results, and the decisions made based on the study results. These quality factors are considered to be critical because, if their integrity were to be undermined by errors of design or conduct, the reliability or ethics of decision-making based on the results of the study would also be undermined. Critical to quality factors should also be considered holistically, so that dependencies among them can be identified. Section 7 of this document provides considerations
+====================================================================================================
+R2-004 | E8R1 | loc=S3.2 | page=printed 4
+PARA: The sponsor and the other parties designing quality into a study should identify its critical to quality factors; each study should have a basic set of quality-relevant factors identified, with emphasis on those that are critical to study quality.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.69 @ PDF 10 / printed 4: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those factors that stand out as critical to study quality. These critical to quality factors are attributes of a study whose integrity is fundamental to the protection of study participants, the reliability and interpretability of the study results, and the decisions made based on the study results. These quality factors are considered to be critical because, if their integrity were to be undermined by errors of design or conduct, the reliability or ethics of decision-making based on the re
+====================================================================================================
+R2-005 | E8R1 | loc=S3.2 | page=printed 4
+PARA: Critical to quality factors should be considered as a whole so that interdependencies between them are recognised.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.60 @ PDF 10 / printed 4: uality. These critical to quality factors are attributes of a study whose integrity is fundamental to the protection of study participants, the reliability and interpretability of the study results, and the decisions made based on the study results. These quality factors are considered to be critical because, if their integrity were to be undermined by errors of design or conduct, the reliability or ethics of decision-making based on the results of the study would also be undermined. Critical to quality factors should also be considered holistically, so that dependencies among them can be identified. Section 7 of this document provides considerations that can help identify critical to quality factors for a study. The design of a clinical study should reflect the state of knowledge and experience with the drug; the condition to be treated, diagnosed or prevented; the underlying biological
+====================================================================================================
+R2-006 | E8R1 | loc=S3.2 | page=printed 4
+PARA: Study design should reflect current knowledge of the drug, the condition, the underlying biology and the intended population; knowledge accumulated at each development stage continues to inform which factors are critical and which controls are used to manage them.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.50 @ PDF 10 / printed 4: ors of design or conduct, the reliability or ethics of decision-making based on the results of the study would also be undermined. Critical to quality factors should also be considered holistically, so that dependencies among them can be identified. Section 7 of this document provides considerations that can help identify critical to quality factors for a study. The design of a clinical study should reflect the state of knowledge and experience with the drug; the condition to be treated, diagnosed or prevented; the underlying biological mechanism (of both the condition and the treatment); and the population for which the drug is intended. As research progresses, knowledge increases and uncertainties about the pharmacology, safety and efficacy of a drug decrease. Knowledge of the drug at any point in development will continually inform the identification of critical to quality factors and
+====================================================================================================
+R2-007 | E8R1 | loc=S3.2 | page=printed 4
+PARA: Once critical to quality factors are identified, the risks to them are to be determined and a decision taken whether each risk is acceptable or should be mitigated, based on its probability, detectability and impact (framed in the source as important).
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.55 @ PDF 10 / printed 4:  and uncertainties about the pharmacology, safety and efficacy of a drug decrease. Knowledge of the drug at any point in development will continually inform the identification of critical to quality factors and control processes used to manage them. The sponsor and other parties designing quality into a clinical study should identify the critical to quality factors. Having identified those factors, it is important to determine the risks that threaten their integrity and decide whether they can be accepted or should be mitigated, based on their probability, detectability and impact. Where it is decided that risks should be mitigated, the necessary control processes should be put in place and communicated, and the necessary actions taken to mitigate the risks. The term risk is used here in the context of general risk management methodology applicable to all factors of a study. Proactive co
+====================================================================================================
+R2-008 | E8R1 | loc=S3.2 | page=printed 4
+PARA: The term risk is used in the sense of general risk management methodology and applies to all factors of a study.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.80 @ PDF 10 / printed 4:  critical to quality factors. Having identified those factors, it is important to determine the risks that threaten their integrity and decide whether they can be accepted or should be mitigated, based on their probability, detectability and impact. Where it is decided that risks should be mitigated, the necessary control processes should be put in place and communicated, and the necessary actions taken to mitigate the risks. The term risk is used here in the context of general risk management methodology applicable to all factors of a study. Proactive communication of the critical to quality factors and risk mitigation activities will support understanding of priorities and resource allocation by the sponsor and investigator sites. Proactive support (e.g., training to site staff, relevant to their role, and description of critical to quality factors and potential mitigation measures in 
+====================================================================================================
+R2-009 | E8R1 | loc=S3.2 | page=printed 4
+PARA: Where a risk to a critical to quality factor is to be mitigated, the necessary control processes should be put in place and communicated, and the necessary mitigating actions taken.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.71 @ PDF 10 / printed 4:  critical to quality factors. Having identified those factors, it is important to determine the risks that threaten their integrity and decide whether they can be accepted or should be mitigated, based on their probability, detectability and impact. Where it is decided that risks should be mitigated, the necessary control processes should be put in place and communicated, and the necessary actions taken to mitigate the risks. The term risk is used here in the context of general risk management methodology applicable to all factors of a study. Proactive communication of the critical to quality factors and risk mitigation activities will support understanding of priorities and resource allocation by the sponsor and investigator sites. Proactive support (e.g., training to site staff, relevant to their role, and description of critical to quality factors and potential mitigation measures in 
+====================================================================================================
+R2-010 | E8R1 | loc=S3.2 | page=printed 4
+PARA: Proactive, ongoing communication about critical to quality factors and risk mitigation activities supports a shared understanding by sponsor and sites of priorities and resource allocation (presented as beneficial, no 'should').
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.70 @ PDF 10 / printed 4: d be mitigated, based on their probability, detectability and impact. Where it is decided that risks should be mitigated, the necessary control processes should be put in place and communicated, and the necessary actions taken to mitigate the risks. The term risk is used here in the context of general risk management methodology applicable to all factors of a study. Proactive communication of the critical to quality factors and risk mitigation activities will support understanding of priorities and resource allocation by the sponsor and investigator sites. Proactive support (e.g., training to site staff, relevant to their role, and description of critical to quality factors and potential mitigation measures in the protocol) will enhance correct implementation of study protocol, procedures, and associated operational plans and process design. Perfection in every aspect of an activity is r
+====================================================================================================
+R2-011 | E8R1 | loc=S3.2 | page=printed 4-5
+PARA: Proactive support, for example site training appropriate to role and a description in the protocol of the critical to quality factors and potential mitigation measures, helps ensure the protocol, procedures and associated plans are implemented correctly.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.73 @ PDF 10 / printed 4: d, the necessary control processes should be put in place and communicated, and the necessary actions taken to mitigate the risks. The term risk is used here in the context of general risk management methodology applicable to all factors of a study. Proactive communication of the critical to quality factors and risk mitigation activities will support understanding of priorities and resource allocation by the sponsor and investigator sites. Proactive support (e.g., training to site staff, relevant to their role, and description of critical to quality factors and potential mitigation measures in the protocol) will enhance correct implementation of study protocol, procedures, and associated operational plans and process design. Perfection in every aspect of an activity is rarely achievable or can only be achieved by use of resources that are out of proportion to the benefit obtained. The qu
+====================================================================================================
+R2-012 | E8R1 | loc=S3.2 | page=printed 5
+PARA: Because perfection in every aspect is rarely achievable, or only with disproportionate resources, quality factors should be prioritised at the design stage to identify those that are critical, and procedures should be proportionate to the risks and to the importance of the information collected.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.86 @ PDF 11 / printed 5:  staff, relevant to their role, and description of critical to quality factors and potential mitigation measures in the protocol) will enhance correct implementation of study protocol, procedures, and associated operational plans and process design. Perfection in every aspect of an activity is rarely achievable or can only be achieved by use of resources that are out of proportion to the benefit obtained. The quality factors should be prioritised to identify those that are critical to the study, at the time of the study design, and study procedures should be proportionate to the risks inherent in the study and the importance of the information collected. The critical to quality factors should be clear and should not be cluttered with minor issues (e.g., due to extensive secondary objectives or processes/data collection not linked to the proper protection of the study participants and/or 
+====================================================================================================
+R2-013 | E8R1 | loc=S3.2 | page=printed 5
+PARA: Critical to quality factors should be clear and should not be cluttered with minor issues, for example those arising from extensive secondary objectives or from processes and data collection unrelated to participant protection or the primary objectives.
+LOC: found PDF 10 / printed 4 .. PDF 11 / printed 5 (3304 chars) 
+  PASSAGE-HEAD: 3.2 Critical to Quality Factors A basic set of factors relevant to ensuring study quality should be identified for each study. Emphasis should be given to those
+  WINDOW 0.79 @ PDF 11 / printed 5: tation of study protocol, procedures, and associated operational plans and process design. Perfection in every aspect of an activity is rarely achievable or can only be achieved by use of resources that are out of proportion to the benefit obtained. The quality factors should be prioritised to identify those that are critical to the study, at the time of the study design, and study procedures should be proportionate to the risks inherent in the study and the importance of the information collected. The critical to quality factors should be clear and should not be cluttered with minor issues (e.g., due to extensive secondary objectives or processes/data collection not linked to the proper protection of the study participants and/or primary study objectives). 
+====================================================================================================
+R2-014 | E8R1 | loc=S3.3 | page=printed 5
+PARA: Identifying critical to quality factors should include judging whether the objectives can be met effectively and efficiently with the chosen design and data sources; the quality approach asks whether objectives are clear, the design answers the question, the question matters to patients and hypotheses are specific and valid. Early patient consultation can support this.
+LOC: found PDF 11 / printed 5 .. PDF 13 / printed 7 (5543 chars) 
+  PASSAGE-HEAD: 3.3 Approach to Identifying the Critical to Quality Factors A key aspect of a quality approach to study design is to ask whether the objectives being addressed 
+  WINDOW 0.61 @ PDF 11 / printed 5: 3.3 Approach to Identifying the Critical to Quality Factors A key aspect of a quality approach to study design is to ask whether the objectives being addressed by the study are clearly articulated; whether the study is designed to meet the research question it sets out to address; whether these questions are meaningful to patients; and whether the study hypotheses are specific and scientifically valid. The approach to the identification of the critical to quality factors should consider whether those objectives can be met, well and most efficiently, by the chosen design and data sources. Patient consultation early in the study design process 
+====================================================================================================
+R2-015 | E8R1 | loc=S3.3 | page=printed 5
+PARA: Study designs should be operationally feasible and avoid unnecessary complexity; protocols and data collection tools should allow the study to be conducted as designed and avoid unnecessary data collection.
+LOC: found PDF 11 / printed 5 .. PDF 13 / printed 7 (5543 chars) 
+  PASSAGE-HEAD: 3.3 Approach to Identifying the Critical to Quality Factors A key aspect of a quality approach to study design is to ask whether the objectives being addressed 
+  WINDOW 0.86 @ PDF 11 / printed 5: er those objectives can be met, well and most efficiently, by the chosen design and data sources. Patient consultation early in the study design process can contribute to this approach and ultimately help to identify the critical to quality factors. Study designs should be operationally feasible and avoid unnecessary complexity. Protocols and case report forms/data collection methods should enable the study to be conducted as designed and avoid unnecessary data collection. Identification of critical to quality factors will be enhanced by approaches that include the following elements: 3.3.1 Establishing a Culture that Supports Open Dialogue Creating a culture that values and rewards critical thinking and open, proactive dialogue about what is critical to quality for a particular study or development programme, going beyond sole reliance on tools and checklists, is encouraged. Open dialog
+====================================================================================================
+R2-016 | E8R1 | loc=S3.3.1 | page=printed 5
+PARA: A culture that values critical thinking and open dialogue, beyond tools and checklists, is encouraged; inflexible one-size-fits-all approaches should be discouraged, and while standard operating procedures are necessary, study-specific strategies and actions are also needed to ensure quality.
+LOC: found PDF 11 / printed 5 .. PDF 11 / printed 5 (953 chars) 
+  PASSAGE-HEAD: 3.3.1 Establishing a Culture that Supports Open Dialogue Creating a culture that values and rewards critical thinking and open, proactive dialogue about what is
+  WINDOW 0.54 @ PDF 11 / printed 5: e dialogue about what is critical to quality for a particular study or development programme, going beyond sole reliance on tools and checklists, is encouraged. Open dialogue can facilitate the development of innovative methods for ensuring quality. Inflexible, "one size fits all" approaches should be discouraged. Standardised operating procedures are necessary and beneficial for conducting good quality clinical studies, but study specific strategies and actions are also needed to effectively and efficiently support quality in a study. Evidence used to inform the study design should be gathered and reviewed, before and during the study, in a transparent manner, while acknowledging gaps in data and conflicting data, where present and known, and anticipating the possible emergence of such gaps or conflicts. 
+====================================================================================================
+R2-017 | E8R1 | loc=S3.3.1 | page=printed 5
+PARA: Evidence supporting quality decisions should be gathered and reviewed transparently before and during the study, acknowledging known gaps and conflicts and anticipating new ones.
+LOC: found PDF 11 / printed 5 .. PDF 11 / printed 5 (953 chars) 
+  PASSAGE-HEAD: 3.3.1 Establishing a Culture that Supports Open Dialogue Creating a culture that values and rewards critical thinking and open, proactive dialogue about what is
+  WINDOW 0.71 @ PDF 11 / printed 5: y or development programme, going beyond sole reliance on tools and checklists, is encouraged. Open dialogue can facilitate the development of innovative methods for ensuring quality. Inflexible, "one size fits all" approaches should be discouraged. Standardised operating procedures are necessary and beneficial for conducting good quality clinical studies, but study specific strategies and actions are also needed to effectively and efficiently support quality in a study. Evidence used to inform the study design should be gathered and reviewed, before and during the study, in a transparent manner, while acknowledging gaps in data and conflicting data, where present and known, and anticipating the possible emergence of such gaps or conflicts. 
+====================================================================================================
+R2-018 | E8R1 | loc=S3.3.2 | page=printed 5
+PARA: Effort should focus on activities essential to reliable and meaningful outcomes and to safe, ethical conduct, and consideration should be given to eliminating nonessential activities and data collection.
+LOC: found PDF 11 / printed 5 .. PDF 12 / printed 6 (563 chars) 
+  PASSAGE: 3.3.2 Focusing on Activities Essential to the Study Efforts should be focused on activities that are essential to the reliability and meaningfulness of study outcomes for patients and public health, and the safe, ethical conduct of the study for participants. Consideration should be given to eliminating nonessential activities and data collection from the study to increase quality by simplifying conduct, improving study efficiency, and targeting resources to critical areas. Resources should be deployed to identify and prevent or control errors that matter. 
+====================================================================================================
+R2-019 | E8R1 | loc=S3.3.2 | page=printed 6
+PARA: Resources should be directed to detecting, and to preventing or controlling, the errors that matter.
+QUOTE: Resources should be deployed to identify and prevent or control errors that matter.
+QCHECK: exact ['PDF 12 / printed 6'] 
+LOC: found PDF 11 / printed 5 .. PDF 12 / printed 6 (563 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R2-020 | E8R1 | loc=S3.3.3 | page=printed 6
+PARA: Study design benefits from input from a broad range of stakeholders, including patients and healthcare providers, and should be open to challenge by internal and external experts; investigators, study coordinators, other site staff and patients or patient organisations may contribute insight, for example on enrolment feasibility, visit burden that could cause dropouts, and endpoint relevance.
+LOC: found PDF 12 / printed 6 .. PDF 12 / printed 6 (1327 chars) 
+  PASSAGE-HEAD: 3.3.3 Engaging Stakeholders in Study Design Clinical study design is best informed by input from a broad range of stakeholders, including patients and healthcar
+  WINDOW 0.38 @ PDF 12 / printed 6: 3.3.3 Engaging Stakeholders in Study Design Clinical study design is best informed by input from a broad range of stakeholders, including patients and healthcare providers. It should be open to challenge by subject matter experts and stakeholders from outside, as well as within, the sponsor organisation. The process of building quality into the study may be informed by participation of those directly involved in successful completion of the study such as clinical investigators, study coordinators and other site staff, and patients/patient organisations. Clinical investigators and potential study participants have valuable insights into the fe
+====================================================================================================
+R2-021 | E8R1 | loc=S3.3.3 | page=printed 6
+PARA: Early engagement with regulatory authorities is encouraged, particularly where novel critical elements such as populations, procedures or endpoints are involved.
+LOC: found PDF 12 / printed 6 .. PDF 12 / printed 6 (1327 chars) 
+  PASSAGE-HEAD: 3.3.3 Engaging Stakeholders in Study Design Clinical study design is best informed by input from a broad range of stakeholders, including patients and healthcar
+  WINDOW 0.92 @ PDF 12 / printed 6: rticipants who meet proposed eligibility criteria, whether scheduled study visits and procedures may be overly burdensome and lead to early dropouts, and the general relevance of study endpoints and study settings to the targeted patient population. They may also provide insight into the value of a treatment in the context of ethical issues, culture, region, demographics, and other characteristics of subgroups within a targeted patient population. Early engagement with regulatory authorities is encouraged, particularly when a study has novel elements considered critical to quality (e.g., defining patient populations, procedures, or endpoints). 
+====================================================================================================
+R2-022 | E8R1 | loc=S3.3.4 | page=printed 6
+PARA: Accumulated experience and knowledge, together with periodic review of the critical to quality factors, should inform whether risk control mechanisms need adjustment, because new or unanticipated issues may arise once the study has started.
+LOC: found PDF 12 / printed 6 .. PDF 12 / printed 6 (538 chars) 
+  PASSAGE: 3.3.4 Reviewing Critical to Quality Factors Accumulated experience and knowledge, together with periodic review of critical to quality factors should be used to determine whether adjustments to risk control mechanisms are needed, because new or unanticipated issues may arise once the study has begun. Studies with adaptive features and/or interim decision points need specific attention during proactive planning and ongoing review of critical to quality factors, and risk management (ICH E9 Statistical Principles for Clinical Trials). 
+====================================================================================================
+R2-023 | E8R1 | loc=S3.3.4 | page=printed 6
+PARA: Studies with adaptive features and/or interim decision points need specific attention in proactive planning, ongoing review and risk management.
+LOC: found PDF 12 / printed 6 .. PDF 12 / printed 6 (538 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R2-024 | E8R1 | loc=S3.3.5 | page=printed 6
+PARA: A successful study rests on a protocol that is scientifically sound and operationally feasible; the feasibility assessment considers design and implementation elements that could affect operational completion, including regional practice, qualified investigators, equipment and facilities, availability of the target population and enrolment capacity.
+LOC: found PDF 12 / printed 6 .. PDF 13 / printed 7 (1073 chars) 
+  PASSAGE-HEAD: 3.3.5 Critical to Quality Factors in Operational Practice The foundation of a successful study is a protocol that is both scientifically sound and operationally
+  WINDOW 0.60 @ PDF 12 / printed 6: 3.3.5 Critical to Quality Factors in Operational Practice The foundation of a successful study is a protocol that is both scientifically sound and operationally feasible. A feasibility assessment involves consideration of study design and implementation elements that could impact the successful completion of clinical development from an operational perspective. Feasibility considerations also include but are not limited to regional differences in medical practice and patient populations, the availability of qualified investigators/site personnel with experience in conducting a clinical study (ICH E6), availability of equipment and facilities required to successfully conduct the study, availability of the targeted patient population, and ability to enrol a sufficient number of participants to meet the study objectives.
+====================================================================================================
+R2-025 | E8R1 | loc=S3.3.5 | page=printed 6
+PARA: Retention and follow-up of study participants are also key critical to quality factors.
+LOC: found PDF 12 / printed 6 .. PDF 13 / printed 7 (1073 chars) 
+  PASSAGE-HEAD: 3.3.5 Critical to Quality Factors in Operational Practice The foundation of a successful study is a protocol that is both scientifically sound and operationally
+  WINDOW 1.00 @ PDF 12 / printed 6: is both scientifically sound and operationally feasible. A feasibility assessment involves consideration of study design and implementation elements that could impact the successful completion of clinical development from an operational perspective. Feasibility considerations also include but are not limited to regional differences in medical practice and patient populations, the availability of qualified investigators/site personnel with experience in conducting a clinical study (ICH E6), availability of equipment and facilities required to successfully conduct the study, availability of the targeted patient population, and ability to enrol a sufficient number of participants to meet the study objectives. The retention and follow up of study participants are also key critical to quality factors. Consideration of these and other critical to quality factors relating to study feasibility c
+====================================================================================================
+R2-026 | E8R1 | loc=S6.1 | page=printed 18
+PARA: Quality by design principles should guide study conduct and reporting, and risk-proportionate mitigation measures should be used to preserve the integrity of the critical to quality factors.
+LOC: found PDF 24 / printed 18 .. PDF 24 / printed 18 (2256 chars) 
+  PASSAGE-HEAD: 6.1 Study Conduct The principles and approaches set out in this guideline, including those of quality by design, should inform the approach taken to the conduct
+  WINDOW 0.81 @ PDF 24 / printed 18: 6.1 Study Conduct The principles and approaches set out in this guideline, including those of quality by design, should inform the approach taken to the conduct and reporting of clinical studies. Risk proportionate mitigation measures should be employed to ensure the integrity of the critical to quality factors. 6.1.1 Protocol Adherence Adherence to the study protocol and other relevant documents is essential, and many aspects of adherence should be considered among the study's critical to quality factors. Successful application of the quality by design principles may minimise the need for modifications to the protocol and make adherence thro
+====================================================================================================
+R2-027 | E8R1 | loc=S6.1.1 | page=printed 18
+PARA: Adherence to the protocol and related documents is essential, and many aspects of adherence should be counted among the study's critical to quality factors.
+QUOTE: aspects of adherence should be considered among the study's critical to quality factors
+QCHECK: exact ['PDF 24 / printed 18'] 
+LOC: found PDF 24 / printed 18 .. PDF 24 / printed 18 (603 chars) 
+  quote inside loc passage: True
+  PASSAGE: 6.1.1 Protocol Adherence Adherence to the study protocol and other relevant documents is essential, and many aspects of adherence should be considered among the study's critical to quality factors. Successful application of the quality by design principles may minimise the need for modifications to the protocol and make adherence throughout the study more likely. If modification of the protocol becomes necessary, a clear description of the rationale for the modification should be provided in a protocol amendment, and the impact of the modification on study conduct should be carefully considered. 
+====================================================================================================
+R2-028 | E8R1 | loc=S6.1.1 | page=printed 18
+PARA: Good quality by design may reduce the number of protocol amendments and support ongoing adherence; where an amendment is necessary, its rationale should be clearly explained and its impact on study conduct carefully considered.
+LOC: found PDF 24 / printed 18 .. PDF 24 / printed 18 (603 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R2-029 | E8R1 | loc=S6.1.2 | page=printed 18
+PARA: People involved in conducting the study should receive training appropriate to their role before they take part.
+LOC: found PDF 24 / printed 18 .. PDF 24 / printed 18 (381 chars) 
+  PASSAGE: 6.1.2 Training Individuals involved in study conduct should receive training commensurate with their role in the study and this training should occur prior to their becoming involved in the study. Updated training or retraining may be needed to address issues related to critical to quality factors observed during the course of the study, and/or implement protocol modifications. 
+====================================================================================================
+R2-030 | E8R1 | loc=S6.1.2 | page=printed 18
+PARA: Updated training or retraining may be needed to address issues with critical to quality factors that arise during the study, or protocol amendments.
+LOC: found PDF 24 / printed 18 .. PDF 24 / printed 18 (381 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R2-031 | E8R1 | loc=S6.1.3 | page=printed 18
+PARA: Operational checks, centralised data monitoring and statistical surveillance can detect important data quality issues so that corrective action can be taken.
+LOC: found PDF 24 / printed 18 .. PDF 24 / printed 18 (510 chars) 
+  PASSAGE: 6.1.3 Data Management The manner and timelines in which study data are collected and managed are critical contributors to overall study data quality. Operational checks, centralised data monitoring, and statistical surveillance can identify important data quality issues for corrective action. Data management procedures should account for the diversity of data sources in use for clinical studies (Section 5.7). For interventional clinical studies, further guidance on data management is available in ICH E6. 
+====================================================================================================
+R2-032 | E8R1 | loc=S6.3 | page=printed 19
+PARA: Designing the study report is part of quality by design, and the report should describe the critical to quality factors of the study.
+QUOTE: The report should describe the critical to quality factors in the study.
+QCHECK: exact ['PDF 25 / printed 19'] 
+LOC: found PDF 25 / printed 19 .. PDF 26 / printed 20 (1870 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 6.3 Study Reporting Clinical studies and their results should be adequately reported using formats appropriate for the type of study (interventional or observat
+  WINDOW 0.89 @ PDF 25 / printed 19: y (interventional or observational studies) and information being reported. ICH E3 focuses particularly on the report format for interventional clinical trials, but the basic principles may be applied to other types of clinical studies (ICH E3 Q&A). The design of the study report should be part of the quality by design process. The report should describe the critical to quality factors in the study. The reporting of study results should be comprehensive, accurate, and timely. Consideration should be given to providing a factual summary of the overall study results to study participants in an objective, balanced and nonpromotional manner, including relevant safety information and any limitations of the study. In addition, consideration could be given to providing individual participants with information about their study specific results (e.g., their treatment arm, test results). The info
+====================================================================================================
+R2-033 | E8R1 | loc=S7 | page=printed 20-21
+PARA: Identification of critical to quality factors should be supported by early cross-functional discussion and decisions during study planning, and the 18 listed aspects should be considered where relevant when designing a study; the list is not exhaustive, may not apply to every study, and other aspects may be needed.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: 7. CONSIDERATIONS IN IDENTIFYING CRITICAL TO QUALITY FACTORS . 20 ANNEX: TYPES OF CLINICAL STUDIES ...................................................................... 22 
+  DOCBEST-OUTSIDE 0.46 @ PDF 26 / printed 20: In designing a study, the following aspects should be considered, where applicable, to support the identification of critical to quality factors: Engagement of all relevant stakeholders, including patients, is considered during study planning and design.
+====================================================================================================
+R2-034 | E8R1 | loc=S7 | page=printed 20; bullet 1 of 18
+PARA: CtQ consideration: relevant stakeholders, including patients, are engaged in study planning and design.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.70 @ PDF 26 / printed 20: In designing a study, the following aspects should be considered, where applicable, to support the identification of critical to quality factors: Engagement of all relevant stakeholders, including patients, is considered during study planning and design.
+====================================================================================================
+R2-035 | E8R1 | loc=S7 | page=printed 20; bullet 2 of 18
+PARA: CtQ consideration: the prerequisite non-clinical studies and, where applicable, clinical studies are complete and adequate to support the study.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.82 @ PDF 26 / printed 20: Engagement of all relevant stakeholders, including patients, is considered during study planning and design. The prerequisite non-clinical studies, and where applicable, clinical studies, are complete and adequate to support the study being designed.
+====================================================================================================
+R2-036 | E8R1 | loc=S7 | page=printed 20; bullet 3 of 18
+PARA: CtQ consideration: study objectives address relevant scientific questions suited to the study's role in development, taking accumulated product knowledge into account.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.81 @ PDF 26 / printed 20: The prerequisite non-clinical studies, and where applicable, clinical studies, are complete and adequate to support the study being designed. The study objectives address relevant scientific questions appropriate for a given study's role in the development programme, taking into account the accumulated knowledge about the product.
+====================================================================================================
+R2-037 | E8R1 | loc=S7 | page=printed 20; bullet 4 of 18
+PARA: CtQ consideration: the design supports a meaningful comparison of the drug's effects with the chosen control group.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.82 @ PDF 26 / printed 20: The study objectives address relevant scientific questions appropriate for a given study's role in the development programme, taking into account the accumulated knowledge about the product. The clinical study design supports a meaningful comparison of the effects of the drug when compared to the chosen control group.
+====================================================================================================
+R2-038 | E8R1 | loc=S7 | page=printed 20; bullet 5 of 18
+PARA: CtQ consideration: adequate measures protect participants' rights, safety and welfare, for example informed consent, ethics review, investigator and site training, and pseudonymisation.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.83 @ PDF 26 / printed 20: The clinical study design supports a meaningful comparison of the effects of the drug when compared to the chosen control group. Adequate measures are used to protect participants' rights, safety, and welfare (informed consent process, Institutional Review Board/Ethics Committee review, investigator and clinical study site training, pseudonymisation).
+====================================================================================================
+R2-039 | E8R1 | loc=S7 | page=printed 20; bullet 6 of 18
+PARA: CtQ consideration: information provided to participants should be clear and understandable.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.71 @ PDF 26 / printed 20: Adequate measures are used to protect participants' rights, safety, and welfare (informed consent process, Institutional Review Board/Ethics Committee review, investigator and clinical study site training, pseudonymisation). Information provided to the study participants should be clear and understandable.
+====================================================================================================
+R2-040 | E8R1 | loc=S7 | page=printed 20; bullet 7 of 18
+PARA: CtQ consideration: the competencies and training that sponsor and investigator staff need for their roles in the study are identified.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.64 @ PDF 26 / printed 20: Information provided to the study participants should be clear and understandable. Competencies and training required for the study by sponsor and investigator staff, relevant to their role, should be identified.
+====================================================================================================
+R2-041 | E8R1 | loc=S7 | page=printed 20; bullet 8 of 18
+PARA: CtQ consideration: study feasibility should be assessed to ensure the study is operationally viable.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.75 @ PDF 26 / printed 20: Competencies and training required for the study by sponsor and investigator staff, relevant to their role, should be identified. The feasibility of the study should be assessed to ensure the study is operationally viable.
+====================================================================================================
+R2-042 | E8R1 | loc=S7 | page=printed 20; bullet 9 of 18
+PARA: CtQ consideration: the number of participants, study duration and visit frequency are sufficient to support the objectives.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.73 @ PDF 26 / printed 20: The number of participants included, the duration of the study, and the frequency of study visits are sufficient to support the study objective. The eligibility criteria should be reflective of the study objectives and be well documented in the clinical study protocol.
+====================================================================================================
+R2-043 | E8R1 | loc=S7 | page=printed 20; bullet 10 of 18
+PARA: CtQ consideration: eligibility criteria reflect the study objectives and are well documented in the protocol.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.70 @ PDF 26 / printed 20: The number of participants included, the duration of the study, and the frequency of study visits are sufficient to support the study objective. The eligibility criteria should be reflective of the study objectives and be well documented in the clinical study protocol.
+====================================================================================================
+R2-044 | E8R1 | loc=S7 | page=printed 20; bullet 11 of 18
+PARA: CtQ consideration: the protocol specifies the data needed to meet the objectives, understand benefit-risk and monitor safety.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.85 @ PDF 26 / printed 20: The eligibility criteria should be reflective of the study objectives and be well documented in the clinical study protocol. The protocol specifies the collection of data needed to meet the study objectives, understand the benefit/risk of the drug, and monitor participant safety.
+====================================================================================================
+R2-045 | E8R1 | loc=S7 | page=printed 20; bullet 12 of 18
+PARA: CtQ consideration: response variables and the methods to assess them are well defined and support evaluation of the drug's effects.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.85 @ PDF 26 / printed 20: The protocol specifies the collection of data needed to meet the study objectives, understand the benefit/risk of the drug, and monitor participant safety. The choice of response variables and the methods to assess them are well-defined and support evaluation of the effects of the drug.
+====================================================================================================
+R2-046 | E8R1 | loc=S7 | page=printed 20; bullet 13 of 18
+PARA: CtQ consideration: study procedures include adequate measures to minimise bias, such as randomisation and blinding.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.82 @ PDF 26 / printed 20: The choice of response variables and the methods to assess them are well-defined and support evaluation of the effects of the drug. Clinical study procedures include adequate measures to minimise bias (e.g., randomisation, blinding).
+====================================================================================================
+R2-047 | E8R1 | loc=S7 | page=printed 20; bullet 14 of 18
+PARA: CtQ consideration: the statistical analysis plan is pre-specified and defines analysis methods appropriate to the endpoints and populations.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.83 @ PDF 26 / printed 20: Clinical study procedures include adequate measures to minimise bias (e.g., randomisation, blinding). The statistical analysis plan is pre-specified and defines the analysis methods appropriate for the endpoints and the populations of interest.
+====================================================================================================
+R2-048 | E8R1 | loc=S7 | page=printed 20; bullet 15 of 18
+PARA: CtQ consideration: systems and processes are in place that support study conduct and ensure the integrity of critical study data.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.83 @ PDF 26 / printed 20: The statistical analysis plan is pre-specified and defines the analysis methods appropriate for the endpoints and the populations of interest. Systems and processes are in place that support the study conduct to ensure the integrity of critical study data.
+====================================================================================================
+R2-049 | E8R1 | loc=S7 | page=printed 20; bullet 16 of 18
+PARA: CtQ consideration: the extent and nature of study monitoring are tailored to the study design, objectives and participant safety needs.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.67 @ PDF 26 / printed 20: Systems and processes are in place that support the study conduct to ensure the integrity of critical study data. The extent and nature of study monitoring are tailored to the specific study design and objectives and the need to ensure participants' safety.
+====================================================================================================
+R2-050 | E8R1 | loc=S7 | page=printed 20; bullet 17 of 18
+PARA: CtQ consideration: the need for, and appropriate role of, a data monitoring committee is assessed.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.78 @ PDF 26 / printed 20: The extent and nature of study monitoring are tailored to the specific study design and objectives and the need to ensure participants' safety. The need for and appropriate role of a data monitoring committee is assessed.
+====================================================================================================
+R2-051 | E8R1 | loc=S7 | page=printed 20; bullet 18 of 18
+PARA: CtQ consideration: reporting of study results is planned, comprehensive, accurate, timely and publicly accessible.
+LOC: found PDF 5 / printed None .. PDF 7 / printed 1 (173 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.82 @ PDF 26 / printed 20: The need for and appropriate role of a data monitoring committee is assessed. The reporting of the study results is planned, comprehensive, accurate, timely, and publicly accessible.

@@ -1,0 +1,49 @@
+# B2 SELFTEST - NOT A MODEL. Synthetic stress input for the converter/layout only.
+id: L3
+title: "SELFTEST - overview"
+level: L3
+parent: null
+pools:
+  - {id: P_SPON, name: "SELFTEST - Sponsor", kind: internal, expanded: true}
+  - {id: P_INV, name: "SELFTEST - Investigator/institution", kind: external, expanded: true}
+  - {id: P_IEC, name: "SELFTEST - IRB/IEC", kind: external, expanded: false}
+  - {id: P_RA, name: "SELFTEST - Regulatory authority", kind: external, expanded: false}
+lanes:
+  - {id: L_SPON, name: "SELFTEST - Sponsor", pool: P_SPON, src: [{key: E6R3, loc: "SELFTEST"}]}
+  - {id: L_MON, name: "SELFTEST - Monitor", pool: P_SPON, src: [{key: E6R3, loc: "SELFTEST"}]}
+nodes:
+  - {id: S1, type: start, label: "SELFTEST - Critical to quality factors identified", lane: L_SPON}
+  - {id: A1, type: call-activity, label: "Define trial-specific important protocol deviations", lane: L_SPON, calls: L4-01, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: A2, type: call-activity, label: "Identify protocol deviations through monitoring", lane: L_MON, calls: L4-02, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: A3, type: call-activity, label: "Document and classify protocol deviations", lane: L_MON, calls: L4-03, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: G1, type: xor-split, label: "Serious breach suspected?", lane: L_SPON}
+  - {id: A4, type: call-activity, label: "Notify serious breach", lane: L_SPON, calls: L4-04, path: exception, src: [{key: EUCTR, loc: "SELFTEST"}], req: [REQ-902], binding: binding-law, jurisdiction: [EU], deadline: "7 days"}
+  - {id: G2, type: xor-join, lane: L_SPON}
+  - {id: A5, type: call-activity, label: "Assess and mitigate impact of important protocol deviations", lane: L_SPON, calls: L4-05, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: A6, type: call-activity, label: "Report important protocol deviations in the clinical study report", lane: L_SPON, calls: L4-06, src: [{key: E3, loc: "SELFTEST"}], req: [REQ-903], binding: binding-ICH}
+  - {id: E1, type: end, label: "SELFTEST - iPDs reported in CSR and records archived", lane: L_SPON}
+  - {id: S2, type: start, label: "SELFTEST - Deviation identified at site", pool: P_INV}
+  - {id: A7, type: task, label: "Report deviation to sponsor", pool: P_INV, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-904], binding: binding-ICH}
+  - {id: A8, type: task, label: "Report deviation to IRB/IEC", pool: P_INV, src: [{key: 21CFR56, loc: "SELFTEST"}], req: [REQ-905], binding: binding-law, jurisdiction: [US]}
+  - {id: E2, type: end, label: "SELFTEST - Deviation reported", pool: P_INV}
+flows:
+  - {id: F1, from: S1, to: A1}
+  - {id: F2, from: A1, to: A2}
+  - {id: F3, from: A2, to: A3}
+  - {id: F4, from: A3, to: G1}
+  - {id: F5, from: G1, to: A4, label: "Yes"}
+  - {id: F6, from: G1, to: G2, label: "No"}
+  - {id: F7, from: A4, to: G2}
+  - {id: F8, from: G2, to: A5}
+  - {id: F9, from: A5, to: A6}
+  - {id: F10, from: A6, to: E1}
+  - {id: F11, from: S2, to: A7}
+  - {id: F12, from: A7, to: A8}
+  - {id: F13, from: A8, to: E2}
+message_flows:
+  - {id: M1, from: A7, to: A2, label: "SELFTEST - Deviation report", src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-904], binding: binding-ICH}
+  - {id: M2, from: A8, to: P_IEC, label: "SELFTEST - Deviation report to IRB/IEC", src: [{key: 21CFR56, loc: "SELFTEST"}], req: [REQ-905], binding: binding-law}
+  - {id: M3, from: A4, to: P_RA, label: "SELFTEST - Serious breach notification", src: [{key: EUCTR, loc: "SELFTEST"}], req: [REQ-902], binding: binding-law, deadline: "7 days"}
+  - {id: M4, from: A4, to: P_IEC, label: "SELFTEST - Serious breach notification to ethics committee", src: [{key: EUCTR, loc: "SELFTEST"}], req: [REQ-902], binding: binding-law}
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "SELFTEST"}

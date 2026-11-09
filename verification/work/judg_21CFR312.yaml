@@ -1,0 +1,6 @@
+src: 21CFR312
+method: local-text
+notes:
+  R4-011: "312.53(c)(1)(vii) text in the local eCFR API copy matches (initial/continuing IRB review, prompt reporting of changes and unanticipated problems, no changes without IRB approval except apparent immediate hazards)."
+  R4-016: "Paraphrase omits the deadline in the same paragraph: discontinue 'as soon as possible, and in no event later than 5 working days after making the determination'; no distortion."
+  R4-005: "56.104(c) 5-working-day wording confirmed in the local eCFR API text of part 56."

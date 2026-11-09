@@ -1,0 +1,8 @@
+src: FDA-SDTCG
+method: local-text
+notes:
+  R5-069: "Page [verify] resolved: DV Domain text is on 'Page 16 of 97' (PDF 29), within 4.1.1.3 SDTM Domain Specifications (TOC p. 11; 4.1.2 starts p. 16). Source says 'should be included in your submission' (quoted); paraphrase 'is to be included' slightly firmer. Version 6.3, October 2026 confirmed."
+  R5-070: "Page 16 of 97 (PDF 29)."
+evpage:
+  R5-069: "PDF 29 / Page 16 of 97"
+  R5-070: "PDF 29 / Page 16 of 97"

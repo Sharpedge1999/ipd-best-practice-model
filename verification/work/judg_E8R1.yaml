@@ -1,0 +1,13 @@
+src: E8R1
+method: local-text
+notes:
+  R2-001: "Section 3 lead-in text, PDF 9 / printed 3 (supports framework from design and planning through conduct, analysis and reporting)."
+  R2-010: "Source says 'Proactive communication'; 'ongoing' is added but does not change meaning."
+  R2-033: "Section 7 and all 18 bullets sit on PDF 26 / printed 20; 'not exhaustive' sentence closes the list."
+  R2-034: "Source: engagement of stakeholders 'is considered during study planning and design'."
+except:
+  R2-017:
+    v: paraphrase-distorted
+    s: low
+    note: "Source object is 'Evidence used to inform the study design'; paraphrase widens it to 'evidence supporting quality decisions'."
+    corr: "Evidence used to inform the study design should be gathered and reviewed transparently before and during the study, acknowledging known gaps and conflicting data and anticipating new ones."

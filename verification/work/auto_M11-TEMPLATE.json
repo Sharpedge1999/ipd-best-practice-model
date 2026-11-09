@@ -1,0 +1,56 @@
+{
+ "R2-112": {
+  "local": true,
+  "loc_found": false
+ },
+ "R2-113": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 33 / printed 24",
+   "PDF 34 / printed 25"
+  ]
+ },
+ "R2-114": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed 32",
+   "PDF 41 / printed 32"
+  ]
+ },
+ "R2-115": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 55 / printed 46",
+   "PDF 55 / printed 46"
+  ]
+ },
+ "R2-116": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 61 / printed 52"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 61 / printed 52",
+   "PDF 61 / printed 52"
+  ],
+  "quote_in_loc": true
+ },
+ "R2-117": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 62 / printed 53"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 62 / printed 53",
+   "PDF 62 / printed 53"
+  ],
+  "quote_in_loc": true
+ }
+}

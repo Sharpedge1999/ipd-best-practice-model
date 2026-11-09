@@ -1,0 +1,289 @@
+====================================================================================================
+R3-001 | EUCTR | loc=Art. 2(2)(11) | page=OJ L 158/12
+PARA: Defines the ethics committee as an independent body established in a Member State that is empowered to give opinions under the Regulation, taking the views of laypersons into account.
+LOC: found PDF 12 / printed L158/12 .. PDF 12 / printed L158/12 (292 chars) 
+  PASSAGE: (11) 'Ethics committee' means an independent body established in a Member State in accordance with the law of that Member State and empowered to give opinions for the purposes of this Regulation, taking into account the views of laypersons, in particular patients or patients' organisations; 
+====================================================================================================
+R3-002 | EUCTR | loc=Art. 2(2)(12) | page=OJ L 158/12
+PARA: Defines the Member State concerned as the Member State where an application for authorisation of a clinical trial or of a substantial modification was submitted under Chapter II or III. It is the recipient of the serious breach, unexpected event and urgent safety measure notifications.
+LOC: found PDF 12 / printed L158/12 .. PDF 12 / printed L158/12 (222 chars) 
+  PASSAGE: (12) 'Member State concerned' means the Member State where an application for authorisation of a clinical trial or of a substantial modification has been submitted under Chapters II or III of this Regulation respectively; 
+====================================================================================================
+R3-003 | EUCTR | loc=Art. 2(2)(13) | page=OJ L 158/12
+PARA: Defines a substantial modification as a change to any aspect of the trial, made after a decision under Art. 8, 14, 19, 20 or 23, that is likely to have a substantial impact on subject safety or rights or on the reliability and robustness of trial data. Planned changes follow the modification route, not the deviation route.
+QUOTE: likely to have a substantial impact on the safety or rights of the subjects
+QCHECK: exact ['PDF 12 / printed L158/12'] 
+LOC: found PDF 12 / printed L158/12 .. PDF 12 / printed L158/12 (347 chars) 
+  quote inside loc passage: True
+  PASSAGE: (13) 'Substantial modification' means any change to any aspect of the clinical trial which is made after notification of a decision referred to in Articles 8, 14, 19, 20 or 23 and which is likely to have a substantial impact on the safety or rights of the subjects or on the reliability and robustness of the data generated in the clinical trial; 
+====================================================================================================
+R3-004 | EUCTR | loc=Art. 2(2)(14) | page=OJ L 158/12
+PARA: Defines the sponsor as the individual, company, institution or organisation that takes responsibility for initiating and managing the trial and for setting up its financing.
+QUOTE: takes responsibility for the initiation, for the management
+QCHECK: exact ['PDF 12 / printed L158/12'] 
+LOC: found PDF 12 / printed L158/12 .. PDF 13 / printed L158/13 (431 chars) 
+  quote inside loc passage: True
+  PASSAGE: (14) 'Sponsor' means an individual, company, institution or organisation which takes responsibility for the initiation, for the management and for setting up the financing of the clinical trial; (1) Regulation (EC) No 1394/2007 of the European Parliament and of the Council of 13 November 2007 on advanced therapy medicinal products and amending Directive 2001/83/EC and Regulation (EC) No 726/2004 (OJ L 324, 10.12.2007, p. 121). 
+====================================================================================================
+R3-005 | EUCTR | loc=Art. 2(2)(15) | page=OJ L 158/13
+PARA: Defines the investigator as the individual responsible for the conduct of a clinical trial at a clinical trial site.
+QUOTE: an individual responsible for the conduct of a clinical trial
+QCHECK: exact ['PDF 13 / printed L158/13'] 
+LOC: found PDF 13 / printed L158/13 .. PDF 13 / printed L158/13 (114 chars) 
+  quote inside loc passage: True
+  PASSAGE: (15) 'Investigator' means an individual responsible for the conduct of a clinical trial at a clinical trial site; 
+====================================================================================================
+R3-006 | EUCTR | loc=Art. 2(2)(16) | page=OJ L 158/13
+PARA: Defines the principal investigator as the investigator who is the responsible leader of a team of investigators conducting the trial at a site.
+LOC: found PDF 13 / printed L158/13 .. PDF 13 / printed L158/13 (164 chars) 
+  PASSAGE: (16) 'Principal investigator' means an investigator who is the responsible leader of a team of investigators who conduct a clinical trial at a clinical trial site; 
+====================================================================================================
+R3-007 | EUCTR | loc=Art. 2(2)(22) | page=OJ L 158/13
+PARA: Defines the protocol as the document describing objectives, design, methodology, statistical considerations and organisation of the trial; the term includes successive versions and protocol modifications. Compliance is judged against the version in force (see Art. 52(1)).
+QUOTE: a document that describes the objectives, design, methodology
+QCHECK: exact ['PDF 13 / printed L158/13'] 
+LOC: found PDF 13 / printed L158/13 .. PDF 13 / printed L158/13 (247 chars) 
+  quote inside loc passage: True
+  PASSAGE: (22) 'Protocol' means a document that describes the objectives, design, methodology, statistical considerations and or ganisation of a clinical trial. The term 'protocol' encompasses successive versions of the protocol and protocol modifications; 
+====================================================================================================
+R3-008 | EUCTR | loc=Art. 2(2)(26) | page=OJ L 158/13
+PARA: Defines the end of a clinical trial as the last visit of the last subject, or a later point defined in the protocol. This event starts the 25-year archiving period of Art. 58.
+LOC: found PDF 13 / printed L158/13 .. PDF 13 / printed L158/13 (129 chars) 
+  PASSAGE: (26) 'End of a clinical trial' means the last visit of the last subject, or at a later point in time as defined in the protocol; 
+====================================================================================================
+R3-009 | EUCTR | loc=Art. 2(2)(30) | page=OJ L 158/13
+PARA: Defines good clinical practice as a set of detailed ethical and scientific quality requirements for designing, conducting, monitoring, auditing, recording, analysing and reporting trials, so that subject rights, safety and well-being are protected and data are reliable and robust.
+LOC: found PDF 13 / printed L158/13 .. PDF 13 / printed L158/13 (360 chars) 
+  PASSAGE: (30) 'Good clinical practice' means a set of detailed ethical and scientific quality requirements for designing, conducting, performing, monitoring, auditing, recording, analysing and reporting clinical trials ensuring that the rights, safety and well-being of subjects are protected, and that the data generated in the clinical trial are reliable and robust; 
+====================================================================================================
+R3-010 | EUCTR | loc=Art. 2(2)(31) | page=OJ L 158/13
+PARA: Defines inspection as an official review by a competent authority of documents, facilities, records, quality assurance arrangements and other trial-related resources at sites, sponsor or CRO facilities or other establishments.
+QUOTE: the act by a competent authority of conducting an official review
+QCHECK: exact ['PDF 13 / printed L158/13'] 
+LOC: found PDF 13 / printed L158/13 .. PDF 14 / printed L158/14 (459 chars) 
+  quote inside loc passage: True
+  PASSAGE: (31) 'Inspection' means the act by a competent authority of conducting an official review of documents, facilities, records, quality assurance arrangements, and any other resources that are deemed by the competent authority to be related to the clinical trial and that may be located at the clinical trial site, at the sponsor's and/or contract research organisation's facilities, or at other establishments which the competent authority sees fit to inspect; 
+====================================================================================================
+R3-011 | EUCTR | loc=Art. 2(2)(35) | page=OJ L 158/14
+PARA: Defines the clinical study report as a report on the trial in an easily searchable format, prepared in line with Annex I Part I Module 5 of Directive 2001/83/EC, accompanying a marketing authorisation application.
+LOC: found PDF 14 / printed L158/14 .. PDF 14 / printed L158/14 (247 chars) 
+  PASSAGE: (35) 'Clinical study report' means a report on the clinical trial presented in an easily searchable format, prepared in accordance with Annex I, Part I, Module 5 of Directive 2001/83/EC and accompanying an application for marketing authorisation. 
+====================================================================================================
+R3-012 | EUCTR | loc=Art. 37(4) | page=OJ L 158/35
+PARA: Fourth subparagraph of Art. 37(4): where the trial was intended to be used for obtaining a marketing authorisation, the applicant for marketing authorisation submits the CSR to the EU database within 30 days after the authorisation is granted, the procedure is completed or the application is withdrawn. Process-end boundary for CSR reporting of deviations.
+LOC: found PDF 35 / printed L158/35 .. PDF 35 / printed L158/35 (1409 chars) 
+  PASSAGE-HEAD: 4. Irrespective of the outcome of a clinical trial, within one year from the end of a clinical trial in all Member States concerned, the sponsor shall submit to
+  WINDOW 0.57 @ PDF 35 / printed L158/35: tent of that summary is set out in Annex V. However, where, for scientific reasons detailed in the protocol, it is not possible to submit a summary of the results within one year, the summary of results shall be submitted as soon as it is available. In this case, the protocol shall specify when the results are going to be submitted, together with a justification. In addition to the summary of the results, where the clinical trial was intended to be used for obtaining a marketing authorisation for the investigational medicinal product, the applicant for marketing authorisation shall submit to the EU database the clinical study report within 30 days after the day the marketing authorisation has been granted, the proce dure for granting the marketing authorisation has been completed, or the applicant for marketing authorisation has withdrawn the application. For cases where the sponsor deci
+====================================================================================================
+R3-013 | EUCTR | loc=Art. 38(1) | page=OJ L 158/36
+PARA: Art. 38 covers temporary halt or early termination by the sponsor for reasons of subject safety, not urgent safety measures. A halt or early termination for reasons of a change of the benefit-risk balance must be notified to the Member States concerned through the EU portal, with the reasons and the follow-up measures (passive wording; the sponsor per the title).
+LOC: found PDF 36 / printed L158/36 .. PDF 36 / printed L158/36 (439 chars) 
+  PASSAGE: 1. For the purposes of this Regulation, the temporary halt or early termination of a clinical trial for reasons of a change of the benefit-risk balance shall be notified to the Member States concerned through the EU portal. That notification shall be made without undue delay but not later than in 15 days of the date of the temporary halt or early termination. It shall include the reasons for such action and specify follow-up measures. 
+  DOCBEST-OUTSIDE 0.69 @ PDF 36 / printed L158/36: Article 38 Temporary halt or early termination by the sponsor for reasons of subject safety 1. For the purposes of this Regulation, the temporary halt or early termination of a clinical trial for reasons of a change of the benefit-risk balance shall be notified to the Member States concerned through the EU portal.
+====================================================================================================
+R3-014 | EUCTR | loc=Art. 38(2) | page=OJ L 158/36
+PARA: The restart of a trial after a temporary halt for a change of the benefit-risk balance is deemed a substantial modification subject to the Chapter III authorisation procedure.
+LOC: found PDF 36 / printed L158/36 .. PDF 36 / printed L158/36 (208 chars) 
+  PASSAGE: 2. The restart of the clinical trial following a temporary halt as referred to in paragraph 1 shall be deemed to be a substantial modification subject to the authorisation procedure laid down in Chapter III. 
+====================================================================================================
+R3-015 | EUCTR | loc=Art. 41(2) | page=OJ L 158/37
+PARA: BOUNDARY: the investigator records and documents all adverse events unless the protocol provides differently, and (second subparagraph of Art. 41(2)) reports serious adverse events to the sponsor without undue delay and within 24 hours of knowledge, unless the protocol exempts certain SAEs from immediate reporting, with follow-up reports where relevant. This is safety reporting, not deviation management; a deviation that causes an SAE triggers both processes.
+QUOTE: not later than within 24 hours of obtaining knowledge of the events
+QCHECK: exact ['PDF 37 / printed L158/37'] 
+LOC: found PDF 37 / printed L158/37 .. PDF 37 / printed L158/37 (766 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2. The investigator shall record and document all adverse events, unless the protocol provides differently. The investi gator shall report to the sponsor all serious adverse events occurring to subjects treated by him or her in the clinical trial, unless the protocol provides differently. The investigator shall report serious adverse events to the sponsor without undue delay but not later than within 24 hours of obtaining knowledge of the events, unless, for certain serious adverse events, the protocol provides that no immediate reporting is required. Where relevant, the investigator shall send a follow-up report to the sponsor to allow the sponsor to assess whether the serious adverse event has an impact on the benefit-risk balance of the clinical trial. 
+====================================================================================================
+R3-016 | EUCTR | loc=Art. 47 | page=OJ L 158/39
+PARA: First (unnumbered) paragraph: the sponsor must ensure the trial is conducted in accordance with the protocol and with the principles of good clinical practice. This is the EU legal basis for protocol compliance and for acting on deviations.
+QUOTE: in accordance with the protocol and with the principles of good clinical practice
+QCHECK: exact ['PDF 39 / printed L158/39'] 
+LOC: found PDF 39 / printed L158/39 .. PDF 39 / printed L158/39 (695 chars) 
+  quote inside loc passage: True
+  PASSAGE: Article 47 Compliance with the protocol and good clinical practice The sponsor of a clinical trial and the investigator shall ensure that the clinical trial is conducted in accordance with the protocol and with the principles of good clinical practice. Without prejudice to any other provision of Union law or Commission guidelines, the sponsor and the investigator, when drawing up the protocol and when applying this Regulation and the protocol, shall also take appropriate account of the quality standards and the ICH guidelines on good clinical practice. The Commission shall make publicly available the detailed ICH guidelines on good clinical practice referred to in the second paragraph. 
+====================================================================================================
+R3-017 | EUCTR | loc=Art. 47 | page=OJ L 158/39
+PARA: First (unnumbered) paragraph: the investigator, jointly with the sponsor, must ensure the trial is conducted in accordance with the protocol and the principles of good clinical practice.
+QUOTE: in accordance with the protocol and with the principles of good clinical practice
+QCHECK: exact ['PDF 39 / printed L158/39'] 
+LOC: found PDF 39 / printed L158/39 .. PDF 39 / printed L158/39 (695 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R3-018 | EUCTR | loc=Art. 47 | page=OJ L 158/39
+PARA: Second (unnumbered) paragraph: when drawing up the protocol and applying the Regulation and the protocol, the sponsor must also take appropriate account of quality standards and the ICH GCP guidelines, without prejudice to other Union law or Commission guidelines. This is the EU legal hook for ICH E6(R3).
+QUOTE: shall also take appropriate account of the quality standards and the ICH guidelines
+QCHECK: exact ['PDF 39 / printed L158/39'] 
+LOC: found PDF 39 / printed L158/39 .. PDF 39 / printed L158/39 (695 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R3-019 | EUCTR | loc=Art. 47 | page=OJ L 158/39
+PARA: Second (unnumbered) paragraph: the investigator, when applying the Regulation and the protocol, must likewise take appropriate account of quality standards and the ICH GCP guidelines.
+QUOTE: shall also take appropriate account of the quality standards and the ICH guidelines
+QCHECK: exact ['PDF 39 / printed L158/39'] 
+LOC: found PDF 39 / printed L158/39 .. PDF 39 / printed L158/39 (695 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R3-020 | EUCTR | loc=Art. 47 | page=OJ L 158/39
+PARA: Third (unnumbered) paragraph: the Commission must make publicly available the detailed ICH GCP guidelines referred to in the second paragraph.
+LOC: found PDF 39 / printed L158/39 .. PDF 39 / printed L158/39 (695 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R3-021 | EUCTR | loc=Art. 48 | page=OJ L 158/39
+PARA: The sponsor must adequately monitor trial conduct to verify that subject rights, safety and well-being are protected, that reported data are reliable and robust, and that conduct complies with the Regulation. Monitoring is the legal basis for identifying deviations at sites.
+QUOTE: shall adequately monitor the conduct of a clinical trial
+QCHECK: exact ['PDF 39 / printed L158/39'] 
+LOC: found PDF 39 / printed L158/39 .. PDF 39 / printed L158/39 (755 chars) 
+  quote inside loc passage: True
+  PASSAGE: Article 48 Monitoring In order to verify that the rights, safety and well-being of subjects are protected, that the reported data are reliable and robust, and that the conduct of the clinical trial is in compliance with the requirements of this Regulation, the sponsor shall adequately monitor the conduct of a clinical trial. The extent and nature of the monitoring shall be determined by the sponsor on the basis of an assessment that takes into consideration all characteristics of the clinical trial, including the following characteristics: (a) whether the clinical trial is a low-intervention clinical trial; (b) the objective and methodology of the clinical trial; and (c) the degree of deviation of the intervention from normal clinical practice. 
+====================================================================================================
+R3-022 | EUCTR | loc=Art. 48 | page=OJ L 158/39
+PARA: The sponsor determines the extent and nature of monitoring on the basis of an assessment of all trial characteristics, including whether it is a low-intervention trial, its objective and methodology, and the degree to which the intervention deviates from normal clinical practice. Risk-proportionate monitoring basis.
+LOC: found PDF 39 / printed L158/39 .. PDF 39 / printed L158/39 (755 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R3-023 | EUCTR | loc=Art. 52(1) | page=OJ L 158/40
+PARA: The sponsor must notify the Member States concerned, through the EU portal, of a serious breach of the Regulation or of the protocol version applicable at the time of the breach, without undue delay and at the latest seven days after becoming aware of it. The clock starts at sponsor awareness.
+QUOTE: the version of the protocol applicable at the time of the breach
+QCHECK: exact ['PDF 40 / printed L158/40'] 
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (275 chars) 
+  quote inside loc passage: True
+  PASSAGE: 1. The sponsor shall notify the Member States concerned about a serious breach of this Regulation or of the version of the protocol applicable at the time of the breach through the EU portal without undue delay but not later than seven days of becoming aware of that breach. 
+====================================================================================================
+R3-024 | EUCTR | loc=Art. 52(2) | page=OJ L 158/40
+PARA: For Art. 52, a serious breach is a breach likely to affect to a significant degree the safety and rights of a subject or the reliability and robustness of the data generated in the trial. Art. 2 contains no definition of serious breach; this is the only legal definition.
+QUOTE: likely to affect to a significant degree the safety and rights of a subject
+QCHECK: exact ['PDF 40 / printed L158/40'] 
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (226 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2. For the purposes of this Article, a 'serious breach' means a breach likely to affect to a significant degree the safety and rights of a subject or the reliability and robustness of the data generated in the clinical trial. 
+====================================================================================================
+R3-025 | EUCTR | loc=Art. 53(1) | page=OJ L 158/40
+PARA: The sponsor must notify the Member States concerned, through the EU portal, of unexpected events that affect the benefit-risk balance but are not suspected unexpected serious adverse reactions under Art. 42.
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (385 chars) 
+  PASSAGE: 1. The sponsor shall notify the Member States concerned through the EU portal of all unexpected events which affect the benefit-risk balance of the clinical trial, but are not suspected unexpected serious adverse reactions as referred to in Article 42. That notification shall be made without undue delay but no later than 15 days from the date the sponsor became aware of this event. 
+====================================================================================================
+R3-026 | EUCTR | loc=Art. 53(2) | page=OJ L 158/40
+PARA: The sponsor must submit to the Member States concerned, through the EU portal, all inspection reports of third-country authorities concerning the trial, with a translation or summary in an official Union language on request. No time limit is stated.
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (344 chars) 
+  PASSAGE: 2. The sponsor shall submit to the Member States concerned, through the EU portal, all inspection reports of third country authorities concerning the clinical trial. When requested by a Member State concerned, the sponsor shall submit a translation of the report or of its summary in an official language of the Union indicated in the request. 
+====================================================================================================
+R3-027 | EUCTR | loc=Art. 54(1) | page=OJ L 158/40
+PARA: Where an unexpected event is likely to seriously affect the benefit-risk balance, the sponsor must take appropriate urgent safety measures to protect the subjects. Art. 54 (not Art. 38) is the urgent safety measure article.
+QUOTE: Where an unexpected event is likely to seriously affect the benefit-risk balance
+QCHECK: exact ['PDF 40 / printed L158/40'] 
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (189 chars) 
+  quote inside loc passage: True
+  PASSAGE: 1. Where an unexpected event is likely to seriously affect the benefit-risk balance, the sponsor and the investigator shall take appropriate urgent safety measures to protect the subjects. 
+====================================================================================================
+R3-028 | EUCTR | loc=Art. 54(1) | page=OJ L 158/40
+PARA: The investigator is also obliged to take appropriate urgent safety measures to protect subjects where an unexpected event is likely to seriously affect the benefit-risk balance.
+QUOTE: Where an unexpected event is likely to seriously affect the benefit-risk balance
+QCHECK: exact ['PDF 40 / printed L158/40'] 
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (189 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R3-029 | EUCTR | loc=Art. 54(2) | page=OJ L 158/40
+PARA: The sponsor must notify the Member States concerned, through the EU portal, of the event and the measures taken. The seven-day clock runs from the date the measures were taken, not from awareness.
+QUOTE: no later than seven days from the date the measures have been taken
+QCHECK: exact ['PDF 40 / printed L158/40'] 
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (242 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2. The sponsor shall notify the Member States concerned, through the EU portal, of the event and the measures taken. That notification shall be made without undue delay but no later than seven days from the date the measures have been taken. 
+====================================================================================================
+R3-030 | EUCTR | loc=Art. 54(3) | page=OJ L 158/40
+PARA: Art. 54 applies without prejudice to Chapter III (authorisation procedure for a substantial modification) and Chapter VII (safety reporting), so urgent safety measures do not replace those obligations. EUCTR-QA Q&A 7.27 expects a USM that requires a protocol update to be followed by a substantial modification submission (R3-103).
+QUOTE: This Article is without prejudice to Chapters III and VII.
+QCHECK: exact ['PDF 40 / printed L158/40'] 
+LOC: found PDF 40 / printed L158/40 .. PDF 40 / printed L158/40 (62 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3. This Article is without prejudice to Chapters III and VII. 
+====================================================================================================
+R3-031 | EUCTR | loc=Art. 56(1) | page=OJ L 158/41
+PARA: The sponsor or investigator, as applicable, must record, process, handle and store all clinical trial information so that it can be accurately reported, interpreted and verified, while protecting subject confidentiality and personal data. Basis for documenting deviations.
+QUOTE: accurately reported, interpreted and verified
+QCHECK: exact ['PDF 41 / printed L158/41'] 
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (366 chars) 
+  quote inside loc passage: True
+  PASSAGE: 1. All clinical trial information shall be recorded, processed, handled, and stored by the sponsor or investigator, as applicable, in such a way that it can be accurately reported, interpreted and verified while the confidentiality of records and the personal data of the subjects remain protected in accordance with the applicable law on personal data protec tion. 
+====================================================================================================
+R3-032 | EUCTR | loc=Art. 57 | page=OJ L 158/41
+PARA: First (unnumbered) paragraph: the sponsor must keep a clinical trial master file that at all times contains the essential documents allowing verification of trial conduct and data quality, readily available and directly accessible to the Member States on request.
+QUOTE: readily available, and directly accessible upon request, to the Member States
+QCHECK: exact ['PDF 41 / printed L158/41'] 
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (788 chars) 
+  quote inside loc passage: True
+  PASSAGE: Article 57 Clinical trial master file The sponsor and the investigator shall keep a clinical trial master file. The clinical trial master file shall at all times contain the essential documents relating to that clinical trial which allow verification of the conduct of a clinical trial and the quality of the data generated, taking into account all characteristics of the clinical trial, including in particular whether the clinical trial is a low-intervention clinical trial. It shall be readily available, and directly accessible upon request, to the Member States. The clinical trial master file kept by the investigator and that kept by the sponsor may have a different content if this is justified by the different nature of the responsibilities of the investigator and the sponsor. 
+====================================================================================================
+R3-033 | EUCTR | loc=Art. 57 | page=OJ L 158/41
+PARA: First (unnumbered) paragraph: the investigator must also keep a clinical trial master file with the essential documents, readily available and directly accessible to the Member States on request.
+QUOTE: readily available, and directly accessible upon request, to the Member States
+QCHECK: exact ['PDF 41 / printed L158/41'] 
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (788 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R3-034 | EUCTR | loc=Art. 57 | page=OJ L 158/41
+PARA: Second (unnumbered) paragraph: the sponsor and investigator master files may differ in content where justified by the different nature of their responsibilities.
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (788 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R3-035 | EUCTR | loc=Art. 58 | page=OJ L 158/41
+PARA: First (unnumbered) paragraph: unless other Union law requires longer, the sponsor must archive the content of the master file for at least 25 years after the end of the trial; subjects' medical files are archived under national law.
+QUOTE: for at least 25 years after the end of the clinical trial
+QCHECK: exact ['PDF 41 / printed L158/41'] 
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (1134 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Article 58 Archiving of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall arc
+  WINDOW 0.88 @ PDF 41 / printed L158/41: Article 58 Archiving of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall archive the content of the clinical trial master file for at least 25 years after the end of the clinical trial. However, the medical files of subjects shall be archived in accordance with national law. The content of the clinical trial master file shall be archived in a way that ensures that it is readily available and acces sible, upon request, to the competent authorities. Any transfer of ownership of the content of the clinical trial master file shall be documented. The new owner shal
+====================================================================================================
+R3-036 | EUCTR | loc=Art. 58 | page=OJ L 158/41
+PARA: First (unnumbered) paragraph: the investigator must likewise archive the content of the master file for at least 25 years after the end of the trial, with medical files under national law.
+QUOTE: for at least 25 years after the end of the clinical trial
+QCHECK: exact ['PDF 41 / printed L158/41'] 
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (1134 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Article 58 Archiving of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall arc
+  WINDOW 0.80 @ PDF 41 / printed L158/41: Article 58 Archiving of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall archive the content of the clinical trial master file for at least 25 years after the end of the clinical trial. However, the medical files of subjects shall be archived in accordance with national law. The content of the clinical trial master file shall be archived in a way that ensures that it is readily available and acces sible, upon request, to the competent authorities. Any transfer of ownership of the content of the clinical trial master file shall be documented. The new owner shal
+====================================================================================================
+R3-037 | EUCTR | loc=Art. 58 | page=OJ L 158/41
+PARA: Second (unnumbered) paragraph: the content of the master file must be archived so that it is readily available and accessible, upon request, to the competent authorities; the fifth paragraph requires archiving media that keep the content complete and legible for the whole period.
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (1134 chars) 
+  PASSAGE-HEAD: Article 58 Archiving of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall arc
+  WINDOW 0.42 @ PDF 41 / printed L158/41:  of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall archive the content of the clinical trial master file for at least 25 years after the end of the clinical trial. However, the medical files of subjects shall be archived in accordance with national law. The content of the clinical trial master file shall be archived in a way that ensures that it is readily available and acces sible, upon request, to the competent authorities. Any transfer of ownership of the content of the clinical trial master file shall be documented. The new owner shall assume the responsibilities set out in this Article. The sponsor shall appoint individuals within its organisation to be responsible for archives. Access to archives shall be restricted to those individuals. The media used to archive the content of the clinical trial 
+====================================================================================================
+R3-038 | EUCTR | loc=Art. 58 | page=OJ L 158/41
+PARA: Fourth (unnumbered) paragraph: the sponsor must appoint individuals within its organisation responsible for archives, and access to archives is restricted to those individuals.
+QUOTE: The sponsor shall appoint individuals within its organisation to be responsible for archives.
+QCHECK: exact ['PDF 41 / printed L158/41'] 
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (1134 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Article 58 Archiving of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall arc
+  WINDOW 0.73 @ PDF 41 / printed L158/41: s readily available and acces sible, upon request, to the competent authorities. Any transfer of ownership of the content of the clinical trial master file shall be documented. The new owner shall assume the responsibilities set out in this Article. The sponsor shall appoint individuals within its organisation to be responsible for archives. Access to archives shall be restricted to those individuals. The media used to archive the content of the clinical trial master file shall be such that the content remains complete and legible throughout the period referred to in the first paragraph. Any alteration to the content of the clinical trial master file shall be traceable. 
+====================================================================================================
+R3-039 | EUCTR | loc=Art. 58 | page=OJ L 158/41
+PARA: Sixth (unnumbered) paragraph: any alteration to the content of the master file must be traceable. The third paragraph requires any transfer of ownership of the content to be documented.
+QUOTE: Any alteration to the content of the clinical trial master file shall be traceable.
+QCHECK: exact ['PDF 41 / printed L158/41'] 
+LOC: found PDF 41 / printed L158/41 .. PDF 41 / printed L158/41 (1134 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Article 58 Archiving of the clinical trial master file Unless other Union law requires archiving for a longer period, the sponsor and the investigator shall arc
+  WINDOW 0.53 @ PDF 41 / printed L158/41: period, the sponsor and the investigator shall archive the content of the clinical trial master file for at least 25 years after the end of the clinical trial. However, the medical files of subjects shall be archived in accordance with national law. The content of the clinical trial master file shall be archived in a way that ensures that it is readily available and acces sible, upon request, to the competent authorities. Any transfer of ownership of the content of the clinical trial master file shall be documented. The new owner shall assume the responsibilities set out in this Article. The sponsor shall appoint individuals within its organisation to be responsible for archives. Access to archives shall be restricted to those individuals. The media used to archive the content of the clinical trial master file shall be such that the content remains complete and legible throughout the per
+====================================================================================================
+R3-040 | EUCTR | loc=Art. 77(1) | page=OJ L 158/46
+PARA: A Member State concerned with justified grounds that the Regulation's requirements are no longer met may revoke the trial authorisation, suspend the trial or require the sponsor to modify any aspect of it. Possible authority response to a serious breach.
+LOC: found PDF 46 / printed L158/46 .. PDF 46 / printed L158/46 (342 chars) 
+  PASSAGE: 1. Where a Member State concerned has justified grounds for considering that the requirements set out in this Regu lation are no longer met, it may take the following measures on its territory: (a) revoke the authorisation of a clinical trial; (b) suspend a clinical trial; (c) require the sponsor to modify any aspect of the clinical trial. 
+====================================================================================================
+R3-041 | EUCTR | loc=Art. 77(2) | page=OJ L 158/46
+PARA: Except where immediate action is required, the Member State asks the sponsor and/or investigator for an opinion before taking a corrective measure; the opinion is due within seven days.
+LOC: found PDF 46 / printed L158/46 .. PDF 46 / printed L158/46 (253 chars) 
+  PASSAGE: 2. Before the Member State concerned takes any of the measures referred to in paragraph 1 it shall, except where immediate action is required, ask the sponsor and/or the investigator for their opinion. That opinion shall be delivered within seven days. 
+====================================================================================================
+R3-042 | EUCTR | loc=Art. 78(6) | page=OJ L 158/47
+PARA: After an inspection, the responsible Member State drafts an inspection report, makes it available to the inspected entity and the sponsor, and submits it through the EU portal.
+LOC: found PDF 47 / printed L158/47 .. PDF 47 / printed L158/47 (336 chars) 
+  PASSAGE: 6. Following an inspection, the Member State under whose responsibility the inspection has been conducted shall draw up an inspection report. That Member State shall make the inspection report available to the inspected entity and the sponsor of the relevant clinical trial and shall submit the inspection report through the EU portal. 

@@ -1,0 +1,2116 @@
+{
+  "html": "/home/claude/ipd/out/publish/index.html",
+  "size": 79315,
+  "failures": 0,
+  "assertions": 213,
+  "perDiagram": [
+    {
+      "diagram": "L3_DIAGRAM",
+      "overlays": 21,
+      "expected": 21,
+      "panel_only": 6,
+      "chips": 8
+    },
+    {
+      "diagram": "L4_01_DIAGRAM",
+      "overlays": 19,
+      "expected": 19,
+      "panel_only": 5,
+      "chips": 0
+    },
+    {
+      "diagram": "L4_02_DIAGRAM",
+      "overlays": 24,
+      "expected": 24,
+      "panel_only": 6,
+      "chips": 0
+    },
+    {
+      "diagram": "L4_03_DIAGRAM",
+      "overlays": 23,
+      "expected": 23,
+      "panel_only": 5,
+      "chips": 0
+    },
+    {
+      "diagram": "L4_04_DIAGRAM",
+      "overlays": 16,
+      "expected": 16,
+      "panel_only": 5,
+      "chips": 0
+    },
+    {
+      "diagram": "L4_05_DIAGRAM",
+      "overlays": 24,
+      "expected": 24,
+      "panel_only": 5,
+      "chips": 0
+    },
+    {
+      "diagram": "L4_06_DIAGRAM",
+      "overlays": 23,
+      "expected": 23,
+      "panel_only": 6,
+      "chips": 0
+    },
+    {
+      "diagram": "L4_07_DIAGRAM",
+      "overlays": 15,
+      "expected": 15,
+      "panel_only": 5,
+      "chips": 0
+    },
+    {
+      "diagram": "L4_08_DIAGRAM",
+      "overlays": 11,
+      "expected": 11,
+      "panel_only": 5,
+      "chips": 0
+    }
+  ],
+  "notes": [
+    "L4_01_DIAGRAM: 2 overlay line(s) shortened with an ellipsis (full text in tooltip and panel): L4_01_A5 CTTI-CTQ SData-Monitoring-and-Management; L4_01_A4 TCB-RBQM SNumber-of-QTLs",
+    "L4_02_DIAGRAM: 3 overlay line(s) shortened with an ellipsis (full text in tooltip and panel): L4_02_A7 TCB-PD-TIRS SIdentify-and-Collect; L4_02_A3 TCB-RBQM SRelationship-Between-QTLs-and-KRIs / TCB-RBQM SMonitor-Process-Stage; L4_02_A10 E6R3 GL:Monitoring Report",
+    "L4_04_DIAGRAM: 2 overlay line(s) shortened with an ellipsis (full text in tooltip and panel): L4_04_A5 TCB-PD-TIRS SClassify-and-Categorize; L4_04_A7 TCB-PD-TIRS SIdentify-and-Collect",
+    "L4_05_DIAGRAM: 1 overlay line(s) shortened with an ellipsis (full text in tooltip and panel): L4_05_A11 TCB-PD-TIRS SGCP-Compliance",
+    "L4_06_DIAGRAM: 4 overlay line(s) shortened with an ellipsis (full text in tooltip and panel): L4_06_A1 CTTI-CTQ SData-Monitoring-and-Management; L4_06_A5 CTTI-CTQ SData-Monitoring-and-Management; L4_06_A7 CTIS-TM05 SOther-notifications [verify]; L4_06_M2 CTIS-TM05 SOther-notifications [verify]",
+    "L4_07_DIAGRAM: 1 overlay line(s) shortened with an ellipsis (full text in tooltip and panel): L4_07_A1 TCB-PD STaking-a-holistic-approach-CLOSEOUT [verify]",
+    "L4_08_DIAGRAM: 1 overlay line(s) shortened with an ellipsis (full text in tooltip and panel): L4_08_A5 TCB-PD STaking-a-holistic-approach-CLOSEOUT",
+    "every REQ has a modal"
+  ],
+  "screens": "out/publish_screens",
+  "publish": {
+    "dir": "/home/claude/ipd/out/publish",
+    "origin": "http://127.0.0.1:40791",
+    "cdn": [
+      "https://cdn.jsdelivr.net/npm/bpmn-js@18.31.1/dist/bpmn-navigated-viewer.production.min.js",
+      "https://cdn.jsdelivr.net/npm/diagram-js-minimap@5.6.0/dist/diagram-minimap.umd.prod.js"
+    ]
+  },
+  "results": [
+    {
+      "ok": true,
+      "name": "static: HTML size under 5 MB",
+      "detail": "79315 bytes"
+    },
+    {
+      "ok": true,
+      "name": "static: exactly the two pinned CDN scripts, each with sha384 integrity of the local pinned file and crossorigin=\"anonymous\"",
+      "detail": [
+        "sha384-wF6qP24JnRn7l06mOet+Nu2lDkwo2k5Ts0UZ5xnsOXn0pGKs5YLAM+v7eGyQ9V+n",
+        "sha384-o3S61cmEmHqk2qogc5gfye5QqKLpIXgo4ckwE5ddLDDAYMEnr3qIAtCxJyrsPMF6"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "static: other scripts are own files by relative path; no stylesheet links (all CSS inline)",
+      "detail": [
+        "boot.js"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "static: markup src/href only data:, own relative files and the two pinned CDN scripts",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "static: no third-party code in the 5 publish files (bundle probes and UMD globals absent)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "static: licence notices of bpmn-js and diagram-js-minimap kept in index.html",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "static: app.js and boot.js equal viewer/src; data/ipd_best_practice.bpmn.xml equals out/ipd_best_practice.bpmn; citations from data/citations.json",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "static: boot.js uses no dialogs or window.open; fetch only for own relative files",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "static: CSS url() only data: URIs",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "static: no CSS @import",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "static: app script uses no dialogs, window.open or network APIs",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "static: storage only inside try/catch",
+      "detail": "2 uses"
+    },
+    {
+      "ok": true,
+      "name": "static: third-party CSS (diagram-js, bpmn-js, diagram-js-minimap) inline",
+      "detail": "5.6.0"
+    },
+    {
+      "ok": true,
+      "name": "static: no em dash or middle dot in the page markup",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "routing: first view sets the hash",
+      "detail": "#l3"
+    },
+    {
+      "ok": true,
+      "name": "routing: L3 opens first",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "import: zero bpmn-js import warnings",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "header: title text",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "header: status line",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "routing: L3_DIAGRAM shows #l3 in location.hash",
+      "detail": "#l3"
+    },
+    {
+      "ok": true,
+      "name": "view: L3_DIAGRAM opens at 75% (Fit 38% < 60%), left edge, process start L3_S1 in view, exactly centred on Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L3_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L3_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L3_DIAGRAM MAY chip on 0 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L3_DIAGRAM renders all 34 trace records (73 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L3_DIAGRAM overlay count 21 = elements with sources 21 (citations.json)",
+      "detail": {
+        "got": [
+          "L3_A1",
+          "L3_A2",
+          "L3_A3",
+          "L3_A4",
+          "L3_A5",
+          "L3_A6",
+          "L3_A7",
+          "L3_A8",
+          "L3_M1",
+          "L3_M10",
+          "L3_M11",
+          "L3_M12",
+          "L3_M2",
+          "L3_M3",
+          "L3_M4",
+          "L3_M5",
+          "L3_M6",
+          "L3_M7",
+          "L3_M8",
+          "L3_M9",
+          "L3_S1"
+        ],
+        "expected": [
+          "L3_A1",
+          "L3_A2",
+          "L3_A3",
+          "L3_A4",
+          "L3_A5",
+          "L3_A6",
+          "L3_A7",
+          "L3_A8",
+          "L3_M1",
+          "L3_M10",
+          "L3_M11",
+          "L3_M12",
+          "L3_M2",
+          "L3_M3",
+          "L3_M4",
+          "L3_M5",
+          "L3_M6",
+          "L3_M7",
+          "L3_M8",
+          "L3_M9",
+          "L3_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L3_DIAGRAM overlay set = elements with ipd:source in the imported model (21)",
+      "detail": {
+        "model": [
+          "L3_A1",
+          "L3_A2",
+          "L3_A3",
+          "L3_A4",
+          "L3_A5",
+          "L3_A6",
+          "L3_A7",
+          "L3_A8",
+          "L3_M1",
+          "L3_M10",
+          "L3_M11",
+          "L3_M12",
+          "L3_M2",
+          "L3_M3",
+          "L3_M4",
+          "L3_M5",
+          "L3_M6",
+          "L3_M7",
+          "L3_M8",
+          "L3_M9",
+          "L3_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L3_DIAGRAM lanes/pools with sources are panel-only (6)",
+      "detail": [
+        "L3_L_MON",
+        "L3_L_SPON",
+        "L3_P_IEC",
+        "L3_P_INV",
+        "L3_P_RA",
+        "L3_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L3_DIAGRAM all 21 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L3_DIAGRAM DRAFT shown with the binding badge on all 10 draft element(s); badges match citations (21)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L3_DIAGRAM 0 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L3_DIAGRAM 1 text annotation(s) (1 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L3_DIAGRAM record/party attributes used where present (21)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L3_DIAGRAM \"Open L4\" chip on every call activity with an L4 (8)",
+      "detail": {
+        "got": [
+          "L3_A1",
+          "L3_A2",
+          "L3_A3",
+          "L3_A4",
+          "L3_A5",
+          "L3_A6",
+          "L3_A7",
+          "L3_A8"
+        ],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L3_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_01_DIAGRAM shows #l4-01 in location.hash",
+      "detail": "#l4-01"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_01_DIAGRAM opens at 75% (Fit 34% < 60%), left edge, process start L4_01_S1 in view, centred on (shifted 94 px to avoid an empty band) Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_01_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_01_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_01_DIAGRAM MAY chip on 1 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_01_DIAGRAM renders all 31 trace records (69 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_01_DIAGRAM overlay count 19 = elements with sources 19 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_01_A1",
+          "L4_01_A10",
+          "L4_01_A11",
+          "L4_01_A12",
+          "L4_01_A13",
+          "L4_01_A14",
+          "L4_01_A15",
+          "L4_01_A16",
+          "L4_01_A2",
+          "L4_01_A3",
+          "L4_01_A4",
+          "L4_01_A5",
+          "L4_01_A6",
+          "L4_01_A7",
+          "L4_01_A8",
+          "L4_01_A9",
+          "L4_01_M1",
+          "L4_01_M2",
+          "L4_01_S1"
+        ],
+        "expected": [
+          "L4_01_A1",
+          "L4_01_A10",
+          "L4_01_A11",
+          "L4_01_A12",
+          "L4_01_A13",
+          "L4_01_A14",
+          "L4_01_A15",
+          "L4_01_A16",
+          "L4_01_A2",
+          "L4_01_A3",
+          "L4_01_A4",
+          "L4_01_A5",
+          "L4_01_A6",
+          "L4_01_A7",
+          "L4_01_A8",
+          "L4_01_A9",
+          "L4_01_M1",
+          "L4_01_M2",
+          "L4_01_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_01_DIAGRAM overlay set = elements with ipd:source in the imported model (19)",
+      "detail": {
+        "model": [
+          "L4_01_A1",
+          "L4_01_A10",
+          "L4_01_A11",
+          "L4_01_A12",
+          "L4_01_A13",
+          "L4_01_A14",
+          "L4_01_A15",
+          "L4_01_A16",
+          "L4_01_A2",
+          "L4_01_A3",
+          "L4_01_A4",
+          "L4_01_A5",
+          "L4_01_A6",
+          "L4_01_A7",
+          "L4_01_A8",
+          "L4_01_A9",
+          "L4_01_M1",
+          "L4_01_M2",
+          "L4_01_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_01_DIAGRAM lanes/pools with sources are panel-only (5)",
+      "detail": [
+        "L4_01_L_SPON",
+        "L4_01_P_IEC",
+        "L4_01_P_INV",
+        "L4_01_P_RA",
+        "L4_01_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_01_DIAGRAM all 19 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_01_DIAGRAM DRAFT shown with the binding badge on all 4 draft element(s); badges match citations (19)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_01_DIAGRAM 0 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_01_DIAGRAM 1 text annotation(s) (1 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_01_DIAGRAM record/party attributes used where present (19)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_01_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_01_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_02_DIAGRAM shows #l4-02 in location.hash",
+      "detail": "#l4-02"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_02_DIAGRAM opens at 75% (Fit 43% < 60%), left edge, process start L4_02_S1 in view, centred on (shifted 100 px to avoid an empty band) Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_02_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_02_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_02_DIAGRAM MAY chip on 0 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_02_DIAGRAM renders all 39 trace records (94 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_02_DIAGRAM overlay count 24 = elements with sources 24 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_02_A1",
+          "L4_02_A10",
+          "L4_02_A11",
+          "L4_02_A12",
+          "L4_02_A13",
+          "L4_02_A14",
+          "L4_02_A15",
+          "L4_02_A16",
+          "L4_02_A2",
+          "L4_02_A3",
+          "L4_02_A4",
+          "L4_02_A5",
+          "L4_02_A6",
+          "L4_02_A7",
+          "L4_02_A8",
+          "L4_02_A9",
+          "L4_02_M1",
+          "L4_02_M2",
+          "L4_02_M3",
+          "L4_02_M4",
+          "L4_02_M5",
+          "L4_02_M6",
+          "L4_02_M7",
+          "L4_02_S1"
+        ],
+        "expected": [
+          "L4_02_A1",
+          "L4_02_A10",
+          "L4_02_A11",
+          "L4_02_A12",
+          "L4_02_A13",
+          "L4_02_A14",
+          "L4_02_A15",
+          "L4_02_A16",
+          "L4_02_A2",
+          "L4_02_A3",
+          "L4_02_A4",
+          "L4_02_A5",
+          "L4_02_A6",
+          "L4_02_A7",
+          "L4_02_A8",
+          "L4_02_A9",
+          "L4_02_M1",
+          "L4_02_M2",
+          "L4_02_M3",
+          "L4_02_M4",
+          "L4_02_M5",
+          "L4_02_M6",
+          "L4_02_M7",
+          "L4_02_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_02_DIAGRAM overlay set = elements with ipd:source in the imported model (24)",
+      "detail": {
+        "model": [
+          "L4_02_A1",
+          "L4_02_A10",
+          "L4_02_A11",
+          "L4_02_A12",
+          "L4_02_A13",
+          "L4_02_A14",
+          "L4_02_A15",
+          "L4_02_A16",
+          "L4_02_A2",
+          "L4_02_A3",
+          "L4_02_A4",
+          "L4_02_A5",
+          "L4_02_A6",
+          "L4_02_A7",
+          "L4_02_A8",
+          "L4_02_A9",
+          "L4_02_M1",
+          "L4_02_M2",
+          "L4_02_M3",
+          "L4_02_M4",
+          "L4_02_M5",
+          "L4_02_M6",
+          "L4_02_M7",
+          "L4_02_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_02_DIAGRAM lanes/pools with sources are panel-only (6)",
+      "detail": [
+        "L4_02_L_MON",
+        "L4_02_L_SPON",
+        "L4_02_P_IEC",
+        "L4_02_P_INV",
+        "L4_02_P_RA",
+        "L4_02_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_02_DIAGRAM all 24 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_02_DIAGRAM DRAFT shown with the binding badge on all 4 draft element(s); badges match citations (24)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_02_DIAGRAM 0 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_02_DIAGRAM 0 text annotation(s) (0 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_02_DIAGRAM record/party attributes used where present (24)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_02_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_02_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_03_DIAGRAM shows #l4-03 in location.hash",
+      "detail": "#l4-03"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_03_DIAGRAM opens at 75% (Fit 33% < 60%), left edge, process start L4_03_S2 in view, centred on (shifted 83 px to keep the process start in view) Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_03_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_03_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_03_DIAGRAM MAY chip on 0 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_03_DIAGRAM renders all 46 trace records (123 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_03_DIAGRAM overlay count 23 = elements with sources 23 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_03_A1",
+          "L4_03_A10",
+          "L4_03_A11",
+          "L4_03_A12",
+          "L4_03_A13",
+          "L4_03_A14",
+          "L4_03_A2",
+          "L4_03_A3",
+          "L4_03_A4",
+          "L4_03_A5",
+          "L4_03_A6",
+          "L4_03_A7",
+          "L4_03_A8",
+          "L4_03_A9",
+          "L4_03_M1",
+          "L4_03_M2",
+          "L4_03_M3",
+          "L4_03_M4",
+          "L4_03_M5",
+          "L4_03_M6",
+          "L4_03_M7",
+          "L4_03_M8",
+          "L4_03_M9"
+        ],
+        "expected": [
+          "L4_03_A1",
+          "L4_03_A10",
+          "L4_03_A11",
+          "L4_03_A12",
+          "L4_03_A13",
+          "L4_03_A14",
+          "L4_03_A2",
+          "L4_03_A3",
+          "L4_03_A4",
+          "L4_03_A5",
+          "L4_03_A6",
+          "L4_03_A7",
+          "L4_03_A8",
+          "L4_03_A9",
+          "L4_03_M1",
+          "L4_03_M2",
+          "L4_03_M3",
+          "L4_03_M4",
+          "L4_03_M5",
+          "L4_03_M6",
+          "L4_03_M7",
+          "L4_03_M8",
+          "L4_03_M9"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_03_DIAGRAM overlay set = elements with ipd:source in the imported model (23)",
+      "detail": {
+        "model": [
+          "L4_03_A1",
+          "L4_03_A10",
+          "L4_03_A11",
+          "L4_03_A12",
+          "L4_03_A13",
+          "L4_03_A14",
+          "L4_03_A2",
+          "L4_03_A3",
+          "L4_03_A4",
+          "L4_03_A5",
+          "L4_03_A6",
+          "L4_03_A7",
+          "L4_03_A8",
+          "L4_03_A9",
+          "L4_03_M1",
+          "L4_03_M2",
+          "L4_03_M3",
+          "L4_03_M4",
+          "L4_03_M5",
+          "L4_03_M6",
+          "L4_03_M7",
+          "L4_03_M8",
+          "L4_03_M9"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_03_DIAGRAM lanes/pools with sources are panel-only (5)",
+      "detail": [
+        "L4_03_L_SPON",
+        "L4_03_P_IEC",
+        "L4_03_P_INV",
+        "L4_03_P_RA",
+        "L4_03_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_03_DIAGRAM all 23 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_03_DIAGRAM DRAFT shown with the binding badge on all 7 draft element(s); badges match citations (23)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_03_DIAGRAM 1 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_03_DIAGRAM 0 text annotation(s) (0 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_03_DIAGRAM record/party attributes used where present (22)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_03_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_03_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_04_DIAGRAM shows #l4-04 in location.hash",
+      "detail": "#l4-04"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_04_DIAGRAM opens at 75% (Fit 37% < 60%), left edge, process start L4_04_S1 in view, centred on (shifted 79 px to avoid an empty band) Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_04_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_04_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_04_DIAGRAM MAY chip on 0 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_04_DIAGRAM renders all 29 trace records (67 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_04_DIAGRAM overlay count 16 = elements with sources 16 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_04_A1",
+          "L4_04_A10",
+          "L4_04_A11",
+          "L4_04_A2",
+          "L4_04_A3",
+          "L4_04_A4",
+          "L4_04_A5",
+          "L4_04_A6",
+          "L4_04_A7",
+          "L4_04_A8",
+          "L4_04_A9",
+          "L4_04_G2",
+          "L4_04_M1",
+          "L4_04_M2",
+          "L4_04_M3",
+          "L4_04_S1"
+        ],
+        "expected": [
+          "L4_04_A1",
+          "L4_04_A10",
+          "L4_04_A11",
+          "L4_04_A2",
+          "L4_04_A3",
+          "L4_04_A4",
+          "L4_04_A5",
+          "L4_04_A6",
+          "L4_04_A7",
+          "L4_04_A8",
+          "L4_04_A9",
+          "L4_04_G2",
+          "L4_04_M1",
+          "L4_04_M2",
+          "L4_04_M3",
+          "L4_04_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_04_DIAGRAM overlay set = elements with ipd:source in the imported model (16)",
+      "detail": {
+        "model": [
+          "L4_04_A1",
+          "L4_04_A10",
+          "L4_04_A11",
+          "L4_04_A2",
+          "L4_04_A3",
+          "L4_04_A4",
+          "L4_04_A5",
+          "L4_04_A6",
+          "L4_04_A7",
+          "L4_04_A8",
+          "L4_04_A9",
+          "L4_04_G2",
+          "L4_04_M1",
+          "L4_04_M2",
+          "L4_04_M3",
+          "L4_04_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_04_DIAGRAM lanes/pools with sources are panel-only (5)",
+      "detail": [
+        "L4_04_L_SPON",
+        "L4_04_P_IEC",
+        "L4_04_P_INV",
+        "L4_04_P_RA",
+        "L4_04_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_04_DIAGRAM all 16 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_04_DIAGRAM DRAFT shown with the binding badge on all 4 draft element(s); badges match citations (16)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_04_DIAGRAM 0 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_04_DIAGRAM 0 text annotation(s) (0 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_04_DIAGRAM record/party attributes used where present (15)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_04_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_04_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_05_DIAGRAM shows #l4-05 in location.hash",
+      "detail": "#l4-05"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_05_DIAGRAM opens at 75% (Fit 44% < 60%), left edge, process start L4_05_S1 in view, centred on (shifted 20 px to avoid an empty band) Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_05_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_05_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_05_DIAGRAM MAY chip on 0 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_05_DIAGRAM renders all 42 trace records (106 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_05_DIAGRAM overlay count 24 = elements with sources 24 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_05_A1",
+          "L4_05_A10",
+          "L4_05_A11",
+          "L4_05_A12",
+          "L4_05_A2",
+          "L4_05_A3",
+          "L4_05_A4",
+          "L4_05_A5",
+          "L4_05_A6",
+          "L4_05_A7",
+          "L4_05_A8",
+          "L4_05_A9",
+          "L4_05_G3",
+          "L4_05_G6",
+          "L4_05_M1",
+          "L4_05_M2",
+          "L4_05_M3",
+          "L4_05_M4",
+          "L4_05_M5",
+          "L4_05_M6",
+          "L4_05_M7",
+          "L4_05_M8",
+          "L4_05_M9",
+          "L4_05_S1"
+        ],
+        "expected": [
+          "L4_05_A1",
+          "L4_05_A10",
+          "L4_05_A11",
+          "L4_05_A12",
+          "L4_05_A2",
+          "L4_05_A3",
+          "L4_05_A4",
+          "L4_05_A5",
+          "L4_05_A6",
+          "L4_05_A7",
+          "L4_05_A8",
+          "L4_05_A9",
+          "L4_05_G3",
+          "L4_05_G6",
+          "L4_05_M1",
+          "L4_05_M2",
+          "L4_05_M3",
+          "L4_05_M4",
+          "L4_05_M5",
+          "L4_05_M6",
+          "L4_05_M7",
+          "L4_05_M8",
+          "L4_05_M9",
+          "L4_05_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_05_DIAGRAM overlay set = elements with ipd:source in the imported model (24)",
+      "detail": {
+        "model": [
+          "L4_05_A1",
+          "L4_05_A10",
+          "L4_05_A11",
+          "L4_05_A12",
+          "L4_05_A2",
+          "L4_05_A3",
+          "L4_05_A4",
+          "L4_05_A5",
+          "L4_05_A6",
+          "L4_05_A7",
+          "L4_05_A8",
+          "L4_05_A9",
+          "L4_05_G3",
+          "L4_05_G6",
+          "L4_05_M1",
+          "L4_05_M2",
+          "L4_05_M3",
+          "L4_05_M4",
+          "L4_05_M5",
+          "L4_05_M6",
+          "L4_05_M7",
+          "L4_05_M8",
+          "L4_05_M9",
+          "L4_05_S1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_05_DIAGRAM lanes/pools with sources are panel-only (5)",
+      "detail": [
+        "L4_05_L_SPON",
+        "L4_05_P_IEC",
+        "L4_05_P_INV",
+        "L4_05_P_RA",
+        "L4_05_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_05_DIAGRAM all 24 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_05_DIAGRAM DRAFT shown with the binding badge on all 2 draft element(s); badges match citations (24)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_05_DIAGRAM 1 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_05_DIAGRAM 0 text annotation(s) (0 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_05_DIAGRAM record/party attributes used where present (24)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_05_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_05_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_06_DIAGRAM shows #l4-06 in location.hash",
+      "detail": "#l4-06"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_06_DIAGRAM opens at 75% (Fit 28% < 60%), left edge, process start L4_06_S1 in view, centred on (shifted 16 px to avoid an empty band) Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_06_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_06_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_06_DIAGRAM MAY chip on 1 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_06_DIAGRAM renders all 43 trace records (106 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_06_DIAGRAM overlay count 23 = elements with sources 23 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_06_A1",
+          "L4_06_A10",
+          "L4_06_A11",
+          "L4_06_A12",
+          "L4_06_A13",
+          "L4_06_A14",
+          "L4_06_A2",
+          "L4_06_A3",
+          "L4_06_A4",
+          "L4_06_A5",
+          "L4_06_A6",
+          "L4_06_A7",
+          "L4_06_A8",
+          "L4_06_A9",
+          "L4_06_M1",
+          "L4_06_M2",
+          "L4_06_M3",
+          "L4_06_M4",
+          "L4_06_M5",
+          "L4_06_M6",
+          "L4_06_M7",
+          "L4_06_M8",
+          "L4_06_M9"
+        ],
+        "expected": [
+          "L4_06_A1",
+          "L4_06_A10",
+          "L4_06_A11",
+          "L4_06_A12",
+          "L4_06_A13",
+          "L4_06_A14",
+          "L4_06_A2",
+          "L4_06_A3",
+          "L4_06_A4",
+          "L4_06_A5",
+          "L4_06_A6",
+          "L4_06_A7",
+          "L4_06_A8",
+          "L4_06_A9",
+          "L4_06_M1",
+          "L4_06_M2",
+          "L4_06_M3",
+          "L4_06_M4",
+          "L4_06_M5",
+          "L4_06_M6",
+          "L4_06_M7",
+          "L4_06_M8",
+          "L4_06_M9"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_06_DIAGRAM overlay set = elements with ipd:source in the imported model (23)",
+      "detail": {
+        "model": [
+          "L4_06_A1",
+          "L4_06_A10",
+          "L4_06_A11",
+          "L4_06_A12",
+          "L4_06_A13",
+          "L4_06_A14",
+          "L4_06_A2",
+          "L4_06_A3",
+          "L4_06_A4",
+          "L4_06_A5",
+          "L4_06_A6",
+          "L4_06_A7",
+          "L4_06_A8",
+          "L4_06_A9",
+          "L4_06_M1",
+          "L4_06_M2",
+          "L4_06_M3",
+          "L4_06_M4",
+          "L4_06_M5",
+          "L4_06_M6",
+          "L4_06_M7",
+          "L4_06_M8",
+          "L4_06_M9"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_06_DIAGRAM lanes/pools with sources are panel-only (6)",
+      "detail": [
+        "L4_06_L_MON",
+        "L4_06_L_SPON",
+        "L4_06_P_IEC",
+        "L4_06_P_INV",
+        "L4_06_P_RA",
+        "L4_06_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_06_DIAGRAM all 23 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_06_DIAGRAM DRAFT shown with the binding badge on all 3 draft element(s); badges match citations (23)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_06_DIAGRAM 0 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_06_DIAGRAM 0 text annotation(s) (0 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_06_DIAGRAM record/party attributes used where present (22)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_06_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_06_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_07_DIAGRAM shows #l4-07 in location.hash",
+      "detail": "#l4-07"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_07_DIAGRAM opens at 75% (Fit 31% < 60%), left edge, process start L4_07_S1 in view, exactly centred on Sponsor pool",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_07_DIAGRAM default zoom 75% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_07_DIAGRAM present, closed by default (diagram wider than the canvas at 75%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_07_DIAGRAM MAY chip on 0 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_07_DIAGRAM renders all 26 trace records (60 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_07_DIAGRAM overlay count 15 = elements with sources 15 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_07_A1",
+          "L4_07_A10",
+          "L4_07_A11",
+          "L4_07_A12",
+          "L4_07_A13",
+          "L4_07_A2",
+          "L4_07_A3",
+          "L4_07_A4",
+          "L4_07_A5",
+          "L4_07_A6",
+          "L4_07_A7",
+          "L4_07_A8",
+          "L4_07_A9",
+          "L4_07_M1",
+          "L4_07_M2"
+        ],
+        "expected": [
+          "L4_07_A1",
+          "L4_07_A10",
+          "L4_07_A11",
+          "L4_07_A12",
+          "L4_07_A13",
+          "L4_07_A2",
+          "L4_07_A3",
+          "L4_07_A4",
+          "L4_07_A5",
+          "L4_07_A6",
+          "L4_07_A7",
+          "L4_07_A8",
+          "L4_07_A9",
+          "L4_07_M1",
+          "L4_07_M2"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_07_DIAGRAM overlay set = elements with ipd:source in the imported model (15)",
+      "detail": {
+        "model": [
+          "L4_07_A1",
+          "L4_07_A10",
+          "L4_07_A11",
+          "L4_07_A12",
+          "L4_07_A13",
+          "L4_07_A2",
+          "L4_07_A3",
+          "L4_07_A4",
+          "L4_07_A5",
+          "L4_07_A6",
+          "L4_07_A7",
+          "L4_07_A8",
+          "L4_07_A9",
+          "L4_07_M1",
+          "L4_07_M2"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_07_DIAGRAM lanes/pools with sources are panel-only (5)",
+      "detail": [
+        "L4_07_L_SPON",
+        "L4_07_P_IEC",
+        "L4_07_P_INV",
+        "L4_07_P_RA",
+        "L4_07_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_07_DIAGRAM all 15 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_07_DIAGRAM DRAFT shown with the binding badge on all 3 draft element(s); badges match citations (15)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_07_DIAGRAM 2 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_07_DIAGRAM 0 text annotation(s) (0 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_07_DIAGRAM record/party attributes used where present (14)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_07_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_07_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "routing: L4_08_DIAGRAM shows #l4-08 in location.hash",
+      "detail": "#l4-08"
+    },
+    {
+      "ok": true,
+      "name": "view: L4_08_DIAGRAM opens at Fit 60% (legible)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "view: L4_08_DIAGRAM default zoom 60% >= 60%",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: L4_08_DIAGRAM present, closed by default (diagram not wider than the canvas at 60%)",
+      "detail": {
+        "module": true,
+        "dom": true,
+        "open": false,
+        "cls": false,
+        "visible": false,
+        "items": 0,
+        "pressed": "false",
+        "text": "Show minimap",
+        "rect": {
+          "w": 0,
+          "h": 0
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_08_DIAGRAM MAY chip on 0 element(s) whose REQs are all modal \"may\", next to the binding badge",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "render: L4_08_DIAGRAM renders all 24 trace records (64 SVG elements)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_08_DIAGRAM overlay count 11 = elements with sources 11 (citations.json)",
+      "detail": {
+        "got": [
+          "L4_08_A1",
+          "L4_08_A2",
+          "L4_08_A3",
+          "L4_08_A4",
+          "L4_08_A5",
+          "L4_08_A6",
+          "L4_08_A7",
+          "L4_08_A8",
+          "L4_08_D1",
+          "L4_08_D2",
+          "L4_08_M1"
+        ],
+        "expected": [
+          "L4_08_A1",
+          "L4_08_A2",
+          "L4_08_A3",
+          "L4_08_A4",
+          "L4_08_A5",
+          "L4_08_A6",
+          "L4_08_A7",
+          "L4_08_A8",
+          "L4_08_D1",
+          "L4_08_D2",
+          "L4_08_M1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_08_DIAGRAM overlay set = elements with ipd:source in the imported model (11)",
+      "detail": {
+        "model": [
+          "L4_08_A1",
+          "L4_08_A2",
+          "L4_08_A3",
+          "L4_08_A4",
+          "L4_08_A5",
+          "L4_08_A6",
+          "L4_08_A7",
+          "L4_08_A8",
+          "L4_08_D1",
+          "L4_08_D2",
+          "L4_08_M1"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_08_DIAGRAM lanes/pools with sources are panel-only (5)",
+      "detail": [
+        "L4_08_L_SPON",
+        "L4_08_P_IEC",
+        "L4_08_P_INV",
+        "L4_08_P_RA",
+        "L4_08_P_SPON"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "overlays: L4_08_DIAGRAM all 11 boxes inside their zones, unclipped, clear of shapes, labels, edges and other overlays",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "badges: L4_08_DIAGRAM DRAFT shown with the binding badge on all 0 draft element(s); badges match citations (11)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "interface: L4_08_DIAGRAM 0 interface placeholder(s) show \"Interface - outside this model\" and no \"Open L4\" chip",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "annotations: L4_08_DIAGRAM 0 text annotation(s) (0 association(s)) not covered; overlay only with sources (0)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: L4_08_DIAGRAM record/party attributes used where present (9)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_08_DIAGRAM \"Open L4\" chip on every call activity with an L4 (0)",
+      "detail": {
+        "got": [],
+        "skipped": []
+      }
+    },
+    {
+      "ok": true,
+      "name": "chips: L4_08_DIAGRAM chips inside the shape, clear of label and markers",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "minimap: navigation-bar button toggles it on L3_DIAGRAM (closed -> open -> closed; text, aria-pressed, map)",
+      "detail": {
+        "s0": {
+          "open": false,
+          "cls": false,
+          "visible": false,
+          "pressed": "false",
+          "text": "Show minimap",
+          "items": 0,
+          "attr": "closed"
+        },
+        "s1": {
+          "open": true,
+          "cls": true,
+          "visible": true,
+          "pressed": "true",
+          "text": "Hide minimap",
+          "items": 73,
+          "attr": "open"
+        },
+        "s2": {
+          "open": false,
+          "cls": false,
+          "visible": false,
+          "pressed": "false",
+          "text": "Show minimap",
+          "items": 73,
+          "attr": "closed"
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "minimap: an opened minimap stays open on L4_01_DIAGRAM and L3_DIAGRAM after the user opened it",
+      "detail": {
+        "so": {
+          "open": true,
+          "cls": true,
+          "visible": true,
+          "pressed": "true",
+          "text": "Hide minimap",
+          "items": 69,
+          "attr": "open"
+        },
+        "sb": {
+          "open": true,
+          "cls": true,
+          "visible": true,
+          "pressed": "true",
+          "text": "Hide minimap",
+          "items": 73,
+          "attr": "open"
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "minimap: click near the right end of the map pans the canvas to the right (viewbox x 0 -> 2259)",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "minimap: a closed minimap stays closed on L4_01_DIAGRAM and L3_DIAGRAM after the user closed it",
+      "detail": {
+        "s3": {
+          "open": false,
+          "cls": false,
+          "visible": false,
+          "pressed": "false",
+          "text": "Show minimap",
+          "items": 73,
+          "attr": "closed"
+        },
+        "s4": {
+          "open": false,
+          "cls": false,
+          "visible": false,
+          "pressed": "false",
+          "text": "Show minimap",
+          "items": 73,
+          "attr": "closed"
+        }
+      }
+    },
+    {
+      "ok": true,
+      "name": "may: L4_01_A9 shows the MAY chip on the canvas and in the panel, and \"Modal: may\" for each of its 1 REQ(s)",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "may: L3_A1 (REQ modals REQ-001 should, REQ-002 should, REQ-003 should, REQ-004 should, REQ-005 should, REQ-006 should, REQ-007 should, REQ-008 should, REQ-009 should, REQ-010 should, REQ-011 example, REQ-012 should, REQ-013 should, REQ-014 should, REQ-015 should, REQ-016 should, REQ-017 should, REQ-018 should, REQ-019 should, REQ-020 should, REQ-021 may, REQ-022 should, REQ-023 should, REQ-024 must, REQ-025 should, REQ-026 should, REQ-027 should, REQ-028 should, REQ-029 should, REQ-030 should, REQ-031 should, REQ-032 should, REQ-033 should, REQ-034 should) shows each modal in the panel and no MAY chip",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "panel: click on task L4_01_A8 opens its panel",
+      "detail": "Describe deviation handling in the protocol"
+    },
+    {
+      "ok": true,
+      "name": "panel: shows all 13 sources of L4_01_A8 (key, loc, page, document title)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "panel: shows the REQ ids of L4_01_A8",
+      "detail": [
+        "REQ-015",
+        "REQ-016",
+        "REQ-017",
+        "REQ-018",
+        "REQ-019",
+        "REQ-020",
+        "REQ-022"
+      ]
+    },
+    {
+      "ok": true,
+      "name": "panel: shows binding of L4_01_A8",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "panel: open verify items highlighted with the text VERIFY (21)",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "panel: L4_01_S1 verify items shown with the text VERIFY (38)",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "zoom: selecting a step from the default view zooms to 100% (1.00)",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "panel: click on the source box of L4_01_S1 selects it",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "zoom: selecting a step from the Fit view zooms to 100% (1.00)",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "panel: no selection lists all 39 REQ ids of L4_01_DIAGRAM grouped by element",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "drill-down: click on call activity L3_A1 opens L4_01_DIAGRAM",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "breadcrumb: shows L3 > L4",
+      "detail": "L3 - Important protocol deviation management - overview L4-01 - Define trial-specific iPD criteria"
+    },
+    {
+      "ok": true,
+      "name": "back control returns to L3",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "drill-down: \"Open L4\" chip opens the L4",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "breadcrumb link returns to L3",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "routing: browser back (hashchange) returns to L3",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "interface: click on L4_03_A4 stays on L4_03_DIAGRAM and opens its panel",
+      "detail": {
+        "d": "L4_03_DIAGRAM",
+        "sel": "L4_03_A4"
+      }
+    },
+    {
+      "ok": true,
+      "name": "interface: panel shows the interface note, its REQs and sources (4 REQ, 6 source)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "trace: panel of L3_S1 shows party and record from ipd:trace",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "filter: source key CTTI-QbD on L4_01_DIAGRAM -> 1 matches (count, highlight, dim)",
+      "detail": {
+        "count": "1",
+        "text": "1 of 26 elements match on this diagram (4 in all diagrams)",
+        "match": 1,
+        "dim": 25,
+        "total": 26
+      }
+    },
+    {
+      "ok": true,
+      "name": "filter: panel lists the matching elements",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "filter: {\"binding\":\"DRAFT\"} on L4_01_DIAGRAM -> 4 matches",
+      "detail": {
+        "count": "4",
+        "text": "4 of 26 elements match on this diagram (37 in all diagrams)",
+        "match": 4,
+        "dim": 22,
+        "total": 26
+      }
+    },
+    {
+      "ok": true,
+      "name": "filter: {\"binding\":\"VERIFY\"} on L4_01_DIAGRAM -> 14 matches",
+      "detail": {
+        "count": "14",
+        "text": "14 of 26 elements match on this diagram (113 in all diagrams)",
+        "match": 14,
+        "dim": 12,
+        "total": 26
+      }
+    },
+    {
+      "ok": true,
+      "name": "filter: {\"binding\":\"LAW\"} on L4_01_DIAGRAM -> 1 matches",
+      "detail": {
+        "count": "1",
+        "text": "1 of 26 elements match on this diagram (48 in all diagrams)",
+        "match": 1,
+        "dim": 25,
+        "total": 26
+      }
+    },
+    {
+      "ok": true,
+      "name": "filter: {\"jur\":\"US\"} on L4_01_DIAGRAM -> 11 matches",
+      "detail": {
+        "count": "11",
+        "text": "11 of 26 elements match on this diagram (85 in all diagrams)",
+        "match": 11,
+        "dim": 15,
+        "total": 26
+      }
+    },
+    {
+      "ok": true,
+      "name": "filter: {\"jur\":\"EU\"} on L4_01_DIAGRAM -> 3 matches",
+      "detail": {
+        "count": "3",
+        "text": "3 of 26 elements match on this diagram (36 in all diagrams)",
+        "match": 3,
+        "dim": 23,
+        "total": 26
+      }
+    },
+    {
+      "ok": true,
+      "name": "filter: free text \"factors identified\" on L4_01_DIAGRAM -> 4 matches",
+      "detail": {
+        "count": "4",
+        "text": "4 of 26 elements match on this diagram (6 in all diagrams)",
+        "match": 4,
+        "dim": 22,
+        "total": 26
+      }
+    },
+    {
+      "ok": true,
+      "name": "filter: clear removes all highlights",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "zoom: +, 100% and Fit buttons work",
+      "detail": {
+        "z0": 0.336,
+        "z1": 0.42,
+        "z2": 1,
+        "z3": 0.336
+      }
+    },
+    {
+      "ok": true,
+      "name": "zoom: readout shows the current zoom",
+      "detail": "Zoom 34% - overview: click a step to zoom in"
+    },
+    {
+      "ok": true,
+      "name": "copy: clipboard holds the exact BPMN XML",
+      "detail": "571443 chars"
+    },
+    {
+      "ok": true,
+      "name": "licence: bpmn.io watermark present and not covered",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "runtime: external URLs only in panel source links (from citations) and the bpmn.io licence watermark (plus the pinned CDN and own script tags)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "runtime: no em dash or middle dot in the rendered page text",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "routing: loading #l4-01 opens L4_01_DIAGRAM",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "routing: unknown hash falls back to #l3",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "responsive: under 900 px the panel collapses below the canvas",
+      "detail": {
+        "below": true,
+        "bodyHidden": true,
+        "toggle": true
+      }
+    },
+    {
+      "ok": true,
+      "name": "responsive: selecting an element expands the panel",
+      "detail": ""
+    },
+    {
+      "ok": true,
+      "name": "console: zero console errors",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "console: zero page errors",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "no alert/confirm/prompt dialogs",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "no popups (window.open)",
+      "detail": []
+    },
+    {
+      "ok": true,
+      "name": "network: only the two pinned CDN scripts and the page's own files (app.js, boot.js, data/citations.json, data/ipd_best_practice.bpmn.xml, index.html)",
+      "detail": {
+        "aborted": [],
+        "other": [],
+        "ownBad": [],
+        "cdnSeen": [
+          "https://cdn.jsdelivr.net/npm/bpmn-js@18.31.1/dist/bpmn-navigated-viewer.production.min.js",
+          "https://cdn.jsdelivr.net/npm/diagram-js-minimap@5.6.0/dist/diagram-minimap.umd.prod.js"
+        ]
+      }
+    },
+    {
+      "ok": true,
+      "name": "sri: a tampered bpmn-js response is blocked by the browser (integrity error) and the page shows a message",
+      "detail": {
+        "bpmnjs": "undefined",
+        "ready": null,
+        "msg": "The diagram library (bpmn-js) could not be loaded from the CDN, or its integrity check failed.",
+        "errors": [
+          "Failed to find a valid digest in the 'integrity' attribute for resource 'https://cdn.jsdelivr.net/npm/bpmn-js@18.31.1/dist/bpmn-navigated-viewer.production.min.js' with computed SHA-384 integrity 'wQ6F9D/dF9lkH/6Ky+EieXC4JeRDFi5fJZzuvms3VI5qqB+EiL3xHfFmPmXp0SSY'. The resource has been blocked.",
+          "The diagram library (bpmn-js) could not be loaded from the CDN, or its integrity check failed."
+        ]
+      }
+    }
+  ]
+}

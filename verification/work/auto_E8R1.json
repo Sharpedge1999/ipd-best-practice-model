@@ -1,0 +1,430 @@
+{
+ "R2-001": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 7 / printed 1",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-002": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 9 / printed 3",
+   "PDF 10 / printed 4"
+  ]
+ },
+ "R2-003": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 10 / printed 4"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ],
+  "quote_in_loc": true
+ },
+ "R2-004": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-005": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-006": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-007": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-008": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-009": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-010": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-011": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-012": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-013": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 10 / printed 4",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-014": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 11 / printed 5",
+   "PDF 13 / printed 7"
+  ]
+ },
+ "R2-015": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 11 / printed 5",
+   "PDF 13 / printed 7"
+  ]
+ },
+ "R2-016": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 11 / printed 5",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-017": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 11 / printed 5",
+   "PDF 11 / printed 5"
+  ]
+ },
+ "R2-018": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 11 / printed 5",
+   "PDF 12 / printed 6"
+  ]
+ },
+ "R2-019": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 12 / printed 6"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 11 / printed 5",
+   "PDF 12 / printed 6"
+  ],
+  "quote_in_loc": true
+ },
+ "R2-020": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed 6",
+   "PDF 12 / printed 6"
+  ]
+ },
+ "R2-021": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed 6",
+   "PDF 12 / printed 6"
+  ]
+ },
+ "R2-022": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed 6",
+   "PDF 12 / printed 6"
+  ]
+ },
+ "R2-023": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed 6",
+   "PDF 12 / printed 6"
+  ]
+ },
+ "R2-024": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed 6",
+   "PDF 13 / printed 7"
+  ]
+ },
+ "R2-025": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed 6",
+   "PDF 13 / printed 7"
+  ]
+ },
+ "R2-026": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 24 / printed 18",
+   "PDF 24 / printed 18"
+  ]
+ },
+ "R2-027": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 24 / printed 18"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 24 / printed 18",
+   "PDF 24 / printed 18"
+  ],
+  "quote_in_loc": true
+ },
+ "R2-028": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 24 / printed 18",
+   "PDF 24 / printed 18"
+  ]
+ },
+ "R2-029": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 24 / printed 18",
+   "PDF 24 / printed 18"
+  ]
+ },
+ "R2-030": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 24 / printed 18",
+   "PDF 24 / printed 18"
+  ]
+ },
+ "R2-031": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 24 / printed 18",
+   "PDF 24 / printed 18"
+  ]
+ },
+ "R2-032": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 25 / printed 19"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 25 / printed 19",
+   "PDF 26 / printed 20"
+  ],
+  "quote_in_loc": true
+ },
+ "R2-033": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-034": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-035": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-036": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-037": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-038": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-039": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-040": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-041": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-042": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-043": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-044": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-045": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-046": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-047": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-048": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-049": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-050": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ },
+ "R2-051": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 5 / printed None",
+   "PDF 7 / printed 1"
+  ]
+ }
+}

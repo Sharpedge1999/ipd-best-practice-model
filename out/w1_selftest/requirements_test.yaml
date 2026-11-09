@@ -1,0 +1,42 @@
+# W1 SELF-TEST INPUT - NOT PROJECT CONTENT. Written by tools/make_w1_selftest.py. Synthetic requirements for
+# the merged code path of tools/build_viewer.py (findings = fixtures/R9_sample.yaml). Statements start with "TEST - ".
+# REQ-905 cites R9-099, which does not exist on purpose (missing-finding display).
+# modal: REQ-902 may (MAY chip on L3_A2 and L4_01_A2); REQ-905 has no modal on purpose (fallback display).
+requirements:
+  - id: REQ-901
+    statement: "TEST - sponsor classifies each protocol deviation against the trial-specific iPD definition."
+    binding: binding-ICH
+    modal: must
+    jurisdiction: [ICH]
+    party: sponsor
+    deadline: none
+    record: "TEST - deviation log entry"
+    findings: [R9-001, R9-002, R9-003, R9-007]
+  - id: REQ-902
+    statement: "TEST - sponsor assesses impact (draft guidance)."
+    binding: guidance
+    modal: may
+    draft: true
+    jurisdiction: [US]
+    party: sponsor
+    findings: [R9-006]
+  - id: REQ-905
+    statement: "TEST - sponsor notifies the authority."
+    binding: binding-law
+    jurisdiction: EU
+    party: sponsor
+    deadline: "xx days (TEST)"
+    findings: [R9-004, R9-099]
+    verify: ["[verify] TEST - deadline wording"]
+  - id: REQ-903
+    statement: "TEST - hand-off to the neighbouring process at the interface placeholder."
+    binding: binding-ICH
+    modal: should
+    jurisdiction: [ICH]
+    party_norm: sponsor
+    trigger: "TEST - deviations ready for reporting"
+    action: "TEST - hand over to the neighbouring process"
+    recipient: "TEST - neighbouring process owner"
+    binding_route: "EU: TEST; US: TEST"
+    status: interface
+    findings: [R9-003]

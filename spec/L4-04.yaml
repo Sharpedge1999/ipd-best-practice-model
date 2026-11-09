@@ -1,0 +1,392 @@
+# L4-04 - Document and classify protocol deviations
+# Best-practice reference model of important protocol deviation (iPD) management, GEN-01 spec (B1).
+# Trace fields are derived from synthesis/requirements.yaml and synthesis/merged_findings.yaml.
+# Modelling choices, SHOULD deviations and open questions: spec/notes.md; REQ coverage: spec/coverage.md.
+id: L4-04
+title: "Document and classify protocol deviations"
+level: L4
+parent: {model: L3, node: A4}
+interface: {start: [S1], ends: [E1, E2]}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-3.9.2", page: "printed 26 / PDF 34"}
+      - {key: E6R3, loc: "P10.1", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "P10.3", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "A1-3.9.5", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: TCB-RBQM, loc: "SQTL-Process", page: "journal pp. 251-261 (section page not confirmed)"}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Investigator", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", page: "OJ L 158/13"}
+      - {key: 21CFR312, loc: "21CFR312.60", page: "n/a - eCFR web text without pagination"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-2.5.2", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.10.6", page: "printed 20 / PDF 28"}
+      - {key: E6R3, loc: "A1-2.3.1", page: "printed 12 / PDF 20"}
+      - {key: E6R3, loc: "A2-2.4", page: "printed 55 / PDF 63"}
+      - {key: E6R3, loc: "A2-2.4.1", page: "printed 56 / PDF 64"}
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", page: "OJ L 158/12"}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", page: "printed 89 / PDF 97"}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", page: "n/a - eCFR web text without pagination"}
+
+lanes:
+  - id: L_SPON
+    name: "Sponsor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+
+nodes:
+  - id: S1
+    type: start
+    label: "Potential protocol deviation identified"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.6.6", page: "printed 25 / PDF 33"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: EMA-SB, loc: "S6.2", page: "printed 9/21"}
+      - {key: EMA-SB, loc: "S6.3", page: "printed 9/21"}
+    req: [REQ-213]
+    binding: binding-ICH
+    jurisdiction: [ICH, EU]
+    party: "service provider; Delegated party"
+  - id: A1
+    type: task
+    label: "Confirm event is a protocol deviation"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E3QA, loc: "S3", page: "printed 6"}
+      - {key: FDA-PD24, loc: "SII", page: "printed 1-2; lines 17-19 and 57-63; printed 2-3; lines 76-86"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; line 233"}
+      - {key: FDA-PD24, loc: "SIII.A", page: "printed 3; lines 93-101"}
+      - {key: TCB-PD-TIRS, loc: "SDefine", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SGCP-Compliance", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-088, REQ-089]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    party: "Sponsors; site staff, study staff, site or central monitoring, audits, regulatory inspections"
+    verify:
+      - "[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)"
+      - "[verify] the Q&A item is unnumbered under heading '3. TERMINOLOGY'; fetch tool rendered its row label as '7 June 2012', which may be a row number 7 plus 'June 2012' (R2-066)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: G1
+    type: xor-split
+    label: "Protocol deviation?"
+    lane: L_SPON
+    path: main
+  - id: E2
+    type: end
+    label: "Issue handled outside the deviation process"
+    lane: L_SPON
+    path: exception
+  - id: A2
+    type: task
+    label: "Record deviation information"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: EUCTR, loc: "Art. 56(1)", page: "OJ L 158/41"}
+      - {key: EMA-SB, loc: "S5.1", page: "printed 8/21"}
+      - {key: TCB-PD-TIRS, loc: "SStore", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-090, REQ-091, REQ-092]
+    binding: binding-law
+    jurisdiction: [ICH, EU]
+    record: "clinical trial information (deviation records); case report form or clinical trial master file; validated deviation repository"
+    party: "the sponsor or the investigator, as applicable"
+    verify:
+      - "[verify] Art. 56(1) applies to 'the sponsor or the investigator, as applicable'; applies equally in the Investigator/institution pool"
+      - "[verify] documenting party not named in the text (R3-065)"
+  - id: A3
+    type: task
+    label: "Classify deviation importance"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.9.3", page: "printed 27 / PDF 35"}
+      - {key: E3QA, loc: "S3", page: "printed 6"}
+      - {key: FDA-PD24, loc: "SII", page: "printed 2; line 60 (restated in SIII.A.1, printed 4)"}
+      - {key: TCB-PD-TIRS, loc: "SDefine", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Fig. 2; section page not confirmed)"}
+      - {key: TCB-PD-TIRS, loc: "SPrepare", page: "journal pp. 733-742 (Fig. 5; section page not confirmed)"}
+      - {key: TCB-PD-TIRS, loc: "SClassify-and-Categorize", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-094, REQ-095]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    deadline: "upon identification"
+    record: "deviation record (classification); deviation record (classification, category)"
+    party: "the identifier"
+    verify:
+      - "[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)"
+      - "[verify] single detailed fetch; wording 'reasonable to consider' not confirmed verbatim (R5-003)"
+      - "[verify] Decision Tree image (TransCelerate asset, robots-blocked) not read; branch logic unknown (R5-005)"
+      - "[verify] Fig. 5 content not readable (R5-016)"
+      - "[verify] 'the identifier' may sit in the Sponsor or the Investigator/institution pool; source does not say"
+  - id: G2
+    type: xor-split
+    label: "Important protocol deviation?"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.9.3", page: "printed 27 / PDF 35"}
+      - {key: E3QA, loc: "S3", page: "printed 6"}
+      - {key: FDA-PD24, loc: "SII", page: "printed 2; line 60 (restated in SIII.A.1, printed 4)"}
+      - {key: TCB-PD-TIRS, loc: "SDefine", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Fig. 2; section page not confirmed)"}
+      - {key: TCB-PD-TIRS, loc: "SPrepare", page: "journal pp. 733-742 (Fig. 5; section page not confirmed)"}
+    req: [REQ-094]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    verify:
+      - "[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)"
+      - "[verify] single detailed fetch; wording 'reasonable to consider' not confirmed verbatim (R5-003)"
+      - "[verify] Decision Tree image (TransCelerate asset, robots-blocked) not read; branch logic unknown (R5-005)"
+      - "[verify] Fig. 5 content not readable (R5-016)"
+  - id: A4
+    type: task
+    label: "Request explanation of important protocol deviation"
+    lane: L_SPON
+    path: alt
+    src:
+      - {key: E6R3, loc: "A1-2.5.3", page: "printed 13 / PDF 21"}
+    req: [REQ-093]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "explanation of important deviation"
+    party: "sponsor"
+  - id: G3
+    type: xor-join
+    lane: L_SPON
+    path: main
+  - id: A5
+    type: task
+    label: "Categorise deviation"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E3, loc: "S10.2", page: "printed 13"}
+      - {key: TCB-PD-TIRS, loc: "SClassify-and-Categorize", page: "journal pp. 733-742 (Appendix Table 1; page not confirmed)"}
+      - {key: CDISC-CT, loc: "SC225352", page: "PDF 9 of 1741 (codelist index)"}
+      - {key: CDISC-CT, loc: "SC225353", page: "PDF 9 of 1741 (codelist index)"}
+    req: [REQ-096]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "deviation record (category)"
+    verify:
+      - "[verify] alignment of ICH E3, best-practice and CDISC DVCAT categories unknown (C-16)"
+      - "[verify binding] EU/US adoption of E3 not checked by the research stems (C-06)"
+      - "[verify] which four categories are ICH E3 (R2 to cross-check E3 10.2) (R5-026)"
+      - "[verify] codelist terms not read; check whether they match the seven TransCelerate categories (R5-065)"
+      - "[verify] codelist terms and first release date not read (R5-066)"
+  - id: A6
+    type: task
+    label: "Confirm deviation classification"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 262-265"}
+      - {key: TCB-PD-TIRS, loc: "SConfirm", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-097, REQ-098, REQ-100]
+    binding: guidance
+    jurisdiction: [ICH, US]
+    draft: true
+    record: "deviation record (confirmed classification); deviation log / evaluation (not specified)"
+    party: "independent study team member, other than the identifier; Sponsors"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: G4
+    type: xor-split
+    label: "New type of iPD found?"
+    lane: L_SPON
+    path: main
+  - id: A7
+    type: task
+    label: "Update iPD criteria"
+    lane: L_SPON
+    path: alt
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 234-236"}
+      - {key: TCB-PD-TIRS, loc: "SIdentify-and-Collect", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-101]
+    binding: guidance
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "before trial start (pre-specification); updates during the trial"
+    record: "protocol list of important deviations; PDAP (new version)"
+    party: "the team"
+    verify:
+      - "[verify] single fetch (R5-023)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: G5
+    type: xor-join
+    lane: L_SPON
+    path: main
+  - id: A8
+    type: task
+    label: "Reconcile deviation records"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: TCB-PD-TIRS, loc: "SConfirm", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-099]
+    binding: best-practice
+    jurisdiction: [ICH]
+    record: "deviation log; clinical database"
+  - id: A9
+    type: task
+    label: "File deviation records"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: EUCTR, loc: "Art. 57", page: "OJ L 158/41"}
+      - {key: E6R3, loc: "AppC-C.2.3", page: "printed 75 / PDF 83"}
+      - {key: E6R3, loc: "AppC-C.2.5", page: "printed 75-76 / PDF 83-84"}
+    req: [REQ-102, REQ-103]
+    binding: binding-law
+    jurisdiction: [ICH, EU]
+    deadline: "timely"
+    record: "trial master file; investigator site file; clinical trial master file (sponsor)"
+    party: "sponsor and investigator/institution; The sponsor; the sponsor and the investigator"
+  - id: E1
+    type: end
+    label: "Protocol deviation classified"
+    lane: L_SPON
+    path: main
+  - id: S2
+    type: start-message
+    label: "Deviation review request received"
+    pool: P_INV
+    path: main
+  - id: A10
+    type: task
+    label: "Review protocol deviation and explain if important"
+    pool: P_INV
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.5.3", page: "printed 13 / PDF 21"}
+    req: [REQ-093]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "explanation of important deviation"
+    party: "investigator"
+  - id: A11
+    type: task
+    label: "File deviation records"
+    pool: P_INV
+    path: main
+    src:
+      - {key: EUCTR, loc: "Art. 57", page: "OJ L 158/41"}
+      - {key: E6R3, loc: "AppC-C.2.3", page: "printed 75 / PDF 83"}
+      - {key: E6R3, loc: "AppC-C.2.5", page: "printed 75-76 / PDF 83-84"}
+    req: [REQ-102, REQ-104]
+    binding: binding-law
+    jurisdiction: [ICH, EU]
+    deadline: "timely"
+    record: "trial master file; investigator site file; clinical trial master file (investigator)"
+    party: "sponsor and investigator/institution; the investigator; the sponsor and the investigator"
+  - id: E3
+    type: end
+    label: "Deviation review completed"
+    pool: P_INV
+    path: main
+
+flows:
+  - {id: F1, from: S1, to: A1}
+  - {id: F2, from: A1, to: G1}
+  - {id: F3, from: G1, to: A2, label: "Yes"}
+  - {id: F4, from: G1, to: E2, label: "No"}
+  - {id: F5, from: A2, to: A3}
+  - {id: F6, from: A3, to: G2}
+  - {id: F7, from: G2, to: A4, label: "Yes"}
+  - {id: F8, from: G2, to: G3, label: "No"}
+  - {id: F9, from: A4, to: G3}
+  - {id: F10, from: G3, to: A5}
+  - {id: F11, from: A5, to: A6}
+  - {id: F12, from: A6, to: G4}
+  - {id: F13, from: G4, to: A7, label: "Yes"}
+  - {id: F14, from: G4, to: G5, label: "No"}
+  - {id: F15, from: A7, to: G5}
+  - {id: F16, from: G5, to: A8}
+  - {id: F17, from: A8, to: A9}
+  - {id: F18, from: A9, to: E1}
+  - {id: F19, from: S2, to: A10}
+  - {id: F20, from: A10, to: A11}
+  - {id: F21, from: A11, to: E3}
+
+message_flows:
+  - id: M1
+    label: "Deviation review requested"
+    src:
+      - {key: E6R3, loc: "A1-2.5.3", page: "printed 13 / PDF 21"}
+    req: [REQ-093]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor; investigator"
+    from: A4
+    to: S2
+  - id: M2
+    label: "Important protocol deviation explained"
+    src:
+      - {key: E6R3, loc: "A1-2.5.3", page: "printed 13 / PDF 21"}
+    req: [REQ-093]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "investigator"
+    from: A10
+    to: A6
+  - id: M3
+    label: "Reclassification notified"
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 262-265"}
+    req: [REQ-100]
+    binding: guidance
+    jurisdiction: [US]
+    draft: true
+    party: "Sponsors"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+    from: A6
+    to: P_INV
+
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks"}
+  - {rule: DEC-06, element: G1, reason: "XOR split G1: each branch is a distinct business outcome (E1, E2) and ends in its own end event without a join"}
+
+open_items:
+  - "[verify interface] Neighbouring process 'Data management (correction)': a corrected data error can remove a deviation found in reconciliation (A8); no flow hand-off inside one deviation instance. Interface REQs: REQ-210."
+  - "[verify interface] Neighbouring process 'Computerised systems validation' provides the validated deviation repository used by A2 and A9 (set-up process, no flow hand-off). Interface REQs: REQ-211."
+
+notes:
+  - "C-01 decision 1 of 4: G2 'Important protocol deviation?' (REQ-094). Decisions 2-4 are in L4-05."
+  - "C-18: a non-deviation leaves through E2 to GCP noncompliance handling; it is still assessed in L4-05, which runs from the same trigger."
+  - "Interface 'Service provider reporting' (REQ-213): service providers are not pools (D1); their reports enter through start event S1, which carries REQ-213."

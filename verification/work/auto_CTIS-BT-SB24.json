@@ -1,0 +1,46 @@
+{
+ "R3-090": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 21 / printed 20"
+  ],
+  "loc_found": false
+ },
+ "R3-092": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 20 / printed 19"
+  ],
+  "loc_found": false
+ },
+ "R3-093": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 30 / printed 29"
+  ],
+  "loc_found": false
+ },
+ "R3-094": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 40 / printed None"
+  ],
+  "loc_found": false
+ },
+ "R3-106": {
+  "local": true,
+  "loc_found": false
+ },
+ "R3-107": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 34 / printed 33"
+  ],
+  "loc_found": false
+ }
+}

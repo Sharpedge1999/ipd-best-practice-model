@@ -1,0 +1,309 @@
+# L4-08 - Archive deviation records
+# Best-practice reference model of important protocol deviation (iPD) management, GEN-01 spec (B1).
+# Trace fields are derived from synthesis/requirements.yaml and synthesis/merged_findings.yaml.
+# Modelling choices, SHOULD deviations and open questions: spec/notes.md; REQ coverage: spec/coverage.md.
+id: L4-08
+title: "Archive deviation records"
+level: L4
+parent: {model: L3, node: A8}
+interface: {start: [S1], ends: [E1], message_flows: [M1]}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-3.9.2", page: "printed 26 / PDF 34"}
+      - {key: E6R3, loc: "P10.1", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "P10.3", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "A1-3.9.5", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: TCB-RBQM, loc: "SQTL-Process", page: "journal pp. 251-261 (section page not confirmed)"}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Investigator", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", page: "OJ L 158/13"}
+      - {key: 21CFR312, loc: "21CFR312.60", page: "n/a - eCFR web text without pagination"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-2.5.2", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.10.6", page: "printed 20 / PDF 28"}
+      - {key: E6R3, loc: "A1-2.3.1", page: "printed 12 / PDF 20"}
+      - {key: E6R3, loc: "A2-2.4", page: "printed 55 / PDF 63"}
+      - {key: E6R3, loc: "A2-2.4.1", page: "printed 56 / PDF 64"}
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", page: "OJ L 158/12"}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", page: "printed 89 / PDF 97"}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", page: "n/a - eCFR web text without pagination"}
+
+lanes:
+  - id: L_SPON
+    name: "Sponsor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+
+nodes:
+  - id: S1
+    type: start
+    label: "iPDs reported in clinical study report"
+    lane: L_SPON
+    path: main
+  - id: A1
+    type: task
+    label: "Archive important and non-important protocol deviations"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "AppC-C.3.2", page: "printed 81 / PDF 89; printed 78-79 / PDF 86-87"}
+      - {key: E6R3, loc: "AppC-C.3.1(r)", page: "printed 78 / PDF 86"}
+      - {key: E6R3, loc: "GL:Essential Records", page: "printed 85-86 / PDF 93-94"}
+      - {key: TCB-PD-TIRS, loc: "SClose-Out", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SStore", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-188, REQ-200, REQ-201]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "retention period per applicable regulatory requirements"
+    record: "deviation and noncompliance records; CAPA records; validated repository; SDTM deviation dataset; PDAP"
+    party: "sponsor and investigator/institution"
+    verify:
+      - "[verify] duty of 'sponsor and investigator/institution'; applies in both pools"
+      - "[verify] single fetch (R5-033)"
+  - id: A2
+    type: task
+    label: "Retain related essential records"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "AppC-C.3.2", page: "printed 81 / PDF 89; printed 79 / PDF 87"}
+      - {key: E6R3, loc: "AppC-C.3.1(a)", page: "printed 77 / PDF 85"}
+      - {key: E6R3, loc: "AppC-C.3.1(s)", page: "printed 78 / PDF 86"}
+      - {key: E6R3, loc: "A1-3.16.3(a)", page: "printed 43 / PDF 51"}
+      - {key: E6R3, loc: "P9.5", page: "printed 6 / PDF 14"}
+      - {key: E6R3, loc: "A1-4.2.7", page: "printed 48 / PDF 56"}
+    req: [REQ-189, REQ-190, REQ-193]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "retention period per applicable regulatory requirements (REQ-189); per applicable regulatory requirements (REQ-190); throughout the retention period (REQ-193)"
+    record: "essential records (Appendix C); sponsor-specific essential records; archived data and metadata"
+    party: "sponsor; sponsor and investigator/institution; sponsors and investigators; responsible party"
+  - id: A3
+    type: task
+    label: "Keep records accessible"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "AppC-C.2.6", page: "printed 76 / PDF 84"}
+    req: [REQ-192]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "essential records"
+    party: "sponsor and investigator/institution"
+  - id: G1
+    type: xor-split
+    label: "EU CTR applies?"
+    lane: L_SPON
+    path: main
+    group: GR_EU
+  - id: A4
+    type: task
+    label: "Archive content of clinical trial master file"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EUCTR, loc: "Art. 58", page: "OJ L 158/41"}
+      - {key: EUCTR, loc: "Art. 2(2)(26)", page: "OJ L 158/13"}
+    req: [REQ-194, REQ-196, REQ-197, REQ-198]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "at least 25 years after the end of the trial (REQ-194); for the archiving period (REQ-196)"
+    record: "archived clinical trial master file (sponsor); archived clinical trial master file; archive responsibility assignment; audit trail of master file changes"
+    party: "The sponsor"
+  - id: G2
+    type: xor-join
+    lane: L_SPON
+    path: main
+    group: GR_EU
+  - id: A5
+    type: task
+    label: "Capture deviation lessons learned"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: TCB-PD, loc: "STaking-a-holistic-approach-CLOSEOUT", page: "web page (carousel tab CLOSEOUT)"}
+      - {key: TCB-PD-TIRS, loc: "SClose-Out", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SDefine", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-202]
+    binding: best-practice
+    jurisdiction: [ICH]
+    record: "lessons learned record; organisation-level iPD definitions"
+    verify:
+      - "[verify] single fetch (R5-006)"
+  - id: E1
+    type: end
+    label: "Deviation records archived"
+    lane: L_SPON
+    path: main
+  - id: S2
+    type: start
+    label: "End of clinical trial reached"
+    pool: P_INV
+    path: main
+  - id: A6
+    type: task
+    label: "Retain investigator essential records"
+    pool: P_INV
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.12.11", page: "printed 22 / PDF 30"}
+      - {key: E6R3, loc: "A1-2.12.12", page: "printed 23 / PDF 31"}
+      - {key: E6R3, loc: "AppC-C.1.3", page: "printed 75 / PDF 83"}
+      - {key: E6R3, loc: "AppC-C.3.2", page: "printed 81 / PDF 89; printed 78-79 / PDF 86-87"}
+      - {key: E6R3, loc: "AppC-C.3.1(r)", page: "printed 78 / PDF 86"}
+      - {key: E6R3, loc: "GL:Essential Records", page: "printed 85-86 / PDF 93-94"}
+    req: [REQ-191, REQ-188]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "longest of the required period or sponsor notice (REQ-191); retention period per applicable regulatory requirements (REQ-188)"
+    record: "investigator/institution essential records; deviation and noncompliance records; CAPA records"
+    party: "investigator/institution; sponsor and investigator/institution"
+    verify:
+      - "[verify] duty of 'sponsor and investigator/institution'; applies in both pools"
+  - id: G3
+    type: or-split
+    label: "Which retention rules apply?"
+    pool: P_INV
+    path: main
+    justification: "EU CTR Art. 58 (25 years) and 21 CFR 312.62(c) (2 years) can apply to the same trial; the investigator applies every applicable rule and keeps records for the longest period (E6R3 A1-2.12.12), so the branches are not exclusive (FLW-07, DEC-02). Default flow 'Neither' when only the ICH rule applies."
+  - id: A7
+    type: task
+    label: "Archive content of clinical trial master file"
+    pool: P_INV
+    path: alt
+    group: GR_EU2
+    src:
+      - {key: EUCTR, loc: "Art. 58", page: "OJ L 158/41"}
+    req: [REQ-195]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "at least 25 years after the end of the trial"
+    record: "archived clinical trial master file (investigator)"
+    party: "the investigator"
+  - id: A8
+    type: task
+    label: "Retain investigator records for 2 years"
+    pool: P_INV
+    path: alt
+    group: GR_US
+    src:
+      - {key: 21CFR312, loc: "21CFR312.62(c)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-199]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "2 years after approval, or 2 years after discontinuation and FDA notification"
+    record: "investigator records (21 CFR 312.62)"
+    party: "investigator"
+  - id: G4
+    type: or-join
+    pool: P_INV
+    path: main
+  - id: E2
+    type: end
+    label: "Investigator records archived"
+    pool: P_INV
+    path: main
+
+flows:
+  - {id: F1, from: S1, to: A1}
+  - {id: F2, from: A1, to: A2}
+  - {id: F3, from: A2, to: A3}
+  - {id: F4, from: A3, to: G1}
+  - {id: F5, from: G1, to: A4, label: "Yes"}
+  - {id: F6, from: G1, to: G2, label: "No"}
+  - {id: F7, from: A4, to: G2}
+  - {id: F8, from: G2, to: A5}
+  - {id: F9, from: A5, to: E1}
+  - {id: F10, from: S2, to: A6}
+  - {id: F11, from: A6, to: G3}
+  - {id: F12, from: G3, to: A7, label: "EU CTR"}
+  - {id: F13, from: G3, to: A8, label: "IND under 21 CFR 312"}
+  - {id: F14, from: G3, to: G4, label: "Neither", default: true}
+  - {id: F15, from: A7, to: G4}
+  - {id: F16, from: A8, to: G4}
+  - {id: F17, from: G4, to: E2}
+
+message_flows:
+  - id: M1
+    label: "Records no longer needed notified"
+    src:
+      - {key: E6R3, loc: "A1-2.12.11", page: "printed 22 / PDF 30"}
+      - {key: E6R3, loc: "A1-2.12.12", page: "printed 23 / PDF 31"}
+      - {key: E6R3, loc: "AppC-C.1.3", page: "printed 75 / PDF 83"}
+    req: [REQ-191]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "longest of the required period or sponsor notice"
+    party: "sponsor; investigator/institution"
+    from: A3
+    to: A6
+
+data:
+  - id: D1
+    type: data-store
+    label: "Trial master file"
+    assoc: [{node: A2, dir: out}, {node: A3, dir: in}]
+    src:
+      - {key: E6R3, loc: "AppC-C.2.3", page: "printed 75 / PDF 83"}
+      - {key: E6R3, loc: "AppC-C.2.6", page: "printed 76 / PDF 84"}
+      - {key: EUCTR, loc: "Art. 58", page: "OJ L 158/41"}
+    verify:
+      - "[verify] directly accessible on request by regulatory authorities (E6R3 AppC-C.2.6; EU CTR Art. 58); request-driven hand-off shown as data store, not as message flow"
+  - id: D2
+    type: data-store
+    label: "Investigator site file"
+    assoc: [{node: A6, dir: out}]
+    src:
+      - {key: E6R3, loc: "AppC-C.2.3", page: "printed 75 / PDF 83"}
+      - {key: E6R3, loc: "AppC-C.2.6", page: "printed 76 / PDF 84"}
+    verify:
+      - "[verify] directly accessible on request by regulatory authorities (E6R3 AppC-C.2.6; EU CTR Art. 58); request-driven hand-off shown as data store, not as message flow"
+
+groups:
+  - {id: GR_EU, label: "EU CTR", members: [G1, A4, G2]}
+  - {id: GR_EU2, label: "EU CTR", members: [A7]}
+  - {id: GR_US, label: "US 21 CFR", members: [A8]}
+
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks"}
+
+open_items:
+  - "[verify] US sponsor record retention (21 CFR 312.57) not extracted by R4 (C-23); no US sponsor retention task is modelled."
+
+notes:
+  - "Request-driven hand-off 'Archived records made available on request' (EU CTR Art. 58; E6R3 AppC-C.2.6) is shown as data stores D1 'Trial master file' and D2 'Investigator site file' (glossary terms) with sources instead of a message flow, as l3_cut allows; REQ-192 and REQ-196 are on tasks A3 and A4."
+  - "Investigator jurisdiction groups: A7 is in GR_EU2 and A8 in GR_US (separate group ids because a group must cover adjacent members only)."
+  - "C-23: US sponsor retention under 21 CFR 312.57 was not extracted; listed in open_items."

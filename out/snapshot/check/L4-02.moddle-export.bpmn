@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipd="urn:ipd-best-practice:trace:1.0" id="IPD_DEFINITIONS" targetNamespace="urn:ipd-best-practice:model" exporter="ipd spec2bpmn" exporterVersion="1.0">
+  <bpmn:category id="L4_02_GR_CENTRAL_CATEGORY">
+    <bpmn:categoryValue id="L4_02_GR_CENTRAL_VALUE" value="Centralised data review" />
+  </bpmn:category>
+  <bpmn:category id="L4_02_GR_SITE_CATEGORY">
+    <bpmn:categoryValue id="L4_02_GR_SITE_VALUE" value="Site monitoring" />
+  </bpmn:category>
+  <bpmn:category id="L4_02_GR_EU_CATEGORY">
+    <bpmn:categoryValue id="L4_02_GR_EU_VALUE" value="EU CTR" />
+  </bpmn:category>
+  <bpmn:collaboration id="L4_02_COLLAB" name="Identify protocol deviations">
+    <bpmn:documentation>Model: L4-02
+Title: Identify protocol deviations
+Parent: L3 A2
+Interface: start S1; ends E1, E2; message flows M1
+Rule exception: ROL-03 P_INV - D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks
+Rule exception: DEC-06 G3 - XOR split G3: each branch is a distinct business outcome (E1, E2) and ends in its own end event without a join
+Open item: [verify interface] Neighbouring process 'Data governance and computerised systems' configures the audit trails and metadata that A2 reviews; set-up process without a flow hand-off, so no placeholder element. Interface REQs: REQ-209.
+Open item: [verify interface] Neighbouring process 'Safety reporting' (SAE to sponsor, EU CTR Art. 41(2), 24 h) runs in parallel when a deviation causes an SAE; the investigator OR split already has 3 branches (FLW-06). Interface REQs: REQ-214.</bpmn:documentation>
+    <bpmn:participant id="L4_02_P_SPON" name="Sponsor" processRef="L4_02_P_SPON_PROCESS">
+      <bpmn:documentation>Sources: E6R3 GL:Sponsor (p. printed 90 / PDF 98); EUCTR Art. 47 (p. OJ L 158/39); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination); E6R3 P3.1 (p. printed 4 / PDF 12); E6R3 A1-3.9.2 (p. printed 26 / PDF 34); E6R3 P10.1 (p. printed 7 / PDF 15); E6R3 P10.3 (p. printed 7 / PDF 15); E6R3 A1-3.9.5 (p. printed 27 / PDF 35); E6R3 A2-3.8 (p. printed 62 / PDF 70); EMA-SB SGlossary (p. printed 3/21); TCB-RBQM SQTL-Process (p. journal pp. 251-261 (section page not confirmed))</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Sponsor" page="printed 90 / PDF 98" />
+          <ipd:source key="EUCTR" loc="Art. 47" page="OJ L 158/39" />
+          <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination" />
+          <ipd:source key="E6R3" loc="P3.1" page="printed 4 / PDF 12" />
+          <ipd:source key="E6R3" loc="A1-3.9.2" page="printed 26 / PDF 34" />
+          <ipd:source key="E6R3" loc="P10.1" page="printed 7 / PDF 15" />
+          <ipd:source key="E6R3" loc="P10.3" page="printed 7 / PDF 15" />
+          <ipd:source key="E6R3" loc="A1-3.9.5" page="printed 27 / PDF 35" />
+          <ipd:source key="E6R3" loc="A2-3.8" page="printed 62 / PDF 70" />
+          <ipd:source key="EMA-SB" loc="SGlossary" page="printed 3/21" />
+          <ipd:source key="TCB-RBQM" loc="SQTL-Process" page="journal pp. 251-261 (section page not confirmed)" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L4_02_P_INV" name="Investigator/institution" processRef="L4_02_P_INV_PROCESS">
+      <bpmn:documentation>Sources: E6R3 GL:Investigator (p. printed 87 / PDF 95); EUCTR Art. 2(2)(15) (p. OJ L 158/13); 21CFR312 21CFR312.60 (p. n/a - eCFR web text without pagination); EUCTR Art. 47 (p. OJ L 158/39); E6R3 P3.1 (p. printed 4 / PDF 12); E6R3 A1-2.5.2 (p. printed 13 / PDF 21); E6R3 A1-2.10.6 (p. printed 20 / PDF 28); E6R3 A1-2.3.1 (p. printed 12 / PDF 20); E6R3 A2-2.4 (p. printed 55 / PDF 63); E6R3 A2-2.4.1 (p. printed 56 / PDF 64)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Investigator" page="printed 87 / PDF 95" />
+          <ipd:source key="EUCTR" loc="Art. 2(2)(15)" page="OJ L 158/13" />
+          <ipd:source key="21CFR312" loc="21CFR312.60" page="n/a - eCFR web text without pagination" />
+          <ipd:source key="EUCTR" loc="Art. 47" page="OJ L 158/39" />
+          <ipd:source key="E6R3" loc="P3.1" page="printed 4 / PDF 12" />
+          <ipd:source key="E6R3" loc="A1-2.5.2" page="printed 13 / PDF 21" />
+          <ipd:source key="E6R3" loc="A1-2.10.6" page="printed 20 / PDF 28" />
+          <ipd:source key="E6R3" loc="A1-2.3.1" page="printed 12 / PDF 20" />
+          <ipd:source key="E6R3" loc="A2-2.4" page="printed 55 / PDF 63" />
+          <ipd:source key="E6R3" loc="A2-2.4.1" page="printed 56 / PDF 64" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L4_02_P_IEC" name="IRB/IEC">
+      <bpmn:documentation>Sources: E6R3 GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC) (p. printed 87 / PDF 95); EUCTR Art. 2(2)(11) (p. OJ L 158/12); 21CFR56 21CFR56.108(b)(2) (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)" page="printed 87 / PDF 95" />
+          <ipd:source key="EUCTR" loc="Art. 2(2)(11)" page="OJ L 158/12" />
+          <ipd:source key="21CFR56" loc="21CFR56.108(b)(2)" page="n/a - eCFR web text without pagination" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L4_02_P_RA" name="Regulatory authority">
+      <bpmn:documentation>Sources: E6R3 GL:Regulatory Authorities (p. printed 89 / PDF 97); EUCTR Art. 2(2)(12) (p. OJ L 158/12); 21CFR312 21CFR312.56(b) (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Regulatory Authorities" page="printed 89 / PDF 97" />
+          <ipd:source key="EUCTR" loc="Art. 2(2)(12)" page="OJ L 158/12" />
+          <ipd:source key="21CFR312" loc="21CFR312.56(b)" page="n/a - eCFR web text without pagination" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:messageFlow id="L4_02_M1" name="Detected deviation communicated" sourceRef="L4_02_A12" targetRef="L4_02_P_INV">
+      <bpmn:documentation>Sources: E6R3 A1-2.5.3 (p. printed 13 / PDF 21); E6R3 A1-3.11.4.5.1(b) (p. printed 32 / PDF 40); FDA-RBM23 SQ8 (p. printed 10)
+Requirements: REQ-047, REQ-053
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Party: sponsor
+Verify: [verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-2.5.3" page="printed 13 / PDF 21" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(b)" page="printed 32 / PDF 40" />
+          <ipd:source key="FDA-RBM23" loc="SQ8" page="printed 10" />
+          <ipd:req id="REQ-047" />
+          <ipd:req id="REQ-053" />
+          <ipd:verify>[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_02_M2" name="Source record correction requested" sourceRef="L4_02_A9" targetRef="L4_02_P_INV">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.5.1(c) (p. printed 32 / PDF 40)
+Requirements: REQ-056
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor
+Verify: [verify] gerund item; Monitor lane inferred (R1 C7)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(c)" page="printed 32 / PDF 40" />
+          <ipd:req id="REQ-056" />
+          <ipd:verify>[verify] gerund item; Monitor lane inferred (R1 C7)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_02_M3" name="Protocol deviation reported" sourceRef="L4_02_A14" targetRef="L4_02_A1">
+      <bpmn:documentation>Sources: FDA-PD24 SIII.B.1 (p. printed 6; lines 194-198)
+Requirements: REQ-066
+Binding: guidance
+Jurisdiction: US
+Deadline: per sponsor-specified timeframe
+Party: investigators
+Draft: DRAFT guidance
+Verify: [verify] basis is draft guidance only - shown as DRAFT, never a binding step</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="US" deadline="per sponsor-specified timeframe" draft="true" party="investigators">
+          <ipd:source key="FDA-PD24" loc="SIII.B.1" page="printed 6; lines 194-198" />
+          <ipd:req id="REQ-066" />
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_02_M4" name="Premature unblinding explained" sourceRef="L4_02_A14" targetRef="L4_02_A1">
+      <bpmn:documentation>Sources: E6R3 A1-2.11 (p. printed 21 / PDF 29)
+Requirements: REQ-067
+Binding: binding-ICH
+Jurisdiction: ICH
+Deadline: promptly
+Party: investigator
+Verify: [verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" deadline="promptly" party="investigator">
+          <ipd:source key="E6R3" loc="A1-2.11" page="printed 21 / PDF 29" />
+          <ipd:req id="REQ-067" />
+          <ipd:verify>[verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_02_M5" name="Computerised system incident reported" sourceRef="L4_02_A15" targetRef="L4_02_A11">
+      <bpmn:documentation>Sources: E6R3 A1-2.12.10(e) (p. printed 22 / PDF 30)
+Requirements: REQ-068
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: investigator/institution</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="investigator/institution">
+          <ipd:source key="E6R3" loc="A1-2.12.10(e)" page="printed 22 / PDF 30" />
+          <ipd:req id="REQ-068" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_02_M6" name="Computerised system incident reported" sourceRef="L4_02_A15" targetRef="L4_02_P_IEC">
+      <bpmn:documentation>Sources: E6R3 A1-2.12.10(e) (p. printed 22 / PDF 30)
+Requirements: REQ-068
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: investigator/institution
+Verify: [verify] IRB/IEC recipient only where applicable (E6R3 A1-2.12.10(e))</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="investigator/institution">
+          <ipd:source key="E6R3" loc="A1-2.12.10(e)" page="printed 22 / PDF 30" />
+          <ipd:req id="REQ-068" />
+          <ipd:verify>[verify] IRB/IEC recipient only where applicable (E6R3 A1-2.12.10(e))</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_02_M7" name="Suspected serious breach reported" sourceRef="L4_02_A16" targetRef="L4_02_A11">
+      <bpmn:documentation>Sources: EMA-SB S6.4 (p. printed 9-10/21)
+Requirements: REQ-069
+Binding: guidance
+Jurisdiction: EU
+Deadline: promptly
+Party: Principal Investigator</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="EU" deadline="promptly" party="Principal Investigator">
+          <ipd:source key="EMA-SB" loc="S6.4" page="printed 9-10/21" />
+          <ipd:req id="REQ-069" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:group id="L4_02_GR_CENTRAL" categoryValueRef="L4_02_GR_CENTRAL_VALUE" />
+    <bpmn:group id="L4_02_GR_SITE" categoryValueRef="L4_02_GR_SITE_VALUE" />
+    <bpmn:group id="L4_02_GR_EU" categoryValueRef="L4_02_GR_EU_VALUE" />
+  </bpmn:collaboration>
+  <bpmn:process id="L4_02_P_SPON_PROCESS" name="Sponsor" isExecutable="false">
+    <bpmn:documentation>SCP-03: 16 activities (target 5-15) - user decision 06 Nov 2026 to merge identification channels; 26 nodes, within 31.
+Sponsor-to-investigator flows M1 and M2 end on the Investigator/institution pool: a target node would form a cycle with the investigator's reports (layout constraint), and the investigator's review of communicated deviations is modelled in L4-04. Investigator reports enter the sponsor where they are reviewed: deviation report and premature unblinding explanation in centralised data review A1 (FDA-PD24 SIII.B.2: sponsors receive deviation information mainly through monitoring), system incident and suspected serious breach reports in the sponsor review A11, which takes the detection decision.
+Legal monitoring duties (EU CTR Art. 48, 21 CFR 312.50/312.56(a)) sit on the timer start event because they cover both channels.</bpmn:documentation>
+    <bpmn:laneSet id="L4_02_P_SPON_LANESET">
+      <bpmn:lane id="L4_02_L_SPON" name="Sponsor">
+        <bpmn:documentation>Sources: E6R3 GL:Sponsor (p. printed 90 / PDF 98); EUCTR Art. 2(2)(14) (p. OJ L 158/12); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+        <bpmn:extensionElements>
+          <ipd:trace>
+            <ipd:source key="E6R3" loc="GL:Sponsor" page="printed 90 / PDF 98" />
+            <ipd:source key="EUCTR" loc="Art. 2(2)(14)" page="OJ L 158/12" />
+            <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination" />
+          </ipd:trace>
+        </bpmn:extensionElements>
+        <bpmn:flowNodeRef>L4_02_S1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_G1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_G2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A11</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_G3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A12</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_E1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_E2</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="L4_02_L_MON" name="Monitor">
+        <bpmn:documentation>Sources: E6R3 A1-3.11.4.5.1(a) (p. printed 32 / PDF 40); E6R3 A1-3.11.4.4 (p. printed 32 / PDF 40)</bpmn:documentation>
+        <bpmn:extensionElements>
+          <ipd:trace>
+            <ipd:source key="E6R3" loc="A1-3.11.4.5.1(a)" page="printed 32 / PDF 40" />
+            <ipd:source key="E6R3" loc="A1-3.11.4.4" page="printed 32 / PDF 40" />
+          </ipd:trace>
+        </bpmn:extensionElements>
+        <bpmn:flowNodeRef>L4_02_A6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_02_A10</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="L4_02_S1" name="Monitoring activity scheduled">
+      <bpmn:documentation>Sources: EUCTR Art. 48 (p. OJ L 158/39); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.56(a) (p. n/a - eCFR web text without pagination)
+Requirements: REQ-048, REQ-049
+Binding: binding-law
+Jurisdiction: EU, US
+Deadline: continuous
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU US" deadline="continuous" party="sponsor">
+          <ipd:source key="EUCTR" loc="Art. 48" page="OJ L 158/39" />
+          <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination" />
+          <ipd:source key="21CFR312" loc="21CFR312.56(a)" page="n/a - eCFR web text without pagination" />
+          <ipd:req id="REQ-048" />
+          <ipd:req id="REQ-049" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>L4_02_F1</bpmn:outgoing>
+      <bpmn:timerEventDefinition />
+    </bpmn:startEvent>
+    <bpmn:inclusiveGateway id="L4_02_G1" name="Which monitoring channels are due?" gatewayDirection="Diverging" default="L4_02_F2">
+      <bpmn:documentation>Justification: Centralised monitoring can complement and reduce site monitoring or be used on its own (E6R3 A1-3.11.4.2(b)) and site visit frequency follows the risks (A1-3.11.4.1(a)), so one or both channels run in a cycle (FLW-07, DEC-02). Centralised data review is the default flow because quality control applies at each stage of data handling (A1-3.11.3). XOR rejected: the channels are not exclusive.</bpmn:documentation>
+      <bpmn:incoming>L4_02_F1</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F2</bpmn:outgoing>
+      <bpmn:outgoing>L4_02_F3</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:task id="L4_02_A1" name="Review trial data for protocol deviations">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.5.4(b)(ii) (p. printed 34 / PDF 42); E6R3 A1-3.11.4.2(a) (p. printed 31 / PDF 39); E6R3 A1-3.11.4.2(b) (p. printed 31 / PDF 39); E8R1 S6.1.3 (p. printed 18); E8R1 S3.3.2 (p. printed 6); E6R3 A1-3.11.3 (p. printed 30 / PDF 38); E6R3 A1-3.16.1(b) (p. printed 39 / PDF 47); E6R3 A2-3.8 (p. printed 62 / PDF 70); E6R3 A1-3.11.4.5.4(c) (p. printed 34 / PDF 42); FDA-RBM13 SIII.B (p. printed 8); FDA-PD24 SIII.B.2 (p. printed 6; lines 227-228; printed 9; lines 314-317); TCB-PD-TIRS SIdentify-and-Collect (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-037, REQ-036, REQ-035, REQ-038, REQ-040, REQ-041
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Deadline: timely (REQ-036); early (REQ-041)
+Record: centralised monitoring report; deviation listings; oversight / monitoring plan
+Party: sponsor; CRAs; site monitors and centralized monitoring
+Draft: DRAFT guidance
+Verify: [verify] gerund item under A1-3.11.4.5; actor not named (R1 C7); [verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06); [verify] R1-089 is Annex 2: effective in the EU from 15 Jan 2027; FDA Annex 2 guidance still draft (C-06); [verify] basis is draft guidance only - shown as DRAFT, never a binding step</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" deadline="timely (REQ-036); early (REQ-041)" draft="true" record="centralised monitoring report; deviation listings; oversight / monitoring plan" party="sponsor; CRAs; site monitors and centralized monitoring">
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.4(b)(ii)" page="printed 34 / PDF 42" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.2(a)" page="printed 31 / PDF 39" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.2(b)" page="printed 31 / PDF 39" />
+          <ipd:source key="E8R1" loc="S6.1.3" page="printed 18" />
+          <ipd:source key="E8R1" loc="S3.3.2" page="printed 6" />
+          <ipd:source key="E6R3" loc="A1-3.11.3" page="printed 30 / PDF 38" />
+          <ipd:source key="E6R3" loc="A1-3.16.1(b)" page="printed 39 / PDF 47" />
+          <ipd:source key="E6R3" loc="A2-3.8" page="printed 62 / PDF 70" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.4(c)" page="printed 34 / PDF 42" />
+          <ipd:source key="FDA-RBM13" loc="SIII.B" page="printed 8" />
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 6; lines 227-228; printed 9; lines 314-317" />
+          <ipd:source key="TCB-PD-TIRS" loc="SIdentify-and-Collect" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)" />
+          <ipd:req id="REQ-037" />
+          <ipd:req id="REQ-036" />
+          <ipd:req id="REQ-035" />
+          <ipd:req id="REQ-038" />
+          <ipd:req id="REQ-040" />
+          <ipd:req id="REQ-041" />
+          <ipd:verify>[verify] gerund item under A1-3.11.4.5; actor not named (R1 C7)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] R1-089 is Annex 2: effective in the EU from 15 Jan 2027; FDA Annex 2 guidance still draft (C-06)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_CENTRAL_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F2</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A2" name="Review audit trails and metadata">
+      <bpmn:documentation>Sources: E6R3 A1-4.2.3 (p. printed 47 / PDF 55)
+Requirements: REQ-039
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: responsible party
+Verify: [verify] section 4 duty of the 'responsible party' (investigator or sponsor); Sponsor lane chosen (R1 C14)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="responsible party">
+          <ipd:source key="E6R3" loc="A1-4.2.3" page="printed 47 / PDF 55" />
+          <ipd:req id="REQ-039" />
+          <ipd:verify>[verify] section 4 duty of the 'responsible party' (investigator or sponsor); Sponsor lane chosen (R1 C14)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_CENTRAL_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F4</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F5</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A3" name="Evaluate acceptable range exceedance">
+      <bpmn:documentation>Sources: E6R3 A1-3.10.1.3 (p. printed 28 / PDF 36); TCB-RBQM SRelationship-Between-QTLs-and-KRIs (p. journal pp. 251-261 (section page not confirmed)); TCB-RBQM SMonitor-Process-Stage (p. journal pp. 251-261 (section page not confirmed))
+Requirements: REQ-044
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor
+Verify: [verify] 'deviation beyond these ranges' is a range exceedance, not a protocol deviation (C-04)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.10.1.3" page="printed 28 / PDF 36" />
+          <ipd:source key="TCB-RBQM" loc="SRelationship-Between-QTLs-and-KRIs" page="journal pp. 251-261 (section page not confirmed)" />
+          <ipd:source key="TCB-RBQM" loc="SMonitor-Process-Stage" page="journal pp. 251-261 (section page not confirmed)" />
+          <ipd:req id="REQ-044" />
+          <ipd:verify>[verify] 'deviation beyond these ranges' is a range exceedance, not a protocol deviation (C-04)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_CENTRAL_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F5</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F6</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A4" name="Review deviation trends">
+      <bpmn:documentation>Sources: FDA-PD24 SIII.B.2 (p. printed 8; lines 262-265); FDA-RBM23 SQ5 (p. printed 7-8); TCB-PD-TIRS SConfirm (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SClassify-and-Categorize (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SReview-and-Analyze (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-046, REQ-045
+Binding: guidance
+Jurisdiction: ICH, US
+Deadline: periodically (frequency per deviation assessment plan)
+Record: trend review output; monitoring plan; deviation tracking
+Party: Study teams; Sponsors
+Draft: DRAFT guidance
+Verify: [verify] single fetch (R5-025); [verify] basis is draft guidance only - shown as DRAFT, never a binding step</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="ICH US" deadline="periodically (frequency per deviation assessment plan)" draft="true" record="trend review output; monitoring plan; deviation tracking" party="Study teams; Sponsors">
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 8; lines 262-265" />
+          <ipd:source key="FDA-RBM23" loc="SQ5" page="printed 7-8" />
+          <ipd:source key="TCB-PD-TIRS" loc="SConfirm" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)" />
+          <ipd:source key="TCB-PD-TIRS" loc="SClassify-and-Categorize" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)" />
+          <ipd:source key="TCB-PD-TIRS" loc="SReview-and-Analyze" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)" />
+          <ipd:req id="REQ-046" />
+          <ipd:req id="REQ-045" />
+          <ipd:verify>[verify] single fetch (R5-025)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_CENTRAL_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F6</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A5" name="Select sites for targeted monitoring">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.2(c) (p. printed 31 / PDF 39); FDA-RBM13 SIV.D.1 (p. printed 15); FDA-RBM23 SQ4 (p. printed 7)
+Requirements: REQ-042, REQ-043
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Deadline: promptly
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" deadline="promptly" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.11.4.2(c)" page="printed 31 / PDF 39" />
+          <ipd:source key="FDA-RBM13" loc="SIV.D.1" page="printed 15" />
+          <ipd:source key="FDA-RBM23" loc="SQ4" page="printed 7" />
+          <ipd:req id="REQ-042" />
+          <ipd:req id="REQ-043" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_CENTRAL_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F7</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F8</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A6" name="Perform site monitoring visit">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.1(a) (p. printed 31 / PDF 39); E6R3 GL:Monitoring (p. printed 88 / PDF 96); E6R3 A1-3.11.4.4 (p. printed 32 / PDF 40); E6R3 A1-3.11.4.5.1(a) (p. printed 32 / PDF 40); FDA-RBM23 SQ3 (p. printed 5-7)
+Requirements: REQ-050, REQ-051, REQ-052, REQ-057
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Deadline: early in site conduct
+Record: monitoring report
+Party: sponsor; persons performing monitoring; assigned monitor as site contact point</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" deadline="early in site conduct" record="monitoring report" party="sponsor; persons performing monitoring; assigned monitor as site contact point">
+          <ipd:source key="E6R3" loc="A1-3.11.4.1(a)" page="printed 31 / PDF 39" />
+          <ipd:source key="E6R3" loc="GL:Monitoring" page="printed 88 / PDF 96" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.4" page="printed 32 / PDF 40" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(a)" page="printed 32 / PDF 40" />
+          <ipd:source key="FDA-RBM23" loc="SQ3" page="printed 5-7" />
+          <ipd:req id="REQ-050" />
+          <ipd:req id="REQ-051" />
+          <ipd:req id="REQ-052" />
+          <ipd:req id="REQ-057" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_SITE_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F3</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F9</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A7" name="Verify protocol adherence at site">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.5.2(b) (p. printed 32-33 / PDF 40-41); E6R3 A1-3.11.4.5.2(i) (p. printed 33 / PDF 41); TCB-PD-TIRS SIdentify-and-Collect (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-054, REQ-058
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor; CRAs
+Verify: [verify] gerund item; Monitor lane inferred (R1 C7)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor; CRAs">
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.2(b)" page="printed 32-33 / PDF 40-41" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.2(i)" page="printed 33 / PDF 41" />
+          <ipd:source key="TCB-PD-TIRS" loc="SIdentify-and-Collect" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)" />
+          <ipd:req id="REQ-054" />
+          <ipd:req id="REQ-058" />
+          <ipd:verify>[verify] gerund item; Monitor lane inferred (R1 C7)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_SITE_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F9</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F10</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A8" name="Verify participant eligibility">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.5.4(a) (p. printed 34 / PDF 42)
+Requirements: REQ-055
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor
+Verify: [verify] gerund item; Monitor lane inferred (R1 C7)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.4(a)" page="printed 34 / PDF 42" />
+          <ipd:req id="REQ-055" />
+          <ipd:verify>[verify] gerund item; Monitor lane inferred (R1 C7)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_SITE_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F10</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F11</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A9" name="Request correction of source record errors">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.5.1(c) (p. printed 32 / PDF 40)
+Requirements: REQ-056
+Binding: binding-ICH
+Jurisdiction: ICH
+Record: corrected data with audit trail
+Party: sponsor
+Verify: [verify] gerund item; Monitor lane inferred (R1 C7)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" record="corrected data with audit trail" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(c)" page="printed 32 / PDF 40" />
+          <ipd:req id="REQ-056" />
+          <ipd:verify>[verify] gerund item; Monitor lane inferred (R1 C7)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_SITE_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F11</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F12</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A10" name="Document monitoring report">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.6(a) (p. printed 34 / PDF 42); E6R3 GL:Monitoring Report (p. printed 88 / PDF 96); E6R3 A1-3.11.4.6(c) (p. printed 35 / PDF 43); FDA-RBM13 SV (p. printed 17); FDA-RBM23 SQ8 (p. printed 9-10)
+Requirements: REQ-059, REQ-061
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Record: monitoring report
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" record="monitoring report" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.11.4.6(a)" page="printed 34 / PDF 42" />
+          <ipd:source key="E6R3" loc="GL:Monitoring Report" page="printed 88 / PDF 96" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.6(c)" page="printed 35 / PDF 43" />
+          <ipd:source key="FDA-RBM13" loc="SV" page="printed 17" />
+          <ipd:source key="FDA-RBM23" loc="SQ8" page="printed 9-10" />
+          <ipd:req id="REQ-059" />
+          <ipd:req id="REQ-061" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_SITE_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F12</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F13</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:inclusiveGateway id="L4_02_G2" gatewayDirection="Converging">
+      <bpmn:incoming>L4_02_F8</bpmn:incoming>
+      <bpmn:incoming>L4_02_F13</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F14</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:task id="L4_02_A11" name="Review monitoring reports">
+      <bpmn:documentation>Sources: E6R3 A1-3.11.4.6(b) (p. printed 35 / PDF 43); FDA-RBM13 SV (p. printed 17); FDA-RBM23 SQ8 (p. printed 9-10)
+Requirements: REQ-060
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Deadline: timely (US guidance: promptly)
+Record: monitoring report
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" deadline="timely (US guidance: promptly)" record="monitoring report" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.11.4.6(b)" page="printed 35 / PDF 43" />
+          <ipd:source key="FDA-RBM13" loc="SV" page="printed 17" />
+          <ipd:source key="FDA-RBM23" loc="SQ8" page="printed 9-10" />
+          <ipd:req id="REQ-060" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_02_F14</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F15</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="L4_02_G3" name="Potential protocol deviation identified?" gatewayDirection="Diverging">
+      <bpmn:incoming>L4_02_F15</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F16</bpmn:outgoing>
+      <bpmn:outgoing>L4_02_F17</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="L4_02_A12" name="Communicate detected deviations to investigator">
+      <bpmn:documentation>Sources: E6R3 A1-2.5.3 (p. printed 13 / PDF 21); E6R3 A1-3.11.4.5.1(b) (p. printed 32 / PDF 40); FDA-RBM23 SQ8 (p. printed 10)
+Requirements: REQ-047, REQ-053
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Party: sponsor
+Verify: [verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-2.5.3" page="printed 13 / PDF 21" />
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(b)" page="printed 32 / PDF 40" />
+          <ipd:source key="FDA-RBM23" loc="SQ8" page="printed 10" />
+          <ipd:req id="REQ-047" />
+          <ipd:req id="REQ-053" />
+          <ipd:verify>[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_02_F16</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F18</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="L4_02_E1" name="Potential protocol deviation identified">
+      <bpmn:incoming>L4_02_F18</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:endEvent id="L4_02_E2" name="Monitoring completed without finding">
+      <bpmn:incoming>L4_02_F17</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="L4_02_F1" sourceRef="L4_02_S1" targetRef="L4_02_G1" />
+    <bpmn:sequenceFlow id="L4_02_F2" name="Centralised data review" sourceRef="L4_02_G1" targetRef="L4_02_A1" />
+    <bpmn:sequenceFlow id="L4_02_F3" name="Site monitoring visit" sourceRef="L4_02_G1" targetRef="L4_02_A6">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Site monitoring visit</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="L4_02_F4" sourceRef="L4_02_A1" targetRef="L4_02_A2" />
+    <bpmn:sequenceFlow id="L4_02_F5" sourceRef="L4_02_A2" targetRef="L4_02_A3" />
+    <bpmn:sequenceFlow id="L4_02_F6" sourceRef="L4_02_A3" targetRef="L4_02_A4" />
+    <bpmn:sequenceFlow id="L4_02_F7" sourceRef="L4_02_A4" targetRef="L4_02_A5" />
+    <bpmn:sequenceFlow id="L4_02_F8" sourceRef="L4_02_A5" targetRef="L4_02_G2" />
+    <bpmn:sequenceFlow id="L4_02_F9" sourceRef="L4_02_A6" targetRef="L4_02_A7" />
+    <bpmn:sequenceFlow id="L4_02_F10" sourceRef="L4_02_A7" targetRef="L4_02_A8" />
+    <bpmn:sequenceFlow id="L4_02_F11" sourceRef="L4_02_A8" targetRef="L4_02_A9" />
+    <bpmn:sequenceFlow id="L4_02_F12" sourceRef="L4_02_A9" targetRef="L4_02_A10" />
+    <bpmn:sequenceFlow id="L4_02_F13" sourceRef="L4_02_A10" targetRef="L4_02_G2" />
+    <bpmn:sequenceFlow id="L4_02_F14" sourceRef="L4_02_G2" targetRef="L4_02_A11" />
+    <bpmn:sequenceFlow id="L4_02_F15" sourceRef="L4_02_A11" targetRef="L4_02_G3" />
+    <bpmn:sequenceFlow id="L4_02_F16" name="Yes" sourceRef="L4_02_G3" targetRef="L4_02_A12" />
+    <bpmn:sequenceFlow id="L4_02_F17" name="No" sourceRef="L4_02_G3" targetRef="L4_02_E2" />
+    <bpmn:sequenceFlow id="L4_02_F18" sourceRef="L4_02_A12" targetRef="L4_02_E1" />
+  </bpmn:process>
+  <bpmn:process id="L4_02_P_INV_PROCESS" name="Investigator/institution" isExecutable="false">
+    <bpmn:startEvent id="L4_02_S2" name="Protocol deviation identified at site">
+      <bpmn:outgoing>L4_02_F19</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="L4_02_A13" name="Document protocol deviation">
+      <bpmn:documentation>Sources: 21CFR312 21CFR312.62(b) (p. n/a - eCFR web text without pagination); E6R3 A1-2.5.3 (p. printed 13 / PDF 21); E6R3 A1-2.12.2 (p. printed 21 / PDF 29); E6R3 A1-2.12.6 (p. printed 22 / PDF 30); E6R3 A1-2.12.3 (p. printed 21 / PDF 29)
+Requirements: REQ-062, REQ-063, REQ-064, REQ-065
+Binding: binding-law
+Jurisdiction: ICH, US
+Deadline: timely
+Record: protocol deviation documentation (site records); source records; reported data with audit trail; case histories (CRFs, consent forms, medical records)
+Party: investigator
+Verify: [verify] 21 CFR 312.62(b) does not name deviations; applied as the US record basis for site documentation</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH US" deadline="timely" record="protocol deviation documentation (site records); source records; reported data with audit trail; case histories (CRFs, consent forms, medical records)" party="investigator">
+          <ipd:source key="21CFR312" loc="21CFR312.62(b)" page="n/a - eCFR web text without pagination" />
+          <ipd:source key="E6R3" loc="A1-2.5.3" page="printed 13 / PDF 21" />
+          <ipd:source key="E6R3" loc="A1-2.12.2" page="printed 21 / PDF 29" />
+          <ipd:source key="E6R3" loc="A1-2.12.6" page="printed 22 / PDF 30" />
+          <ipd:source key="E6R3" loc="A1-2.12.3" page="printed 21 / PDF 29" />
+          <ipd:req id="REQ-062" />
+          <ipd:req id="REQ-063" />
+          <ipd:req id="REQ-064" />
+          <ipd:req id="REQ-065" />
+          <ipd:verify>[verify] 21 CFR 312.62(b) does not name deviations; applied as the US record basis for site documentation</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_02_F19</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F20</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:inclusiveGateway id="L4_02_G4" name="Which reports are due?" gatewayDirection="Diverging" default="L4_02_F21">
+      <bpmn:documentation>Justification: One deviation can require one or more reports with separate sources: the deviation report (FDA-PD24 SIII.B.1, DRAFT) including the premature unblinding explanation (E6R3 A1-2.11), the computerised system incident report (E6R3 A1-2.12.10(e)) and, in the EU, the suspected serious breach report (EMA-SB S6.4) (FLW-07, DEC-02). The deviation report is the default flow.</bpmn:documentation>
+      <bpmn:incoming>L4_02_F20</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F21</bpmn:outgoing>
+      <bpmn:outgoing>L4_02_F22</bpmn:outgoing>
+      <bpmn:outgoing>L4_02_F23</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:task id="L4_02_A14" name="Report deviation to sponsor">
+      <bpmn:documentation>Sources: E6R3 A1-2.11 (p. printed 21 / PDF 29); FDA-PD24 SIII.B.1 (p. printed 6; lines 194-198)
+Requirements: REQ-066, REQ-067
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Deadline: per sponsor-specified timeframe (REQ-066); promptly (REQ-067)
+Record: deviation report; documentation and explanation of premature unblinding
+Party: investigator
+Draft: DRAFT guidance
+Verify: [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" deadline="per sponsor-specified timeframe (REQ-066); promptly (REQ-067)" draft="true" record="deviation report; documentation and explanation of premature unblinding" party="investigator">
+          <ipd:source key="E6R3" loc="A1-2.11" page="printed 21 / PDF 29" />
+          <ipd:source key="FDA-PD24" loc="SIII.B.1" page="printed 6; lines 194-198" />
+          <ipd:req id="REQ-066" />
+          <ipd:req id="REQ-067" />
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_02_F21</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F24</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A15" name="Report computerised system incident">
+      <bpmn:documentation>Sources: E6R3 A1-2.12.10(e) (p. printed 22 / PDF 30)
+Requirements: REQ-068
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: investigator/institution</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="investigator/institution">
+          <ipd:source key="E6R3" loc="A1-2.12.10(e)" page="printed 22 / PDF 30" />
+          <ipd:req id="REQ-068" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_02_F22</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F25</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_02_A16" name="Report suspected serious breach to sponsor">
+      <bpmn:documentation>Sources: EMA-SB S6.4 (p. printed 9-10/21)
+Requirements: REQ-069
+Binding: guidance
+Jurisdiction: EU
+Deadline: promptly
+Record: site process / SOP
+Party: Principal Investigator</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="EU" deadline="promptly" record="site process / SOP" party="Principal Investigator">
+          <ipd:source key="EMA-SB" loc="S6.4" page="printed 9-10/21" />
+          <ipd:req id="REQ-069" />
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_02_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_02_F23</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F26</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:inclusiveGateway id="L4_02_G5" gatewayDirection="Converging">
+      <bpmn:incoming>L4_02_F24</bpmn:incoming>
+      <bpmn:incoming>L4_02_F25</bpmn:incoming>
+      <bpmn:incoming>L4_02_F26</bpmn:incoming>
+      <bpmn:outgoing>L4_02_F27</bpmn:outgoing>
+    </bpmn:inclusiveGateway>
+    <bpmn:endEvent id="L4_02_E3" name="Deviation reported to sponsor">
+      <bpmn:incoming>L4_02_F27</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="L4_02_F19" sourceRef="L4_02_S2" targetRef="L4_02_A13" />
+    <bpmn:sequenceFlow id="L4_02_F20" sourceRef="L4_02_A13" targetRef="L4_02_G4" />
+    <bpmn:sequenceFlow id="L4_02_F21" name="Deviation report" sourceRef="L4_02_G4" targetRef="L4_02_A14" />
+    <bpmn:sequenceFlow id="L4_02_F22" name="System incident" sourceRef="L4_02_G4" targetRef="L4_02_A15">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">System incident</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="L4_02_F23" name="Suspected serious breach (EU CTR)" sourceRef="L4_02_G4" targetRef="L4_02_A16">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">Suspected serious breach (EU CTR)</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="L4_02_F24" sourceRef="L4_02_A14" targetRef="L4_02_G5" />
+    <bpmn:sequenceFlow id="L4_02_F25" sourceRef="L4_02_A15" targetRef="L4_02_G5" />
+    <bpmn:sequenceFlow id="L4_02_F26" sourceRef="L4_02_A16" targetRef="L4_02_G5" />
+    <bpmn:sequenceFlow id="L4_02_F27" sourceRef="L4_02_G5" targetRef="L4_02_E3" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="L4_02_DIAGRAM" name="L4-02 - Identify protocol deviations">
+    <bpmndi:BPMNPlane id="L4_02_PLANE" bpmnElement="L4_02_COLLAB">
+      <bpmndi:BPMNShape id="L4_02_P_IEC_di" bpmnElement="L4_02_P_IEC" isHorizontal="true">
+        <dc:Bounds x="20" y="20" width="2658" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_P_INV_di" bpmnElement="L4_02_P_INV" isHorizontal="true">
+        <dc:Bounds x="20" y="209" width="2658" height="614" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_P_SPON_di" bpmnElement="L4_02_P_SPON" isHorizontal="true">
+        <dc:Bounds x="20" y="952" width="2658" height="616" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_P_RA_di" bpmnElement="L4_02_P_RA" isHorizontal="true">
+        <dc:Bounds x="20" y="1598" width="2658" height="60" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_L_SPON_di" bpmnElement="L4_02_L_SPON" isHorizontal="true">
+        <dc:Bounds x="50" y="952" width="2628" height="412" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_L_MON_di" bpmnElement="L4_02_L_MON" isHorizontal="true">
+        <dc:Bounds x="50" y="1364" width="2628" height="204" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_S1_di" bpmnElement="L4_02_S1">
+        <dc:Bounds x="187" y="1202" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="150" y="1242" width="110" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_G1_di" bpmnElement="L4_02_G1">
+        <dc:Bounds x="374" y="1195" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="344" y="1249" width="110" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A1_di" bpmnElement="L4_02_A1">
+        <dc:Bounds x="727" y="1180" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A2_di" bpmnElement="L4_02_A2">
+        <dc:Bounds x="921" y="1180" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A3_di" bpmnElement="L4_02_A3">
+        <dc:Bounds x="1100" y="1175" width="160" height="90" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A4_di" bpmnElement="L4_02_A4">
+        <dc:Bounds x="1319" y="1180" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A5_di" bpmnElement="L4_02_A5">
+        <dc:Bounds x="1513" y="1180" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A6_di" bpmnElement="L4_02_A6">
+        <dc:Bounds x="533" y="1402" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A7_di" bpmnElement="L4_02_A7">
+        <dc:Bounds x="727" y="1402" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A8_di" bpmnElement="L4_02_A8">
+        <dc:Bounds x="921" y="1402" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A9_di" bpmnElement="L4_02_A9">
+        <dc:Bounds x="1120" y="1402" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A10_di" bpmnElement="L4_02_A10">
+        <dc:Bounds x="1319" y="1402" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_G2_di" bpmnElement="L4_02_G2">
+        <dc:Bounds x="1742" y="1195" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A11_di" bpmnElement="L4_02_A11">
+        <dc:Bounds x="1901" y="1180" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_G3_di" bpmnElement="L4_02_G3" isMarkerVisible="true">
+        <dc:Bounds x="2130" y="1195" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2100" y="1249" width="110" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A12_di" bpmnElement="L4_02_A12">
+        <dc:Bounds x="2289" y="1180" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_E1_di" bpmnElement="L4_02_E1">
+        <dc:Bounds x="2525" y="1202" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2488" y="1242" width="110" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_E2_di" bpmnElement="L4_02_E2">
+        <dc:Bounds x="2331" y="982" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2284" y="1022" width="130" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_S2_di" bpmnElement="L4_02_S2">
+        <dc:Bounds x="187" y="661" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="150" y="701" width="110" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A13_di" bpmnElement="L4_02_A13">
+        <dc:Bounds x="339" y="639" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_G4_di" bpmnElement="L4_02_G4">
+        <dc:Bounds x="568" y="654" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="548" y="708" width="90" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A14_di" bpmnElement="L4_02_A14">
+        <dc:Bounds x="727" y="639" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A15_di" bpmnElement="L4_02_A15">
+        <dc:Bounds x="727" y="443" width="120" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_A16_di" bpmnElement="L4_02_A16">
+        <dc:Bounds x="717" y="247" width="140" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_G5_di" bpmnElement="L4_02_G5">
+        <dc:Bounds x="956" y="654" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_E3_di" bpmnElement="L4_02_E3">
+        <dc:Bounds x="1162" y="661" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1125" y="701" width="110" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_GR_CENTRAL_di" bpmnElement="L4_02_GR_CENTRAL">
+        <dc:Bounds x="702" y="1143" width="956" height="206" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="708" y="1147" width="133" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_GR_SITE_di" bpmnElement="L4_02_GR_SITE">
+        <dc:Bounds x="508" y="1370" width="956" height="196" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="514" y="1374" width="87" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_02_GR_EU_di" bpmnElement="L4_02_GR_EU">
+        <dc:Bounds x="702" y="215" width="170" height="196" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="708" y="219" width="52" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="L4_02_F1_di" bpmnElement="L4_02_F1">
+        <di:waypoint x="223" y="1220" />
+        <di:waypoint x="374" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F2_di" bpmnElement="L4_02_F2">
+        <di:waypoint x="399" y="1195" />
+        <di:waypoint x="399" y="1190" />
+        <di:waypoint x="496" y="1190" />
+        <di:waypoint x="496" y="1220" />
+        <di:waypoint x="727" y="1220" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="407" y="1154" width="120" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F3_di" bpmnElement="L4_02_F3">
+        <di:waypoint x="424" y="1220" />
+        <di:waypoint x="486" y="1220" />
+        <di:waypoint x="486" y="1442" />
+        <di:waypoint x="533" y="1442" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="492" y="1228" width="90" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F4_di" bpmnElement="L4_02_F4">
+        <di:waypoint x="847" y="1220" />
+        <di:waypoint x="921" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F5_di" bpmnElement="L4_02_F5">
+        <di:waypoint x="1041" y="1220" />
+        <di:waypoint x="1100" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F6_di" bpmnElement="L4_02_F6">
+        <di:waypoint x="1260" y="1220" />
+        <di:waypoint x="1319" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F7_di" bpmnElement="L4_02_F7">
+        <di:waypoint x="1439" y="1220" />
+        <di:waypoint x="1513" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F8_di" bpmnElement="L4_02_F8">
+        <di:waypoint x="1573" y="1180" />
+        <di:waypoint x="1573" y="1178" />
+        <di:waypoint x="1767" y="1178" />
+        <di:waypoint x="1767" y="1195" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F9_di" bpmnElement="L4_02_F9">
+        <di:waypoint x="653" y="1442" />
+        <di:waypoint x="727" y="1442" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F10_di" bpmnElement="L4_02_F10">
+        <di:waypoint x="847" y="1442" />
+        <di:waypoint x="921" y="1442" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F11_di" bpmnElement="L4_02_F11">
+        <di:waypoint x="1041" y="1442" />
+        <di:waypoint x="1120" y="1442" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F12_di" bpmnElement="L4_02_F12">
+        <di:waypoint x="1240" y="1442" />
+        <di:waypoint x="1319" y="1442" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F13_di" bpmnElement="L4_02_F13">
+        <di:waypoint x="1439" y="1442" />
+        <di:waypoint x="1670" y="1442" />
+        <di:waypoint x="1670" y="1220" />
+        <di:waypoint x="1742" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F14_di" bpmnElement="L4_02_F14">
+        <di:waypoint x="1792" y="1220" />
+        <di:waypoint x="1901" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F15_di" bpmnElement="L4_02_F15">
+        <di:waypoint x="2021" y="1220" />
+        <di:waypoint x="2130" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F16_di" bpmnElement="L4_02_F16">
+        <di:waypoint x="2180" y="1220" />
+        <di:waypoint x="2289" y="1220" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2188" y="1197" width="27" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F17_di" bpmnElement="L4_02_F17">
+        <di:waypoint x="2155" y="1195" />
+        <di:waypoint x="2155" y="1000" />
+        <di:waypoint x="2331" y="1000" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2161" y="1168" width="22" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F18_di" bpmnElement="L4_02_F18">
+        <di:waypoint x="2409" y="1220" />
+        <di:waypoint x="2525" y="1220" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F19_di" bpmnElement="L4_02_F19">
+        <di:waypoint x="223" y="679" />
+        <di:waypoint x="339" y="679" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F20_di" bpmnElement="L4_02_F20">
+        <di:waypoint x="459" y="679" />
+        <di:waypoint x="568" y="679" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F21_di" bpmnElement="L4_02_F21">
+        <di:waypoint x="618" y="679" />
+        <di:waypoint x="727" y="679" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="626" y="656" width="90" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F22_di" bpmnElement="L4_02_F22">
+        <di:waypoint x="593" y="654" />
+        <di:waypoint x="593" y="483" />
+        <di:waypoint x="727" y="483" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="599" y="611" width="90" height="18" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F23_di" bpmnElement="L4_02_F23">
+        <di:waypoint x="581" y="666" />
+        <di:waypoint x="581" y="287" />
+        <di:waypoint x="717" y="287" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="455" y="595" width="120" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F24_di" bpmnElement="L4_02_F24">
+        <di:waypoint x="847" y="679" />
+        <di:waypoint x="956" y="679" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F25_di" bpmnElement="L4_02_F25">
+        <di:waypoint x="847" y="483" />
+        <di:waypoint x="981" y="483" />
+        <di:waypoint x="981" y="654" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F26_di" bpmnElement="L4_02_F26">
+        <di:waypoint x="857" y="287" />
+        <di:waypoint x="993" y="287" />
+        <di:waypoint x="993" y="666" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_F27_di" bpmnElement="L4_02_F27">
+        <di:waypoint x="1006" y="679" />
+        <di:waypoint x="1162" y="679" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_M1_di" bpmnElement="L4_02_M1">
+        <di:waypoint x="2409" y="1200" />
+        <di:waypoint x="2436" y="1200" />
+        <di:waypoint x="2436" y="823" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2442" y="833" width="120" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_M2_di" bpmnElement="L4_02_M2">
+        <di:waypoint x="1240" y="1422" />
+        <di:waypoint x="1272" y="1422" />
+        <di:waypoint x="1272" y="823" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1278" y="833" width="120" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_M3_di" bpmnElement="L4_02_M3">
+        <di:waypoint x="847" y="699" />
+        <di:waypoint x="874" y="699" />
+        <di:waypoint x="874" y="1200" />
+        <di:waypoint x="847" y="1200" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="880" y="833" width="120" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_M4_di" bpmnElement="L4_02_M4">
+        <di:waypoint x="727" y="699" />
+        <di:waypoint x="690" y="699" />
+        <di:waypoint x="690" y="1200" />
+        <di:waypoint x="727" y="1200" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="696" y="833" width="120" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_M5_di" bpmnElement="L4_02_M5">
+        <di:waypoint x="847" y="463" />
+        <di:waypoint x="1931" y="463" />
+        <di:waypoint x="1931" y="1180" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1775" y="833" width="150" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_M6_di" bpmnElement="L4_02_M6">
+        <di:waypoint x="727" y="463" />
+        <di:waypoint x="653" y="463" />
+        <di:waypoint x="653" y="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="659" y="90" width="150" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_02_M7_di" bpmnElement="L4_02_M7">
+        <di:waypoint x="857" y="267" />
+        <di:waypoint x="1961" y="267" />
+        <di:waypoint x="1961" y="1180" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1967" y="833" width="120" height="31" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

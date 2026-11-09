@@ -1,0 +1,4 @@
+src: CTTI-CTQ
+method: local-text
+notes:
+  R5-058: "Quote verbatim in the right-hand column 'Examples of Issues to Consider in Evaluating Risks to CTQ Factor', item 2 (three-column table interleaved by pdftotext), page 9 of 24. Hand-offs = item 3; detection/swift action = item 4."

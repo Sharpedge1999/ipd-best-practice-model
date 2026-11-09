@@ -1,0 +1,998 @@
+====================================================================================================
+R1-001 | E6R3 | loc=P3.1 | page=printed 4 / PDF 12
+PARA: A trial should be conducted in compliance with the protocol that has received prior IRB/IEC approval or favourable opinion.
+QUOTE: A trial should be conducted in compliance with the protocol
+QCHECK: exact ['PDF 12 / printed 4'] 
+LOC: found PDF 12 / printed 4 .. PDF 12 / printed 4 (121 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.1 A trial should be conducted in compliance with the protocol that received prior IRB/IEC approval/favourable opinion. 
+====================================================================================================
+R1-002 | E6R3 | loc=P6.2 | page=printed 5 / PDF 13
+PARA: Factors critical to the quality of the trial should be identified prospectively; quality by design means focusing on these critical to quality factors so the trial is likely to meet its objectives.
+QUOTE: Factors critical to the quality of the trial should be identified prospectively.
+QCHECK: exact ['PDF 13 / printed 5'] 
+LOC: found PDF 13 / printed 5 .. PDF 13 / printed 5 (445 chars) 
+  quote inside loc passage: True
+  PASSAGE: 6.2 Factors critical to the quality of the trial should be identified prospectively. These factors are attributes of a trial that are fundamental to the protection of participants, the reliability and interpretability of the trial results and the decisions made based on those trial results. Quality by design involves focusing on critical to quality factors of the trial in order to maximise the likelihood of the trial meeting its objectives. 
+====================================================================================================
+R1-003 | E6R3 | loc=P6.3 | page=printed 5 / PDF 13
+PARA: Strategies should be implemented to avoid, detect, address and prevent recurrence of serious noncompliance with GCP, the trial protocol and applicable regulatory requirements.
+QUOTE: avoid, detect, address and prevent recurrence of serious noncompliance
+QCHECK: exact ['PDF 13 / printed 5'] 
+LOC: found PDF 13 / printed 5 .. PDF 13 / printed 5 (180 chars) 
+  quote inside loc passage: True
+  PASSAGE: 6.3 Strategies should be implemented to avoid, detect, address and prevent recurrence of serious noncompliance with GCP, the trial protocol and applicable regulatory requirements. 
+====================================================================================================
+R1-004 | E6R3 | loc=P7.1 | page=printed 5 / PDF 13
+PARA: Trial processes should be proportionate to the risks inherent in the trial and to the importance of the information collected; risks cover participant rights, safety and well-being and the reliability of results.
+QUOTE: Trial processes should be proportionate to the risks inherent in the trial
+QCHECK: exact ['PDF 13 / printed 5'] 
+LOC: found PDF 13 / printed 5 .. PDF 13 / printed 5 (281 chars) 
+  quote inside loc passage: True
+  PASSAGE: 7.1 Trial processes should be proportionate to the risks inherent in the trial and the importance of the information collected. Risks in this context include risks to the rights, safety and well-being of trial participants as well as risks to the reliability of the trial results. 
+====================================================================================================
+R1-005 | E6R3 | loc=P7.3 | page=printed 5 / PDF 13
+PARA: Risks to critical to quality factors should be managed proactively and adjusted when new or unanticipated issues arise once the trial has begun.
+QUOTE: Risks to critical to quality factors should be managed proactively
+QCHECK: exact ['PDF 13 / printed 5'] 
+LOC: found PDF 13 / printed 5 .. PDF 13 / printed 5 (149 chars) 
+  quote inside loc passage: True
+  PASSAGE: 7.3 Risks to critical to quality factors should be managed proactively and adjusted when new or unanticipated issues arise once the trial has begun. 
+====================================================================================================
+R1-006 | E6R3 | loc=P7.4 | page=printed 5-6 / PDF 13-14
+PARA: Trial processes should be operationally feasible and avoid unnecessary complexity, procedures and data collection; the sponsor should not place unnecessary burden on participants and investigators.
+LOC: found PDF 13 / printed 5 .. PDF 14 / printed 6 (259 chars) 
+  PASSAGE: 7.4 Trial processes should be operationally feasible and avoid unnecessary complexity, procedures and data collection. Trial processes should support the key trial objectives. The sponsor should not place unnecessary burden on participants and investigators. 
+====================================================================================================
+R1-007 | E6R3 | loc=P8.3 | page=printed 6 / PDF 14
+PARA: The clinical trial protocol and the plans or documents for protocol execution (e.g. statistical analysis plan, data management plan, monitoring plan) should be clear, concise and operationally feasible.
+QUOTE: should be clear, concise and operationally feasible
+QCHECK: exact ['PDF 14 / printed 6'] 
+LOC: found PDF 14 / printed 6 .. PDF 14 / printed 6 (219 chars) 
+  quote inside loc passage: True
+  PASSAGE: 8.3 The clinical trial protocol as well as the plans or documents for the protocol execution (e.g., statistical analysis plan, data management plan, monitoring plan) should be clear, concise and operationally feasible. 
+====================================================================================================
+R1-008 | E6R3 | loc=P9.5 | page=printed 6 / PDF 14
+PARA: Essential records should be retained securely by sponsors and investigators for the required period per applicable regulatory requirements and be available on request to regulatory authorities, monitors, auditors and IRBs/IECs (as appropriate).
+QUOTE: Essential records should be retained securely by sponsors and investigators
+QCHECK: exact ['PDF 14 / printed 6'] 
+LOC: found PDF 14 / printed 6 .. PDF 14 / printed 6 (400 chars) 
+  quote inside loc passage: True
+  PASSAGE: 9.5 Essential records should be retained securely by sponsors and investigators for the required period in accordance with applicable regulatory requirements. These essential records should be available to regulatory authorities, monitors, auditors and IRBs/IECs (as appropriate) upon request to enable appropriate evaluation of the trial conduct in order to ensure the reliability of trial results. 
+====================================================================================================
+R1-009 | E6R3 | loc=P10.1 | page=printed 7 / PDF 15
+PARA: The sponsor may transfer, or the investigator may delegate, their activities, but they retain overall responsibility for their respective activities.
+QUOTE: they retain overall responsibility for their respective activities
+QCHECK: exact ['PDF 15 / printed 7'] 
+LOC: found PDF 15 / printed 7 .. PDF 15 / printed 7 (207 chars) 
+  quote inside loc passage: True
+  PASSAGE: 10.1 The sponsor may transfer or the investigator may delegate their tasks, duties or functions (hereafter referred to as activities), but they retain overall responsibility for their respective activities. 
+====================================================================================================
+R1-010 | E6R3 | loc=P10.3 | page=printed 7 / PDF 15
+PARA: Sponsors or investigators should maintain appropriate oversight of the activities they delegate or transfer.
+QUOTE: should maintain appropriate oversight of the aforementioned activities
+QCHECK: exact ['PDF 15 / printed 7'] 
+LOC: found PDF 15 / printed 7 .. PDF 15 / printed 7 (105 chars) 
+  quote inside loc passage: True
+  PASSAGE: 10.3 The sponsor or investigator should maintain appropriate oversight of the aforementioned activities. 
+====================================================================================================
+R1-011 | E6R3 | loc=A1-1.4.7 | page=printed 10 / PDF 18
+PARA: The IRB/IEC's written procedures should specify that no deviation from or change to the protocol is initiated without prior documented IRB/IEC approval/favourable opinion of an appropriate amendment, except where necessary to eliminate immediate hazards to participants or where the change involves only logistical or administrative aspects, in accordance with applicable regulatory requirements.
+QUOTE: no deviations from or changes to the protocol should be initiated
+QCHECK: exact ['PDF 18 / printed 10'] 
+LOC: found PDF 18 / printed 10 .. PDF 18 / printed 10 (402 chars) 
+  quote inside loc passage: True
+  PASSAGE: 1.4.7 Specifying that no deviations from or changes to the protocol should be initiated without prior documented IRB/IEC approval/favourable opinion of an appropriate protocol amendment except when necessary to eliminate immediate hazards to the participants or, in accordance with applicable regulatory requirements, when the change(s) involves only logistical or administrative aspects of the trial; 
+====================================================================================================
+R1-012 | E6R3 | loc=A1-1.4.8(a) | page=printed 10-11 / PDF 18-19
+PARA: The IRB/IEC's procedures should specify that the investigator/institution promptly reports to the IRB/IEC deviations from the protocol made to eliminate immediate hazards to trial participants (cross-references to 1.4.7, 2.5.4 and 2.5.5).
+QUOTE: Deviations from the protocol to eliminate immediate hazards to the trial participants
+QCHECK: exact ['PDF 19 / printed 11'] 
+LOC: found PDF 19 / printed 11 .. PDF 19 / printed 11 (129 chars) 
+  quote inside loc passage: True
+  PASSAGE: (a) Deviations from the protocol to eliminate immediate hazards to the trial participants (see sections 1.4.7, 2.5.4 and 2.5.5); 
+  DOCBEST-OUTSIDE 0.67 @ PDF 18 / printed 10: 1.4.7 Specifying that no deviations from or changes to the protocol should be initiated without prior documented IRB/IEC approval/favourable opinion of an appropriate protocol amendment except when necessary to eliminate immediate hazards to the participants or, in accordance with applicable regulatory requirements, when the change(s) involves only logistical or administrative aspects of the trial
+====================================================================================================
+R1-013 | E6R3 | loc=A1-1.4.8(b) | page=printed 11 / PDF 19
+PARA: The IRB/IEC's procedures should specify that the investigator/institution promptly reports changes that increase the risk to participants and/or significantly affect the conduct of the trial (cross-reference to 2.4.6).
+QUOTE: Changes increasing the risk to participants and/or significantly affecting the conduct of the trial
+QCHECK: exact ['PDF 19 / printed 11'] 
+LOC: found PDF 19 / printed 11 .. PDF 19 / printed 11 (125 chars) 
+  quote inside loc passage: True
+  PASSAGE: (b) Changes increasing the risk to participants and/or significantly affecting the conduct of the trial (see section 2.4.6); 
+  DOCBEST-OUTSIDE 0.65 @ PDF 21 / printed 13: 2.4.5 The investigator or the sponsor should submit documented summaries of the trial status to the IRB/IEC in accordance with local regulatory requirements or upon request. 2.4.6 The investigator or the sponsor should promptly communicate to the IRB/IEC (see section 1.4.8) and, where applicable, to the institution any changes significantly affecting the conduct of the trial and/or increasing the 
+====================================================================================================
+R1-014 | E6R3 | loc=A1-1.4.9 | page=printed 11 / PDF 19
+PARA: The IRB/IEC's procedures should include ensuring that the IRB/IEC promptly notifies the investigator/institution or sponsor in writing (paper or electronic) of its trial-related decisions/opinions, the reasons for them and the procedures for appeal.
+LOC: found PDF 19 / printed 11 .. PDF 19 / printed 11 (296 chars) 
+  PASSAGE: 1.4.9 Ensuring that the IRB/IEC (see section 1.1) promptly notifies in writing (paper or electronically) the investigator/institution or sponsor concerning: (a) Its trial-related decisions/opinions; (b) The reasons for its decisions/opinions; (c) Procedures for appeal of its decisions/opinions. 
+====================================================================================================
+R1-015 | E6R3 | loc=A1-2.3.1 | page=printed 12 / PDF 20
+PARA: The investigator retains ultimate responsibility and should maintain appropriate oversight of persons or parties undertaking delegated activities; the level of oversight should depend on the nature of the delegated activities and be proportionate to the importance of the data and the risks to participant safety and data reliability.
+QUOTE: The investigator retains the ultimate responsibility
+QCHECK: exact ['PDF 20 / printed 12'] 
+LOC: found PDF 20 / printed 12 .. PDF 20 / printed 12 (907 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 2.3.1 The investigator may delegate trial-related activities to other persons or parties. The investigator may be supported by the sponsor in the identification
+  WINDOW 1.00 @ PDF 20 / printed 12: ntification of a suitable service provider(s); however, the investigator retains the final decision on whether the service provider intended to support the investigator is appropriate based on information provided by the sponsor (see section 3.6.5). The investigator retains the ultimate responsibility and should maintain appropriate oversight of the persons or parties undertaking the activities delegated to ensure the rights, safety and well-being of the trial participants and the reliability of data. The level of investigator oversight of the delegated activities should depend on the nature of the delegated activities and be proportionate to the importance of the data being collected and the risks to trial participant safety and data reliability. 
+====================================================================================================
+R1-016 | E6R3 | loc=A1-2.4.6 | page=printed 13 / PDF 21
+PARA: The investigator or sponsor should promptly inform the IRB/IEC (see 1.4.8) and, where applicable, the institution of changes that significantly affect the conduct of the trial or increase the risk to participants.
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (248 chars) 
+  PASSAGE: 2.4.6 The investigator or the sponsor should promptly communicate to the IRB/IEC (see section 1.4.8) and, where applicable, to the institution any changes significantly affecting the conduct of the trial and/or increasing the risk to participants. 
+====================================================================================================
+R1-017 | E6R3 | loc=A1-2.5.2 | page=printed 13 / PDF 21
+PARA: The investigator should comply with the protocol, GCP and applicable regulatory requirements.
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (100 chars) 
+  PASSAGE: 2.5.2 The investigator should comply with the protocol, GCP and applicable regulatory requirements. 
+====================================================================================================
+R1-018 | E6R3 | loc=A1-2.5.3 | page=printed 13 / PDF 21
+PARA: The investigator should document all protocol deviations.
+QUOTE: document all protocol deviations
+QCHECK: exact ['PDF 21 / printed 13'] 
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (538 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.5.3 The investigator should document all protocol deviations. In addition to those identified by the investigator themselves, protocol deviations relevant to their trial participants and their conduct of the trial may be communicated to them by the sponsor (see section 3.11.4.5.1(b)). In either case, the investigator should review the deviations, and for those deviations deemed important, the investigator should explain the deviation and implement appropriate measures to prevent a recurrence, where applicable (see section 3.9.3). 
+====================================================================================================
+R1-019 | E6R3 | loc=A1-2.5.3 | page=printed 13 / PDF 21
+PARA: In addition to deviations identified by the investigator, protocol deviations relevant to the investigator's participants and their conduct of the trial may be communicated by the sponsor (cross-reference to 3.11.4.5.1(b)).
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (538 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-020 | E6R3 | loc=A1-2.5.3 | page=printed 13 / PDF 21
+PARA: In either case (investigator-identified or sponsor-communicated), the investigator should review the deviations and, for those deemed important, explain the deviation (cross-reference to 3.9.3).
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (538 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-021 | E6R3 | loc=A1-2.5.3 | page=printed 13 / PDF 21
+PARA: For important deviations the investigator should implement appropriate measures to prevent recurrence, where applicable.
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (538 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-022 | E6R3 | loc=A1-2.5.4 | page=printed 13 / PDF 21
+PARA: The investigator should follow the protocol and deviate only where necessary to eliminate an immediate hazard to trial participants.
+QUOTE: deviate only where necessary to eliminate an immediate hazard(s)
+QCHECK: exact ['PDF 21 / printed 13'] 
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (281 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.5.4 The investigator should follow the protocol and deviate only where necessary to eliminate an immediate hazard(s) to trial participants. In case of deviations undertaken to eliminate immediate hazard to trial participants, the investigator should inform the sponsor promptly. 
+====================================================================================================
+R1-023 | E6R3 | loc=A1-2.5.4 | page=printed 13 / PDF 21
+PARA: In case of a deviation undertaken to eliminate an immediate hazard, the investigator should inform the sponsor promptly.
+QUOTE: inform the sponsor promptly
+QCHECK: exact ['PDF 21 / printed 13'] 
+LOC: found PDF 21 / printed 13 .. PDF 21 / printed 13 (281 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-024 | E6R3 | loc=A1-2.5.5 | page=printed 13 / PDF 21
+PARA: In the case of an immediate hazard, the investigator should report information on the immediate hazard, the implemented change and any subsequent proposed protocol amendment to the IRB/IEC and, where applicable, to regulatory authorities.
+QUOTE: report information on the immediate hazard
+QCHECK: exact ['PDF 21 / printed 13'] 
+LOC: found PDF 21 / printed 13 .. PDF 22 / printed 14 (233 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.5.5 The investigator should report information on the immediate hazard, the implemented change and the subsequent proposed protocol amendment, if any, to the IRB/IEC and, where applicable, regulatory authorities (see section 1.1). 
+====================================================================================================
+R1-025 | E6R3 | loc=A1-2.12.2 | page=printed 21 / PDF 29
+PARA: Source records should be attributable, legible, contemporaneous, original, accurate and complete; changes to source records should be traceable and explained if necessary.
+QUOTE: Source records should be attributable, legible, contemporaneous, original, accurate and complete.
+QCHECK: exact ['PDF 29 / printed 21'] 
+LOC: found PDF 29 / printed 21 .. PDF 29 / printed 21 (721 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.12.2 The investigator/institution should maintain adequate source records that include pertinent observations on each of the trial participants under their responsibility. Source records should be attributable, legible, contemporaneous, original, accurate and complete. Changes to source records should be traceable, should not obscure the original entry and should be explained if necessary (via an audit trail). The investigator should define what is considered to be a source record(s), the methods of data capture and their location prior to starting the trial and should update this definition when needed. Unnecessary transcription steps between the source record and the data acquisition tool should be avoided. 
+====================================================================================================
+R1-026 | E6R3 | loc=A1-2.12.6 | page=printed 22 / PDF 30
+PARA: Data reported to the sponsor should be consistent with source records or discrepancies explained; changes or corrections to reported data should be traceable and should not obscure the original entry.
+QUOTE: Changes or corrections in the reported data should be traceable
+QCHECK: exact ['PDF 30 / printed 22'] 
+LOC: found PDF 30 / printed 22 .. PDF 30 / printed 22 (256 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.12.6 Data reported to the sponsor should be consistent with the source records or the discrepancies explained. Changes or corrections in the reported data should be traceable, should be explained (if necessary) and should not obscure the original entry. 
+====================================================================================================
+R1-027 | E6R3 | loc=A1-2.12.11 | page=printed 22 / PDF 30
+PARA: Trial records should be maintained as specified in Appendix C and applicable regulatory requirements; the investigator/institution should have control of all essential records it generates.
+QUOTE: should have control of all essential records generated
+QCHECK: exact ['PDF 30 / printed 22'] 
+LOC: found PDF 30 / printed 22 .. PDF 31 / printed 23 (319 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.12.11 The investigator/institution should maintain the trial records as specified in Appendix C and as required by the applicable regulatory requirement(s). The investigator/institution should have control of all essential records generated by the investigator/institution before and during the conduct of the trial. 
+====================================================================================================
+R1-028 | E6R3 | loc=A1-2.12.12 | page=printed 23 / PDF 31
+PARA: The investigator/institution should retain essential records for the retention period required by applicable regulatory requirements or until the sponsor informs them they are no longer needed, whichever is the longest, and take measures to ensure availability, accessibility and readability and to prevent unauthorised access and premature destruction (see Appendix C).
+LOC: found PDF 31 / printed 23 .. PDF 31 / printed 23 (500 chars) 
+  PASSAGE: 2.12.12 The investigator/institution should retain the essential records for the required retention period in accordance with applicable regulatory requirements or until the sponsor informs the investigator/institution that these records are no longer needed, whichever is the longest. The investigator/institution should take measures to ensure availability, accessibility and readability and to prevent unauthorised access and accidental or premature destruction of these records (see Appendix C). 
+====================================================================================================
+R1-029 | E6R3 | loc=A1-2.12.14 | page=printed 23 / PDF 31
+PARA: On request of the monitor, auditor, IRB/IEC or regulatory authority, the investigator/institution should make all requested trial-related records available for direct access.
+QUOTE: should make available for direct access all requested
+QCHECK: exact ['PDF 31 / printed 23'] 
+LOC: found PDF 31 / printed 23 .. PDF 31 / printed 23 (186 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.12.14 Upon request of the monitor, auditor, IRB/IEC or regulatory authority, the investigator/institution should make available for direct access all requested trial- related records. 
+====================================================================================================
+R1-030 | E6R3 | loc=A1-3.1.2 | page=printed 23 / PDF 31
+PARA: In building quality into trial design, the sponsor should identify factors critical to the quality of the trial and manage risks to those factors.
+QUOTE: factors that are critical to the quality of the trial
+QCHECK: exact ['PDF 31 / printed 23'] 
+LOC: found PDF 31 / printed 23 .. PDF 31 / printed 23 (189 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.1.2 Sponsors should incorporate quality into the design of the clinical trial by identifying factors that are critical to the quality of the trial and by managing risks to those factors. 
+  DOCBEST-OUTSIDE 0.80 @ PDF 36 / printed 28: 3.10.1.1 Risk Identification The sponsor should identify risks that may have a meaningful impact on critical to quality factors prior to trial initiation and throughout trial conduct. Risks should be considered across the processes and systems, including computerised systems, used in the clinical trial (e.g., trial design, participant selection, informed consent process, randomisation, blinding, i
+====================================================================================================
+R1-031 | E6R3 | loc=A1-3.9.2 | page=printed 26 / PDF 34
+PARA: The sponsor should ensure that trial processes are conducted in compliance with the protocol and related documents, applicable regulatory requirements and ethical standards.
+LOC: found PDF 34 / printed 26 .. PDF 35 / printed 27 (201 chars) 
+  PASSAGE: 3.9.2 The sponsor should ensure that trial processes are conducted in compliance with the trial protocol and related documents as well as with applicable regulatory requirements and ethical standards. 
+====================================================================================================
+R1-032 | E6R3 | loc=A1-3.9.3 | page=printed 27 / PDF 35
+PARA: The sponsor should determine the necessary trial-specific criteria for classifying protocol deviations as important.
+QUOTE: The sponsor should determine necessary trial-specific criteria for classifying protocol deviations as important.
+QCHECK: exact ['PDF 35 / printed 27'] 
+LOC: found PDF 35 / printed 27 .. PDF 35 / printed 27 (359 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.9.3 The sponsor should determine necessary trial-specific criteria for classifying protocol deviations as important. Important protocol deviations are a subset of protocol deviations that may significantly impact the completeness, accuracy and/or reliability of the trial data or that may significantly affect a participant's rights, safety or well- being. 
+====================================================================================================
+R1-033 | E6R3 | loc=A1-3.9.3 | page=printed 27 / PDF 35
+PARA: Important protocol deviations are a subset of protocol deviations that may significantly affect the completeness, accuracy and/or reliability of trial data or significantly affect a participant's rights, safety or well-being.
+QUOTE: Important protocol deviations are a subset of protocol deviations
+QCHECK: exact ['PDF 35 / printed 27'] 
+LOC: found PDF 35 / printed 27 .. PDF 35 / printed 27 (359 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-034 | E6R3 | loc=A1-3.9.5 | page=printed 27 / PDF 35
+PARA: The range and extent of oversight measures should be fit for purpose and tailored to trial complexity and risks; selection and oversight of investigators and service providers are fundamental features, and oversight includes QA and QC of their trial-related activities.
+QUOTE: The range and extent of oversight measures should be fit for purpose
+QCHECK: exact ['PDF 35 / printed 27'] 
+LOC: found PDF 35 / printed 27 .. PDF 35 / printed 27 (427 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.9.5 The range and extent of oversight measures should be fit for purpose and tailored to the complexity of and risks associated with the trial. The selection and oversight of investigators and service providers are fundamental features of the oversight process. Oversight by the sponsor includes quality assurance and quality control processes relating to the trial-related activities of investigators and service providers. 
+====================================================================================================
+R1-035 | E6R3 | loc=A1-3.9.6 | page=printed 27 / PDF 35
+PARA: The sponsor should ensure appropriate and timely escalation and follow-up of issues so that appropriate actions can be taken.
+LOC: found PDF 35 / printed 27 .. PDF 35 / printed 27 (161 chars) 
+  PASSAGE: 3.9.6 The sponsor should ensure appropriate and timely escalation and follow-up of issues to allow the implementation of appropriate actions in a timely manner. 
+====================================================================================================
+R1-036 | E6R3 | loc=A1-3.10 | page=printed 27 / PDF 35
+PARA: The sponsor should implement a system to manage quality throughout all stages of the trial, using a proportionate, risk-based approach that builds quality into design and identifies factors likely to have a meaningful impact on participant protection and reliability of results, i.e. critical to quality factors as described in ICH E8(R1).
+QUOTE: critical to quality factors as described in ICH E8(R1)
+QCHECK: exact ['PDF 35 / printed 27'] 
+LOC: found PDF 35 / printed 27 .. PDF 37 / printed 29 (3736 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.10 Quality Management The sponsor should implement an appropriate system to manage quality throughout all stages of the trial process. Quality management incl
+  WINDOW 0.69 @ PDF 35 / printed 27: 3.10 Quality Management The sponsor should implement an appropriate system to manage quality throughout all stages of the trial process. Quality management includes the design and implementation of efficient clinical trial protocols, including tools and procedures for trial conduct (including for data collection and management), in order to ensure the protection of participants' rights, safety and well-being and the reliability of trial results. The sponsor should adopt a proportionate and risk- based approach to quality management, which involves incorporating quality into the design of the clinical trial (i.e., quality by design) and identifying those factors that are likely to have a meaningful impact on participants' rights, safety and well-being and the reliability of the results (i.e., critical to quality factors as described in ICH E8(R1)).
+====================================================================================================
+R1-037 | E6R3 | loc=A1-3.10 | page=printed 27 / PDF 35
+PARA: The sponsor should describe the quality management approach implemented in the trial in the clinical trial report (see ICH E3).
+LOC: found PDF 35 / printed 27 .. PDF 37 / printed 29 (3736 chars) 
+  PASSAGE-HEAD: 3.10 Quality Management The sponsor should implement an appropriate system to manage quality throughout all stages of the trial process. Quality management incl
+  WINDOW 1.00 @ PDF 35 / printed 27: ficient clinical trial protocols, including tools and procedures for trial conduct (including for data collection and management), in order to ensure the protection of participants' rights, safety and well-being and the reliability of trial results. The sponsor should adopt a proportionate and risk- based approach to quality management, which involves incorporating quality into the design of the clinical trial (i.e., quality by design) and identifying those factors that are likely to have a meaningful impact on participants' rights, safety and well-being and the reliability of the results (i.e., critical to quality factors as described in ICH E8(R1)). The sponsor should describe the quality management approach implemented in the trial in the clinical trial report (see ICH E3 Structure and Content of Clinical Study Reports). 3.10.1 Risk Management A proportionate approach to the identific
+====================================================================================================
+R1-038 | E6R3 | loc=A1-3.10.1.1 | page=printed 28 / PDF 36
+PARA: The sponsor should identify risks that may have a meaningful impact on critical to quality factors, prior to trial initiation and throughout conduct, considering processes and systems including computerised systems (e.g. trial design, participant selection, informed consent, randomisation, blinding, investigational product administration, data handling, service provider activities).
+QUOTE: identify risks that may have a meaningful impact on critical to quality factors
+QCHECK: exact ['PDF 36 / printed 28'] 
+LOC: found PDF 36 / printed 28 .. PDF 36 / printed 28 (487 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.10.1.1 Risk Identification The sponsor should identify risks that may have a meaningful impact on critical to quality factors prior to trial initiation and throughout trial conduct. Risks should be considered across the processes and systems, including computerised systems, used in the clinical trial (e.g., trial design, participant selection, informed consent process, randomisation, blinding, investigational product administration, data handling and service provider activities). 
+====================================================================================================
+R1-039 | E6R3 | loc=A1-3.10.1.2 | page=printed 28 / PDF 36
+PARA: The sponsor should evaluate identified risks and existing controls by considering the likelihood of harm/hazard occurring, the extent to which it would be detectable and its impact on participant protection and reliability of trial results.
+LOC: found PDF 36 / printed 28 .. PDF 36 / printed 28 (350 chars) 
+  PASSAGE: 3.10.1.2 Risk Evaluation The sponsor should evaluate identified risks and existing controls in place to mitigate the risk by considering: (a) The likelihood of harm/hazard occurring; (b) The extent to which such harm/hazard would be detectable; (c) The impact of such harm/hazard on trial participant protection and the reliability of trial results. 
+====================================================================================================
+R1-040 | E6R3 | loc=A1-3.10.1.3 | page=printed 28 / PDF 36
+PARA: Risk control should be proportionate to the importance of the risk to participants' rights, safety and well-being and the reliability of trial results; risk mitigation may be incorporated e.g. in protocol design and implementation, monitoring plans, agreements defining roles and responsibilities, and training.
+LOC: found PDF 36 / printed 28 .. PDF 36 / printed 28 (862 chars) 
+  PASSAGE: 3.10.1.3 Risk Control Risk control should be proportionate to the importance of the risk to participants' rights, safety and well-being and the reliability of trial results. Risk mitigation activities may be incorporated, for example, in protocol design and implementation, monitoring plans, agreements between parties defining roles and responsibilities, and training. Where relevant, the sponsor should set pre-specified acceptable ranges (e.g., quality tolerance limits at the trial level) to support the control of risks to critical to quality factors. These pre-specified ranges reflect limits that when exceeded have the potential to impact participant safety or the reliability of trial results. Where deviation beyond these ranges is detected, an evaluation should be performed to determine if there is a possible systemic issue and if action is needed. 
+====================================================================================================
+R1-041 | E6R3 | loc=A1-3.10.1.3 | page=printed 28 / PDF 36
+PARA: Where relevant, the sponsor should set pre-specified acceptable ranges (e.g. quality tolerance limits at the trial level) to support the control of risks to critical to quality factors; the ranges reflect limits that, when exceeded, may impact participant safety or reliability of results.
+LOC: found PDF 36 / printed 28 .. PDF 36 / printed 28 (862 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-042 | E6R3 | loc=A1-3.10.1.3 | page=printed 28 / PDF 36
+PARA: Where deviation beyond the pre-specified acceptable ranges is detected, an evaluation should be performed to determine whether there is a possible systemic issue and whether action is needed.
+QUOTE: an evaluation should be performed to determine if there is a possible systemic issue
+QCHECK: exact ['PDF 36 / printed 28'] 
+LOC: found PDF 36 / printed 28 .. PDF 36 / printed 28 (862 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-043 | E6R3 | loc=A1-3.10.1.4 | page=printed 28 / PDF 36
+PARA: The sponsor should document identified risks and mitigating activities and communicate them to those who are involved in taking action or are affected; communication supports risk review and improvement.
+LOC: found PDF 36 / printed 28 .. PDF 37 / printed 29 (314 chars) 
+  PASSAGE: 3.10.1.4 Risk Communication The sponsor should document and communicate the identified risks and mitigating activities, if applicable, to those who are involved in taking action or are affected by such activities. Communication also facilitates risk review and continual improvement during clinical trial conduct. 
+====================================================================================================
+R1-044 | E6R3 | loc=A1-3.10.1.5 | page=printed 29 / PDF 37
+PARA: The sponsor should periodically review risk control measures to ascertain whether the implemented quality management activities remain effective and relevant, taking into account emerging knowledge and experience; additional risk control measures may be implemented as needed.
+LOC: found PDF 37 / printed 29 .. PDF 37 / printed 29 (298 chars) 
+  PASSAGE: 3.10.1.5 Risk Review The sponsor should periodically review risk control measures to ascertain whether the implemented quality management activities remain effective and relevant, taking into account emerging knowledge and experience. Additional risk control measures may be implemented as needed. 
+====================================================================================================
+R1-045 | E6R3 | loc=A1-3.10.1.6 | page=printed 29 / PDF 37
+PARA: The sponsor should summarise and report important quality issues (including instances in which acceptable ranges are exceeded, see 3.10.1.3) and the remedial actions taken, and document them in the clinical trial report (see ICH E3).
+QUOTE: document them in the clinical trial report (see ICH E3)
+QCHECK: exact ['PDF 37 / printed 29'] 
+LOC: found PDF 37 / printed 29 .. PDF 37 / printed 29 (276 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.10.1.6 Risk Reporting The sponsor should summarise and report important quality issues (including instances in which acceptable ranges are exceeded, as detailed in section 3.10.1.3) and the remedial actions taken and document them in the clinical trial report (see ICH E3). 
+====================================================================================================
+R1-046 | E6R3 | loc=A1-3.11.1 | page=printed 29 / PDF 37
+PARA: Quality assurance should be applied throughout the trial, implementing risk-based strategies to identify potential or actual causes of serious noncompliance with the protocol, GCP and applicable regulatory requirements to enable their corrective and preventive actions.
+QUOTE: implementing risk-based strategies to identify potential or actual causes
+QCHECK: exact ['PDF 37 / printed 29'] 
+LOC: found PDF 37 / printed 29 .. PDF 37 / printed 29 (319 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.11.1 Quality Assurance Quality assurance should be applied throughout the clinical trial and includes implementing risk-based strategies to identify potential or actual causes of serious noncompliance with the protocol, GCP and/or applicable regulatory requirements to enable their corrective and preventive actions. 
+====================================================================================================
+R1-047 | E6R3 | loc=A1-3.11.3 | page=printed 30 / PDF 38
+PARA: Quality control should be applied using a risk-based approach at each stage of data handling; monitoring and data management are the main QC activities, which can extend to facilities outside investigator sites (e.g. central image reading).
+LOC: found PDF 38 / printed 30 .. PDF 38 / printed 30 (446 chars) 
+  PASSAGE: 3.11.3 Quality Control Quality control should be applied using a risk-based approach to each stage of the data handling to ensure that data are reliable and have been processed correctly. Within clinical trials, monitoring and data management processes are the main quality control activities. Where appropriate, quality control activities may also be applied to facilities outside of investigator sites (e.g., central image reading facilities). 
+====================================================================================================
+R1-048 | E6R3 | loc=A1-3.11.4 | page=printed 30-31 / PDF 38-39
+PARA: Monitoring is a principal QC activity; it should be performed by persons not involved in the clinical conduct of the trial at the site being monitored, the monitoring approach should be included in the monitoring plan, and the sponsor should determine the extent and nature of monitoring based on identified risks.
+LOC: found PDF 38 / printed 30 .. PDF 43 / printed 35 (11099 chars) 
+  PASSAGE-HEAD: 3.11.4 Monitoring The aim of monitoring is to ensure the participants' rights, safety and well-being and the reliability of trial results as the trial progresse
+  WINDOW 0.55 @ PDF 38 / printed 30:  analytics and visits to institutional facilities undertaking trial-related activities. Some of these monitoring activities (e.g., centralised monitoring) may be conducted by different methods and persons with different roles (e.g., data scientist). However, monitoring should be performed by persons not involved in the clinical conduct of the trial at the site being monitored. The monitoring approach should consider the activities and services involved, including decentralised settings, and be included in the monitoring plan. Monitors and other trial staff should adhere to data protection and confidentiality requirements in accordance with applicable regulatory requirements, institution policy and established data security standards. Monitoring may include site monitoring (performed on-site and/or remotely) and centralised monitoring, depending on the monitoring strategy and the design o
+====================================================================================================
+R1-049 | E6R3 | loc=A1-3.11.4.1(a) | page=printed 31 / PDF 39
+PARA: Investigator site monitoring (including pharmacies and local laboratories as appropriate) should have its frequency determined based on identified risks, and activities and frequency should be modified using knowledge gained.
+QUOTE: be determined based on identified risks
+QCHECK: exact ['PDF 39 / printed 31'] 
+LOC: found PDF 39 / printed 31 .. PDF 39 / printed 31 (364 chars) 
+  quote inside loc passage: True
+  PASSAGE: (a) Monitoring may be performed in relation to the clinical trial activities at the investigator sites (including their pharmacies and local laboratories, as appropriate). The frequency of monitoring activities should also be determined based on identified risks. Monitoring activities and their frequency should be modified as appropriate using knowledge gained. 
+====================================================================================================
+R1-050 | E6R3 | loc=A1-3.11.4.2(a) | page=printed 31 / PDF 39
+PARA: Centralised monitoring is an evaluation of accumulated data, performed in a timely manner by the sponsor's qualified and trained persons (e.g. medical monitor, data scientist/data manager, biostatistician).
+QUOTE: Centralised monitoring is an evaluation of accumulated data
+QCHECK: exact ['PDF 39 / printed 31'] 
+LOC: found PDF 39 / printed 31 .. PDF 39 / printed 31 (213 chars) 
+  quote inside loc passage: True
+  PASSAGE: (a) Centralised monitoring is an evaluation of accumulated data, performed in a timely manner, by the sponsor's qualified and trained persons (e.g., medical monitor, data scientist/data manager, biostatistician). 
+====================================================================================================
+R1-051 | E6R3 | loc=A1-3.11.4.2(b) | page=printed 31 / PDF 39
+PARA: Centralised monitoring can complement and reduce site monitoring or be used on its own; centralised data analytics can help identify systemic or site-specific issues, including protocol noncompliance and potentially unreliable data.
+QUOTE: including protocol noncompliance and potentially unreliable data
+QCHECK: exact ['PDF 39 / printed 31'] 
+LOC: found PDF 39 / printed 31 .. PDF 39 / printed 31 (333 chars) 
+  quote inside loc passage: True
+  PASSAGE: (b) Centralised monitoring processes provide additional monitoring capabilities that can complement and reduce the extent and/or frequency of site monitoring or be used on its own. Use of centralised data analytics can help identify systemic or site-specific issues, including protocol noncompliance and potentially unreliable data. 
+====================================================================================================
+R1-052 | E6R3 | loc=A1-3.11.4.2(c) | page=printed 31 / PDF 39
+PARA: Centralised monitoring may support the selection of sites and/or processes for targeted investigator site monitoring.
+LOC: found PDF 39 / printed 31 .. PDF 39 / printed 31 (109 chars) 
+  PASSAGE: (c) Centralised monitoring may support the selection of sites and/or processes for targeted site monitoring. 
+====================================================================================================
+R1-053 | E6R3 | loc=A1-3.11.4.3 | page=printed 31 / PDF 39
+PARA: The sponsor should develop a monitoring plan tailored to identified potential safety risks, risks to data quality and other risks to reliability of results, describing strategy, monitoring activities of all parties, methods, tools and rationale; the plan should focus on aspects that are critical to quality.
+QUOTE: The plan should focus on aspects that are critical to quality.
+QCHECK: exact ['PDF 39 / printed 31'] 
+LOC: found PDF 39 / printed 31 .. PDF 40 / printed 32 (1109 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.11.4.3 Monitoring Plan The sponsor should develop a monitoring plan that is tailored to the identified potential safety risks, the risks to data quality and/o
+  WINDOW 0.57 @ PDF 39 / printed 31: 3.11.4.3 Monitoring Plan The sponsor should develop a monitoring plan that is tailored to the identified potential safety risks, the risks to data quality and/or other risks to the reliability of the trial results. Particular attention should be given to procedures relevant to participant safety and to trial endpoints. The plan should describe the monitoring strategy, the monitoring activities of all the parties involved, the various monitoring methods and tools to be used, and the rationale for their use. The monitoring strategy should ensure appropriate oversight of trial conduct and consider site capabilities and the potential burden. The 
+====================================================================================================
+R1-054 | E6R3 | loc=A1-3.11.4.3 | page=printed 32 / PDF 40
+PARA: Monitoring of important data and processes performed outside the investigator site (e.g. those related to primary and key secondary endpoints or participant safety, such as central image reading or central laboratories) should be addressed in the monitoring plan.
+QUOTE: should be addressed in the monitoring plan
+QCHECK: exact ['PDF 40 / printed 32'] 
+LOC: found PDF 39 / printed 31 .. PDF 40 / printed 32 (1109 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.11.4.3 Monitoring Plan The sponsor should develop a monitoring plan that is tailored to the identified potential safety risks, the risks to data quality and/o
+  WINDOW 1.00 @ PDF 39 / printed 31: d tools to be used, and the rationale for their use. The monitoring strategy should ensure appropriate oversight of trial conduct and consider site capabilities and the potential burden. The plan should focus on aspects that are critical to quality. The monitoring plan should reference the sponsor's applicable policies and procedures. Monitoring of important data and processes (e.g., those related to primary endpoints and key secondary endpoints and processes intended to ensure participant safety) performed outside the investigator site (e.g., central image reading facilities, central laboratories) should be addressed in the monitoring plan. 
+====================================================================================================
+R1-055 | E6R3 | loc=A1-3.11.4.4 | page=printed 32 / PDF 40
+PARA: Persons performing monitoring should follow the sponsor's monitoring plan and applicable monitoring procedures.
+LOC: found PDF 40 / printed 32 .. PDF 40 / printed 32 (143 chars) 
+  PASSAGE: 3.11.4.4 Monitoring Procedures Persons performing monitoring should follow the sponsor's monitoring plan and applicable monitoring procedures. 
+====================================================================================================
+R1-056 | E6R3 | loc=A1-3.11.4.5.1(a) | page=printed 32 / PDF 40
+PARA: The sponsor should maintain communication with the investigator and other trial parties; each site should generally have an assigned monitor as point of contact.
+LOC: found PDF 40 / printed 32 .. PDF 40 / printed 32 (280 chars) 
+  PASSAGE: (a) Establishing and maintaining a line of communication between the sponsor and the investigator and other parties and individuals involved in the trial conduct (e.g., centrally performed activities). In general, each site should have an assigned monitor as their contact point. 
+====================================================================================================
+R1-057 | E6R3 | loc=A1-3.11.4.5.1(b) | page=printed 32 / PDF 40
+PARA: Monitoring activities (per the sponsor's requirements and monitoring plan) include informing the investigator or other parties and individuals involved in the trial of relevant deviations from the protocol, GCP and applicable regulatory requirements.
+QUOTE: relevant deviations from the protocol, GCP and the applicable regulatory requirements
+QCHECK: exact ['PDF 40 / printed 32'] 
+LOC: found PDF 40 / printed 32 .. PDF 40 / printed 32 (393 chars) 
+  quote inside loc passage: True
+  PASSAGE: (b) Informing the investigator or other parties and individuals involved in the trial conduct of relevant deviations from the protocol, GCP and the applicable regulatory requirements and, if necessary, taking appropriate action designed to prevent recurrence of the detected deviations. Important deviations should be highlighted and should be the focus of remediation efforts as appropriate. 
+====================================================================================================
+R1-058 | E6R3 | loc=A1-3.11.4.5.1(b) | page=printed 32 / PDF 40
+PARA: Monitoring should, if necessary, include taking appropriate action designed to prevent recurrence of the detected deviations.
+LOC: found PDF 40 / printed 32 .. PDF 40 / printed 32 (393 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-059 | E6R3 | loc=A1-3.11.4.5.1(b) | page=printed 32 / PDF 40
+PARA: Important deviations should be highlighted and should be the focus of remediation efforts.
+QUOTE: Important deviations should be highlighted and should be the focus of remediation efforts
+QCHECK: exact ['PDF 40 / printed 32'] 
+LOC: found PDF 40 / printed 32 .. PDF 40 / printed 32 (393 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-060 | E6R3 | loc=A1-3.11.4.5.1(c) | page=printed 32 / PDF 40
+PARA: Monitoring includes informing the investigator and others of errors or omissions in source records or data acquisition tools and ensuring corrections, additions or deletions are dated, explained if necessary and their approval documented.
+LOC: found PDF 40 / printed 32 .. PDF 40 / printed 32 (343 chars) 
+  PASSAGE: (c) Informing the investigator or other parties and individuals involved in the trial conduct of entry errors or omissions in source record(s) and/or data acquisition tools and ensuring that corrections, additions or deletions are made as appropriate, dated and explained (if necessary) and that approval of the change is properly documented. 
+====================================================================================================
+R1-061 | E6R3 | loc=A1-3.11.4.5.1(d) | page=printed 32 / PDF 40
+PARA: Actions taken in relation to deviations, errors or omissions should be proportionate to their importance.
+QUOTE: should be proportionate to their importance
+QCHECK: exact ['PDF 40 / printed 32'] 
+LOC: found PDF 40 / printed 32 .. PDF 40 / printed 32 (114 chars) 
+  quote inside loc passage: True
+  PASSAGE: (d) Actions taken in relation to the deviations, errors or omissions should be proportionate to their importance. 
+====================================================================================================
+R1-062 | E6R3 | loc=A1-3.11.4.5.2(b) | page=printed 32-33 / PDF 40-41
+PARA: Monitoring includes confirming that site staff are informed about and follow the current approved protocol and other protocol-related documents.
+QUOTE: follow the current approved protocol and other protocol-related documents
+QCHECK: exact ['PDF 41 / printed 33'] 
+LOC: found PDF 40 / printed 32 .. PDF 41 / printed 33 (421 chars) 
+  quote inside loc passage: True
+  PASSAGE: (b) Confirming, with consideration of their delegated activities and experience, that the investigator, investigator site staff, and other parties and individuals involved in the trial conduct are adequately informed about the trial and follow the current approved protocol and other protocol-related documents, such as the current Investigator's Brochure and relevant information related to the investigational product. 
+====================================================================================================
+R1-063 | E6R3 | loc=A1-3.11.4.5.2(i) | page=printed 33 / PDF 41
+PARA: Monitoring includes confirming that the investigator provides the required reports, notifications or other information in accordance with the protocol and trial procedures.
+QUOTE: Confirming that the investigator provides the required reports, notifications or other information
+QCHECK: exact ['PDF 41 / printed 33'] 
+LOC: found PDF 41 / printed 33 .. PDF 41 / printed 33 (157 chars) 
+  quote inside loc passage: True
+  PASSAGE: (i) Confirming that the investigator provides the required reports, notifications or other information in accordance with the protocol and trial procedures. 
+====================================================================================================
+R1-064 | E6R3 | loc=A1-3.11.4.5.4(a) | page=printed 34 / PDF 42
+PARA: Monitoring of trial data includes verifying that the investigator is enrolling only eligible trial participants.
+QUOTE: Verifying that the investigator is enrolling only eligible trial participants
+QCHECK: exact ['PDF 42 / printed 34'] 
+LOC: found PDF 42 / printed 34 .. PDF 42 / printed 34 (83 chars) 
+  quote inside loc passage: True
+  PASSAGE: (a) Verifying that the investigator is enrolling only eligible trial participants. 
+  DOCBEST-OUTSIDE 0.90 @ PDF 42 / printed 34: (vii) Where product available on the market is dispensed and used in accordance with applicable regulatory requirements, some of the previously outlined considerations may not be applicable. 3.11.4.5.4 Monitoring of Clinical Trial Data (a) Verifying that the investigator is enrolling only eligible trial participants.
+====================================================================================================
+R1-065 | E6R3 | loc=A1-3.11.4.5.4(b)(ii) | page=printed 34 / PDF 42
+PARA: Monitoring of trial data (on-site and/or centralised, possibly sample-based) should identify missing data, inconsistent data, data outliers, unexpected lack of variability and protocol deviations.
+QUOTE: Identify missing data, inconsistent data, data outliers, unexpected lack of variability and protocol deviations
+QCHECK: exact ['PDF 42 / printed 34'] 
+LOC: found PDF 42 / printed 34 .. PDF 42 / printed 34 (466 chars) subitem (ii) not found at line start
+  quote inside loc passage: False
+  PASSAGE: (b) Checking the accuracy, completeness and consistency of the reported trial data against the source records and other trial-related records and whether these were reported in a timely manner. This can be done on the basis of using samples and supported by data analytics, as appropriate. The sample size and the types of data or records may need adjustment based on previous monitoring results or other indications of insufficient data quality. Monitoring should: 
+  DOCBEST-OUTSIDE 0.65 @ PDF 42 / printed 34: (i) Verify that the data required by the protocol and identified as data of higher criticality in the monitoring plan are consistent with the source; (ii) Identify missing data, inconsistent data, data outliers, unexpected lack of variability and protocol deviations;
+====================================================================================================
+R1-066 | E6R3 | loc=A1-3.11.4.5.4(c) | page=printed 34 / PDF 42
+PARA: Monitoring of trial data should identify significant errors in data collection and reporting at a site or across sites, potential data manipulation and data integrity problems.
+LOC: found PDF 42 / printed 34 .. PDF 42 / printed 34 (152 chars) 
+  PASSAGE: (c) Identifying significant errors in data collection and reporting at a site or across sites, potential data manipulation and data integrity problems. 
+====================================================================================================
+R1-067 | E6R3 | loc=A1-3.11.4.6(a) | page=printed 34 / PDF 42
+PARA: Reports of monitoring activities should include a summary of what was reviewed, a description of significant findings, conclusions and actions required to resolve them and follow-up on their resolution including items not resolved in previous reports; content and frequency are set in sponsor procedures.
+QUOTE: a description of significant findings, conclusions and actions required to resolve them
+QCHECK: exact ['PDF 42 / printed 34'] 
+LOC: found PDF 42 / printed 34 .. PDF 43 / printed 35 (384 chars) 
+  quote inside loc passage: True
+  PASSAGE: (a) Reports of monitoring activities should include a summary of what was reviewed, a description of significant findings, conclusions and actions required to resolve them and follow-up on their resolution including those not resolved in previous reports. The requirements of monitoring reports (including their content and frequency) should be described in the sponsor's procedures. 
+====================================================================================================
+R1-068 | E6R3 | loc=A1-3.11.4.6(b) | page=printed 35 / PDF 43
+PARA: Investigator site and centralised monitoring reports should be provided to the appropriate sponsor staff in a timely manner for review and follow-up.
+QUOTE: in a timely manner for review and follow-up
+QCHECK: exact ['PDF 43 / printed 35'] 
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (201 chars) 
+  quote inside loc passage: True
+  PASSAGE: (b) Reports of investigator site and/or centralised monitoring should be provided to the appropriate sponsor staff as described in the sponsor's procedures in a timely manner for review and follow-up. 
+====================================================================================================
+R1-069 | E6R3 | loc=A1-3.11.4.6(c) | page=printed 35 / PDF 43
+PARA: When needed, the monitoring report should describe findings requiring escalation for action and resolution.
+QUOTE: findings requiring escalation for action and resolution
+QCHECK: exact ['PDF 43 / printed 35'] 
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (264 chars) 
+  quote inside loc passage: True
+  PASSAGE: (c) When needed, the report should describe findings requiring escalation for action and resolution. The sponsor should decide on the appropriate action to be taken, and these decisions and the resolution of the actions involved, where needed, should be recorded. 
+  DOCBEST-OUTSIDE 1.00 @ PDF 43 / printed 35: (b) Reports of investigator site and/or centralised monitoring should be provided to the appropriate sponsor staff as described in the sponsor's procedures in a timely manner for review and follow-up. (c) When needed, the report should describe findings requiring escalation for action and resolution.
+====================================================================================================
+R1-070 | E6R3 | loc=A1-3.11.4.6(c) | page=printed 35 / PDF 43
+PARA: The sponsor should decide on the appropriate action to be taken on escalated findings; decisions and the resolution of actions should be documented where needed.
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (264 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-071 | E6R3 | loc=A1-3.12.1 | page=printed 35 / PDF 43
+PARA: Noncompliance with the protocol, SOPs, GCP and/or applicable regulatory requirements by an investigator/institution or by member(s) of the sponsor's staff should lead to appropriate and proportionate action by the sponsor to secure compliance.
+QUOTE: should lead to appropriate and proportionate action by the sponsor to secure compliance
+QCHECK: exact ['PDF 43 / printed 35'] 
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (253 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.12.1 Noncompliance with the protocol, SOPs, GCP and/or applicable regulatory requirement(s) by an investigator/institution or by member(s) of the sponsor's staff should lead to appropriate and proportionate action by the sponsor to secure compliance. 
+====================================================================================================
+R1-072 | E6R3 | loc=A1-3.12.2 | page=printed 35 / PDF 43
+PARA: If noncompliance significantly affects or has the potential to significantly affect participant rights, safety or well-being or the reliability of trial results, the sponsor should perform a root cause analysis.
+QUOTE: perform a root cause analysis, implement appropriate corrective and preventive actions
+QCHECK: exact ['PDF 43 / printed 35'] 
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (728 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.12.2 If noncompliance that significantly affects or has the potential to significantly affect the rights, safety or well-being of trial participant(s) or the reliability of trial results is discovered, the sponsor should perform a root cause analysis, implement appropriate corrective and preventive actions and confirm their adequacy unless otherwise justified. Where the sponsor identifies issues that are likely to significantly impact the rights, safety or well-being of the trial participant(s) or the reliability of trial results (i.e., serious noncompliance), the sponsor should notify the regulatory authority and/or IRB/IEC, in accordance with applicable regulatory requirements, and/or investigator, as appropriate. 
+====================================================================================================
+R1-073 | E6R3 | loc=A1-3.12.2 | page=printed 35 / PDF 43
+PARA: For such noncompliance the sponsor should implement appropriate corrective and preventive actions and confirm their adequacy, unless otherwise justified.
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (728 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-074 | E6R3 | loc=A1-3.12.2 | page=printed 35 / PDF 43
+PARA: Serious noncompliance is described as issues likely to significantly impact the rights, safety or well-being of trial participants or the reliability of trial results.
+QUOTE: likely to significantly impact the rights, safety or well-being
+QCHECK: exact ['PDF 43 / printed 35'] 
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (728 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-075 | E6R3 | loc=A1-3.12.2 | page=printed 35 / PDF 43
+PARA: Where the sponsor identifies serious noncompliance, it should notify the regulatory authority and/or IRB/IEC in accordance with applicable regulatory requirements, and/or the investigator, as appropriate.
+QUOTE: (i.e., serious noncompliance), the sponsor should notify the
+QCHECK: exact ['PDF 43 / printed 35'] 
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (728 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-076 | E6R3 | loc=A1-3.12.3 | page=printed 35 / PDF 43
+PARA: If significant noncompliance by an investigator/institution or service provider persists despite efforts at remediation, the sponsor should consider terminating that party's participation in the trial.
+QUOTE: should consider terminating the investigator’s/institution’s or service provider’s participation
+QCHECK: exact ['PDF 43 / printed 35'] 
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (531 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.12.3 If significant noncompliance is identified on the part of an investigator/institution or service provider that persists despite efforts at remediation, the sponsor should consider terminating the investigator's/institution's or service provider's participation in the trial. In these circumstances, the sponsor should promptly notify the regulatory authority(ies) and IRB/IEC of the serious noncompliance, as appropriate, and take actions to minimise the impact on the trial participants and the reliability of the results. 
+====================================================================================================
+R1-077 | E6R3 | loc=A1-3.12.3 | page=printed 35 / PDF 43
+PARA: In that case the sponsor should promptly notify the regulatory authority(ies) and IRB/IEC of the serious noncompliance, as appropriate.
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (531 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-078 | E6R3 | loc=A1-3.12.3 | page=printed 35 / PDF 43
+PARA: The sponsor should also take action to minimise the impact on trial participants and on the reliability of trial results.
+LOC: found PDF 43 / printed 35 .. PDF 43 / printed 35 (531 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-079 | E6R3 | loc=A1-3.13.3 | page=printed 36 / PDF 44
+PARA: The sponsor should take prompt action to address immediate hazards to participants, determine the causes of the hazard and take appropriate remedial actions.
+QUOTE: take prompt action to address immediate hazards to participants
+QCHECK: exact ['PDF 44 / printed 36'] 
+LOC: found PDF 44 / printed 36 .. PDF 45 / printed 37 (589 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.13.3 Managing an Immediate Hazard The sponsor should take prompt action to address immediate hazards to participants. The sponsor should determine the causes of the hazard and based on this, take appropriate remedial actions. The sponsor should consider whether the protocol requires amendment in response to an immediate hazard. The information on the immediate hazard, if required, and any subsequent protocol amendment should be submitted to the IRB/IEC and/or regulatory authorities by the investigator/institution or sponsor (in accordance with applicable regulatory requirements). 
+====================================================================================================
+R1-080 | E6R3 | loc=A1-3.13.3 | page=printed 37 / PDF 45
+PARA: The sponsor should consider whether the protocol requires amendment in response to an immediate hazard; the information on the immediate hazard, if required, and any subsequent amendment should be submitted to the IRB/IEC and/or regulatory authorities by the investigator/institution or sponsor per applicable regulatory requirements.
+LOC: found PDF 44 / printed 36 .. PDF 45 / printed 37 (589 chars) 
+  PASSAGE: (as above)
+====================================================================================================
+R1-081 | E6R3 | loc=A1-3.16.1(b) | page=printed 39 / PDF 47
+PARA: The sponsor should apply QC to the relevant stages of data handling and focus QA and QC activities, including data review, on data of higher criticality and relevant metadata.
+LOC: found PDF 47 / printed 39 .. PDF 47 / printed 39 (322 chars) 
+  PASSAGE: (b) The sponsor should apply quality control to the relevant stages of data handling to ensure that the data are of sufficient quality to generate reliable results. The sponsor should focus their quality assurance and quality control activities, including data review, on data of higher criticality and relevant metadata. 
+====================================================================================================
+R1-082 | E6R3 | loc=A1-3.16.1(w) | page=printed 41 / PDF 49
+PARA: The sponsor should have processes and procedures for reporting incidents (including security breaches) that have a significant impact on trial data to relevant parties, regulatory authorities being named among them.
+QUOTE: incidents (including security breaches) that have a significant impact on the trial data
+QCHECK: exact ['PDF 49 / printed 41'] 
+LOC: found PDF 49 / printed 41 .. PDF 49 / printed 41 (221 chars) 
+  quote inside loc passage: True
+  PASSAGE: (w) The sponsor should have processes and procedures in place for reporting to relevant parties, including regulatory authorities, incidents (including security breaches) that have a significant impact on the trial data. 
+====================================================================================================
+R1-083 | E6R3 | loc=A1-3.16.1(x)(ix) | page=printed 42-43 / PDF 50-51
+PARA: For all computerised systems, the sponsor should ensure a process for service providers and investigator(s)/institution(s) to inform the sponsor of incidents that could potentially constitute a serious noncompliance with the protocol, trial procedures, applicable regulatory requirements or GCP (see 3.12).
+QUOTE: a process in place for service providers and investigator(s)/institution(s)
+QCHECK: exact ['PDF 50 / printed 42'] 
+LOC: found PDF 49 / printed 41 .. PDF 49 / printed 41 (114 chars) subitem (ix) not found at line start
+  quote inside loc passage: False
+  PASSAGE: (x) When using computerised systems in a clinical trial, the sponsor should: For systems deployed by the sponsor: 
+  DOCBEST-OUTSIDE 0.92 @ PDF 50 / printed 42: For all systems: (ix) Ensure that there is a process in place for service providers and investigator(s)/institution(s) to inform the sponsor of incidents that could potentially constitute a serious noncompliance with the clinical trial protocol, trial procedures, applicable regulatory requirements or GCP in accordance with section 3.12.
+====================================================================================================
+R1-084 | E6R3 | loc=A1-3.16.2(d) | page=printed 43 / PDF 51
+PARA: Criteria for inclusion or exclusion of trial participants from any analysis set should be pre-defined (e.g. in the protocol or statistical analysis plan), and the rationale for excluding any participant or data point clearly described and documented.
+QUOTE: criteria for inclusion or exclusion of trial participants
+QCHECK: exact ['PDF 51 / printed 43'] 
+LOC: found PDF 51 / printed 43 .. PDF 51 / printed 43 (311 chars) 
+  quote inside loc passage: True
+  PASSAGE: (d) The sponsor should ensure that the criteria for inclusion or exclusion of trial participants from any analysis set is pre-defined (e.g., in the protocol or the statistical analysis plan). The rationale for exclusion for any participant (or particular data point) should be clearly described and documented. 
+====================================================================================================
+R1-085 | E6R3 | loc=A1-3.16.3(a) | page=printed 43 / PDF 51
+PARA: The sponsor (or subsequent data owner) should retain the sponsor-specific essential records in accordance with applicable regulatory requirements (see Appendix C).
+LOC: found PDF 51 / printed 43 .. PDF 52 / printed 44 (207 chars) 
+  PASSAGE: (a) The sponsor (or subsequent owners of the data) should retain the sponsor- specific essential records pertaining to the trial in accordance with the applicable regulatory requirement(s) (see Appendix C). 
+====================================================================================================
+R1-086 | E6R3 | loc=A2-2.4 | page=printed 55 / PDF 63
+PARA: Investigator oversight should be proportionate to the importance of the data being collected and to the risks to participant rights, safety and well-being and data reliability; it may range from direct supervision to review of essential records, in person or via remote communication.
+QUOTE: proportionate to the importance of the data being collected
+QCHECK: exact ['PDF 10 / printed 2'] 
+LOC: found PDF 63 / printed 55 .. PDF 64 / printed 56 (2790 chars) 
+  quote inside loc passage: False
+  PASSAGE-HEAD: 2.4 Investigator Oversight The investigator should maintain appropriate and proportionate oversight of trial-related activities to ensure the rights, safety and
+  WINDOW 0.55 @ PDF 63 / printed 55: vel of investigator oversight should depend on the nature of the trial-related activities and should be proportionate to the importance of the data being collected and the risk to trial participant rights, safety and well-being and data reliability. An appropriate level of oversight is context-dependent (e.g., depending on trial characteristics, such as trial design, trial population, investigational product and data sources). An appropriate level of oversight may range from direct supervision to less intensive oversight, whether in person or via remote communication methods (e.g., video, telephone or email), to only the review of essential records (including source records). 2.4.1. Investigator Oversight of Healthcare Professionals Conducting Trial Activities Within Usual Clinical Practice Healthcare professionals may be involved in performing trial-related activities that are part of u
+====================================================================================================
+R1-087 | E6R3 | loc=A2-2.4.1 | page=printed 56 / PDF 64
+PARA: Where healthcare professionals conduct trial activities within usual clinical practice, the protocol should describe these activities and appropriate arrangements should cover information sharing, record retention, privacy and data integrity; investigator oversight should be proportionate to data criticality and ensure that resulting records meet the relevant protocol requirements.
+LOC: found PDF 64 / printed 56 .. PDF 64 / printed 56 (1866 chars) 
+  PASSAGE-HEAD: 2.4.1. Investigator Oversight of Healthcare Professionals Conducting Trial Activities Within Usual Clinical Practice Healthcare professionals may be involved in
+  WINDOW 0.53 @ PDF 64 / printed 56: linical practice and knowledge of the protocol, investigator's brochure or other trial-related document is required, delegated healthcare professionals who have been appropriately trained should perform these activities (see Annex 1, section 2.3.1). In either case mentioned above, the level of investigator oversight should be proportionate to the criticality of data to participant protection and the reliability of the trial results. Regardless of whether healthcare professionals involved in the trial are arranged by the sponsor or investigator, such oversight should ensure that the resulting records meet the relevant requirements of the protocol and thereby ensure reliable trial results, trial participant protection and appropriate decision making. 
+====================================================================================================
+R1-088 | E6R3 | loc=A2-3.2.2 | page=printed 57 / PDF 65
+PARA: Sponsors considering pragmatic elements should assess whether the approach is fit for purpose and complies with applicable regulatory requirements, and ensure the protocol clearly describes how, by whom and under what circumstances these activities will be performed.
+LOC: found PDF 65 / printed 57 .. PDF 65 / printed 57 (578 chars) 
+  PASSAGE: 3.2.2 Sponsors considering incorporating trial-related activities that are part of usual clinical practice (i.e., pragmatic elements) should assess whether such an approach is fit for purpose for use in the trial and complies with applicable regulatory requirements. Where such activities are incorporated in the trial, sponsors should ensure that the protocol clearly describes how, by whom, and under what circumstances these trial-related activities will be performed to ensure these activities are well understood and appropriately implemented (see Annex 2, section 2.4.1). 
+====================================================================================================
+R1-089 | E6R3 | loc=A2-3.8 | page=printed 62 / PDF 70
+PARA: Sponsor oversight should be proportionate to the potential impact on participant protection and reliability of results; quality control and assurance should be customised to the trial and its critical to quality factors and identified risks.
+QUOTE: specifically customised to the clinical trial and its critical to quality factors
+QCHECK: exact ['PDF 70 / printed 62'] 
+LOC: found PDF 70 / printed 62 .. PDF 70 / printed 62 (1539 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.8 Sponsor Oversight Sponsor oversight may be more complex depending on the wide range of methodological approaches to the trial design and conduct, and the nu
+  WINDOW 0.95 @ PDF 70 / printed 62: ure that there are processes in place, including clear lines of communication, to provide an appropriate level of oversight such that the participants' rights, safety and well-being are protected, and the reliability of the trial results is ensured. Sponsor oversight also involves, but is not limited to, the implementation of quality control and assurance measures specifically customised to the clinical trial and its critical to quality factors and identified risks. These measures should be implemented in a manner which is proportionate to the potential impact on the protection of participants and/or the reliability of the trial results. Sponsors should maintain appropriate oversight of service providers including ensuring maintenance of their essential records (see Annex 1, sections 3.9, 3.10 and 3.11, and Appendix C). When a sponsor arranges trial-related activities which are under the
+====================================================================================================
+R1-090 | E6R3 | loc=A2-3.8 | page=printed 62 / PDF 70
+PARA: Sponsors should maintain appropriate oversight of service providers, including of their essential records; where the sponsor arranges activities under investigator responsibility (e.g. home nursing), the investigator retains the ability to decide whether the proposed provider is appropriate.
+LOC: found PDF 70 / printed 62 .. PDF 70 / printed 62 (1539 chars) 
+  PASSAGE-HEAD: 3.8 Sponsor Oversight Sponsor oversight may be more complex depending on the wide range of methodological approaches to the trial design and conduct, and the nu
+  WINDOW 0.76 @ PDF 70 / printed 62: e clinical trial and its critical to quality factors and identified risks. These measures should be implemented in a manner which is proportionate to the potential impact on the protection of participants and/or the reliability of the trial results. Sponsors should maintain appropriate oversight of service providers including ensuring maintenance of their essential records (see Annex 1, sections 3.9, 3.10 and 3.11, and Appendix C). When a sponsor arranges trial-related activities which are under the responsibility of the investigator (e.g., home nursing), the sponsor should ensure that the service providers are suitable to conduct this activity (see Annex 1, section 3.6.5). In such circumstances, the investigator retains the ability to make the decision on the appropriateness of the proposed service provider and is responsible for the oversight of their activities (see Annex 1, section 2
+====================================================================================================
+R1-091 | E6R3 | loc=P6.2 | page=printed 5 / PDF 13
+PARA: Critical to quality factors are attributes of a trial that are fundamental to the protection of participants, the reliability and interpretability of the trial results and the decisions made based on those results.
+QUOTE: attributes of a trial that are fundamental to the protection of participants
+QCHECK: exact ['PDF 13 / printed 5'] 
+LOC: found PDF 13 / printed 5 .. PDF 13 / printed 5 (445 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-092 | E6R3 | loc=A1-2.10.6 | page=printed 20 / PDF 28
+PARA: The investigator should ensure that the investigational product(s) are used only in accordance with the approved protocol.
+QUOTE: used only in accordance with the approved protocol
+QCHECK: exact ['PDF 28 / printed 20'] 
+LOC: found PDF 28 / printed 20 .. PDF 28 / printed 20 (130 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.10.6 The investigator should ensure that the investigational product(s) are used only in accordance with the approved protocol. 
+====================================================================================================
+R1-093 | E6R3 | loc=A1-2.11 | page=printed 21 / PDF 29
+PARA: The investigator should follow the randomisation procedures, break the code only in accordance with the protocol, and promptly document and explain to the sponsor any premature unblinding (e.g. accidental, emergency, due to an SAE).
+QUOTE: promptly document and explain to the sponsor any premature unblinding
+QCHECK: exact ['PDF 29 / printed 21'] 
+LOC: found PDF 29 / printed 21 .. PDF 29 / printed 21 (702 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.11 Randomisation Procedures and Unblinding The investigator should follow the trial's randomisation procedures, if any, and, in the case of an investigator-blinded trial, should ensure that the treatment randomisation code is broken only in accordance with the protocol. In the case of an emergency, to protect participant safety, the investigator should be prepared and capable from the start of the trial to perform unblinding without undue delay and hindrance. The investigator should promptly document and explain to the sponsor any premature unblinding (e.g., accidental unblinding, emergency unblinding to protect trial participant, unblinding due to an SAE) of the investigational product(s). 
+====================================================================================================
+R1-094 | E6R3 | loc=A1-2.12.3 | page=printed 21 / PDF 29
+PARA: The investigator should be provided with timely access to data by the sponsor and is responsible for timely review of data, including relevant external data that can affect e.g. participant eligibility, treatment or safety.
+QUOTE: be responsible for the timely review of data
+QCHECK: exact ['PDF 29 / printed 21'] 
+LOC: found PDF 29 / printed 21 .. PDF 29 / printed 21 (534 chars) 
+  quote inside loc passage: True
+  PASSAGE: 2.12.3 The investigator should be provided with timely access to data by the sponsor (see section 3.16.1(k)) and be responsible for the timely review of data, including relevant data from external sources that can have an impact on, for example, participant eligibility, treatment or safety (e.g., central laboratory data, centrally read imaging data, other institution's records and, if appropriate, electronic patient-reported outcome (ePRO) data). The protocol may provide exceptions for access, for instance, to protect blinding. 
+====================================================================================================
+R1-095 | E6R3 | loc=A1-2.12.10(e) | page=printed 22 / PDF 30
+PARA: When using computerised systems, the investigator/institution should ensure that incidents in their use and operation which, in its judgement, may have a significant and/or persistent impact on trial data or system security are reported to the sponsor and, where applicable, to the IRB/IEC.
+QUOTE: are reported to the sponsor and, where applicable, to the IRB/IEC
+QCHECK: exact ['PDF 30 / printed 22'] 
+LOC: found PDF 30 / printed 22 .. PDF 30 / printed 22 (281 chars) 
+  quote inside loc passage: True
+  PASSAGE: (e) Ensure that incidents in the use and operation of computerised systems, which in the investigator's/institution's judgement may have a significant and/or persistent impact on the trial data or system security, are reported to the sponsor and, where applicable, to the IRB/IEC. 
+====================================================================================================
+R1-096 | E6R3 | loc=A1-3.1.4 | page=printed 23 / PDF 31
+PARA: The sponsor should ensure all aspects of the trial are operationally feasible and avoid unnecessary complexity, procedures and data collection; protocols, data acquisition tools and other operational documents should be fit for purpose, clear, concise and consistent.
+QUOTE: should avoid unnecessary complexity, procedures and data collection
+QCHECK: exact ['PDF 31 / printed 23'] 
+LOC: found PDF 31 / printed 23 .. PDF 32 / printed 24 (369 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.1.4 The sponsor should ensure that all aspects of the trial are operationally feasible and should avoid unnecessary complexity, procedures and data collection. Protocols, data acquisition tools and other operational documents should be fit for purpose, clear, concise and consistent. The sponsor should not place unnecessary burden on participants and investigators. 
+====================================================================================================
+R1-097 | E6R3 | loc=A1-3.3 | page=printed 24 / PDF 32
+PARA: Prior to initiating clinical trial activities, the sponsor should determine the roles and allocate trial-related activities accordingly.
+QUOTE: the sponsor should determine the roles and allocate their trial-related activities accordingly
+QCHECK: exact ['PDF 32 / printed 24'] 
+LOC: found PDF 32 / printed 24 .. PDF 32 / printed 24 (172 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.3 Allocation of Activities Prior to initiating clinical trial activities, the sponsor should determine the roles and allocate their trial-related activities accordingly. 
+====================================================================================================
+R1-098 | E6R3 | loc=A1-3.6.3(a) | page=printed 24 / PDF 32
+PARA: The sponsor should obtain the investigator's/institution's and, where applicable, service provider's agreement to conduct the trial in accordance with the approved protocol and in compliance with GCP and applicable regulatory requirements.
+QUOTE: To conduct the trial in accordance with the approved protocol
+QCHECK: exact ['PDF 32 / printed 24'] 
+LOC: found PDF 32 / printed 24 .. PDF 32 / printed 24 (135 chars) 
+  quote inside loc passage: True
+  PASSAGE: (a) To conduct the trial in accordance with the approved protocol and in compliance with GCP and applicable regulatory requirement(s); 
+  DOCBEST-OUTSIDE 0.88 @ PDF 32 / printed 24: 3.6.3 The sponsor should obtain the investigator's/institution's and, where applicable, service provider's agreements: (a) To conduct the trial in accordance with the approved protocol and in compliance with GCP and applicable regulatory requirement(s);
+====================================================================================================
+R1-099 | E6R3 | loc=A1-3.6.6 | page=printed 25 / PDF 33
+PARA: The sponsor retains ultimate responsibility for transferred activities; any service provider performing trial activities should implement appropriate quality management and report to the sponsor incidents that might impact participant safety and/or trial results.
+QUOTE: report to the sponsor incidents that might have an impact on the safety
+QCHECK: exact ['PDF 33 / printed 25'] 
+LOC: found PDF 33 / printed 25 .. PDF 33 / printed 25 (600 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.6.6 A sponsor may transfer any or all of the sponsor's trial-related activities to a service provider in accordance with applicable regulatory requirements; however, the ultimate responsibility for the sponsor's trial-related activities, including protection of participants' rights, safety and well-being and reliability of the trial data, resides with the sponsor. Any service provider used to perform clinical trial activities should implement appropriate quality management and report to the sponsor incidents that might have an impact on the safety of trial participants and/or trial results. 
+====================================================================================================
+R1-100 | E6R3 | loc=A1-3.17.2(a) | page=printed 44 / PDF 52
+PARA: Whether the trial is completed, prematurely terminated or interim-analysed for submission, the sponsor should ensure clinical trial reports (including interim reports) are prepared and provided to regulatory authorities as required, and that reports in marketing applications meet the standards of ICH E3 or applicable requirements.
+QUOTE: meet the standards of ICH E3
+QCHECK: exact ['PDF 52 / printed 44'] 
+LOC: found PDF 52 / printed 44 .. PDF 52 / printed 44 (610 chars) 
+  quote inside loc passage: True
+  PASSAGE: (a) Whether the trial is completed or prematurely terminated, or an interim analysis is undertaken for regulatory submission, the sponsor should ensure that the clinical trial reports, including interim reports, are prepared and provided to the regulatory authority(ies) as required by the applicable regulatory requirement(s). The sponsor should also ensure that the clinical trial reports in marketing applications meet the standards of ICH E3 or are otherwise in accordance with applicable regulatory requirements. (Note: ICH E3 specifies that abbreviated trial reports may be acceptable in certain cases.) 
+====================================================================================================
+R1-101 | E6R3 | loc=A1-4.2.2 | page=printed 46-47 / PDF 54-55
+PARA: For data of higher criticality, the responsible party should evaluate system metadata so that initial entries and subsequent changes or deletions are documented with reasons where appropriate, ensure audit trails and logs are not disabled and are interpretable, and determine which metadata require review and retention.
+LOC: found PDF 54 / printed 46 .. PDF 55 / printed 47 (1344 chars) 
+  PASSAGE-HEAD: 4.2.2 Relevant Metadata, Including Audit Trails The approach used by the responsible party for implementing, evaluating, accessing, managing and reviewing relev
+  WINDOW 0.37 @ PDF 54 / printed 46: 4.2.2 Relevant Metadata, Including Audit Trails The approach used by the responsible party for implementing, evaluating, accessing, managing and reviewing relevant metadata associated with data of higher criticality should entail: (a) Evaluating the system for the types and content of metadata available to ensure that: (i) Computerised systems maintain logs of user account creation, changes to user roles and permissions and user access; (ii) Systems are designed to permit data changes in such a way that the initial data entry and any subsequent changes or deletions are documented, including, where appropriate, the reason for the change; (iii)
+====================================================================================================
+R1-102 | E6R3 | loc=A1-4.2.3 | page=printed 47 / PDF 55
+PARA: Procedures for review of trial-specific data, audit trails and other relevant metadata should be in place; review should be planned, risk-based, trial-adapted and adjusted with experience.
+QUOTE: Procedures for review of trial-specific data, audit trails and other relevant metadata
+QCHECK: exact ['PDF 55 / printed 47'] 
+LOC: found PDF 55 / printed 47 .. PDF 55 / printed 47 (305 chars) 
+  quote inside loc passage: True
+  PASSAGE: 4.2.3 Review of Data and Metadata Procedures for review of trial-specific data, audit trails and other relevant metadata should be in place. It should be a planned activity, and the extent and nature should be risk-based, adapted to the individual trial and adjusted based on experience during the trial. 
+====================================================================================================
+R1-103 | E6R3 | loc=A1-4.2.4 | page=printed 47 / PDF 55
+PARA: There should be processes to correct data errors that could impact reliability; corrections should be attributed, justified, supported by source records around the time of original entry and performed in a timely manner.
+LOC: found PDF 55 / printed 47 .. PDF 55 / printed 47 (331 chars) 
+  PASSAGE: 4.2.4 Data Corrections There should be processes to correct data errors that could impact the reliability of the trial results. Corrections should be attributed to the person or computerised system making the correction, justified and supported by source records around the time of original entry and performed in a timely manner. 
+====================================================================================================
+R1-104 | E6R3 | loc=A1-4.2.6(b) | page=printed 48 / PDF 56
+PARA: Activities undertaken to finalise data sets prior to analysis should be confirmed and documented in accordance with pre-specified procedures.
+QUOTE: should be confirmed and documented in accordance with pre-specified procedures
+QCHECK: exact ['PDF 56 / printed 48'] 
+LOC: found PDF 56 / printed 48 .. PDF 56 / printed 48 (442 chars) 
+  quote inside loc passage: True
+  PASSAGE: (b) Activities undertaken to finalise the data sets prior to analysis should be confirmed and documented in accordance with pre-specified procedures. These activities may include reconciliation of entered data and data sets or reconciliation of relevant databases, rectification of data errors and, where possible, omissions, medical coding and compilation of and addressing the impact of noncompliance issues, including protocol deviations. 
+====================================================================================================
+R1-105 | E6R3 | loc=A1-4.2.6(b) | page=printed 48 / PDF 56
+PARA: Data finalisation activities may include reconciliation, rectification of data errors and omissions, medical coding, and compilation of and addressing the impact of noncompliance issues, including protocol deviations.
+QUOTE: compilation of and addressing the impact of noncompliance issues, including protocol deviations
+QCHECK: exact ['PDF 56 / printed 48'] 
+LOC: found PDF 56 / printed 48 .. PDF 56 / printed 48 (442 chars) 
+  quote inside loc passage: True
+  PASSAGE: (as above)
+====================================================================================================
+R1-106 | E6R3 | loc=A1-4.2.6(c) | page=printed 48 / PDF 56
+PARA: Data extraction and determination of data analysis sets should take place in accordance with the planned statistical analysis and should be documented.
+LOC: found PDF 56 / printed 48 .. PDF 56 / printed 48 (156 chars) 
+  PASSAGE: (c) Data extraction and determination of data analysis sets should take place in accordance with the planned statistical analysis and should be documented. 
+====================================================================================================
+R1-107 | E6R3 | loc=A1-4.2.7 | page=printed 48 / PDF 56
+PARA: Trial data and relevant metadata should be archived so they remain retrievable and readable and protected from unauthorised access and alteration throughout the retention period.
+LOC: found PDF 56 / printed 48 .. PDF 56 / printed 48 (238 chars) 
+  PASSAGE: 4.2.7 Retention and Access The trial data and relevant metadata should be archived in a way that allows for their retrieval and readability and should be protected from unauthorised access and alterations throughout the retention period. 
+====================================================================================================
+R1-108 | E6R3 | loc=A1-4.3.4(a) | page=printed 49 / PDF 57
+PARA: The responsible party is responsible for the validation status of a computerised system throughout its life cycle; the validation approach should be risk-based, considering intended use, importance of the data and potential impact on participants and reliability of results.
+LOC: found PDF 57 / printed 49 .. PDF 57 / printed 49 (494 chars) 
+  PASSAGE: (a) The responsible party is responsible for the validation status of the system throughout its life cycle. The approach to validation of computerised systems should be based on a risk assessment that considers the intended use of the system; the purpose and importance of the data/record that are collected/generated, maintained and retained in the system; and the potential of the system to affect the well-being, rights and safety of trial participants and the reliability of trial results. 
+====================================================================================================
+R1-109 | E6R3 | loc=AppB-Intro | page=printed 70 / PDF 78
+PARA: Building adaptability into the protocol, for example acceptable ranges for specific protocol provisions, can reduce the number of deviations or the need for amendments; such adaptability should not adversely affect participant safety or scientific validity.
+QUOTE: can reduce the number of deviations
+QCHECK: exact ['PDF 78 / printed 70'] 
+LOC: found PDF 78 / printed 70 .. PDF 78 / printed 70 (1476 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Appendix B. CLINICAL TRIAL PROTOCOL AND PROTOCOL AMENDMENT(S) Clinical trials should be described in a clear, concise and operationally feasible protocol. The p
+  WINDOW 0.89 @ PDF 78 / printed 70: lexity and to mitigate or eliminate important risks to the rights, safety, and well-being of trial participants and the reliability of data. Protocol development processes should incorporate input from relevant interested parties, where appropriate. Building adaptability into the protocol, for example, by including acceptable ranges for specific protocol provisions, can reduce the number of deviations or in some instances the requirement for a protocol amendment. Such adaptability should not adversely affect participant safety or the scientific validity of the trial. For additional information, refer to ICH E8(R1) General Considerations for Clinical Studies, ICH E9 Statistical Principles for Clinical Trials and ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials. The contents of a trial protocol shoul
+====================================================================================================
+R1-110 | E6R3 | loc=AppB-B.2.5 | page=printed 70 / PDF 78
+PARA: The protocol should generally include a statement that the trial will be conducted in compliance with the protocol, GCP and applicable regulatory requirements.
+LOC: found PDF 78 / printed 70 .. PDF 78 / printed 70 (159 chars) 
+  PASSAGE: B.2.5 A statement that the trial will be conducted in compliance with the protocol, Good Clinical Practice (GCP) and the applicable regulatory requirement(s). 
+====================================================================================================
+R1-111 | E6R3 | loc=AppB-B.10.4 | page=printed 73 / PDF 81
+PARA: The protocol should generally describe the selection of participants for the planned analyses, the statistical methods and procedures for handling intercurrent events and missing, unused and spurious data, aligned with target estimands where defined (see ICH E9(R1)).
+LOC: found PDF 81 / printed 73 .. PDF 81 / printed 73 (317 chars) 
+  PASSAGE: B.10.4 The selection of participants to be included in the planned analyses, a description of the statistical methods to be employed and procedures for handling intercurrent events and accounting for missing, unused and spurious data. These should be aligned with the target estimands, when defined (see ICH E9(R1)). 
+====================================================================================================
+R1-112 | E6R3 | loc=AppB-B.12.1 | page=printed 74 / PDF 82
+PARA: The protocol should generally describe identified critical to quality factors, associated risks and risk mitigation strategies, unless documented elsewhere.
+QUOTE: Description of identified critical to quality factors, associated risks and risk mitigation strategies
+QCHECK: exact ['PDF 82 / printed 74'] 
+LOC: found PDF 82 / printed 74 .. PDF 82 / printed 74 (152 chars) 
+  quote inside loc passage: True
+  PASSAGE: B.12.1 Description of identified critical to quality factors, associated risks and risk mitigation strategies in the trial unless documented elsewhere. 
+====================================================================================================
+R1-113 | E6R3 | loc=AppB-B.12.2 | page=printed 74 / PDF 82
+PARA: The protocol should generally include a summary of the monitoring approaches that are part of the quality control process.
+LOC: found PDF 82 / printed 74 .. PDF 82 / printed 74 (113 chars) 
+  PASSAGE: B.12.2 Summary of the monitoring approaches that are part of the quality control process for the clinical trial. 
+====================================================================================================
+R1-114 | E6R3 | loc=AppB-B.12.3 | page=printed 74 / PDF 82
+PARA: The protocol should generally include a description of the process for handling noncompliance with the protocol or GCP.
+QUOTE: Description of the process for the handling of noncompliance with the protocol or GCP.
+QCHECK: exact ['PDF 82 / printed 74'] 
+LOC: found PDF 82 / printed 74 .. PDF 82 / printed 74 (94 chars) 
+  quote inside loc passage: True
+  PASSAGE: B.12.3 Description of the process for the handling of noncompliance with the protocol or GCP. 
+====================================================================================================
+R1-115 | E6R3 | loc=AppC-C.1.3 | page=printed 75 / PDF 83
+PARA: Essential records permit evaluation of investigator and sponsor compliance with GCP and regulations and of result reliability; they are used in investigator and sponsor oversight (including monitoring), audit, inspection and IRB/IEC review; the investigator/institution should have access to, maintain and retain its essential records per applicable regulatory requirements.
+LOC: found PDF 83 / printed 75 .. PDF 83 / printed 75 (1023 chars) 
+  PASSAGE-HEAD: C.1.3 The essential records permit and contribute to the evaluation of the conduct of a trial in relation to the compliance of the investigator and sponsor with
+  WINDOW 0.57 @ PDF 83 / printed 75: C.1.3 The essential records permit and contribute to the evaluation of the conduct of a trial in relation to the compliance of the investigator and sponsor with Good Clinical Practice (GCP) and applicable regulatory requirements and the reliability of the results produced. The essential records are used as part of the investigator oversight and sponsor oversight (including monitoring) of the trial. These records are used by the sponsor's independent audit function and during inspections by regulatory authority(ies) to assess the trial conduct and the reliability of the trial results. Certain essential records may also be reviewed by the insti
+====================================================================================================
+R1-116 | E6R3 | loc=AppC-C.2.3 | page=printed 75 / PDF 83
+PARA: Essential records should be maintained in or referred to from repositories held by the sponsor and the investigator/institution, which may be referred to as trial master file (TMF) and investigator site file (ISF).
+LOC: found PDF 83 / printed 75 .. PDF 83 / printed 75 (354 chars) 
+  PASSAGE: C.2.3 These essential records should be maintained in or referred to from repositories held by the sponsor and by the investigator/institution for their respective records. These repositories may be referred to as a trial master file (TMF). The repository held by the investigator/institution may also be referred to as the investigator site file (ISF). 
+====================================================================================================
+R1-117 | E6R3 | loc=AppC-C.2.5 | page=printed 75-76 / PDF 83-84
+PARA: The sponsor and investigator/institution should ensure essential records are collected and filed in a timely manner.
+LOC: found PDF 83 / printed 75 .. PDF 84 / printed 76 (332 chars) 
+  PASSAGE: C.2.5 The sponsor and investigator/institution should ensure that the essential records are collected and filed in a timely manner, which can greatly assist in the successful management of a trial. Some essential records should generally be in place prior to the start of the trial and may be subsequently updated during the trial. 
+====================================================================================================
+R1-118 | E6R3 | loc=AppC-C.2.6 | page=printed 76 / PDF 84
+PARA: Essential records should be retained complete, readable, readily available and directly accessible on request by regulatory authorities, monitors and auditors; alterations should be traceable.
+LOC: found PDF 84 / printed 76 .. PDF 84 / printed 76 (311 chars) 
+  PASSAGE: C.2.6 The sponsor and investigator/institution should retain the essential records in a way that ensures that they remain complete, readable and readily available and are directly accessible upon request by regulatory authorities, monitors and auditors. Alteration to the essential records should be traceable. 
+====================================================================================================
+R1-119 | E6R3 | loc=AppC-C.3.1(a) | page=printed 77 / PDF 85
+PARA: A record is essential if it is a document submitted to or issued by the regulatory authority or IRB/IEC, including related correspondence and documentation of regulatory decisions or approvals/favourable opinions.
+LOC: found PDF 85 / printed 77 .. PDF 85 / printed 77 (199 chars) 
+  PASSAGE: (a) Is a document that is submitted to or issued by the regulatory authority or IRB/IEC, including related correspondence and those documenting regulatory decisions or approvals/favourable opinions; 
+  DOCBEST-OUTSIDE 0.94 @ PDF 84 / printed 76: An essential record: (a) Is a document that is submitted to or issued by the regulatory authority or IRB/IEC, including related correspondence and those documenting regulatory decisions or approvals/favourable opinions;
+====================================================================================================
+R1-120 | E6R3 | loc=AppC-C.3.1(r) | page=printed 78 / PDF 86
+PARA: A record is essential if it documents sponsor oversight of site selection, monitoring and audit and provides information on arising issues/noncompliance and deviations detected and implementation of corrective and preventative actions.
+QUOTE: arising issues/noncompliance and deviations detected and implementation of corrective and preventative actions
+QCHECK: exact ['PDF 86 / printed 78'] 
+LOC: found PDF 86 / printed 78 .. PDF 86 / printed 78 (261 chars) 
+  quote inside loc passage: True
+  PASSAGE: (r) Documents sponsor oversight of investigator site selection and monitoring and audit of the trial, where appropriate, and provides information on arising issues/noncompliance and deviations detected and implementation of corrective and preventative actions; 
+====================================================================================================
+R1-121 | E6R3 | loc=AppC-C.3.1(s) | page=printed 78 / PDF 86
+PARA: A record is essential if it documents compliance with the protocol and/or procedures for data management, statistical analysis and production of interim and final reports.
+LOC: found PDF 86 / printed 78 .. PDF 86 / printed 78 (176 chars) 
+  PASSAGE: (s) Documents the compliance with the protocol and/or procedures for management and statistical analysis of the data and production of any interim report and the final report; 
+====================================================================================================
+R1-122 | E6R3 | loc=AppC-C.3.2 | page=printed 78-79 / PDF 86-87
+PARA: Trial records listed in the Essential Records Table should be retained when produced; the table is not exhaustive, and some records depend on trial design, conduct and risk-proportionate management (C.3.3); no fixed retention period is given (retention per applicable regulatory requirements).
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  PASSAGE: C.3.2 Applying the criteria in section C.3.1, the trial records that are considered essential are listed in the Essential Records Table, and these should be retained when produced. This table is not an exhaustive list, and other trial records may also be considered essential by the sponsor or the investigator. 
+====================================================================================================
+R1-123 | E6R3 | loc=AppC-C.3.2 | page=printed 81 / PDF 89
+PARA: Essential Records Table row: 'Records and reports of noncompliance including protocol deviations and corrective and preventative actions' - essential and to be retained if produced (not marked as required before trial start).
+QUOTE: Records and reports of noncompliance including protocol deviations and corrective and preventative actions
+QCHECK: exact ['PDF 89 / printed 81'] 
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  quote inside loc passage: False
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.63 @ PDF 89 / printed 81: An asterisk (*) identifies those essential records that should generally be in place prior to the start of the trial (see section C2.5). Documentation of investigational product storage conditions, including during shipment Records of relabelling of investigational product at the investigator site Documentation of investigational product destruction or alternative disposition Emergency decoding pr
+====================================================================================================
+R1-124 | E6R3 | loc=AppC-C.3.2 | page=printed 81 / PDF 89
+PARA: Essential Records Table rows: 'Site monitoring reports (including site selection, initiation, routine and close-out)' and 'Centralised monitoring reports' - essential and to be retained if produced.
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.75 @ PDF 89 / printed 81: An asterisk (*) identifies those essential records that should generally be in place prior to the start of the trial (see section C2.5). Documentation of investigational product storage conditions, including during shipment Records of relabelling of investigational product at the investigator site Documentation of investigational product destruction or alternative disposition Emergency decoding pr
+====================================================================================================
+R1-125 | E6R3 | loc=AppC-C.3.2 | page=printed 81 / PDF 89
+PARA: Essential Records Table row: 'Documentation relating to data finalisation for analysis' (e.g. query resolutions, SAE reconciliation, QC reports, coding completion, output data sets) - essential and to be retained if produced.
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.76 @ PDF 89 / printed 81: An asterisk (*) identifies those essential records that should generally be in place prior to the start of the trial (see section C2.5). Documentation of investigational product storage conditions, including during shipment Records of relabelling of investigational product at the investigator site Documentation of investigational product destruction or alternative disposition Emergency decoding pr
+====================================================================================================
+R1-126 | E6R3 | loc=AppC-C.3.2 | page=printed 81 / PDF 89
+PARA: Essential Records Table row: 'Documentation relating to the statistical considerations and analysis' including analysis sets decisions - essential and to be retained if produced.
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.71 @ PDF 89 / printed 81: An asterisk (*) identifies those essential records that should generally be in place prior to the start of the trial (see section C2.5). Documentation of investigational product storage conditions, including during shipment Records of relabelling of investigational product at the investigator site Documentation of investigational product destruction or alternative disposition Emergency decoding pr
+====================================================================================================
+R1-127 | E6R3 | loc=AppC-C.3.2 | page=printed 81 / PDF 89
+PARA: Essential Records Table row: 'Trial-specific plans (e.g., risk management, monitoring, safety, data management, data validation and statistical analysis) and procedures'; risk management, monitoring, data management and data validation plans are asterisked, i.e. should generally be in place before trial start (C.2.5).
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.81 @ PDF 89 / printed 81: An asterisk (*) identifies those essential records that should generally be in place prior to the start of the trial (see section C2.5). Documentation of investigational product storage conditions, including during shipment Records of relabelling of investigational product at the investigator site Documentation of investigational product destruction or alternative disposition Emergency decoding pr
+====================================================================================================
+R1-128 | E6R3 | loc=AppC-C.3.2 | page=printed 79 / PDF 87
+PARA: Essential Records Table rows: 'Signed protocol and subsequent amendments during the trial' and 'Regulatory authority(ies) authorisation, approval and/or notification of the protocol and of subsequent amendments (where required)' - essential and to be retained.
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.94 @ PDF 87 / printed 79: An asterisk (*) identifies those essential records that should generally be in place prior to the start of the trial (see section C2.5). Investigator's Brochure or basic product information brochure (e.g., summary of product characteristics, package leaflet or labelling)* Signed protocol* and subsequent amendments during the trial Dated, documented approval/favourable opinion of IRB/IEC of informa
+====================================================================================================
+R1-129 | E6R3 | loc=AppC-C.3.2 | page=printed 79 / PDF 87
+PARA: Essential Records Table row: 'Interim (where applicable) and final clinical trial reports' - essential and to be retained.
+LOC: found PDF 86 / printed 78 .. PDF 87 / printed 79 (312 chars) 
+  PASSAGE: (as above)
+  DOCBEST-OUTSIDE 0.91 @ PDF 87 / printed 79: An asterisk (*) identifies those essential records that should generally be in place prior to the start of the trial (see section C2.5). Investigator's Brochure or basic product information brochure (e.g., summary of product characteristics, package leaflet or labelling)* Signed protocol* and subsequent amendments during the trial Dated, documented approval/favourable opinion of IRB/IEC of informa
+====================================================================================================
+R1-130 | E6R3 | loc=GL:Compliance (in relation to trials) | page=printed 84 / PDF 92
+PARA: Compliance in relation to trials means adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements.
+QUOTE: Adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements.
+QCHECK: exact ['PDF 92 / printed 84'] 
+LOC: found PDF 92 / printed 84 .. PDF 99 / printed 91 (15062 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Compliance (in relation to trials) Adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements. Confidentiality Pre
+  WINDOW 0.91 @ PDF 92 / printed 84: Compliance (in relation to trials) Adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements. Confidentiality Prevention of disclosure to other than authorised individuals of a sponsor's proprietary information or of a participant's identity or their confidential information. Coordinating Investigator An investigator assigned the responsibility for the coordination of investigators at different investigator sites participating in a multicentre trial. Computerised Systems Validation A process of establishing and documenting that the specified requirements of a computerised system can be consistent
+====================================================================================================
+R1-131 | E6R3 | loc=GL:Protocol | page=printed 88 / PDF 96
+PARA: The protocol is the document describing objectives, design, methodology, statistical considerations and organisation of a trial; throughout the guideline 'protocol' refers to protocol and protocol amendments.
+QUOTE: the term “protocol” refers to protocol and protocol amendments
+QCHECK: exact ['PDF 96 / printed 88'] 
+LOC: found PDF 96 / printed 88 .. PDF 99 / printed 91 (5509 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Protocol A document that describes the objective(s), design, methodology, statistical considerations and organisation of a trial. The protocol usually also give
+  WINDOW 0.53 @ PDF 96 / printed 88: Protocol A document that describes the objective(s), design, methodology, statistical considerations and organisation of a trial. The protocol usually also gives the background and rationale for the trial, but these could be provided in other protocol referenced documents. Throughout the ICH GCP Guideline, the term "protocol" refers to protocol and protocol amendments. Protocol Amendment A documented description of a change(s) to a protocol. Quality Assurance (QA) All those planned and systematic actions that are established to ensure that the trial is performed and the data are generated, documented (recorded) and reported in compliance with
+====================================================================================================
+R1-132 | E6R3 | loc=GL:Protocol Amendment | page=printed 88 / PDF 96
+PARA: A protocol amendment is a documented description of a change(s) to a protocol.
+QUOTE: A documented description of a change(s) to a protocol.
+QCHECK: exact ['PDF 96 / printed 88'] 
+LOC: found PDF 96 / printed 88 .. PDF 99 / printed 91 (5137 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Protocol Amendment A documented description of a change(s) to a protocol. Quality Assurance (QA) All those planned and systematic actions that are established t
+  WINDOW 1.00 @ PDF 96 / printed 88: Protocol Amendment A documented description of a change(s) to a protocol. Quality Assurance (QA) All those planned and systematic actions that are established to ensure that the trial is performed and the data are generated, documented (recorded) and reported in compliance with GCP and the applicable regulatory requirement(s). Quality Control (QC) The operational techniques and activities undertaken to verify that the requirements for quality of the trial-related activities have been fulfilled. Randomisation The process of deliberately including an element of chance when assigning participants to groups that receive different treatments in or
+====================================================================================================
+R1-133 | E6R3 | loc=GL:Monitoring | page=printed 88 / PDF 96
+PARA: Monitoring is the act of overseeing the progress of a clinical trial and ensuring it is conducted, recorded and reported per the protocol, SOPs, GCP and applicable regulatory requirements.
+LOC: found PDF 96 / printed 88 .. PDF 99 / printed 91 (6150 chars) 
+  PASSAGE-HEAD: Monitoring The act of overseeing the progress of a clinical trial and of ensuring that the clinical trial is conducted, recorded and reported in accordance with
+  WINDOW 1.00 @ PDF 96 / printed 88: Monitoring The act of overseeing the progress of a clinical trial and of ensuring that the clinical trial is conducted, recorded and reported in accordance with the protocol, SOPs, GCP and the applicable regulatory requirement(s). Monitoring Plan A document that describes the strategy, methods, responsibilities and requirements for monitoring the trial. Monitoring Report A documented report following site and/or centralised monitoring activities. Multicentre Trial A clinical trial conducted according to a single protocol but at more than one investigator site. Nonclinical Study Biomedical studies not performed on human participants. Protocol 
+====================================================================================================
+R1-134 | E6R3 | loc=GL:Monitoring Plan | page=printed 88 / PDF 96
+PARA: A monitoring plan is a document that describes the strategy, methods, responsibilities and requirements for monitoring the trial.
+LOC: found PDF 96 / printed 88 .. PDF 99 / printed 91 (5919 chars) 
+  PASSAGE-HEAD: Monitoring Plan A document that describes the strategy, methods, responsibilities and requirements for monitoring the trial. Monitoring Report A documented repo
+  WINDOW 1.00 @ PDF 96 / printed 88: Monitoring Plan A document that describes the strategy, methods, responsibilities and requirements for monitoring the trial. Monitoring Report A documented report following site and/or centralised monitoring activities. Multicentre Trial A clinical trial conducted according to a single protocol but at more than one investigator site. Nonclinical Study Biomedical studies not performed on human participants. Protocol A document that describes the objective(s), design, methodology, statistical considerations and organisation of a trial. The protocol usually also gives the background and rationale for the trial, but these could be provided in oth
+====================================================================================================
+R1-135 | E6R3 | loc=GL:Monitoring Report | page=printed 88 / PDF 96
+PARA: A monitoring report is a documented report following site and/or centralised monitoring activities.
+QUOTE: A documented report following site and/or centralised monitoring activities.
+QCHECK: exact ['PDF 96 / printed 88'] 
+LOC: found PDF 96 / printed 88 .. PDF 99 / printed 91 (5794 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: Monitoring Report A documented report following site and/or centralised monitoring activities. Multicentre Trial A clinical trial conducted according to a singl
+  WINDOW 1.00 @ PDF 96 / printed 88: Monitoring Report A documented report following site and/or centralised monitoring activities. Multicentre Trial A clinical trial conducted according to a single protocol but at more than one investigator site. Nonclinical Study Biomedical studies not performed on human participants. Protocol A document that describes the objective(s), design, methodology, statistical considerations and organisation of a trial. The protocol usually also gives the background and rationale for the trial, but these could be provided in other protocol referenced documents. Throughout the ICH GCP Guideline, the term "protocol" refers to protocol and protocol amend
+====================================================================================================
+R1-136 | E6R3 | loc=GL:Essential Records | page=printed 85-86 / PDF 93-94
+PARA: Essential records are the documents and data (and relevant metadata), in any format, that facilitate trial management and allow evaluation of methods used, factors affecting the trial and actions taken, to determine reliability of results and verify conduct per GCP and regulations (see Appendix C).
+LOC: found PDF 93 / printed 85 .. PDF 99 / printed 91 (12565 chars) 
+  PASSAGE-HEAD: Essential Records Essential records are the documents and data (and relevant metadata), in any format, associated with a clinical trial that facilitate the ongo
+  WINDOW 0.93 @ PDF 93 / printed 85: Essential Records Essential records are the documents and data (and relevant metadata), in any format, associated with a clinical trial that facilitate the ongoing management of the trial and collectively allow the evaluation of the methods used, the factors affecting a trial and the actions taken during the trial conduct to determine the reliability of the trial results produced and the verification that the trial was conducted in accordance with GCP and applicable regulatory requirements (see Appendix C). Good Clinical Practice (GCP) A standard for the planning, initiating, performing, recording, oversight, evaluation, analysis and reporting of clinical trials that provides assurance that the data and reported results are reliable and that the rights, safety and well-being of trial participants are protected.
+====================================================================================================
+R1-137 | E6R3 | loc=GL:Audit Trail | page=printed 83 / PDF 91
+PARA: An audit trail is metadata that captures actions on data and records (by whom, when and, where applicable, why); in computerised systems it should be secure, computer-generated and time stamped.
+LOC: found PDF 91 / printed 83 .. PDF 99 / printed 91 (17319 chars) 
+  PASSAGE-HEAD: Audit Trail Metadata records that allow the appropriate evaluation of the course of events by capturing details on actions (manual or automated) performed relat
+  WINDOW 0.81 @ PDF 91 / printed 83:  Metadata records that allow the appropriate evaluation of the course of events by capturing details on actions (manual or automated) performed relating to information and data collection and, where applicable, to activities in computerised systems. The audit trail should show activities, initial entry and changes to data fields or records, by whom, when and, where applicable, why. In computerised systems, the audit trail should be secure, computer-generated and time stamped. Blinding/Masking A procedure in which one or more parties to the trial are kept unaware of the treatment assignment(s). Single-blinding usually refers to the participant(s) being unaware, and double- blinding usually refers to the participant(s) and investigator(s) and, if appropriate, other investigator site staff or sponsor staff being unaware of the treatment assignment(s). Case Report Form (CRF) A data acquisiti
+====================================================================================================
+R1-138 | E6R3 | loc=GL:Source Records | page=printed 89 / PDF 97
+PARA: Source records are original documents or data (including relevant metadata) or certified copies, irrespective of media, e.g. medical records, participant-entered data, pharmacy and laboratory records and data from automated instruments.
+LOC: found PDF 97 / printed 89 .. PDF 99 / printed 91 (3311 chars) 
+  PASSAGE-HEAD: Source Records Original documents or data (which includes relevant metadata) or certified copies of the original documents or data, irrespective of the media us
+  WINDOW 0.79 @ PDF 97 / printed 89: Source Records Original documents or data (which includes relevant metadata) or certified copies of the original documents or data, irrespective of the media used. This may include trial participants' medical/health records/notes/charts; data provided/entered by trial participants (e.g., electronic patient-reported outcomes (ePROs)); healthcare professionals' records from pharmacies, laboratories and other facilities involved in the clinical trial; and data from automated instruments, such as wearables and sensors. Sponsor An individual, company, institution or organisation that takes responsibility for the initiation, management and arrangem
+====================================================================================================
+R1-139 | E6R3 | loc=GL:Clinical Trial/Study Report (CSR) | page=printed 84 / PDF 92
+PARA: A clinical trial/study report (CSR) is a documented description of a trial in which clinical and statistical description, presentations and analyses are fully integrated into a single report (see ICH E3).
+LOC: found PDF 92 / printed 84 .. PDF 99 / printed 91 (15533 chars) 
+  PASSAGE-HEAD: Clinical Trial/Study Report (CSR) A documented description of a trial of any investigational product conducted in human participants, in which the clinical and 
+  WINDOW 1.00 @ PDF 92 / printed 84: Clinical Trial/Study Report (CSR) A documented description of a trial of any investigational product conducted in human participants, in which the clinical and statistical description, presentations and analyses are fully integrated into a single report (see ICH E3 Structure and Content of Clinical Study Reports). Comparator An investigational or authorised medicinal product (i.e., active control), placebo or standard of care used as a reference in a clinical trial. Compliance (in relation to trials) Adherence to the trial-related requirements, GCP requirements and the applicable regulatory requirements. Confidentiality Prevention of disclosu
+====================================================================================================
+R1-140 | E6R3 | loc=GL:Sponsor | page=printed 90 / PDF 98
+PARA: The sponsor is an individual, company, institution or organisation that takes responsibility for initiation, management and arrangement of financing of a trial; with several sponsors, unattributed responsibilities lie with all.
+LOC: found PDF 98 / printed 90 .. PDF 99 / printed 91 (2790 chars) 
+  PASSAGE-HEAD: Sponsor An individual, company, institution or organisation that takes responsibility for the initiation, management and arrangement of the financing of a clini
+  WINDOW 0.82 @ PDF 98 / printed 90: Sponsor An individual, company, institution or organisation that takes responsibility for the initiation, management and arrangement of the financing of a clinical trial. A clinical trial may have one or several sponsors where permitted under regulatory requirements. All sponsors have the responsibilities of a sponsor set out in this guideline. In accordance with applicable regulatory requirements, sponsors may decide in a documented agreement setting out their respective responsibilities. Where the documented agreement does not specify to which sponsor a given responsibility is attributed, that responsibility lies with all sponsors. Sponsor-
+====================================================================================================
+R1-141 | E6R3 | loc=GL:Investigator | page=printed 87 / PDF 95
+PARA: The investigator is the person responsible for the conduct of the trial at a site, including the participants under their responsibility; 'investigator/institution' expectations may apply to the investigator and/or institution.
+LOC: found PDF 95 / printed 87 .. PDF 99 / printed 91 (8052 chars) 
+  PASSAGE-HEAD: Investigator A person responsible for the conduct of the clinical trial, including the trial participants for whom that person has responsibility during the con
+  WINDOW 0.67 @ PDF 95 / printed 87: Investigator A person responsible for the conduct of the clinical trial, including the trial participants for whom that person has responsibility during the conduct of the trial. If a trial is conducted by a team of individuals, the investigator is the responsible leader of the team and may be called the principal investigator. Where an investigator/institution is referenced in this guideline, it describes expectations that may be applicable to the investigator and/or the institution in some regions. Where required by the applicable regulatory requirements, the "investigator" should be read as "investigator and/or the institution." Investigat
+====================================================================================================
+R1-142 | E6R3 | loc=GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC) | page=printed 87 / PDF 95
+PARA: An IRB/IEC is an independent body of medical and non-medical members responsible for protecting participants' rights, safety and well-being, inter alia by reviewing and approving/providing favourable opinion on the protocol.
+LOC: found PDF 95 / printed 87 .. PDF 99 / printed 91 (9623 chars) 
+  PASSAGE-HEAD: Institutional Review Board (IRB)/Independent Ethics Committee (IEC) An independent body (a review board or a committee, institutional, regional, national or sup
+  WINDOW 0.81 @ PDF 95 / printed 87: Institutional Review Board (IRB)/Independent Ethics Committee (IEC) An independent body (a review board or a committee, institutional, regional, national or supranational) constituted of medical professionals and non-medical members whose responsibility is to ensure the protection of the rights, safety and well-being of human participants involved in a trial and to provide public assurance of that protection by, among other things, reviewing and approving/providing favourable opinion on the trial protocol, the suitability of the investigator(s), the facilities, and the methods and material to be used in obtaining and documenting informed consent of the trial participants. The legal status, composition, function, operations and regulatory requirements pertaining to IRBs/IECs may differ among countries but should allow the IRB/IEC to act in agreement with GCP as described in this guideline.
+====================================================================================================
+R1-143 | E6R3 | loc=GL:Regulatory Authorities | page=printed 89 / PDF 97
+PARA: Regulatory authorities are bodies having the power to regulate, including those reviewing protocols and clinical data and conducting inspections; sometimes called competent authorities.
+LOC: found PDF 97 / printed 89 .. PDF 99 / printed 91 (4084 chars) 
+  PASSAGE-HEAD: Regulatory Authorities Bodies having the power to regulate, including those that review submitted protocols and clinical data and those that conduct inspections
+  WINDOW 0.81 @ PDF 97 / printed 89: Regulatory Authorities Bodies having the power to regulate, including those that review submitted protocols and clinical data and those that conduct inspections. These bodies are sometimes referred to as competent authorities. Service Provider A person or organisation (commercial, academic or other) providing a service used by either the sponsor or the investigator to fulfil trial-related activities. Signature A unique mark, symbol or entry executed, adopted or authorised by an individual, in accordance with applicable regulatory requirements and/or practice to show expression of will and allow authentication of the signatory (i.e., establish
+====================================================================================================
+R1-144 | E6R3 | loc=GL:Service Provider | page=printed 89 / PDF 97
+PARA: A service provider is a person or organisation (commercial, academic or other) providing a service used by the sponsor or investigator to fulfil trial-related activities.
+LOC: found PDF 97 / printed 89 .. PDF 99 / printed 91 (3857 chars) 
+  PASSAGE-HEAD: Service Provider A person or organisation (commercial, academic or other) providing a service used by either the sponsor or the investigator to fulfil trial-rel
+  WINDOW 1.00 @ PDF 97 / printed 89: Service Provider A person or organisation (commercial, academic or other) providing a service used by either the sponsor or the investigator to fulfil trial-related activities. Signature A unique mark, symbol or entry executed, adopted or authorised by an individual, in accordance with applicable regulatory requirements and/or practice to show expression of will and allow authentication of the signatory (i.e., establish a high degree of certainty that a record was signed by the claimed signatory). A signature may be physical or electronic. Source Records Original documents or data (which includes relevant metadata) or certified copies of the 

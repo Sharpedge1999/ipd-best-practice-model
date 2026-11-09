@@ -1,0 +1,13 @@
+{
+  "name": "ipd-viewer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "W1 viewer build inputs: bpmn-js NavigatedViewer bundle and CSS (inlined into one self-contained HTML by tools/build_viewer.py); playwright-core for the headless test tools/test_viewer.mjs",
+  "type": "module",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "bpmn-js": "18.31.1",
+    "diagram-js-minimap": "5.6.0",
+    "playwright-core": "1.65.0"
+  }
+}

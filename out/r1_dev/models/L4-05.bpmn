@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipd="urn:ipd-best-practice:trace:1.0" id="IPD_DEFINITIONS" targetNamespace="urn:ipd-best-practice:model" exporter="ipd spec2bpmn" exporterVersion="1.0">
+  <bpmn:category id="L4_05_GR_EU_CATEGORY">
+    <bpmn:categoryValue id="L4_05_GR_EU_VALUE" value="EU CTR"/>
+  </bpmn:category>
+  <bpmn:category id="L4_05_GR_US_CATEGORY">
+    <bpmn:categoryValue id="L4_05_GR_US_VALUE" value="US 21 CFR"/>
+  </bpmn:category>
+  <bpmn:collaboration id="L4_05_COLLAB" name="Assess and notify reportable noncompliance">
+    <bpmn:documentation textFormat="text/plain">Model: L4-05
+Title: Assess and notify reportable noncompliance
+Parent: L3 A5
+Interface: start S1; ends E1, E2; message flows M1, M2, M3
+Rule exception: ROL-03 P_INV - D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks
+Rule exception: DEC-06 G9 - XOR split G9: each branch is a distinct business outcome (E1, E2) and ends in its own end event without a join
+Open item: [verify interface] Neighbouring process 'Data security incident handling': an incident that is also serious noncompliance or a serious breach enters this step through S1. Interface REQs: REQ-212.
+Open item: [verify interface] Neighbouring process 'IND safety reporting and unanticipated problems' (21 CFR 312.32, 312.55, 312.66, 56.108(b)(1)): runs when a deviation reveals or contributes to a reportable safety event; no flow hand-off is defined in the sources. Interface REQs: REQ-224, REQ-225, REQ-227, REQ-228, REQ-229.
+Open item: [verify interface] IRB/IEC-internal process 'Suspension or termination of IRB approval' inside the collapsed IRB/IEC pool (D1); its reports are not part of this step. Interface REQs: REQ-230.
+Open item: [verify interface] Authority-initiated processes after a notification (CTIS request for information; corrective measures, EU CTR Art. 77): each starts with an incoming authority request, so it is a separate process (SCP-02). The authority's assessment of the notification (REQ-231) is attached to message flow M1. Interface REQs: REQ-232, REQ-233, REQ-234.</bpmn:documentation>
+    <bpmn:participant id="L4_05_P_SPON" name="Sponsor" processRef="L4_05_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Sponsor (p. printed 90 / PDF 98); EUCTR Art. 47 (p. OJ L 158/39); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination); E6R3 P3.1 (p. printed 4 / PDF 12); E6R3 A1-3.9.2 (p. printed 26 / PDF 34); E6R3 P10.1 (p. printed 7 / PDF 15); E6R3 P10.3 (p. printed 7 / PDF 15); E6R3 A1-3.9.5 (p. printed 27 / PDF 35); E6R3 A2-3.8 (p. printed 62 / PDF 70); EMA-SB SGlossary (p. printed 3/21); TCB-RBQM SQTL-Process (p. journal pp. 251-261 (section page not confirmed))</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Sponsor" page="printed 90 / PDF 98"/>
+          <ipd:source key="EUCTR" loc="Art. 47" page="OJ L 158/39"/>
+          <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="E6R3" loc="P3.1" page="printed 4 / PDF 12"/>
+          <ipd:source key="E6R3" loc="A1-3.9.2" page="printed 26 / PDF 34"/>
+          <ipd:source key="E6R3" loc="P10.1" page="printed 7 / PDF 15"/>
+          <ipd:source key="E6R3" loc="P10.3" page="printed 7 / PDF 15"/>
+          <ipd:source key="E6R3" loc="A1-3.9.5" page="printed 27 / PDF 35"/>
+          <ipd:source key="E6R3" loc="A2-3.8" page="printed 62 / PDF 70"/>
+          <ipd:source key="EMA-SB" loc="SGlossary" page="printed 3/21"/>
+          <ipd:source key="TCB-RBQM" loc="SQTL-Process" page="journal pp. 251-261 (section page not confirmed)"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L4_05_P_INV" name="Investigator/institution" processRef="L4_05_P_INV_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Investigator (p. printed 87 / PDF 95); EUCTR Art. 2(2)(15) (p. OJ L 158/13); 21CFR312 21CFR312.60 (p. n/a - eCFR web text without pagination); EUCTR Art. 47 (p. OJ L 158/39); E6R3 P3.1 (p. printed 4 / PDF 12); E6R3 A1-2.5.2 (p. printed 13 / PDF 21); E6R3 A1-2.10.6 (p. printed 20 / PDF 28); E6R3 A1-2.3.1 (p. printed 12 / PDF 20); E6R3 A2-2.4 (p. printed 55 / PDF 63); E6R3 A2-2.4.1 (p. printed 56 / PDF 64)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Investigator" page="printed 87 / PDF 95"/>
+          <ipd:source key="EUCTR" loc="Art. 2(2)(15)" page="OJ L 158/13"/>
+          <ipd:source key="21CFR312" loc="21CFR312.60" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="EUCTR" loc="Art. 47" page="OJ L 158/39"/>
+          <ipd:source key="E6R3" loc="P3.1" page="printed 4 / PDF 12"/>
+          <ipd:source key="E6R3" loc="A1-2.5.2" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-2.10.6" page="printed 20 / PDF 28"/>
+          <ipd:source key="E6R3" loc="A1-2.3.1" page="printed 12 / PDF 20"/>
+          <ipd:source key="E6R3" loc="A2-2.4" page="printed 55 / PDF 63"/>
+          <ipd:source key="E6R3" loc="A2-2.4.1" page="printed 56 / PDF 64"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L4_05_P_IEC" name="IRB/IEC">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC) (p. printed 87 / PDF 95); EUCTR Art. 2(2)(11) (p. OJ L 158/12); 21CFR56 21CFR56.108(b)(2) (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)" page="printed 87 / PDF 95"/>
+          <ipd:source key="EUCTR" loc="Art. 2(2)(11)" page="OJ L 158/12"/>
+          <ipd:source key="21CFR56" loc="21CFR56.108(b)(2)" page="n/a - eCFR web text without pagination"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L4_05_P_RA" name="Regulatory authority">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Regulatory Authorities (p. printed 89 / PDF 97); EUCTR Art. 2(2)(12) (p. OJ L 158/12); 21CFR312 21CFR312.56(b) (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Regulatory Authorities" page="printed 89 / PDF 97"/>
+          <ipd:source key="EUCTR" loc="Art. 2(2)(12)" page="OJ L 158/12"/>
+          <ipd:source key="21CFR312" loc="21CFR312.56(b)" page="n/a - eCFR web text without pagination"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:messageFlow id="L4_05_M1" name="Serious breach notified" sourceRef="L4_05_A2" targetRef="L4_05_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 52(1) (p. OJ L 158/40); EMA-SB S3.2 (p. printed 5/21); EUCTR-QA S11.3 (p. printed 1-2 (chapter 11)); EMA-SB S3.1 (p. printed 5/21); EUCTR-QA S1.5 (p. printed 4-5 (chapter 1; page numbers restart per chapter)); CTIS-BT-SB24 SSlide-20 (p. slide 20; notification type label on an unnumbered CTCG slide); EMA-SB S8 (p. printed 10/21); CTIS-BT-SB24 SPublication (p. publication section (slides unnumbered)); CTIS-TM17 S2.5 (p. printed 6-10 (Q&amp;A 1.4, 2.5, 2.10)); CTIS-TM17 S4.7 (p. printed 13-14)
+Requirements: REQ-111, REQ-231
+Binding: binding-law
+Jurisdiction: EU
+Deadline: without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach
+Party: sponsor; Member States concerned
+Verify: [verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05); [verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU" deadline="without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach" party="sponsor; Member States concerned">
+          <ipd:source key="EUCTR" loc="Art. 52(1)" page="OJ L 158/40"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S11.3" page="printed 1-2 (chapter 11)"/>
+          <ipd:source key="EMA-SB" loc="S3.1" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S1.5" page="printed 4-5 (chapter 1; page numbers restart per chapter)"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-20" page="slide 20; notification type label on an unnumbered CTCG slide"/>
+          <ipd:source key="EMA-SB" loc="S8" page="printed 10/21"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SPublication" page="publication section (slides unnumbered)"/>
+          <ipd:source key="CTIS-TM17" loc="S2.5" page="printed 6-10 (Q&amp;A 1.4, 2.5, 2.10)"/>
+          <ipd:source key="CTIS-TM17" loc="S4.7" page="printed 13-14"/>
+          <ipd:req id="REQ-111"/>
+          <ipd:req id="REQ-231"/>
+          <ipd:verify>[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)</ipd:verify>
+          <ipd:verify>[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M2" name="Serious noncompliance notified" sourceRef="L4_05_A6" targetRef="L4_05_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-119
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-119"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M3" name="Serious noncompliance notified" sourceRef="L4_05_A6" targetRef="L4_05_P_IEC">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-119
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-119"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M4" name="Serious noncompliance notified" sourceRef="L4_05_A6" targetRef="L4_05_P_INV">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-119
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-119"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M5" name="Change significantly affecting conduct reported" sourceRef="L4_05_A8" targetRef="L4_05_P_IEC">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-2.4.6 (p. printed 13 / PDF 21); E6R3 A1-1.4.8(b) (p. printed 11 / PDF 19)
+Requirements: REQ-120
+Binding: binding-ICH
+Jurisdiction: ICH
+Deadline: promptly
+Party: investigator or sponsor; investigator/institution
+Verify: [verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03); [verify] duty may lie with investigator or sponsor (A1-2.4.6)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" deadline="promptly" party="investigator or sponsor; investigator/institution">
+          <ipd:source key="E6R3" loc="A1-2.4.6" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-1.4.8(b)" page="printed 11 / PDF 19"/>
+          <ipd:req id="REQ-120"/>
+          <ipd:verify>[verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03)</ipd:verify>
+          <ipd:verify>[verify] duty may lie with investigator or sponsor (A1-2.4.6)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M6" name="Change in research activity reported" sourceRef="L4_05_A9" targetRef="L4_05_P_IEC">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR312 21CFR312.66 (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.53(c)(1)(vii) (p. n/a - eCFR web text without pagination)
+Requirements: REQ-121
+Binding: binding-law
+Jurisdiction: US
+Deadline: promptly (no day count)
+Party: investigator
+Verify: [verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="US" deadline="promptly (no day count)" party="investigator">
+          <ipd:source key="21CFR312" loc="21CFR312.66" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.53(c)(1)(vii)" page="n/a - eCFR web text without pagination"/>
+          <ipd:req id="REQ-121"/>
+          <ipd:verify>[verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M7" name="Important protocol deviation submitted" sourceRef="L4_05_A10" targetRef="L4_05_P_IEC">
+      <bpmn:documentation textFormat="text/plain">Sources: FDA-PD24 SIII.B.3 (p. printed 10; lines 351-353)
+Requirements: REQ-122
+Binding: guidance
+Jurisdiction: US
+Deadline: when identified, where possible
+Party: the investigator
+Draft: DRAFT guidance
+Verify: [verify] basis is draft guidance only - shown as DRAFT, never a binding step</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="US" deadline="when identified, where possible" draft="true" party="the investigator">
+          <ipd:source key="FDA-PD24" loc="SIII.B.3" page="printed 10; lines 351-353"/>
+          <ipd:req id="REQ-122"/>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M8" name="Serious or continuing noncompliance reported" sourceRef="L4_05_P_IEC" targetRef="L4_05_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR56 21CFR56.108(b)(2) (p. n/a - eCFR web text without pagination)
+Requirements: REQ-124
+Binding: binding-law
+Jurisdiction: US
+Deadline: prompt (no day count)
+Party: each IRB
+Verify: [verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1); [verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="US" deadline="prompt (no day count)" party="each IRB">
+          <ipd:source key="21CFR56" loc="21CFR56.108(b)(2)" page="n/a - eCFR web text without pagination"/>
+          <ipd:req id="REQ-124"/>
+          <ipd:verify>[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1)</ipd:verify>
+          <ipd:verify>[verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L4_05_M9" name="Serious or continuing noncompliance reported to institutional officials" sourceRef="L4_05_P_IEC" targetRef="L4_05_P_INV">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR56 21CFR56.108(b)(2) (p. n/a - eCFR web text without pagination)
+Requirements: REQ-124
+Binding: binding-law
+Jurisdiction: US
+Deadline: prompt (no day count)
+Party: each IRB
+Verify: [verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1); [verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="US" deadline="prompt (no day count)" party="each IRB">
+          <ipd:source key="21CFR56" loc="21CFR56.108(b)(2)" page="n/a - eCFR web text without pagination"/>
+          <ipd:req id="REQ-124"/>
+          <ipd:verify>[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1)</ipd:verify>
+          <ipd:verify>[verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:group id="L4_05_GR_EU" categoryValueRef="L4_05_GR_EU_VALUE"/>
+    <bpmn:group id="L4_05_GR_US" categoryValueRef="L4_05_GR_US_VALUE"/>
+  </bpmn:collaboration>
+  <bpmn:process id="L4_05_P_SPON_PROCESS" name="Sponsor" isExecutable="false">
+    <bpmn:documentation textFormat="text/plain">C-01 decisions 2-4 of 4: G3 'Serious breach?' (EU, REQ-105, REQ-111), G6 'Serious noncompliance?' (ICH, REQ-118, REQ-119); decision 4 (IRB serious or continuing noncompliance, REQ-124) stays inside the collapsed IRB/IEC pool and appears only as message flows M8 and M9.
+C-05: start event S1 is the same event as the L4-04 start and starts the EU 7-day clock; whose awareness counts stays [verify] (REQ-111).
+C-03: the binding US duty (REQ-121, [verify]) and the DRAFT split (REQ-122, REQ-123) are separate tasks A9 and A10, so A10 and its flow M7 show DRAFT; the model does not state that minor deviations are exempt.
+Jurisdiction pattern: AND split G1 into an EU path (XOR 'EU CTR applies?') and the ICH path, so the EU serious breach decision and the ICH serious noncompliance decision never exclude each other.</bpmn:documentation>
+    <bpmn:laneSet id="L4_05_P_SPON_LANESET">
+      <bpmn:lane id="L4_05_L_SPON" name="Sponsor">
+        <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Sponsor (p. printed 90 / PDF 98); EUCTR Art. 2(2)(14) (p. OJ L 158/12); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+        <bpmn:extensionElements>
+          <ipd:trace>
+            <ipd:source key="E6R3" loc="GL:Sponsor" page="printed 90 / PDF 98"/>
+            <ipd:source key="EUCTR" loc="Art. 2(2)(14)" page="OJ L 158/12"/>
+            <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination"/>
+          </ipd:trace>
+        </bpmn:extensionElements>
+        <bpmn:flowNodeRef>L4_05_S1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A12</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A11</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_A7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_G9</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_E1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L4_05_E2</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="L4_05_S1" name="Potential protocol deviation identified">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 52(1) (p. OJ L 158/40); EMA-SB S3.2 (p. printed 5/21); EUCTR-QA S11.3 (p. printed 1-2 (chapter 11)); EMA-SB S3.1 (p. printed 5/21); EUCTR-QA S1.5 (p. printed 4-5 (chapter 1; page numbers restart per chapter)); CTIS-BT-SB24 SSlide-20 (p. slide 20; notification type label on an unnumbered CTCG slide)
+Requirements: REQ-111
+Binding: binding-law
+Jurisdiction: EU
+Deadline: starts the EU serious breach clock: at the latest 7 (calendar) days from sponsor awareness of the potential breach (REQ-111)
+Party: sponsor
+Verify: [verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05); [verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU" deadline="starts the EU serious breach clock: at the latest 7 (calendar) days from sponsor awareness of the potential breach (REQ-111)" party="sponsor">
+          <ipd:source key="EUCTR" loc="Art. 52(1)" page="OJ L 158/40"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S11.3" page="printed 1-2 (chapter 11)"/>
+          <ipd:source key="EMA-SB" loc="S3.1" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S1.5" page="printed 4-5 (chapter 1; page numbers restart per chapter)"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-20" page="slide 20; notification type label on an unnumbered CTCG slide"/>
+          <ipd:req id="REQ-111"/>
+          <ipd:verify>[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)</ipd:verify>
+          <ipd:verify>[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>L4_05_F1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:parallelGateway id="L4_05_G1" gatewayDirection="Diverging">
+      <bpmn:incoming>L4_05_F1</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F2</bpmn:outgoing>
+      <bpmn:outgoing>L4_05_F3</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:exclusiveGateway id="L4_05_G2" name="EU CTR applies?" gatewayDirection="Diverging">
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F2</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F5</bpmn:outgoing>
+      <bpmn:outgoing>L4_05_F6</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="L4_05_A1" name="Assess potential serious breach">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 52(2) (p. OJ L 158/40); EMA-SB SGlossary (p. printed 3/21); EMA-SB S3.2 (p. printed 5/21); EMA-SB S5.1 (p. printed 8/21; printed 7-8/21); EMA-SB S6.1 (p. printed 9/21); EMA-SB SAppII (p. printed 18/21); CTIS-BT-SB24 SSlide-33 (p. slide 33); EMA-SB SAppI-8.2 (p. printed 15/21); EMA-SB SAppI-8.4 (p. printed 15/21); EMA-SB S7 (p. printed 10/21)
+Requirements: REQ-105, REQ-106, REQ-107, REQ-108, REQ-109, REQ-110, REQ-115
+Binding: binding-law
+Jurisdiction: EU
+Deadline: within the 7-day notification window (REQ-105); 7 calendar days of sponsor awareness (REQ-107, REQ-108, REQ-110)
+Record: serious breach assessment; breach impact assessment; deviation trend analysis; documented breach assessment
+Party: sponsor
+Verify: [verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU" deadline="within the 7-day notification window (REQ-105); 7 calendar days of sponsor awareness (REQ-107, REQ-108, REQ-110)" record="serious breach assessment; breach impact assessment; deviation trend analysis; documented breach assessment" party="sponsor">
+          <ipd:source key="EUCTR" loc="Art. 52(2)" page="OJ L 158/40"/>
+          <ipd:source key="EMA-SB" loc="SGlossary" page="printed 3/21"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EMA-SB" loc="S5.1" page="printed 8/21; printed 7-8/21"/>
+          <ipd:source key="EMA-SB" loc="S6.1" page="printed 9/21"/>
+          <ipd:source key="EMA-SB" loc="SAppII" page="printed 18/21"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-33" page="slide 33"/>
+          <ipd:source key="EMA-SB" loc="SAppI-8.2" page="printed 15/21"/>
+          <ipd:source key="EMA-SB" loc="SAppI-8.4" page="printed 15/21"/>
+          <ipd:source key="EMA-SB" loc="S7" page="printed 10/21"/>
+          <ipd:req id="REQ-105"/>
+          <ipd:req id="REQ-106"/>
+          <ipd:req id="REQ-107"/>
+          <ipd:req id="REQ-108"/>
+          <ipd:req id="REQ-109"/>
+          <ipd:req id="REQ-110"/>
+          <ipd:req id="REQ-115"/>
+          <ipd:verify>[verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F5</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F7</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="L4_05_G3" name="Serious breach?" gatewayDirection="Diverging">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 52(2) (p. OJ L 158/40); EMA-SB SGlossary (p. printed 3/21); EMA-SB S3.2 (p. printed 5/21); EMA-SB S5.1 (p. printed 8/21); EMA-SB S6.1 (p. printed 9/21); EMA-SB SAppII (p. printed 18/21); CTIS-BT-SB24 SSlide-33 (p. slide 33); EMA-SB SAppI-8.2 (p. printed 15/21); EMA-SB SAppI-8.4 (p. printed 15/21)
+Requirements: REQ-105
+Binding: binding-law
+Jurisdiction: EU
+Deadline: within the 7-day notification window
+Party: sponsor
+Verify: [verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU" deadline="within the 7-day notification window" party="sponsor">
+          <ipd:source key="EUCTR" loc="Art. 52(2)" page="OJ L 158/40"/>
+          <ipd:source key="EMA-SB" loc="SGlossary" page="printed 3/21"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EMA-SB" loc="S5.1" page="printed 8/21"/>
+          <ipd:source key="EMA-SB" loc="S6.1" page="printed 9/21"/>
+          <ipd:source key="EMA-SB" loc="SAppII" page="printed 18/21"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-33" page="slide 33"/>
+          <ipd:source key="EMA-SB" loc="SAppI-8.2" page="printed 15/21"/>
+          <ipd:source key="EMA-SB" loc="SAppI-8.4" page="printed 15/21"/>
+          <ipd:req id="REQ-105"/>
+          <ipd:verify>[verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F7</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F8</bpmn:outgoing>
+      <bpmn:outgoing>L4_05_F9</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="L4_05_A2" name="Notify serious breach via EU portal">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 52(1) (p. OJ L 158/40); EMA-SB S3.2 (p. printed 5/21); EUCTR-QA S11.3 (p. printed 1-2 (chapter 11); printed 1 (chapter 11)); EMA-SB S3.1 (p. printed 5/21); EUCTR-QA S1.5 (p. printed 4-5 (chapter 1; page numbers restart per chapter)); CTIS-BT-SB24 SSlide-20 (p. slide 20; notification type label on an unnumbered CTCG slide); EMA-SB S4 (p. printed 6/21; printed 6/21 and 20-21/21); EMA-SB SAppIIIb (p. printed 20-21/21); CTIS-BT-SB24 SSlide-28 (p. slides 20, 26, 28; EU CT number point on an unnumbered CTCG slide)
+Requirements: REQ-111, REQ-112, REQ-113, REQ-114
+Binding: binding-law
+Jurisdiction: EU
+Deadline: without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach (REQ-111); 7 calendar days of sponsor awareness (REQ-112)
+Record: serious breach notification in CTIS; serious breach notification; CTIS structured fields; Appendix III b report; notification title
+Party: sponsor
+Verify: [verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05); [verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13); [verify] Appendix III a form content not in the text layer (local copy also empty; form is an image or form object) (R3-056)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU" deadline="without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach (REQ-111); 7 calendar days of sponsor awareness (REQ-112)" record="serious breach notification in CTIS; serious breach notification; CTIS structured fields; Appendix III b report; notification title" party="sponsor">
+          <ipd:source key="EUCTR" loc="Art. 52(1)" page="OJ L 158/40"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S11.3" page="printed 1-2 (chapter 11); printed 1 (chapter 11)"/>
+          <ipd:source key="EMA-SB" loc="S3.1" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S1.5" page="printed 4-5 (chapter 1; page numbers restart per chapter)"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-20" page="slide 20; notification type label on an unnumbered CTCG slide"/>
+          <ipd:source key="EMA-SB" loc="S4" page="printed 6/21; printed 6/21 and 20-21/21"/>
+          <ipd:source key="EMA-SB" loc="SAppIIIb" page="printed 20-21/21"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-28" page="slides 20, 26, 28; EU CT number point on an unnumbered CTCG slide"/>
+          <ipd:req id="REQ-111"/>
+          <ipd:req id="REQ-112"/>
+          <ipd:req id="REQ-113"/>
+          <ipd:req id="REQ-114"/>
+          <ipd:verify>[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)</ipd:verify>
+          <ipd:verify>[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</ipd:verify>
+          <ipd:verify>[verify] Appendix III a form content not in the text layer (local copy also empty; form is an image or form object) (R3-056)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F8</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F10</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_05_A3" name="Check need for other EU notifications">
+      <bpmn:documentation textFormat="text/plain">Sources: EMA-SB S4 (p. printed 6/21)
+Requirements: REQ-117
+Binding: guidance
+Jurisdiction: EU
+Deadline: per the respective article
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="EU" deadline="per the respective article" party="sponsor">
+          <ipd:source key="EMA-SB" loc="S4" page="printed 6/21"/>
+          <ipd:req id="REQ-117"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F10</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F11</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:callActivity id="L4_05_A12" name="Handle other EU notifications">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 53(1) (p. OJ L 158/40); EUCTR Art. 38(1) (p. OJ L 158/36)
+Requirements: REQ-215, REQ-216
+Binding: binding-law
+Jurisdiction: EU
+Deadline: without undue delay but no later than 15 days from the date the sponsor became aware of this event (REQ-215); without undue delay but not later than in 15 days of the date of the temporary halt or early termination (REQ-216)
+Record: unexpected event notification in CTIS; temporary halt / early termination notification in CTIS
+Party: The sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU" deadline="without undue delay but no later than 15 days from the date the sponsor became aware of this event (REQ-215); without undue delay but not later than in 15 days of the date of the temporary halt or early termination (REQ-216)" record="unexpected event notification in CTIS; temporary halt / early termination notification in CTIS" party="The sponsor">
+          <ipd:source key="EUCTR" loc="Art. 53(1)" page="OJ L 158/40"/>
+          <ipd:source key="EUCTR" loc="Art. 38(1)" page="OJ L 158/36"/>
+          <ipd:req id="REQ-215"/>
+          <ipd:req id="REQ-216"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F11</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F31</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:task id="L4_05_A4" name="Document non-notification rationale">
+      <bpmn:documentation textFormat="text/plain">Sources: EMA-SB S5.1 (p. printed 8/21)
+Requirements: REQ-116
+Binding: guidance
+Jurisdiction: EU
+Record: non-notification rationale
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="EU" record="non-notification rationale" party="sponsor">
+          <ipd:source key="EMA-SB" loc="S5.1" page="printed 8/21"/>
+          <ipd:req id="REQ-116"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F9</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F12</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="L4_05_G4" gatewayDirection="Converging">
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F12</bpmn:incoming>
+      <bpmn:incoming>L4_05_F31</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F13</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:exclusiveGateway id="L4_05_G5" gatewayDirection="Converging">
+      <bpmn:categoryValueRef>L4_05_GR_EU_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F6</bpmn:incoming>
+      <bpmn:incoming>L4_05_F13</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F14</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="L4_05_A11" name="Escalate potentially reportable GCP issues">
+      <bpmn:documentation textFormat="text/plain">Sources: TCB-PD-TIRS SGCP-Compliance (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-126
+Binding: best-practice
+Jurisdiction: ICH
+Deadline: per local requirement
+Party: Companies</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="best-practice" jurisdiction="ICH" deadline="per local requirement" party="Companies">
+          <ipd:source key="TCB-PD-TIRS" loc="SGCP-Compliance" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-126"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_05_F3</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F4</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_05_A5" name="Assess serious noncompliance">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-118
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-118"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_05_F4</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F15</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="L4_05_G6" name="Serious noncompliance?" gatewayDirection="Diverging">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-118
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-118"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_05_F15</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F16</bpmn:outgoing>
+      <bpmn:outgoing>L4_05_F17</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="L4_05_A6" name="Notify serious noncompliance">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-119
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-119"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_05_F16</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F18</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="L4_05_G7" gatewayDirection="Converging">
+      <bpmn:incoming>L4_05_F17</bpmn:incoming>
+      <bpmn:incoming>L4_05_F18</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F19</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="L4_05_A7" name="Report deviations periodically where required">
+      <bpmn:documentation textFormat="text/plain">Sources: TCB-PD-TIRS SReport (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-125
+Binding: best-practice
+Jurisdiction: ICH
+Deadline: per recipient requirement
+Record: periodic deviation report
+Verify: [verify] reporting party not stated in the source (R5-037); [verify] single fetch (R5-037)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="best-practice" jurisdiction="ICH" deadline="per recipient requirement" record="periodic deviation report">
+          <ipd:source key="TCB-PD-TIRS" loc="SReport" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-125"/>
+          <ipd:verify>[verify] reporting party not stated in the source (R5-037)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-037)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_05_F19</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F20</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:parallelGateway id="L4_05_G8" gatewayDirection="Converging">
+      <bpmn:incoming>L4_05_F14</bpmn:incoming>
+      <bpmn:incoming>L4_05_F20</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F21</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:exclusiveGateway id="L4_05_G9" name="Reportable noncompliance notified?" gatewayDirection="Diverging">
+      <bpmn:incoming>L4_05_F21</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F22</bpmn:outgoing>
+      <bpmn:outgoing>L4_05_F23</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="L4_05_E1" name="Reportable noncompliance notified">
+      <bpmn:incoming>L4_05_F22</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:endEvent id="L4_05_E2" name="No notification required and rationale documented">
+      <bpmn:incoming>L4_05_F23</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="L4_05_F1" sourceRef="L4_05_S1" targetRef="L4_05_G1"/>
+    <bpmn:sequenceFlow id="L4_05_F2" sourceRef="L4_05_G1" targetRef="L4_05_G2"/>
+    <bpmn:sequenceFlow id="L4_05_F3" sourceRef="L4_05_G1" targetRef="L4_05_A11"/>
+    <bpmn:sequenceFlow id="L4_05_F4" sourceRef="L4_05_A11" targetRef="L4_05_A5"/>
+    <bpmn:sequenceFlow id="L4_05_F5" name="Yes" sourceRef="L4_05_G2" targetRef="L4_05_A1"/>
+    <bpmn:sequenceFlow id="L4_05_F6" name="No" sourceRef="L4_05_G2" targetRef="L4_05_G5"/>
+    <bpmn:sequenceFlow id="L4_05_F7" sourceRef="L4_05_A1" targetRef="L4_05_G3"/>
+    <bpmn:sequenceFlow id="L4_05_F8" name="Yes" sourceRef="L4_05_G3" targetRef="L4_05_A2"/>
+    <bpmn:sequenceFlow id="L4_05_F9" name="No" sourceRef="L4_05_G3" targetRef="L4_05_A4"/>
+    <bpmn:sequenceFlow id="L4_05_F10" sourceRef="L4_05_A2" targetRef="L4_05_A3"/>
+    <bpmn:sequenceFlow id="L4_05_F11" sourceRef="L4_05_A3" targetRef="L4_05_A12"/>
+    <bpmn:sequenceFlow id="L4_05_F12" sourceRef="L4_05_A4" targetRef="L4_05_G4"/>
+    <bpmn:sequenceFlow id="L4_05_F13" sourceRef="L4_05_G4" targetRef="L4_05_G5"/>
+    <bpmn:sequenceFlow id="L4_05_F14" sourceRef="L4_05_G5" targetRef="L4_05_G8"/>
+    <bpmn:sequenceFlow id="L4_05_F15" sourceRef="L4_05_A5" targetRef="L4_05_G6"/>
+    <bpmn:sequenceFlow id="L4_05_F16" name="Yes" sourceRef="L4_05_G6" targetRef="L4_05_A6"/>
+    <bpmn:sequenceFlow id="L4_05_F17" name="No" sourceRef="L4_05_G6" targetRef="L4_05_G7"/>
+    <bpmn:sequenceFlow id="L4_05_F18" sourceRef="L4_05_A6" targetRef="L4_05_G7"/>
+    <bpmn:sequenceFlow id="L4_05_F19" sourceRef="L4_05_G7" targetRef="L4_05_A7"/>
+    <bpmn:sequenceFlow id="L4_05_F20" sourceRef="L4_05_A7" targetRef="L4_05_G8"/>
+    <bpmn:sequenceFlow id="L4_05_F21" sourceRef="L4_05_G8" targetRef="L4_05_G9"/>
+    <bpmn:sequenceFlow id="L4_05_F22" name="Yes" sourceRef="L4_05_G9" targetRef="L4_05_E1"/>
+    <bpmn:sequenceFlow id="L4_05_F23" name="No" sourceRef="L4_05_G9" targetRef="L4_05_E2"/>
+    <bpmn:sequenceFlow id="L4_05_F31" sourceRef="L4_05_A12" targetRef="L4_05_G4"/>
+  </bpmn:process>
+  <bpmn:process id="L4_05_P_INV_PROCESS" name="Investigator/institution" isExecutable="false">
+    <bpmn:startEvent id="L4_05_S2" name="Protocol deviation identified at site">
+      <bpmn:outgoing>L4_05_F24</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="L4_05_A8" name="Inform IRB/IEC of significant changes">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-2.4.6 (p. printed 13 / PDF 21); E6R3 A1-1.4.8(b) (p. printed 11 / PDF 19)
+Requirements: REQ-120
+Binding: binding-ICH
+Jurisdiction: ICH
+Deadline: promptly
+Party: investigator or sponsor; investigator/institution
+Verify: [verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03); [verify] duty may lie with investigator or sponsor (A1-2.4.6)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" deadline="promptly" party="investigator or sponsor; investigator/institution">
+          <ipd:source key="E6R3" loc="A1-2.4.6" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-1.4.8(b)" page="printed 11 / PDF 19"/>
+          <ipd:req id="REQ-120"/>
+          <ipd:verify>[verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03)</ipd:verify>
+          <ipd:verify>[verify] duty may lie with investigator or sponsor (A1-2.4.6)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L4_05_F29</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F30</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="L4_05_G10" name="IND under 21 CFR 312?" gatewayDirection="Diverging">
+      <bpmn:categoryValueRef>L4_05_GR_US_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F24</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F25</bpmn:outgoing>
+      <bpmn:outgoing>L4_05_F26</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:task id="L4_05_A9" name="Report changes in research activity to IRB">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR312 21CFR312.66 (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.53(c)(1)(vii) (p. n/a - eCFR web text without pagination)
+Requirements: REQ-121
+Binding: binding-law
+Jurisdiction: US
+Deadline: promptly (no day count)
+Record: IRB report
+Party: investigator
+Verify: [verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="US" deadline="promptly (no day count)" record="IRB report" party="investigator">
+          <ipd:source key="21CFR312" loc="21CFR312.66" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.53(c)(1)(vii)" page="n/a - eCFR web text without pagination"/>
+          <ipd:req id="REQ-121"/>
+          <ipd:verify>[verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_US_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F25</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F27</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="L4_05_A10" name="Submit iPD to IRB">
+      <bpmn:documentation textFormat="text/plain">Sources: FDA-PD24 SIII.B.3 (p. printed 10; lines 351-353; printed 10; lines 355-356)
+Requirements: REQ-122, REQ-123
+Binding: guidance
+Jurisdiction: US
+Deadline: when identified, where possible (REQ-122); not immediately; IRB procedures decide (REQ-123)
+Record: IRB submission
+Party: the investigator
+Draft: DRAFT guidance
+Verify: [verify] basis is draft guidance only - shown as DRAFT, never a binding step</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="guidance" jurisdiction="US" deadline="when identified, where possible (REQ-122); not immediately; IRB procedures decide (REQ-123)" draft="true" record="IRB submission" party="the investigator">
+          <ipd:source key="FDA-PD24" loc="SIII.B.3" page="printed 10; lines 351-353; printed 10; lines 355-356"/>
+          <ipd:req id="REQ-122"/>
+          <ipd:req id="REQ-123"/>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L4_05_GR_US_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F27</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F28</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:exclusiveGateway id="L4_05_G11" gatewayDirection="Converging">
+      <bpmn:categoryValueRef>L4_05_GR_US_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L4_05_F26</bpmn:incoming>
+      <bpmn:incoming>L4_05_F28</bpmn:incoming>
+      <bpmn:outgoing>L4_05_F29</bpmn:outgoing>
+    </bpmn:exclusiveGateway>
+    <bpmn:endEvent id="L4_05_E3" name="IRB/IEC reporting completed">
+      <bpmn:incoming>L4_05_F30</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="L4_05_F24" sourceRef="L4_05_S2" targetRef="L4_05_G10"/>
+    <bpmn:sequenceFlow id="L4_05_F25" name="Yes" sourceRef="L4_05_G10" targetRef="L4_05_A9"/>
+    <bpmn:sequenceFlow id="L4_05_F26" name="No" sourceRef="L4_05_G10" targetRef="L4_05_G11"/>
+    <bpmn:sequenceFlow id="L4_05_F27" sourceRef="L4_05_A9" targetRef="L4_05_A10"/>
+    <bpmn:sequenceFlow id="L4_05_F28" sourceRef="L4_05_A10" targetRef="L4_05_G11"/>
+    <bpmn:sequenceFlow id="L4_05_F29" sourceRef="L4_05_G11" targetRef="L4_05_A8"/>
+    <bpmn:sequenceFlow id="L4_05_F30" sourceRef="L4_05_A8" targetRef="L4_05_E3"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="L4_05_DIAGRAM" name="L4-05 - Assess and notify reportable noncompliance">
+    <bpmndi:BPMNPlane id="L4_05_PLANE" bpmnElement="L4_05_COLLAB">
+      <bpmndi:BPMNShape id="L4_05_P_IEC_di" bpmnElement="L4_05_P_IEC" isHorizontal="true">
+        <dc:Bounds x="20" y="20" width="2688" height="60"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_P_INV_di" bpmnElement="L4_05_P_INV" isHorizontal="true">
+        <dc:Bounds x="20" y="222" width="2688" height="418"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_P_SPON_di" bpmnElement="L4_05_P_SPON" isHorizontal="true">
+        <dc:Bounds x="20" y="769" width="2688" height="632"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_P_RA_di" bpmnElement="L4_05_P_RA" isHorizontal="true">
+        <dc:Bounds x="20" y="1530" width="2688" height="60"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_L_SPON_di" bpmnElement="L4_05_L_SPON" isHorizontal="true">
+        <dc:Bounds x="50" y="769" width="2658" height="632"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_S1_di" bpmnElement="L4_05_S1">
+        <dc:Bounds x="187" y="1239" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="150" y="1279" width="110" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G1_di" bpmnElement="L4_05_G1">
+        <dc:Bounds x="374" y="1232" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G2_di" bpmnElement="L4_05_G2" isMarkerVisible="true">
+        <dc:Bounds x="568" y="1018" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="548" y="1072" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A1_di" bpmnElement="L4_05_A1">
+        <dc:Bounds x="727" y="1003" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G3_di" bpmnElement="L4_05_G3" isMarkerVisible="true">
+        <dc:Bounds x="956" y="1018" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="936" y="1072" width="90" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A2_di" bpmnElement="L4_05_A2">
+        <dc:Bounds x="1100" y="1003" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A3_di" bpmnElement="L4_05_A3">
+        <dc:Bounds x="1339" y="1003" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A12_di" bpmnElement="L4_05_A12">
+        <dc:Bounds x="1518" y="1003" width="160" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A4_di" bpmnElement="L4_05_A4">
+        <dc:Bounds x="1130" y="807" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G4_di" bpmnElement="L4_05_G4" isMarkerVisible="true">
+        <dc:Bounds x="1772" y="1018" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G5_di" bpmnElement="L4_05_G5" isMarkerVisible="true">
+        <dc:Bounds x="1966" y="1018" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A11_di" bpmnElement="L4_05_A11">
+        <dc:Bounds x="533" y="1217" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A5_di" bpmnElement="L4_05_A5">
+        <dc:Bounds x="727" y="1217" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G6_di" bpmnElement="L4_05_G6" isMarkerVisible="true">
+        <dc:Bounds x="956" y="1232" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="936" y="1286" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A6_di" bpmnElement="L4_05_A6">
+        <dc:Bounds x="1100" y="1217" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G7_di" bpmnElement="L4_05_G7" isMarkerVisible="true">
+        <dc:Bounds x="1374" y="1232" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A7_di" bpmnElement="L4_05_A7">
+        <dc:Bounds x="1528" y="1217" width="140" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G8_di" bpmnElement="L4_05_G8">
+        <dc:Bounds x="2160" y="1232" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G9_di" bpmnElement="L4_05_G9" isMarkerVisible="true">
+        <dc:Bounds x="2354" y="1232" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2304" y="1286" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_E1_di" bpmnElement="L4_05_E1">
+        <dc:Bounds x="2555" y="1239" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2508" y="1279" width="130" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_E2_di" bpmnElement="L4_05_E2">
+        <dc:Bounds x="2555" y="1025" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2498" y="1065" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_S2_di" bpmnElement="L4_05_S2">
+        <dc:Bounds x="187" y="478" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="150" y="518" width="110" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A8_di" bpmnElement="L4_05_A8">
+        <dc:Bounds x="1120" y="456" width="140" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G10_di" bpmnElement="L4_05_G10" isMarkerVisible="true">
+        <dc:Bounds x="374" y="471" width="50" height="50"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="354" y="525" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A9_di" bpmnElement="L4_05_A9">
+        <dc:Bounds x="533" y="260" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_A10_di" bpmnElement="L4_05_A10">
+        <dc:Bounds x="727" y="260" width="120" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_G11_di" bpmnElement="L4_05_G11" isMarkerVisible="true">
+        <dc:Bounds x="956" y="471" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_E3_di" bpmnElement="L4_05_E3">
+        <dc:Bounds x="1381" y="478" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1344" y="518" width="110" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_GR_EU_di" bpmnElement="L4_05_GR_EU">
+        <dc:Bounds x="508" y="775" width="1568" height="410"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="514" y="779" width="52" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L4_05_GR_US_di" bpmnElement="L4_05_GR_US">
+        <dc:Bounds x="314" y="228" width="752" height="410"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="320" y="232" width="68" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="L4_05_F1_di" bpmnElement="L4_05_F1">
+        <di:waypoint x="223" y="1257"/>
+        <di:waypoint x="374" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F2_di" bpmnElement="L4_05_F2">
+        <di:waypoint x="399" y="1232"/>
+        <di:waypoint x="399" y="1043"/>
+        <di:waypoint x="568" y="1043"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F3_di" bpmnElement="L4_05_F3">
+        <di:waypoint x="424" y="1257"/>
+        <di:waypoint x="533" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F4_di" bpmnElement="L4_05_F4">
+        <di:waypoint x="653" y="1257"/>
+        <di:waypoint x="727" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F5_di" bpmnElement="L4_05_F5">
+        <di:waypoint x="618" y="1043"/>
+        <di:waypoint x="727" y="1043"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="626" y="1020" width="27" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F6_di" bpmnElement="L4_05_F6">
+        <di:waypoint x="593" y="1018"/>
+        <di:waypoint x="593" y="795"/>
+        <di:waypoint x="1991" y="795"/>
+        <di:waypoint x="1991" y="1018"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="599" y="983" width="22" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F7_di" bpmnElement="L4_05_F7">
+        <di:waypoint x="847" y="1043"/>
+        <di:waypoint x="956" y="1043"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F8_di" bpmnElement="L4_05_F8">
+        <di:waypoint x="1006" y="1043"/>
+        <di:waypoint x="1100" y="1043"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1014" y="1020" width="27" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F9_di" bpmnElement="L4_05_F9">
+        <di:waypoint x="981" y="1018"/>
+        <di:waypoint x="981" y="847"/>
+        <di:waypoint x="1130" y="847"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="987" y="975" width="22" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F10_di" bpmnElement="L4_05_F10">
+        <di:waypoint x="1280" y="1043"/>
+        <di:waypoint x="1339" y="1043"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F11_di" bpmnElement="L4_05_F11">
+        <di:waypoint x="1459" y="1043"/>
+        <di:waypoint x="1518" y="1043"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F12_di" bpmnElement="L4_05_F12">
+        <di:waypoint x="1250" y="847"/>
+        <di:waypoint x="1797" y="847"/>
+        <di:waypoint x="1797" y="1018"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F13_di" bpmnElement="L4_05_F13">
+        <di:waypoint x="1822" y="1043"/>
+        <di:waypoint x="1966" y="1043"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F14_di" bpmnElement="L4_05_F14">
+        <di:waypoint x="2016" y="1043"/>
+        <di:waypoint x="2185" y="1043"/>
+        <di:waypoint x="2185" y="1232"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F15_di" bpmnElement="L4_05_F15">
+        <di:waypoint x="847" y="1257"/>
+        <di:waypoint x="956" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F16_di" bpmnElement="L4_05_F16">
+        <di:waypoint x="1006" y="1257"/>
+        <di:waypoint x="1100" y="1257"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1014" y="1234" width="27" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F17_di" bpmnElement="L4_05_F17">
+        <di:waypoint x="981" y="1232"/>
+        <di:waypoint x="981" y="1205"/>
+        <di:waypoint x="1068" y="1205"/>
+        <di:waypoint x="1068" y="1167"/>
+        <di:waypoint x="1399" y="1167"/>
+        <di:waypoint x="1399" y="1232"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="989" y="1182" width="22" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F18_di" bpmnElement="L4_05_F18">
+        <di:waypoint x="1280" y="1257"/>
+        <di:waypoint x="1374" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F19_di" bpmnElement="L4_05_F19">
+        <di:waypoint x="1424" y="1257"/>
+        <di:waypoint x="1528" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F20_di" bpmnElement="L4_05_F20">
+        <di:waypoint x="1668" y="1257"/>
+        <di:waypoint x="2160" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F21_di" bpmnElement="L4_05_F21">
+        <di:waypoint x="2210" y="1257"/>
+        <di:waypoint x="2354" y="1257"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F22_di" bpmnElement="L4_05_F22">
+        <di:waypoint x="2404" y="1257"/>
+        <di:waypoint x="2555" y="1257"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2412" y="1234" width="27" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F23_di" bpmnElement="L4_05_F23">
+        <di:waypoint x="2379" y="1232"/>
+        <di:waypoint x="2379" y="1043"/>
+        <di:waypoint x="2555" y="1043"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2385" y="1191" width="22" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F24_di" bpmnElement="L4_05_F24">
+        <di:waypoint x="223" y="496"/>
+        <di:waypoint x="374" y="496"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F25_di" bpmnElement="L4_05_F25">
+        <di:waypoint x="399" y="471"/>
+        <di:waypoint x="399" y="300"/>
+        <di:waypoint x="533" y="300"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="405" y="428" width="27" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F26_di" bpmnElement="L4_05_F26">
+        <di:waypoint x="424" y="496"/>
+        <di:waypoint x="956" y="496"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="432" y="473" width="22" height="18"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F27_di" bpmnElement="L4_05_F27">
+        <di:waypoint x="653" y="300"/>
+        <di:waypoint x="727" y="300"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F28_di" bpmnElement="L4_05_F28">
+        <di:waypoint x="847" y="300"/>
+        <di:waypoint x="981" y="300"/>
+        <di:waypoint x="981" y="471"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F29_di" bpmnElement="L4_05_F29">
+        <di:waypoint x="1006" y="496"/>
+        <di:waypoint x="1120" y="496"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F30_di" bpmnElement="L4_05_F30">
+        <di:waypoint x="1260" y="496"/>
+        <di:waypoint x="1381" y="496"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_F31_di" bpmnElement="L4_05_F31">
+        <di:waypoint x="1678" y="1043"/>
+        <di:waypoint x="1772" y="1043"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M1_di" bpmnElement="L4_05_M1">
+        <di:waypoint x="1268" y="1083"/>
+        <di:waypoint x="1268" y="1154"/>
+        <di:waypoint x="1302" y="1154"/>
+        <di:waypoint x="1302" y="1530"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1308" y="1411" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M2_di" bpmnElement="L4_05_M2">
+        <di:waypoint x="1268" y="1297"/>
+        <di:waypoint x="1268" y="1530"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1112" y="1411" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M3_di" bpmnElement="L4_05_M3">
+        <di:waypoint x="1112" y="1217"/>
+        <di:waypoint x="1112" y="1172"/>
+        <di:waypoint x="1088" y="1172"/>
+        <di:waypoint x="1088" y="80"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1094" y="90" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M4_di" bpmnElement="L4_05_M4">
+        <di:waypoint x="1268" y="1217"/>
+        <di:waypoint x="1268" y="1172"/>
+        <di:waypoint x="1312" y="1172"/>
+        <di:waypoint x="1312" y="640"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1318" y="650" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M5_di" bpmnElement="L4_05_M5">
+        <di:waypoint x="1248" y="456"/>
+        <di:waypoint x="1248" y="80"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1254" y="90" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M6_di" bpmnElement="L4_05_M6">
+        <di:waypoint x="593" y="260"/>
+        <di:waypoint x="593" y="80"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="599" y="90" width="120" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M7_di" bpmnElement="L4_05_M7">
+        <di:waypoint x="787" y="260"/>
+        <di:waypoint x="787" y="80"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="793" y="90" width="120" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M8_di" bpmnElement="L4_05_M8">
+        <di:waypoint x="98" y="80"/>
+        <di:waypoint x="98" y="1530"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="104" y="90" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L4_05_M9_di" bpmnElement="L4_05_M9">
+        <di:waypoint x="292" y="80"/>
+        <di:waypoint x="292" y="222"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="298" y="90" width="150" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

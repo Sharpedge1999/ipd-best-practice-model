@@ -1,0 +1,272 @@
+# Glossary (Y1) - verbatim process terms, allowed lane roles and external pools.
+# 'term' is written exactly as the cited source writes it; 'meaning' is a short paraphrase in own words.
+# src items: {key, loc, finding}. Labels in specs use these terms (LBL-04, LBL-05).
+# Program abbreviations used in labels: iPD = important protocol deviation; CtQ = critical to quality;
+# CSR = clinical study report; EU CTR = Regulation (EU) No 536/2014 (never bare "CTR").
+
+terms:
+  - term: "protocol deviation"
+    meaning: "Any change, divergence or departure from the study design or procedures defined in the protocol."
+    src:
+      - {key: E3QA, loc: "S3", finding: R2-066}
+      - {key: FDA-PD24, loc: "SII", finding: R4-035}
+    note: "FDA-PD24 is draft guidance; it adopts the E3 Q&A definition."
+  - term: "important protocol deviations"
+    meaning: "Subset of protocol deviations that may significantly affect the completeness, accuracy and/or reliability of trial data or a participant's rights, safety or well-being."
+    src:
+      - {key: E6R3, loc: "A1-3.9.3", finding: R1-033}
+      - {key: E3QA, loc: "S3", finding: R2-067}
+      - {key: FDA-PD24, loc: "SII", finding: R4-036}
+    note: "Label form: 'important protocol deviation' (iPD). Classification by trial-specific criteria (E6R3 A1-3.9.3)."
+  - term: "protocol violation"
+    meaning: "Sometimes used interchangeably with important protocol deviation; in E3 Annex IVa meant only a departure that led to withdrawal."
+    src:
+      - {key: E3QA, loc: "S3", finding: R2-069}
+      - {key: E9, loc: "S5.2", finding: R2-077}
+    note: "Not used in labels (C-17); kept only in E9 paraphrases."
+  - term: "intentional departure from the IRB-approved protocol"
+    meaning: "A deviation decided in advance for a single participant; should be rare."
+    src:
+      - {key: FDA-PD24, loc: "SII", finding: R4-037}
+      - {key: FDA-PD24, loc: "SIII.B.1", finding: R4-048}
+    note: "Label form: 'intentional protocol deviation' (FDA-PD24 SIII.B.2 'intentional deviations', R4-061). Draft guidance."
+  - term: "protocol waivers or exemptions"
+    meaning: "Prospective approval of deviations from recruitment and enrolment criteria; not permitted."
+    src:
+      - {key: M11-TEMPLATE, loc: "S5.1", finding: R2-113}
+  - term: "immediate hazard"
+    meaning: "Hazard to trial participants that justifies deviating from the protocol without prior approval."
+    src:
+      - {key: E6R3, loc: "A1-2.5.4", finding: R1-022}
+      - {key: E6R3, loc: "A1-1.4.7", finding: R1-011}
+  - term: "apparent immediate hazards"
+    meaning: "US wording of the exception that allows a change before IRB approval."
+    src:
+      - {key: 21CFR312, loc: "21CFR312.30(b)(2)(ii)", finding: R4-004}
+      - {key: 21CFR312, loc: "21CFR312.66", finding: R4-024}
+  - term: "noncompliance"
+    meaning: "Not complying with the protocol, SOPs, GCP and/or applicable regulatory requirements, by investigator/institution or sponsor staff."
+    src:
+      - {key: E6R3, loc: "A1-3.12.1", finding: R1-071}
+  - term: "serious noncompliance"
+    meaning: "Issues likely to significantly impact participants' rights, safety or well-being or the reliability of trial results."
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", finding: R1-074}
+      - {key: E6R3, loc: "P6.3", finding: R1-003}
+    note: "Not defined in the E6(R3) glossary (C-01)."
+  - term: "serious or continuing noncompliance"
+    meaning: "US IRB reporting trigger towards institutional officials and FDA; not defined in 21 CFR."
+    src:
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", finding: R4-028}
+  - term: "serious breach"
+    meaning: "A breach of EU CTR or of the applicable protocol version likely to affect to a significant degree the safety and rights of a subject or the reliability and robustness of the data."
+    src:
+      - {key: EUCTR, loc: "Art. 52(2)", finding: R3-024}
+      - {key: EMA-SB, loc: "SGlossary", finding: R3-043}
+    note: "EU only; not the same as an important protocol deviation (EMA-SB S5.1, R3-062)."
+  - term: "suspected serious breach"
+    meaning: "An incident reported to the sponsor that the sponsor has not yet assessed."
+    src:
+      - {key: EMA-SB, loc: "SGlossary", finding: R3-044}
+  - term: "urgent safety measures"
+    meaning: "Measures taken by sponsor and investigator when an unexpected event is likely to seriously affect the benefit-risk balance."
+    src:
+      - {key: EUCTR, loc: "Art. 54(1)", finding: R3-027}
+  - term: "changes in the research activity"
+    meaning: "US investigator reporting object towards the IRB; whether a deviation is such a change is not stated (C-03)."
+    src:
+      - {key: 21CFR312, loc: "21CFR312.66", finding: R4-023}
+      - {key: 21CFR56, loc: "21CFR56.108(a)(3)", finding: R4-025}
+  - term: "unanticipated problems involving risks to human subjects or others"
+    meaning: "US reporting object towards the IRB, institutional officials and FDA (safety interface)."
+    src:
+      - {key: 21CFR312, loc: "21CFR312.66", finding: R4-023}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(1)", finding: R4-027}
+  - term: "critical to quality factors"
+    meaning: "Attributes of a trial fundamental to participant protection, to the reliability and interpretability of results and to the decisions based on them."
+    src:
+      - {key: E6R3, loc: "P6.2", finding: R1-091}
+      - {key: E8R1, loc: "S3.2", finding: R2-003}
+    note: "Program abbreviation CtQ; CTTI writes 'CTQ'."
+  - term: "acceptable ranges"
+    meaning: "Sense 1: pre-specified trial-level limits (e.g. quality tolerance limits) supporting control of risks to CtQ factors. Sense 2: windows for specific protocol provisions that reduce deviations."
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.3", finding: R1-041}
+      - {key: E6R3, loc: "AppB-Intro", finding: R1-109}
+    note: "Two senses (C-04); an exceedance of sense 1 is not a protocol deviation."
+  - term: "quality tolerance limits"
+    meaning: "Trial-level example of acceptable ranges."
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.3", finding: R1-041}
+      - {key: TCB-RBQM, loc: "SNumber-of-QTLs", finding: R5-049}
+  - term: "key risk indicators"
+    meaning: "Site- or country-level indicators that can share parameters with trial-level QTLs."
+    src:
+      - {key: TCB-RBQM, loc: "SRelationship-Between-QTLs-and-KRIs", finding: R5-050}
+  - term: "centralised monitoring"
+    meaning: "Timely evaluation of accumulated data by qualified and trained sponsor staff."
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.2(a)", finding: R1-050}
+      - {key: FDA-RBM13, loc: "SIII.B", finding: R4-082}
+    note: "FDA spelling 'centralized monitoring'."
+  - term: "monitoring plan"
+    meaning: "Document describing strategy, methods, responsibilities and requirements for monitoring."
+    src:
+      - {key: E6R3, loc: "GL:Monitoring Plan", finding: R1-134}
+  - term: "monitoring report"
+    meaning: "Documented report following site and/or centralised monitoring."
+    src:
+      - {key: E6R3, loc: "GL:Monitoring Report", finding: R1-135}
+  - term: "Protocol Deviation Assessment Plan (PDAP)"
+    meaning: "Protocol-specific, version-controlled plan describing how deviations are managed."
+    src:
+      - {key: TCB-PD-TIRS, loc: "SPrepare", finding: R5-010}
+    note: "Best practice. Label form: 'deviation assessment plan'."
+  - term: "root cause analysis"
+    meaning: "Analysis the sponsor performs when noncompliance has significant actual or potential impact."
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", finding: R1-072}
+  - term: "corrective and preventive actions"
+    meaning: "Actions implemented for significant noncompliance, with confirmation of adequacy."
+    src:
+      - {key: E6R3, loc: "A1-3.12.2", finding: R1-073}
+    note: "E6R3 Appendix C writes 'corrective and preventative actions' (R1-123). Abbreviation CAPA."
+  - term: "essential records"
+    meaning: "Documents and data that allow evaluation of trial conduct and reliability of results."
+    src:
+      - {key: E6R3, loc: "GL:Essential Records", finding: R1-136}
+  - term: "trial master file (TMF)"
+    meaning: "Sponsor repository of essential records; the investigator side is the investigator site file (ISF)."
+    src:
+      - {key: E6R3, loc: "AppC-C.2.3", finding: R1-116}
+  - term: "clinical trial master file"
+    meaning: "EU CTR term for the master file kept by sponsor and investigator."
+    src:
+      - {key: EUCTR, loc: "Art. 57", finding: R3-032}
+      - {key: EUCTR, loc: "Art. 57", finding: R3-033}
+  - term: "end of a clinical trial"
+    meaning: "Last visit of the last subject or a later protocol-defined point; starts the EU 25-year archiving period."
+    src:
+      - {key: EUCTR, loc: "Art. 2(2)(26)", finding: R3-008}
+  - term: "Clinical Trial/Study Report (CSR)"
+    meaning: "Report in which clinical and statistical description, presentations and analyses are integrated."
+    src:
+      - {key: E6R3, loc: "GL:Clinical Trial/Study Report (CSR)", finding: R1-139}
+      - {key: EUCTR, loc: "Art. 2(2)(35)", finding: R3-011}
+    note: "Label form: 'clinical study report (CSR)'; never bare 'CTR'."
+  - term: "Member State concerned"
+    meaning: "EU Member State where the trial application was submitted; recipient of serious breach notifications."
+    src:
+      - {key: EUCTR, loc: "Art. 2(2)(12)", finding: R3-002}
+  - term: "EU portal"
+    meaning: "Notification channel of EU CTR (CTIS)."
+    src:
+      - {key: EUCTR, loc: "Art. 52(1)", finding: R3-023}
+      - {key: EMA-SB, loc: "S3.1", finding: R3-047}
+  - term: "substantial modification"
+    meaning: "EU change after authorisation likely to have a substantial impact on safety, rights or data reliability (modification route, not deviation route)."
+    src:
+      - {key: EUCTR, loc: "Art. 2(2)(13)", finding: R3-003}
+  - term: "Protocol Amendment"
+    meaning: "Documented description of a change to a protocol."
+    src:
+      - {key: E6R3, loc: "GL:Protocol Amendment", finding: R1-132}
+  - term: "data finalisation"
+    meaning: "Activities before analysis, which may include compiling protocol deviations and addressing their impact."
+    src:
+      - {key: E6R3, loc: "A1-4.2.6(b)", finding: R1-105}
+  - term: "blind review"
+    meaning: "Checking and assessment of data between trial completion and breaking of the blind."
+    src:
+      - {key: E9, loc: "GL:Blind Review", finding: R2-096}
+  - term: "full analysis set"
+    meaning: "Analysis set as close as possible to all randomised subjects."
+    src:
+      - {key: E9, loc: "S5.2.1", finding: R2-082}
+  - term: "per protocol set"
+    meaning: "Subset of the full analysis set more compliant with the protocol, without major protocol violations."
+    src:
+      - {key: E9, loc: "S5.2.2", finding: R2-086}
+  - term: "intercurrent events"
+    meaning: "Events after treatment initiation that affect interpretation or existence of measurements; not protocol deviations."
+    src:
+      - {key: E9R1, loc: "GL:Intercurrent Events", finding: R2-110}
+      - {key: E9R1, loc: "SA.5.3", finding: R2-106}
+  - term: "important quality issues"
+    meaning: "Issues, incl. acceptable range exceedances, summarised with remedial actions in the CSR."
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.6", finding: R1-045}
+  - term: "DV domain"
+    meaning: "SDTM events-class domain holding the protocol deviations of a study."
+    src:
+      - {key: NCIT-DV, loc: "SC49585", finding: R5-068}
+      - {key: FDA-SDTCG, loc: "S4.1.1.3", finding: R5-069}
+  - term: "Audit Trail"
+    meaning: "Metadata capturing who did what, when and why to data and records."
+    src:
+      - {key: E6R3, loc: "GL:Audit Trail", finding: R1-137}
+  - term: "Source Records"
+    meaning: "Original documents or data, or certified copies, of trial observations."
+    src:
+      - {key: E6R3, loc: "GL:Source Records", finding: R1-138}
+
+lane_roles:
+  - lane_id: L_SPON
+    pool: P_SPON
+    name: "Sponsor"
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", finding: R1-140}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", finding: R3-004}
+      - {key: 21CFR312, loc: "21CFR312.50", finding: R4-008}
+    note: "Default lane for sponsor duties where no sponsor-internal role is named (workflow_plan section 0)."
+  - lane_id: L_MON
+    pool: P_SPON
+    name: "Monitor"
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.5.1(a)", finding: R1-056}
+      - {key: E6R3, loc: "A1-3.11.4.4", finding: R1-055}
+    note: "E6R3 names 'an assigned monitor' and 'persons performing monitoring'; used for on-site monitoring items (C-25)."
+
+roles_named_not_used_as_lanes:
+  - {name: "medical monitor, data scientist/data manager, biostatistician", src: {key: E6R3, loc: "A1-3.11.4.2(a)", finding: R1-050}, reason: "examples of sponsor staff performing centralised monitoring; kept in the Sponsor lane"}
+  - {name: "CRAs", src: {key: TCB-PD-TIRS, loc: "SIdentify-and-Collect", finding: R5-021}, reason: "best-practice term for monitors; the Monitor lane uses the E6(R3) term"}
+  - {name: "independent study team member (or group)", src: {key: TCB-PD-TIRS, loc: "SConfirm", finding: R5-028}, reason: "best-practice reviewer, sponsor side; Sponsor lane"}
+  - {name: "Delegated party", src: {key: EMA-SB, loc: "SGlossary", finding: R3-045}, reason: "service provider under contract; not a pool (D1), interface REQ-213"}
+  - {name: "service provider", src: {key: E6R3, loc: "GL:Service Provider", finding: R1-144}, reason: "external party; not a pool (D1), interface REQ-213"}
+  - {name: "Principal investigator", src: {key: EUCTR, loc: "Art. 2(2)(16)", finding: R3-006}, reason: "possible lane in the Investigator/institution pool if B1 splits it; default no lanes"}
+  - {name: "appropriate institutional officials", src: {key: 21CFR56, loc: "21CFR56.108(b)(2)", finding: R4-028}, reason: "recipient of IRB onward reports; represented by the Investigator/institution pool"}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", finding: R1-140}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Investigator", finding: R1-141}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", finding: R3-005}
+      - {key: 21CFR312, loc: "21CFR312.60", finding: R4-017}
+    note: "Expanded on all levels (D1, ROL-03 exception)."
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", finding: R1-142}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", finding: R3-001}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", finding: R4-028}
+    note: "EU CTR term 'ethics committee'; US term 'IRB'. Collapsed (D1): only message flows."
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", finding: R1-143}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", finding: R3-002}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", finding: R4-014}
+    note: "EU recipient: Member States concerned via the EU portal; US recipient: FDA. Collapsed (D1)."

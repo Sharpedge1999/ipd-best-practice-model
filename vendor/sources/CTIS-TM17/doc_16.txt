@@ -1,0 +1,692 @@
+FAQs
+Supervise a CT – Ad Hoc Assessment
+
+
+CTIS Training Programme – Module 17
+Version 1.3 – August 2024
+
+
+
+     What you will find
+     • Answers to questions regarding general information of ad hoc assessment.
+     • Answers to questions regarding the creation of an ad hoc assessment.
+     • Answers to questions regarding the requests for information and
+       consultation with other the MSs.
+     • Answer to questions regarding the update and completion of an ad hoc
+       assessment.
+     • Answers to questions regarding how to search, view and download an ad
+       hoc assessment.
+     • Answers to questions regarding the roles and permissions.
+
+
+               © European Medicines Agency, 2024
+
+               Reproduction and/or distribution of the content of these training materials for
+               non-commercial or commercial purposes is authorised, provided the
+               European Medicines Agency is acknowledged as the source of the materials.
+
+               The European Medicines Agency developed this training material to enhance
+               public access to information on the Clinical Trial Information System (CTIS).
+               This material describes a preliminary version of CTIS and may therefore not
+               entirely describe the system as it is at the time of use of this material. The
+               Agency does not warrant or accept any liability in relation to the use (in part
+               or in whole) or the interpretation of the information contained in this training
+               material by third parties.
+     Record of updated versions
+
+
+     The table below describes the updated versions after CTIS go-live (January 2022):
+
+
+
+          Version                             Version description                    Date
+
+                          Minor changes in questions:
+
+             1.3          4.7. How can users link the assessment outcome to the   August 2024
+                          notification?
+                          5.4. Are the ad hoc assessments form published?
+
+
+             1.2          Training material version published at CTIS go-live.    January 2022
+
+
+
+
+2   Clinical Trials Information System
+     Table of Contents
+
+     1.         General information .................................... 6
+        1.1. What is an ad hoc assessment? ........................................................................ 6
+
+        1.2. When can an ad hoc assessment be created? ..................................................... 6
+
+        1.3. Which actors are involved in an ad hoc assessment? ........................................... 6
+
+        1.4. What are the reasons for creating an ad hoc assessment? .................................... 6
+
+        1.5. Is it mandatory to create a corrective measure before starting an ad hoc
+             assessment? ................................................................................................. 7
+
+     2.         Creation of an ad hoc assessment ................. 8
+        2.1. How can users create an ad hoc assessment in CTIS? .......................................... 8
+
+        2.2. What are the sections of an ad hoc assessment? ................................................. 8
+
+        2.3. How can Member States select the clinical trial for the assessment? ...................... 8
+
+        2.4. Can an ad hoc assessment be linked to more than one clinical trial? ...................... 9
+
+        2.5. How can Member States link the assessment to a notification or other aspects of the
+             Clinical Trial (CT)? .......................................................................................... 9
+
+        2.6. Can an ad hoc assessment be linked to more than one notification?....................... 9
+
+        2.7. How can users save an ad hoc assessment? ......................................................10
+
+        2.8. How can users cancel an ad hoc assessment? ....................................................10
+
+        2.9. How can users share an ad hoc assessment? .....................................................10
+
+        2.10. Does the assessment outcome change the status of the clinical trial? ....................10
+
+     3. Request for information and consultation with
+     other MSs ....................................................... 10
+        3.1. What is an RFI created as part of an ad hoc assessment? ....................................10
+
+        3.2. How are Member States (MS) notified that the sponsor has replied the Request for
+             Information (RFI)? ........................................................................................11
+
+        3.3. What is a discussion raised as part of an ad hoc assessment? ..............................11
+
+        3.4. Which Member States (MSs) have access to the discussion? ................................11
+
+        3.5. Where can Member States (MSs) view and respond to the discussion? ..................12
+
+        3.6. Can the sponsor view the Member States’ (MS) discussion on the ad hoc assessment?
+             12
+
+     4. Update and completion of an ad hoc
+     assessment ..................................................... 12
+        4.1. How can users update an ad hoc assessment? ...................................................12
+
+
+3   Clinical Trials Information System
+        4.2. When can an ad hoc assessment be completed? ................................................12
+
+        4.3. What happen if the ad hoc assessment outcome is ‘Suspend trial’? .......................13
+
+        4.4. Is it possible to update a completed ad hoc assessment? ....................................13
+
+        4.5. Is it possible to cancel a completed ad hoc assessment? .....................................13
+
+        4.6. How can users close an ad hoc assessment? .....................................................13
+
+        4.7. How can users link the assessment outcome to the notification? ..........................13
+
+     5. Search, view and download an ad hoc
+     assessment ..................................................... 15
+        5.1. How can users search for an ad hoc assessment? ..............................................15
+
+        5.2. How can users view a completed ad hoc assessment?.........................................15
+
+        5.3. How can users view previous versions of an ad hoc assessment? .........................15
+
+        5.4. Are the ad hoc assessments form published? .....................................................16
+
+        5.5. How can users download an ad hoc assessment? ...............................................16
+
+     6.         Roles and permissions ................................ 16
+        6.1. What roles and permissions are involved in the ad hoc assessment process?..........16
+
+
+
+
+4   Clinical Trials Information System
+    FAQs
+
+
+     In this document, we list common questions regarding Module 17: Supervise a CT – Ad hoc
+     assessment. They are categorised into: questions regarding general information of ad hoc
+     assessment; questions regarding the creation of an ad hoc assessment; questions regarding
+     the requests for information and consultation with other MSs; questions regarding the
+     update and completion of an ad hoc assessment; questions regarding the search, view, and
+     download of an ad hoc assessment; questions regarding the roles and permissions. The
+     specific learning objectives of this module are:
+
+                1.   Remember what an ad hoc assessment is and when an MS can create one.
+
+                2.   Understand how to create, cancel, save, and share an ad hoc assessment.
+
+                3.   Understand how to raise an RFI, consult with other MSs, update and complete an
+                     ad hoc assessment.
+
+                4.   Understand how to search, view, and download an ad hoc assessment.
+
+                5.   Understand which user roles are involved in the ad hoc assessment process.
+
+     We encourage you to read these questions and answers carefully. If you have any questions
+     which are not covered in this document, please contact us at CT.Training@ema.europa.eu so
+     that we can update this document accordingly. This document will be progressively enriched
+     with the input of the experts involved in the validation of the training material, the Master
+     Trainers disseminating the materials, and the end-users.
+
+
+
+
+5   Clinical Trials Information System
+     1.         General information
+
+
+     1.1. What is an ad hoc assessment?
+     Process that allows Member States (MSs) to launch an assessment regarding a submitted
+     notification, an investigational medicinal product, or any other information relevant to the
+     supervision of a trial. During this process, the MS can request additional information from the
+     sponsor and consult with the other MSs
+
+
+
+
+     1.2. When can an ad hoc assessment be created?
+     An ad hoc assessment can be created by a Member State (MS) after a Clinical Trial
+     Application (CTA) has been authorised and at least one of the following situations has
+     occurred and need to be considered:
+
+           •    An event has occurred during the trial.
+
+           •    An event not directly related to the trial has occurred (e.g. a new Investigational
+                Medicinal Product (IMP) safety data).
+
+
+
+
+     1.3. Which actors are involved in an ad hoc assessment?
+     The Member States (MS) of the European Union (EU), who will be represented by National
+     Competent Authorities (NCAs) and Ethics Committee in CTIS, and the Sponsors in case
+     requests for information (RFIs) are raised.
+
+           •    MSs: They are able to create, update and complete an ad hoc assessment. They can
+                also search, view, or download an ad hoc assessment that has been already
+                completed. The assessing MS is the one that starts the ad hoc assessment and the
+                discussion with the other MS, and that can raise a Request for Information (RFI) to
+                the sponsor.
+
+           •    Sponsors: They participate in the process in case the MSs raise a request for
+                information.
+
+
+
+
+     1.4. What are the reasons for creating an ad hoc assessment?
+     The ad hoc assessment process enables the Member State (MS) to assess information based
+     on different reasons, depending on if it is related to a notification, an investigational
+     medicinal product, or any other information relevant to the supervision of the trial.
+
+     The notifications that can trigger an ad hoc assessment are:
+
+
+
+
+6   Clinical Trials Information System
+           •    Temporary halt: Article 2 (28) of the Clinical Trials Regulation 1 (CT Regulation)
+                defines the temporary halt of a clinical trial as an interruption not provided in the
+                protocol of the conduct of a clinical trial by the sponsor with the intention of the
+                sponsor to resume it. It can be related to subject safety and/or benefit-risk balance
+                or not.
+
+           •    Serious breach: Notification to inform of a breach likely to affect to a significant
+                degree the safety and rights of a subject or the reliability and robustness of the data
+                generated in the Clinical Trial (CT). These notifications must be made no later than 7
+                days from the date on which the sponsor became aware of the breach (Article 52 of
+                the CT Regulation 2).
+
+           •    Unexpected event: Notification of an incident that might influence the benefit-risk
+                assessment of the medical product or that would lead to changes in the
+                administration of a medical product or the overall conduct of a CT (e.g. a significant
+                hazard to the patient population). These notifications must be made no later than 15
+                days from the date the sponsor became aware of the event (Article 53 of the CT
+                Regulation 3).
+
+           •    Urgent safety measure: Notification of an unexpected event that is likely to affect
+                the benefit-risk balance of a CT significantly, and the appropriate urgent safety
+                measures to protect the subjects that have been taken by the sponsor and/or the
+                investigator. The sponsor shall notify the Member State Concerned (MSC)
+                accordingly and within 7 days from the date on which the measures were taken
+                (Article 54 of the CT Regulation 4).
+
+     The other aspects of the CT that can trigger an ad hoc assessment are:
+
+           •    SUSAR related: A suspected unexpected serious adverse reaction is an untoward
+                and unintended response to a study drug, that is fatal or life-threatening.
+
+           •    Investigational Medical Products (IMP) class and mode action: It can trigger
+                an ad hoc assessment if a safety issue is affecting medicinal products with a similar
+                mode of action. The mode action is capture in the uploaded documents, e.g.
+                Protocol.
+
+           •    Other: Relevant information to the supervision of a trial.
+
+
+
+
+     1.5. Is it mandatory to create a corrective measure before
+          starting an ad hoc assessment?
+     No. An ad hoc assessment can be performed independently from a corrective measure.
+
+     However, a corrective measure can stem from an ad hoc assessment (also other events such
+     as Inspections, notifications, etc). An ad hoc assessment conclusion can deem that a
+
+
+     1
+       European Commission, Regulation (EU) No 536/2014 of the European Parliament and of the Council of 16 April 2014
+     on clinical trials on medicinal products for human use, and repealing Directive 2001/20/EC, EU Official Journal L158. 16
+     of April 2014. Available at: https://ec.europa.eu/health/sites/default/files/files/eudralex/vol-
+     1/reg_2014_536/reg_2014_536_en.pdf
+     2
+       European Commission, Regulation (EU) No 536/2014 of the European Parliament and of the Council of 16 April 2014
+     on clinical trials on medicinal products for human use, and repealing Directive 2001/20/EC, EU Official Journal L158. 16
+     of April 2014. Available at this link
+     3
+       Idem
+     4
+       Idem
+
+7   Clinical Trials Information System
+     corrective measure is necessary. Then a corrective measure can be created after the ad hoc
+     assessment conclusion is submitted
+
+
+
+
+     2.         Creation of an ad hoc assessment
+
+
+     2.1. How can users create an ad hoc assessment in CTIS?
+     An ad hoc assessment can be created through the ‘Ad hoc assessment’ tab available on the
+     top panel of Clinical Trial Information System (CTIS). Once the Member State (MS) clicks on
+     the ‘New assessment’ button, it is possible to start populating each of the sections of the ad
+     hoc assessment form.
+
+
+
+
+     2.2. What are the sections of an ad hoc assessment?
+     There are five sections within the ad hoc assessment form:
+
+           •    Clinical Trials linked to the assessment: Section to search for clinical trials and
+                link them to the additional information assessment process.
+
+           •    Assessment details: Section to indicate the information required for the conduct of
+                an ad hoc assessment. The section is divided into three parts: Assessment title,
+                Linking, and Affected countries.
+
+           •    Request for information (RFI): Section to submit a request for information to the
+                sponsor.
+
+           •    Discussion: Section to share comments or relevant information with other Member
+                States.
+
+           •    Assessment outcome: Section to include the outcome and overall
+                recommendations regarding the ad hoc assessment.
+
+
+
+
+     2.3. How can Member States select the clinical trial for the
+          assessment?
+     When populating the ‘Clinical Trials linked to the assessment’ section, the assessing Member
+     State (MS) can select one or more clinical trials from the same sponsor on which the ad hoc
+
+8   Clinical Trials Information System
+     assessment is to be made.
+
+     For this purpose, the user can select the ‘Search for clinical trials’ button and complete some
+     fields to start the search (e.g. Product name, European Union Clinical Trial (EU CT) number,
+     Sponsor, etc.). From the results obtained, the Member State has to indicate the specific trial
+     and the associated Investigational Medical Products (IMP).
+
+
+
+
+     2.4. Can an ad hoc assessment be linked to more than one
+          clinical trial?
+     The additional information assessment can be linked to one or more clinical trials, but always
+     with the same sponsor.
+
+
+
+
+     2.5. How can Member States link the assessment to a
+          notification or other aspects of the Clinical Trial (CT)?
+     Within the ‘Assessment details’ section, Member States (MS) can link the assessment to a
+     notification or other events that may have occurred. This can be done, through a drop-down
+     list that displays the following options: temporary halt, serious breach, unexpected event,
+     urgent safety measure, SUSAR related, IMP class and mode action or other.
+
+
+
+
+     If the MS selects temporary halt, serious breach, unexpected event, or urgent safety
+     measure, the associated notification submitted for the selected trial in the ad hoc assessment
+     form can be indicated by ticking the corresponding box and click on the ‘Link to assessment’
+     button. In case MSwant to view the details of a notifications, they can go to the ‘Notification’
+     sub-tab and access the notification from there.
+
+
+
+
+     2.6. Can an ad hoc assessment be linked to more than one
+          notification?
+     Member States (MSs) can select one or more notifications of the same type to be used in the
+     ad hoc assessment form.
+
+
+9   Clinical Trials Information System
+      2.7. How can users save an ad hoc assessment?
+      Member States can save the ad hoc assessment form at any point in time. However, in order
+      to enable the ‘Request for information’ and ‘Discussion’ sections, the users need to save the
+      form after populating the sections: ‘Clinical Trials linked to the assessment’ and ‘Assessment
+      details’. To do that, users can select the ‘Save’ button located at the upper-right corner of
+      the ad hoc assessment form.
+
+
+
+
+      2.8. How can users cancel an ad hoc assessment?
+      Once the form is saved, the clinical trial information system (CTIS) enables the ‘Cancel’
+      functionality. Users can select the ‘Cancel’ button located at the upper-right corner of the ad
+      hoc assessment form in order to cancel it.
+
+      Member States (MS) are able to cancel the ad hoc assessment only if the assessment has
+      not been shared or completed.
+
+
+
+
+      2.9. How can users share an ad hoc assessment?
+      Once the form is saved, the clinical trial information system (CTIS) enables the ‘Share’
+      functionality. Users can select the ‘Share’ button located at the upper-right corner of the ad
+      hoc assessment form in order to share it with the other Member States.
+
+      The Member State Concerned (MSC) and affecting Member States (MSs) will receive an alert
+      and all MSs will receive an notice through the ‘Notice & alerts’ tab informing that an ad hoc
+      assessment has been initiated.
+
+      After the ad hoc assessment is shared, theMS is not allowed to cancel the assessment.
+
+
+
+
+      2.10. Does the assessment outcome change the status of the
+            clinical trial?
+      No, the assessment outcome is informative and does not trigger any change in the status of
+      the clinical trial. If a change in the clinical trial status is needed, the assessing Member State
+      (MS) can only recommend an action, for example, a corrective measure.
+
+
+
+
+      3.         Request for information and consultation with
+                 other MSs
+
+
+      3.1. What is an RFI created as part of an ad hoc assessment?
+      An ad hoc assessment Request for Information (RFI) is a request submitted by the assessing
+      Member State (MS) to the sponsor in the context of an ad hoc assessment in order to receive
+      additional information.
+
+
+
+
+10   Clinical Trials Information System
+      The assessing MS is able to request information from the sponsor in case additional details
+      are needed. For this purpose, users can expand the ‘Request for information (RFI)’ section
+      and complete the form: question details, due date, and additional document, if necessary.
+
+      Information on how a non Member State Concerned (MSC) can create a request for
+      Information(RFI) will be included in the training materials after the process has been
+      validated.
+
+
+
+
+      3.2. How are Member States (MS) notified that the sponsor has
+           replied the Request for Information (RFI)?
+      Once the sponsor has responded to the request for information, theMS receive a notice in the
+      ‘Notices & alerts’ tab. The MSs will assess the answer and decide if a new request is needed.
+
+
+
+
+      3.3. What is a discussion raised as part of an ad hoc
+           assessment?
+      The discussion forum is a communication tool available in the Clinical Trial Information
+      System (CTIS) for the Member States (MS) to consult or report on issues related to the trial.
+      The assessing MS can initiate the discussion with other MSS. For this purpose, the user
+      needs to fill in the fields of the ‘Discussion’ section (reason for the discussion, requested
+      date, and additional documents if necessary) and click on the ‘Share’ button to distribute it
+      with the MSs.
+
+
+
+
+      3.4. Which Member States (MSs) have access to the
+           discussion?
+      This information is visible to all MSs. Any MS not only the MSC for the selected trials, can
+      take part in the discussion initiated as part of an ad hoc assessment.
+
+
+
+
+11   Clinical Trials Information System
+      3.5. Where can Member States (MSs) view and respond to the
+           discussion?
+      MSs can search and respond to this discussion by accessing the ‘Notices & alert’ tab available
+      on the top panel of Clinical Trial Information System (CTIS) and clicking on the generated
+      alert.
+
+      The user may search by European Union Clinical Trial (EU CT) number, assessment ID or use
+      the advanced search filters to apply multiple parameters (e.g. source type, reception date,
+      etc.) in order to find the relevant alert.
+
+
+
+
+      MS can include written comments as well as attach documents to respond to the discussion.
+      Once the Member StatesMSs have responded to the discussion, all Member State MS
+      receives an alert in the ‘Notices & alerts’ tab.
+
+
+
+
+      3.6. Can the sponsor view the Member States’ (MS) discussion
+           on the ad hoc assessment?
+      No, the discussion amongst MSs will only be visible to MSs. It should be noted that sponsors
+      have no visibility on anything related to an ad hoc assessment.
+
+
+
+
+      4.         Update and completion of an ad hoc
+                 assessment
+
+
+      4.1. How can users update an ad hoc assessment?
+      Users can update an ad hoc assessment by selecting the ‘Padlock’ button at the upper-right
+      corner of the ad hoc assessment form. The assessing Member State (MS) can update any of
+      the sections of the form at any point in time. It is important to note that in order to make
+      these updates visible to the other MSs, the assessing MS needs to save the form and then
+      share it. In this way, the latest version of the form is visible to all MSs.
+
+
+
+
+      If the assessment has been cancelled or completed it cannot be updated.
+
+
+
+
+      4.2. When can an ad hoc assessment be completed?
+      An ad hoc assessment can be completed after the users populate all the required sections of
+
+12   Clinical Trials Information System
+      the assessment form, including the assessment outcome. To do that, users select the
+      ‘Complete’ button located at the upper-right corner of the ad hoc assessment form.
+
+      Once the assessment is completed, users are not able to update it.
+
+
+
+
+      4.3. What happen if the ad hoc assessment outcome is
+           ‘Suspend trial’?
+      If as part of the ad hoc assessment outcome it is recommended to suspend the trial, a
+      corrective measure should be created. Please note that the ad hoc assessment outcome has
+      no impact on the clinical trial (CT) status, if a change in the trial is needed, it will be applied
+      through the recommended corrective measure.
+
+
+
+
+      4.4. Is it possible to update a completed ad hoc assessment?
+      If the ad hoc assessment is completed, it is not possible to update any of the sections of the
+      completed form. A new ad hoc assessment will need to be created.
+
+
+
+
+      4.5. Is it possible to cancel a completed ad hoc assessment?
+      No. It is not possible to cancel a completed ad hoc assessment. Users can cancel an ad hoc
+      assessment if the form has not been shared or completed.
+
+
+
+
+      4.6. How can users close an ad hoc assessment?
+      Once the form is shared, clinical trial information system (CTIS) enables the ‘Close’
+      functionality. The Member State can go to the main page of the ‘Ad hoc assessment’ tab by
+      selecting the ‘Close’ button located at the upper-right corner of the ad hoc assessment form.
+
+      Member States (MSs) are able to close the ad hoc assessment only if the assessment has
+      been shared or completed.
+
+
+
+
+      4.7. How can users link the assessment outcome to the
+           notification?
+      When finalising the assessment, Member State (MS) users can link the Ad hoc assessment
+      conclusion to the related notification, triggering its publication on the CTIS Public site as per
+      the revised CTIS transparency rules. To do so, users should access the Notification sub-tab
+      and select the relevant assessment ID available, linking it to the notification (see screenshots
+      below). Alternatively, MS users can directly publish the notification details without linking it
+      to any ad hoc assessment conclusion selecting the option ‘no Ad-hoc assessment required’.
+
+
+
+
+13   Clinical Trials Information System
+      After linking the assessment to its respective notification or after selecting ‘no Ad hoc
+      assessment required’ , the notification details are published in the Public Portal as it can be
+      observed in the screenshot below
+
+
+
+
+14   Clinical Trials Information System
+      5.         Search, view and download an ad hoc
+                 assessment
+
+
+      5.1. How can users search for an ad hoc assessment?
+      Users can search for an ad hoc assessment in the ‘Ad hoc assessment’ tab. Member States
+      (MSs) can search for a specific assessment by indicating the European Union clinical trial (
+      EU CT) number ( EU CT), assessment ID or, alternatively, using the ‘Advance Search’ button
+      which includes fields such as EU CT number, Assessment type, Assessing MS, etc.
+
+
+
+
+      5.2. How can users view a completed ad hoc assessment?
+      Users are able to view a completed ad hoc assessment in read-only mode. For this purpose,
+      they can use the search functionality in the ‘Ad hoc assessment’ tab.
+
+
+
+
+      5.3. How can users view previous versions of an ad hoc
+           assessment?
+      In case an update is done to the ad hoc assessment form, a versioning mechanism is applied
+      in the system. Users are able to view previous versions of an ad hoc assessment in read-only
+      mode. Only the latest version of an ad hoc assessment can be subject to further update.
+
+      The different versions of the ad hoc assessment form can be accessed by clicking on the
+      versions icon located at the upper-right corner of the ad hoc assessment form.
+
+
+
+
+15   Clinical Trials Information System
+      5.4. Are the ad hoc assessments form published?
+      No. None of the ad hoc assessment forms populated by the Member States (MSs) nor the
+      requests for information (RFI) responses from the sponsors for an ad hoc assessment are
+      published.
+
+
+
+
+      5.5. How can users download an ad hoc assessment?
+      In the Authority domain, after having applied a search and identified the ad hoc assessment
+      of interest, the users can download an excel file with a summary of such ad hoc assessment
+      by clicking on the ‘Download’ button available on the ‘Ad hoc assessment’ tab. If no filters
+      are applied, all ad hoc assessments are downloaded.
+
+
+
+
+      6.         Roles and permissions
+
+
+      6.1. What roles and permissions are involved in the ad hoc
+           assessment process?
+      Below you can see the distribution of roles by type of activity:
+
+            •    Share/update an ad hoc assessment and submit requests for information (RFI) on
+                 ad hoc assessment: Supervisor Submitter.
+            •    Create/Cancel draft on ad hoc assessment and share discussion: Supervisor
+                 Submitter; Supervisor Preparer.
+
+            •    View an ad hoc assessment: Viewer Part I Full rights/Restricted rights; Viewer
+                 Part II; Validator (Preparer/Submitter) Full rights (Part I and Part II); Validator
+                 Preparer restricted rights (Part I exc IMPD and Part II); Assessor Part I Preparer
+                 restricted rights; Assessor Part II (Preparer and Submitter); Supervisor
+                 (Preparer/Submitter); Inspector (Preparer/Submitter); ASR Assessor; ASR Decision
+                 Maker-Submitter.
+
+
+
+
+16   Clinical Trials Information System
+European Medicines Agency
+
+Domenico Scarlattilaan 6
+1083 HS Amsterdam
+The Netherlands
+
+Telephone +31 (0)88 781 6000
+
+Send a question
+
+www.ema.europa.eu/contact
+
+
+
+
+Clinical Trials Information System (CTIS)
+FAQs: Supervise a CT – Ad Hoc Assessment.
+
+
+
+© European Medicines Agency, 2024.
+Reproduction is authorised provided the source is acknowledged.
+

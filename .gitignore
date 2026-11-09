@@ -1,0 +1,6 @@
+# npm dependencies (install with npm ci in viewer/ and vendor/node/)
+node_modules/
+
+# Python caches
+__pycache__/
+*.pyc

@@ -1,0 +1,10 @@
+src: E3
+method: local-text
+notes:
+  R2-052: "Introduction to the Guideline, PDF 9 / printed 1. Source wording is 'it is particularly important to clarify ... and to discuss'; paraphrase renders this as 'should' (equivalent recommendation)."
+  R2-053: "9.8 body text PDF 20 / printed 12 (TOC entry on printed ii also matches)."
+  R2-064: "Annex IVa flowchart 'PROTOCOL VIOLATION' on PDF 43 / printed 35 (page [verify] resolved). Q&A clarification part confirmed in E3QA S3 (printed 7)."
+evpage:
+  R2-064: "PDF 43 / printed 35"
+evsnip:
+  R2-064: "PROTOCOL VIOLATION (10)"

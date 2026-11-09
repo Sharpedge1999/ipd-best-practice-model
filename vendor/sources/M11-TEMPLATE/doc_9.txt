@@ -1,0 +1,2274 @@
+      INTERNATIONAL COUNCIL FOR HARMONISATION OF TECHNICAL
+         REQUIREMENTS FOR PHARMACEUTICALS FOR HUMAN USE
+
+
+
+
+                             ICH HARMONISED GUIDELINE
+
+
+        CLINICAL ELECTRONIC STRUCTURED HARMONISED
+                        PROTOCOL
+                                       (CESHARP)
+                                   M11 TEMPLATE
+
+
+                                         Final version
+                                Adopted on 19 November 2025
+
+
+
+
+This Guideline has been developed by the appropriate ICH Expert Working Group and has been
+subject to consultation by the regulatory parties, in accordance with the ICH Process. At Step 4
+of the Process the final draft is recommended for adoption to the regulatory bodies of ICH
+regions.
+
+
+                                                                                               ii
+                                            M11 Template
+                                          Document History
+
+    Code            History                                                     Date
+
+    M11             Endorsement by the Members of the ICH Assembly              27 September 2022
+                    under Step 2 and release for public consultation
+                    (document dated 27 September 2022)
+
+    M11             Updated Step 2 Draft provided as reference only for         03 February 2025
+                    second round of public consultation of the M11
+                    Technical Specification (document dated 03 Feb
+                    2025)
+
+    M11             Adoption by the Regulatory Members of the ICH               19 November 2025
+                    Assembly under Step 4.
+
+
+
+
+Legal notice: This document is protected by copyright and may, with the exception of the ICH logo, be
+used, reproduced, incorporated into other works, adapted, modified, translated or distributed under a
+public license provided that ICH's copyright in the document is acknowledged at all times. In case of any
+adaption, modification or translation of the document, reasonable steps must be taken to clearly label,
+demarcate or otherwise identify that changes were made to or based on the original document. Any
+impression that the adaption, modification or translation of the original document is endorsed or sponsored
+by the ICH must be avoided.
+The document is provided "as is" without warranty of any kind. In no event shall the ICH or the authors of
+the original document be liable for any claim, damages or other liability arising from the use of the
+document.
+The above-mentioned permissions do not apply to content supplied by third parties. Therefore, for
+documents where the copyright vests in a third party, permission for reproduction must be obtained from
+this copyright holder.
+                                                                                                        iii
+Interventional Clinical Trial Protocol Template
+0       Foreword
+0.1     Template Revision History
+
+ Date                       Description of Revision
+
+ (To be determined)         Initial template
+
+0.2     Intended Use of Template
+This template is intended for interventional clinical trial protocols and is suitable for all phases
+and therapeutic areas of clinical research. Interventional trials may include but are not limited
+to human pharmacology, exploratory, confirmatory and post-approval trials. The template is
+designed to enable modification suitable for the particular trial. Refer to the sections below for
+additional details and conventions related to flexibility.
+Existing ICH guidelines were considered during the development of this template. Where
+guidelines are cited, refer to the most current version.
+As a reminder, protocols often become public through transparency requirements in various
+regions/countries.
+0.3     Template Conventions and General Instructions
+Text Structure and Flexibility
+This template uses the typefaces described in the table below to distinguish between their
+intended use and applicability. Use of consistent font sizes throughout the document is
+recommended, but not required.
+
+
+
+
+                                                                                                   iv
+ Type of Text         Typeface Details                   Description (Intended Use)
+ (Applicability)
+
+ Universal text       Black Times New Roman font         Text (including headings) that should
+                                                         appear in all protocols
+
+ Conditional          Black Times New Roman font         Text that should appear in all
+ universal text       in {braces}                        protocols if applicable to trial
+                                                         In some cases, a choice between
+                                                         options
+
+ Optional text        Blue Arial font                    Text (including optional headings)
+                                                         that may be modified, deleted, or
+                      Restyle to black text consistent
+                                                         replaced according to the specific
+                      with the sponsor’s preferred
+                                                         aspects of the trial
+                      typeface for final document
+
+ Controlled           [Square brackets] in the           Brackets with grey shading are used
+ terminology          prevailing typeface with grey      to indicate variable text modelled as a
+                      shading                            field with pre-defined valid values
+                                                         (i.e., a pick list) in the electronic
+                      Populate field from available
+                                                         manifestation of the protocol
+                      choices, or with free text if
+                      indicated; remove brackets and
+                      restyle text to match other text
+                      in the final document
+
+ Text insertion       <Chevrons> in the prevailing       Chevrons are used to indicate where
+ point                typeface with grey shading         to insert text
+                      When complete, remove              Any text within chevrons is intended
+                      chevrons and restyle text to       to be replaced by applicable content
+                      match other text in the final
+                      document
+
+ Instructional text   Red Calibri font                   Instructional text that is to be
+                                                         removed prior to finalisation of the
+                                                         protocol
+
+Heading Structure and Flexibility
+This template uses the typefaces and numbering conventions described in the table below to
+distinguish between heading levels. To ensure consistency and predictability for all readers, the
+heading numbering conventions should be strictly observed. However, fonts, font sizes, and
+colour are not intended to be fixed requirements, and can be adapted as specific situations
+may dictate, or per country or regional requirements.
+
+                                                                                                   v
+Example    Heading   Typeface in     Modification or Deletion      Addition
+Heading     Level    this Template
+
+                      14 point
+                      TIMES
+                       NEW           Do not delete or modify L1
+          LEVEL 1     ROMAN                  headings                Do not add L1
+1         (L1)         BOLD                                            headings
+                                     Retain heading and indicate
+                      BLACK               “Not applicable”
+                       (ALL
+                       CAPS)
+                                                                   Add L2 headings, if
+                                                                   needed, at the end
+                      14 point  Do not delete or modify L2
+                                                                   of the higher-level
+          Level 2    Times New           headings
+1.1                                                                section to preserve
+          (L2)         Roman    Retain heading and indicate         the established L1
+                     Bold Black      “Not applicable”                and L2 headings
+                                                                        structure
+
+                                     Do not delete or modify L3
+                                       headings that appear in
+                                     black text unless otherwise   Add L3 headings, if
+                                              specified            needed, at the end
+                       12 point      Retain heading and indicate   of the higher-level
+          Level 3    Times New
+1.1.1                                     “Not applicable”         section to preserve
+          (L3)       Roman Bold
+                                                                   the established L1,
+                        Black        L3 headings that appear in
+                                                                   L2 and L3 headings
+                                     blue text are optional and
+                                                                        structure
+                                     may be retained, deleted or
+                                      modified as applicable to
+                                              the trial
+
+                                     Do not delete or modify L4
+                                       headings that appear in     Add L4 headings, if
+                                     black text unless otherwise   needed, at the end
+                       12 point               specified            of the higher-level
+          Level 4    Times New
+1.1.1.1                              Retain heading and indicate   section to preserve
+          (L4)       Roman Bold
+                                          “Not applicable”         the established L1,
+                        Black
+                                                                      L2, L3 and L4
+                                     L4 headings that appear in    headings structure
+                                     blue text are optional and
+                                     may be retained, deleted or
+
+                                                                                     vi
+    Example       Heading      Typeface in      Modification or Deletion       Addition
+    Heading        Level       this Template
+                                                 modified as applicable to
+                                                         the trial
+
+                                                  Do not delete or modify
+                                                  non-numbered headings
+                                                  that appear in black text
+                                                 unless otherwise specified
+    Additional   Non-            12 point       Retain heading and indicate
+    Non-                       Times New             “Not applicable”              Insert where
+                 numbered
+    Numbered                   Roman Bold                                             needed
+                 heading                         Non-numbered headings
+    Heading                       Black
+                                                that appear in blue text are
+                                                   optional and may be
+                                                    retained, deleted or
+                                                 modified as applicable to
+                                                          the trial
+
+
+
+Table and Figure Numbering
+Tables and figures should be numbered sequentially and should include a title or caption,
+respectively. No numbering convention is specified by this template, but a consistent approach
+should be applied throughout the document.
+Page orientation can be modified from portrait to landscape as needed.
+Word Usage in Template
+The following word usages have been selected for use within this template and are considered
+to be appropriate for all phases, trial populations, and therapeutic areas:
+•     Because the scope of this protocol template is focused on interventional clinical trials, the
+      term clinical trials is used rather than clinical studies when referring to interventional
+      clinical trials.
+•     Participant is used rather than subject, healthy volunteer, or patient when referring to an
+      individual who has consented to participate in the clinical trial (including consent by
+      participant’s legally acceptable representative when relevant). Patient or individual is used
+      to distinguish the population represented by the trial participants, when necessary.
+•     Trial intervention is used to refer to any pre-specified therapeutic, prophylactic, or
+      diagnostic agent including pharmaceuticals, biologics, vaccines, cell or gene therapy
+      products, and drug-device combination products when registered as a drug, intended for
+
+
+                                                                                                  vii
+      the participants during the trial. Procedures conducted to manage participants or to collect
+      data are excluded from the usage of this term. Refer to Section 6 for additional details.
+•     While blinding is the more commonly used term, masking is an alternative term that may be
+      used in certain situations.
+Suggestions for Finalising Document
+Various formatting, typefaces, and instructional elements are used in this template to inform
+preparation activities, but these should not appear in final protocols. Specific recommended
+steps for finalisation are as follows:
+•     delete Section 0 and all its contents
+•     update the Table of Contents (TOC)
+•     confirm that the level 1, level 2 and level 3 headings are visible in the navigation pane or
+      bookmark view
+•     delete unneeded or not applicable optional level 3 or lower headings and ensure remaining
+      level 3 or lower headings are numbered appropriately
+•     delete any unused optional text, unused text insertion points and related prompts
+•     restyle any optional text to match the regular text
+•     remove all instructional text
+•     remove brackets after making appropriate selections
+0.4      Abbreviations Used in This Template
+
+
+
+
+                                                                                                     viii
+ Abbreviation or Acronym     Definition
+ AE                          Adverse event
+ AESI                        Adverse event of special interest
+ AxMP                        Auxiliary medicinal product
+ CIOMS                       Council for International Organisations of Medical Sciences
+ COA                         Clinical outcome assessment
+ CRF                         Case report form
+ DMC                         Data monitoring committee
+ DRE                         Disease-related event
+ DRO                         Disease-related outcome
+ ECG                         Electrocardiogram
+ EU                          European Union
+ GCP                         Good Clinical Practice
+ IB                          Investigator’s brochure
+ ICF                         Informed consent form
+                             International Council for Harmonisation of Technical
+ ICH
+                             Requirements for Pharmaceuticals for Human Use
+ IMP                         Investigational medicinal product
+ IND                         Investigational new drug
+ INN                         International nonproprietary name
+ IP                          Investigational product
+ IRB                         Institutional review board
+ IRT                         Interactive Response Technology
+ jRCT                        Japan Registry of Clinical Trials
+ MedDRA                      Medical Dictionary for Regulatory Activities
+                             Noninvestigational medicinal product or Auxiliary medicinal
+ NIMP
+                             product
+ PK                          Pharmacokinetic(s)
+ SAE                         Serious adverse event
+ SoA                         Schedule of activities
+ TOC                         Table of contents
+ WHO                         World Health Organization
+This is the end of the instructional section, and the protocol content begins with the next
+page.
+
+
+
+                                                                                              ix
+The order of the title page elements should be preserved.
+
+Sponsor                     <Enter Sponsor Confidentiality Statement>
+Confidentiality
+                            Insert the sponsor’s confidentiality statement, if applicable;
+Statement:
+                            otherwise delete.
+
+Full Title:                 <Enter Full Title>
+                            The protocol should have a descriptive title that identifies the
+                            scientific aspects of the trial sufficiently to ensure it is
+                            immediately evident what the trial is investigating and on
+                            whom, and to allow retrieval from literature or internet
+                            searches.
+
+Trial Acronym:              <Enter Trial Acronym>
+                            Acronym or abbreviation used publicly to identify the clinical
+                            trial. Delete this line from the table if not applicable.
+
+Sponsor Protocol            <Enter Sponsor Protocol Identifier>
+Identifier:
+                            A unique alphanumeric identifier for the trial, designated by the
+                            sponsor.
+
+Original Protocol:          [Original Protocol Indicator]
+
+
+Version Number:             <Enter Version Number>
+                            For use by the sponsor at their discretion.
+
+Version Date:               <Enter Version Date>
+                            For use by the sponsor at their discretion.
+
+{Amendment                  {[Amendment Identifier]}
+Identifier:}
+                            Enter the amendment identifier (e.g., amendment number). If
+                            this is the original instance of the protocol, delete this row or
+                            enter "Not applicable".
+
+
+
+
+                                                                                                1
+{Amendment Scope:}   {[Amendment Scope]} {[Country Identifier] or [Region
+                     Identifier] or <Enter Site Identifier>}
+                     If this is the original instance of the protocol, delete this row or
+                     enter "Not applicable". For an amendment that applies to all
+                     sites in the trial, enter “Global” and delete the Country, Region
+                     and Site Identifier fields. If amending a single-country trial, enter
+                     “Global”.
+                     For an amendment that does not apply to all sites in the trial,
+                     select “Not Global” and utilise one of the identifiers based on
+                     amendment scope.
+
+Sponsor’s            <Enter Sponsor’s Investigational Product Code(s)>
+Investigational
+                     Enter the sponsor’s unique identifier for investigational
+Product Code(s):
+                     product(s) in the trial. Add fields as needed.
+
+Investigational      <Enter Nonproprietary Name(s)>
+Product Name(s):     <Enter Proprietary Name(s)>
+                     Omit nonproprietary name field if a nonproprietary name has
+                     not yet been assigned. Omit proprietary name field if not yet
+                     established.
+
+Trial Phase:         [Trial Phase]
+                     For trials combining investigational drugs or vaccines with
+                     devices, classify according to the phase of drug development.
+
+Short Title:         <Enter Trial Short Title>
+                     Short title should convey in plain language what the trial is
+                     about and should be suitable for use as “Brief Title” or “Title in
+                     Plain Language” in global clinical trial registries. It can also be
+                     suitable for use with informed consent forms (ICFs) and ethics
+                     committee submissions.
+
+
+
+
+                                                                                             2
+Sponsor Name and      <Enter Sponsor Name>
+Address:              <Enter Sponsor Legal Address>
+                      Co-Sponsor Name and Address:
+                      <Enter Co-Sponsor Name>
+                      <Enter Co-Sponsor Legal Address>
+                      Provide the legal name and address of the individual or
+                      pharmaceutical or medical device company, governmental
+                      agency, academic institution, private organisation, or other
+                      organisation who takes primary responsibility for and initiates a
+                      clinical investigation. If more than one sponsor, list the primary
+                      sponsor in the Sponsor Name and Sponsor Legal Address fields.
+                      If co-sponsor is applicable, enter co-sponsor name and legal
+                      address. Add additional fields if more than one co-sponsor is
+                      applicable.
+                      Local Sponsor Name and Address:
+                      <Enter Local Sponsor Name>
+                      <Enter Local Sponsor Legal Address>
+                      In some countries, the clinical trial sponsor may be the local
+                      affiliate company (or designee). In such cases, indicate this in
+                      the Local Sponsor Name and Local Sponsor Legal Address Fields.
+
+Device Manufacturer   <Enter Device Manufacturer Name>
+Name and Address:
+                      <Enter Device Manufacturer Legal Address>
+                      Manufacturer name and address information is required only for
+                      drug/device combination protocols that include investigational
+                      device(s) and should not be included for other protocols. Include
+                      the manufacturer address only if the manufacturer is different
+                      than the sponsor listed above.
+                      Add additional fields as needed if multiple investigational
+                      devices will be used in the trial or if there are multiple
+                      manufacturers for a single device. Delete this line if not
+                      applicable.
+
+
+
+
+                                                                                           3
+Regulatory or Clinical     <EU CT Number>
+Trial Identifier(s):
+                           <FDA IND Number>
+                           <IDE Number>
+                           <jRCT Number>
+                           <NCT Number>
+                           <NMPA IND Number>
+                           <WHO/UTN Number>
+                           <Other Regulatory or Clinical Trial Identifier>
+                           Include all identifiers that are applicable for the trial and
+                           available at the time of protocol or amendment finalisation.
+                           Delete prompts for identifiers not available at the time of
+                           document finalisation. Delete unused fields. Add fields for
+                           “other” if more than one is needed.
+
+Sponsor Approval:          {<Enter Sponsor Approval Date> or <State location where
+                           sponsor approval information can be found>}
+                           All versions should be uniquely identifiable.
+
+Sponsor Signatory: {<Enter sponsor signatory (e.g., name, title, signature and date)>
+or <State location where sponsor signatory information can be found (e.g., electronic
+signature)>}
+Medical Expert Contact: {<Enter Medical Expert contact information (as designated by
+sponsor)> or <State location where Medical Expert contact information can be found>}
+
+
+
+
+                                                                                           4
+Amendment Details
+Choose the applicable statement below. For an original protocol that has not been amended,
+retain the first statement below and delete the remainder of this entire section.
+{This protocol has not been amended.}
+Or
+{This is the first protocol amendment.}
+Or include the below
+{This protocol has been amended previously. Details of prior amendments are presented in
+Section 12.3 Prior Protocol Amendment(s).}
+{Current Amendment}
+{The table below describes the current amendment.}
+
+ Approximate <#/%>         Approximately <#/%> enrolled <enter Amendment Scope
+ Enrolled at Time of       Enrollment Definition>
+ Sponsor Approval:
+                           Enter the approximate number or percentage of participants
+                           enrolled as a percentage of the expected total. If the number of
+                           expected participants is changing as a result of the current
+                           amendment, use the updated number of expected participants to
+                           estimate the current percentage of enrollment. Estimates are
+                           adequate, as precise enrollment figures will likely be changing while
+                           an amendment is being prepared.
+                           •   For a global or single-country amendment, provide the
+                               estimated total enrollment at the time the sponsor approved
+                               the amendment.
+                           •   For global amendments providing (or consolidating) only
+                               country/region-specific requirements, list approximate local
+                               enrollment (total or percentage) at the time of the amendment
+                               and select “locally”.
+                           •   If consolidating a series of local amendments, list the status of
+                               all the relevant locations.
+                           For a country/regional amendment, provide the estimated local or
+                           regional enrollment at the time the sponsor approved the
+                           amendment.
+
+ {Reason(s) for            Primary: {[Primary Reason for       Secondary: {[Secondary Reason
+ Amendment:}               Amendment]} *                       for Amendment]} *
+
+
+
+                                                                                                   5
+    {Amendment                 {<Amendment Summary>}
+    Summary:}
+                               Briefly describe key changes. Changes that are included in the
+                               amendment but unrelated to the key changes do not need to be
+                               described here.
+
+    {Is this amendment likely to have a             {[Yes/No]}
+    substantial impact on the safety or rights of   {<If yes, briefly explain>}
+    the participants?}
+
+    {Is this amendment likely to have a             {[Yes/No]}
+    substantial impact on the reliability and       {<If yes, briefly explain>}
+    robustness of the data generated in the
+    clinical trial?}
+
+* Choose from the available categories the primary reason and secondary reason(s) for the
+amendment. Select the closest match among the choices. Changes to primary estimand,
+endpoints, or related measures should be listed as a change of strategy. If none of the choices
+apply, choose “other” and provide a description. If no secondary reason, indicate “Not
+applicable” for the secondary reason.
+
+{Overview of Changes in the Current Amendment}
+Instructions for the Overview of Changes:
+•     If an Overview of Changes already exists from a prior amendment, move it to Section 12.3
+      Prior Protocol Amendment(s), and populate a new Overview of Changes table for the
+      current amendment.
+•     List the changes that apply to the current amendment. Provide a brief description of the
+      change(s) and a concise scientific rationale for specific changes (e.g., change to
+      inclusion/exclusion criteria).
+•     If the same change affects multiple parts of the protocol, it is acceptable to list multiple
+      locations in the right column.
+•     Table can be sorted in any order preferred by the sponsor.
+•     Minor edits such as clarifications and corrections to typographical errors do not need to be
+      itemised in this table.
+•     The changes listed in the table do not need to be detailed in revision marks, as these can be
+      provided in a separate supporting document.
+•     Tabular presentation is common but not required. The page can be changed to landscape
+      orientation if necessary.
+
+
+
+
+                                                                                                     6
+                                                                {Section # and
+ {Description of Change}   {Brief Rationale for Change}         Name}
+
+ <Enter Description of     <Enter Brief Rationale for Change>   <Enter Section #
+ Change>                                                        and Name>
+
+(Add rows as needed)
+
+
+
+
+                                                                                   7
+Table of Contents
+1     PROTOCOL SUMMARY .................................................................................................... 13
+    1.1    Protocol Synopsis ........................................................................................................... 13
+      1.1.1       Primary and Secondary Objectives and Estimands ................................................ 13
+      1.1.2       Overall Design ........................................................................................................ 13
+    1.2    Trial Schema .................................................................................................................. 16
+    1.3    Schedule of Activities .................................................................................................... 16
+2     INTRODUCTION ................................................................................................................ 17
+    2.1    Purpose of Trial .............................................................................................................. 17
+    2.2    Assessment of Risks and Benefits .................................................................................. 17
+      2.2.1       Risk Summary and Mitigation Strategy .................................................................. 17
+      2.2.2       Benefit Summary .................................................................................................... 17
+      2.2.3       Overall Risk-Benefit Assessment ........................................................................... 18
+3     TRIAL OBJECTIVES AND ASSOCIATED ESTIMANDS ............................................... 18
+    3.1    Primary Objective(s) and Associated Estimand(s)......................................................... 18
+      3.1.1       Primary Objective <#> ........................................................................................... 19
+    3.2    Secondary Objective(s) and Associated Estimand(s)..................................................... 19
+      3.2.1       {Secondary Objective <#>}.................................................................................... 20
+    3.3    Exploratory Objective(s) ................................................................................................ 20
+      3.3.1       {Exploratory Objective <#>} ................................................................................. 20
+4     TRIAL DESIGN ................................................................................................................... 21
+    4.1    Description of Trial Design ............................................................................................ 21
+      4.1.1       Stakeholder Input into Design ................................................................................ 22
+    4.2    Rationale for Trial Design .............................................................................................. 22
+      4.2.1       Rationale for Estimand(s) ....................................................................................... 22
+      4.2.2       Rationale for Intervention Model............................................................................ 22
+      4.2.3       Rationale for Control Type ..................................................................................... 22
+      4.2.4       Rationale for Trial Duration.................................................................................... 23
+      4.2.5       Rationale for Adaptive or Novel Trial Design ........................................................ 23
+      4.2.6       Rationale for Interim Analysis ................................................................................ 23
+
+
+                                                                                                                                           7
+      4.2.7      Rationale for Other Trial Design Aspects ............................................................... 23
+    4.3    Trial Stopping Rules....................................................................................................... 23
+    4.4    Start of Trial and End of Trial ........................................................................................ 23
+    4.5    Access to Trial Intervention After End of Trial ............................................................. 24
+5     TRIAL POPULATION ......................................................................................................... 24
+    5.1    Description of Trial Population and Rationale ............................................................... 24
+    5.2    Inclusion Criteria ............................................................................................................ 25
+    5.3    Exclusion Criteria........................................................................................................... 25
+    5.4    Contraception ................................................................................................................. 25
+      5.4.1      Definitions Related to Childbearing Potential ........................................................ 25
+      5.4.2      Contraception Requirements ................................................................................... 25
+    5.5    Lifestyle Restrictions...................................................................................................... 26
+      5.5.1      Meals and Dietary Restrictions ............................................................................... 26
+      5.5.2      Caffeine, Alcohol, Tobacco, and Other Restrictions .............................................. 26
+      5.5.3      Physical Activity Restrictions ................................................................................. 26
+      5.5.4      Other Activity Restrictions ..................................................................................... 26
+    5.6    Screen Failure and Rescreening ..................................................................................... 26
+6     TRIAL INTERVENTION AND CONCOMITANT THERAPY......................................... 26
+    6.1    Description of Investigational Trial Intervention ........................................................... 29
+    6.2    Rationale for Investigational Trial Intervention Dose and Regimen ............................. 29
+    6.3    Investigational Trial Intervention Administration.......................................................... 29
+    6.4    Investigational Trial Intervention Dose Modification .................................................... 29
+    6.5    Management of Investigational Trial Intervention Overdose ........................................ 30
+    6.6    Preparation, Storage, Handling and Accountability of Investigational Trial Intervention
+           30
+      6.6.1      Preparation of Investigational Trial Intervention .................................................... 30
+      6.6.2      Storage and Handling of Investigational Trial Intervention ................................... 30
+      6.6.3      Accountability of Investigational Trial Intervention .............................................. 31
+    6.7    Investigational Trial Intervention Assignment, Randomisation and Blinding ............... 31
+      6.7.1      Participant Assignment to Investigational Trial Intervention ................................. 31
+      6.7.2      {Randomisation} .................................................................................................... 31
+
+                                                                                                                                           8
+       6.7.3       {Measures to Maintain Blinding} ........................................................................... 31
+       6.7.4       {Emergency Unblinding at the Site} ...................................................................... 32
+    6.8      Investigational Trial Intervention Adherence ................................................................ 32
+    6.9      Description of Noninvestigational Trial Intervention .................................................... 32
+       6.9.1       {Background Trial Intervention} ............................................................................ 32
+       6.9.2       {Rescue Therapy} ................................................................................................... 32
+       6.9.3       {Other Noninvestigational Trial Intervention} ....................................................... 33
+    6.10 Concomitant Therapy ..................................................................................................... 33
+       6.10.1 {Prohibited Concomitant Therapy} ........................................................................ 33
+       6.10.2 {Permitted Concomitant Therapy} ......................................................................... 33
+7   PARTICIPANT DISCONTINUATION OF TRIAL INTERVENTION AND
+DISCONTINUATION OR WITHDRAWAL FROM TRIAL ..................................................... 33
+    7.1      Discontinuation of Trial Intervention for Individual Participants .................................. 33
+       7.1.1       Permanent Discontinuation of Trial Intervention ................................................... 33
+       7.1.2       Temporary Discontinuation of Trial Intervention................................................... 34
+       7.1.3       Rechallenge ............................................................................................................. 34
+    7.2      Participant Discontinuation or Withdrawal from the Trial ............................................ 34
+    7.3      Management of Loss to Follow-Up ............................................................................... 35
+8      TRIAL ASSESSMENTS AND PROCEDURES ................................................................. 36
+    8.1      Trial Assessments and Procedures Considerations ........................................................ 36
+    8.2      Screening/Baseline Assessments and Procedures .......................................................... 36
+    8.3      Efficacy Assessments and Procedures ........................................................................... 37
+    8.4      Safety Assessments and Procedures ............................................................................... 37
+       8.4.1       {Physical Examination} .......................................................................................... 37
+       8.4.2       {Vital Signs} ........................................................................................................... 37
+       8.4.3       {Electrocardiograms} ............................................................................................. 37
+       8.4.4       {Clinical Laboratory Assessments} ........................................................................ 37
+       8.4.5       {Pregnancy Testing} ............................................................................................... 38
+       8.4.6       {Suicidal Ideation and Behaviour Risk Monitoring} ............................................. 38
+    8.5      Pharmacokinetics ........................................................................................................... 38
+    8.6      Biomarkers ..................................................................................................................... 38
+
+                                                                                                                                              9
+       8.6.1       Genetics, Genomics, Pharmacogenetics, and Pharmacogenomics ......................... 38
+       8.6.2       Pharmacodynamic Biomarkers ............................................................................... 39
+       8.6.3       {Other Biomarkers} ................................................................................................ 39
+   8.7       Immunogenicity Assessments ........................................................................................ 39
+   8.8       Medical Resource Utilisation and Health Economics .................................................... 40
+9   ADVERSE EVENTS, SERIOUS ADVERSE EVENTS, PRODUCT COMPLAINTS,
+PREGNANCY AND POSTPARTUM INFORMATION, AND SPECIAL SAFETY
+SITUATIONS ............................................................................................................................... 41
+   9.1       Definitions ...................................................................................................................... 41
+       9.1.1       Definitions of Adverse Events ................................................................................ 41
+       9.1.2       Definitions of Serious Adverse Events ................................................................... 41
+       9.1.3       Definitions of Product Complaints ......................................................................... 41
+         9.1.3.1          {Definitions of Medical Device Product Complaints} ............................................... 41
+   9.2       Timing and Procedures for Collection and Reporting ................................................... 41
+       9.2.1       Timing ..................................................................................................................... 42
+       9.2.2       Collection Procedures ............................................................................................. 42
+       9.2.3       Reporting................................................................................................................. 43
+         9.2.3.1          Regulatory Reporting Requirements ........................................................................... 43
+       9.2.4       Adverse Events of Special Interest ......................................................................... 43
+       9.2.5       Disease-Related Events or Outcomes Not Qualifying as AEs or SAEs ................. 44
+   9.3       Pregnancy and Postpartum Information ......................................................................... 44
+       9.3.1       {Participants Who Become Pregnant During the Trial} ......................................... 44
+       9.3.2       {Participants Whose Partners Become Pregnant During the Trial} ....................... 45
+   9.4       Special Safety Situations ................................................................................................ 45
+10     STATISTICAL CONSIDERATIONS.................................................................................. 45
+   10.1 General Considerations .................................................................................................. 46
+   10.2 Analysis Sets .................................................................................................................. 46
+   10.3 Analyses of Demographics and Other Baseline Variables............................................. 46
+   10.4 Analyses Associated with the Primary Objective(s) ...................................................... 46
+       10.4.1 Primary Objective <#> ........................................................................................... 46
+         10.4.1.1         Statistical Analysis Method......................................................................................... 46
+
+
+                                                                                                                                              10
+        10.4.1.2        Handling of Data in Relation to Primary Estimand(s) ................................................ 47
+        10.4.1.3        Handling of Missing Data in Relation to Primary Estimand(s) .................................. 47
+        10.4.1.4        {Sensitivity Analysis} ................................................................................................. 47
+        10.4.1.5        {Supplementary Analysis}.......................................................................................... 47
+  10.5 Analyses Associated with the Secondary Objective(s) .................................................. 47
+     10.5.1 {Secondary Objective <#>}.................................................................................... 48
+        10.5.1.1        {Statistical Analysis Method} ..................................................................................... 48
+        10.5.1.2        {Handling of Data in Relation to Secondary Estimand(s)} ........................................ 48
+        10.5.1.3        {Handling of Missing Data in Relation to Secondary Estimand(s)} .......................... 48
+        10.5.1.4        {Sensitivity Analysis} ................................................................................................. 48
+        10.5.1.5        {Supplementary Analysis}.......................................................................................... 48
+  10.6 Analyses Associated with the Exploratory Objective(s) ................................................ 48
+  10.7 Safety Analyses .............................................................................................................. 48
+  10.8 Other Analyses ............................................................................................................... 48
+  10.9 Interim Analyses ............................................................................................................ 49
+  10.10 Multiplicity Adjustments................................................................................................ 49
+  10.11 Sample Size Determination ............................................................................................ 50
+11   TRIAL OVERSIGHT AND OTHER GENERAL CONSIDERATIONS ............................ 50
+  11.1 Regulatory and Ethical Considerations .......................................................................... 50
+  11.2 Trial Oversight ............................................................................................................... 51
+     11.2.1 Investigator Responsibilities ................................................................................... 51
+     11.2.2 Sponsor Responsibilities ......................................................................................... 51
+  11.3 Informed Consent Process.............................................................................................. 51
+     11.3.1 {Informed Consent for Rescreening} ..................................................................... 52
+     11.3.2 {Informed Consent for Use of Remaining Samples in Exploratory Research} ..... 52
+  11.4 Committees..................................................................................................................... 52
+  11.5 Insurance and Indemnity ................................................................................................ 52
+  11.6 Risk-Based Quality Management................................................................................... 52
+  11.7 Data Governance ............................................................................................................ 52
+  11.8 Data Protection ............................................................................................................... 53
+  11.9 Source Records ............................................................................................................... 53
+
+                                                                                                                                               11
+  11.10 Protocol Deviations ........................................................................................................ 53
+  11.11 Early Site Closure........................................................................................................... 53
+  11.12 Data Dissemination ........................................................................................................ 53
+12   APPENDIX: SUPPORTING DETAILS .............................................................................. 55
+  12.1 Clinical Laboratory Tests ............................................................................................... 55
+  12.2 Country/Region-Specific Differences ............................................................................ 55
+  12.3 Prior Protocol Amendment(s) ........................................................................................ 55
+  12.      X {Additional Appendices} ........................................................................................... 57
+13   APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS .................................... 58
+14   APPENDIX: REFERENCES................................................................................................ 58
+
+
+
+
+                                                                                                                                    12
+1        PROTOCOL SUMMARY
+No text is intended here (heading only).
+1.1      Protocol Synopsis
+The protocol synopsis is a short summary of the key points of the trial. In order to keep the
+synopsis brief, cross references to full details in the main body of the protocol are acceptable.
+No text is intended here (heading only).
+1.1.1    Primary and Secondary Objectives and Estimands
+Summarise the primary and secondary objectives and any associated estimands in natural,
+nontechnical (layperson) language.
+For trials intended to estimate a treatment effect or test a hypothesis related to a treatment
+effect, include the primary and secondary objectives and any associated estimands using a
+nontechnical summary describing the objective and treatment effect of interest (estimand).
+For other types of trials not intended to estimate a treatment effect or test a hypothesis related
+to a treatment effect, define trial objectives and describe additional information relevant to the
+clinical question(s) of interest (e.g., the endpoint(s) associated with each objective).
+For trials with numerous objectives in which the description of objectives will exceed half a
+page, consider including the most important objectives and estimands in the synopsis and refer
+to Section 3 Trial Objectives and Associated Estimands, which covers the objectives and
+estimands in technical detail. For considerations on estimands, refer to ICH E9(R1).
+<Enter Primary and Secondary Objectives and Estimands>
+1.1.2    Overall Design
+Key aspects of the trial design are summarised below.
+ Intervention:            {<Enter Sponsor’s      Population Type:          [Population Type]
+                          Investigational
+                          Product Code(s)>
+                          And/or
+                          <Enter
+                          Nonproprietary
+                          Name(s)>}
+
+ Intervention Model:      [Intervention Model] Population Diagnosis        [Population
+                                               or Condition:               Diagnosis or
+                                                                           Condition]
+
+
+
+
+                                                                                                 13
+    Control Type:          [Control Type]          Population Age:          Minimum: <Enter
+                                                                            Minimum Age>
+                                                                            [Units of Age]
+                                                                            Maximum: <Enter
+                                                                            Maximum Age>
+                                                                            [Units of Age]
+
+    Control                {[Nonproprietary        Site Distribution and    [Site Distribution]
+    Description:           Name] or [INN] or       Geographic Scope:        [Site Geographic
+                           <Enter “Not                                      Scope]
+                           applicable”>}
+
+    Intervention           [Intervention           Master Protocol:         [Master Protocol
+    Assignment             Assignment                                       Indicator]
+    Method:                Method]
+                           If Intervention
+                           Assignment Method
+                           is “Randomisation”
+                           then enter
+                           {<Randomisation
+                           Type>}
+                           If Intervention
+                           Assignment Method
+                           is “Other” then
+                           enter {<Other
+                           Intervention
+                           Assignment
+                           Method>}
+
+    Stratification         [Stratification
+                           Indicator]
+
+    Drug/Device            [Drug/Device            Adaptive Trial           [Adaptive Trial Design
+    Combination            Combination             Design:                  Indicator]
+    Product Indicator:     Product Indicator]
+
+Further clarification:
+•     Control Description: if active comparator or low dose, pick nonproprietary name or
+      International Nonproprietary Name; indicate "Not applicable” if not applicable.
+•     Intervention Assignment Method: If applicable, describe the type of randomisation to be
+      used (e.g., simple randomisation, block randomisation). If applicable,, describe the other
+      intervention assignment method.
+
+
+                                                                                                   14
+•   Population Diagnosis or Condition: MedDRA Preferred Term(s) or indicate “other” and
+    describe.
+•   Population Age: for trials in which multiple age ranges may be eligible (e.g., a younger
+    cohort and an older cohort), indicate the minimum and maximum ages for the trial overall,
+    with an additional comment for any excluded age ranges.
+
+Number of Arms: [Number of Arms]
+Select the numeric value for the number of arms in the trial. For trials with a different number
+of arms in different periods, populate this field based on the total number of arms.
+
+Trial Blind Schema: [Trial Blind Schema]
+For designs in which these details may differ in one or more trial periods, answer according to
+the portion of the trial in which the highest number of blinded roles occurs. Additional details
+can be provided in Section 6.7.3 Measures to Maintain Blinding.
+
+Blinded Roles: The following roles indicated will not be made aware of the treatment group
+assignment during the trial: [Blinded Roles]
+“Not applicable (no blinding)” indicates an open-label trial.
+
+Number of Participants:
+State the expected number of participants to be assigned to trial intervention/enrolled. Indicate
+whether the number provided is the target or maximum number of individuals to be randomly
+assigned to trial intervention/enrolled.A [Target/Maximum] of <Enter Number of Participants>
+participants will be [randomly assigned to trial intervention/enrolled].
+
+Duration:
+Select one of the two options for total planned duration of trial intervention and trial
+participation for each participant. Note that the total duration of trial participation should
+include any washout and any follow-up periods in which the participant is not receiving a trial
+intervention. When duration will vary, provide a short explanation (e.g., “event-driven” or
+“adaptive design”).
+Total planned duration of trial intervention for each participant:
+       {<Enter total planned duration of trial intervention> [total planned duration of trial
+       intervention unit of time]}
+       Or, if duration will vary
+       {<Enter alternate description of planned duration of trial intervention>}
+Total planned duration of trial participation for each participant:
+       {<Enter total planned duration of trial participation> [total planned duration of trial
+       participation unit of time]}
+
+                                                                                                  15
+       Or, if duration will vary
+       {<Enter alternate description of planned duration of trial participation>}
+If necessary, include any clarifications or cross references to details in the main body of the
+protocol in the optional field below.
+<Enter Additional Description of Duration>
+
+Committees:
+Indicate whether any committee(s) will be reviewing data while the trial is ongoing, and the
+type of committee. Common examples include Data Monitoring Committee, Dose Escalation
+Committee, or Endpoint Adjudication Committee; describe others, if applicable. List
+independent committees in the space indicated. Other committees may be included in the
+separate space provided. Committees listed here should be fully described in Section 11.4
+Committees.
+Independent Committees: <Enter Independent Committees>
+Other Committees: <Enter Other Committees>
+Delete “Other Committees” if not applicable.
+1.2      Trial Schema
+The purpose of this section is to provide a visual depiction of the trial design, orienting users of
+the protocol to the key features of the design. The schema depicts the trial arms, the flow of
+individual participant through the progression of trial period(s)/epochs (such as screening,
+washout/run-in, intervention, and key milestones [e.g., randomisation, cross-over, end of
+treatment, end of study, post-treatment follow-up]). For complex trials, additional schemas
+may be added to describe activities or trial periods in greater detail.
+<Enter Trial Schema>
+<Enter Schema Notes>
+1.3      Schedule of Activities
+The schedule of activities must capture the procedures that will be accomplished at each trial
+visit, and all contact with participants (e.g., telephone contacts). This includes any tests that are
+used for eligibility, participant randomisation or stratification, or decisions on trial intervention
+discontinuation. Allowable windows should be stated for all visits and procedures. A tabular
+format is recommended.
+When applicable for studies with extensive sampling (e.g., serial PK sampling), a separate table
+may be added.
+<Enter Schedule of Activities>
+
+
+
+
+                                                                                                   16
+2        INTRODUCTION
+No text is intended here (heading only).
+2.1      Purpose of Trial
+Explain why the trial is needed, and why the research questions being asked are important. Do
+not restate the objectives or estimands. Do not restate the IB; rather, cross reference to the IB
+as applicable to the description.
+<Enter Purpose of Trial>
+2.2      Assessment of Risks and Benefits
+Include an assessment of known and potential risks and benefits, if any, as a result of
+participating in the trial from the perspective of an individual participant, including the basis of
+the risk (e.g., nonclinical trials or prior clinical trials). This section may be structured under one
+single heading 2.2 Assessment of Risks and Benefits, or if applicable under 3 subheadings as
+2.2.1 Risk Summary and Mitigation Strategy, 2.2.2 Benefit Summary and 2.2.3 Overall Risk-
+Benefit Assessment
+2.2.1    Risk Summary and Mitigation Strategy
+Trial Intervention – Describe risks related to trial-specific treatments and interventions. For the
+protocol, focus on the relevant key risks for this trial. Provide a brief description of strategies to
+mitigate identified risks or provide a cross reference to the relevant protocol section.
+<Enter Trial-specific Intervention Risks and Mitigations>
+Trial Procedures – Describe risks associated with the design (e.g., placebo arm) and procedures
+specific to this trial (e.g., biopsies), and any measures to control or mitigate the risks. Provide a
+brief description of strategies to mitigate identified risks or provide a cross reference to the
+relevant protocol section. This is not intended to be an exhaustive list of all possible risks
+associated with trial procedures but should focus on the unique risks inherent in the design or
+less common or high-risk procedures.
+<Enter Trial-specific Procedure Risks and Mitigations>
+Other – Consider risks associated with other items (e.g., challenge agents, imaging agents,
+medical devices). This could include discussion of risk mitigation for special populations, if not
+described elsewhere. Insert a line for each, as needed.
+<Enter Trial-specific Other Risks and Mitigations>
+2.2.2    Benefit Summary
+The benefit summary should describe any physical, psychological, social, or other potential
+benefits to individual participants as a result of participating in the trial, addressing immediate
+potential benefits and/or long-range potential benefits. Clearly state if no benefits to an
+individual participant can be anticipated, or if potential benefits are unknown. For early clinical
+
+
+                                                                                                    17
+trials such as Phase 1 or trials in healthy participants, benefits for an individual participant
+(other than those of altruism) are expected to be minimal.
+Benefits to society in general may also be included but should be described separately from the
+individual participant perspective.
+<Enter Benefit Summary>
+2.2.3    Overall Risk-Benefit Assessment
+Provide a succinct, concluding statement on the perceived balance between risks that have
+been identified from cumulative safety data, protocol procedures, and anticipated
+efficacy/benefits within the context of the proposed trial.
+<Enter Overall Risk-Benefit Assessment>
+
+3        TRIAL OBJECTIVES AND ASSOCIATED ESTIMANDS
+In this section, precisely define each trial objective and refine each trial objective into a precise
+clinical question of interest by defining the associated estimand. For considerations on
+estimands, refer to ICH E9(R1). Ensure alignment with every other section of the protocol.
+Include additional level 3 headings (e.g., add a new level 3 heading for each secondary objective
+as needed). If there is more than one objective in a category (e.g., more than one secondary
+objective), number each objective consecutively as the level 3 heading (e.g., Secondary
+Objective 1, Secondary Objective 2, etc.).
+No text is intended here (heading only).
+3.1      Primary Objective(s) and Associated Estimand(s)
+For all trials, precisely state each primary trial objective by providing a meaningful and concise
+description of the treatment effect of interest using natural, nontechnical language for clear
+understanding by sponsors, investigators, clinical site personnel, trial participants, ethics
+committees, and regulators.
+For trials intended to estimate a treatment effect or test a hypothesis related to a treatment
+effect, use the table to precisely describe the associated estimand(s). This includes specification
+of the population targeted by the clinical question, the treatment condition(s), the endpoint (or
+variable), and the population-level summary. Precise specifications of treatment, population,
+and variable are likely to address many of the intercurrent events. Other intercurrent events
+not already addressed in the clinical question of interest by the aforementioned attributes
+should be described with their associated strategies. For other types of trials not intended to
+estimate a treatment effect or test a hypothesis related to a treatment effect, describe
+additional information relevant to the clinical question(s) of interest (at a minimum, present the
+endpoint(s) associated with each objective).
+No text is intended here (heading only).
+
+
+
+                                                                                                   18
+3.1.1   Primary Objective <#>
+<Enter Primary Objective>
+Enter information in table of estimand characteristics below including endpoint at a minimum.
+
+ Estimand                 Description
+ Characteristic
+
+ {Population}             List of key characteristics, such as demographic characteristics (e.g.,
+                          age, sex) and clinical characteristics (e.g., prior therapies, symptoms,
+                          severity, biomarker status)
+                          {<Enter Population>}
+
+ {Treatment}              List of key aspects of treatment regimens in each treatment group,
+                          including at least investigational agents, dosage, and administration
+                          route
+                          {<Enter Treatment>}
+
+ Endpoint                 Definition of the endpoint
+                          <Enter Endpoint>
+
+ {Population-level        Description of the population-level summary (e.g., mean difference,
+ Summary}                 relative risk)
+                          {<Enter Population-level Summary>}
+
+ {Other Intercurrent      {Strategy}
+ Event}
+
+ {<Enter Description of   Description of the strategy to address the intercurrent event (e.g., a
+ Intercurrent Event>}     treatment policy strategy); cross reference the justification in
+                          Section 4 Trial Design. If there is >1 intercurrent event for an
+                          objective, add additional intercurrent event rows.
+                          {<Enter Intercurrent Event Strategy>}
+
+3.2     Secondary Objective(s) and Associated Estimand(s)
+Describe the secondary objective(s) and associated estimand(s) as outlined in Section 3.1
+Primary Objective(s) and Associated Estimand(s). Use the same approach as above and include
+table for a precise estimand description.
+No text is intended here (heading only) unless there is no secondary objective, in which case
+indicate “Not applicable”.
+
+
+
+                                                                                                19
+3.2.1   {Secondary Objective <#>}
+{<Enter Secondary Objective>}
+If a Secondary Objective has been entered, enter information in table of estimand
+characteristics below including endpoint at a minimum:
+{<Enter Table of Estimand Characteristics >}
+3.3     Exploratory Objective(s)
+State each exploratory objective. This should generally include documentation of associated
+exploratory endpoints. It may be helpful in some cases to describe precise estimands to provide
+clarity on what is being estimated. Use the same approach as above and include table for a
+precise estimand description.
+No text is intended here (heading only) unless there is no exploratory objective, in which case
+indicate “Not applicable”.
+3.3.1   {Exploratory Objective <#>}
+{<Enter Exploratory Objective>}
+If an Exploratory Objective has been entered, enter information in table of estimand
+characteristics below including endpoint at a minimum:
+{<Enter Table of Estimand Characteristics >}
+
+
+
+
+                                                                                                  20
+4        TRIAL DESIGN
+In the subsections below, describe the trial design with specific mention, as applicable, of the
+components of an adequate and well-controlled trial and reflect the principles of Quality by
+Design. The description of the design should be concise and consistent with Section 1.1
+Protocol Synopsis and Section 1.2 Trial Schema. The trial design should align with
+objectives/estimand(s) described in Section 3 Trial Objectives and Associated Estimands.
+This section is intended to provide a description for the important aspects of the trial design
+and rationale for its key attributes. Operational details needed to implement the trial design
+should be covered in more detail in subsequent sections.
+No text is intended here (heading only).
+4.1      Description of Trial Design
+Describe the overall trial design and intervention model (e.g., single group, parallel group,
+cross-over, factorial, sequential), the expected number of participants, and the control method
+(e.g., placebo, active comparator, low dose, external, standard of care, sham procedure, or
+none [uncontrolled]). If there are any key aspects of the investigational trial intervention that
+inform the selection of the intervention model, this should be described.
+If applicable, indicate other design characteristics (e.g., superiority, noninferiority, dose
+escalation, or equivalence).
+If the trial will have an adaptive or novel design (e.g., the trial will be conducted under a master
+protocol), provide a summary of these design aspects.
+If applicable, describe within-trial transition rules (e.g., transitions involving cohorts or trial
+parts). Dose escalation or dose-ranging details should also be described.
+<Enter Overall Description of Trial Design and Description of Intervention Model>
+Describe the trial duration with reference to Section 1.2 Trial Schema. Explain what the overall
+duration for an individual participant is anticipated to be and why, including the sequence and
+duration of trial periods (e.g., screening, run-in, randomisation, treatment [fixed dose/titration],
+follow-up/washout periods). Where applicable, include discussion of sentinel dosing (or lack
+thereof), dose escalation, and cohort expansion. If dose modification decisions are dependent
+upon review by a committee, include details in Section 11.4 Committees.
+<Enter Description of Trial Duration>
+State the method of assignment to trial intervention and the level and method of blinding that
+will be used, with cross reference to Section 6.7 Investigational Trial Intervention Assignment,
+Randomisation and Blinding.
+<Enter Description of Method of Assignment to Trial Intervention>
+<Enter Description of Level and Method of Blinding>
+Describe any other important aspects of the design, e.g.:
+
+                                                                                                      21
+•     geographic scope of trial (e.g., single-centre, multicentre, or multicentre and multinational)
+•     use of decentralised elements in the trial
+•     planned use of a Data Monitoring Committee, or similar review group and cross reference
+      Section 11.4 Committees, for details
+•     whether an interim analysis is planned; if so, refer to details in Section 10.9 Interim Analyses
+•     any planned extension trial, long-term follow-up/registry, future use of samples or data, or
+      post-trial sample analysis or other data-related activities
+<Enter Additional Description of Trial Design>
+4.1.1      Stakeholder Input into Design
+If applicable, describe any stakeholder (e.g., patient, healthcare professional and patient
+advocacy groups) involvement in the design of the trial and any suggestions implemented.
+<Enter Stakeholder Input into Design>
+4.2        Rationale for Trial Design
+{<Enter Overall Rationale for Trial Design>} if not using below optional subheadings.
+OR
+4.2.1      Rationale for Estimand(s)
+When estimands are associated with the Primary and Secondary Objectives described in Section
+3 Trial Objectives and Associated Estimands, provide a rationale for the estimand(s) not
+described elsewhere in the document. This should include a rationale that the selected
+endpoint(s) are clinically relevant and provide a reliable and valid measurement of the intended
+intervention effect(s). It should also include a rationale for the selected strategies for handling
+intercurrent events.
+<Enter Rationale for Estimand(s)>
+4.2.2      Rationale for Intervention Model
+Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial
+Design with a cross reference to Section 6.2 Rationale for Investigational Trial Intervention Dose
+and Regimen. Rationale for choice of comparator, if applicable, should be described separately
+in Section 4.2.3 Rationale for Control Type. A rationale for the choice of trial population should
+be described separately in Section 5.1 Description of Trial Population and Rationale.
+<Enter Rationale for Intervention Model>
+4.2.3      Rationale for Control Type
+If applicable, provide a rationale for the type and choice of control selected for the trial (e.g.,
+placebo, active drug, combination, external). Describe any known or potential problems
+associated with the control group selected in light of the specific disease and intervention(s)
+being studied. If comparators will differ by region, describe. The rationale for dose and/or dose
+                                                                                                   22
+regimen is explained in Section 6.2 Rationale for Investigational Trial Intervention Dose and
+Regimen.
+<Enter Rationale for Control Type>
+4.2.4    Rationale for Trial Duration
+Provide a rationale that the trial duration is appropriate for a reliable and relevant evaluation of
+the trial intervention per the trial objective(s).
+<Enter Rationale for Trial Duration>
+4.2.5    Rationale for Adaptive or Novel Trial Design
+If applicable, provide a rationale for the use of an adaptive or novel design.
+<Enter Rationale for Adaptive or Novel Trial Design>
+4.2.6    Rationale for Interim Analysis
+If applicable, provide a rationale for any interim analysis planned with respect to its purpose
+(e.g., stopping the trial early for efficacy or futility) and timing.
+<Enter Rationale for Interim Analysis>
+4.2.7    Rationale for Other Trial Design Aspects
+Discuss rationale for any additional aspects of the design not addressed above.
+<Enter Rationale for Other Trial Design Aspects>
+4.3      Trial Stopping Rules
+If applicable, describe any trial-specific stopping rules, including guidance on when the trial
+should be stopped for efficacy or safety reasons, when a cohort or dose escalation should be
+terminated, and/or when a given treatment arm should be terminated. If applicable, describe
+any rules that may result in a temporary pause of dosing and/or enrollment into the trial and
+criteria for restarting enrollment. Ensure that the trial-specific stopping rules are aligned with
+the specifications that are described in Section 10.9 Interim Analyses.
+<Enter Trial Stopping Rules>
+4.4      Start of Trial and End of Trial
+Define key timepoints in the trial, including trial start and end definitions (e.g., a key timepoint
+definition for start of trial might be when the ICF is signed by the first participant, and a key
+timepoint definition for end of trial might be when participants are no longer being examined
+or the last participant’s last trial assessment has occurred). Consider local regulatory
+requirements for these and other definitions (e.g., the first act of recruitment).
+If appropriate, provide a cross reference to Section 11.11 Early Site Closure.
+<Enter Start of Trial>
+<Enter End of Trial>
+
+                                                                                                     23
+4.5        Access to Trial Intervention After End of Trial
+If applicable, describe any possibilities for access to trial intervention, if any, beyond completion
+of the trial. Planned extension trials, if described in Section 4.1 Description of Trial Design, do
+not need to be repeated in this section.
+<Enter Access to Trial Intervention After End of Trial>
+
+5          TRIAL POPULATION
+In the subsections below, describe the trial population: inclusion and exclusion criteria,
+contraception requirements and lifestyle restrictions. The trial population should generally be
+aligned with the population attribute of the primary estimand that was defined in Section 3
+Trial Objectives and Associated Estimands.
+Consider the following when developing participant eligibility criteria to be listed in Section 5.2
+Inclusion Criteria and Section 5.3 Exclusion Criteria:
+•     List the criteria necessary for participation in the trial. Ensure that each criterion can be
+      easily assessed definitively and answered with yes/no responses.
+•     Criteria should be written to avoid protocol waivers or exemptions.
+•     If participants require screening, distinguish between screening vs enrolling participants.
+•     Identify specific laboratory tests or clinical characteristics that will be used as criteria for
+      inclusion or exclusion and any documentation needed to demonstrate the criterion is met
+      (e.g., laboratory tests or imaging). If permitting existing medical diagnosis, imaging, genetic
+      tests, or laboratory results, state any required window or acceptable test type.
+•     If measures to enrich the trial population for pre-specified subgroups of interest are used,
+      these should be described.
+No text is intended here (heading only).
+5.1        Description of Trial Population and Rationale
+Describe the population selected (e.g., healthy participants, adult participants, paediatric
+participants, pregnant participants, or breastfeeding participants) and how the enrollment
+criteria reflect the populations that are likely to use the drug if approved. Specify the
+population age range (e.g., ≤ 3 months, ≥ 18 to ≤ 80 years old) including the timepoint at which
+qualification for age criteria is determined (e.g., at time of screening vs randomisation for
+paediatric trials). Specify any key diagnostic criteria for the population (e.g., “acute lung injury”,
+or a specific biomarker profile). If applicable, describe similar conditions or diseases and their
+differential diagnosis.
+Provide a rationale for the trial population ensuring that the population selected is well defined
+and clinically recognisable. Describe how the selected population can meet the trial objectives
+and how the enrollment criteria reflect the population of interest.
+
+
+                                                                                                      24
+If a clinical question targets a subset of the entire trial population, such as one defined by a
+baseline characteristic (e.g., a specific biomarker), the rationale for selecting this subset should
+be provided in this section.
+Justify whether the trial intervention is to be evaluated in paediatric participants, in adults
+unable to consent for themselves, other vulnerable participant populations, or those that may
+respond to the trial intervention differently (e.g., elderly, hepatic or renally impaired, or
+immunocompromised participants).
+<Enter Description of Trial Population and Rationale>
+Prospective approval of protocol deviations to recruitment and enrollment criteria, also known as
+protocol waivers or exemptions, is not permitted.
+5.2        Inclusion Criteria
+Inclusion criteria are characteristics that define the trial population, i.e., those criteria that
+every potential participant must satisfy to qualify for trial enrollment.
+To be eligible to participate in this trial, an individual must meet all the following criteria:
+<#>      <Enter Inclusion Criterion>
+Add criteria as needed. Consider numbering the criteria sequentially.
+5.3        Exclusion Criteria
+Exclusion criteria are characteristics that make an individual ineligible for participation.
+An individual who meets any of the following criteria will be excluded from participation in this
+trial:
+<#>      <Enter Exclusion Criterion>
+Add criteria as needed. Consider numbering the criteria sequentially.
+5.4        Contraception
+No text is intended here (heading only).
+5.4.1      Definitions Related to Childbearing Potential
+Specify the definitions of:
+•     participant of childbearing potential
+•     participant of nonchildbearing potential
+<Enter Definitions Related to Childbearing Potential >
+5.4.2      Contraception Requirements
+Specify the:
+•     contraceptive methods required
+•     duration of use
+                                                                                                     25
+<Enter Contraception Requirements.>
+5.5      Lifestyle Restrictions
+In the following subsections, describe any restrictions during the trial pertaining to lifestyle
+and/or diet, intake of caffeine, alcohol, or tobacco, or physical and other activities. If not
+applicable, include a statement that no restrictions are required.
+{<Enter Lifestyle Restrictions>}
+5.5.1    Meals and Dietary Restrictions
+If applicable, describe any restrictions on diet (e.g., food and drink restrictions, timing of meals
+relative to dosing, etc.).
+<Enter Meals and Dietary Restrictions>
+5.5.2    Caffeine, Alcohol, Tobacco, and Other Restrictions
+If applicable, describe any restrictions on the intake of caffeine, alcohol, tobacco, or other
+restrictions.
+<Enter Caffeine, Alcohol, Tobacco, and Other Restrictions>
+5.5.3    Physical Activity Restrictions
+If applicable, describe any restrictions on physical activity (e.g., participants may be required to
+remain in bed for 4 to 6 hours after dosing).
+<Enter Physical Activity Restrictions>
+5.5.4    Other Activity Restrictions
+If applicable, describe restrictions on any other activity (e.g., blood or tissue donation, driving,
+heavy machinery use, or sun exposure).
+<Enter Other Activity Restrictions>
+5.6      Screen Failure and Rescreening
+Describe screen failure and indicate how screen failure will be handled in the trial, including
+conditions and criteria under which rescreening is acceptable. If applicable, indicate the
+circumstances and time window under which a repeat procedure is allowed for screen failure
+relating to specific inclusion/exclusion criteria for the trial.
+<Enter Screen Failure>
+<Enter Rescreening>
+
+6        TRIAL INTERVENTION AND CONCOMITANT THERAPY
+Trial interventions are all pre-specified investigational and noninvestigational medicinal
+products, medical devices or other interventions intended for the participants during the trial.
+The investigational trial intervention is the product(s) used in the trial as part of trial objectives,
+
+                                                                                                     26
+including control(s) (e.g., active comparator, placebo). Description of the investigational trial
+intervention is provided in Section 6.1 Description of Investigational Trial Intervention. Other
+trial interventions that are not part of trial objectives or do not have an investigational role in
+this trial are described in Section 6.9 Description of Noninvestigational Trial Intervention.
+Any regional requirements should be noted in the appropriate subsections.
+Provide an overview of investigational and noninvestigational trial interventions. Designate the
+trial intervention as IMP or NIMP/AxMP based on trial design and regional requirements.
+Consider the optional table below.
+<Enter description of the overview of trial interventions or a heading for the optional table>
+
+
+
+
+                                                                                                      27
+Arm       Arm Type Intervention Intervention Pharmaceutical Dosage      Dosage            Route of        Regimen/Treatment Use        IMP/NIMP    Sourcing
+Name               Name         Type         Dose Form      Strength(s) Level(s)          Administration Period/Vaccination
+                                                                                                          Regimen
+<Enter    [Select   <Enter       [Select        [Select          <Enter       <Enter      [Select Route <Enter               [Select   [Select IMP [Select
+Arm       Arm Type] Intervention Intervention   Pharmaceutical   Dosage       Dosage      of              Regimen/Treatment Use]       or NIMP]    Sourcing]
+Name>               Name>        Type]          Dose Form]       Strength(s)> Level(s)>   Administration] Period/Vaccination
+                                                                                                          Regimen>
+   IMP=Investigational Medicinal Product; NIMP=NonInvestigational/Auxiliary Medicinal Product.
+
+
+
+
+                                                                                                                                                           28
+6.1      Description of Investigational Trial Intervention
+Describe the investigational trial intervention to be administered in each arm of the trial and for
+each period of the trial including route and mode of administration, dose, dosage regimen,
+duration of intervention, use, packaging and labelling.
+Refer to approved regional labelling, as appropriate.
+For investigational drug/device combination products, include details on the configuration and
+use of the device and device manufacturer. A device user manual may be referenced in this
+section.
+<Enter Description of Investigational Trial Intervention>
+6.2      Rationale for Investigational Trial Intervention Dose and Regimen
+Provide a rationale for the selection of the dose(s) or dose range, pharmaceutical dose form,
+route of administration, and dosing regimen of the investigational trial interventions, as
+applicable. This rationale should include relevant results from nonclinical studies and clinical
+trials that support selection of the dose and regimen. Discuss impact of differences in trial
+population characteristics (e.g., age, sex, race) that could lead to differences in
+pharmacokinetics and pharmacodynamics in this trial as compared to previous trials. If
+applicable, justify any differences in dose regimen or therapeutic use relative to approved
+labelling. Describe prior trials and other information that support the dose and/or dose regimen
+of the investigational trial intervention.
+Include a rationale for prospective dose adjustments incorporated in the trial, if any.
+<Enter Rationale for Investigational Trial Intervention Dose and Regimen>
+6.3      Investigational Trial Intervention Administration
+Describe the detailed procedures for administration of each participant’s dose of each
+investigational trial intervention. This may include the timing of dosing (e.g., time of day,
+interval), the duration (e.g., the length of time participants will be administered the
+investigational trial intervention), and the timing of dosing relative to meals.
+Include any specific instructions on who, when or how to prepare and take the dose(s) and how
+to handle any delayed or missed doses.
+Dose escalation or cohort expansion as part of the overall design should be covered in Section
+4.1 Description of Trial Design.
+<Enter Investigational Trial Intervention Administration>
+6.4      Investigational Trial Intervention Dose Modification
+For each participant, describe any dose modifications allowed, including conditions for such
+dose modifications, particularly regarding failure to respond or safety concerns. State any
+minimum period required before a participant’s dose might be raised to the next higher dose or
+
+
+                                                                                                29
+dose range. Include whether it is permissible to start and stop treatment and how dose
+reductions (if permitted) are to be managed.
+Information on stopping investigational trial intervention for participants due to safety/other
+reasons should be described in Section 7 Participant Discontinuation of Trial Intervention and
+Discontinuation or Withdrawal from Trial.
+<Enter Investigational Trial Intervention Dose Modification>
+6.5      Management of Investigational Trial Intervention Overdose
+Describe what is meant by investigational trial intervention overdose. Provide any available
+information on managing overdose and ensure it is consistent with the Investigator’s Brochure
+or product labelling. Cross reference these documents as applicable.
+<Enter Management of Investigational Trial Intervention Overdose>
+6.6      Preparation, Storage, Handling and Accountability of Investigational
+         Trial Intervention
+No text is intended here (heading only).
+6.6.1    Preparation of Investigational Trial Intervention
+Describe any preparation of the investigational trial intervention, and when necessary, who
+should prepare it. When applicable, describe the maximum hold time once thawed/mixed
+before administration. Include thawing, diluting, mixing, and reconstitution/preparation
+instructions. For drug/device combination products, include any relevant assembly or use
+instructions and reference the package insert that is provided separately.
+If the instructions are lengthy or complicated, it is acceptable to reference the package insert (if
+applicable) or include instructions in separate documents provided to the site (e.g., a pharmacy
+manual) and reference the separate documents.
+<Enter Preparation of Investigational Trial Intervention >
+6.6.2      Storage and Handling of Investigational Trial Intervention
+Describe storage and handling requirements (e.g., protection from light, temperature,
+humidity) for the investigational trial intervention(s). For trials in which multidose vials are
+utilised, provide additional information regarding stability and expiration time after initial use
+(e.g., if the seal is broken).
+Explain how the investigational trial intervention will be provided to the investigator. If
+applicable, include details about kits, packaging, or other material of the investigational trial
+intervention for blinding purposes.
+If the instructions are lengthy or complicated, it is acceptable to reference the package insert (if
+applicable) or include instructions in separate documents provided to the site (e.g., a pharmacy
+manual) and reference the separate documents.
+<Enter Storage and Handling of Investigational Trial Intervention>
+
+                                                                                                     30
+6.6.3      Accountability of Investigational Trial Intervention
+Describe the accountability method, including:
+•     how the investigational trial intervention will be distributed
+•     who will distribute the investigational trial intervention
+•     participation of a drug storage repository or pharmacy, if applicable
+•     plans for disposal or return of unused product
+•     plans for reconciliation of investigational trial intervention, if applicable
+<Enter Accountability of Investigational Trial Intervention>
+6.7        Investigational Trial Intervention Assignment, Randomisation and
+           Blinding
+No text is intended here (heading only).
+6.7.1      Participant Assignment to Investigational Trial Intervention
+State that at enrollment, participant identification codes should be assigned. Describe the
+method of assigning participants to investigational trial intervention without being so specific
+that blinding or randomisation might be compromised. If assignment to investigational trial
+intervention is by randomisation, describe when randomisation will occur relative to screening.
+If permuted block randomisation is employed, do not state the block size in the protocol. If
+adaptive randomisation or other methods of covariate balancing/minimisation are employed,
+include a cross reference to the methods of analysis in Section 10 Statistical Considerations. As
+applicable, details regarding the implementation of procedures to minimise bias should be
+described.
+<Enter Participant Assignment to Investigational Trial Intervention>
+6.7.2      {Randomisation}
+Describe the randomisation procedures (e.g., central randomisation procedures), the method
+used to generate the randomisation schedule (e.g., computer generated), the source of the
+randomisation schedule (e.g., sponsor, investigator, or other), and whether IRT(s) will be used.
+To maintain the integrity of the blinding, do not include the block size.
+{<Enter Randomisation>}
+6.7.3      {Measures to Maintain Blinding}
+Describe measures that will be used to maintain blinding:
+•     The investigational trial interventions are as indistinguishable as possible
+•     Plans for the maintenance of randomisation codes and appropriate blinding for the trial
+•     Procedures for planned (e.g., interim analysis) and unintentional (e.g., breach of procedure)
+      breaking of randomisation codes
+
+                                                                                                 31
+For unplanned but intentional actions (e.g., safety events), refer to Section 6.7.4 Emergency
+Unblinding at the Site.
+If the trial allows for some investigators or other designated staff to remain unblinded (e.g., to
+allow them to adjust investigational trial intervention), the means of maintaining the blinding
+for other investigators or staff should be explained. Measures to prevent unblinding by
+laboratory measurements or while performing study assessments, if used, should be described.
+{<Enter Measures to Maintain Blinding>}
+6.7.4    {Emergency Unblinding at the Site}
+Describe the criteria for breaking the trial blind or participant code. Describe the circumstances
+that would require breaking the blind, either for an individual participant or for all participants,
+and specify who will be responsible for this decision. Include the procedure for emergency
+unblinding as well as documentation of unblinding. Indicate to whom the intentional and
+unplanned unblinding should be reported.
+{<Enter Emergency Unblinding at the Site>}
+6.8      Investigational Trial Intervention Adherence
+Describe the measures to monitor and document participants’ adherence to investigational trial
+intervention (e.g., trial intervention accountability records, paper or electronic diaries, or
+investigational trial intervention concentration measurements).
+List what documents are mandatory to complete (e.g., participant drug log) and identify which
+records will be used as the source records for documenting investigational trial intervention
+adherence.
+<Enter Investigational Trial Intervention Adherence>
+6.9      Description of Noninvestigational Trial Intervention
+As stated in Section 6 Trial Intervention and Concomitant Therapy, noninvestigational
+interventions are pre-specified products used in the trial but are not part of trial objectives and
+hence, are not investigational trial interventions.
+<Enter Description of Noninvestigational Trial Intervention>
+6.9.1    {Background Trial Intervention}
+Describe any background intervention(s), including administration and any conditions for use.
+{<Enter Background Trial Intervention>}
+6.9.2    {Rescue Therapy}
+List all permitted rescue medications, treatments, and/or procedures, including any relevant
+instructions on administration and any conditions of use.
+
+
+
+
+                                                                                                  32
+If administration of rescue therapy leads to the temporary or permanent discontinuation of trial
+intervention, refer to Section 7 Participant Discontinuation of Trial Intervention and
+Discontinuation or Withdrawal from Trial.
+{<Enter Rescue Therapy>}
+6.9.3      {Other Noninvestigational Trial Intervention}
+If applicable, describe the use of any other noninvestigational trial intervention (e.g., challenge
+agents or diagnostics).
+{<Enter Other Noninvestigational Trial Intervention>}
+6.10       Concomitant Therapy
+Specify the concomitant medications, supplements, complementary and alternative therapies,
+treatments, and/or procedures that are prohibited or permitted during the trial and include
+details about when the information will be collected (e.g., during screening, at each visit).
+When appropriate to separate the content, the below subheadings may be used.
+<Enter Concomitant Therapy>
+6.10.1     {Prohibited Concomitant Therapy}
+If applicable, describe any prohibited concomitant therapy.
+{<Enter Prohibited Concomitant Therapy>}
+6.10.2     {Permitted Concomitant Therapy}
+If applicable, describe any permitted concomitant therapy.
+{<Enter Permitted Concomitant Therapy>}
+
+7          PARTICIPANT DISCONTINUATION OF TRIAL INTERVENTION
+           AND DISCONTINUATION OR WITHDRAWAL FROM TRIAL
+This section must align with the intercurrent events and their handling strategies introduced in
+Section 3 Trial Objectives and Associated Estimands, and with the investigational trial
+intervention described in Section 6 Trial Intervention and Concomitant Therapy.
+No text is intended here (heading only).
+7.1        Discontinuation of Trial Intervention for Individual Participants
+No text is intended here (heading only).
+7.1.1      Permanent Discontinuation of Trial Intervention
+Describe:
+•     the criteria for discontinuation of a participant from any trial intervention, carefully
+      evaluating which are appropriate for the trial population and therapy being studied
+
+
+                                                                                                 33
+•     how participants who discontinue trial intervention will be followed after discontinuation.
+      Depending on the chosen intercurrent event handling strategy, it will be important to
+      continue to follow and ascertain outcomes in participants who discontinue trial intervention
+      through the end of the trial to prevent missing data in important analyses. Refer to Section
+      1.3 Schedule of Activities for assessments to be performed at the time of and following
+      discontinuation of trial intervention
+•     the process for collecting and recording the detailed reasons for discontinuing trial
+      intervention if not described elsewhere
+<Enter Permanent Discontinuation of Trial Intervention>
+7.1.2      Temporary Discontinuation of Trial Intervention
+Describe:
+•     the criteria for temporary discontinuation or interruption of trial intervention for an
+      individual participant
+•     what to do and which restrictions still apply if the participant has to temporarily discontinue
+      or interrupt trial intervention
+•     which assessments will be performed for the stated duration of the trial
+Details of any rechallenge or restart after temporary discontinuation of trial intervention due to
+a safety-related event should be included in Section 7.1.3 Rechallenge.
+<Enter Temporary Discontinuation of Trial Intervention>
+7.1.3      Rechallenge
+Describe the criteria for rechallenge/restarting trial intervention, how and when to perform
+rechallenge, the number of rechallenges allowed during the trial, and whether all, or specify
+which, assessments will be performed for the stated duration of the trial.
+If rechallenge is not allowed, state this.
+<Enter Rechallenge>
+7.2        Participant Discontinuation or Withdrawal from the Trial
+Describe the criteria for participant discontinuation or withdrawal from the trial.
+Describe the reason for withdrawal and the type of data to be collected for the final
+assessments with reference to the schedule of activities for the participant’s end of study visit
+unless provided in another section.
+In many cases, the only reason for a participant being considered withdrawn from the trial
+should be a participant’s withdrawal of consent to continue to participate in the trial. All other
+participants, including those who discontinue trial intervention, should remain in the trial and
+continue to be followed to prevent missing data in important analyses. Refer to Section 10
+Statistical Considerations for the data that must be collected for the trial estimands.
+
+                                                                                                  34
+<Enter Participant Discontinuation or Withdrawal from Trial>
+7.3      Management of Loss to Follow-Up
+Describe how the trial will define how participants are lost to follow-up. In general, participants
+should be considered lost to follow-up only if they cannot be reached despite multiple attempts
+to contact them. Also describe approaches that will be used to minimise loss to follow-up, such
+as multiple, diverse methods to remain in contact with participants (e.g., telephone calls, texts,
+and emails to the participant) and how contacts will be recorded.
+<Enter Management of Loss to Follow-Up>
+
+
+
+
+                                                                                                35
+8          TRIAL ASSESSMENTS AND PROCEDURES
+In this section:
+•     Describe the assessments and procedures required during each phase of the trial that are
+      relevant to the stated endpoints and related intercurrent events (e.g., surgery or use of
+      rescue therapy). Provide details that are not already presented in the SoA, taking care not
+      to duplicate information.
+•     Ensure alignment with every other section of the protocol. In particular, this section must
+      align with:
+         o the intercurrent events and associated strategies for handling them described in
+           Section 3 Trial Objectives and Associated Estimands
+         o trial intervention and therapies outlined in Section 6 Trial Intervention and
+           Concomitant Therapy
+         o discontinuation and withdrawal procedures in Section 7 Participant Discontinuation
+           of Trial Intervention and Discontinuation or Withdrawal From Trial
+         o the statistical analysis that is defined in Section 10 Statistical Considerations
+•     Reference the literature for the validation of scales/instruments/questionnaires/assays.
+•     Instructions or protocols for specialised tests and scales/instruments/questionnaires/assays
+      may be presented in an appendix or a separate document and cross referenced.
+•     If the trial includes qualitative interviews, describe these evaluations.
+•     Include minimums and limits for procedures (e.g., number of imaging procedures/biopsies,
+      radiation exposure, etc.) if appropriate to the trial.
+No text is intended here (heading only).
+8.1        Trial Assessments and Procedures Considerations
+Describe general considerations applicable across trial assessments and procedures.
+<Enter Trial Assessments and Procedures Considerations>
+8.2        Screening/Baseline Assessments and Procedures
+Describe any assessments and procedures that are unique to screening/baseline (e.g.,
+collection of data on participant characteristics, assessments/procedures performed for the
+purpose of determining eligibility or for stratification) in this section. Describe screening and
+baseline assessments and procedures separately when screening and baseline are different or
+performed at different visits.
+<Enter Screening Assessments and Procedures>
+{<Enter Baseline Assessments and Procedures>}
+
+
+
+                                                                                                    36
+8.3        Efficacy Assessments and Procedures
+Describe efficacy assessments and procedures in this section. Cross reference Section 8.7
+Immunogenicity Assessments if immunogenicity assessments are used in efficacy
+determination.
+<Enter Efficacy Assessments and Procedures>
+8.4        Safety Assessments and Procedures
+Describe safety assessments and procedures utilising the following subsections as applicable.
+Add level 3 headings as needed.
+•     Identify any noninvestigator party involved in the evaluation of laboratory or other safety
+      assessments (e.g., sponsor or external Independent Data Monitoring Committee; cross
+      reference Section 11.4 Committees for details as applicable).
+•     Include guidelines for the medical management of relevant laboratory or other safety
+      assessment abnormalities.
+<Enter Safety Assessments and Procedures>
+8.4.1      {Physical Examination}
+Include any specific instructions for the collection and interpretation of physical examinations.
+{<Enter Physical Examination>}
+8.4.2      {Vital Signs}
+Include any specific instructions for the collection and interpretation of vital signs.
+{<Enter Vital Signs>}
+8.4.3      {Electrocardiograms}
+Include any specific instructions for the collection, interpretation, and archiving of ECGs.
+{<Enter Electrocardiograms>}
+8.4.4      {Clinical Laboratory Assessments}
+Describe any specific instructions for the collection and interpretation of clinical laboratory
+assessments, including:
+•     type of laboratory (central/local/hybrid)
+•     acceptability of additional tests deemed necessary by the investigator or local regulations
+•     instructions for situations in which central laboratory results are not available in time for
+      trial intervention and/or response evaluation, or in the event of a severe disruption (e.g., a
+      pandemic or natural disaster)
+•     treatment algorithms for results out of normal range
+•     cross reference Section 12.1 Clinical Laboratory Tests for laboratory assessment panels
+
+                                                                                                    37
+{<Enter Clinical Laboratory Assessments>}
+8.4.5      {Pregnancy Testing}
+Include any specific instructions for the collection and interpretation of pregnancy testing.
+{<Enter Pregnancy Testing>}
+8.4.6      {Suicidal Ideation and Behaviour Risk Monitoring}
+If the trial meets any of the criteria requiring suicidal ideation and behaviour risk monitoring by
+the guidance/guideline in each region, include justification for the need for suicidal ideation
+and behaviour risk monitoring in the study and add any specific instructions for the collection
+and interpretation of the assessment. In case this is an AESI in the study, justification should
+also be provided in Section 9.2.4 Adverse Events of Special Interest.
+{<Enter Suicidal Ideation and Behaviour Risk Monitoring>}
+8.5        Pharmacokinetics
+Include any specific instructions for the collection and assay of samples and interpretation of PK
+assessments.
+•     Describe the biological samples collected, the handling of samples, and the assay method.
+         o Specific sample collection and processing instructions can be described in an
+           appendix or a separate document and cross referenced.
+•     Describe the retention time for the samples (ensuring alignment with the ICF).
+•     Indicate the types of analyses for each sample.
+•     Define the PK parameters to be calculated and the calculation methods.
+<Enter Pharmacokinetics>
+8.6        Biomarkers
+Include any specific instructions for the collection of samples and interpretation of biomarkers
+in the subsections below as applicable. Safety biomarkers should be included in Section 8.4
+Safety Assessments and Procedures, and immunogenicity biomarkers should be included in
+Section 8.7 Immunogenicity Assessments.
+No text is intended here (heading only).
+8.6.1      Genetics, Genomics, Pharmacogenetics, and Pharmacogenomics
+Include any specific instructions for the collection and assay of samples for genetic, genomic,
+pharmacogenetic and/or pharmacogenomic analysis.
+•     Describe the biological samples that will be collected (e.g., tissue, serum, plasma), handling
+      of samples, and the assay method.
+         o Specific sample collection and processing instructions can be described in an
+           appendix or a separate document and cross referenced.
+
+                                                                                                  38
+•     Describe the retention time for the samples (ensuring alignment with the ICF).
+•     Indicate the types of analyses that may be studied for each sample.
+<Enter Genetics, Genomics, Pharmacogenetics and Pharmacogenomics>
+8.6.2      Pharmacodynamic Biomarkers
+Include any specific instructions for the collection of samples and assessment of
+pharmacodynamic biomarkers.
+•     Describe the biological samples that will be collected (e.g., tissue, serum, plasma).
+         o Specific sample collection and processing instructions can be described in an
+           appendix or a separate document and cross referenced.
+•     Describe the retention time for the samples (ensuring alignment with the ICF).
+•     Indicate the types of biomarkers that will be studied for each sample.
+•     Specify whether each sample is optional or required. Required samples must be based on a
+      protocol objective.
+<Enter Pharmacodynamic Biomarkers>
+8.6.3      {Other Biomarkers}
+Include any specific instructions for the collection of samples and assessment of other
+biomarkers.
+•     Describe the biological samples that will be collected (e.g., tissue, serum, plasma).
+         o Specific sample collection and processing instructions can be described in an
+           appendix or a separate document and cross referenced.
+•     Describe the retention time for the samples (ensuring alignment with the ICF).
+•     Indicate the types of biomarkers that will be studied for each sample.
+•     Specify whether each sample is optional or required. Required samples must be based on a
+      protocol objective.
+{<Enter Other Biomarkers>}
+8.7        Immunogenicity Assessments
+Include any specific instructions for the collection of samples and interpretation of
+immunogenicity. If immunogenicity assessments are included within Section 8.3 Efficacy
+Assessments and Procedures or Section 8.4 Safety Assessments and Procedures, cross
+reference that section.
+•     Describe the biological samples that will be collected (e.g., tissue, serum, plasma).
+         o Specific sample collection and processing instructions can be described in an
+           appendix or a separate document and cross referenced.
+
+                                                                                              39
+•     Describe the retention time for the samples (ensuring alignment with the ICF).
+•     Indicate the types of biomarkers that will be studied for each sample.
+•     Specify whether each sample is optional or required. Required samples must be based on a
+      protocol objective.
+<Enter Immunogenicity Assessments>
+8.8        Medical Resource Utilisation and Health Economics
+This section does not apply to COAs. Include this section only for any value evidence and
+outcomes assessments not included in either the efficacy or safety sections.
+Describe the health outcome measures, collection method (e.g., diary, physician interview), and
+participant burden.
+<Enter Medical Resource Utilisation and Health Economics>
+
+
+
+
+                                                                                            40
+9          ADVERSE EVENTS, SERIOUS ADVERSE EVENTS, PRODUCT
+           COMPLAINTS, PREGNANCY AND POSTPARTUM
+           INFORMATION, AND SPECIAL SAFETY SITUATIONS
+9.1        Definitions
+No text is intended here (heading only).
+9.1.1      Definitions of Adverse Events
+Specify the AE definitions, including:
+•     any relevant regional AE requirements
+•     any events that meet and do not meet the AE definition
+•     any trial-specific AE clarifications
+•     if applicable, any clarifications on the AE and SAE definitions for efficacy trials (e.g., lack of
+      efficacy or failure of pharmacological actions)
+<Enter Definitions of Adverse Events>
+9.1.2      Definitions of Serious Adverse Events
+Specify the SAE definitions, including:
+•     any relevant regional SAE requirements
+•     any events that meet and do not meet the SAE definition
+•     any trial-specific SAE clarifications
+<Enter Definitions of Serious Adverse Events>
+9.1.3      Definitions of Product Complaints
+Specify the definitions of product complaints in the context of the trial.
+<Enter Definitions of Product Complaints>
+9.1.3.1 {Definitions of Medical Device Product Complaints}
+{<Enter Definitions of Medical Device Product Complaints>}
+9.2        Timing and Procedures for Collection and Reporting
+Specify timing and procedures for collection and reporting of AEs, SAEs, product complaints
+(including medical device product complaints if applicable) and pregnancy and postpartum
+information in the sections below. This information may be summarised in a tabular format as
+shown in the example table below.
+This table describes the timing and procedures for collecting and reporting events.
+
+
+
+
+                                                                                                       41
+    Event        Situational    Reportable    Reportable    Timing       Method          Back-up
+    Type         Scope          Period        Period End    for          for             Method
+                                Start                       Reporting    Reporting       for
+                                                            to                           Reporting
+                                                            Sponsor
+                                                            or
+                                                            Designee
+
+    <Event       <Situational   <Reportable <Reportable <Timing   <Method    <Backup
+    Type>        Scope>         Period      Period      for       for        Method for
+                                Start>      End>        Reporting Reporting> Reporting>
+                                                        to
+                                                        Sponsor
+                                                        or
+                                                        Designee>
+
+9.2.1        Timing
+Specify timing for collection and reporting, including:
+•     start and end dates for collection and reporting
+•     frequency of collection and reporting
+•     cross reference to the Schedule of Assessments as appropriate
+<Enter Event Collection and Reporting Timing>
+9.2.2        Collection Procedures
+Specify procedures for collection and recording of AEs, SAEs, product complaints (including
+medical device product complaints if applicable) and pregnancy and postpartum information in
+the sections below.
+
+Identification
+Specify how information will be identified (e.g., self-reported, solicited questions).
+<Enter Identification>
+
+Severity
+Specify the intensity rating categories/scale.
+<Enter Severity>
+
+Causality
+Specify:
+•     the causality categories/scale
+•     procedures for assessing causality
+                                                                                                 42
+<Enter Causality>
+
+Recording
+Specify procedures for recording.
+<Enter Recording>
+
+Follow-up
+Specify the procedures for follow-up. Include the assessment tools that will be used to monitor
+the events and the duration of follow-up after appearance of the events.
+<Enter Follow-up>
+9.2.3      Reporting
+Specify the reporting method (e.g., an electronic data collection tool or a paper CRF), backup
+reporting method, if applicable, and reporting timeline to the sponsor.
+<Enter Reporting>
+9.2.3.1 Regulatory Reporting Requirements
+Specify:
+•   the investigator’s responsibilities for reporting to the sponsor (and to ethics committees,
+    where required), specifying timing of reporting to allow the sponsor to meet their
+    responsibilities
+•   the sponsor’s legal/regulatory responsibilities for reporting to regulatory authorities, ethics
+    committees, and investigators
+•   suspected unexpected serious adverse reaction reporting
+<Enter Regulatory Reporting Requirements>
+9.2.4      Adverse Events of Special Interest
+Specify any AESI, including:
+•   any event (serious or nonserious) of scientific and medical concern relative to the trial
+    intervention, for which ongoing monitoring and rapid communication by the investigator to
+    the sponsor can be appropriate
+•   other events that merit reporting to the sponsor, trial leadership, IRB, and regulatory
+    agencies
+Include the following for each AESI:
+•   the definition
+•   the approach for ascertaining information
+•   if applicable, any approach to confirm or adjudicate the event
+
+                                                                                                  43
+{<Enter Adverse Events of Special Interest >}
+Or
+{<Enter Not Applicable >}
+9.2.5      Disease-Related Events or Outcomes Not Qualifying as AEs or SAEs
+Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in
+anticonvulsant trials) or state “Not applicable.”
+<Enter Disease-related Events or Outcomes not Qualifying as AEs or SAEs>
+9.3        Pregnancy and Postpartum Information
+Whenever possible, pregnancy (direct or via partner) should be documented and followed up to
+collect relevant pregnancy outcomes. Any negative or consequential outcome(s) in the
+pregnant participant/partner or foetus, neonate or infant should be reported as an AE or SAE.
+Refer to Section 9.2 Timing and Procedures for Collection and Reporting for AE and SAE related
+procedures as applicable. If the negative event meets the seriousness criteria, then this is
+considered an SAE (e.g., spontaneous abortion, foetal death, stillbirth, congenital anomalies,
+ectopic pregnancy, or pre-eclampsia) and reported per Section 9.2.3 Reporting.
+No text is intended here (heading only).
+9.3.1      {Participants Who Become Pregnant During the Trial}
+Specify:
+•     the assessments to be performed
+•     type and duration of monitoring
+•     whether participants who become pregnant during the trial may continue with trial
+      intervention or must be discontinued from trial intervention (refer to Section 7 Participant
+      Discontinuation of Trial Intervention and Discontinuation or Withdrawal from Trial as
+      applicable)
+•     any trial modifications that need to be made for participants who become pregnant
+•     what information will be collected about a participant who becomes pregnant during the
+      trial (e.g., recording and reporting to the sponsor, postpartum follow-up, trial intervention
+      discontinuation or continuation, or trial withdrawal)
+For postpartum follow-up, include the time period (e.g., initial child development) with
+justification.
+If exposure to trial intervention during breastfeeding is applicable, specify:
+•     the assessments to be performed
+•     type and duration of monitoring
+•     information to be collected for both the participant and child
+
+                                                                                                  44
+{<Enter Participants Who Become Pregnant During the Trial>}
+9.3.2      {Participants Whose Partners Become Pregnant During the Trial}
+Specify:
+•     whether the investigator will attempt to collect pregnancy information about a participant’s
+      partner who becomes pregnant during the specified period in the trial
+•     whether the participant whose partner becomes pregnant should be discontinued from trial
+      intervention (refer to Section 7 Participant Discontinuation of Trial Intervention and
+      Discontinuation or Withdrawal from Trial as applicable)
+•     the assessments to be performed, type and duration of monitoring, and the information to
+      be collected
+{<Enter Participants Whose Partners Become Pregnant During the Trial>}
+9.4        Special Safety Situations
+Specify special safety situations associated with the trial intervention(s) that do not qualify as
+an AE or SAE, but require regulatory reporting. Examples include:
+•     misuse or abuse
+•     off-label use (if applicable)
+•     medication error (prescription or dispensing error)
+•     occupational exposure
+•     use outside of what is foreseen in the protocol
+•     unintended exposure of embryo, foetus, or child via maternal exposure (pregnancy or
+      breastfeeding) or via paternal exposure (semen)
+•     lack of therapeutic efficacy; this is not applicable for studies that measure efficacy as a
+      study endpoint
+•     suspected transmission of an infectious agent; this is only applicable for injected or biologic
+      medicinal products
+•     product complaint, including falsified or counterfeit products
+•     suspected drug-food or drug-drug interaction
+<Enter Special Safety Situations>
+
+10         STATISTICAL CONSIDERATIONS
+Ensure that the planned data analysis complies with ICH E9 and ICH E9(R1) guidelines.
+In general, all relevant data collected in the trial should be considered in this section.
+No text is intended here (heading only).
+
+                                                                                                     45
+10.1     General Considerations
+Provide general statements related to statistical considerations, such as whether a separate
+statistical analysis plan exists, which summary statistics will be provided, and the timing of
+analyses (e.g., “The analysis will include all participant data at trial completion”).
+<Enter General Considerations>
+10.2     Analysis Sets
+Describe analysis sets to be considered at the trial level, i.e., the set of participants whose data
+are to be included in the analyses, aligned with estimands. Clearly specify the analysis set to be
+used for each analysis described in Section 10 Statistical Considerations.
+<Enter Analysis Sets>
+10.3     Analyses of Demographics and Other Baseline Variables
+Describe the summary statistics that will be used to characterise the distribution of
+demographic and other relevant variables at baseline. Specify when the variables will be
+measured (e.g., at trial inclusion, prior to randomisation, or at the time of randomisation).
+Relevant variables include but are not limited to: stratification variables specified in Section 6.7
+Investigational Trial Intervention Assignment, Randomisation and Blinding, covariates for the
+statistical models specified in Section 10.4 Analyses Associated with the Primary Objective(s),
+other suspected predictive or prognostic variables, and variables used for planned subgroup
+analyses.
+<Enter Analyses of Demographics and Other Baseline Variables>
+10.4     Analyses Associated with the Primary Objective(s)
+Include additional level 3 headings for each primary objective as needed. If there is more than
+one primary objective, number each objective consecutively as the level 3 heading (e.g.,
+Primary Objective 1, Primary Objective 2, etc.).
+No text is intended here (heading only).
+10.4.1   Primary Objective <#>
+No text is intended here (heading only).
+10.4.1.1 Statistical Analysis Method
+Describe the statistical analysis methods that will be used to evaluate the primary objective(s)
+and associated estimand(s) in Section 3.1 Primary Objective(s) and Associated Estimand(s).
+Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is
+aligned with the primary estimand(s).
+For each objective, when applicable, state the null and alternative hypotheses, including the
+pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has
+been met, and relevant operating characteristics if appropriate. Describe the statistical model
+
+
+                                                                                                  46
+used and the factors that will be included (e.g., covariates and interactions) and any rules for
+handling these factors (e.g., pooling of centres).
+If modelling and simulation methods are to be used, describe the model (inputs and outputs),
+the underlying assumptions, and the method of model fitting.
+<Enter Statistical Analysis Method>
+10.4.1.2 Handling of Data in Relation to Primary Estimand(s)
+For each intercurrent event of the primary estimand(s) defined in Section 3.1 Primary
+Objective(s) and Associated Estimand(s), explain how data will be handled for the statistical
+analysis in line with the primary estimand. The handling of intercurrent events in the statistical
+analysis should be aligned with the specific estimand strategies being used.
+This section should describe in more detail the rationale and handling of the data rather than
+repeating information from the preceding sections.
+<Enter Handling of Data in Relation to Primary Estimand(s)>
+10.4.1.3 Handling of Missing Data in Relation to Primary Estimand(s)
+Describe how missing data will be addressed (e.g., imputation method and model), state the
+underlying assumptions, and provide a rationale for the approach.
+<Enter Handling of Missing Data in Relation to Primary Estimand(s)>
+10.4.1.4 {Sensitivity Analysis}
+Describe any sensitivity analyses and how their assumptions changed from the assumptions of
+the main statistical analysis. Sensitivity analyses are a series of analyses conducted with the
+intent to explore the robustness of inferences from the main estimator to deviations from its
+underlying modelling assumptions and limitations in the data.
+{<Enter Sensitivity Analysis>}
+10.4.1.5 {Supplementary Analysis}
+Describe any supplementary analysis, if applicable. Supplementary analyses are conducted in
+addition to the main and sensitivity analyses with the intent to provide additional insights into
+the understanding of the treatment effect.
+{<Enter Supplementary Analysis>}
+10.5     Analyses Associated with the Secondary Objective(s)
+Describe the statistical analysis methods that will be used to evaluate the secondary
+objective(s) and associated estimand(s) in Section 3.2 Secondary Objective(s) and Associated
+Estimand(s). Use the same section structure as Section 10.4 Analyses Associated with the
+Primary Objective(s). Include additional level 3 headings for each secondary objective as
+needed. If there is more than one secondary objective, number each objective consecutively as
+the level 3 heading (e.g., Secondary Objective 1, Secondary Objective 2, etc.).
+
+
+                                                                                                   47
+No text is intended here (heading only) unless there is no secondary objective, in which case
+indicate “Not applicable.”
+10.5.1   {Secondary Objective <#>}
+No text is intended here (heading only).
+10.5.1.1 {Statistical Analysis Method}
+Clearly specify any secondary hypotheses that will be tested for confirmatory purposes.
+{<Enter Statistical Analysis Method>}
+10.5.1.2 {Handling of Data in Relation to Secondary Estimand(s)}
+{<Enter Handling of Data in Relation to Secondary Estimand(s)>}
+10.5.1.3 {Handling of Missing Data in Relation to Secondary Estimand(s)}
+{<Enter Handling of Missing Data in Relation to Secondary Estimand(s)>}
+10.5.1.4 {Sensitivity Analysis}
+{<Enter Sensitivity Analysis>}
+10.5.1.5 {Supplementary Analysis}
+{<Enter Supplementary Analysis>}
+10.6     Analyses Associated with the Exploratory Objective(s)
+Describe any exploratory analyses, if applicable. Additional subsections may be created to
+describe the analyses for each exploratory objective, as needed. If there is no exploratory
+objective, indicate “Not applicable”.
+<Enter Analyses Associated with the Exploratory Objective(s)>
+10.7     Safety Analyses
+If safety is a primary and/or secondary objective, describe the corresponding safety analyses in
+the appropriate section above (Section 10.4 Analyses Associated with the Primary Objective[s]
+or Section 10.5 Analyses Associated with the Secondary Objective[s]). In this section, describe
+statistical methods that will be used to analyse relevant safety outcomes, including any AESI.
+This should typically include specification of a measure to estimate risk within treatment arms,
+a measure to compare risks across treatment arms, and a measure of statistical uncertainty
+around the comparison (e.g., a confidence interval).
+<Enter Safety Analyses>
+10.8     Other Analyses
+Describe other analyses not included in Sections 10.3-10.7, such as subgroup analyses.
+<Enter Other Analyses>
+
+
+
+                                                                                                48
+10.9     Interim Analyses
+Describe any interim analyses and criteria for stopping or adapting the trial. Ensure alignment
+with Section 4.3 Trial Stopping Rules.
+The description should include, but is not limited to, the following. Under circumstances where
+interim analysis details could impede the integrity of the trial, some of the information can be
+added in other documents outside of the protocol.
+•   any planned interim analysis, even if it is only to be performed at the request of an
+    oversight body (for example, DMC)
+•   the purpose of the interim analysis, including whether the interim analysis may be used for
+    stopping and/or other trial adaptations (e.g., sample size re-estimation, alteration to the
+    proportion of participants allocated to each trial group, or changes to eligibility criteria)
+•   the applied statistical method (e.g., group sequential test) and spending function (e.g.,
+    O’Brien-Fleming), as applicable
+•   the parties responsible for performing and reviewing the results of the analyses (e.g., DMC,
+    independent statistician)
+•   when the analyses will be conducted (timing and/or triggers)
+•   the decision criteria—statistical or other—that will be adopted to judge the interim results
+    as part of a guideline for early stopping or other adaptations
+•   who will see the outcome data while the trial is ongoing
+•   whether these individuals will remain blinded to trial groups
+•   how the integrity of the trial will be protected (e.g., maintaining blinding) when decisions
+    are made after interim analyses (e.g., a decision to continue the trial or implement a specific
+    adaptation)
+<Enter Interim Analyses>
+10.10 Multiplicity Adjustments
+Multiple testing procedures may be needed to limit the probability of false positive findings in a
+trial. Reasons for carrying out multiple statistical tests include, but are not restricted to,
+multiple endpoints, multiple treatment groups, multiple hypotheses, subgroups, and multiple
+timepoints.
+Describe any approaches to multiplicity control for the trial. This description might go beyond
+the analysis of primary objectives.
+Specify the statistical approach to control the overall type I error rate as well as the (adjusted)
+significance levels to test specific hypotheses, as applicable. Clarify whether the
+tests/confidence intervals are one- or two-sided.
+
+
+
+                                                                                                  49
+State the circumstances under which a trial will be considered to have met its primary
+objective(s). For example, in a study with two primary efficacy endpoints, this section should
+state whether the study would be expected to provide statistical evidence on at least one or on
+both of the endpoints in order to confirm the efficacy of the treatment.
+For some statistical approaches it might be helpful to include a graphical depiction, as
+visualisation will be helpful for understanding, coupled with the clinical translation of the
+mathematical choices.
+Details regarding interim analyses should be provided in Section 10.9 Interim Analyses.
+<Enter Multiplicity Adjustments>
+10.11 Sample Size Determination
+This section should detail the methods used for the determination of the sample size.
+The sample size calculation should be aligned with the primary estimand(s) and the primary
+analysis; otherwise, a justification is needed. Details of sample size calculation should include all
+relevant information to enable reproduction of the sample size, e.g.,:
+•    references to any prior studies on which assumptions were based
+•    significance level (including information on the choice of one- or two-sided level)
+•    power
+•    assumed treatment effect and variability
+•    how dropout rate and intercurrent events have been incorporated into sample size
+     calculation
+•    precision of estimator/length of confidence interval
+Any assumptions made should be stated and justified. Further analysis of how deviations from
+the assumptions will affect the sample size should be included.
+If complex simulations were used to calculate the sample size, consider including details in a
+separate simulation report as an appendix to the protocol.
+If the planned sample size is not derived statistically, then this should be explicitly stated along
+with a rationale for the intended sample size (e.g., exploratory nature of pilot trials; pragmatic
+considerations for trials in rare diseases).
+<Enter Sample Size Determination>
+
+11        TRIAL OVERSIGHT AND OTHER GENERAL CONSIDERATIONS
+No text is intended here (heading only).
+11.1      Regulatory and Ethical Considerations
+Provide a high-level statement on the prevailing ethical, legal, and regulatory guidelines that
+will be applied throughout the trial.
+
+                                                                                                   50
+This trial will be conducted in accordance with the protocol and with the following:
+•    Ethical principles that have their origin in the Declaration of Helsinki for medical
+     research involving human subjects
+•    Consensus ethical principles derived from international guidelines including the
+     Declaration of Helsinki and the Council for International Organisations of Medical
+     Sciences (CIOMS) International Ethical Guidelines
+•    ICH Good Clinical Practice (GCP) Guidelines
+•    Applicable laws and regulations
+<Enter Regulatory and Ethical Considerations>
+11.2     Trial Oversight
+Concisely summarise the trial oversight, listing the investigator and sponsor responsibilities not
+covered in other sections of the protocol that are essential for trial conduct, specifying the ones
+related to quality assurance.
+{<Enter Trial Oversight >} if not using below optional subheadings.
+OR
+11.2.1 Investigator Responsibilities
+Describe the investigator responsibilities, including the oversight of trial-related activities
+delegated to a third party that may impact the trial conduct at sites, if applicable and if not
+addressed elsewhere.
+<Enter Investigator Responsibilities>
+11.2.2 Sponsor Responsibilities
+Describe the sponsor responsibilities, including activities to be transferred to a third party that
+may impact the investigator sites, if applicable.
+<Enter Sponsor Responsibilities>
+11.3     Informed Consent Process
+Specify the key elements of the informed consent process, including any special needs and how
+these are addressed (e.g., assent, capacity, legally acceptable representative, adolescents who
+may reach age of majority during the trial, pregnant participants and pregnant partners of
+participants).
+<Enter Description of Informed Consent Process>
+<Enter Description of Assent Process>
+If enrollment in the trial may occur during an emergency in which the participant or their legally
+acceptable representative is not able or available to give consent, describe the consent process.
+<Enter Description of Emergency Consent Process>
+
+
+
+                                                                                                  51
+11.3.1   {Informed Consent for Rescreening}
+If participants can be rescreened as described in Section 5.6 Screen Failure and Rescreening,
+state whether the participant needs to complete a new ICF. Screen failure and rescreening
+should be clearly defined in the protocol, with a cross reference to those definitions.
+{<Enter Informed Consent for Rescreening>}
+11.3.2   {Informed Consent for Use of Remaining Samples in Exploratory Research}
+If participants will be asked to consent to optional exploratory research using the remainder of
+mandatory samples, describe the use of remaining samples for optional exploratory research.
+If any exploratory research is planned and additional written consent regarding the use of
+remaining samples for exploratory research will be obtained, describe the consent process.
+{<Enter Informed Consent for Use of Remaining Samples in Exploratory Research>}
+11.4     Committees
+Briefly describe the administrative structure of committees that will be reviewing data while
+the trial is ongoing, and the type of committee (e.g., Dose Escalation Committee, Data
+Monitoring Committee or Data Safety Monitoring Board). Note that specific details may be
+required depending on local law or regulation. If applicable, committee charters may be cross
+referenced. If no committees are involved, state “Not applicable.”
+<Enter Committees>
+11.5     Insurance and Indemnity
+Concisely summarise the arrangements for participant insurance and indemnity if not
+addressed in a separate agreement, if required by the applicable regulatory requirements.
+<Enter Insurance and Indemnity>
+11.6     Risk-Based Quality Management
+Describe the identified critical to quality factors, associated risks and risk mitigation strategies
+for the trial or refer to the location where this information is described and updated during the
+trial based on emerging data.
+<Enter Risk-Based Quality Management>
+11.7     Data Governance
+Describe the key systems and processes for critical trial integrity, traceability and security
+including a summary of the approaches enabling accurate data collection, reporting,
+monitoring, transfer, retention, and access if not addressed in separate agreement(s).
+<Enter Data Governance>
+
+
+
+
+                                                                                                  52
+11.8     Data Protection
+Describe the measures to protect the privacy and confidentiality of personal information of trial
+participants in accordance with applicable regulatory requirements on personal data protection
+and any measures that should be taken in case of a data security breach.
+<Enter Data Protection>
+11.9     Source Records
+State the importance of source records and expectation for traceability. Delineate expectations
+for investigators (e.g., maintain and ensure availability of essential records) and trial monitors
+(e.g., ensure participant protections, ensure that the trial is conducted according to GCP).
+Identify what constitutes source records and its origin or provide a reference to the location of
+this information, if contained in a separate document.
+Describe the provision for direct access to source records enabling clinical trial-related
+monitoring, audits and regulatory inspections, if not included in separate agreement(s).
+<Enter Source Records Introduction>
+<Enter Investigator Expectations for Source Records>
+<Enter Trial Monitor Expectations for Source Records>
+<Enter Identification of Source Records>
+11.10 Protocol Deviations
+Describe plans for detecting, reviewing, and reporting any deviations from the protocol or
+include reference to a separate document.
+<Enter Protocol Deviations>
+11.11 Early Site Closure
+List the sponsor’s rights to close a site early. Likewise, list the investigator’s rights to initiate
+early site closure.
+<Enter Decision Rights for Site Closure>
+List the criteria for early closure of a site by the sponsor or investigator.
+<Enter Criteria for Early Closure>
+List the responsibilities of the sponsor and investigator following early site closure (e.g.,
+informing the ethics committee[s], and prompt notification of the participant and their
+transition to appropriate therapy and/or follow-up).
+<Enter Responsibilities Following Early Site Closure>
+11.12 Data Dissemination
+Describe whether the clinical trial will be registered in public databases, including reporting of
+results, if applicable.
+
+                                                                                                        53
+<Enter Data Dissemination>
+
+
+
+
+                             54
+12       APPENDIX: SUPPORTING DETAILS
+No text is intended here (heading only).
+Additional supporting detail appendices may be added at the end of the existing level 2
+headings as needed.
+12.1     Clinical Laboratory Tests
+Specify which laboratory parameters should be included in each clinical laboratory assessment
+panel (e.g., haematology, chemistry, urinalysis). A tabular presentation for such information is
+common. If applicable, include equations and references for locally calculated laboratory
+results.
+If not applicable, retain heading and enter “Not applicable.”
+<Enter Clinical Laboratory Tests>
+12.2     Country/Region-Specific Differences
+Although global clinical trial practices are increasingly harmonised, some country/region-
+specific differences in requirements do exist (e.g., document retention periods, contraception
+requirements). Where differences in requirements cannot be reconciled, the sponsor should
+explain how country/region-specific differences will be documented and communicated (e.g.,
+by country/region-specific amendments or addenda).
+An alternative to country/region-specific amendments is to list the specific differences by
+country or countries in this section, including a reference to the relevant section of the protocol
+where each differing requirement applies.
+If not applicable, retain the heading and enter “Not applicable.”
+<Not applicable>
+or
+[Country/Region Identifier]
+<Enter Country/Region-Specific Requirements>
+<Enter Country/Region-Specific Protocol Clarifications>
+12.3     Prior Protocol Amendment(s)
+Choose the applicable statement below. For an original protocol that has not been amended,
+retain the first statement below and delete the remainder of this entire section.
+{This protocol has not been amended}.
+Or
+{This is the first protocol amendment}.
+Or include the below as applicable.
+
+
+                                                                                                55
+{This protocol has been amended previously. The Protocol Amendment Summary of Changes
+for the current amendment is located directly before the Table of Contents. Prior amendment(s)
+to this protocol are listed in the table below, beginning with the most recent}.
+Previous amendments should appear in reverse chronological order with the most recent at the
+top (e.g., Amendment 3, 2, 1). Delete or add lines as needed. Inclusion of region-, country-, and
+site-specific amendments in the table is optional. If included, ensure that the scope is clearly
+distinguishable from global amendments.
+If including the column with enrollment numbers, follow the instructions below.
+•     For global amendments to international clinical trials or amendments to a single-country
+      trial, list the approximate global enrollment total or percentage at the time of the
+      amendment and select “globally”.
+•     For global amendments consolidating only country/region-specific requirements, list
+      approximate local enrollment total or percentage at the time of the amendment and select
+      “locally”. If consolidating a series of local amendments, list the status of all the relevant
+      locations.
+•     For country/region-specific amendments to international clinical trials, list the approximate
+      local enrollment total or percentage at the time of the amendment and select “locally”.
+•     For trials in which enrollment status by cohort is more meaningful, such as for single-site or
+      early-phase studies, listing the approximate enrollment by cohort is an option. If multiple
+      cohorts are ongoing at the time of the amendment, list the status of all the ongoing cohorts.
+•     Enter the approximate number or percentage of participants enrolled as a percentage of
+      the expected total.
+
+                                                                 Approximate Enrollment
+                                                                 when Sponsor Approved
+    Document                   Sponsor Approval Date             Amendment
+
+    <Enter Amendment           <Enter Sponsor Approval               Approximately <#/%>
+    Identifier>                Date>                              enrolled <Enter Amendment
+                                                                       Scope Enrollment
+                                                                          Description>
+
+    Original Protocol          <Enter Sponsor Approval                           0
+                               Date>
+
+{The Overview of Changes from each prior protocol amendment is {provided below} or
+<specify alternative location>.}
+Move the Overview of Changes table from the previous amendments to this section in reverse
+chronological order (most recent first).
+
+
+
+                                                                                                 56
+{Overview of Changes in Amendment <enter Amendment Identifier> (<enter Sponsor
+Approval Date>)}
+
+                                                                      {Section # and
+ {Description of Change}    {Brief Rationale for Change}              Name}
+
+ <Enter Description of      <Enter Brief Rationale for Change>        <Enter Section #
+ Change>                                                              and Name >
+
+(Add rows as needed)
+Add additional Overview of Changes tables as protocol amendments accrue.
+
+
+12.X {Additional Appendices}
+{<Enter Additional Appendices>}
+
+
+
+
+                                                                                         57
+13       APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS
+Define abbreviations and other terms used in the protocol. A tabular presentation is common
+and may serve as the definition at first use.
+<Enter Glossary of Terms and Abbreviations>
+
+14       APPENDIX: REFERENCES
+References should be listed in a common format that includes all relevant information to
+identify the source and date published. If a reference is not published, this should be clearly
+indicated.
+<Enter References>
+
+
+
+
+                                                                                                  58
+

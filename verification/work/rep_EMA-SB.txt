@@ -1,0 +1,267 @@
+====================================================================================================
+R3-043 | EMA-SB | loc=SGlossary | page=printed 3/21
+PARA: The glossary defines a serious breach as any deviation from the approved protocol version or the clinical trial regulation that is likely to significantly affect participant safety or rights, or data reliability and robustness. There is no separate glossary entry for 'breach'.
+QUOTE: Any deviation of the approved protocol version or the clinical trial regulation
+QCHECK: exact ['PDF 3 / printed 3'] 
+LOC: not located automatically
+  DOCBEST 0.73 @ PDF 3 / printed 3: Serious breach: Any deviation of the approved protocol version or the clinical trial regulation that is likely to affect the safety, rights of trial participants and/or data reliability and robustness to a significant degree in a clinical trial.
+  DOCBEST 0.73 @ PDF 10 / printed 10: If persistent or systematic non-compliance with the Regulation (EU) 536/2014 (including deviation from the principles of the GCP or the protocol as described in Article 47 of the same Regulation) is likely to significantly affect the safety and rights of a trial participant in the EU/EEA or on the reliability and robustness of the data of the trial, this will constitute a serious breach. If a serious breach occurred at one investigator site within or outside of the EU/EEA for a clinical trial au
+====================================================================================================
+R3-044 | EMA-SB | loc=SGlossary | page=printed 3/21
+PARA: A suspected serious breach is an incident reported by investigators or service providers that the sponsor has not yet assessed as a serious breach. This defines the intermediate state between identification and sponsor classification.
+QUOTE: has not yet been assessed by the sponsor to be a serious breach
+QCHECK: exact ['PDF 3 / printed 3'] 
+LOC: not located automatically
+  DOCBEST 0.59 @ PDF 3 / printed 3: If a trial is conducted by a team of individuals at a trial site, the investigator is the responsible leader of the team and may be called the Principal Investigator. Suspected serious breach: means an incident which at the time of communication from investigators or from service providers to the sponsor has not yet been assessed by the sponsor to be a serious breach.
+  DOCBEST 0.59 @ PDF 3 / printed 3: Suspected serious breach: means an incident which at the time of communication from investigators or from service providers to the sponsor has not yet been assessed by the sponsor to be a serious breach. Serious breach:
+====================================================================================================
+R3-045 | EMA-SB | loc=SGlossary | page=printed 3/21
+PARA: A delegated party is a service provider appointed by the sponsor through a written contract to perform the Art. 52 tasks, i.e. to assess incidents that could be suspected serious breaches and/or report them to CTIS on behalf of the sponsor; delegation does not remove the ultimate responsibility of the sponsor or investigator for trial conduct.
+QUOTE: does not remove the ultimate responsibility of the sponsor
+QCHECK: exact ['PDF 3 / printed 3'] 
+LOC: not located automatically
+  DOCBEST 0.90 @ PDF 3 / printed 3: Delegated party: a type of service provider, is a party delegated by the sponsor, through a written contract, to perform the tasks set out in Article 52 of Regulation (EU) No 536/2014, i.e. to assess incidents which could be suspected serious breaches and/or to report suspected serious breaches to CTIS on behalf of the sponsor. Delegation of tasks does not remove the ultimate responsibility of the sponsor or investigator for the conduct of the clinical trial in accordance with the applicable leg
+  DOCBEST 0.71 @ PDF 3 / printed 3: Service provider: means a party involved in the trial, for example, a CRO or other contracted organisation, with clinical trial related responsibilities delegated by the sponsor, other than the "delegated party" and "investigator", which could observe a breach and is requested to report it to the sponsor/delegated party; it can be, for example, a CRO, a vendor responsible for the interactive response technologies (IRT), the site/sites involved in the manufacturing of IMP. Delegated party: a type
+====================================================================================================
+R3-047 | EMA-SB | loc=S3.1 | page=printed 5/21
+PARA: The sponsor is responsible for the serious breach notification via the EU portal / CTIS and may delegate the task to a service provider by written agreement as described in EU CTR Art. 71, while keeping responsibility.
+QUOTE: may delegate this task to a service provider
+QCHECK: exact ['PDF 5 / printed 5'] 
+LOC: found PDF 5 / printed 5 .. PDF 5 / printed 5 (314 chars) 
+  quote inside loc passage: True
+  PASSAGE: 3.1. Who should notify The sponsor is responsible for the notification via the EU portal and EU database - part of the Clinical Trials Information System (CTIS). The sponsor may delegate this task to a service provider by means of a written agreement as described in Article 71 of the Regulation (EU) No 536/2014. 
+====================================================================================================
+R3-048 | EMA-SB | loc=S3.2 | page=printed 5/21
+PARA: The notification is due without undue delay and at the latest within 7 calendar days of the sponsor becoming aware; any assessment needed to confirm seriousness must be done promptly and must not extend the 7-day period.
+QUOTE: within 7 calendar days of the sponsor becoming aware of a serious breach
+QCHECK: exact ['PDF 5 / printed 5'] 
+LOC: found PDF 5 / printed 5 .. PDF 6 / printed 6 (2558 chars) 
+  quote occurrences: 2 at ['PDF 5 / printed 5', 'PDF 9 / printed 9']
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.2. When should the notification be made? Without undue delay and at the latest within 7 calendar days of the sponsor becoming aware of a serious breach. If th
+  WINDOW 0.55 @ PDF 5 / printed 5: 3.2. When should the notification be made? Without undue delay and at the latest within 7 calendar days of the sponsor becoming aware of a serious breach. If the sponsor has reasonable grounds based on evidence to believe that a serious breach has occurred, it is expected to report the serious breach first, within 7 days, and investigate and take action simultaneously or after the notification. In this case, the sponsor should not wait to obtain all of the details related to the breach prior to the notification. In other cases, some degree of investigation and assessment may be required by the sponsor prior to the notification, in order to co
+====================================================================================================
+R3-049 | EMA-SB | loc=S3.2 | page=printed 5/21
+PARA: Where the sponsor has reasonable, evidence-based grounds to believe a serious breach occurred, it should notify first and continue investigating in parallel, without waiting for all details.
+QUOTE: should not wait to obtain all of the details
+QCHECK: exact ['PDF 5 / printed 5'] 
+LOC: found PDF 5 / printed 5 .. PDF 6 / printed 6 (2558 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.2. When should the notification be made? Without undue delay and at the latest within 7 calendar days of the sponsor becoming aware of a serious breach. If th
+  WINDOW 0.68 @ PDF 5 / printed 5: 3.2. When should the notification be made? Without undue delay and at the latest within 7 calendar days of the sponsor becoming aware of a serious breach. If the sponsor has reasonable grounds based on evidence to believe that a serious breach has occurred, it is expected to report the serious breach first, within 7 days, and investigate and take action simultaneously or after the notification. In this case, the sponsor should not wait to obtain all of the details related to the breach prior to the notification. In other cases, some degree of investigation and assessment may be required by the sponsor prior to the notification, in order to confirm that a serious breach has actually occurred. It should be underlined that according to the Regulation (EU) No 536/2014, only serious breaches must be
+====================================================================================================
+R3-050 | EMA-SB | loc=S3.2 | page=printed 5/21
+PARA: Only breaches the sponsor has assessed as serious are notified in CTIS; suspected serious breaches are not notified as such. The sponsor classification is the gate before the authority message flow.
+QUOTE: only serious breaches must be notified, not suspected serious breaches
+QCHECK: exact ['PDF 5 / printed 5'] 
+LOC: found PDF 5 / printed 5 .. PDF 6 / printed 6 (2558 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.2. When should the notification be made? Without undue delay and at the latest within 7 calendar days of the sponsor becoming aware of a serious breach. If th
+  WINDOW 0.43 @ PDF 5 / printed 5: cted to report the serious breach first, within 7 days, and investigate and take action simultaneously or after the notification. In this case, the sponsor should not wait to obtain all of the details related to the breach prior to the notification. In other cases, some degree of investigation and assessment may be required by the sponsor prior to the notification, in order to confirm that a serious breach has actually occurred. It should be underlined that according to the Regulation (EU) No 536/2014, only serious breaches must be notified, not suspected serious breaches. On the other hand, however, the sponsor should notify a serious breach without undue delay. The sponsor should perform the assessment of a (suspected) serious breach in a timely manner from the moment they have received this information. The sponsor should ensure, by means of a written contract that all parties involve
+====================================================================================================
+R3-051 | EMA-SB | loc=S3.2 | page=printed 5/21
+PARA: Written contracts should require all parties to immediately report events that might meet the serious breach definition to the sponsor's designated contact point; for the principal investigator the protocol can serve as the written agreement.
+QUOTE: immediately report any events that might meet the definition of a serious breach
+QCHECK: exact ['PDF 5 / printed 5'] 
+LOC: found PDF 5 / printed 5 .. PDF 6 / printed 6 (2558 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.2. When should the notification be made? Without undue delay and at the latest within 7 calendar days of the sponsor becoming aware of a serious breach. If th
+  WINDOW 0.86 @ PDF 5 / printed 5: s breaches. On the other hand, however, the sponsor should notify a serious breach without undue delay. The sponsor should perform the assessment of a (suspected) serious breach in a timely manner from the moment they have received this information. The sponsor should ensure, by means of a written contract that all parties involved in the conduct of the clinical trial, according to their area of responsibility, immediately report any events that might meet the definition of a serious breach to the contact point designated by the sponsor. In the case of the principal investigator (PI), the protocol may take the place of a written agreement. Documented training of the PI and site staff on this matter should be kept in the clinical trial master file (CTMF) and the sponsor should provide the PI with a dedicated, unique, e-mail address and telephone number for such communications that can be 
+====================================================================================================
+R3-052 | EMA-SB | loc=S3.2 | page=printed 5/21
+PARA: The sponsor should give the principal investigator a dedicated contact (e-mail and phone) for reporting, and the training of the PI and site staff on serious breach reporting should be documented, with training records kept in the clinical trial master file.
+QUOTE: should be kept in the clinical trial master file (CTMF)
+QCHECK: exact ['PDF 5 / printed 5'] 
+LOC: found PDF 5 / printed 5 .. PDF 6 / printed 6 (2558 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 3.2. When should the notification be made? Without undue delay and at the latest within 7 calendar days of the sponsor becoming aware of a serious breach. If th
+  WINDOW 0.70 @ PDF 5 / printed 5: tten contract that all parties involved in the conduct of the clinical trial, according to their area of responsibility, immediately report any events that might meet the definition of a serious breach to the contact point designated by the sponsor. In the case of the principal investigator (PI), the protocol may take the place of a written agreement. Documented training of the PI and site staff on this matter should be kept in the clinical trial master file (CTMF) and the sponsor should provide the PI with a dedicated, unique, e-mail address and telephone number for such communications that can be reached at all times. The sponsor should review the received information and should make every effort to substantiate that the breach occurred was serious, before submitting it through CTIS. However, any assessment undertaken by the sponsor in order to confirm that the serious breach has actua
+====================================================================================================
+R3-054 | EMA-SB | loc=S4 | page=printed 6/21
+PARA: Breaches occurring exclusively outside the EU/EEA that are likely to affect an authorised or ongoing EU/EEA trial should be notified to the Member States concerned via CTIS under Art. 52.
+QUOTE: should be notified to the MSC via the CTIS
+QCHECK: exact ['PDF 6 / printed 6'] 
+LOC: found PDF 6 / printed 6 .. PDF 6 / printed 6 (2322 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 4. Clarification on reporting requirements Serious breaches which occurred outside the EU/EEA while the application for a clinical trial authorisation (CTA) is 
+  WINDOW 0.75 @ PDF 6 / printed 6: reliability and robustness of data filed in an application dossier, the sponsor should address the concerns during the evaluation of the CTA. If this is not feasible or not satisfactory, this might lead to the withdrawal of the application via CTIS. If for example the serious breach resulted from flaws in the design of the clinical trial, the CTA may need to be withdrawn. Serious breaches of an EU/EEA authorised clinical trial occurring exclusively outside the EU/EEA that are likely to affect the safety and/or the rights of a trial participant or the reliability and robustness of the data generated in a clinical trial already authorised or being conducted in the EU/EEA territory, should be notified to the MSC via the CTIS under the reporting requirement of Article 52. When a sponsor notifies a serious breach, they should also consider if there are any other relevant notifications that ne
+====================================================================================================
+R3-055 | EMA-SB | loc=S4 | page=printed 6/21
+PARA: With a serious breach the sponsor should also consider whether other notifications are needed, e.g. unexpected events (Art. 53), urgent safety measures (Art. 54) or substantial modifications after a temporary halt or early termination (Art. 37, 38). S2 states that the guideline itself does not cover Art. 53 and 54 notifications.
+LOC: found PDF 6 / printed 6 .. PDF 6 / printed 6 (2322 chars) 
+  PASSAGE-HEAD: 4. Clarification on reporting requirements Serious breaches which occurred outside the EU/EEA while the application for a clinical trial authorisation (CTA) is 
+  WINDOW 0.66 @ PDF 6 / printed 6: tion of the CTA. If this is not feasible or not satisfactory, this might lead to the withdrawal of the application via CTIS. If for example the serious breach resulted from flaws in the design of the clinical trial, the CTA may need to be withdrawn. Serious breaches of an EU/EEA authorised clinical trial occurring exclusively outside the EU/EEA that are likely to affect the safety and/or the rights of a trial participant or the reliability and robustness of the data generated in a clinical trial already authorised or being conducted in the EU/EEA territory, should be notified to the MSC via the CTIS under the reporting requirement of Article 52. When a sponsor notifies a serious breach, they should also consider if there are any other relevant notifications that need to be undertaken to comply with the Regulation (EU) No 536/2014, for example, requirements under Article 53 for unexpected events, or under Article 54 for urgent safety measures, or substantial modifications following a temporary halt or the decision to early terminate the trial under Article 37 and Article 38, respectively.
+====================================================================================================
+R3-057 | EMA-SB | loc=S4 | page=printed 6/21 and 20-21/21
+PARA: The sponsor indicates the most affected Member State in the notification title following the S4 diagram, with details in Appendix III b (A.7): a trial authorised in one Member State only makes that State the most affected; otherwise the questions are whether only one Member State is affected, whether the breach occurred in a specific Member State, and which Member State has most participants; if none applies, 'No most affected MS' is stated in the title.
+QUOTE: indicate which is the Member State most affected
+QCHECK: exact ['PDF 6 / printed 6'] 
+LOC: found PDF 6 / printed 6 .. PDF 6 / printed 6 (2322 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 4. Clarification on reporting requirements Serious breaches which occurred outside the EU/EEA while the application for a clinical trial authorisation (CTA) is 
+  WINDOW 0.43 @ PDF 6 / printed 6: s encouraged to upload a report (using the "Add document" bottom) which should include all the details needed for AMSs/MSCs to assess the reported serious breach. To this purpose, the Appendix III b lists the topics which are expected to be covered. Sponsors should update the serious breach details in the CTIS fields and/or with a follow-up report if new information becomes available. The sponsor should follow the below diagram and indicate which is the Member State most affected by the serious breach reported in the title of the notification and should report more details in Appendix III b. 
+====================================================================================================
+R3-059 | EMA-SB | loc=S5.1 | page=printed 8/21
+PARA: Corrective or remedial actions taken do not change the fact that a breach occurred; mitigation is not a reason to skip classification or notification. Systematic or significant mis-dosing meets the criteria whether or not adverse reactions occurred.
+QUOTE: do not negate the fact that a breach occurred
+QCHECK: exact ['PDF 8 / printed 8'] 
+LOC: found PDF 7 / printed 7 .. PDF 8 / printed 8 (4566 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 5.1. What needs to be reported? Any breach of: The Regulation (EU) No 536/2014. or The clinical trial protocol version applicable at the time of the breach. whi
+  WINDOW 0.61 @ PDF 8 / printed 8:  on a variety of factors, for example: the design of the trial, the type and extent of the data affected by the breach, the overall contribution of the affected data to key analysis parameters, the impact of excluding the data from the analysis etc. It should be noted that mitigation actions undertaken to remediate the occurrence of the serious breach do not negate the fact that a breach occurred and should be treated according to the legal requirements. In the same way, if a systematic and/or significant mis-dosing occurred, this would still meet the criteria for a serious breach regardless of whether or not the trial participant(s) suffered adverse reactions as a result of that mis-dosing. It is the responsibility of the sponsor to thoroughly perform a root cause analysis to identify the cause of the serious breach and to assess the impact of the breach on the reliability and robustnes
+====================================================================================================
+R3-061 | EMA-SB | loc=S5.1 | page=printed 8/21
+PARA: If a delegated party disagrees with the sponsor and no notification follows, the communication and each party's position should be documented, together with the sponsor's reasons for not notifying.
+QUOTE: the sponsor’s reasons for not proceeding with the notification
+QCHECK: exact ['PDF 8 / printed 8'] 
+LOC: found PDF 7 / printed 7 .. PDF 8 / printed 8 (4566 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 5.1. What needs to be reported? Any breach of: The Regulation (EU) No 536/2014. or The clinical trial protocol version applicable at the time of the breach. whi
+  WINDOW 0.62 @ PDF 8 / printed 8: ty, and a disagreement rises on classification/assessment of the breach between the sponsor and the delegated party resulting in no notification of a serious breach, the related communication between sponsor and delegated party should be documented. In particular, their respective individual position on whether or not a serious breach occurred should be recorded. In addition, the sponsor's reasons for not proceeding with the notification, whilst taking into account the views of the delegated party, should be documented. Section 7 on 'General considerations for serious breaches' provides further information related to expectations for serious breach topics. This may help when deciding on whether to consider a breach as serious. Appendix I contains examples of situations that may be considered as serious breaches depending on the context of the situation. This list is not exhaustive and ot
+====================================================================================================
+R3-062 | EMA-SB | loc=S5.1 | page=printed 8/21
+PARA: An important deviation as defined by ICH E3 (Q&A R1) is not equivalent to a serious breach: one does not imply the other, and not every important deviation needs to be reported through CTIS as a serious breach. Two separate classification decisions are needed.
+QUOTE: an important deviation is not necessarily also a serious breach and vice versa
+QCHECK: exact ['PDF 8 / printed 8'] 
+LOC: found PDF 7 / printed 7 .. PDF 8 / printed 8 (4566 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 5.1. What needs to be reported? Any breach of: The Regulation (EU) No 536/2014. or The clinical trial protocol version applicable at the time of the breach. whi
+  WINDOW 0.48 @ PDF 8 / printed 8:  exhaustive and other types of serious breaches may occur. It is the sponsor's responsibility to assess the information and ensure appropriate reporting. Appendix II contains points to consider for sponsors in relation to the assessment of a breach. Deviations from clinical trial protocols, good clinical practice (GCP) and/or European or national legislation may occur in clinical trials and where these are considered important, as defined by the ICH E3 guideline on the structure and content of clinical study reports, they should be described in the clinical study report (CSR). It is important to underline that an important deviation as defined in the ICH guideline E3 questions and answers (R1) is not equivalent to the definition of a serious breach and therefore an important deviation is not necessarily also a serious breach and vice versa. Nevertheless, all serious breaches should be in
+====================================================================================================
+R3-063 | EMA-SB | loc=S5.1 | page=printed 8/21
+PARA: All serious breaches should be included in the corresponding clinical study report.
+QUOTE: all serious breaches should be included in the corresponding clinical study report
+QCHECK: exact ['PDF 8 / printed 8'] 
+LOC: found PDF 7 / printed 7 .. PDF 8 / printed 8 (4566 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 5.1. What needs to be reported? Any breach of: The Regulation (EU) No 536/2014. or The clinical trial protocol version applicable at the time of the breach. whi
+  WINDOW 1.00 @ PDF 8 / printed 8: an or national legislation may occur in clinical trials and where these are considered important, as defined by the ICH E3 guideline on the structure and content of clinical study reports, they should be described in the clinical study report (CSR). It is important to underline that an important deviation as defined in the ICH guideline E3 questions and answers (R1) is not equivalent to the definition of a serious breach and therefore an important deviation is not necessarily also a serious breach and vice versa. Nevertheless, all serious breaches should be included in the corresponding clinical study report. Deviations that do not significantly affect the safety and/or the rights of a trial participant or the reliability and robustness of the data generated in the trial should be documented (for example, in the trial case report form or the clinical trial master file) in order for appro
+====================================================================================================
+R3-065 | EMA-SB | loc=S5.1 | page=printed 8/21
+PARA: Deviations that do not significantly affect participant safety or rights or data reliability should still be documented, for example in the case report form or the clinical trial master file, so that corrective and preventive actions can be taken.
+LOC: found PDF 7 / printed 7 .. PDF 8 / printed 8 (4566 chars) 
+  PASSAGE-HEAD: 5.1. What needs to be reported? Any breach of: The Regulation (EU) No 536/2014. or The clinical trial protocol version applicable at the time of the breach. whi
+  WINDOW 0.92 @ PDF 8 / printed 8: underline that an important deviation as defined in the ICH guideline E3 questions and answers (R1) is not equivalent to the definition of a serious breach and therefore an important deviation is not necessarily also a serious breach and vice versa. Nevertheless, all serious breaches should be included in the corresponding clinical study report. Deviations that do not significantly affect the safety and/or the rights of a trial participant or the reliability and robustness of the data generated in the trial should be documented (for example, in the trial case report form or the clinical trial master file) in order for appropriate corrective and preventive actions to be taken. In addition, deviations considered important as defined by the ICH E3 guideline, even if they are not considered serious breaches, should be included in the clinical study report, as they may have an impact on the a
+====================================================================================================
+R3-066 | EMA-SB | loc=S6.1 | page=printed 9/21
+PARA: The sponsor should have a formal process covering serious breach notification: suspected serious breaches are promptly reported to it by investigators and service providers, and management of serious breaches is part of the sponsor's quality system as a specific SOP and/or written in the protocol. Lack of an adequate system or failure to report may result in GCP inspection findings.
+QUOTE: There should be a formal process in place
+QCHECK: exact ['PDF 9 / printed 9'] 
+LOC: found PDF 9 / printed 9 .. PDF 9 / printed 9 (1376 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 6.1. Sponsor There should be a formal process in place to cover the legislative requirements of serious breach notifications. The following key points are to be
+  WINDOW 0.84 @ PDF 9 / printed 9: 6.1. Sponsor There should be a formal process in place to cover the legislative requirements of serious breach notifications. The following key points are to be considered: suspected serious breaches should be promptly reported to the sponsor by investigators and by service providers in order for the sponsor to perform further investigation and assess if the breach qualifies as serious breach; the management of the serious breaches should be included in the quality system of the sponsor, as a specific standard operating procedure and/or written in the protocol; after receipt, an assessment of the breach should be performed in order to establish whether it is "serious" (i.e. assessment of deviations/violations, isolated/systematic incident(s), trial participant(s) harmed or put at risk, data credibility etc.); an investigation of the serious breach, including a root cause analysis (this can be ongoing at time of reporting) should be performed; corrective and preventive actions should be identified (this can be ongoing at the time of reporting); reporting of the serious breach through the CTIS should be done within 7 calendar days of the sponsor becoming aware of a serious breach; lack of an adequate system in place and/or failure to report serious breaches may result in findings during GCP inspections (the grading will depend on the impact of the issue). 
+====================================================================================================
+R3-067 | EMA-SB | loc=S6.1 | page=printed 9/21
+PARA: After receipt, the sponsor assesses whether the breach is serious (deviations/violations, isolated or systematic incidents, participants harmed or put at risk, data credibility) and investigates it, including a root cause analysis that may still be ongoing at the time of reporting.
+QUOTE: a root cause analysis
+QCHECK: exact ['PDF 8 / printed 8'] 
+LOC: found PDF 9 / printed 9 .. PDF 9 / printed 9 (1376 chars) 
+  quote occurrences: 2 at ['PDF 8 / printed 8', 'PDF 9 / printed 9']
+  quote inside loc passage: True
+  PASSAGE-HEAD: 6.1. Sponsor There should be a formal process in place to cover the legislative requirements of serious breach notifications. The following key points are to be
+  WINDOW 0.81 @ PDF 9 / printed 9: 6.1. Sponsor There should be a formal process in place to cover the legislative requirements of serious breach notifications. The following key points are to be considered: suspected serious breaches should be promptly reported to the sponsor by investigators and by service providers in order for the sponsor to perform further investigation and assess if the breach qualifies as serious breach; the management of the serious breaches should be included in the quality system of the sponsor, as a specific standard operating procedure and/or written in the protocol; after receipt, an assessment of the breach should be performed in order to establish whether it is "serious" (i.e. assessment of deviations/violations, isolated/systematic incident(s), trial participant(s) harmed or put at risk, data credibility etc.); an investigation of the serious breach, including a root cause analysis (this can be ongoing at time of reporting) should be performed; corrective and preventive actions should be identified (this can be ongoing at the time of reporting); reporting of the serious breach through the CTIS should be done within 7 calendar days of the sponsor becoming aware of a serious breach; lack of an adequate system in place and/or failure to report serious breaches may result in findings during GCP inspections (the grading will depend on the impact of the issue). 
+====================================================================================================
+R3-068 | EMA-SB | loc=S6.1 | page=printed 9/21
+PARA: Corrective and preventive actions should be identified as part of the sponsor's serious breach process.
+QUOTE: corrective and preventive actions should be identified
+QCHECK: exact ['PDF 9 / printed 9'] 
+LOC: found PDF 9 / printed 9 .. PDF 9 / printed 9 (1376 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 6.1. Sponsor There should be a formal process in place to cover the legislative requirements of serious breach notifications. The following key points are to be
+  WINDOW 0.89 @ PDF 9 / printed 9: 6.1. Sponsor There should be a formal process in place to cover the legislative requirements of serious breach notifications. The following key points are to be considered: suspected serious breaches should be promptly reported to the sponsor by investigators and by service providers in order for the sponsor to perform further investigation and assess if the breach qualifies as serious breach; the management of the serious breaches should be included in the quality system of the sponsor, as a specific standard operating procedure and/or written in the protocol; after receipt, an assessment of the breach should be performed in order to establish whether it is "serious" (i.e. assessment of deviations/violations, isolated/systematic incident(s), trial participant(s) harmed or put at risk, data credibility etc.); an investigation of the serious breach, including a root cause analysis (this can be ongoing at time of reporting) should be performed; corrective and preventive actions should be identified (this can be ongoing at the time of reporting); reporting of the serious breach through the CTIS should be done within 7 calendar days of the sponsor becoming aware of a serious breach; lack of an adequate system in place and/or failure to report serious breaches may result in findings during GCP inspections (the grading will depend on the impact of the issue). 
+====================================================================================================
+R3-069 | EMA-SB | loc=S6.2 | page=printed 9/21
+PARA: A delegated party carries out the sponsor tasks of S6.1 under written contract and keeps the sponsor informed about the management of all breaches in the sponsor's trials.
+QUOTE: keeps the sponsor informed about the management of all the breaches
+QCHECK: exact ['PDF 9 / printed 9'] 
+LOC: found PDF 9 / printed 9 .. PDF 9 / printed 9 (290 chars) 
+  quote inside loc passage: True
+  PASSAGE: 6.2. Delegated party The delegated party performs the tasks set out in paragraph 6.1, as transferred by the sponsor as per written contract. In addition, the delegated party keeps the sponsor informed about the management of all the breaches related to the clinical trials of that sponsor. 
+====================================================================================================
+R3-070 | EMA-SB | loc=S6.3 | page=printed 9/21
+PARA: Service providers should have a written process to identify suspected serious breaches and promptly communicate them to the sponsor or delegated party, using the contact details provided and per contract.
+QUOTE: should have a written process in place to identify
+QCHECK: exact ['PDF 9 / printed 9'] 
+LOC: found PDF 9 / printed 9 .. PDF 9 / printed 9 (472 chars) 
+  quote inside loc passage: True
+  PASSAGE: 6.3. Service providers Service providers (including service providers delegated by the principal investigator/institution): should have a written process in place to identify the occurrence of a (suspected) serious breach; should promptly communicate to the sponsor or delegated party a (suspected) serious breach, according to the contractual agreements stipulated and through the contacts (e-mail address or telephone number) provided by the sponsor or delegated party. 
+====================================================================================================
+R3-071 | EMA-SB | loc=S6.4 | page=printed 9-10/21
+PARA: The principal investigator should have a process (formal SOP or study-specific guidance) ensuring that site staff and service providers delegated by the PI/institution can identify suspected serious breaches and that these are promptly reported to the sponsor or delegated party through the contacts provided.
+QUOTE: a (suspected) serious breach is promptly reported to the sponsor or delegated party
+QCHECK: exact ['PDF 10 / printed 10'] 
+LOC: found PDF 9 / printed 9 .. PDF 10 / printed 10 (526 chars) 
+  quote inside loc passage: True
+  PASSAGE: 6.4. Principal Investigator The principal investigator should have a process in place to ensure that: the site staff or service providers delegated by the principal investigator/institution are able to identify the occurrence of a (suspected) serious breach; a (suspected) serious breach is promptly reported to the sponsor or delegated party, through the contacts (e-mail address or telephone number) provided by the sponsor or delegated party; This may be a formal standard operating procedure or a study-specific guidance. 
+====================================================================================================
+R3-072 | EMA-SB | loc=S7 | page=printed 10/21
+PARA: All concerns about potential fraud in clinical trials that the sponsor becomes aware of are expected to be reported as serious breaches; national criminal law applies in addition.
+QUOTE: all concerns about potential cases of fraud in clinical trials
+QCHECK: exact ['PDF 10 / printed 10'] 
+LOC: found PDF 10 / printed 10 .. PDF 10 / printed 10 (2075 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 7. General considerations for serious breaches Due to the special nature of fraud it is expected that all concerns about potential cases of fraud in clinical tr
+  WINDOW 0.84 @ PDF 10 / printed 10: 7. General considerations for serious breaches Due to the special nature of fraud it is expected that all concerns about potential cases of fraud in clinical trials which the sponsor becomes aware of are reported as serious breaches. National legislation must also be taken into consideration with reference to criminal acts. The party (e.g. sponsor, CRO, investigator) at which the serious breach occurred should verify the impact of the breach on other clinical trials (ongoing or ended) where they are involved/ which they manage. In some instances, a breach of the Regulation (EU) No 536/2014 or of the protocol (e.g. a mis-dosing in relation to an 
+====================================================================================================
+R3-073 | EMA-SB | loc=S7 | page=printed 10/21
+PARA: The party where the breach occurred should verify its impact on other ongoing or ended clinical trials it is involved in.
+QUOTE: should verify the impact of the breach on other clinical trials
+QCHECK: exact ['PDF 10 / printed 10'] 
+LOC: found PDF 10 / printed 10 .. PDF 10 / printed 10 (2075 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 7. General considerations for serious breaches Due to the special nature of fraud it is expected that all concerns about potential cases of fraud in clinical tr
+  WINDOW 1.00 @ PDF 10 / printed 10: 7. General considerations for serious breaches Due to the special nature of fraud it is expected that all concerns about potential cases of fraud in clinical trials which the sponsor becomes aware of are reported as serious breaches. National legislation must also be taken into consideration with reference to criminal acts. The party (e.g. sponsor, CRO, investigator) at which the serious breach occurred should verify the impact of the breach on other clinical trials (ongoing or ended) where they are involved/ which they manage. In some instances, a breach of the Regulation (EU) No 536/2014 or of the protocol (e.g. a mis-dosing in relation to an error) which may result in a Serious Adverse Event (SAE) or a Suspected Unexpected Serious Adverse Reaction (SUSAR) can constitute a serious breach. If failure to manage safety events, for example lack of SUSARs reporting, results 
+====================================================================================================
+R3-075 | EMA-SB | loc=S7 | page=printed 10/21
+PARA: Persistent or systematic non-compliance with the Regulation, including deviation from GCP principles or the protocol as described in Art. 47, constitutes a serious breach when it is likely to significantly affect the safety and rights of a participant in the EU/EEA or the reliability and robustness of the trial data. Recurring or trended deviations can therefore escalate to a serious breach.
+QUOTE: is likely to significantly affect the safety and rights of a trial participant
+QCHECK: exact ['PDF 10 / printed 10'] 
+LOC: found PDF 10 / printed 10 .. PDF 10 / printed 10 (2075 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 7. General considerations for serious breaches Due to the special nature of fraud it is expected that all concerns about potential cases of fraud in clinical tr
+  WINDOW 0.79 @ PDF 10 / printed 10: an constitute a serious breach. If failure to manage safety events, for example lack of SUSARs reporting, results in trial participants being put at a significant degree of risk, then this will constitute a serious breach which needs to be reported. This doesn't exempt the sponsor from the obligation to report, if relevant, other safety related notifications, as per the requirements of the Regulation (EU) 536/2014 (in accordance with Articles 53 and 54), in addition to the submission of those SUSARs to the EudraVigilance database. If persistent or systematic non-compliance with the Regulation (EU) 536/2014 (including deviation from the principles of the GCP or the protocol as described in Article 47 of the same Regulation) is likely to significantly affect the safety and rights of a trial participant in the EU/EEA or on the reliability and robustness of the data of the trial, this will constitute a serious breach.
+====================================================================================================
+R3-076 | EMA-SB | loc=S7 | page=printed 10/21
+PARA: A serious breach at a single site, inside or outside the EU/EEA, should also be notified where it leads to removal of data from the trial analysis.
+QUOTE: this leads to the removal of data from the trial analysis
+QCHECK: exact ['PDF 10 / printed 10'] 
+LOC: found PDF 10 / printed 10 .. PDF 10 / printed 10 (2075 chars) 
+  quote inside loc passage: True
+  PASSAGE-HEAD: 7. General considerations for serious breaches Due to the special nature of fraud it is expected that all concerns about potential cases of fraud in clinical tr
+  WINDOW 0.86 @ PDF 10 / printed 10: the obligation to report, if relevant, other safety related notifications, as per the requirements of the Regulation (EU) 536/2014 (in accordance with Articles 53 and 54), in addition to the submission of those SUSARs to the EudraVigilance database. If persistent or systematic non-compliance with the Regulation (EU) 536/2014 (including deviation from the principles of the GCP or the protocol as described in Article 47 of the same Regulation) is likely to significantly affect the safety and rights of a trial participant in the EU/EEA or on the reliability and robustness of the data of the trial, this will constitute a serious breach. If a serious breach occurred at one investigator site within or outside of the EU/EEA for a clinical trial authorised/conducted also in the EU/EEA and this leads to the removal of data from the trial analysis, then this should be notified as well. Appendix I 
+====================================================================================================
+R3-077 | EMA-SB | loc=S8 | page=printed 10/21
+PARA: Member States assess notified serious breaches in the CTIS secure module; the assessment leads to publication of the breach and its evaluation in the CTIS public domain. Some breaches are managed in-house through acceptable CAPA under Member State oversight; others may trigger an (urgent) inspection, published together with the inspection report, or regulatory action.
+QUOTE: managed in-house via acceptable Corrective and Preventive Actions
+QCHECK: exact ['PDF 10 / printed 10'] 
+LOC: found PDF 2 / printed 2 .. PDF 4 / printed 4 (4890 chars) 
+  quote inside loc passage: False
+  PASSAGE-HEAD: 8. Possible actions taken by the EU/EEA Member States concerned (MSC) 10 9. References .........................................................................
+  WINDOW 0.19 @ PDF 3 / printed 3:  the sponsor can officially nominate authorised delegates to perform the function of reporting Serious Breaches. These authorised delegates nominated by the sponsor can be, for example, a legal representative or contract research organisation (CRO). Service provider: means a party involved in the trial, for example, a CRO or other contracted organisation, with clinical trial related responsibilities delegated by the sponsor, other than the "delegated party" and "investigator", which could observe a breach and is requested to report it to the sponsor/delegated party; it can be, for example, a CRO, a vendor responsible for the interactive response technologies (IRT), the site/sites involved in the manufacturing of IMP. Delegated party: a type of service provider, is a party delegated by the sponsor, through a written contract, to perform the tasks set out in Article 52 of Regulation (EU) No 536/2014, i.e. to assess incidents which could be suspected serious breaches and/or to report suspected serious breaches to CTIS on behalf of the sponsor.
+  DOCBEST-OUTSIDE 0.57 @ PDF 10 / printed 10: The assessment of the serious breach done by the Member States will lead to the publication of the serious breach and the corresponding evaluation done by the MS via the CTIS public domain. Some of the serious breaches reported will be managed in-house via acceptable Corrective and Preventive Actions (CAPA) and with the oversight of the MS.
+====================================================================================================
+R3-078 | EMA-SB | loc=S8 | page=printed 10-11/21
+PARA: Before imposing corrective measures under EU CTR Art. 77 (e.g. suspension or revocation), the MSC asks the sponsor for an opinion, due within 7 days, except where immediate action is required.
+QUOTE: the MSC will ask the sponsor for their opinion
+QCHECK: exact ['PDF 11 / printed 11'] 
+LOC: found PDF 2 / printed 2 .. PDF 4 / printed 4 (4890 chars) 
+  quote inside loc passage: False
+  PASSAGE-HEAD: 8. Possible actions taken by the EU/EEA Member States concerned (MSC) 10 9. References .........................................................................
+  WINDOW 0.09 @ PDF 2 / printed 2: 8. Possible actions taken by the EU/EEA Member States concerned (MSC) 10 9. References ............................................................................................ 11 Appendix I - Examples of serious breaches .............................................. 12 Appendix II - Points to consider for sponsors in relation to the assessment of a breach ................................................................................................ 18 Appendix III a - Template form for reporting serious breaches ................ 19 Appendix III b - Information to be submitted with a notification of a serious breach ....................
+  DOCBEST-OUTSIDE 0.68 @ PDF 11 / printed 11: Regulatory actions - in case a serious breach requires regulatory actions to be taken, as for example corrective measures described under Article 77 of Regulation (EU) 536/2014, including revocation or suspension of the authorisation to conduct the clinical trial(s) or requiring the sponsor to modify any aspect of the clinical trial(s), these will be managed by the MSC. Except where immediate acti
+====================================================================================================
+R3-080 | EMA-SB | loc=SAppI-8.4 | page=printed 15/21
+PARA: Example judged not a serious breach: a common, minor visit date deviation is a minor protocol deviation that does not meet the notification criteria; a major visit date deviation (8.3) can be serious depending on its safety or data impact.
+QUOTE: a minor protocol deviation, which does not meet the criteria for notification
+QCHECK: fuzzy ['PDF 15 / printed 15'] ratio=0.867
+  NEAREST: a minor protocol deviation, which does not meet the criteria trials. for notification. 8.5 Acc
+LOC: not located automatically
+  DOCBEST 0.53 @ PDF 15 / printed 15: 8.3 Major visit date deviation, based on impact assessment of Yes, as this may have an impact on the trial participants safety trial participants safety and wellbeing and/or clinical trials data and wellbeing and/or clinical trials data robustness and robustness and reliability (depending on the protocol). reliability. 8.4 Minor visit date deviation.
+  DOCBEST 0.53 @ PDF 15 / printed 15: 8.4 Minor visit date deviation. A common deviation in clinical No, a minor protocol deviation, which does not meet the criteria trials. for notification.
+====================================================================================================
+R3-083 | EMA-SB | loc=SAppII | page=printed 18/21
+PARA: Where subject safety or rights were compromised, the sponsor should take proportionate actions, which may include informing the affected subjects.
+LOC: not located automatically
+  DOCBEST 0.83 @ PDF 18 / printed 18: If the breach is caused by a service provider, the sponsor checks whether this serious breach affects any of the sponsor's other trials, whether open or closed, managed by the same service provider. If subject safety and/or rights has/have been compromised, proper risk proportional actions are taken, which may include informing the subjects affected about the serious breach.
+  DOCBEST 0.75 @ PDF 18 / printed 18: If subject safety and/or rights has/have been compromised, proper risk proportional actions are taken, which may include informing the subjects affected about the serious breach. The CAPA plan ensures safety of the affected subjects, or the reliability of the data.

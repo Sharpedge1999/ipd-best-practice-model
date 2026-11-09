@@ -1,0 +1,184 @@
+INTERNATIONAL COUNCIL FOR HARMONISATION OF TECHNICAL REQUIREMENTS
+               FOR PHARMACEUTICALS FOR HUMAN USE
+
+
+
+
+                              ICH HARMONISED GUIDELINE
+
+
+
+        CLINICAL ELECTRONIC STRUCTURED HARMONISED
+                        PROTOCOL
+                        (CESHARP)
+
+                                              M11
+
+
+
+                                          Final Version
+
+                                 Adopted on 19 November 2025
+
+
+
+
+This Guideline has been developed by the appropriate ICH Expert Working Group and has been
+subject to consultation by the regulatory parties, in accordance with the ICH Process. At Step 4 of
+the Process the final draft is recommended for adoption to the regulatory bodies of ICH regions.
+                                         M11 Guideline
+
+                                       Document History
+
+ Code                            History                          Date
+
+ M11                             Endorsement by the Members 27 September 2022
+                                 of the ICH Assembly under
+                                 Step 2 and release for public
+                                 consultation.
+
+ M11                             Adoption by the Regulatory       19 November 2025
+                                 Members of the ICH
+                                 Assembly under Step 4.
+
+
+
+
+Legal notice: This document is protected by copyright and may, with the exception of the ICH logo,
+be used, reproduced, incorporated into other works, adapted, modified, translated or distributed
+under a public license provided that ICH's copyright in the document is acknowledged at all times.
+In case of any adaption, modification or translation of the document, reasonable steps must be
+taken to clearly label, demarcate or otherwise identify that changes were made to or based on the
+original document. Any impression that the adaption, modification or translation of the original
+document is endorsed or sponsored by the ICH must be avoided.
+The document is provided "as is" without warranty of any kind. In no event shall the ICH or the
+authors of the original document be liable for any claim, damages or other liability arising from
+the use of the document.
+The above-mentioned permissions do not apply to content supplied by third parties. Therefore, for
+documents where the copyright vests in a third party, permission for reproduction must be obtained
+from this copyright holder.
+                                               ICH HARMONISED GUIDELINE
+
+                            STRUCTURE AND CONTENT OF CLINICAL PROTOCOLS
+
+                                                                   M11
+                                                 ICH Consensus Guideline
+
+
+
+                                TABLE OF CONTENTS
+1     INTRODUCTION ............................................................................................................... 1
+1.1    Background .......................................................................................................................... 1
+1.2    Purpose ................................................................................................................................. 1
+1.3    Scope .................................................................................................................................... 1
+2     GENERAL DESIGN PRINCIPLES .................................................................................. 2
+2.1    Clinical Electronic Structured Harmonised Protocol - Template ......................................... 2
+2.2    Clinical Electronic Structured Harmonised Protocol - Technical Specification .................. 2
+3     TEMPLATE CONVENTIONS AND DESIGN ................................................................. 3
+1   INTRODUCTION
+1.1 Background
+The clinical trial protocol provides details on trial purpose, objectives, design and rationale, and
+describes the processes and procedures directing the conduct and analysis of a clinical trial of
+medicinal product(s) in humans. To date, ICH has not adopted a harmonised standard for the format
+and content of the protocol to facilitate consistency across sponsors and for the electronic exchange
+of protocol information.
+Variability in format and core content among sponsors contributes to inefficiencies and difficulties
+in searching, reviewing, and assessing protocols. Use of the protocol template aids the sponsor or
+sponsor-investigator in the development of a protocol that is complete, unambiguous, well
+organised, and aligned with quality by design principles, as set forth in other ICH guidelines. By
+conveying information consistently and in the same location across protocols, a protocol template
+is intended to provide value to parties that include sponsors, investigators, investigator site staff,
+trial participants, institutional review boards/ethics committees, and regulators.
+A technical specification presenting the business requirements and common structured protocol
+content components will enable an open, nonproprietary interoperable standard for electronic
+exchange, aiding the review and execution of protocols.
+1.2 Purpose
+The purpose of this guideline is to describe the general protocol design principles and approach
+used to develop the separate associated documents, the ICH M11 Clinical Electronic Structured
+Harmonised Protocol Template [Template] and the Technical Specification that are acceptable to
+all regulatory authorities of the ICH regions. The Template presents the format and structure of the
+protocol, including table of contents, common headers, and instructions for content. The Technical
+Specification presents the data elements and technical attributes (e.g., definition, conformance,
+cardinality) that enable the interoperable electronic exchange of protocol content.
+Use of this Template and Technical Specification should ensure that protocols are provided in a
+harmonised data exchange format acceptable to the regulatory authorities. The Template and
+Technical Specification have been developed with built-in flexibility and are versioned documents.
+As protocol requirements evolve and technology advances, they may be revised, subject to a change
+control process.
+1.3 Scope
+The Template and Technical Specification documents supported by this guideline are intended to
+assist stakeholders (those who use and exchange protocol information, including sponsors,
+investigators, investigator site staff, trial participants, institutional review boards/ethics
+committees, and regulators) in the development, amendment, review, conduct, and closeout of a
+clinical trial. The Template and Technical Specification are applicable to interventional clinical
+trials of medicinal products across all phases and therapeutic areas of clinical research.
+Interventional trials may include but are not limited to human pharmacology, exploratory,
+confirmatory, and postapproval studies (see ICH E8 [R1] General Considerations for Clinical
+Studies). The term “medicinal product” in this guideline, and the term “trial intervention” in the
+protocol Template refer to any therapeutic, prophylactic, or diagnostic agent including
+
+
+                                                  1
+pharmaceuticals, biologics, vaccines, drug-device combination products when being developed as
+a drug, and when applicable, cell or gene therapy products.
+Neither this guideline nor the Template or Technical Specification are intended to specify processes
+related to development and maintenance of a protocol. They do not supersede or negate other
+guidelines that establish requirements for protocol content. They neither provide instruction on the
+development of a well-designed trial nor do they characterise a well-crafted final protocol. Rather,
+the M11 Guideline, Template, and Technical Specification establish common instructions for
+placement of content, as reflected in other prevailing guidelines, as well as the technical attributes
+for interoperable electronic exchange of that content.
+
+2   GENERAL DESIGN PRINCIPLES
+2.1 Clinical Electronic Structured Harmonised Protocol - Template
+The Template was designed based on general principles that support a harmonised standard
+protocol to facilitate consistency and efficiency in the development, amendment, review, conduct
+and closeout of a clinical trial and the exchange of protocol information. Specifically, the principles
+include:
+•   Build common core content - The Template design represents a core set of information for a
+    clinical trial of any medicinal product(s).
+•   Serve the needs of stakeholders - The Template structure and content provide a framework
+    for stakeholders to develop, review, and use protocols that consistently and unambiguously
+    include a uniform table of contents, common section headers and content, as well as common
+    terminologies.
+•   Define content for electronic exchange - The protocol content can be electronically
+    exchanged among parties, including sponsors and regulators, using current (e.g., electronic
+    common technical document) and future technologies.
+•   Design for content re-use - The protocol is a rich source of information that can be re-used as
+    a part of the clinical trial management and review process, for publishing on clinical trial
+    registries to promote clinical trial transparency, or for standardised clinical trial data capture.
+•   Maintain flexibility - The Template provides both universal and optional text to maintain
+    flexibility. Higher-level heading structure is retained, while many lower-level sections can be
+    added, removed, or modified as needed.
+The Template should be used in conjunction with other ICH guidelines relevant to the conduct of
+clinical trials.
+2.2 Clinical Electronic Structured Harmonised Protocol - Technical Specification
+The Technical Specification includes detailed descriptions of the structured content components
+(e.g., specific data fields and blocks of text-based content), along with other defining attributes and
+business rules as established in the Template.
+The Technical Specification is based on the following design principles:
+•   Promote structured common core content
+•   Define content specifications for electronic exchange
+
+                                                  2
+•   Focus on relevant content use and reuse
+•   Enable development of a data model and an open, non-proprietary exchange message standard
+•   Maintain flexibility for technical innovation and region-specific use
+
+3   TEMPLATE CONVENTIONS AND DESIGN
+The Template should enable a final protocol that meets the needs of its audience, which includes
+sponsors, investigators, investigator site staff, trial participants, institutional review boards/ethics
+committees, and regulators. To facilitate efficient and accurate execution, primary consideration
+was given to the needs of investigators and investigator site staff. Accordingly,
+•   The Template is designed with the most vital information for execution (e.g., Synopsis,
+    Schema, Schedule of Activities) near the front.
+•   The Template is organised in a Main Body/Appendix framework, with reference details in the
+    Appendix.
+•   Content in the Appendix carries equal weight and rigor as the content in the Main Body.
+•   Unnecessary repetition is eliminated wherever possible.
+
+
+
+
+                                                   3
+

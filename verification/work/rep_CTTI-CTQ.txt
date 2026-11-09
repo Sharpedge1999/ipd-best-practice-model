@@ -1,0 +1,9 @@
+====================================================================================================
+R5-058 | CTTI-CTQ | loc=SProcedures-Supporting-Study-Endpoints-and-Data-Integrity | page=printed 9 of 24
+PARA: When assessing the critical procedures behind endpoints, the team asks which errors in protocol-defined assessments would be important protocol deviations for analysis or safety monitoring, whether critical hand-offs exist where errors cannot be tolerated, and how such errors can be prevented and detected quickly.
+QUOTE: What errors in conducting protocol-defined assessments would constitute important protocol deviations
+QCHECK: fuzzy ['PDF 9 / printed 9'] ratio=0.61
+  NEAREST: s. Resources should be Which are non-critical? assessments would constitute important protocol focused on preventing op
+LOC: not located automatically
+  DOCBEST 0.41 @ PDF 9 / printed 9: Resources should be Which are non-critical? assessments would constitute important protocol focused on preventing opportunities 3. How necessary is it for these procedures to deviations (i.e., are "errors that matter" in terms of for errors in critical study procedures be conducted absolutely consistently across study analyses or trial participant safety supporting collection and reporting of sites or in a highly specific manner or monitoring)? critical data directly related to study window? 3.
+  DOCBEST 0.38 @ PDF 9 / printed 9: What errors in conducting protocol-defined Integrity procedures. Resources should be Which are non-critical? assessments would constitute important protocol focused on preventing opportunities 3.

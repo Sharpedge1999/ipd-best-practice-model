@@ -1,0 +1,137 @@
+# FIXTURE - NOT RESEARCH. Valid findings sample for tools/test_lint.py.
+# Stem R9 is reserved for tests (accepted only under fixtures/). Source keys
+# are real registry keys; every loc is grammar-valid but deliberately
+# non-existent (99, 999, Z) so that no record can be mistaken for a citation.
+- id: R9-001
+  src: E6R3
+  doc: "FIXTURE - not a source document"
+  url: "[verify]"
+  loc: "P99"
+  loc_alt: ""
+  page: "FIXTURE"
+  retrieval: "FIXTURE"
+  paraphrase: "FIXTURE - placeholder paraphrase of a principle."
+  quote: "FIXTURE short quote"
+  modal: must
+  binding: binding-ICH
+  draft: false
+  binding_route: "EU: FIXTURE; US: FIXTURE"
+  jurisdiction: ICH
+  party: "FIXTURE - sponsor"
+  party_norm: sponsor
+  trigger: "FIXTURE"
+  action: "FIXTURE - placeholder action"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R9-003]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R9-002
+  src: E6R3
+  doc: "FIXTURE - not a source document"
+  url: "[verify]"
+  loc: "A1-9.9.9(z)"
+  loc_alt: "S9.9"
+  page: ""
+  paraphrase: "FIXTURE - placeholder paraphrase of an investigator duty."
+  modal: must
+  binding: binding-ICH
+  binding_route: "EU: FIXTURE; US: FIXTURE"
+  jurisdiction: ICH
+  party: "FIXTURE - investigator"
+  party_norm: investigator
+  action: "FIXTURE - placeholder action"
+  step_hint: document
+  themes: [RBQM, data]
+  confidence: medium
+  verify: ["[verify] FIXTURE - page not yet confirmed"]
+
+- id: R9-003
+  src: E6R3
+  doc: "FIXTURE - not a source document"
+  url: "[verify]"
+  loc: "GL:fixture term"
+  page: "FIXTURE"
+  paraphrase: "FIXTURE - placeholder definition."
+  modal: definition
+  binding: binding-ICH
+  binding_route: "EU: FIXTURE; US: FIXTURE"
+  jurisdiction: ICH
+  party: "FIXTURE - not applicable"
+  party_norm: other
+  action: "FIXTURE - define placeholder term"
+  step_hint: define
+  confidence: high
+
+- id: R9-004
+  src: EUCTR
+  doc: "FIXTURE - not a source document"
+  url: "[verify]"
+  loc: "Art. 999(9)"
+  page: "FIXTURE"
+  paraphrase: "FIXTURE - placeholder paraphrase of a regulation article."
+  modal: must
+  binding: binding-law
+  jurisdiction: EU
+  party: "FIXTURE - sponsor"
+  party_norm: sponsor
+  trigger: "FIXTURE"
+  action: "FIXTURE - placeholder notification"
+  deadline: "xx days (FIXTURE)"
+  recipient: "FIXTURE - authority"
+  step_hint: notify
+  themes: [safety]
+  confidence: high
+
+- id: R9-005
+  src: 21CFR312
+  doc: "FIXTURE - not a source document"
+  url: "[verify]"
+  loc: "21CFR312.999(z)(9)"
+  page: "FIXTURE"
+  paraphrase: "FIXTURE - placeholder paraphrase of a US regulation."
+  modal: must
+  binding: binding-law
+  jurisdiction: US
+  party: "FIXTURE - sponsor"
+  party_norm: sponsor
+  action: "FIXTURE - placeholder action"
+  step_hint: mitigate
+  confidence: medium
+
+- id: R9-006
+  src: FDA-PD24
+  doc: "FIXTURE - not a source document"
+  url: "[verify]"
+  loc: "SIX.Z"
+  page: "FIXTURE"
+  paraphrase: "FIXTURE - placeholder paraphrase of draft guidance."
+  modal: should
+  binding: guidance
+  draft: true
+  jurisdiction: US
+  party: "FIXTURE - sponsor"
+  party_norm: sponsor
+  action: "FIXTURE - placeholder action"
+  step_hint: classify
+  confidence: low
+
+- id: R9-007
+  src: TCB-PD
+  doc: "FIXTURE - not a source document"
+  url: "[verify]"
+  loc: "S99.9"
+  paraphrase: "FIXTURE - placeholder paraphrase of an industry practice."
+  modal: example
+  binding: best-practice
+  jurisdiction: ICH
+  party: "FIXTURE - sponsor"
+  party_norm: sponsor
+  action: "FIXTURE - placeholder action"
+  step_hint: classify
+  confidence: medium

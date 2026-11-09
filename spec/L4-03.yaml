@@ -1,0 +1,573 @@
+# L4-03 - Manage intentional protocol deviations
+# Best-practice reference model of important protocol deviation (iPD) management, GEN-01 spec (B1).
+# Trace fields are derived from synthesis/requirements.yaml and synthesis/merged_findings.yaml.
+# Modelling choices, SHOULD deviations and open questions: spec/notes.md; REQ coverage: spec/coverage.md.
+id: L4-03
+title: "Manage intentional protocol deviations"
+level: L4
+parent: {model: L3, node: A3}
+interface: {start: [S1], ends: [E1, E2, E3], message_flows: [M1, M3, M8]}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-3.9.2", page: "printed 26 / PDF 34"}
+      - {key: E6R3, loc: "P10.1", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "P10.3", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "A1-3.9.5", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: TCB-RBQM, loc: "SQTL-Process", page: "journal pp. 251-261 (section page not confirmed)"}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Investigator", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", page: "OJ L 158/13"}
+      - {key: 21CFR312, loc: "21CFR312.60", page: "n/a - eCFR web text without pagination"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-2.5.2", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.10.6", page: "printed 20 / PDF 28"}
+      - {key: E6R3, loc: "A1-2.3.1", page: "printed 12 / PDF 20"}
+      - {key: E6R3, loc: "A2-2.4", page: "printed 55 / PDF 63"}
+      - {key: E6R3, loc: "A2-2.4.1", page: "printed 56 / PDF 64"}
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", page: "OJ L 158/12"}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", page: "printed 89 / PDF 97"}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", page: "n/a - eCFR web text without pagination"}
+
+lanes:
+  - id: L_SPON
+    name: "Sponsor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+
+nodes:
+  - id: S1
+    type: start-message
+    label: "Intentional protocol deviation communicated"
+    lane: L_SPON
+    path: main
+  - id: A14
+    type: task
+    label: "Review intentional protocol deviation communication"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.13.3", page: "printed 36 / PDF 44"}
+      - {key: M11-TEMPLATE, loc: "S5.1", page: "printed 25"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 265-268"}
+    req: [REQ-083, REQ-075, REQ-076]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "promptly"
+    party: "sponsor; Sponsors"
+    verify:
+      - "[verify] whether the M11 Template sentence is fixed text or instructional text (R2-113)"
+      - "[verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06)"
+      - "[verify] whether the sentence is fixed universal text or instructional text of the template (R2-113)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+      - "[verify] review step implied by the routing; no source names it as a separate step"
+  - id: G1
+    type: xor-split
+    label: "Immediate-hazard deviation reported?"
+    lane: L_SPON
+    path: main
+  - id: A1
+    type: task
+    label: "Address immediate hazard and its causes"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.13.3", page: "printed 36 / PDF 44"}
+    req: [REQ-083]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "promptly"
+    party: "sponsor"
+  - id: A2
+    type: task
+    label: "Assess need for protocol amendment"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.13.3", page: "printed 37 / PDF 45"}
+      - {key: FDA-PD24, loc: "SIII.C", page: "printed 10; lines 363-365"}
+    req: [REQ-084, REQ-077]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "as early as possible"
+    record: "protocol amendment (if any)"
+    party: "sponsor; investigator/institution or sponsor; Sponsors and clinical investigators"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: G9
+    type: xor-split
+    label: "Submission of immediate-hazard information required?"
+    lane: L_SPON
+    path: main
+  - id: A3
+    type: task
+    label: "Submit immediate-hazard information to authority"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.5.5", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-3.13.3", page: "printed 37 / PDF 45"}
+    req: [REQ-082]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "hazard information; protocol amendment"
+    party: "investigator; sponsor; investigator/institution or sponsor"
+    verify:
+      - "[verify] in the EU all submissions are made by the sponsor, not the investigator (EUCTR-QA Q&A 1.5) (C-12)"
+  - id: G10
+    type: xor-join
+    lane: L_SPON
+    path: main
+  - id: G2
+    type: or-split
+    label: "Which jurisdiction-specific actions apply?"
+    lane: L_SPON
+    path: main
+    justification: "A trial can run under EU CTR and an IND at the same time, so the EU urgent safety measure hand-off (C-08) and the FDA protocol amendment (21 CFR 312.30(b)(2)(ii)) can both apply; they are not exclusive alternatives (FLW-07, DEC-02). Default flow 'Neither' when no jurisdiction-specific action applies."
+  - id: A4
+    type: call-activity
+    label: "Handle urgent safety measures"
+    lane: L_SPON
+    calls: null
+    interface: true
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EUCTR, loc: "Art. 54(1)", page: "OJ L 158/40"}
+      - {key: EUCTR, loc: "Art. 54(2)", page: "OJ L 158/40"}
+      - {key: EUCTR, loc: "Art. 54(3)", page: "OJ L 158/40"}
+      - {key: EUCTR-QA, loc: "S10.9", page: "printed 8-9 (chapter 10); printed 9 (chapter 10)"}
+      - {key: EUCTR-QA, loc: "S10.1", page: "printed 1-4 (chapter 10)"}
+      - {key: EUCTR-QA, loc: "S7.27", page: "printed 22 (chapter 7); printed 23 (chapter 7)"}
+    req: [REQ-217, REQ-218, REQ-219, REQ-220]
+    binding: binding-law
+    jurisdiction: [EU]
+    deadline: "without undue delay but no later than seven days from the date the measures have been taken"
+    record: "urgent safety measure notification in CTIS"
+    party: "sponsor; the investigator"
+  - id: A5
+    type: task
+    label: "Submit protocol amendment to FDA"
+    lane: L_SPON
+    path: alt
+    group: GR_US
+    src:
+      - {key: 21CFR312, loc: "21CFR312.30(b)(2)(ii)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-085, REQ-079]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "subsequently (no period stated)"
+    record: "protocol amendment"
+    party: "sponsor"
+    verify:
+      - "[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)"
+  - id: G3
+    type: or-join
+    lane: L_SPON
+    path: main
+  - id: E1
+    type: end
+    label: "Immediate hazard addressed"
+    lane: L_SPON
+    path: main
+  - id: G4
+    type: xor-split
+    label: "Deviation from eligibility criteria requested?"
+    lane: L_SPON
+    path: exception
+  - id: A6
+    type: task
+    label: "Reject eligibility waiver requests"
+    lane: L_SPON
+    path: exception
+    src:
+      - {key: M11-TEMPLATE, loc: "S5.1", page: "printed 25"}
+    req: [REQ-075]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "protocol section 5.1"
+    verify:
+      - "[verify] whether the M11 Template sentence is fixed text or instructional text (R2-113)"
+      - "[verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06)"
+      - "[verify] whether the sentence is fixed universal text or instructional text of the template (R2-113)"
+  - id: A7
+    type: task
+    label: "Decide on deviation request"
+    lane: L_SPON
+    path: exception
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 265-268"}
+    req: [REQ-076]
+    binding: guidance
+    jurisdiction: [US]
+    draft: true
+    record: "decision on request; protocol amendment if needed"
+    party: "Sponsors"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: G5
+    type: xor-join
+    lane: L_SPON
+    path: exception
+  - id: G6
+    type: xor-split
+    label: "Deviation request approved?"
+    lane: L_SPON
+    path: exception
+  - id: E2
+    type: end
+    label: "Deviation request approved"
+    lane: L_SPON
+    path: exception
+  - id: E3
+    type: end
+    label: "Deviation request rejected"
+    lane: L_SPON
+    path: exception
+  - id: S2
+    type: start
+    label: "Intentional protocol deviation considered"
+    pool: P_INV
+    path: main
+  - id: A8
+    type: task
+    label: "Assess immediate hazard to participants"
+    pool: P_INV
+    path: main
+    src:
+      - {key: 21CFR312, loc: "21CFR312.66", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR312, loc: "21CFR312.53(c)(1)(vii)", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "A1-2.5.4", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-1.4.7", page: "printed 10 / PDF 18"}
+    req: [REQ-078, REQ-070, REQ-071]
+    binding: binding-law
+    jurisdiction: [ICH, US]
+    deadline: "before implementation (REQ-070); before the change (immediate-hazard exception) (REQ-071)"
+    record: "IRB approval"
+    party: "investigator; IRB/IEC"
+    verify:
+      - "[verify] E6(R3) A1-1.4.7 frames this as an IRB/IEC written procedure; the party initiating the change is not named"
+      - "[verify] assessment step implied by the immediate-hazard exception in E6R3 A1-2.5.4, A1-1.4.7 and 21 CFR 312.66; no source names it as a separate step"
+  - id: G7
+    type: xor-split
+    label: "Immediate hazard to participants?"
+    pool: P_INV
+    path: main
+  - id: A9
+    type: task
+    label: "Implement protocol deviation to eliminate immediate hazard"
+    pool: P_INV
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.5.4", page: "printed 13 / PDF 21"}
+    req: [REQ-078]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "investigator"
+  - id: A10
+    type: task
+    label: "Inform sponsor of immediate-hazard deviation"
+    pool: P_INV
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.5.4", page: "printed 13 / PDF 21"}
+      - {key: FDA-PD24, loc: "SIII.C", page: "printed 10; lines 365-372; printed 10; lines 360-363"}
+    req: [REQ-080, REQ-087]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "promptly (REQ-080); per SIII.B routes (sponsor timeframe; IRB when identified for important deviations) (REQ-087)"
+    record: "deviation report"
+    party: "investigator"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: A11
+    type: task
+    label: "Report immediate-hazard deviation to IRB/IEC"
+    pool: P_INV
+    path: main
+    src:
+      - {key: 21CFR312, loc: "21CFR312.30(b)(2)(ii)", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR56, loc: "21CFR56.104(c)", page: "n/a - web text without pagination"}
+      - {key: E6R3, loc: "A1-1.4.8(a)", page: "printed 10-11 / PDF 18-19"}
+      - {key: E6R3, loc: "A1-2.5.5", page: "printed 13 / PDF 21"}
+    req: [REQ-081, REQ-086]
+    binding: binding-law
+    jurisdiction: [ICH, US]
+    deadline: "promptly (ICH); US: per 21 CFR 56.104(c) [verify 5 working days]"
+    record: "report on hazard, implemented change and proposed amendment; IRB notification"
+    party: "investigator/institution; investigator; sponsor"
+    verify:
+      - "[verify] whether the 5-working-day window of 21 CFR 56.104(c) applies to immediate-hazard protocol changes (C-11)"
+      - "[verify] notifying party not named (passive voice); Investigator chosen because 21 CFR 312.66 places IRB reporting on the investigator"
+      - "[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)"
+      - "[verify] eCFR text of 56.104(c) not retrievable (robots); confirm against eCFR or govinfo before X1 (R4-030)"
+  - id: E4
+    type: end
+    label: "Immediate-hazard deviation implemented and reported"
+    pool: P_INV
+    path: main
+  - id: A12
+    type: task
+    label: "Request approval of intentional protocol deviation"
+    pool: P_INV
+    path: alt
+    src:
+      - {key: 21CFR312, loc: "21CFR312.53(c)(1)(vi)(a)", page: "n/a - eCFR web text without pagination"}
+      - {key: FDA-PD24, loc: "SIII.B.1", page: "printed 6; lines 199-203; repeated SIII.B.2 lines 268-271"}
+    req: [REQ-073, REQ-074]
+    binding: binding-law
+    jurisdiction: [US]
+    draft: true
+    deadline: "before the change (safety exception) (REQ-073); before the departure (REQ-074)"
+    record: "Form FDA-1572 commitment; sponsor approval; IRB approval"
+    party: "investigator"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: A13
+    type: task
+    label: "Obtain IRB/IEC approval before deviating"
+    pool: P_INV
+    path: alt
+    src:
+      - {key: 21CFR312, loc: "21CFR312.66", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR312, loc: "21CFR312.53(c)(1)(vii)", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "A1-1.4.7", page: "printed 10 / PDF 18"}
+    req: [REQ-070, REQ-071]
+    binding: binding-law
+    jurisdiction: [ICH, US]
+    deadline: "before implementation (REQ-070); before the change (immediate-hazard exception) (REQ-071)"
+    record: "IRB approval"
+    party: "IRB/IEC; investigator"
+    verify:
+      - "[verify] E6(R3) A1-1.4.7 frames this as an IRB/IEC written procedure; the party initiating the change is not named"
+  - id: G8
+    type: xor-split
+    label: "Deviation approved?"
+    pool: P_INV
+    path: alt
+  - id: E5
+    type: end
+    label: "Intentional protocol deviation approved and implemented"
+    pool: P_INV
+    path: alt
+  - id: E6
+    type: end
+    label: "Deviation request rejected"
+    pool: P_INV
+    path: exception
+
+flows:
+  - {id: F1, from: S1, to: A14}
+  - {id: F34, from: A14, to: G1}
+  - {id: F2, from: G1, to: A1, label: "Yes"}
+  - {id: F3, from: G1, to: G4, label: "No"}
+  - {id: F4, from: A1, to: A2}
+  - {id: F5, from: A2, to: G9}
+  - {id: F6, from: A3, to: G10}
+  - {id: F31, from: G9, to: A3, label: "Yes"}
+  - {id: F32, from: G9, to: G10, label: "No"}
+  - {id: F33, from: G10, to: G2}
+  - {id: F7, from: G2, to: A4, label: "Urgent safety measure under EU CTR Art. 54"}
+  - {id: F8, from: G2, to: A5, label: "IND under 21 CFR 312"}
+  - {id: F9, from: G2, to: G3, label: "Neither", default: true}
+  - {id: F10, from: A4, to: G3}
+  - {id: F11, from: A5, to: G3}
+  - {id: F12, from: G3, to: E1}
+  - {id: F13, from: G4, to: A6, label: "Yes"}
+  - {id: F14, from: G4, to: A7, label: "No"}
+  - {id: F15, from: A6, to: G5}
+  - {id: F16, from: A7, to: G5}
+  - {id: F17, from: G5, to: G6}
+  - {id: F18, from: G6, to: E2, label: "Yes"}
+  - {id: F19, from: G6, to: E3, label: "No"}
+  - {id: F20, from: S2, to: A8}
+  - {id: F21, from: A8, to: G7}
+  - {id: F22, from: G7, to: A9, label: "Yes"}
+  - {id: F23, from: G7, to: A12, label: "No"}
+  - {id: F24, from: A9, to: A11}
+  - {id: F25, from: A11, to: A10}
+  - {id: F26, from: A10, to: E4}
+  - {id: F27, from: A12, to: A13}
+  - {id: F28, from: A13, to: G8}
+  - {id: F29, from: G8, to: E5, label: "Yes"}
+  - {id: F30, from: G8, to: E6, label: "No"}
+
+message_flows:
+  - id: M1
+    label: "Immediate-hazard deviation reported"
+    src:
+      - {key: E6R3, loc: "A1-2.5.4", page: "printed 13 / PDF 21"}
+    req: [REQ-080]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "promptly"
+    party: "investigator"
+    from: A10
+    to: S1
+  - id: M2
+    label: "Immediate-hazard deviation reported"
+    src:
+      - {key: 21CFR312, loc: "21CFR312.30(b)(2)(ii)", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR56, loc: "21CFR56.104(c)", page: "n/a - web text without pagination"}
+      - {key: E6R3, loc: "A1-1.4.8(a)", page: "printed 10-11 / PDF 18-19"}
+      - {key: E6R3, loc: "A1-2.5.5", page: "printed 13 / PDF 21"}
+    req: [REQ-081, REQ-086]
+    binding: binding-law
+    jurisdiction: [ICH, US]
+    deadline: "promptly (ICH); US: per 21 CFR 56.104(c) [verify 5 working days]"
+    party: "investigator/institution; investigator; sponsor"
+    verify:
+      - "[verify] whether the 5-working-day window of 21 CFR 56.104(c) applies to immediate-hazard protocol changes (C-11)"
+      - "[verify] notifying party not named (passive voice); Investigator chosen because 21 CFR 312.66 places IRB reporting on the investigator"
+      - "[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)"
+      - "[verify] eCFR text of 56.104(c) not retrievable (robots); confirm against eCFR or govinfo before X1 (R4-030)"
+    from: A11
+    to: P_IEC
+  - id: M3
+    label: "Intentional protocol deviation request submitted"
+    src:
+      - {key: 21CFR312, loc: "21CFR312.53(c)(1)(vi)(a)", page: "n/a - eCFR web text without pagination"}
+      - {key: FDA-PD24, loc: "SIII.B.1", page: "printed 6; lines 199-203; repeated SIII.B.2 lines 268-271"}
+    req: [REQ-073, REQ-074]
+    binding: binding-law
+    jurisdiction: [US]
+    draft: true
+    deadline: "before the change (safety exception) (REQ-073); before the departure (REQ-074)"
+    party: "investigator"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+    from: A12
+    to: S1
+  - id: M4
+    label: "Decision on deviation request"
+    src:
+      - {key: M11-TEMPLATE, loc: "S5.1", page: "printed 25"}
+    req: [REQ-075]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    verify:
+      - "[verify] whether the M11 Template sentence is fixed text or instructional text (R2-113)"
+      - "[verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06)"
+      - "[verify] whether the sentence is fixed universal text or instructional text of the template (R2-113)"
+    from: A6
+    to: A13
+  - id: M5
+    label: "Decision on deviation request"
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 265-268"}
+    req: [REQ-076]
+    binding: guidance
+    jurisdiction: [US]
+    draft: true
+    party: "Sponsors"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+    from: A7
+    to: A13
+  - id: M6
+    label: "Approval of intentional protocol deviation requested"
+    src:
+      - {key: 21CFR312, loc: "21CFR312.66", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR312, loc: "21CFR312.53(c)(1)(vii)", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "A1-1.4.7", page: "printed 10 / PDF 18"}
+    req: [REQ-070, REQ-071]
+    binding: binding-law
+    jurisdiction: [ICH, US]
+    deadline: "before implementation (REQ-070); before the change (immediate-hazard exception) (REQ-071)"
+    party: "IRB/IEC; investigator"
+    verify:
+      - "[verify] E6(R3) A1-1.4.7 frames this as an IRB/IEC written procedure; the party initiating the change is not named"
+    from: A12
+    to: P_IEC
+  - id: M7
+    label: "IRB/IEC decision issued"
+    src:
+      - {key: 21CFR56, loc: "21CFR56.108(a)(4)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-072]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "before the change"
+    party: "each IRB"
+    verify:
+      - "[verify] represented by the IRB/IEC approval message flow; IRB/IEC is a collapsed pool (D1)"
+    from: P_IEC
+    to: A13
+  - id: M8
+    label: "Protocol amendment submitted for immediate-hazard change"
+    src:
+      - {key: 21CFR312, loc: "21CFR312.30(b)(2)(ii)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-085]
+    binding: binding-law
+    jurisdiction: [US]
+    deadline: "subsequently (no period stated)"
+    party: "sponsor"
+    verify:
+      - "[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)"
+    from: A5
+    to: P_RA
+  - id: M9
+    label: "Immediate-hazard information submitted where required"
+    src:
+      - {key: E6R3, loc: "A1-2.5.5", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-3.13.3", page: "printed 37 / PDF 45"}
+    req: [REQ-082]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "investigator; sponsor; investigator/institution or sponsor"
+    verify:
+      - "[verify] in the EU all submissions are made by the sponsor, not the investigator (EUCTR-QA Q&A 1.5) (C-12)"
+    from: A3
+    to: P_RA
+
+groups:
+  - {id: GR_EU, label: "EU CTR", members: [A4]}
+  - {id: GR_US, label: "US 21 CFR", members: [A5]}
+
+rule_exceptions:
+  - {rule: FLW-09, element: S1, reason: "One business trigger - the investigator's communication of an intentional protocol deviation - arrives as two message types (immediate-hazard report, deviation request). Two start events would break SCP-02 (one entry point per sub-process); splitting L3 step A3 would change the L3 cut confirmed by the user on 06 Nov 2026. Decided by the orchestrator 07 Nov 2026; flagged to the user as revisitable."}
+  - {rule: ROL-03, element: P_INV, reason: "D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks"}
+  - {rule: DEC-06, element: G1, reason: "XOR split G1: each branch is a distinct business outcome (E1, E2, E3) and ends in its own end event without a join"}
+  - {rule: DEC-06, element: G6, reason: "XOR split G6: each branch is a distinct business outcome (E2, E3) and ends in its own end event without a join"}
+  - {rule: DEC-06, element: G7, reason: "XOR split G7: each branch is a distinct business outcome (E4, E5, E6) and ends in its own end event without a join"}
+  - {rule: DEC-06, element: G8, reason: "XOR split G8: each branch is a distinct business outcome (E5, E6) and ends in its own end event without a join"}
+
+notes:
+  - "One business trigger for the Sponsor process (FLW-09, SCP-02; orchestrator decision V1 round 1, 07 Nov 2026): message start S1 'Intentional protocol deviation communicated' receives both investigator communications (M1 immediate-hazard report, M3 deviation request); task A14 reviews the communication and decides the routing at G1 (FLW-05); it carries the sponsor REQs of the routed paths (REQ-083 immediate hazard, REQ-075 and REQ-076 deviation request), the investigator REQs stay on the investigator elements (V1 round 2); the two paths end in distinct outcomes (DEC-06)."
+  - "A4 'Handle urgent safety measures' is the interface call activity of C-08 (decided by user 06 Nov 2026; calls null, interface true, S0-18)."
+  - "Sponsor ends state what the sponsor reaches: E1 'Immediate hazard addressed', E2 'Deviation request approved', E3 'Deviation request rejected'. The l3_cut outcomes 'Immediate-hazard deviation implemented and reported' and 'Intentional deviation approved and implemented' are the investigator ends E4 and E5 (E5 in the glossary form 'Intentional protocol deviation approved and implemented', LBL-04)."
+  - "The investigator process has one trigger, the l3_cut event 'Intentional protocol deviation considered'; task A8 decides whether the immediate-hazard exception applies (FLW-05), marked [verify] because no source names it as a separate step. Two blank start events were avoided (bpmnlint single-blank-start-event)."
+  - "C-09: G4 'Deviation from eligibility criteria requested?' leads to the rejection task A6 (M11 S5.1); the FDA-PD24 example stays DRAFT on the request flow (REQ-074)."

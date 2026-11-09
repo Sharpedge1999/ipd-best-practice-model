@@ -1,0 +1,4 @@
+src: 21CFR56
+method: local-text
+notes:
+  R4-030: "Cited rendering is Cornell LII; wording identical in the local eCFR API text (as of 2026-11-04)."

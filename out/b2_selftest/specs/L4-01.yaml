@@ -1,0 +1,91 @@
+# B2 SELFTEST - NOT A MODEL. Synthetic stress input for the converter/layout only.
+id: L4-01
+title: "SELFTEST - stress model"
+level: L4
+parent: {model: L3, node: A1}
+interface: {start: [S1], ends: [E1, E2], message_flows: [M1]}
+pools:
+  - {id: P_SPON, name: "SELFTEST - Sponsor", kind: internal, expanded: true}
+  - {id: P_INV, name: "SELFTEST - Investigator/institution", kind: external, expanded: true}
+  - {id: P_IEC, name: "SELFTEST - IRB/IEC", kind: external, expanded: false}
+  - {id: P_RA, name: "SELFTEST - Regulatory authority", kind: external, expanded: false}
+lanes:
+  - {id: L_SPON, name: "SELFTEST - Sponsor", pool: P_SPON, src: [{key: E6R3, loc: "SELFTEST"}]}
+  - {id: L_MON, name: "SELFTEST - Monitor", pool: P_SPON, src: [{key: E6R3, loc: "SELFTEST"}]}
+  - {id: L_DM, name: "SELFTEST - Data manager", pool: P_SPON, src: [{key: TCB-PD, loc: "SELFTEST"}]}
+nodes:
+  - {id: S1, type: start-message, label: "Potential protocol deviation reported", lane: L_MON, path: main}
+  - {id: A1, type: task, label: "Review potential protocol deviation against the trial-specific definition", lane: L_MON, path: main, src: [{key: E6R3, loc: "SELFTEST", page: "1"}, {key: TCB-PD, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH, jurisdiction: [ICH]}
+  - {id: G1, type: xor-split, label: "Protocol deviation confirmed?", lane: L_MON, path: main}
+  - {id: E2, type: end, label: "Potential deviation rejected", lane: L_MON, path: exception}
+  - {id: A2, type: task, label: "Document protocol deviation in the deviation log", lane: L_MON, path: main, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: A3, type: task, label: "Classify protocol deviation as important or not important", lane: L_SPON, path: main, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: G2, type: xor-split, label: "Important protocol deviation?", lane: L_SPON, path: main}
+  - {id: G3, type: and-split, lane: L_SPON, path: main, group: GR_IMPACT}
+  - {id: A4, type: task, label: "Assess impact on participant safety and rights", lane: L_SPON, path: main, group: GR_IMPACT, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: A5, type: task, label: "Assess impact on reliability of trial results", lane: L_DM, path: alt, group: GR_IMPACT, src: [{key: E9R1, loc: "SELFTEST"}], req: [REQ-906], binding: binding-ICH, verify: ["[verify] SELFTEST verify item"]}
+  - {id: G4, type: and-join, lane: L_SPON, path: main, group: GR_IMPACT}
+  - {id: G5, type: xor-split, label: "Serious breach?", lane: L_SPON, path: main, group: GR_EU}
+  - {id: A6, type: task, label: "Notify serious breach to the member states concerned", lane: L_SPON, path: exception, group: GR_EU, src: [{key: EUCTR, loc: "SELFTEST"}], req: [REQ-902], binding: binding-law, jurisdiction: [EU], deadline: "7 days"}
+  - {id: G6, type: xor-join, lane: L_SPON, path: main, group: GR_EU}
+  - {id: G9, type: xor-join, lane: L_SPON, path: main}
+  - {id: A7, type: task, label: "Define corrective and preventive actions", lane: L_SPON, path: main, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: I1, type: intermediate-catch-timer, label: "Follow-up date reached", lane: L_MON, path: main, justification: "SELFTEST - timer needed"}
+  - {id: A8, type: task, label: "Verify effectiveness of corrective actions", lane: L_MON, path: main, src: [{key: FDA-PD24, loc: "SELFTEST"}], req: [REQ-907], binding: guidance, draft: true, jurisdiction: [US]}
+  - {id: G7, type: xor-split, label: "Actions effective?", lane: L_MON, path: main}
+  - {id: G8, type: xor-join, lane: L_SPON, path: main}
+  - {id: E1, type: end, label: "Protocol deviation managed", lane: L_SPON, path: main}
+  - {id: S2, type: start, label: "Protocol deviation identified at site", pool: P_INV}
+  - {id: A10, type: task, label: "Report protocol deviation to the sponsor", pool: P_INV, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-904], binding: binding-ICH}
+  - {id: A11, type: task, label: "Report deviation to the IRB/IEC", pool: P_INV, src: [{key: 21CFR56, loc: "SELFTEST"}], req: [REQ-905], binding: binding-law, jurisdiction: [US]}
+  - {id: E3, type: end, label: "Deviation reported", pool: P_INV}
+  - {id: S3, type: start-message, label: "Corrective action requested", pool: P_INV}
+  - {id: A12, type: task, label: "Implement corrective action at site", pool: P_INV, src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-904], binding: binding-ICH}
+  - {id: E4, type: end, label: "Corrective action implemented", pool: P_INV}
+flows:
+  - {id: F1, from: S1, to: A1}
+  - {id: F2, from: A1, to: G1}
+  - {id: F3, from: G1, to: A2, label: "Yes"}
+  - {id: F4, from: G1, to: E2, label: "No"}
+  - {id: F5, from: A2, to: A3}
+  - {id: F6, from: A3, to: G2}
+  - {id: F7, from: G2, to: G3, label: "Yes"}
+  - {id: F8, from: G2, to: G8, label: "No", default: true}
+  - {id: F9, from: G3, to: A4}
+  - {id: F10, from: G3, to: A5}
+  - {id: F11, from: A4, to: G4}
+  - {id: F12, from: A5, to: G4}
+  - {id: F13, from: G4, to: G5}
+  - {id: F14, from: G5, to: A6, label: "Yes"}
+  - {id: F15, from: G5, to: G6, label: "No"}
+  - {id: F16, from: A6, to: G6}
+  - {id: F17, from: G6, to: G9}
+  - {id: F18, from: G9, to: A7}
+  - {id: F19, from: A7, to: I1}
+  - {id: F20, from: I1, to: A8}
+  - {id: F21, from: A8, to: G7}
+  - {id: F22, from: G7, to: G8, label: "Yes"}
+  - {id: F23, from: G7, to: G9, label: "No"}
+  - {id: F24, from: G8, to: E1}
+  - {id: F25, from: S2, to: A10}
+  - {id: F26, from: A10, to: A11}
+  - {id: F27, from: A11, to: E3}
+  - {id: F28, from: S3, to: A12}
+  - {id: F29, from: A12, to: E4}
+message_flows:
+  - {id: M1, from: A10, to: S1, label: "Deviation report", src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-904], binding: binding-ICH}
+  - {id: M2, from: A11, to: P_IEC, label: "Deviation report to IRB/IEC", src: [{key: 21CFR56, loc: "SELFTEST"}], req: [REQ-905], binding: binding-law}
+  - {id: M3, from: A6, to: P_RA, label: "Serious breach notification", src: [{key: EUCTR, loc: "SELFTEST"}], req: [REQ-902], binding: binding-law, deadline: "7 days"}
+  - {id: M4, from: A7, to: S3, label: "Corrective action request", src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: M5, from: A12, to: A8, label: "Implementation confirmation", src: [{key: E6R3, loc: "SELFTEST"}], req: [REQ-901], binding: binding-ICH}
+  - {id: M6, from: A6, to: P_IEC, label: "Serious breach notification to ethics committee", src: [{key: EUCTR, loc: "SELFTEST"}], req: [REQ-902], binding: binding-law}
+data:
+  - {id: D1, type: data-store, label: "Protocol deviation log", assoc: [{node: A2, dir: out}, {node: A3, dir: in}, {node: A8, dir: in}], src: [{key: E6R3, loc: "SELFTEST"}]}
+  - {id: D2, type: data-object, label: "Impact assessment", assoc: [{node: A4, dir: out}, {node: A5, dir: out}]}
+groups:
+  - {id: GR_IMPACT, label: "Impact assessment", members: [G3, A4, A5, G4]}
+  - {id: GR_EU, label: "EU CTR", members: [G5, A6, G6]}
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "SELFTEST"}
+  - {rule: FLW-01, element: I1, reason: "SELFTEST"}
+  - {rule: DEC-06, element: E2, reason: "SELFTEST"}

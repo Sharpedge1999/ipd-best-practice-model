@@ -1,0 +1,458 @@
+{
+ "R3-001": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed L158/12",
+   "PDF 12 / printed L158/12"
+  ]
+ },
+ "R3-002": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed L158/12",
+   "PDF 12 / printed L158/12"
+  ]
+ },
+ "R3-003": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 12 / printed L158/12"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed L158/12",
+   "PDF 12 / printed L158/12"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-004": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 12 / printed L158/12"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 12 / printed L158/12",
+   "PDF 13 / printed L158/13"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-005": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 13 / printed L158/13"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 13 / printed L158/13",
+   "PDF 13 / printed L158/13"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-006": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 13 / printed L158/13",
+   "PDF 13 / printed L158/13"
+  ]
+ },
+ "R3-007": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 13 / printed L158/13"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 13 / printed L158/13",
+   "PDF 13 / printed L158/13"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-008": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 13 / printed L158/13",
+   "PDF 13 / printed L158/13"
+  ]
+ },
+ "R3-009": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 13 / printed L158/13",
+   "PDF 13 / printed L158/13"
+  ]
+ },
+ "R3-010": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 13 / printed L158/13"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 13 / printed L158/13",
+   "PDF 14 / printed L158/14"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-011": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 14 / printed L158/14",
+   "PDF 14 / printed L158/14"
+  ]
+ },
+ "R3-012": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 35 / printed L158/35",
+   "PDF 35 / printed L158/35"
+  ]
+ },
+ "R3-013": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 36 / printed L158/36",
+   "PDF 36 / printed L158/36"
+  ]
+ },
+ "R3-014": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 36 / printed L158/36",
+   "PDF 36 / printed L158/36"
+  ]
+ },
+ "R3-015": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 37 / printed L158/37"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 37 / printed L158/37",
+   "PDF 37 / printed L158/37"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-016": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 39 / printed L158/39"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 39 / printed L158/39",
+   "PDF 39 / printed L158/39"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-017": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 39 / printed L158/39"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 39 / printed L158/39",
+   "PDF 39 / printed L158/39"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-018": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 39 / printed L158/39"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 39 / printed L158/39",
+   "PDF 39 / printed L158/39"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-019": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 39 / printed L158/39"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 39 / printed L158/39",
+   "PDF 39 / printed L158/39"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-020": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 39 / printed L158/39",
+   "PDF 39 / printed L158/39"
+  ]
+ },
+ "R3-021": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 39 / printed L158/39"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 39 / printed L158/39",
+   "PDF 39 / printed L158/39"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-022": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 39 / printed L158/39",
+   "PDF 39 / printed L158/39"
+  ]
+ },
+ "R3-023": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 40 / printed L158/40"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-024": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 40 / printed L158/40"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-025": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ]
+ },
+ "R3-026": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ]
+ },
+ "R3-027": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 40 / printed L158/40"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-028": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 40 / printed L158/40"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-029": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 40 / printed L158/40"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-030": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 40 / printed L158/40"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 40 / printed L158/40",
+   "PDF 40 / printed L158/40"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-031": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 41 / printed L158/41"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-032": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 41 / printed L158/41"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-033": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 41 / printed L158/41"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-034": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ]
+ },
+ "R3-035": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 41 / printed L158/41"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-036": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 41 / printed L158/41"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-037": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ]
+ },
+ "R3-038": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 41 / printed L158/41"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-039": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 41 / printed L158/41"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 41 / printed L158/41",
+   "PDF 41 / printed L158/41"
+  ],
+  "quote_in_loc": true
+ },
+ "R3-040": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 46 / printed L158/46",
+   "PDF 46 / printed L158/46"
+  ]
+ },
+ "R3-041": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 46 / printed L158/46",
+   "PDF 46 / printed L158/46"
+  ]
+ },
+ "R3-042": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 47 / printed L158/47",
+   "PDF 47 / printed L158/47"
+  ]
+ }
+}

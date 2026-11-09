@@ -1,0 +1,13 @@
+{
+  "name": "ipd-b2-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "B2 converter smoke checks: bpmn-moddle round trip, bpmnlint smoke, headless render",
+  "type": "module",
+  "dependencies": {
+    "bpmn-js": "^18.31.1",
+    "bpmn-moddle": "^10.3.1",
+    "bpmnlint": "^11.15.0",
+    "playwright-core": "^1.65.0"
+  }
+}

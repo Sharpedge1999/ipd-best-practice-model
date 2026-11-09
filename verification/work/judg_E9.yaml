@@ -1,0 +1,7 @@
+src: E9
+method: local-text
+notes:
+  R2-086: "Page [verify] resolved: 5.2.2 starts printed 23; criterion (iii) incl. the quote on PDF 28 / printed 24."
+  R2-087: "Sentence on printed 24 (cited 23-24 acceptable)."
+  R2-090: "Page [verify] resolved: 5.2.3 on PDF 28 / printed 24; source says 'throws some doubt' (paraphrase 'casts', not a quote)."
+  R2-085: "Source: deferral to blind review 'may sometimes be preferable ... and, if so, this should be stated in the protocol'; paraphrase equivalent."

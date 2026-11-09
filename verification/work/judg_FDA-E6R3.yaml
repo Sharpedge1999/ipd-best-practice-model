@@ -1,0 +1,6 @@
+src: FDA-E6R3
+method: local-text
+methods:
+  R4-078: local-text + webfetch
+notes:
+  R4-078: "Quote verbatim in SI.B (PDF 9 / printed 2); PDF front matter dated September 2025 and contains no 'supersede'. WebFetch (two differently worded fetches) of the FR notice 2025-17311: finalizes the draft of June 7, 2023, Annex 2 is a separate draft, no mention of E6(R2); FDA guidance page shows 'Final Level 1 Guidance', September 2025, docket FDA-2023-D-1955."

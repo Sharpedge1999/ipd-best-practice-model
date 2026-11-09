@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ipd-best-practice:contracts:findings:1.0",
+  "title": "iPD research findings file",
+  "description": "One research file (research/R<n>_<slug>.yaml) = a list of atomic finding records, one obligation per record, sorted by id (workflow_plan section 3). This schema covers structure, types and enums. Semantic rules (quote fewer than 15 words, loc grammar, src key in registry or notes, id prefix = file stem, unique and sorted ids, ICH never binding-law, draft requires guidance, binding findings need page or [verify]) are enforced by tools/lint_findings.py.",
+  "type": "array",
+  "items": { "$ref": "#/$defs/finding" },
+  "$defs": {
+    "nonEmpty": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "finding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id", "src", "doc", "url", "loc", "paraphrase", "modal", "binding",
+        "jurisdiction", "party", "party_norm", "action", "step_hint", "confidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^R[1-6]-\\d{3}$",
+          "description": "Stem prefix + 3 digits, never reused. R9 is reserved for test fixtures and accepted by the linter only under fixtures/."
+        },
+        "src": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9]+(-[A-Za-z0-9]+)*$",
+          "description": "Key from contracts/source_registry.yaml, or a new key (UPPER-CASE with hyphens) listed under 'New source keys' in the stem's Rn_notes.md."
+        },
+        "doc": {
+          "$ref": "#/$defs/nonEmpty",
+          "description": "Title, version, date of the document actually read."
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^(https?://\\S+|\\[verify[^\\]]*\\])$",
+          "description": "URL actually fetched, or [verify] if not confirmed."
+        },
+        "loc": {
+          "$ref": "#/$defs/nonEmpty",
+          "description": "Grammar: P<n> | GL:<term> | A1-<sec> | A2-<sec> | AppB-<sec> | AppC-<sec> | Art. <n>(<p>) | 21CFR<part>.<sec>(<p>) | S<sec>; optional trailing ' [verify]'. Enforced by the linter (rule LOC)."
+        },
+        "loc_alt": {
+          "type": "string",
+          "description": "Numbering in the other version (E6R3-S4), same grammar, or empty."
+        },
+        "page": {
+          "type": "string",
+          "description": "e.g. 'printed 12 / PDF 14', or '[verify]'. Required in substance for binding-law and binding-ICH findings (rule PAGE)."
+        },
+        "retrieval": {
+          "type": "string",
+          "description": "e.g. 'WebFetch 2026-11-06 offset 0'."
+        },
+        "paraphrase": { "$ref": "#/$defs/nonEmpty" },
+        "quote": {
+          "type": "string",
+          "description": "Optional verbatim quote, fewer than 15 words, confirmed by a second fetch (rule QUOTE)."
+        },
+        "modal": { "enum": ["must", "should", "may", "definition", "example"] },
+        "binding": { "$ref": "#/$defs/binding" },
+        "draft": {
+          "type": "boolean",
+          "description": "true only for draft guidance; then binding must be 'guidance' (rule DRAFT)."
+        },
+        "binding_route": {
+          "type": "string",
+          "description": "e.g. 'EU: <how>; US: <how>'. Mandatory in substance for ICH sources."
+        },
+        "jurisdiction": {
+          "enum": ["ICH", "EU", "US"],
+          "description": "Non-regional sources (industry best practice, data standards) use ICH = international scope (contracts/decisions.md S0-05)."
+        },
+        "party": {
+          "$ref": "#/$defs/nonEmpty",
+          "description": "Verbatim role term from the source."
+        },
+        "party_norm": {
+          "enum": ["sponsor", "investigator", "irb-iec", "authority", "monitor", "participant", "other"]
+        },
+        "trigger": { "type": "string" },
+        "action": { "$ref": "#/$defs/nonEmpty" },
+        "deadline": {
+          "type": "string",
+          "description": "Time limit as stated, or 'none'."
+        },
+        "recipient": { "type": "string" },
+        "record": { "type": "string" },
+        "step_hint": {
+          "enum": ["define", "identify", "document", "classify", "assess", "mitigate", "notify", "report-csr", "archive", "other"]
+        },
+        "themes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9-]*$"
+          },
+          "description": "Canonical spellings: CtQ, RBQM, safety, data. Further tags allowed; case variants of the canonical ones are flagged (rule THEME, warning)."
+        },
+        "related": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^R[1-9]-\\d{3}$" }
+        },
+        "conflict_note": { "type": "string" },
+        "confidence": { "enum": ["high", "medium", "low"] },
+        "verify": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/nonEmpty" }
+        }
+      }
+    },
+    "binding": {
+      "enum": ["binding-law", "binding-ICH", "guidance", "best-practice", "verify-binding"]
+    }
+  }
+}

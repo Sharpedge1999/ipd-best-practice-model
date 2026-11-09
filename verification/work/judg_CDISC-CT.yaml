@@ -1,0 +1,4 @@
+src: CDISC-CT
+method: local-text
+notes:
+  R5-065: "Codelist index entry on PDF 9 (C225352, DVCAT, 'Category of Protocol Deviation', extensible Yes). 'Its terms could not be read' describes the extractor's access; the local full text lists the DVCAT terms on PDF 488 (e.g. DISCONTINUATION, INCLUSION/EXCLUSION, INFORMED CONSENT/ASSENT, PROHIBITED CONCOMITANT INTERVENTION, SAFETY REPORTING, STUDY INTERVENTION ...)."

@@ -1,0 +1,9 @@
+src: FDA-ESTUDY
+method: local-text
+except:
+  R5-071:
+    v: page-wrong
+    s: low
+    note: "Content confirmed (binding effect lines 41-42; noncommercial IND exemption II.B lines 74-79; RTF/RTR lines 96-99; CDISC CT named II.C.3 line 146; timetable II.E.1 lines 234-241). Page references are one too high: lines 36-42 are on printed 2 (PDF 7), lines 234-248 on printed 7 (PDF 12); II.C spans printed 3-5."
+    corr: "page: printed 7 (II.E.1, lines 234-248); printed 2 (I, lines 36-42); printed 3-5 (II.C)"
+    ev_page: "PDF 7 / printed 2; PDF 12 / printed 7"

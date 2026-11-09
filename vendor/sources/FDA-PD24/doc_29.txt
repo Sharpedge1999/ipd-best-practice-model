@@ -1,0 +1,626 @@
+  Protocol Deviations for
+  Clinical Investigations
+   of Drugs, Biological
+  Products, and Devices
+                   Guidance for Industry
+                               DRAFT GUIDANCE
+         This guidance document is being distributed for comment purposes only.
+
+Comments and suggestions regarding this draft document should be submitted within 60 days of
+publication in the Federal Register of the notice announcing the availability of the draft
+guidance. Submit electronic comments to https://www.regulations.gov. Submit written
+comments to the Dockets Management Staff (HFA-305), Food and Drug Administration, 5630
+Fishers Lane, Rm. 1061, Rockville, MD 20852. All comments should be identified with the
+docket number listed in the notice of availability that publishes in the Federal Register.
+
+For questions regarding this draft document, contact (CDER) Office of Medical Policy, Dat
+Doan, 240-402-8926; (CBER) Office of Communication, Outreach and Development, 800-835-
+4709 or 240-402-8010; or (CDRH) Office of Policy, 301-796-5441.
+
+                       U.S. Department of Health and Human Services
+                               Food and Drug Administration
+                      Center for Drug Evaluation and Research (CDER)
+                    Center for Biologics Evaluation and Research (CBER)
+                     Center for Devices and Radiological Health (CDRH)
+                            Oncology Center of Excellence (OCE)
+
+                                      December 2024
+                                      Clinical/Medical
+
+
+
+35593117dft.docx
+Protocol Deviations for Clinical
+    Investigations of Drugs,
+Biological Products, and Devices
+                         Guidance for Industry
+                                     Additional copies are available from:
+                           Office of Communications, Division of Drug Information
+                                   Center for Drug Evaluation and Research
+                                        Food and Drug Administration
+                            10001 New Hampshire Ave., Hillandale Bldg., 4th Floor
+                                        Silver Spring, MD 20993-0002
+                          Phone: 855-543-3784 or 301-796-3400; Fax: 301-431-6353
+                                        Email: druginfo@fda.hhs.gov
+               https://www.fda.gov/drugs/guidance-compliance-regulatory-information/guidances-drugs
+                                                    and/or
+                             Office of Communication, Outreach and Development
+                                 Center for Biologics Evaluation and Research
+                                         Food and Drug Administration
+                              10903 New Hampshire Ave., Bldg. 71, Room 3128
+                                        Silver Spring, MD 20993-0002
+                                    Phone: 800-835-4709 or 240-402-8010
+                                           Email: ocod@fda.hhs.gov
+https://www.fda.gov/vaccines-blood-biologics/guidance-compliance-regulatory-information-biologics/biologics-guidances
+                                                   and/or
+                                              Office of Policy
+                                Center for Devices and Radiological Health
+                                      Food and Drug Administration
+                             10903 New Hampshire Ave., Bldg. 66, Room 5431
+                                      Silver Spring, MD 20993-0002
+                                   Email: CDRH-Guidance@fda.hhs.gov
+https://www.fda.gov/medical-devices/device-advice-comprehensive-regulatory-assistance/guidance-documents-
+                             medical-devices-and-radiation-emitting-products
+
+
+
+                        U.S. Department of Health and Human Services
+                                Food and Drug Administration
+                       Center for Drug Evaluation and Research (CDER)
+                     Center for Biologics Evaluation and Research (CBER)
+                      Center for Devices and Radiological Health (CDRH)
+                             Oncology Center of Excellence (OCE)
+
+                                               December 2024
+                                               Clinical/Medical
+                                            Contains Nonbinding Recommendations
+                                                       Draft — Not for Implementation
+                                                       TABLE OF CONTENTS
+
+
+
+I.          INTRODUCTION............................................................................................................. 1
+II.         BACKGROUND ............................................................................................................... 2
+III.        DISCUSSION .................................................................................................................... 3
+     A.     Protocol Deviations ........................................................................................................................ 3
+       1. Important Protocol Deviations ........................................................................................................ 4
+       2. All Other Protocol Deviations ......................................................................................................... 5
+     B. Roles and Responsibilities in Monitoring, Mitigating, and Reporting Protocol Deviations ... 5
+       1. Role of the Investigator in Monitoring, Mitigating, and Reporting Protocol Deviations ................ 5
+       2. Role of the Sponsor in Evaluating, Mitigating, and Reporting Protocol Deviations....................... 6
+       3. Role of the IRB in Evaluating Protocol Deviations ......................................................................... 9
+     C. Protocol Amendments and Changes to an Investigational Plan .............................................. 10
+                                          Contains Nonbinding Recommendations
+                                                   Draft — Not for Implementation
+
+ 1       Protocol Deviations for Clinical Investigations of Drugs, Biological
+ 2                             Products, and Devices
+ 3                            Guidance for Industry 1
+ 4
+ 5
+ 6   This draft guidance, when finalized, will represent the current thinking of the Food and Drug
+ 7   Administration (FDA or Agency) on this topic. It does not establish any rights for any person and is not
+ 8   binding on FDA or the public. You can use an alternative approach if it satisfies the requirements of the
+ 9   applicable statutes and regulations. To discuss an alternative approach, contact the FDA staff responsible
+10   for this guidance as listed on the title page.
+11
+12
+13   I.         INTRODUCTION
+14
+15   This guidance provides recommendations to assist sponsors, clinical investigators, and
+16   institutional review boards (IRBs) in defining, identifying, and reporting protocol 2 deviations in
+17   clinical investigations. FDA regulations do not include a definition of the term protocol
+18   deviation or provide a system for classifying the various types of deviations that may occur
+19   during the conduct of a clinical investigation. A system that applies consistent classification,
+20   reporting, and documentation standards is important to assure the most interpretable and useful
+21   information emerges from the reporting of protocol deviations.
+22
+23   To address these considerations, this guidance includes the following:
+24
+25          •   Definitions for protocol deviations and important protocol deviations
+26
+27          •   Recommendations on the types of protocol deviations that sponsors should report to FDA
+28              in clinical study 3 reports for drugs 4 and devices
+29
+30          •   Recommendations on the types of protocol deviations that investigators should report to
+31              sponsors and to IRBs
+32
+33          •   Recommendations for IRBs in their evaluation of protocol deviations
+34
+
+
+     1
+      This guidance has been prepared by the Office of Medical Policy in the Center for Drug Evaluation and Research
+     (CDER) in cooperation with the Center for Biologics Evaluation and Research (CBER), the Center for Devices and
+     Radiological Health (CDRH), and the Oncology Center of Excellence at the Food and Drug Administration.
+     2
+      In this guidance, the term protocol encompasses both written protocols and their related plans and procedures (e.g.,
+     monitoring plan, statistical analysis plan).
+     3
+         In this guidance, the terms clinical investigation, trial, and study are interchangeable.
+     4
+      In this guidance, the terms drugs or drug product include human drugs and biological products unless otherwise
+     specified.
+
+
+                                                                   1
+                                     Contains Nonbinding Recommendations
+                                             Draft — Not for Implementation
+35   In general, FDA’s guidance documents do not establish legally enforceable responsibilities.
+36   Instead, guidances describe the Agency’s current thinking on a topic and should be viewed only
+37   as recommendations, unless specific regulatory or statutory requirements are cited. The use of
+38   the word should in Agency guidances means that something is suggested or recommended, but
+39   not required.
+40
+41
+42   II.     BACKGROUND
+43
+44   Protocol deviations are generally unintentional departures from the IRB-approved protocol and
+45   are commonly not discovered until after they occur (e.g., an investigator’s failure to perform a
+46   protocol-required test is discovered by the study monitor during a routine monitoring visit).
+47   Protocol deviations may also include an intentional departure from the IRB-approved protocol
+48   for a single participant (e.g., investigator seeks and receives sponsor and IRB approval to enroll a
+49   participant above the maximum age criteria); such intentional departures should be rare because
+50   the protocol should include appropriate flexibility regarding trial conduct (e.g., eligibility
+51   criteria, reasonable visit windows). In the conduct of a clinical investigation, however, some
+52   deviations from the specifics outlined in the protocol may occur. In 2013, FDA issued the
+53   International Council for Harmonisation (ICH) guidance for industry E3 Structure and Content
+54   of Clinical Study Reports: Questions and Answers (R1), which includes clarifications for
+55   implementing the recommendations in the ICH guidance for industry E3 Structure and Content
+56   of Clinical Study Reports (July 1996) regarding the structure and content of a clinical study
+57   report. To help clarify recommendations regarding the reporting of protocol deviations as
+58   recommended in ICH E3, ICH E3(R1) defines a protocol deviation as “any change, divergence,
+59   or departure from the study design or procedures defined in the protocol” and defines important
+60   protocol deviations as “a subset of protocol deviations that might significantly affect the
+61   completeness, accuracy, and/or reliability of the study data or that might significantly affect a
+62   subject’s rights, safety, or well-being.” 5 In this guidance, FDA is adopting the ICH E3(R1)
+63   definitions of protocol deviation and important protocol deviation.
+64
+65   Since publication of ICH E3(R1), FDA has received feedback from interested parties requesting
+66   additional guidance on reporting protocol deviations. Therefore, FDA is issuing this guidance to
+67   help clarify sponsor and investigator responsibilities for identifying, mitigating, and reporting
+68   protocol deviations and to provide recommendations to IRBs for evaluating protocol deviations.
+69
+70   Clinical investigation protocols document the study design, objectives, population, planned
+71   procedures, investigational product management, method(s) of data capture, monitoring and
+72   oversight plans, and statistical analysis plans either directly or by reference to associated
+73   investigational plans. Protocols are a critical part of a clinical investigation, and it is essential
+74   that a complete protocol is available before study initiation.
+75
+
+
+
+     5
+       See Q7 in the ICH guidance for industry E3 Structure and Content of Clinical Study Reports: Questions and
+     Answers (R1) (January 2013). We update guidances periodically. For the most recent version of a guidance, check
+     the FDA guidance web page at https://www.fda.gov/regulatory-information/search-fda-guidance-documents.
+
+
+                                                            2
+                                      Contains Nonbinding Recommendations
+                                              Draft — Not for Implementation
+ 76   Clinical studies are conducted in accordance with the protocol, good clinical practice (GCP)
+ 77   guidelines, 6 and regulatory requirements governing the design, conduct, performance,
+ 78   monitoring, auditing, recording, analysis, and reporting of clinical studies. 7 Although protocols
+ 79   may directly reference GCP guidelines or requirements, FDA does not consider all potential
+ 80   GCP compliance issues to be protocol deviations. For example, if a monitor discovers that the
+ 81   site delegation log is missing a signature of one of the site study staff, this missing signature
+ 82   should be addressed, but it is not considered a protocol deviation because the protocol likely does
+ 83   not specify this level of detail at the site level. Classifying potential GCP compliance issues as
+ 84   protocol deviations can inflate the number of events submitted to sponsors, FDA, and IRBs.
+ 85   FDA recommends that potential GCP compliance issues that are not deviations from the protocol
+ 86   be managed outside the protocol deviation process outlined in this guidance.
+ 87
+ 88
+ 89   III.    DISCUSSION
+ 90
+ 91           A.       Protocol Deviations
+ 92
+ 93   Protocol deviations can be identified in many ways (e.g., by site staff, by study staff, through site
+ 94   monitoring, through centralized monitoring, through audits of study records and procedures,
+ 95   through regulatory inspections). Some deviations have limited likelihood of meaningfully
+ 96   altering study data quality or patient safety, whereas others could increase the risks to trial
+ 97   participants and/or adversely impact data quality. Additionally, deviations may occur at the
+ 98   participant level (e.g., missed scheduled visit, inclusion of a participant not meeting eligibility
+ 99   criteria, failure to conduct a protocol-specified procedure during a visit), at the site level (e.g.,
+100   storage of investigational products outside of protocol-required temperature range), or at the
+101   study level (e.g., premature unblinding of treatment assignments).
+102
+103   Proper identification and documentation of protocol deviations are essential for FDA’s review of
+104   clinical investigations that support the safety and effectiveness of investigational products. 8
+105   FDA staff may consider the impact of both the number and the types of protocol deviations in
+106   considering the overall study data quality and the interpretability of trial results, when assessing
+107   the safety and efficacy of medical products, and in making benefit-risk determinations during
+108   review of medical product premarket submissions. Deviations such as incorrectly enrolled,
+109   monitored, or assessed study participants and/or improperly obtained, missing, or inaccurately
+110   recorded data may lead to the conclusion that the study is not adequate and well-controlled, and
+111   the data is therefore not verifiable. Additional examples of circumstances of concern for FDA
+112   include frequent protocol deviations for safety reporting, missing collection of protocol-specified
+
+
+      6
+       See the ICH guidance for industry E6(R2) Good Clinical Practice: Integrated Addendum to ICH E6(R1) (March
+      2018).
+      7
+       For a summary of FDA regulations relating to GCP, see FDA’s web page Regulations: Good Clinical Practice and
+      Clinical Trials, available at https://www.fda.gov/science-research/clinical-trials-and-human-subject-
+      protection/regulations-good-clinical-practice-and-clinical-trials.
+      8
+       Identification and documentation of protocol deviations may vary depending on whether the protocol deviation
+      impacts data quality or patient safety.
+
+
+                                                              3
+                                        Contains Nonbinding Recommendations
+                                                 Draft — Not for Implementation
+113   safety laboratory values, and incorrectly performed efficacy endpoint assessment procedures,
+114   among other things.
+115
+116                1.     Important Protocol Deviations
+117
+118   As noted above, in this guidance an important protocol deviation is a subset of protocol
+119   deviations that might significantly affect the completeness, accuracy, and/or reliability of the
+120   study data or that might significantly affect a subject’s rights, safety, or well-being. While other
+121   terms such as major, critical, and significant have sometimes been used to classify such protocol
+122   deviations, FDA recommends using important to encompass all these terms.
+123
+124   Thoughtful protocol design can help to minimize important protocol deviations. In general,
+125   deviations that are classified as important should be those that could affect critical-to-quality
+126   factors 9 for the trial; protocol deviations related to critical-to-quality elements should be
+127   identified. The quality by design approach to clinical research involves focusing on these
+128   critical-to-quality factors to ensure the protection of the rights, safety, and well-being of study
+129   participants; the generation of reliable and meaningful results; and the management of risks to
+130   those factors using a risk-proportionate approach. 10 Examples of critical-to-quality factors are
+131   procedures and processes that affect the protection of trial participants and/or the efficacy or
+132   safety analyses (e.g., accuracy in certain eligibility criteria, accuracy in the assessment of
+133   randomization integrity, accurate collection of specific endpoint procedures). These quality
+134   factors are critical to the reliability and interpretability of the study data.
+135
+136   It may be helpful for a protocol to define important protocol deviations and provide examples of
+137   what constitutes such for the particular study. The following is a non-exhaustive list of protocol
+138   deviations considered to be important by FDA due to the impact on the protection of trial
+139   participants and the assessment of safety:
+140
+141          •     Failure to conduct study procedures designed to assess participant safety or failure to
+142                adequately monitor participants; for example, (1) failure to collect important laboratory
+143                assessments for monitoring safety issues or (2) failure to administer the study product
+144                according to specifications in the protocol
+145
+146          •     Administration of concomitant treatment prohibited by the study protocol that may
+147                increase risks to participants (e.g., drug-drug interactions) and/or impact interpretation of
+148                a device’s safety and efficacy
+149
+
+
+
+
+      9
+        See the ICH guidance for industry E8(R1) General Considerations for Clinical Studies (April 2022). Critical-to-
+      quality factors are attributes of a study whose integrity is fundamental to the protection of study participants, the
+      reliability and interpretability of the study results, and the decisions made based on the study results.
+      10
+           Ibid.
+
+
+                                                                 4
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+
+150         •   Failure to obtain informed consent or meet other applicable requirements under FDA
+151             regulations for the protection of human subjects 11 under 21 CFR part 50
+152
+153         •   Failure to protect a participant’s identifiable private protected health information
+154
+155         •   Failure to withdraw investigational product administration from trial participants who
+156             meet withdrawal criteria
+157
+158         •   Administration of the wrong treatment or incorrect dose to trial participants or
+159             implantation of an incorrect device
+160
+161         •   Failure to adhere to the protocol-specified randomization scheme
+162
+163   The following is a non-exhaustive list of protocol deviations considered to be important by FDA
+164   that may reduce the reliability of conclusions on effectiveness:
+165
+166         •   Enrollment of a trial participant in violation of key eligibility criteria designed to ensure a
+167             specific participant population 12
+168
+169         •   Failure to collect data to evaluate important study endpoints (e.g., primary or secondary
+170             endpoints)
+171
+172         •   Premature unblinding of a trial participant’s treatment allocation for reasons other than
+173             those specified in the study protocol
+174
+175             2.      All Other Protocol Deviations
+176
+177   All other protocol deviations that do not meet the definition of an important protocol deviation
+178   may encompass the commonly used terms minor, noncritical, and non-significant deviations.
+179   Examples of all other protocol deviations may include small deviations from protocol-specified
+180   visit windows; a signed consent with a page missing a participant’s initial; or failure to perform a
+181   study procedure not relevant for safety monitoring or not related to an important study efficacy
+182   endpoint (e.g., primary or secondary endpoints).
+183
+184             B.      Roles and Responsibilities in Monitoring, Mitigating, and Reporting Protocol
+185                     Deviations
+186
+187             1.      Role of the Investigator in Monitoring, Mitigating, and Reporting Protocol
+188                     Deviations
+189
+
+
+      11
+        FDA uses the term subject here to be consistent with the language used in the Agency’s human subjects protection
+      regulations. Throughout this document, FDA will use the terms subject and participant interchangeably, using
+      subject only when referencing these regulations.
+      12
+           See ICH E3(R1).
+
+
+                                                              5
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+190   Investigators are responsible for protecting the rights, safety, and welfare of participants under
+191   their care during a clinical investigation (21 CFR 312.60 and 812.100). Failing to comply with
+192   aspects of the sponsor- and IRB-approved protocol that are designed to ensure that participants
+193   are not exposed to unreasonable risks may be considered a failure to protect the rights, safety,
+194   and welfare of participants. 13 When reporting protocol deviations to the sponsor, investigators
+195   should identify important deviations.
+196
+197   For drug investigations, investigators should report to the sponsor all protocol deviations of
+198   which they are aware, using reporting procedures that highlight important protocol deviations.
+199   In the rare instance when an investigator contemplates an intentional departure from the IRB-
+200   approved protocol intended for a single participant, the investigator should get prior sponsor
+201   approval and must get prior IRB approval (21 CFR 312.66) unless there is an urgent need to
+202   eliminate apparent immediate hazards to human subjects; however, such protocol deviations
+203   should be extremely rare because sponsors should incorporate the appropriate degrees of
+204   flexibility within the protocol (see section III.B.2). 14 The investigator must promptly report to
+205   the IRB all changes in the research activity and all unanticipated problems involving risk to
+206   human subjects or others and not make any changes in the research without IRB approval, except
+207   where necessary to eliminate apparent immediate hazards to participants (21 CFR 312.66).
+208
+209   Similarly, for device investigations, investigators must keep records of each protocol deviation
+210   (21 CFR 812.140(a)(4)) and must notify the sponsor and the IRB of any deviation from the
+211   investigational plan to protect the life or physical well-being of a subject in an emergency as
+212   soon as possible but no later than 5 working days after the emergency occurred (21 CFR
+213   812.150(a)(4)). Except in such an emergency, investigators must get prior sponsor approval for
+214   changes in or deviations from a plan, and if these changes or deviations may affect the scientific
+215   soundness of the plan or the rights, safety, or welfare of human participants, prior FDA and IRB
+216   approval is also required (21 CFR 812.150(a)(4)).
+217
+218           2.       Role of the Sponsor in Evaluating, Mitigating, and Reporting Protocol Deviations
+219
+220   Sponsors are responsible for monitoring clinical investigations and ensuring the investigations
+221   are conducted in accordance with the investigational plan and protocol (21 CFR 312.50, 812.40,
+222   and 812.46). 15 Monitoring for protocol deviations during study conduct can help sponsors
+223   identify site or study quality issues that can be addressed and improved; assessment of protocol
+224   deviations after study completion can help in determining whether the study data are of sufficient
+225   quality to be reliable and interpretable. Sponsors should also train investigators on the protocol
+226   to facilitate their adherence to the protocol as well as provide training on identifying important
+227   protocol deviations. Sponsors should focus planned oversight on critical trial activities to
+
+      13
+        See the guidance for industry Investigator Responsibilities — Protecting the Rights, Safety, and Welfare of Study
+      Subjects (October 2009).
+      14
+         Under applicable Federal regulations, investigators must engage with the Drug Enforcement Administration when
+      amending protocols for research involving Schedule I substances under the Controlled Substances Act by requesting
+      a modification to a site-specific investigator registration (see 21 CFR 1301.18).
+      15
+        See the information sheet guidance for IRBs and clinical investigators Sponsor - Investigator - IRB
+      Interrelationship (January 1998).
+
+
+                                                               6
+                                         Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+228   improve detection of important protocol deviations. Whenever possible, identified important
+229   protocol deviations should be promptly remedied or addressed during the conduct of the clinical
+230   investigation to minimize risks to participants and to preserve the quality of the clinical
+231   investigation.
+232
+233   Sponsors should receive information on all protocol deviations, most likely from site and central
+234   monitoring efforts. The protocol should pre-specify which types of protocol deviations will be
+235   considered important, although with accumulating data and review, the list of important protocol
+236   deviations can be updated over time. Sponsors should inform investigators of the time frame and
+237   the manner in which they expect to receive information about protocol deviations (e.g., important
+238   protocol deviations should be reported to sponsor expeditiously within x days of occurrence; all
+239   other deviations reported when the site monitor visits the trial site).
+240
+241   Sponsors should include a discussion of important protocol deviations in the body of the clinical
+242   study reports submitted as part of a new drug application (NDA) or a biologics license
+243   application (BLA). 16 In the Patient Data Listing section of the appendix to the clinical study
+244   report, sponsors should provide a listing of all trial participants (by unique subject identifier)
+245   with important protocol deviations organized by clinical trial site (if the study is a multicenter
+246   study). 17 Sponsors should also report all protocol deviations in the Study Data Tabulation
+247   Model 18 Protocol Deviation (DV) domain, which will assist FDA in confirming whether protocol
+248   deviations had a significant impact on data quality. Sponsors should include a variable in the
+249   DV domain that provides the sponsor’s determination of whether the protocol deviation was
+250   important. For device studies, sponsors should include a description of any deviations from the
+251   investigational plan by investigators in their premarket approval application. 19
+252
+253   In addition to including protocol deviation information in their clinical study reports (see section
+254   III.B.1), during the conduct of the clinical investigation, sponsors must report serious and
+255   unexpected suspected adverse reactions for drug products under 21 CFR 312.32; serious adverse
+256   events under 21 CFR 320.31(d)(3) for IND-exempt bioavailability/bioequivalence studies; and
+257   unanticipated adverse device effects under 21 CFR 812.150 (b)(1). Sponsors should note in such
+258   mandatory reports when protocol deviations contributed to the occurrence of these events (e.g., a
+259   safety laboratory test to monitor for a potential drug safety event was not collected, and the
+260   safety event subsequently occurred and was serious).
+261
+
+
+      16
+         For applications submitted to the Center for Drug Evaluation and Research, all protocol deviations should also be
+      provided as described in the most current version of the Bioresearch Monitoring Technical Conformance Guide.
+      See the Bioresearch Monitoring Technical Conformance Guide, Version 3.1, September 2024, available at
+      https://www.fda.gov/media/85061/download.
+      17
+           See the ICH guidance for industry E3 Structure and Content of Clinical Study Reports (July 1996).
+      18
+        See Study Data Technical Conformance Guide - Technical Specifications Document, October 2024, available at
+      https://www.fda.gov/regulatory-information/search-fda-guidance-documents/study-data-technical-conformance-
+      guide-technical-specifications-document.
+      19
+        See FDA’s web page PMA Clinical Studies, available at https://www.fda.gov/medical-devices/premarket-
+      approval-pma/pma-clinical-studies.
+
+
+                                                                 7
+                                       Contains Nonbinding Recommendations
+                                                Draft — Not for Implementation
+262   For protocol deviations not classified as important, sponsors should document and evaluate the
+263   deviations to determine if the types and numbers of these protocol deviations warrant
+264   reclassification; if the sponsor determines that reclassification is warranted, they should then
+265   notify the investigator of the reclassification. Sponsors should carefully consider investigators’
+266   protocol deviation requests to determine whether a protocol amendment is needed to promote
+267   consistent trial conduct by all investigators. Sponsors should incorporate appropriate degrees of
+268   flexibility in the protocol so that intentional deviations will not be necessary. Irrespective of
+269   sponsor approval of an intentional protocol deviation, investigators must get prior IRB approval
+270   (21 CFR 312.66) unless there is an urgent need to eliminate apparent immediate hazards to
+271   human subjects.
+272
+273   Sponsors may prevent the occurrence or mitigate the impact of important protocol deviations by
+274   using quality by design principles to develop study protocols. 20 Developing protocols that are
+275   less complex and provide for greater flexibility in implementation, if appropriate, may decrease
+276   the occurrence of protocol deviations. Sponsors can minimize the occurrence of protocol
+277   deviations by identifying those aspects of the study that are critical to quality and, when possible,
+278   mitigating risks such as by:
+279
+280         •   Establishing flexible enrollment criteria when appropriate to give investigators more
+281             discretion and removing unnecessary enrollment criteria 21
+282
+283         •   Streamlining the study design
+284
+285         •   Using flexible time frames for collection of essential data where feasible
+286
+287         •   Conducting certain assessments remotely when possible
+288
+289         •   Eliminating nonessential activities
+290
+291         •   Reviewing prohibited medications to avoid excluding medications that may be
+292             appropriate if only taken for a very brief period and where such drug ingestion would not
+293             impact either patient safety or study efficacy assessments
+294
+295   When designing the study, sponsors should seek input from relevant stakeholders, including
+296   potential trial participants and clinical investigators and their staff, to help ensure adherence to
+297   the planned protocol by developing procedures that are feasible and not unnecessarily
+298   burdensome. Before or during protocol development, sponsors should conduct a risk assessment
+299   to identify protocol elements (e.g., visit structure, visit procedures, visit windows, enrollment
+300   criteria) that can be made more flexible (or even eliminated entirely) to avoid the occurrence of
+301   protocol deviations. Sponsors should also identify and document those protocol elements (e.g.,
+302   enrollment criteria, safety monitoring procedures, procedures related to primary or secondary
+303   efficacy endpoints) that are critical to patient safety and data quality.
+
+      20
+           See ICH E8(R1).
+      21
+        For more information on broadening eligibility criteria, see the guidance for industry Enhancing the Diversity of
+      Clinical Trial Populations — Eligibility Criteria, Enrollment Practices, and Trial Designs (November 2020).
+
+
+                                                                8
+                                      Contains Nonbinding Recommendations
+                                               Draft — Not for Implementation
+304
+305   Sponsors should assess the risks that such critical protocol elements may not be properly
+306   conducted (e.g., complicated enrollment criteria, complex procedures), work to mitigate risks
+307   associated with these elements, and then develop the study’s specific plans (e.g., medical
+308   monitoring plan, safety monitoring plan, data management plan, risk-based monitoring plan,
+309   independent endpoint adjudication charter) that will be used during the conduct of the trial to
+310   further minimize the occurrence and the potential impact of important protocol deviations on
+311   data quality or participants’ safety. 22,23 Further, investigators, site staff, study monitors, and
+312   sponsor staff should be trained to focus on critical elements to ensure they are implemented as
+313   specified in the protocol and associated study plans and to avoid important protocol deviations
+314   that may impact trial participant safety or data quality. Finally, site monitors and centralized
+315   monitoring activities should focus on critical elements for early identification of important
+316   protocol deviations at specific sites or that suggest a pattern consistent with a systemic study
+317   issue.
+318
+319   If there are recurrent protocol deviations that are similar in nature, the sponsor or clinical
+320   investigator should conduct a root-cause analysis to determine what actions may be appropriate
+321   to address the noted noncompliance and prevent recurrence of the same or similar deviations.
+322   Sponsors should document this determination and whether further action is taken (e.g.,
+323   development of a corrective and preventive action plan, update to the study risk assessment and
+324   mitigation plans, protocol amendment) and consider updating their analysis if the deviations
+325   impact critical-to-quality factors. A high number of protocol deviations at a specific site or sites
+326   may suggest that additional resources (e.g., staffing, training) may be needed. Sponsors should
+327   consider closing a trial site when despite attempts at remediation, the site is unable to maintain
+328   GCP standards, comply with the protocol, or implement measures to identify and/or address
+329   recurring important protocol deviations.
+330
+331             3.      Role of the IRB in Evaluating Protocol Deviations
+332
+333   Under applicable FDA regulations, the IRB is responsible for reviewing and approving the
+334   initiation of and conducting periodic review of clinical investigations involving human subjects
+335   (21 CFR 56.102(g)). The primary purpose of such review is to assure the protection of the rights
+336   and welfare of human subjects (21 CFR 56.102(g)). IRBs must follow written procedures for
+337   ensuring prompt reporting to the IRB of changes in research activity and for ensuring that
+338   changes in approved research may not be initiated without IRB review and approval, except
+339   where necessary to eliminate apparent immediate hazards to human subjects (21 CFR
+340   56.108(a)(3) and (4)).
+341
+342   For drugs, the IRB must approve all changes in the research, except where necessary to eliminate
+343   apparent immediate hazards to participants (21 CFR 312.66). The IRB is also responsible for
+344   approving all changes in the protocol (21 CFR 312.30(b)(2)(i)(b)). A protocol change intended
+
+      22
+         For more information on the use of risk-based monitoring techniques, see the guidance for industry Oversight of
+      Clinical Investigations — A Risk-Based Approach to Monitoring (August 2013); see also the guidance for industry A
+      Risk-Based Approach to Monitoring of Clinical Investigations: Questions and Answers (April 2023).
+      23
+           See ICH E6(R2).
+
+
+                                                              9
+                                        Contains Nonbinding Recommendations
+                                                  Draft — Not for Implementation
+345   to eliminate an apparent immediate hazard to subjects may be implemented immediately
+346   provided FDA is subsequently notified by protocol amendment and the reviewing IRB is notified
+347   in accordance with 21 CFR 56.104(c). 24 For device studies, if the changes or deviations may
+348   affect the scientific soundness of the plan or the rights, safety, or welfare of human subjects, the
+349   investigator is required to get prior IRB and FDA approval (21 CFR 812.150(a)(4)).
+350
+351   Where possible, FDA recommends that protocol deviations that are classified as important be
+352   submitted by the investigator to the IRB when they are identified, and in accordance with the
+353   IRB’s written procedures. The IRB should review important protocol deviations submitted by
+354   investigators as soon as possible to determine any impact on participant safety or study conduct.
+355   All other protocol deviations that are not classified as important and do not present an apparent
+356   immediate hazard to participants do not need to be immediately reported to the IRB.
+357
+358              C.       Protocol Amendments and Changes to an Investigational Plan
+359
+360   Changes in a protocol are typically not implemented before review and approval by the IRB and,
+361   in some cases, by FDA. Any modifications to protocol-specified procedures that occur without
+362   prior IRB approval and submission to FDA of the protocol amendment implementing the
+363   modification are considered protocol deviations. Sponsors and clinical investigators are
+364   encouraged to engage with IRBs as early as possible when urgent or emergent changes to the
+365   protocol or informed consent are anticipated. However, when changes to the protocol or
+366   investigational plan are required to minimize or eliminate immediate hazards (e.g., rapidly
+367   managing an evolving situation) or to protect the life and well-being of research participants,
+368   they may be implemented without prior IRB approval or before filing an amendment to the IND
+369   under 21 CFR 312.30(b)(2)(ii). A change to the protocol or investigational plan that is required
+370   to minimize or eliminate immediate hazards is still considered a protocol deviation if it occurs
+371   before IRB approval and should be reported as such (for additional information, see section
+372   III.B). For devices, certain protocol changes or modifications to the investigational plan can be
+373   made without prior FDA approval. 25 For example, a change or modification to the clinical
+374   protocol may be reported in a 5-day notice if the changes do not affect (1) the validity of the data
+375   or information resulting from the completion of the approved protocol or the relationship of
+376   likely patient risk to benefit relied upon to approve the protocol; (2) the scientific soundness of
+377   the investigational plan; or (3) the rights, safety, or welfare of the human subjects involved in the
+378   investigation. The sponsor is responsible for initially determining if the change meets the
+379   statutory criteria. 26
+
+
+
+
+      24
+           21 CFR 312.30(b)(2)(ii).
+      25
+           See 21 CFR 812.35(a)(2) through (4).
+      26
+        See section 520(g)(6)(A)(ii)(I) through (III) of the Federal Food, Drug, and Cosmetic Act (21 U.S.C.
+      360j(g)(6)(A)(ii)(I) through (III)) and 21 CFR 812.35(a)(3).
+
+
+                                                               10
+

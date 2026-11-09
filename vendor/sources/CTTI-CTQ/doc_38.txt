@@ -1,0 +1,1076 @@
+           CTTI QUALITY BY DESIGN PROJECT - CRITICAL TO QUALITY (CTQ) FACTORS PRINCIPLES DOCUMENT
+
+Quality in clinical trials may be defined as the absence of errors that matter. Trial quality ultimately rests on
+having a well-articulated investigational plan (e.g., protocol, analysis and management plans). The trial
+should have clearly defined objectives and associated outcome measures. However, the likelihood of a
+successful, quality trial can be dramatically improved through prospective attention to preventing
+important errors that could undermine the ability to obtain meaningful information from the trial.
+This document is intended to support proactive, cross-functional discussions and decision making at the
+time of trial development about 1) what aspects of a trial are critical to generating reliable data and
+providing appropriate protection of research participants (“critical to quality” [CTQ] factors) and 2) what
+strategies and actions will effectively and efficiently support quality in these critical areas. The document
+generally assumes that a clinical study will address a relevant scientific question for which there is a
+legitimate research need and is not intended as a primer on how to design a clinical study.
+The Quality by Design Project working group regards the CTQ factors described in this document as
+generally relevant to the integrity and reliability of conclusions based on study data and to the safety of
+study participants. While it is recognized that all of the CTQ factors are important, different factors will
+stand out as critical for different types of trials. That is, trial design and objectives will strongly influence
+their significance. For example, a randomized controlled trial has inherent strengths that may reduce the
+need for data quality controls that would be relevant for a different design (e.g., single-arm study).
+Similarly, the data quality controls employed for a trial evaluating whether a treatment is superior to an
+active control may differ from those required for a trial designed to establish that the treatment is non-
+inferior. Therefore, some sections may be more or less relevant depending on trial type, needs of the
+group, and other variables.
+The working group has provided questions to consider for each CTQ factor to support evaluation of the
+factor’s relative importance for a particular trial as well as to inform subsequent evaluation of what events
+may occur that would be likely to significantly impede the conduct of the study, place trial participants at
+unnecessary risk, or impede usability of the resulting data (in other words, to become “errors that matter”).
+These discussions can then be used to develop formal plans to avoid these events (e.g., through tailoring
+study design or implementation) or mitigate their consequences.
+Importantly, this document is not intended to serve as a checklist applicable for every trial, nor be all-
+inclusive. During protocol development, the study team should carefully evaluate whether there are
+additional CTQ factors that arise from a specific trial’s scientific and operational design or more generally
+from the development program. Historical data from previous trials with the same investigational product
+or with a similar design may be useful in identifying additional factors underpinning effective and efficient
+trial completion. Users should freely adapt the document to best meet the needs of the given clinical
+situation.
+Engaging all stakeholders with study development is an important feature of quality by design. The process
+of building quality into the study plan may be informed not only by the sponsor organization but also by
+those directly involved in completion of the study, such as clinical investigators, study coordinators, site
+staff, and patients. In particular, engagement of patient advocacy organizations (PAO)1 and clinical
+investigators may identify barriers to accrual and help ensure that study outcomes are meaningful. In the
+remainder of this document, we refer to the patient and PAO stakeholders as PPAO.
+
+1
+ The CTTI Patient Groups in Clinical Trials project describes best practices of working with advocacy organizations and can be a starting point to
+helping study teams identify and develop these partnerships. Care must be exercised to ensure that the PAO voice reflects a collective patient
+perspective as opposed to an individual patient’s experience.
+
+1 of 24
+                                                                                            INNOVATION THROUGH COLLABORATION
+                                                TABLE OF CONTENTS
+PROTOCOL DESIGN                                                                                   3
+  Eligibility Criteria                                                                            3
+  Randomization                                                                                   4
+  Masking                                                                                         5
+  Types of Controls                                                                               6
+  Data Quantity                                                                                   7
+  Endpoints                                                                                       8
+  Procedures Supporting Study Endpoints and Data Integrity                                        9
+  Investigational Product (IP) Handling and Administration                                       10
+FEASIBILITY                                                                                      11
+  Study and Site Feasibility                                                                     11
+  Accrual                                                                                        12
+PATIENT SAFETY                                                                                   13
+  Informed Consent                                                                               13
+  Withdrawal Criteria and Trial Participant Retention                                            14
+  Signal Detection and Safety Reporting                                                          15
+  Data Monitoring Committee (DMC)/Stopping Rules (if applicable)                                 16
+STUDY CONDUCT                                                                                    17
+  Training                                                                                       17
+  Data Recording and Reporting                                                                   18
+  Data Monitoring and Management                                                                 19
+  Statistical Analysis                                                                           20
+STUDY REPORTING                                                                                  21
+  Dissemination of Study Results                                                                 21
+THIRD-PARTY ENGAGEMENT                                                                           22
+  Delegation of Sponsor Responsibilities                                                         22
+  Collaborations                                                                                 23
+Glossary & Acronyms                                                                              24
+
+
+
+
+2 of 24
+                                                                    INNOVATION THROUGH COLLABORATION
+    -~
+    t//jlli CTTI
+
+        Factor                    Description/Rationale
+                                                                               PROTOCOL DESIGN
+                                                                      Potential Considerations in Evaluating Relative
+                                                                                                                                                        VERSION 19MAY2015
+
+
+                                                                                                                               Examples of Issues to Consider in Evaluating Risks to
+                                                                                  Importance of CTQ Factor                                             CTQ Factor
+                          Carefully designed eligibility criteria    1. Describe the specific population needed for           1. Are all criteria relevant to ensuring the specific trial
+Eligibility Criteria      ensure that the intended study                 the trial to evaluate the intended question. If         participant population needed for the trial?
+                          population is enrolled and that trial          this specific population is not enrolled, will       2. Are additional steps necessary to balance
+                          participants for whom participation            trial results be brought into question?                 population or ensure subsets (e.g., minorities) are
+                          may be harmful are not included.           2. Are there trial participant populations that             sufficiently enrolled?
+                          Ambiguity may result in inconsistent           must be excluded from enrollment due to              3. Are there clear and measureable criteria to define
+                          application across sites; overly               specific safety concerns with administration            the population (e.g., “atrial fibrillation” or
+                          restrictive criteria may limit the real-       of the product to that population?                      “diabetes”)?
+                          world applicability of results or impede   3. Evaluate the impact of “getting it wrong”             4. Is there a particular criterion critical to trial
+                          trial participant recruitment.                 with regard to eligibility. If a trial participant      participant evaluability (e.g., for an enrichment
+                                                                         is found to not meet a criterion, what is the           design) or to trial participant safety (e.g.,
+                          Each criterion should be evaluated in          impact on the trial?                                    contraindicated medications or procedures)? Who
+                          terms of its utility in 1) defining the    4. Is the trial intended to evaluate effectiveness          generates/reports data on whether a trial
+                          population, 2) excluding trial                 and safety of the investigational product in a          participant meets this criterion?
+                          participants for whom there are safety         real-world population that would be likely to        5. Does the protocol elaborate on the desired trial
+                          concerns, 3) avoidance of confounding          receive the product after approval?                     participant population and/or the potential risks of
+                          of efficacy measures, and 4) identifying   5. What are the commonly accepted criteria for              participation, and are these statements reflected in
+                          contraindicated medications or                 diagnosing and evaluating patients:                     the eligibility criteria?
+                          procedures. If the criterion does not           a. With the disease under study?                    6. What are the considerations with regard to timing
+                          have utility by these measures, the             b. With comorbid conditions that are                   of eligibility review vs. enrollment/randomization/
+                          rationale for retaining it should be                  exclusionary?                                    treatment?
+                          further considered.                        6. Have PPAO and participating investigators             7. Do any eligibility criteria require involvement of
+                                                                         provided imput as to the feasibility of                 third parties external to the clinical site? What
+                                                                         implementing criteria?                                  measures will ensure that information is submitted
+                                                                                                                                 and/or received in a timely manner to permit
+                                                                                                                                 enrollment?
+                                                                                                                              8. Are there device or trial participant characteristics
+                                                                                                                                 that may make a trial participant ineligible that can
+                                                                                                                                 only be ascertained after randomization and/or
+                                                                                                                                 attempted use of the device?
+                                                                                                                              9. Are eligibility criteria acceptable to investigators
+                                                                                                                                 and PPAO?
+
+
+
+
+         3 of 24       REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                                   INNOVATION THROUGH COLLABORATION
+   -~
+   t//jlli CTTI
+
+     Factor                 Description/Rationale
+                                                                     PROTOCOL DESIGN
+                                                             Potential Considerations in Evaluating Relative
+                                                                                                                                       VERSION 19MAY2015
+
+
+                                                                                                                Examples of Issues to Consider in Evaluating Risks to
+                                                                        Importance of CTQ Factor                                      CTQ Factor
+                    Randomization, when appropriately        1. Is the study randomized?                       1. Are there ways in which sites could predict
+Randomization       executed, addresses selection bias and   2. If the study is randomized, consider:              treatment? Can these be addressed proactively?
+                    permits a valid basis for making             a. Who will generate and implement the        2. How will block size be designed to avoid
+                    comparisons between, and drawing                  randomization schema?                        unmasking?
+                    statistical inferences about, study          b. What is the method by which                3. What controls are necessary and feasible to ensure
+                    groups.The integrity of randomization             randomization will occur?                    that randomization occurs as planned (e.g., system
+                    rests on both sponsor and site-level         c. Are any specific approvals needed to           is working correctly and algorithm is truly random)?
+                    processes. For example, the sponsor or            randomize a trial participant?           4. Is there the potential for bias to be introduced
+                    its designee generates and programs          d. Who is permitted to randomize trial            because the trial participant’s condition will be
+                    randomization schemes, and must                   participants?                                known at the time of randomization but prior to
+                    ensure adequate allocation                   e. How and by whom will randomization             allocation/treatment? How might this be
+                    concealment; site staff must                      errors be managed?                           addressed prospectively?
+                    administer the treatment to which a                                                        5. How will the sponsor and sites ensure in an
+                    trial participant was randomized.                                                              ongoing manner that trial participants receive the
+                                                                                                                   appropriate treatment for their randomized arm
+                                                                                                                   while maintaining masking?
+                                                                                                               6. For trial participants who are unmasked to
+                                                                                                                   treatment, how will withdrawal of consent
+                                                                                                                   between randomization, but prior to treatment, be
+                                                                                                                   handled?
+
+
+
+
+       4 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                   INNOVATION THROUGH COLLABORATION
+   -~
+   t//jlli CTTI
+
+     Factor                     Description/Rationale
+                                                                              PROTOCOL DESIGN
+                                                                     Potential Considerations in Evaluating Relative
+                                                                                                                                                   VERSION 19MAY2015
+
+
+                                                                                                                           Examples of Issues to Consider in Evaluating Risks to
+                                                                                 Importance of CTQ Factor                                        CTQ Factor
+                       Masking may minimize biases that             1. What is the impact of unmasking for this           1. In what ways could the mask be broken
+Masking                result from differences in                       study? Does it pose a risk to interpretation          improperly? Are there specific test results (e.g.,
+                       management, treatment, assessment                of study outcomes?                                    laboratory data, adverse events) that could unmask
+                       of trial participants, or interpretation     2. Does the study design:                                 site/sponsor personnel?
+                       of results that arise as a result of trial        a. Require that some site staff members          2. What measures does the investigational plan
+                       participant, investigator, or study staff               be unmasked while others remain                provide to prevent unmasking?
+                       knowledge of treatment assignment.                      masked?                                    3. With partial masking, how will access to treatment
+                       Prespecified controls should be                   b. Require that some sponsor or contract             assignment knowledge be controlled? Could
+                       considered to prevent unblinding and                    or academic research organization              evaluators be kept masked, even if treating
+                       to deal with potential unblinding                       (CRO/ARO) staff members be                     physicians are not? Can the database be structured
+                       events should they occur. Designs that                  unmasked while others remain                   better to preserve partial masking?
+                       require some staff (whether at the                      masked?                                    4. Specifically, are there procedures and controls to
+                       sponsor or site level) to be unmasked             c. Require study data to be unmasked for             ensure that masking is maintained when:
+                       while maintaining masking for others                    periodic interim reviews/analyses (e.g.,         a. An unmasked individual maintains the
+                       present opportunities for inadvertent                   for a data monitoring committee [DMC]                 investigational product supply?
+                       unmasking and may require additional                    or adaptive design)?                             b. An unmasked individual must make dosage
+                       controls.                                        If so, the process(es) and responsibilities for              adjustments?
+                                                                        maintaining masking in these scenarios                  c. There is a double-dummy design?
+                                                                        should be described.                              5. Are these measures clearly and consistently
+                                                                                                                              described in the protocol and ancillary instructions
+                                                                                                                              provided to clinical sites as well as sponsor and
+                                                                                                                              CRO/ARO staff?
+                                                                                                                          6. What actions are to be taken if unmasking is
+                                                                                                                              discovered, and by whom?
+
+
+
+
+          5 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                              INNOVATION THROUGH COLLABORATION
+   -~
+    t//jlli CTTI
+
+      Factor                    Description/Rationale
+                                                                             PROTOCOL DESIGN
+                                                                    Potential Considerations in Evaluating Relative
+                                                                                                                                                   VERSION 19MAY2015
+
+
+                                                                                                                           Examples of Issues to Consider in Evaluating Risks to
+                                                                               Importance of CTQ Factor                                          CTQ Factor
+                       The acceptability of the control (if        1. Consider the type(s) of control(s) to be used       1. Based on the type of control, what opportunities
+Types of Controls      used) in the study may affect the               in the study (e.g., placebo/sham procedure,            for bias might be introduced? If historical controls
+                       willingness of trial participants to            standard of care, historical) and the                  are used, are study designs sufficiently similar so
+                       participate in the study and the                rationale for selection.                               that resulting data may be considered comparable?
+                       interpretation of perceived value and       2. Is there clinical equipoise? Do PPAO and            2. If a placebo control is planned, does the
+                       reliability of the study’s conclusions by       treating physicians agree that there is clinical       investigational plan provide explicit plans for
+                       different stakeholders (e.g., patients,         equipoise?                                             minimizing risk to the study population on the
+                       regulators, payers).                        3. Is a control group feasible, especially from            control arm (e.g., “early escape”)?
+                                                                       the PPAO and treating physician                    3. From where will the control be obtained, and what
+                                                                       perspective?                                           steps can be taken to ensure an adequate and
+                                                                   4. Identify controls that may be preferred by              timely supply?
+                                                                       different stakeholders (regulators, payers,        4. Is the standard of care provided to control groups,
+                                                                       PPAO).                                                 at a minimum, equivalent to well-established and
+                                                                                                                              commonly employed local treatment?
+                                                                                                                          5. Is there also “usual care” in additional to protocol-
+                                                                                                                              defined arms, and is this described clearly in the
+                                                                                                                              protocol/investigational plan?
+                                                                                                                          6. Are there specific treatments that may not be used
+                                                                                                                              per protocol that might otherwise be part of “usual
+                                                                                                                              care”?
+                                                                                                                          7. Does the investigational plan clearly describe plans
+                                                                                                                              for treatment failure? Are crossovers permitted?
+
+
+
+
+        6 of 24     REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                              INNOVATION THROUGH COLLABORATION
+   -~
+   t//jlli CTTI
+
+      Factor                Description/Rationale
+                                                                        PROTOCOL DESIGN
+                                                                Potential Considerations in Evaluating Relative
+                                                                                                                                           VERSION 19MAY2015
+
+
+                                                                                                                   Examples of Issues to Consider in Evaluating Risks to
+                                                                           Importance of CTQ Factor                                      CTQ Factor
+                    There are a variety of viewpoints and      1. What data points are critical to addressing     1. Can each data point be classified as trial
+Data Quantity       interests involved in designing a trial.       the question(s) posed by the trial?                participant classification, endpoint, or safety
+                    The minimum data set that is sufficient    2. How will these critical data points be              related? If not, what is the justification for
+                    to address study endpoints and meets           generated, collected, and reported?                collection?
+                    the needs of various stakeholders          3. What is the distinction between exploratory     2. Are the methods for the data collection and
+                    should be that which is collected (data        endpoints and primary and secondary                reporting clearly described?
+                    parsimony).                                    endpoints?                                     3. Are all data described in the protocol captured in
+                                                               4. Does the need for exploratory data                  the case report form (CRF) or other data collection
+                                                                   endpoints unduly burden data collection?           tool (e.g., electronic health record, electronic data
+                                                               5. Have PPAO and participating investigators           capture [EDC], or electronic patient-reported
+                                                                   provided input as to which data points are         outcomes [ePROs]),  - and vice versa?
+                                                                   the most important to them?                    4. Are there critical data generated or maintained by
+                                                                                                                      third parties (e.g., central laboratories, electronic
+                                                                                                                      health records, ePROs) that must be integrated
+                                                                                                                      into the study database? What opportunities for
+                                                                                                                      error are there?
+                                                                                                                  5. What is the tolerance for error in collection of data
+                                                                                                                      points?
+                                                                                                                  6. For which data points can a greater error rate be
+                                                                                                                      tolerated (e.g., exploratory endpoints) and for
+                                                                                                                      which is there a more limited margin for error?
+                                                                                                                  7. Could any exploratory endpoints be eliminated to
+                                                                                                                      simplify data collection and reporting, and overall
+                                                                                                                      burden on the investigational site?
+                                                                                                                  8. Have site personnel given feedback on CRFs and
+                                                                                                                      proposed timing of assessments?
+
+
+
+
+       7 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                      INNOVATION THROUGH COLLABORATION
+   -~
+   t//jlli CTTI
+
+      Factor                Description/Rationale
+                                                                       PROTOCOL DESIGN
+                                                               Potential Considerations in Evaluating Relative
+                                                                                                                                           VERSION 19MAY2015
+
+
+                                                                                                                   Examples of Issues to Consider in Evaluating Risks to
+                                                                          Importance of CTQ Factor                                        CTQ Factor
+                    Clearly defining study endpoints and      1. Is/are the endpoint(s) commensurate with         1. Does the primary endpoint address the study aims?
+Endpoints           describing how endpoint data are to be        the scientific question/objectives of the           Is it accepted by PPAO, regulators, payers, and
+                    collected and reported will support           study?                                              clinicians?
+                    consistent trial implementation across    2. Will the endpoint have a clinically              2. Are assessments related to the endpoint complex
+                    sites and prevent errors that may             meaningful impact on patient care or                and/or subject to variable interpretation?
+                    interfere with analysis and bring into        provide a unique building block for future      3. If it is a “soft” endpoint, is there the potential for
+                    question study conclusions. In defining       research?                                           bias to be introduced? How and by whom? What
+                    endpoints, prospective attention          3. Are standardized and generally accepted              might minimize this potential for bias?
+                    should be given to the degree of              endpoint definitions and methods to             4. What measures are necessary to ensure
+                    objectivity in assessment of endpoints,       ascertain endpoints available?                      appropriate endpoint ascertainment and reporting,
+                    the potential for simple external         4. If there are multiple primary endpoints,             particularly if an endpoint occurs external to the
+                    verification (e.g., death certificates,       verify and describe how each is necessary to        site?
+                    central and/or bioanalytical laboratory       address/directly link to the scientific         5. If a third-party adjudicator is involved:
+                    data), and potential for unbiased             question posed by the study.                        • In what aspects of the adjudication process
+                    adjudication or review of endpoint        5. Consider the characteristics of the primary                would a failure undermine evaluability?
+                    data.                                         endpoint(s), including                              • By whom and by when will adjudication rules
+                                                                  • How is the endpoint defined?                            and required training be developed and
+                                                                  • Is it assessable?                                       delivered?
+                                                                  • How and by whom will the endpoint(s)              • How will the team ensure that events are
+                                                                       be ascertained (e.g., investigator,                  appropriately sent for adjudication?
+                                                                       centrally, third party uninvolved in the       • Are adjudicators masked to treatment
+                                                                       study)?                                              assignment? If so, by what method?
+                                                                  • If the endpoint is to be adjudicated,         6. For event-driven endpoints, how will the study
+                                                                       what were the criteria to determine that       team monitor the rate of reporting of key study
+                                                                       adjudication was necessary?                    outcomes?
+                                                                  • Is the endpoint objective (e.g.,              7. If the event rate is below a specified threshold, are
+                                                                       pregnancy, death) or subjective (e.g.,         there remedial measures that will be taken to
+                                                                       pain score)?                                   preserve the power or integrity of the study?
+                                                                  • Is the endpoint event-driven?                 8. If the study is not blinded, are there special
+                                                              6. Have patient-reported outcomes (PROs)                considerations for using PROs?
+                                                                  been considered as an endpoint? What are
+                                                                  the risks and benefits of their use?
+
+
+
+
+       8 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                      INNOVATION THROUGH COLLABORATION
+   -~
+   t//jlli CTTI
+
+      Factor                 Description/Rationale
+                                                                         PROTOCOL DESIGN
+                                                                Potential Considerations in Evaluating Relative
+                                                                                                                                              VERSION 19MAY2015
+
+
+                                                                                                                      Examples of Issues to Consider in Evaluating Risks to
+                                                                           Importance of CTQ Factor                                          CTQ Factor
+                     Conduct of key procedures, collection     1. Can the investigational product technically         1. Can study processes and data collection be
+Procedures           of critical data, and effective               do what you are aiming for clinically?                simplified to ensure consistency across sites in
+Supporting Study     monitoring of trial participant safety    2. What procedures are critical to collecting             collection and reporting of critical data?
+Endpoints and Data   depend on consistent conduct of study         reliable data for analysis of study endpoints?     2. What errors in conducting protocol-defined
+Integrity            procedures. Resources should be               Which are non-critical?                               assessments would constitute important protocol
+                     focused on preventing opportunities       3. How necessary is it for these procedures to            deviations (i.e., are “errors that matter” in terms of
+                     for errors in critical study procedures       be conducted absolutely consistently across           study analyses or trial participant safety
+                     supporting collection and reporting of        sites or in a highly specific manner or               monitoring)?
+                     critical data directly related to study       window?                                            3. Are there critical handoffs or steps in data
+                     endpoints and in study procedures         4. What procedures do not significantly impact            collection in which errors cannot be tolerated?
+                     necessary to ensure adequate                  data analysis or trial participant safety (i.e.,      What mechanisms can be implemented to prevent
+                     monitoring of trial participant safety.       where error or inconsistency in conduct can           errors in these steps?
+                                                                   generally be tolerated)?                           4. Do “errors that matter” cluster in any specific area
+                                                                                                                         or procedure, permitting resources to be focused
+                                                                                                                         on their prevention and management? Are these
+                                                                                                                         errors readily detectable, permitting swift action?
+                                                                                                                      5. Do some data (i.e., endpoints or serious adverse
+                                                                                                                         events) need to be recorded more rapidly to
+                                                                                                                         support an adaptive design or for DMC monitoring?
+                                                                                                                      6. Are there redundant process controls that could be
+                                                                                                                         eliminated in processes or steps where errors can
+                                                                                                                         be tolerated?
+                                                                                                                      7. Are time windows for collection of study endpoints
+                                                                                                                         clearly specified? How will observations out of
+                                                                                                                         window be handled? What about multiple
+                                                                                                                         observations in a single window?
+
+
+
+
+       9 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                         INNOVATION THROUGH COLLABORATION
+   -~
+    t//jlli CTTI
+
+      Factor                 Description/Rationale
+                                                                        PROTOCOL DESIGN
+                                                                Potential Considerations in Evaluating Relative
+                                                                                                                                            VERSION 19MAY2015
+
+
+                                                                                                                    Examples of Issues to Consider in Evaluating Risks to
+                                                                            Importance of CTQ Factor                                      CTQ Factor
+                     Appropriate controls must be in place     1. Describe the IP, including any special           1. Given the trial design and stage of product
+Investigational      to ensure equivalent consistency              considerations for its handling and use in          development, what measures are in place or
+Product (IP)         between IPs from manufacturing                this trial.                                         needed to ensure that study trial participants
+Handling and         through administration. In addition,      2. Evaluate any specific safety concerns                received the assigned IP, as well as to ensure that
+Administration       evaluation of both the efficacy and           associated with the use of the product and          only study trial participants received the IP?
+                     safety effects of an intervention             describe how these have been identified and     2. Are there potential risks of IP use error? How will
+                     requires confirmation that the                managed in prior investigational or                 these be identified and reviewed, and appropriate
+                     assigned intervention was received as         marketing experience.                               action taken?
+                     prescribed in the investigational plan.   3. What IP use data are integral to evaluating      3. What aspects of IP use error do not impact study
+                                                                   trial results? Why are these data critical?         analysis and reporting?
+                                                               4. For implantable devices, what information        4. What level of detail is necessary with regard to IP
+                                                                   about the implant procedure is critical to          accountability?
+                                                                   trial analysis, results, and reporting?         5. Do any aspects of IP use potentially pose problems
+                                                               5. For diagnostic trials, how will                      for the sites at which the study may be conducted?
+                                                                   appropriate handling of specimens be            6. Are there specific storage and handling
+                                                                   verified?                                           considerations for the IP (e.g., limited stability,
+                                                               6. If the protocol calls for dosage adjustments         restricted distribution product, battery life)? In
+                                                                   of IP or control product, are the directions        what aspects of storage and handling can errors be
+                                                                   and procedures for making dosage                    tolerated?
+                                                                   adjustment(s) clear and is the responsible      7. What assessments are necessary to support
+                                                                   entity (e.g., interactive voice response            ongoing safety evaluations? Does the
+                                                                   system directed, site staff) clearly defined?       investigational plan contain/clearly describe these?
+                                                                                                                   8. How will device malfunctions be recorded and
+                                                                                                                       reported?
+                                                                                                                   9. How will trial participants for whom initial IP use is
+                                                                                                                       unsuccessful be treated? In the event of multiple
+                                                                                                                       attempts, when is the treatment considered to
+                                                                                                                       begin?
+
+
+
+
+        10 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                       INNOVATION THROUGH COLLABORATION
+                                                                                                                                                 VERSION 19MAY2015
+
+
+                                                                                  FEASIBILITY
+    Factor                   Description/Rationale                 Potential Considerations in Evaluating CTQ Factor       Examples of Issues to Consider in Identifying Risks to
+                                                                                                                                                  CTQ Factor
+                  As the success of a study is largely             1.   Describe the countries and regions in which       1. Is the standard of care in the regions in which a trial
+Study and Site    dependent on the implementation of the                the trial is planned. Consider both the               is planned commensurate with the protocol
+Feasibility       investigational plan by investigator sites, it        countries/regions in which the trial will             requirements?
+                  is important to assess the feasibility of             initially be conducted and those that might be    2. Are there countries or regions in which the planned
+                  successful completion of the study at                 added to bolster enrollment. If the trial could       study visits, procedures, and data collection will not
+                  potential sites. Consideration should be              not be conducted in these regions, would              be feasible? If so, why? Does the regulatory body
+                  given to what kind of site is required based          there be an impact on the trial completion or         have conditions about how many trial participants
+                  on the particular study design. Typical               conclusions?                                          may be enrolled from various regions?
+                  areas considered include access of the site      2.   Discuss the standard of care for the              3. Do any of the regions/countries in which the trial is
+                  to the study target population, whether               therapeutic area/indication in the different          planned pose specific concerns related to:
+                  site staff are qualified to conduct the               countries/regions in which the trial will be           a. Data privacy laws (e.g., data collection or
+                  study, and whether the site has adequate              conducted.                                                  follow-up of drop-outs)?
+                  resources to conduct the study, especially       3.   Are established research networks for the              b. Import/export requirements for
+                  if the experimental arm involves a change             therapeutic area available?                                 investigational products?
+                  in procedure from standard care.                 4.   Evaluate the level of clinical experience with         c. FCPA/UK Bribery Act issues?
+                                                                        the trial interventions that will be needed at    4. If there is not an opportunity to field-test the
+                  Expanding this inquiry beyond traditional
+                                                                        the clinical sites.                                   protocol design with investigators, site staff, and
+                  measures can highlight important issues
+                                                                   5.   Describe the site-level infrastructure,               PPAO, how will the general feasibility assessments
+                  with trial feasibility, such as:
+                                                                        resources, and any specific certification or          be assessed?
+                      • Inconsistency across countries in
+                                                                        training necessary to carry out the planned       5. Do any data from prior performance for the
+                            standard of care vs. protocol-
+                                                                        study visits and procedures and to collect and        proposed sites, countries, or regions suggest the
+                            defined procedures.
+                                                                        report data in a timely manner.                       potential for difficulty in collecting or reporting
+                      • Important differences in study
+                                                                   6.   Will the protocol design be pretested with            critical data?
+                            staff expertise.
+                                                                        investigators, site staff, and/or PPAO during     6. Is selected patient population appropriate for
+                      • Potential critical differences in               development?                                          phase/level of risk in the protocol?
+                            characteristics of the patient         7.   Consider the reimbursement issues that            7. What is the skill level and experience of non-
+                            population.                                 impact conduct of the study at the site:              research staff interacting with the trial participant
+                      • Disparate access to trial                        a. Will unmasking of the control arm                 during study participation? How might that affect
+                            participant data.                                  become an issue to secure                      outcomes?
+                  Identifying such issues early in protocol                    reimbursement for trial participants in    8. What is the site’s level of experience and reliability
+                  development may permit the protocol or                       the control arm?                               at specimen handling and storage?
+                  other aspects of the investigational plan to           b. Will use of the investigational product in    9. Does the research team have institutional support
+                  be modified in order to minimize their                       the post-marketing setting affect              to engage in the research (i.e., are there
+                  impact.                                                      reimbursement?                                 institutional demands on the investigator’s time
+                                                                                                                              that prevents him/her from conducting the study)?
+       11 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                            INNOVATION THROUGH COLLABORATION
+  -~
+  t//jlli CTTI
+
+    Factor                     Description/Rationale
+                                                                                    FEASIBILITY
+                                                                    Potential Considerations in Evaluating CTQ Factor
+                                                                                                                                                   VERSION 19MAY2015
+
+
+                                                                                                                             Examples of Issues to Consider in Identifying Risks to
+                                                                                                                                                   CTQ Factor
+                     A study may be well designed scientifically    1.   Describe the enrollment needed by site and         1. How will each investigator demonstrate the
+Accrual              but still fall short or even fail, if the           overall to complete the study.                         potential to recruit sufficient research participants?
+                     appropriate number of trial participants       2.   Determine if historical data are available         2. Are there any sites, countries, or regions in which
+                     cannot be accrued. Factors considered               regarding enrollment and site performance,             anticipated recruitment is not based on empirical
+                     during feasibility may enhance the                  including:                                             data?
+                     likelihood that the study will accrue                a. Recent data (if available) regarding           3. Given the anticipated patient population, are the
+                     sufficient trial participants to address the               enrollment for similarly designed trials.       planned study visits and procedures feasible or
+                     intended objectives posed by the protocol.           b. Whether the anticipated patient                    likely to pose an impediment that may limit
+                                                                                population will be available in the             recruitment?
+                                                                                regions in which the study is planned.      4. Are there external factors (e.g., competing trials or
+                                                                    3.   Are there competing trials for this patient            seasonal variations in prevalence of disease process
+                                                                         population? What impact might this have on             under study) that might affect accrual rates?
+                                                                         any pre-specified sample sizes for subgroups
+                                                                         of trial participants?
+                                                                    4.   Are existing patient advocacy groups or
+                                                                         support networks available that can be used
+                                                                         to generate interest and support around the
+                                                                         trial? Consider involving these groups from
+                                                                         the time of initial protocol development.
+
+
+
+
+          12 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                              INNOVATION THROUGH COLLABORATION
+   -
+   - -CTTI
+
+      Factor                 Description/Rationale
+                                                                           PATIENT SAFETY
+                                                                 Potential Considerations in Evaluating Relative
+                                                                                                                                            VERSION 19MAY2015
+
+
+
+                                                                                                                     Examples of Issues to Consider in Evaluating Risks to
+                                                                            Importance of CTQ Factor                                        CTQ Factor
+                     The clinical investigator has a            1. What are the key elements of the informed        1. Are key elements of the consent process for the
+Informed Consent     responsibility to ensure that trial            consent process for this study?                     study reflected in the informed consent document?
+                     participants’ participation in research    2. Have various stakeholders, especially PPAO       2. Is the consent form meaningful to the target
+                     is informed and voluntary, and that            and treating physicians, been involved in the       audience?
+                     new information that may affect trial          development of the informed consent                  • Will participants understand the risk?
+                     participants’ willingness to continue in       document?                                            • Will participants understand why following the
+                     the study is communicated in a timely      3. Does the consent document employ plain                    study procedures is important?
+                     manner. Informed consent is an                 language principles, including description of        • Could the form be shortened to enhance trial
+                     ongoing process, and the consent               symptoms rather than disease state (e.g.,                participant understanding while still meeting
+                     document should be the basis for a             fatigue rather than anemia)?                             consent requirements in regions in which the
+                     meaningful exchange between the            4. How does the consent process (vs. the                     study will be conducted?
+                     investigator (or designee) and the trial       document) fit within the study processes?       3. What options does the informed consent
+                     participant.                               5. Describe the study population. Is there the          document provide for trial participants to
+                                                                    potential for:                                      withdraw from the investigational product but
+                                                                     • Vulnerable trial participants?                   complete follow-up visits, withdraw from the study
+                                                                     • Trial participants with impaired                 but permit access to medical records for necessary
+                                                                          cognition or diminished capacity to           follow-up data, or withdraw consent entirely?
+                                                                          consent, either initially or over time?   4. Do the informed consent and the investigational
+                                                                     • Emergency situations in which                    plan clearly distinguish between withdrawal of
+                                                                          obtaining consent prospectively may           consent for the study vs. withdrawal from the
+                                                                          not be feasible?                              investigational product?
+                                                                                                                    5. What is the threshold for amending the consent
+                                                                                                                        and the process for ensuring timely provision of
+                                                                                                                        new information to trial participants? Who will be
+                                                                                                                        responsible for identifying and ensuring
+                                                                                                                        appropriate changes to the informed consent
+                                                                                                                        document?
+                                                                                                                    6. Are there unique features about the study that will
+                                                                                                                        affect the consent process (i.e., emergent
+                                                                                                                        conditions, need to obtain assent from pediatric
+                                                                                                                        trial participants)?
+
+
+
+
+       13 of 24    REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                        INNOVATION THROUGH COLLABORATION
+   -
+   - -CTTI
+
+      Factor                    Description/Rationale
+                                                                            PATIENT SAFETY
+                                                                  Potential Considerations in Evaluating Relative
+                                                                                                                                                VERSION 19MAY2015
+
+
+
+                                                                                                                        Examples of Issues to Consider in Evaluating Risks to
+                                                                              Importance of CTQ Factor                                         CTQ Factor
+                        Clear criteria for stopping study        1. Describe the situations in which trial             1. Do the withdrawal criteria capture all important
+Withdrawal Criteria     treatment and/or withdrawing trial           participants should or may be withdrawn               and likely scenarios in which a trial participant
+and Trial               participants from the study are              from study treatment.                                 should be removed from treatment?
+Participant             necessary to ensure the protection of    2. For participants who stop the assigned             2. Are the withdrawal criteria described consistently
+Retention               trial participants; however,                 treatment, what data are critical for study           throughout the protocol and ancillary documents
+                        consideration should be given to             analysis and reporting?                               that compose the investigational plan?
+                        methods that will preserve trial         3. For this study, what steps are required prior      3. Do these criteria distinguish between withdrawal
+                        participants’ safety and rights, while       to deeming a trial participant “lost to follow-       from study vs. withdrawal from treatment with the
+                        still minimizing loss of critical            up”? Are there critical data (e.g., survival)         investigational product?
+                        outcomes data.                               that might need to be collected for these         4. How will the study team ensure that withdrawal
+                                                                     trial participants (e.g., survival status)?           criteria are applied appropriately and consistently,
+                                                                 4. How will trial participants with permanent             such that trial participants are not withdrawn in
+                                                                     device implants be followed upon                      error or that trial participants for whom continued
+                                                                     withdrawal?                                           participation may be unsafe are withdrawn from
+                                                                 5. In non-randomized trials, how are trial                the investigational product and/or study
+                                                                     participants who withdraw after treatment             procedures?
+                                                                     assignment but prior to enrollment handled        5. What specific activities are planned to ensure data
+                                                                     (i.e., will trial participants be replaced,           are collected as required for trial participants who
+                                                                     counted as treatment failures, etc.)?                 stop the assigned treatment but remain on study?
+                                                                 6. For disease under study, are there                 6. What measures does the study design include to
+                                                                     patients/patient advocacy groups/patient              maximize the number of participants maintained
+                                                                     support groups active that communicate                on the protocol-specified intervention through
+                                                                     within the community the importance of full           collection of outcome data (while respecting trial
+                                                                     and complete participation in trials? Have            participant rights)?
+                                                                     these groups been involved with the               7. Does the investigational plan describe efforts to
+                                                                     development of the retention plan?                    maintain contact with trial participants to prevent
+                                                                                                                           “lost-to-follow-up” where feasible, and who is
+                                                                                                                           responsible for these efforts?
+                                                                                                                       8. Do trial participants have personal issues that can
+                                                                                                                           be mitigated to aid retention (i.e., transport,
+                                                                                                                           babysitting)?
+
+
+
+
+        14 of 24      REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                            INNOVATION THROUGH COLLABORATION
+   -- -CTTI
+
+      Factor                Description/Rationale
+                                                                        PATIENT SAFETY
+                                                              Potential Considerations in Evaluating Relative
+                                                                                                                                           VERSION 19MAY2015
+
+
+
+                                                                                                                   Examples of Issues to Consider in Evaluating Risks to
+                                                                         Importance of CTQ Factor                                         CTQ Factor
+                     Implementing safety-reporting systems   1. Describe the planned processes for                1. Does the protocol clearly identify what events
+Signal Detection     that are designed relative to and           monitoring existing and identifying new or           must be reported in an expedited fashion vs. those
+and Safety           appropriate to the nature of the            emerging safety signals.                             that do not required expedited reporting? Is this
+Reporting            interventions (e.g., what is known      2. For known safety concerns:                            consistent with other study documentation (e.g.,
+                     about the investigational product and       • What specific evaluations does the                 serious adverse event reporting form or electronic
+                     the risk relative to the trial                   study include to further characterize the       CRF instructions)?
+                     participants) will facilitate timely             association between the investigational     2. Is there an existing safety governance structure for
+                     identification of safety signals and             product and event?                              the investigational product and how will this study
+                     efficient, expedited reporting.             • How and in what time frame are data                fit within the structure? If not, what structure must
+                                                                      from these evaluations to be                    be in place to manage safety reporting and signal
+                                                                      collected/reported?                             detection efforts?
+                                                             3. How will emerging safety issues from other        3. How will adverse event information be elicited
+                                                                 sources (e.g., other trials, real-world use)         during the study (e.g., specific inquiry defined in
+                                                                 that may have an impact on study design              investigational plan, open inquiry, PRO, or a
+                                                                 and conduct be identified?                           combination)?
+                                                             4. Consider what events are anticipated to           4. Are there specific failure points in adverse event
+                                                                 occur in the study population. How and in            processes that might result in an inability to detect
+                                                                 what time frame will these events be                 emergent concerns? Are there handoffs of
+                                                                 reported in the study?                               information with third parties that might have an
+                                                             5. For non-randomized studies, how will safety           impact on timeliness of safety reporting?
+                                                                 signals be assessed in the absence of            5. Will standard terms/coding (including MedDRA or
+                                                                 comparators?                                         UDI coding) be applied across studies to facilitate
+                                                             6. What level of risk are different stakeholders         appropriate integrated analyses that are stratified
+                                                                 willing to assume, including trial                   by study and related cross-study analyses (e.g.,
+                                                                 participants?                                        when greater power is needed to detect important
+                                                                                                                      safety signals)?
+                                                                                                                  6. How will ongoing communication regarding
+                                                                                                                      changes in the risks/benefits occur (e.g., notifying
+                                                                                                                      investigators re. safe use)?
+                                                                                                                  7. Are standard definitions for adverse events
+                                                                                                                      provided in the protocol?
+
+
+
+
+        15 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                       INNOVATION THROUGH COLLABORATION
+   -
+   - -CTTI
+
+      Factor                   Description/Rationale
+                                                                             PATIENT SAFETY
+                                                                   Potential Considerations in Evaluating Relative
+                                                                                                                                                 VERSION 19MAY2015
+
+
+
+                                                                                                                        Examples of Issues to Consider in Evaluating Risks to
+                                                                              Importance of CTQ Factor                                         CTQ Factor
+                       When interim monitoring of                 1. Describe the circumstances in which the           1. Is the study governance structure clear—i.e., who
+Data Monitoring        accumulating efficacy and/or safety            study should be terminated early. At what            is ultimately accountable for the decision to stop
+Committee (DMC)/       data is considered necessary to make           point, if any, would the study be stopped            the study?
+Stopping Rules (if     determinations on whether to                   early for efficacy?                              2. If a DMC is to be used:
+applicable)            continue, modify, or terminate a trial,    2. Evaluate whether the study should include a           • What mechanisms will ensure that stopping
+                       this process may be best accomplished          DMC. DMCs are generally recommended for                    rules and/or guidelines are clear and applied
+                       by use of a DMC. Use of an                     any controlled trial of any size that will                 appropriately?
+                       appropriately convened DMC should              compare rates of mortality or major                  • What measures are in place to ensure the
+                       protect the integrity of the trial from        morbidity (FDA DMC guidance).                              independence of DMC members from those
+                       adverse impacts that might otherwise       3. Will the DMC be responsible only for this                   responsible for study conduct?
+                       arise from access of unmasked interim          study, or will they monitor trials across a          • What controls are defined to ensure the
+                       trial data by individuals involved with        development program?                                       quality and timeliness of data provided to DMC
+                       the design, conduct, and monitoring of     4. If there is not a DMC, how will analyses be                 members?
+                       the trial. The DMC is responsible for          performed on accumulating safety data and            • How clean will the data be to support DMC
+                       defining its deliberative processes,           how will decisions be made about necessary                 analyses?
+                       including event triggers that would call       actions?                                             • How will the sponsor clean data and remain
+                       for an unscheduled review, stopping        5. How might new information from outside                      masked?
+                       guidelines, unmasking, and voting              the trial (such as results from a competitor)        • Is it defined how and when DMC
+                       procedures prior to initiating any data        be incorporated into ongoing assessments of                recommendations will be implemented and
+                       review. The DMC is also responsible for        the benefit/risk ratio for participants in the             communicated?
+                       maintaining the confidentiality of its         study?                                               • How will data be handled that are collected
+                       internal discussions and activities as     6. If the trial has multiple adaptive procedures               between the decision to end the study and the
+                       well as the contents of reports                (adaptive randomization, early stopping,                   actual end of the study?
+                       provided to it to prevent the                  sample size re-estimation), how will these       3. Are there specific rules for reporting if the DMC
+                       introduction of bias.                          rules interact with others to be used by the         chooses to ignore a protocol-defined adaptation or
+                                                                      DMC?                                                 stopping rule (e.g., report rationale to head of
+                                                                  7. Consider, a priori, the data reporting order          steering committee)?
+                                                                      (e.g., DMC • steering committee •                4. Are interim analyses defined by trial participants
+                                                                      sponsor) for stopping rules or preplanned            enrolled? Trial participants at their primary
+                                                                      adaptations.                                         outcome? Trial participants with primary outcomes
+                                                                                                                           adjudicated?
+                                                                                                                       5. If a trial meets early stopping bounds, how should
+                                                                                                                           trial participants enrolled but not yet at their final
+                                                                                                                           endpoints be included in the final analyses?
+
+       16 of 24      REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                            INNOVATION THROUGH COLLABORATION
+   -- -CTTI
+
+      Factor                    Description/Rationale
+                                                                              STUDY CONDUCT
+                                                                    Potential Considerations in Evaluating Relative
+                                                                                                                                                   VERSION 19MAY2015
+
+
+
+                                                                                                                           Examples of Issues to Consider in Evaluating Risks to
+                                                                               Importance of CTQ Factor                                           CTQ Factor
+                        Study-specific training may involve all    1. Consider the critical elements of the               1. Is training focused on critical elements of the
+Training                stakeholders, including but not limited        investigational plan, including whether these          investigational plan that if not followed would add
+                        to sponsors, third-party service               activities are carried out and/or critical data        risk to the study outcome and trial participant
+                        providers, DMCs, adjudicators,                 generated by:                                          safety (i.e., they generate “errors that matter”)?
+                        investigators, coordinators, other local        a. Sponsor staff.                                 2. Who will be trained and how will training be
+                        site staff, and/or trial participants.          b. CRO/ARO staff.                                     provided and documented? Do trial participants
+                        Ongoing focused training of study staff         c. Other third parties (e.g., adjudication            need specific training?
+                        during the study can reinforce protocol              committee).                                  3. Could delivery of training be tailored dependent on
+                        requirements as well as provide            2. For what critical activities are focused                the topic and audience?
+                        needed updates when some portion of            and/or targeted training necessary to ensure       4. Are the steps required to achieve any required
+                        the investigational plan has been              appropriate and consistent conduct?                    certification clearly described in the
+                        amended (e.g., protocol, CRF, EDC,         3. Consider any study-specific assessments for             protocol/investigational plan, as well as any
+                        monitoring plan). Study-specific               which staff must be certified vs. trained (i.e.,       requirements for maintaining certification?
+                        training minimizes site-to-site                use of the investigational product).               5. What measures are in place to ensure that
+                        variability in conduct of critical study   4. How applicable will the training employed               sponsor, CRO/ARO, and investigators/site staff
+                        procedures and ensures that all                during the study be in more general                    receive required training in a timely manner (e.g.,
+                        stakeholders understand and                    settings?                                              before carrying out the activities described in the
+                        appropriately implement the protocol.      5. Will roll-in trial participants be used at sites?       training/protocol)?
+                                                                       How many? How will these trial participants        6. Is it feasible to test the effectiveness of training?
+                                                                       contribute to the overall findings of the              Does the investigational plan describe early
+                                                                       study?                                                 checks/feedback on performance?
+                                                                   6. How might human factors (HF) play a role in         7. If changes to the protocol are made during a study,
+                                                                       the intended use of the investigational                what measures will ensure that new information is
+                                                                       product? How can training be used to                   provided in a timely manner to affected
+                                                                       mitigate HFs?                                          stakeholders?
+                                                                                                                          8. How will the need for additional training, whether
+                                                                                                                              for on-site staff, sponsor personnel, or CRO/ARO
+                                                                                                                              employees, be determined?
+
+
+
+
+           17 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                              INNOVATION THROUGH COLLABORATION
+   -
+   - -CTTI
+
+      Factor                    Description/Rationale
+                                                                               STUDY CONDUCT
+                                                                      Potential Considerations in Evaluating Relative
+                                                                                                                                                  VERSION 19MAY2015
+
+
+
+                                                                                                                         Examples of Issues to Consider in Evaluating Risks to
+                                                                                 Importance of CTQ Factor                                         CTQ Factor
+                       The manner and timeliness in which            1. Consider how and by whom critical data will     1. What controls are in place to minimize data entry
+Data Recording and     study data are collected and submitted            be collected and reported (e.g., CRF, EDC,         errors if site staff interacting with the trial
+Reporting              to the clinical trial database are critical       PRO).                                              participant are different from those completing the
+                       contributors to overall trial quality.        2. Can IT systems (e.g., EDC) also be used to          CRF?
+                                                                         encourage and enforce compliance with the      2. How will the CRF and database design reflect
+                                                                         protocol requirements for data capture and         current data standards for reporting? Are data
+                                                                         reporting?                                         capture systems user-friendly? What opportunities
+                                                                     3. Will standardized data definitions be used          are there to pilot the electronic CRF and to test the
+                                                                         when available?                                    usability of EDC systems?
+                                                                     4. Will there be eSource records, and how and      3. Will timely entry and transfer of data using EDC be
+                                                                         by whom will they be managed?                      feasible in all the regions in which the study will be
+                                                                     5. Can study data be captured in parallel with         conducted?
+                                                                         routine clinical assessments and               4. Are any responsibilities for reviewing and, as
+                                                                         documentation?                                     necessary, acting on data recorded/reported by
+                                                                     6. Does the investigator need to review and/or         others (at the site or at a third party) clearly
+                                                                         take action on data generated directly by          defined in the investigational plan?
+                                                                         the trial participant or a third party.        5. If collecting PROs, what measures/controls will
+                                                                     7. Will multiple data systems be utilized,             support timely entry and integrity of these data?
+                                                                         requiring transfer and integration (e.g.,          What role does the PRO data serve (endpoint or
+                                                                         central lab, interactive voice response            supportive?)
+                                                                         system, imaging reader)?                       6. Are the time frames for data submission from sites
+                                                                                                                            and/or transfers from third-party vendors
+                                                                                                                            appropriate to facilitate timely review whether by
+                                                                                                                            the investigator or an internal team at the
+                                                                                                                            sponsor?
+                                                                                                                        7. Have investigator sites been trained on the
+                                                                                                                            importance of timely and accurate data entry to
+                                                                                                                            support centralized/remote monitoring and/or in
+                                                                                                                            preparation for on-site sponsor monitoring?
+                                                                                                                        8. If using eSource, will the access to the source data
+                                                                                                                            have sufficient controls such that any changes
+                                                                                                                            remain under the authorization of the clinical
+                                                                                                                            investigator and are adequately documented?
+
+
+
+       18 of 24      REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                             INNOVATION THROUGH COLLABORATION
+   -
+   - -CTTI
+
+     Factor                 Description/Rationale
+                                                                        STUDY CONDUCT
+                                                               Potential Considerations in Evaluating Relative
+                                                                                                                                           VERSION 19MAY2015
+
+
+
+                                                                                                                   Examples of Issues to Consider in Evaluating Risks to
+                                                                          Importance of CTQ Factor                                         CTQ Factor
+                    Sponsors have an obligation to monitor    1. Identify departures from study conduct that      1. Does the investigational plan clearly define which
+Data Monitoring     the progress of their trial. Ongoing          may generate “errors that matter.”                  departures from study conduct are “errors that
+and Management      data monitoring provides assurance        2. Which data are not critical to study analysis?       matter” and which are not?
+                    that trial participants’ safety will be   3. By what methods will data be monitored           2. Are planned data edit checks focused on critical
+                    protected (e.g., a trial will be              while the study is ongoing? At what                 data and processes?
+                    terminated if it presents an                  frequency?                                      3. Have realistic tolerance limits for “errors” been
+                    unreasonable and significant risk) and    4. Will centralized statistical monitoring              defined?
+                    that the data gathered during a trial         approaches be used in combination with on-      4. Who generates queries and how will the sponsor
+                    will be fit for purpose. Operational          site monitoring activities? (Find additional        ensure that queries are focused on ensuring the
+                    checks (e.g., on-site, remote, and            resources through -CTTI and the -FDA here)          integrity of critical data?
+                    centralized monitoring) and statistical   5. What functional lines will be involved in        5. Will self-evident corrections be permitted, and are
+                    surveillance can identify important           ongoing data monitoring?                            the criteria and processes for self-evident
+                    data quality issues at a point at which   6. Identify which function/individual is                corrections clearly defined?
+                    corrective action is feasible.                ultimately responsible for the decision to      6. Is there a defined process for escalating issues
+                                                                  lock and unlock the database.                       identified during routine data monitoring (e.g.,
+                                                              7. What types of issues is the monitoring plan          implausible data at a site, failure to report data to
+                                                                  designed to detect? Is it sufficiently              the sponsor in a timely way, trends suggesting
+                                                                  comprehensive?                                      inconsistent implementation of the protocol across
+                                                              8. Define critical data elements for data               sites)?
+                                                                  management during protocol development.         7. Is there a defined process for identifying when
+                                                                                                                      corrective and preventive actions should be
+                                                                                                                      created, including verifying that these actions are
+                                                                                                                      implemented and effective?
+                                                                                                                  8. Are database lock procedures clearly defined,
+                                                                                                                      including roles, responsibilities, and processes for
+                                                                                                                      correction of errors identified after database lock?
+                                                                                                                  9. What types of discrepancies are permitted to
+                                                                                                                      remain through study closure?
+
+
+
+
+       19 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                       INNOVATION THROUGH COLLABORATION
+    -
+    - -CTTI
+
+       Factor                    Description/Rationale
+                                                                               STUDY CONDUCT
+                                                                     Potential Considerations in Evaluating Relative
+                                                                                                                                                  VERSION 19MAY2015
+
+
+
+                                                                                                                         Examples of Issues to Consider in Evaluating Risks to
+                                                                                 Importance of CTQ Factor                                        CTQ Factor
+                         Details of the study design and             1. What data are critical to the statistical       1. Are there measures to ensure that study
+Statistical Analysis     conduct, as well as the principal               analysis plan (SAP)?                               statisticians are aware of the clinical implications of
+                         features of its proposed statistical        2. Does the study include multiple endpoints?          study objectives and endpoints at the design phase
+                         analysis, should be clearly specified in        What is the order of analysis?                     and during the protocol, and are apprised of
+                         a protocol written before the study         3. Consider how:                                       clinical site quality issues?
+                         begins. The extent to which                    • Data that are differentially obtained will    2. What controls will ensure that the SAP is finalized
+                         procedures in the protocol are well                be handled (e.g., lost-to-follow-up or          prior to unmasking (key is prior to knowledge of
+                         defined and the primary analysis is                early withdrawal).                              treatment assignment)?
+                         planned, a priori, will contribute to the      • Missing data will be dealt with in the        3. Are there clearly defined plans for handling missing
+                         degree of confidence in the final                  analysis.                                       data in the study protocol?
+                         results and conclusions of the trial.       4. Clearly identify which trial participants are   4. What triggers might lead to re-evaluation of the
+                                                                         to be included in intention-to-treat (ITT)         SAP? What controls are necessary to ensure that
+                                                                         analysis vs. per protocol or as treated            SAP modification is appropriate?
+                                                                         analyses.                                      5. Are there specific controls/measures defined to
+                                                                     5. How will evaluation and/or implementation           ensure that the analysis will be validated and
+                                                                         of stopping rules affect the statistical           performed appropriately?
+                                                                         analysis? [See PATIENT SAFETY –
+                                                                         Independent Data Monitoring Committee
+                                                                         (DMC)/Stopping Rules above for additional
+                                                                         information]
+
+
+
+
+         20 of 24      REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                             INNOVATION THROUGH COLLABORATION
+   -
+   - -CTTI
+
+      Factor                  Description/Rationale
+                                                                           STUDY REPORTING
+                                                                   Potential Considerations in Evaluating Relative
+                                                                                                                                                VERSION 19MAY2015
+
+
+
+                                                                                                                       Examples of Issues to Consider in Evaluating Risks to
+                                                                              Importance of CTQ Factor                                         CTQ Factor
+                     To assess a trial accurately, readers of     1. Identify who will have rights to publish or      1. Is it clear who has the right to prepare publications
+Dissemination of     a published report need complete and             otherwise disseminate study results.                and reports using the study data? Is this
+Study Results        clear information. Study reporting may           Consider a writing committee to oversee all         consistently described in contracts, the protocol,
+                     include submission of clinical study             papers resulting from a study database. The         and other related documentation?
+                     reports (CSRs) to regulators, reporting          committee should include all stakeholders       2. What mechanisms are in place to ensure consistent
+                     to public clinical trial registries (e.g.,       involved with the trial development.                disclosure of study information — both voluntary
+                     ClinicalTrials.gov), and other means of      2. To whom will trial results be submitted and          and mandatory — and to ensure timely correction
+                     disclosing study results to                      for what purposes?                                  of errors in reported data?
+                     stakeholders. Transparency of both the       3. Does the trial sponsor have obligations to       3. Are there specific considerations for report content
+                     data and the processes for analyzing             publish or disclose study data (e.g.,               or format that should be considered when
+                     the data allows both regulators and              corporate policy, national clinical trial           designing data collection tools (e.g.,
+                     the public to understand the scientific          registry)?                                          ClinicalTrials.gov adverse event tables may differ
+                     and ethical conduct of the trial.            4. Will the CSR include a quality by design             from standard CSR tables and listings)?
+                                                                      section describing all relevant quality         4. If a quality by design section of the CSR is planned:
+                                                                      findings during the study and actions taken?          a. Is the definition of what is “relevant” clear to
+                                                                  5. When/how should study data be shared                         all who may identify such a quality finding or
+                                                                      with trial participants? How will important                 review the CSR?
+                                                                      information be communicated to trial                  b. What systems are necessary to ensure
+                                                                      participants?                                               consistent identification and tracking of
+                                                                  6. Clearly identify primary vs. secondary vs.                   quality findings and actions throughout a
+                                                                      post hoc analyses in study reports.                         study by sponsor and CRO/ARO staff
+                                                                  7. Clearly identify which subset analyses were                  members, so that an accurate reporting may
+                                                                      preplanned vs. which were post hoc.                         be compiled?
+                                                                  8. Can ITT, per protocol, and as treated                  c. Which of these quality findings may require
+                                                                      definitions, as defined in the protocol, be                 urgent reporting during study conduct, to
+                                                                      appropriately translated in the study report?               whom will the reporting be done, and how
+                                                                                                                                  will this process be managed?
+
+
+
+
+       21 of 24    REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                           INNOVATION THROUGH COLLABORATION
+    -
+    - -CTTI
+
+      Factor                   Description/Rationale
+                                                                      THIRD-PARTY ENGAGEMENT
+                                                                          Potential Considerations in Evaluating
+                                                                                                                                                VERSION 19MAY2015
+
+
+
+                                                                                                                        Examples of Issues to Consider in Evaluating Risks to
+                                                                            Relative Importance of CTQ Factor                                 CTQ Factor
+                    Sponsors are increasingly reliant on third-      1.   What activities will be delegated to a       1. Are there available data on prior performance by
+Delegation of       party service providers (e.g., CROs, AROs,            CRO/ARO or conducted by another third            the third party that might inform decision making
+Sponsor             and other study-specific vendors) to assist           party?                                           about whether to use a particular vendor?
+Responsibilities    with activities, from designing a study          2.   Which of these are CTQ activities?           2. By what mechanisms will the sponsor and third
+                    through reporting its results. As a result,      3.   Will the entire activity be delegated, or        party ensure there is agreement on what
+                    multiple parties have or share                        will the sponsor retain responsibility for       elements of the vendor’s performance are critical?
+                    responsibility for study conduct and/or               some aspects?                                3. How will potential conflicts between standard
+                    oversight at different points of the study.      4.   Are there unique risks that matter to the        operating procedures of the sponsor and the third
+                    To ensure oversight of third parties,                 trial inherent in this partnership?              party be resolved prior to study initiation?
+                    sponsors should have appropriate levels of       5.   What infrastructure and capabilities are     4. How will system access be handled to ensure
+                    internal governance and oversight when                required to manage the relationship and          timely and appropriate access to information for
+                    engaging third parties in the design,                 provide appropriate oversight of the             all parties?
+                    conduct, and reporting of clinical trials. The        deliverables from the third party?           5. What is the nature of the contractual relationship
+                    sponsor should ensure that CROs/AROs             6.   Is there clarity of what needs to be             between the sponsor and third parties responsible
+                    and other study vendors are (and remain)              escalated and when? Is there a clear             for CTQ activities — is there shared risk, or is it a
+                    qualified to carry out contracted activities.         escalation pathway for all parties? Do all       strictly fee-for-service relationship?
+                    Sponsors must also consider appropriate               parties understand escalation pathways?      6. Is there the need to establish quality parameters
+                    controls to ensure, in an ongoing manner,                                                              to measure performance? Is there a defined
+                    that CROs/AROs and vendors are carrying                                                                function or individual(s) at the sponsor with
+                    out these activities appropriately and in                                                              responsibility for monitoring performance of third
+                    accordance with contractual requirements                                                               parties?
+                    or other defined quality expectations.                                                             7. How will roles be clearly defined, such that clinical
+                                                                                                                           investigators and site staff know with whom they
+                                                                                                                           need to interact and when?
+                                                                                                                       8. Is performance by one third party dependent
+                                                                                                                           upon inputs from another? Are there mechanisms
+                                                                                                                           planned to ensure appropriate communication
+                                                                                                                           between third parties?
+                                                                                                                       9. Are there defined plans to manage mergers and
+                                                                                                                           acquisitions that may occur during study conduct?
+                                                                                                                       10. Can the DMC access a third party for data while
+                                                                                                                           maintaining masking of sponsor?
+                                                                                                                       11. Are all relevant decisions and agreements
+                                                                                                                           regarding the relationship between the parties
+                                                                                                                           accurately reflected in the contract?
+        22 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                           INNOVATION THROUGH COLLABORATION
+   -
+   - -CTTI
+
+      Factor                  Description/Rationale
+                                                                  THIRD-PARTY ENGAGEMENT
+                                                                       Potential Considerations in Evaluating
+                                                                                                                                           VERSION 19MAY2015
+
+
+
+                                                                                                                    Examples of Issues to Consider in Evaluating Risks to
+                                                                         Relative Importance of CTQ Factor                                CTQ Factor
+                    Sponsors are increasingly using alternative   1.   What is the intended use of the data?       1. Where and how will data from trials be used,
+Collaborations      models to develop medicines, such as co-      2.   Is there a clear understanding of who the       including data from completed trials transferred
+                    sponsorships (where permitted), co-                sponsor is, and who holds the                   as part of an acquisition?
+                    development programs, licensing                    investigational new drug/clinical trials    2. Will data be used in a submission or registration
+                    agreements, collaborations, and                    application?                                    to a health authority?
+                    acquisitions. These result in the need to     3.   Is there a mutual understanding on what     3. Who will have ownership of safety data and
+                    ensure mutual understanding of the roles           is CTQ to ensure that collaborative             responsibility for safety reporting?
+                    and responsibilities at different stages of        partners give proper attention to CTQ       4. Is relevant information available and will
+                    the development life cycle. The type of            areas?                                          appropriate access be granted to assess and
+                    collaboration will drive the nature and       4.   Are there unique risks that matter to the       confirm that CTQ aspects of the trial were carried
+                    degree of oversight and control necessary          trial inherent in this partnership?             out correctly and to provide confidence in data
+                    and/or feasible.                                                                                   reliability of completed trials?
+                                                                                                                   5. What mechanisms are in place to ensure timely
+                                                                                                                       and appropriate access to information for all
+                                                                                                                       parties?
+
+
+
+
+        23 of 24   REMINDER: This document is intended to be a discussion tool, not to serve as a checklist. (See Page 1)
+                                                                                                                       INNOVATION THROUGH COLLABORATION
+                                               Glossary & Acronyms
+
+   ARO: Academic research organization
+
+   Clinical equipoise: A state of genuine uncertainty as to the advantages or disadvantages of each therapeutic arm
+   in a clinical trial (thefreedictionary.com)
+
+   Competitive Enrollment: Indicates that the local site may enroll more trial participants than originally planned by
+   the study sponsor, while the total number of trial participants enrolled study-wide does not change
+
+   CRF: Case report form
+
+   Critical to Quality (CTQ) Factors: Factors relevant to the integrity and reliability of conclusions based on study
+   data and to the safety of trial participants
+
+   CRO: Contract research organization
+
+   CSR: Clinical study report
+
+   EDC: Electronic Data Capture
+
+   Data Monitoring Committee (DMC): An independent group of experts who monitor trial participant safety and
+   treatment efficacy data for a clinical trial; also known as Data Safety & Monitoring Board (DSMB) or Data Safety
+   Committee (DSC)
+
+   Foreign Corrupt Practices Act (FCPA): Enacted in 1977 for the purpose of making it unlawful for certain classes of
+   persons and entities to make payments to foreign government officials to assist in obtaining or retaining business
+   (www.justice.gov/criminal/fraud/fcpa/)
+
+   Handoffs: Specific points in the clinical investigation when data are transferred between groups (i.e., sponsor,
+   third-party service provider, investigative site)
+
+   Human Factors (or Ergonomics): The scientific discipline concerned with the understanding of interactions among
+   humans and other elements of a system, and the profession that applies theory, principles, data and methods to
+   design in order to optimize human wellbeing and overall system performance (The International Ergonomics
+   Association)
+
+   Investigational Product (IP): The device, drug, biologic or diagnostic product under investigation
+
+   ITT: Intent to treat
+
+   MedDRA: “Medical dictionary for regulatory activities”; standardized international medical terminology
+
+   PPAO: Patients and patient advocacy organizations
+
+   PROs/ePROs: Patient-reported outcomes/Electronic patient-reported outcomes
+
+   SAP: Statistical analysis plan
+
+   UDI: Unique device identification
+
+
+
+
+24 of 24
+                                                                          INNOVATION THROUGH COLLABORATION
+

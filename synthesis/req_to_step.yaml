@@ -1,0 +1,450 @@
+# REQ id -> L3 step (in_scope) or status with reason. Built by tools/y1_build.py.
+REQ-001: A1
+REQ-002: A1
+REQ-003: A1
+REQ-004: A1
+REQ-005: A1
+REQ-006: A1
+REQ-007: A1
+REQ-008: A1
+REQ-009: A1
+REQ-010: A1
+REQ-011: A1
+REQ-012: A1
+REQ-013: A1
+REQ-014: A1
+REQ-015: A1
+REQ-016: A1
+REQ-017: A1
+REQ-018: A1
+REQ-019: A1
+REQ-020: A1
+REQ-021: A1
+REQ-022: A1
+REQ-023: A1
+REQ-024: A1
+REQ-025: A1
+REQ-026: A1
+REQ-027: A1
+REQ-028: A1
+REQ-029: A1
+REQ-030: A1
+REQ-031: A1
+REQ-032: A1
+REQ-033: A1
+REQ-034: A1
+REQ-035: A2
+REQ-036: A2
+REQ-037: A2
+REQ-038: A2
+REQ-039: A2
+REQ-040: A2
+REQ-041: A2
+REQ-042: A2
+REQ-043: A2
+REQ-044: A2
+REQ-045: A2
+REQ-046: A2
+REQ-047: A2
+REQ-048: A2
+REQ-049: A2
+REQ-050: A2
+REQ-051: A2
+REQ-052: A2
+REQ-053: A2
+REQ-054: A2
+REQ-055: A2
+REQ-056: A2
+REQ-057: A2
+REQ-058: A2
+REQ-059: A2
+REQ-060: A2
+REQ-061: A2
+REQ-062: A2
+REQ-063: A2
+REQ-064: A2
+REQ-065: A2
+REQ-066: A2
+REQ-067: A2
+REQ-068: A2
+REQ-069: A2
+REQ-070: A3
+REQ-071: A3
+REQ-072: A3
+REQ-073: A3
+REQ-074: A3
+REQ-075: A3
+REQ-076: A3
+REQ-077: A3
+REQ-078: A3
+REQ-079: A3
+REQ-080: A3
+REQ-081: A3
+REQ-082: A3
+REQ-083: A3
+REQ-084: A3
+REQ-085: A3
+REQ-086: A3
+REQ-087: A3
+REQ-088: A4
+REQ-089: A4
+REQ-090: A4
+REQ-091: A4
+REQ-092: A4
+REQ-093: A4
+REQ-094: A4
+REQ-095: A4
+REQ-096: A4
+REQ-097: A4
+REQ-098: A4
+REQ-099: A4
+REQ-100: A4
+REQ-101: A4
+REQ-102: A4
+REQ-103: A4
+REQ-104: A4
+REQ-105: A5
+REQ-106: A5
+REQ-107: A5
+REQ-108: A5
+REQ-109: A5
+REQ-110: A5
+REQ-111: A5
+REQ-112: A5
+REQ-113: A5
+REQ-114: A5
+REQ-115: A5
+REQ-116: A5
+REQ-117: A5
+REQ-118: A5
+REQ-119: A5
+REQ-120: A5
+REQ-121: A5
+REQ-122: A5
+REQ-123: A5
+REQ-124: A5
+REQ-125: A5
+REQ-126: A5
+REQ-127: A6
+REQ-128: A6
+REQ-129: A6
+REQ-130: A6
+REQ-131: A6
+REQ-132: A6
+REQ-133: A6
+REQ-134: A6
+REQ-135: A6
+REQ-136: A6
+REQ-137: A6
+REQ-138: A6
+REQ-139: A6
+REQ-140: A6
+REQ-141: A6
+REQ-142: A6
+REQ-143: A6
+REQ-144: A6
+REQ-145: A6
+REQ-146: A6
+REQ-147: A6
+REQ-148: A6
+REQ-149: A6
+REQ-150: A6
+REQ-151: A6
+REQ-152: A6
+REQ-153: A6
+REQ-154: A7
+REQ-155: A7
+REQ-156: A7
+REQ-157: A7
+REQ-158: A7
+REQ-159: A7
+REQ-160: A7
+REQ-161: A7
+REQ-162: A7
+REQ-163: A7
+REQ-164: A7
+REQ-165: A7
+REQ-166: A7
+REQ-167: A7
+REQ-168: A7
+REQ-169: A7
+REQ-170: A7
+REQ-171: A7
+REQ-172: A7
+REQ-173: A7
+REQ-174: A7
+REQ-175: A7
+REQ-176: A7
+REQ-177: A7
+REQ-178: A7
+REQ-179: A7
+REQ-180: A7
+REQ-181: A7
+REQ-182: A7
+REQ-183: A7
+REQ-184: A7
+REQ-185: A7
+REQ-186: A7
+REQ-187: A7
+REQ-188: A8
+REQ-189: A8
+REQ-190: A8
+REQ-191: A8
+REQ-192: A8
+REQ-193: A8
+REQ-194: A8
+REQ-195: A8
+REQ-196: A8
+REQ-197: A8
+REQ-198: A8
+REQ-199: A8
+REQ-200: A8
+REQ-201: A8
+REQ-202: A8
+REQ-203:
+  status: interface
+  near_step: A1
+  reason: 'Upstream of the process boundary (D3): its output is the A1 start event ''CtQ factors identified''. Placeholder ''Quality by design and protocol development''.'
+REQ-204:
+  status: interface
+  near_step: A1
+  reason: Upstream CtQ identification (quality by design), before the A1 start event (D3).
+REQ-205:
+  status: interface
+  near_step: A1
+  reason: General protocol design (quality by design), upstream of D3; A1 carries only the deviation-specific design measures (protocol flexibility, deviation handling text).
+REQ-206:
+  status: interface
+  near_step: A1
+  reason: Protocol development activity upstream of D3.
+REQ-207:
+  status: interface
+  near_step: A1
+  reason: Protocol authoring format; the deviation-relevant M11 sections (5.1, 6.8, 10.2, 11.6, 11.10) are carried by A1/A3 REQs.
+REQ-208:
+  status: interface
+  near_step: A6
+  reason: Quality assurance and audit process; its findings enter A4/A5 as potential deviations or noncompliance and its CAPA requests A6.
+REQ-209:
+  status: interface
+  near_step: A2
+  reason: Data governance and computerised systems process; A2 uses its outputs for audit trail review.
+REQ-210:
+  status: interface
+  near_step: A4
+  reason: Data management process; a corrected transcription error can remove a deviation during reconciliation (A4).
+REQ-211:
+  status: interface
+  near_step: A4
+  reason: Computerised systems process; A4 requires a validated deviation repository.
+REQ-212:
+  status: interface
+  near_step: A5
+  reason: Data security incident process; an incident that is also serious noncompliance or a serious breach enters A5.
+REQ-213:
+  status: interface
+  near_step: A4
+  reason: 'Service providers and delegated parties are not modelled as pools (D1); their reports enter A4/A5 as potential deviations. No pool: orchestrator default, not contested (06 Nov 2026).'
+REQ-214:
+  status: interface
+  near_step: A2
+  reason: Safety reporting process; a deviation that causes an SAE triggers both processes.
+REQ-215:
+  status: interface
+  near_step: A5
+  reason: Safety notification process; A5 checks whether it is needed alongside a serious breach (EMA-SB S4).
+REQ-216:
+  status: interface
+  near_step: A5
+  reason: Trial status / safety process; A5 and A6 hand off to it when a breach leads to halting the trial.
+REQ-217:
+  status: interface
+  near_step: A3
+  reason: 'Urgent safety measure process (EU CTR Art. 54) is triggered by an unexpected event, not by a deviation as such; A3 hands off when an immediate-hazard action qualifies as a USM. Interface confirmed: decided by user 06 Nov 2026 (C-08).'
+REQ-218:
+  status: interface
+  near_step: A3
+  reason: As for the sponsor USM duty; interface decided by user 06 Nov 2026 (C-08).
+REQ-219:
+  status: interface
+  near_step: A3
+  reason: USM notification process; interface placeholder after A3, decided by user 06 Nov 2026 (C-08).
+REQ-220:
+  status: interface
+  near_step: A3
+  reason: Substantial modification process (EU CTR Chapter III).
+REQ-221:
+  status: interface
+  near_step: A6
+  reason: Protocol amendment process (21 CFR 312.30); placeholder after A3 and A6 when an amendment is the corrective action.
+REQ-222:
+  status: interface
+  near_step: A6
+  reason: Protocol amendment process.
+REQ-223:
+  status: interface
+  near_step: A6
+  reason: Substantial modification process.
+REQ-224:
+  status: interface
+  near_step: A5
+  reason: Safety reporting process; a deviation can reveal such a risk.
+REQ-225:
+  status: interface
+  near_step: A5
+  reason: Safety and IND reporting process (21 CFR 312.32/312.33, not extracted).
+REQ-226:
+  status: interface
+  near_step: A6
+  reason: Trial discontinuation / safety process.
+REQ-227:
+  status: interface
+  near_step: A5
+  reason: Unanticipated problem reporting process (safety); the change-reporting part of 312.66 is in A5.
+REQ-228:
+  status: interface
+  near_step: A5
+  reason: Unanticipated problem reporting process (safety).
+REQ-229:
+  status: interface
+  near_step: A5
+  reason: IND safety reporting process (21 CFR 312.32); A5 hands the deviation information to it.
+REQ-230:
+  status: interface
+  near_step: A5
+  reason: IRB/IEC approval process inside the collapsed IRB/IEC pool.
+REQ-231:
+  status: interface
+  near_step: A5
+  reason: Authority-side process inside the collapsed Regulatory authority pool.
+REQ-232:
+  status: interface
+  near_step: A5
+  reason: Authority-initiated interaction after notification (CTIS RFI); placeholder after A5 because it starts with an incoming request (SCP-02 single trigger).
+REQ-233:
+  status: interface
+  near_step: A5
+  reason: Authority corrective measure procedure (collapsed pool).
+REQ-234:
+  status: interface
+  near_step: A5
+  reason: Authority-initiated corrective measure procedure; starts with an incoming request (SCP-02).
+REQ-235:
+  status: interface
+  near_step: A7
+  reason: CSR submission / results process after the end of A7; party is the marketing authorisation applicant.
+REQ-236:
+  status: interface
+  near_step: A7
+  reason: Electronic submission process; A7 supplies the DV dataset to it.
+REQ-237:
+  status: interface
+  near_step: A7
+  reason: Statistical analysis process (ICH E9).
+REQ-238:
+  status: interface
+  near_step: A7
+  reason: Integrated summaries for the marketing application, after A7.
+REQ-239:
+  status: interface
+  near_step: A7
+  reason: Estimand framework (ICH E9(R1)); intercurrent events are not protocol deviations.
+REQ-240:
+  status: interface
+  near_step: A7
+  reason: Estimand reporting in the CSR, outside iPD content.
+REQ-241:
+  status: interface
+  near_step: A7
+  reason: CSR authoring of protocol changes (amendments), not deviations.
+REQ-242:
+  status: interface
+  near_step: A7
+  reason: CSR authoring of disposition; only the deviation label is in A7.
+REQ-243:
+  status: out_of_scope
+  reason: Overarching conduct norm that every deviation departs from; cited on the L3 collaboration and pools, not a separate task (SCP-01).
+REQ-244:
+  status: out_of_scope
+  reason: Overarching conduct norm (sponsor); its execution is the oversight in A2 and the compliance actions in A6. Cited on the Sponsor pool.
+REQ-245:
+  status: out_of_scope
+  reason: Overarching conduct norm (investigator); cited on the Investigator/institution pool.
+REQ-246:
+  status: out_of_scope
+  reason: Overarching legal conduct norm (sponsor); cited on the Sponsor pool and as EU legal basis of the process.
+REQ-247:
+  status: out_of_scope
+  reason: Overarching legal conduct norm (investigator); cited on the Investigator/institution pool.
+REQ-248:
+  status: out_of_scope
+  reason: Overarching legal conduct norm (sponsor); cited on the Sponsor pool.
+REQ-249:
+  status: out_of_scope
+  reason: Overarching legal conduct norm (investigator); cited on the Investigator/institution pool.
+REQ-250:
+  status: out_of_scope
+  reason: Cross-cutting accountability rule applied to pool and lane design (transferred tasks stay in the Sponsor pool); no separate task.
+REQ-251:
+  status: out_of_scope
+  reason: Cross-cutting accountability rule applied to the Investigator/institution pool; no separate task.
+REQ-252:
+  status: out_of_scope
+  reason: Binding route of ICH E6(R3) in the EU; recorded in binding_route of every ICH REQ and in C-06, not a process step.
+REQ-253:
+  status: out_of_scope
+  reason: Binding route of ICH E6(R3) in the EU (C-06).
+REQ-254:
+  status: out_of_scope
+  reason: Commission duty; affects the binding route only (C-06).
+REQ-255:
+  status: out_of_scope
+  reason: Binding route of ICH E6(R3) in the US (C-06).
+REQ-256:
+  status: out_of_scope
+  reason: Substantive informed consent obligation; a failure is a deviation category used in the iPD criteria (A1), not a deviation-management step.
+REQ-257:
+  status: out_of_scope
+  reason: Substantive consent documentation obligation; consent-documentation failures are deviation examples (A1).
+REQ-258:
+  status: out_of_scope
+  reason: General direct access duty; precondition for monitoring, audit and inspection, not a deviation-management step.
+REQ-259:
+  status: out_of_scope
+  reason: IRB/IEC-internal procedure; IRB/IEC is a collapsed pool (D1); its approval decision appears only as a message flow in A3.
+REQ-260:
+  status: out_of_scope
+  reason: IRB-internal written procedure (collapsed pool); the investigator reporting duty it governs is carried in A5 (21 CFR 312.66).
+REQ-261:
+  status: out_of_scope
+  reason: IRB-internal review (collapsed pool, D1); its onward reporting is in A5.
+REQ-262:
+  status: out_of_scope
+  reason: Trial start-up (IRB approval process), outside iPD management.
+REQ-263:
+  status: out_of_scope
+  reason: Inspection reporting, not deviation management.
+REQ-264:
+  status: out_of_scope
+  reason: Authority inspection process.
+REQ-265:
+  status: out_of_scope
+  reason: Authority review rationale; motivates complete identification and documentation but is not a sponsor or site step.
+REQ-266:
+  status: out_of_scope
+  reason: Terminology; carried by glossary.yaml and pool/lane names (LBL-04), not a process step.
+REQ-267:
+  status: out_of_scope
+  reason: Terminology; carried by glossary.yaml (LBL-04).
+REQ-268:
+  status: out_of_scope
+  reason: Terminology; carried by glossary.yaml (LBL-04).
+REQ-269:
+  status: out_of_scope
+  reason: Terminology; carried by glossary.yaml (LBL-04).
+REQ-270:
+  status: out_of_scope
+  reason: Terminology rule applied to labels and gateways (LBL-04) via glossary.yaml.
+REQ-271:
+  status: out_of_scope
+  reason: Terminology; intercurrent events are not protocol deviations (A7 REQ keeps them apart).

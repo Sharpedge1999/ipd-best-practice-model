@@ -1,0 +1,14 @@
+====================================================================================================
+R5-069 | FDA-SDTCG | loc=S4.1.1.3 | page=16 or 17 of 97 [verify]
+PARA: Under SDTM domain specifications, the DV domain is to be included in submissions. FDA reviewers use it to examine deviation trends across sites for BIMO clinical investigator site selection, and, once tools exist, to populate line listings for ORA inspectors.
+QUOTE: The DV domain should be included in your submission.
+QCHECK: exact ['PDF 29 / printed None'] 
+LOC: not located automatically
+  DOCBEST 0.79 @ PDF 29 / printed None: QSREASND = missing or the sponsor-provided reason (e.g., "CONDITIONALLY BRANCHED ITEM") DV Domain (Protocol Deviations) The DV domain should be included in your submission. It will be used by reviewers to examine protocol deviation trends of various study sites in order to facilitate the Bioresearch Monitoring Program (BIMO) clinical investigator site selection process, and once FDA tools are developed to extract and format needed data from SDTM, to populate line listings used by the Office of R
+  DOCBEST 0.72 @ PDF 29 / printed None: It will be used by reviewers to examine protocol deviation trends of various study sites in order to facilitate the Bioresearch Monitoring Program (BIMO) clinical investigator site selection process, and once FDA tools are developed to extract and format needed data from SDTM, to populate line listings used by the Office of Regulatory Affairs (ORA) investigators during inspections. The following variables besides CDISC required variables should be included in the DV domain when submitting DV dat
+====================================================================================================
+R5-070 | FDA-SDTCG | loc=S4.1.1.3 | page=16 or 17 of 97 [verify]
+PARA: Besides the CDISC required variables, a submitted DV domain should contain DVSPID, DVTERM, DVDECOD, DVCAT, DVSCAT, DVSTDTC, DVENDTC and EPOCH, i.e. sponsor identifier, verbatim term, coded term, category, subcategory, start and end dates, and trial epoch.
+LOC: not located automatically
+  DOCBEST 0.52 @ PDF 29 / printed None: The following variables besides CDISC required variables should be included in the DV domain when submitting DV data: DVSPID, DVTERM, DVDECOD, DVCAT, DVSCAT, DVSTDTC, DVENDTC and EPOCH.
+  DOCBEST 0.41 @ PDF 29 / printed None: DVSPID, DVTERM, DVDECOD, DVCAT, DVSCAT, DVSTDTC, DVENDTC and EPOCH. SV Domain (Subject Visits) It is the current preference of the Agency that for all clinical studies, subject visit data for scheduled (whether or not they occurred), and unscheduled visits be submitted in one single dataset structured as the current CDISC Subject Visits (SV) domain.

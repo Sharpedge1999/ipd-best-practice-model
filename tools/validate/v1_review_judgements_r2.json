@@ -1,0 +1,47 @@
+{
+ "about": "V1 round 2 review judgements. Sample: random.Random(20261106).sample over the sorted (model, id) pairs of the now 100 spec tasks (L4-03 A14 added), n = 25; 17 tasks are the same as in round 1, 8 are new to the sample because the population changed. Re-judged: every new task and every retained task whose element or REQs changed (L4-02 A10, L4-01 A12, L4-02 A5 via REQ-042, L4-03 A11, L4-03 A12, L4-07 A10, L4-08 A4); unchanged tasks keep their round-1 verdict.",
+ "tasks": [
+  {"model": "L4-07", "element": "A11", "verdict": "ok", "note": "new in sample: REQ-184 E6R3 A1-3.17.2(a) and E3QA S1; REQ-169 FDA-PD24 draft (DRAFT shown), deadline 'with the marketing application' from R4-055."},
+  {"model": "L4-01", "element": "A15", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-01", "element": "A5", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-02", "element": "A10", "verdict": "ok", "note": "re-judged: now after the OR join G2 (F14 G2 -> A10, F13 A10 -> A11), so both monitoring channels produce the report that A11 reviews - round-1 finding fixed."},
+  {"model": "L4-02", "element": "A8", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-01", "element": "A1", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-06", "element": "A8", "verdict": "ok", "note": "new in sample: REQ-145/147 E6R3 A1-3.12.3, REQ-153 FDA-PD24 draft stated as 'may be treated as a signal'."},
+  {"model": "L4-03", "element": "A6", "verdict": "ok", "note": "new in sample: REQ-075 = M11-TEMPLATE S5.1 (waivers not permitted); REQ verify item now carried verbatim."},
+  {"model": "L4-04", "element": "A5", "verdict": "ok", "note": "new in sample: REQ-096 E3 S10.2 example categories plus TCB/CDISC best practice for the controlled list."},
+  {"model": "L4-03", "element": "A12", "verdict": "ok", "note": "re-judged: label now 'Request approval of intentional protocol deviation' (glossary form); sources unchanged."},
+  {"model": "L4-07", "element": "A2", "verdict": "ok", "note": "new in sample: REQ-156 E9 S5.2/S5.2.1/GL 'before breaking the blind'; REQ-162 now stated as 'may ... (good practice)', matching R2-089; REQ-163 E9 S5.2.2."},
+  {"model": "L4-01", "element": "A10", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-08", "element": "A8", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-01", "element": "A12", "verdict": "ok", "note": "re-judged: REQ-027 deadline is now 'none' and A12 shows no deadline; 'immediately' stays in the statement as the content of the contractual duty - round-1 finding fixed."},
+  {"model": "L4-01", "element": "A8", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-02", "element": "A5", "verdict": "ok", "note": "re-judged: REQ-042 now has modal 'may' and reads 'may be used to select sites'; the panel shows the modal; the element keeps ICH because REQ-043 (should) sits next to it, so no MAY chip - correct. Round-1 finding fixed."},
+  {"model": "L4-03", "element": "A11", "verdict": "ok", "note": "re-judged: verify items now verbatim REQ items; sources unchanged."},
+  {"model": "L4-08", "element": "A5", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-02", "element": "A14", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-03", "element": "A3", "verdict": "ok", "note": "new in sample: REQ-082 = E6R3 A1-2.5.5 and A1-3.13.3 ('by the investigator/institution or the sponsor', 'if required' -> G9); EU sponsor-only submission carried as [verify] (C-12)."},
+  {"model": "L4-06", "element": "A3", "verdict": "ok", "note": "new in sample: REQ-134 E6R3 A1-3.12.1; REQ-135 21CFR312.56(b) 'promptly either secure compliance or end participation' (LAW, US)."},
+  {"model": "L4-07", "element": "A10", "verdict": "ok", "note": "re-judged: label 'Report serious breaches in clinical study report'; REQ-180 = EMA-SB S5.1."},
+  {"model": "L4-03", "element": "A8", "verdict": "ok", "note": "new in sample: implied assessment step marked [verify] (no named source step); REQ-078, REQ-070, REQ-071 define the immediate-hazard exception it decides; the deadlines 'before implementation / before the change' are true for the assessment as well."},
+  {"model": "L4-08", "element": "A3", "verdict": "ok", "note": "unchanged, round-1 verdict."},
+  {"model": "L4-08", "element": "A4", "verdict": "ok", "note": "re-judged: label 'Archive content of clinical trial master file' uses the EU CTR Art. 58 term; 25-year period in the deadline."}
+ ],
+ "other_findings": [
+  {"rule_id": "SCP-02", "model": "L4-03", "element": "S1", "severity": "SHOULD", "owner": "B1", "status": "documented-exception",
+   "message": "Sponsor sub-process entered by two message types through one start event: accepted by the orchestrator as one business trigger ('Intentional protocol deviation communicated'), with the deciding task A14 before G1 (conflicts.md C-27, rule_exceptions FLW-09, revisitable by the user). No repair needed."},
+  {"rule_id": "GEN-03", "model": "L4-03", "element": "A14", "severity": "SHOULD", "owner": "B1",
+   "message": "New deciding task 'Review intentional protocol deviation communication' (Sponsor lane) carries only investigator REQs - REQ-073 (21CFR312.53(c)(1)(vi)(a): the investigator notifies the sponsor before changes), REQ-080 (E6R3 A1-2.5.4: the investigator informs the sponsor) and REQ-074 (FDA-PD24 draft: the investigator obtains prior sponsor approval) - so a sponsor step that no source names (its own [verify] item says so) shows LAW. The same REQs already sit on the investigator tasks A10, A12 and on M1, M3. Repair: give A14 a sponsor-side REQ (e.g. REQ-076 'consider each investigator request', FDA-PD24 draft, and the receipt side of REQ-083) or mark its binding as derived from the incoming messages, so the badge does not claim a binding sponsor obligation."}
+ ],
+ "passed": [
+  {"check": "FLW-05: notes.md section 6 lists all 29 XOR/OR splits (new: L3 G1) with the exact question; every 'directly before' claim holds (new: L4-03 G1 <- A14); the L4-06 G1 row now names both A2 and A3; deciding element or trial attribute plausible for all 29 (L3 G1 only under the reading convention - see the L3 FLW-07 MUST on its default flow)", "count": 29},
+  {"check": "SCP-02: one trigger and named outcomes per sub-process; L4-05 E2 renamed 'No notification required' (true on every path, l3_cut aligned); L4-03 S1 accepted exception (C-27)", "count": 9},
+  {"check": "LBL-04: no bare 'CSR' left (L4-07 uses 'clinical study report'), no 'important deviation' / 'intentional deviation' short forms, L4-08 tasks use the EU CTR term 'clinical trial master file' and the data stores the E6R3 terms 'Trial master file' / 'Investigator site file' (both glossary terms); no 'protocol violation', no bare 'CTR'", "count": 323},
+  {"check": "GEN-03 systemic (round 1, Y1): requirements.yaml now carries modal for every REQ (must 59, should 183, may 16, definition 11, example 2); the 9 'may'-only binding REQs are stated as permissions; the viewer shows the modal in the panel and a MAY chip where every REQ of an element is optional", "count": 16}
+ ],
+ "not_checked": [
+  "Fit of the model to the real process (GEN-06): only the process owners can confirm it.",
+  "The source documents themselves: the spot check compares labels and REQ statements with the finding paraphrases, not with the source texts (X1's remit).",
+  "Retained, unchanged sample tasks were not re-read; their round-1 verdict stands."
+ ]
+}

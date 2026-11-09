@@ -1,0 +1,100 @@
+{
+ "R2-065": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 4 / printed 1",
+   "PDF 6 / printed 3"
+  ]
+ },
+ "R2-066": {
+  "local": true,
+  "quote_level": "fuzzy",
+  "quote_pages": [
+   "PDF 9 / printed 6"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ],
+  "quote_in_loc": true
+ },
+ "R2-067": {
+  "local": true,
+  "quote_level": "fuzzy",
+  "quote_pages": [
+   "PDF 9 / printed 6"
+  ],
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ],
+  "quote_in_loc": true
+ },
+ "R2-068": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ },
+ "R2-069": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ },
+ "R2-070": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ },
+ "R2-071": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ },
+ "R2-072": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ },
+ "R2-073": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ },
+ "R2-074": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ },
+ "R2-075": {
+  "local": true,
+  "loc_found": true,
+  "loc_pages": [
+   "PDF 6 / printed 3",
+   "PDF 11 / printed 8"
+  ]
+ }
+}

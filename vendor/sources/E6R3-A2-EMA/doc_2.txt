@@ -1,0 +1,728 @@
+13 July 2026
+EMA/CHMP/ICH/495903/2024
+Committee for Human Medicinal Products
+
+
+
+
+ICH E6(R3) Guideline for Good Clinical Practice – Annex 2
+Step 5
+
+
+
+ Transmission to CHMP                                                                         24 October 2024
+
+ Adoption by CHMP                                                                             14 November 2024
+
+ Release for public consultation                                                              29 November 2024
+
+ Deadline for comments                                                                        28 February 2025
+
+ Final adoption by CHMP                                                                       25 June 2026
+
+ Date for coming into effect                                                                  15 January 2027
+
+
+
+
+Official address Domenico Scarlattilaan 6 ● 1083 HS Amsterdam ● The Netherlands
+Address for visits and deliveries Refer to www.ema.europa.eu/how-to-find-us
+Send us a question Go to www.ema.europa.eu/contact     Telephone +31 (0)88 781 6000       An agency of the European Union
+
+© European Medicines Agency, 2026. Reproduction is authorised provided the source is acknowledged.
+E6(R3)
+
+Document History
+
+ Code                      History                                                           Date
+
+ E6                        Approval by the Steering Committee under Step 2 and               27 April 1995
+                           release for public consultation.
+ E6                        Approval by the Steering Committee under Step 4 and               1 May 1996
+                           recommended for adoption to the three ICH regulatory
+                           bodies.
+ E6(R1)                    Approval by the Steering Committee of Post-Step 4 editorial       10 June 1996
+                           corrections.
+ E6(R2)                    Adoption by the Regulatory Members of the ICH Assembly            9 November
+                           under Step 4. Integrated Addendum to ICH E6(R1)                   2016
+                           document. Changes are integrated directly into the following
+                           sections of the parental Guideline: Introduction, 1.63, 1.64,
+                           1.65, 2.10, 2.13, 4.2.5, 4.2.6, 4.9.0, 5.0, 5.0.1, 5.0.2,
+                           5.0.3, 5.0.4, 5.0.5, 5.0.6, 5.0.7, 5.2.2, 5.5.3 (a), 5.5.3 (b),
+                           5.5.3 (h), 5.18.3, 5.18.6 (e), 5.18.7, 5.20.1, 8.1
+ E6(R3)                    Endorsement by the Members of the ICH Assembly under              19 May 2023
+                           Step 2 and release for public consultation.
+
+ E6(R3) Annex 2            Endorsement by the Members of the ICH Assembly under              06 November
+                           Step 2 and release for public consultation.                       2024
+
+
+ E6(R3)                    Endorsement by the Regulatory Members of the ICH                  06 January 2025
+                           Assembly under Step 4.
+
+
+ E6(R3)                    Error Correction: Typographical corrections to references in;     24 October 2025
+                           Section 1.2.5 and 3.16.4
+
+
+ E6(R3) Annex 2            Endorsement by the Regulatory Members of the ICH                  03 June 2026
+                           Assembly under Step 4.
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                       Page 2/14
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+Table of contents
+Introduction........................................................................................................................... 4
+1. Institutional review board/Independent ethics committee (IRB/IEC) .............................. 5
+2. Investigator ....................................................................................................................... 5
+  2.1. Communication with IRB/IEC........................................................................................... 5
+  2.2. Informed consent considerations...................................................................................... 5
+  2.3. Investigational product management ................................................................................ 6
+  2.4. Investigator Oversight .................................................................................................... 7
+      2.4.1. Investigator oversight of healthcare professionals conducting trial activities within usual
+      clinical practice ................................................................................................................ 7
+  2.5. Safety Assessment and Reporting .................................................................................... 8
+3. Sponsor.............................................................................................................................. 8
+  3.1. Engagement and Communication ..................................................................................... 8
+  3.2. Protocol and trial design ................................................................................................. 9
+  3.3. Communication with IRB/IEC......................................................................................... 10
+  3.4. Access to and use of RWD ............................................................................................. 10
+      3.4.1. Access to RWD ..................................................................................................... 10
+      3.4.2. Consent and permission considerations for RWD ........................................................ 11
+  3.5. Data considerations ..................................................................................................... 11
+      3.5.1. RWD Considerations .............................................................................................. 11
+      3.5.2. Remote Data Collection Considerations .................................................................... 13
+  3.6. Investigational Product Management .............................................................................. 13
+  3.7. Privacy and Confidentiality Considerations ....................................................................... 13
+  3.8. Sponsor Oversight ....................................................................................................... 14
+  3.9. Safety Assessment and Reporting .................................................................................. 14
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                                               Page 3/14
+Annex 2
+
+Introduction
+Good Clinical Practice (GCP), as described in ICH E6(R3) Principles and Annex 1, is applicable across
+clinical trial types, designs and settings, and remains relevant when various operational approaches,
+design elements and data sources are used in a clinical trial. For simplicity, various operational
+approaches, design elements and data sources are collectively referred to in this guideline also as
+methodologies. As clinical trial designs evolve and technological advances occur, the application of GCP
+should be tailored to the trial design and technologies utilised. In this context, the application of a
+proportionate risk-based approach (as explained in the Principles and Annex 1) remains relevant and
+supports the use of evolving trial designs and technologies without compromising the rights, safety
+and well-being of the participants and the reliability of the trial results. In response to the increased
+use of various operational approaches, design elements and data sources, ICH E6(R3) Annex 2
+provides additional GCP considerations, focusing on trials that incorporate decentralised elements,
+pragmatic elements and/or real-world data (RWD). Clinical trials may incorporate one or more of these
+methodologies. Annex 2 is not meant to be comprehensive of all methodologies, recognising that
+clinical trial ecosystems may continue to evolve, and new approaches, designs and data types may
+emerge. Considerations included in this Annex may be applied to those evolving methodologies
+provided they are applied in accordance with local regulatory requirements. This Annex should not be
+read as an endorsement of any specific methodologies and should be read in conjunction with the
+Principles and Annex 1.
+
+For the purposes of Annex 2, decentralised elements in a clinical trial are those trial-related activities
+conducted outside the investigator’s location. These may include trial visits and/or protocol-related
+procedures conducted at the trial participant’s home, local healthcare centres or mobile medical units.
+They also encompass remote interactions, such as video calls or the use of digital health technologies
+(DHTs) to conduct visits, perform procedures and collect data.
+
+In Annex 2, the term DHTs is used as a broad term to reflect the wide range of technologies
+supporting healthcare used to collect, measure, or monitor health-related data from participants or
+patients (e.g., mobile applications, wearables, and sensors). Depending on the context, the term may
+refer to those technologies used specifically in trials or those used within broader healthcare settings.
+Where a DHT is used to acquire participant data for a clinical trial, it is considered a data acquisition
+tool (as defined in the Glossary).
+
+Pragmatic elements in clinical trials are those that integrate aspects of usual clinical practice into the
+design and conduct of the trial. Usual clinical practice refers to the established day-to-day processes
+and procedures applied by healthcare professionals when caring for patients. Such elements may
+include protocols with trial processes and eligibility criteria that reflect usual clinical practice in that
+patient population and reflect the settings where usual care is provided, such as in hospitals, in
+healthcare centres and by primary physicians and/or local healthcare providers. Pragmatic elements
+also include streamlined data collection, for example, capturing only the minimum necessary data by
+aligning with usual clinical practice or capturing data only at the timing in routine care settings to
+minimise the complexity of trial conduct. Technologies, such as DHTs, and automated data exports
+from electronic health records (EHRs) can be used to help such streamlined data collection.
+
+RWD incorporated in interventional clinical trials refers to the use of data relating to patient health
+status collected from a variety of sources outside of clinical trials (e.g., EHRs, registries, claims
+databases).
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                        Page 4/14
+In the context of clinical trials, data are often used in one of two ways: as primary data collection,
+when collected specifically for the trial, or as secondary use, when repurposed from existing sources
+collected for other purposes. Both types of data use can contribute meaningfully to trial objectives, but
+each requires different considerations for data quality, data governance and regulatory acceptability.
+
+Primary data collection involves gathering data prospectively in accordance with the trial protocol,
+typically through trial-specific procedures such as clinical assessments, laboratory tests or participant
+questionnaires. Secondary use of data refers to the use of data originally collected for purposes other
+than the clinical trial but are subsequently incorporated into that clinical trial. When such data reflects
+patient experiences, outcomes or healthcare delivery outside a clinical trial setting, it is considered
+RWD. These data can serve various roles in a trial, including but not limited to endpoint or outcome
+data or serving as an external control. When such data are used in a trial, it is essential to ensure that
+the data are fit for their intended purpose in the clinical trial.
+
+As stated in the Principles and Annex 1, a quality by design (QbD) approach should be used in clinical
+trials to ensure that the methodologies adopted and implemented are fit for purpose and the quality
+and amount of information generated or collected is sufficient to support good decision making. When
+planning and implementing decentralised and pragmatic elements in clinical trials, it is important to
+consider the needs of the participants. These include the availability of, and familiarity with, the use of
+technologies as well as whether there is any burden to participants that needs to be balanced with the
+use of such elements.
+
+
+1. Institutional review board/Independent ethics committee
+(IRB/IEC)
+The ethical principles and standards for the evaluation of clinical trials by IRBs/IECs, as described in
+the Principles and Annex 1, provide a sound basis for the conduct of clinical trials, including those
+incorporating decentralised elements, pragmatic elements and/or RWD. Particular attention should be
+given to, for example, measures to ensure participants’ rights, safety and well-being, to protect their
+privacy and confidentiality and to secure their data.
+
+
+2. Investigator
+2.1. Communication with IRB/IEC
+
+The investigator, in accordance with applicable regulatory requirements, should provide the IRB/IEC
+with the information needed for the evaluation of the appropriateness of the methodologies being used
+(see Annex 1, sections 1.1 and 2.4).
+
+2.2. Informed consent considerations
+
+The informed consent process is an integral part of the conduct of interventional clinical trials. Varied
+approaches (e.g., text, images, videos and other interactive methods) may be used in the informed
+consent process for providing information to the participant (or legally acceptable representative,
+where applicable) and for supporting the participant’s understanding of the trial (see Annex 1, section
+2.8). The informed consent process, including the methods and tools described below for obtaining
+consent, should be in accordance with applicable regulatory requirements. The informed consent
+materials and process should be tailored to reflect the various operational approaches, design elements
+and data sources incorporated in the trial.
+
+2.2.1.      Informed consent may be obtained remotely where appropriate. When informed consent is
+            obtained remotely, the investigator should assure themselves of the identity of the
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                    Page 5/14
+            participant (or legally acceptable representative where applicable). This may be performed,
+            for example, by verification of an official identification document via a video call. The
+            verification method along with the measures to safeguard data privacy should be pre-
+            specified.
+
+2.2.2.      The characteristics of the trial population (e.g., participants may lack familiarity with
+            computerised systems) and the appropriateness of the method and tools used to obtain
+            consent should be taken into consideration when developing the informed consent materials
+            and process. When computerised systems are used to support the informed consent process
+            and/or when informed consent is obtained remotely, trial participants may be given the
+            option to use a paper-based approach and/or in-person consent process, to the extent
+            feasible, should they prefer this.
+
+2.2.3.      The informed consent materials should describe what participant-related data will be
+            collected, how the data may be used in the trial and which parties will have access to the trial
+            participant’s personal information, such as health records and home address (e.g., when trial-
+            related activities are conducted at the participant’s home or local healthcare centre, or when
+            data are collected remotely via DHTs).
+
+2.3. Investigational product management
+
+Various approaches to investigational product management (i.e., supply, storage, dispensing,
+administration, return, accountability documentation, destruction or alternative disposition) may be
+utilised, as appropriate. The investigational product may be dispensed or supplied to the participant or
+to an appropriate designee (e.g., caregiver, home nurse, local pharmacist) for administration at the
+participant’s location (e.g., participant’s home, local healthcare centre) by appropriate parties (e.g.,
+the investigator site staff, the participant, a home nurse or a local pharmacist). These approaches
+should be arranged and conducted in accordance with applicable regulatory requirements.
+
+2.3.1.      The investigator/institution may arrange to send the investigational product to the participant
+            (e.g., to the participant’s home) following the sponsor’s documented instructions, where
+            applicable. Such arrangements should also comply with applicable regulatory requirements.
+            When shipping investigational products to a participant, the following should be considered:
+
+            (a)     The process for protecting the privacy and maintaining the confidentiality of the
+                    participant and their disease status.
+
+            (b)     That the investigational product is being received by the intended recipient (i.e., the
+                    participant or their appropriate designee, such as a caregiver).
+
+            (c)     The process for the receipt, storage, handling, administration, return, destruction or
+                    alternative disposition and accountability of the investigational product.
+
+            (d)     The process by which blinding (if applicable) is protected.
+
+            (e)     The availability of participant support tools, such as online tutorials, information
+                    brochures, visual aids and contact details for support (e.g., technical support).
+
+2.3.2.      Where permitted by applicable regulatory requirements, the sponsor may arrange to send the
+            investigational product to the participant. In such cases:
+
+            (a)     The investigator/institution retains responsibility for the safe and appropriate use of
+                    the investigational product for participants under their care.
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                        Page 6/14
+            (b)     The investigator should be aware of the arrangements for shipping the investigational
+                    product to participants from the sponsor and remain informed of the investigational
+                    product receipt, use and any participant-reported issues and their resolution.
+
+            (c)     There should be clear documentation of the roles and responsibilities of the sponsor
+                    and the investigator.
+
+            (d)     There should be clear communication and predefined procedures between the sponsor,
+                    the investigator and any service provider involved in the shipping of the investigational
+                    product.
+
+2.3.3.      Certain documentation and processes already used in the institution/healthcare centre may
+            be sufficient for the management of the investigational product, depending on applicable
+            regulatory requirements. For example, existing standard pharmacy practices for product
+            accountability and record of storage conditions that are kept routinely in the pharmacy may
+            be appropriate.
+
+2.3.4.      The investigator should maintain appropriate oversight of the activities related to
+            investigational product management and should ensure that appropriate documentation is
+            maintained (see Annex 1, section 2.10.4). The level of investigator oversight will depend on
+            a number of factors, including the trial design, characteristics of the investigational product,
+            route and complexity of administration, level of existing knowledge about the investigational
+            product’s safety and marketing status (see Annex 1, section 2.10). The activities that should
+            be under the oversight of the investigator include, but are not limited to:
+
+            (a)     The receipt, use and return (or alternative disposition) of the investigational product by
+                    the trial participants, where appropriate. Receipt and return (or alternative disposition)
+                    may be undertaken by an appropriate designee of the participant.
+
+            (b)     Commencement, continuation, dose and dose adjustments of the allocated
+                    investigational product as specified in the protocol.
+
+2.4. Investigator oversight
+
+The investigator should maintain appropriate and proportionate oversight of trial-related activities to
+ensure the rights, safety and well-being of the trial participants and the reliability of trial data.
+
+The level of investigator oversight should depend on the nature of the trial-related activities and should
+be proportionate to the importance of the data being collected and the risk to trial participant rights,
+safety and well-being and data reliability.
+
+An appropriate level of oversight is context-dependent (e.g., depending on trial characteristics, such as
+trial design, trial population, investigational product and data sources). An appropriate level of
+oversight may range from direct supervision to less intensive oversight, whether in person or via
+remote communication methods (e.g., video, telephone or email), to only the review of essential
+records (including source records).
+
+2.4.1. Investigator oversight of healthcare professionals conducting trial activities within
+usual clinical practice
+
+Healthcare professionals may be involved in performing trial-related activities that are part of usual
+clinical practice. In such cases, the protocol should describe these trial-related activities to be
+performed by these healthcare professionals (see Annex 2, section 3.2.2).
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                        Page 7/14
+For trial-related activities that are part of usual clinical practice, conducted by healthcare professionals,
+and which do not require knowledge about the protocol, investigator’s brochure or other trial-related
+documents (e.g., manuals describing trial-specific procedures), appropriate arrangements should be in
+place. Such arrangements should address plans for making relevant information and records on the
+performed trial-related activities available to the investigator. These include defining how data are
+shared, how records are retained (e.g., certified copy), how data privacy is maintained and what
+mechanisms are in place for ensuring data integrity.
+
+Where trial-related activities are part of usual clinical practice and knowledge of the protocol,
+investigator’s brochure or other trial-related document is required, delegated healthcare professionals
+who have been appropriately trained should perform these activities (see Annex 1, section 2.3.1).
+
+In either case mentioned above, the level of investigator oversight should be proportionate to the
+criticality of data to participant protection and the reliability of the trial results. Regardless of whether
+healthcare professionals involved in the trial are arranged by the sponsor or investigator, such
+oversight should ensure that the resulting records meet the relevant requirements of the protocol and
+thereby ensure reliable trial results, trial participant protection and appropriate decision making.
+
+2.5. Safety assessment and reporting
+
+For the safety monitoring of individual trial participants (see Annex 1, section 2.7), the investigator
+should review and assess information on the health status of participants across the sources of safety-
+related information. Safety information generated from, for example, home nursing, remote visits, and
+use of DHTs, should be provided to the investigator in a manner that allows the investigator to make
+decisions on the care of the participant and ensures participant safety (see Annex 2, section 3.9 and
+Annex 1, section 3.13.2).
+
+
+3. Sponsor
+3.1. Engagement and communication
+
+Engagement with relevant interested parties is particularly important when utilising various
+methodologies in clinical trials. Their early involvement may be valuable in refining research questions;
+selecting meaningful interventions and outcomes; and shaping trial design, procedures and
+communication strategies. The following considerations are important in communicating with relevant
+interested parties and may be undertaken in various ways, taking into account ICH E8(R1) General
+Considerations for Clinical Studies (see also Annex 1, section 3.1.3).
+
+3.1.1.      Engaging patients, patient advocacy groups and their communities, as appropriate, can help
+            ensure the successful integration and implementation of the methodologies used in trials. For
+            example, involving patients early in the design of the trial may help to refine the trial design,
+            including ensuring the suitability of DHTs (e.g., mobile applications, wearables) used in trials
+            with decentralised elements, and help address issues related to the logistics of participation.
+            This engagement may also highlight areas where additional training or support may be
+            needed (e.g., digital literacy, physical ability or lack of access to technology that may require
+            the use of alternative approaches, specialised training or the provision of technology).
+
+3.1.2.      Engaging healthcare professionals and/or investigators early in the design of a clinical trial
+            that incorporates various methodologies is critical for the successful implementation and
+            conduct of a clinical trial. Early engagement can help:
+
+            (a)     Address issues related to the infrastructure needed to conduct the trial.
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                       Page 8/14
+            (b)      Develop protocols that incorporate the usual clinical practice of healthcare
+                     professionals, when appropriate, and that allow for the integration of data generated
+                     from usual clinical practice when such data are fit for purpose.
+
+            (c)      Identify areas where training or support is needed.
+
+3.1.3.      Sponsors are encouraged to engage with regulatory authorities early, especially when
+            designing and planning trials that employ various operational approaches (including
+            technological tools), incorporate complex design elements or utilise RWD sources. Early
+            engagement will help address the appropriateness of using such methodologies in the design
+            of their trial and will allow for timely identification of challenges and strategies for resolution.
+
+3.2. Protocol and trial design
+
+Appendix B describes topics that should generally be included in the clinical trial protocol. Additional
+consideration may need to be given to the protocol and protocol-related documents when utilising
+various methodologies so that all parties involved in the trial conduct are adequately informed.
+
+3.2.1.      The specific design elements, data sources and, where appropriate, various operational
+            approaches should be adequately described in the protocol, and the appropriateness of their
+            use should be justified. The rationale, fitness for purpose and feasibility of using specific
+            methodologies should be briefly explained. These descriptions can be supplemented in the
+            protocol-related documents (see Appendix B).
+
+3.2.2.      Sponsors considering incorporating trial-related activities that are part of usual clinical
+            practice (i.e., pragmatic elements) should assess whether such an approach is fit for purpose
+            for use in the trial and complies with applicable regulatory requirements. Where such
+            activities are incorporated in the trial, sponsors should ensure that the protocol clearly
+            describes how, by whom, and under what circumstances these trial-related activities will be
+            performed to ensure these activities are well understood and appropriately implemented (see
+            Annex 2, section 2.4.1).
+
+3.2.3.      Since data may originate from different sources or practice settings (e.g., sources with
+            different data collection timings), there may be data variability within and/or between data
+            sources or settings. The impact of such data variability should be considered in the trial
+            design and discussed in the protocol or protocol-related documents (e.g., statistical analysis
+            plan).
+
+3.2.4.      The methodologies used in the trial should be considered when determining the need for
+            appropriate training and technical support to be provided to the investigator, investigator site
+            staff and participants.
+
+3.2.5.      The protocol and, where applicable, protocol-related documents should describe how safety
+            information will be collected from the variety of data sources (e.g., by DHTs, in-person or
+            remote visits), how data and information suggesting a potential safety concern will be
+            identified and made available to the investigator in a timely manner, and what actions should
+            be taken by the investigator in these instances. Such information should be provided to the
+            investigator in a manner that would help inform their decision making (e.g., on eligibility,
+            treatment, continuing participation in the trial and care for the safety of the individual trial
+            participants) (see Annex 2, sections 2.5 and 3.9).
+
+3.2.6.      Modalities of the informed consent process (e.g., remote or in-person) should be described in
+            the protocol.
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                        Page 9/14
+3.3. Communication with IRB/IEC
+
+The sponsor, in accordance with applicable regulatory requirements, should ensure that the IRB/IEC is
+provided with the information needed to evaluate the appropriateness of the methodologies being used
+(see Annex 1, sections 1.1 and 3.8.2).
+
+3.4. Access to and use of RWD
+
+Sponsors are ultimately responsible for ensuring that RWD used in a clinical trial are managed in a
+manner that ensures participant protection and the reliability of trial results. This includes ensuring
+that the data are fit for purpose, that appropriate access and oversight are in place, and that use of
+such data complies with applicable privacy and data protection requirements, including consent and
+permission.
+
+3.4.1. Access to RWD
+
+Sponsors are responsible for ensuring that RWD used in a clinical trial are fit for purpose (i.e., they are
+relevant and reliable; see Annex 2, section 3.5.1) and ultimately support the reliability of the trial
+results. To fulfil this responsibility, sponsors should have the ability to access individual-level data,
+whether generated by themselves or by other entities (including service providers), and data in source
+records as necessary in accordance with applicable regulatory requirements. Sponsor access to such
+data may be necessary, for example, to implement quality assurance and control. For regulatory
+inspection purposes, regulatory authorities may require access to individual-level data and data in
+source records in accordance with applicable regulatory requirements.
+
+Individual-level data (pseudonymised for trial use) are datasets or listings capturing data for each
+individual, usually extracted from source records and structured for statistical analysis and reporting.
+Pseudonymised data are processed such that a specific individual cannot be identified without collating
+the data with additional information. Data in source records refer to the data in the original records,
+such as patient medical records, laboratory reports, imaging files and physician notes, from which
+individual-level data are derived (see the glossary term “source records”). Source records are typically
+not pseudonymised and contain patient-identifying information as well as other information subject to
+data privacy and protection requirements.
+
+RWD used in a clinical trial may be owned and controlled by entities other than the sponsor (e.g.,
+healthcare institutions, registry holders, insurers). In such cases, the sponsor should ensure
+appropriate arrangements are in place with these entities to enable access and use of the data for trial
+purposes. This should include access to data in source records by the sponsor for the purpose of
+quality assurance and quality control in accordance with applicable regulatory requirements. The
+arrangements should also allow regulatory authorities to access individual-level data and source
+records to support regulatory inspections.
+
+These arrangements should include documented agreements that define how data will be shared and
+protected in accordance with applicable regulatory requirements as well as the institutional policies of
+each party.
+
+The extent of sponsor access to individual-level data and data in source records should be
+proportionate to the criticality of the data (see Annex 1, section 3.16.1(b)). For RWD use cases of
+higher criticality (e.g., when RWD are used to support key efficacy and safety endpoints), simply
+assessing the fitness for purpose of the RWD source to be utilised (see Annex 2, section 3.5.1(b)) may
+be insufficient to ensure reliability of the data. Therefore, it may be necessary for the sponsors for
+example to confirm whether a clinical event occurred, was assessed, or was documented. In such
+cases, sponsors should ensure access to source records to support their quality assurance and quality
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                    Page 10/14
+control activities. Where such access is not feasible due to constraints set by entities who own and/or
+control the RWD, sponsors should consult relevant regulatory authorities. For RWD use cases of lower
+criticality (e.g., for exploratory endpoints), it may be sufficient for sponsors to use system- and
+process-level assessments. In this case, the protocol or protocol-related documents should describe
+the fitness for purpose of the RWD, including any relevant limitations and justification of the
+assessment approach.
+
+Regardless of which entity owns and/or controls data or undertakes data processing steps, sponsors
+remain responsible for oversight of these steps, including extraction, linkage and transformation, and
+for implementing quality assurance and quality control measures to ensure data are of appropriate
+quality.
+
+3.4.2. Consent and permission considerations for RWD
+
+In accordance with applicable regulatory requirements, the sponsor should ensure that permission or
+approval is obtained from authorised entities (e.g., IRBs/IECs) or consent is provided by individuals
+whose health data or source records are used to obtain RWD. The consent should describe use of and
+access to the RWD and their source records by regulatory authorities, and where applicable, sponsor
+representatives and IRBs/IECs. Such consent does not imply participation in an interventional trial-
+related activity. When RWD originate from data previously collected for purposes not specific to that
+trial and that are subsequently incorporated into the trial (i.e., secondary use of data), the way of
+obtaining consent may depend on the local regulatory requirements and the identifiability of the
+individual whose data are being used. In some regions, consent may be obtained in a broad manner to
+allow for potential future research use (i.e., broad consent). In other regions, permission from an
+IRB/IEC may substitute for obtaining consent for secondary use of data.
+
+Sponsors should ensure that records of the consents or permissions are retained and available to
+regulatory authorities upon request.
+
+3.5. Data considerations
+
+This section provides aspects that should be taken into consideration when utilising a variety of data
+sources. It should be read in conjunction with Annex 1, section 3.16.1 and section 4, Data Governance
+– Investigator and Sponsor.
+
+3.5.1. RWD Considerations
+
+           (a)      The sponsor should ensure the fitness for purpose of RWD, which can be described by
+                    their reliability and relevance. The term reliability includes accuracy, completeness,
+                    provenance and traceability; the term relevance includes the availability of key data
+                    elements (e.g., exposure, outcomes, covariates) to answer the specific trial question
+                    with the specific method. Attention should be given to the variability in data source,
+                    potential bias, generalisability and traceability of RWD. The sponsor should implement
+                    procedures that support adequate documentation, data linkage and quality control,
+                    while accounting for differences in how RWD are structured, collected and managed
+                    across various sources. In selecting RWD sources, sponsors should assess whether the
+                    data are appropriate to support the specific trial endpoints and objectives and should
+                    weigh the potential benefits against limitations, taking into account the considerations
+                    described in 3.5.1(b) below. These considerations should be reflected in trial planning,
+                    protocol design and oversight processes.
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                     Page 11/14
+          (b)       A variety of RWD sources may be used in clinical trials, including EHRs, administrative
+                    claims data, and registries. Since these data are typically generated outside the clinical
+                    trial, sponsors generally do not have control over how the data were originally
+                    collected, recorded, or curated.
+
+                    Sponsors should assess whether the RWD source is fit for purpose for the intended use
+                    in the trial. In doing so, sponsors should also apply a risk-proportionate approach to
+                    the measures used to ensure appropriate data quality, integrity, and governance for
+                    the RWD incorporated into the trial. This approach should consider the importance of
+                    the data to the trial objectives and the potential impact of data limitations on trial
+                    results.
+
+                    The considerations that may inform the determination of whether a given RWD source
+                    is fit for purpose include, but are not limited to, the following:
+
+                     (i)    The potential variability of data formats and structure (e.g., different
+                            terminologies and/or standards) with data coming from a variety of sources.
+
+                    (ii)    Lack of standardised timing of data collection and procedures (e.g., the timing
+                            and frequency of clinical assessments in RWD are based on clinical practice and
+                            may have been influenced by the participant’s clinical status; therefore, the
+                            protocol schedule may not match with those available from the RWD).
+
+                   (iii)    Comparability between data from the clinical trial and the control group using
+                            RWD, such as comparability of baseline factors, minimisation of potential
+                            selection bias through pre-planned patient selection, and consistency in clinical
+                            evaluation methods.
+
+                   (iv)     Missing data (e.g., due to participants moving to different healthcare systems) or
+                            the occurrence of intercurrent events that may be difficult to capture or ascertain
+                            when using RWD (e.g., discontinuation of treatment or the use of an additional
+                            or alternative therapy that is not captured in the EHR). See ICH E9(R1)
+                            Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the
+                            Guideline on Statistical Principles for Clinical Trials.
+
+                    (v)     The overall quality of data collected in clinical practice (e.g., EHR, claims data) or
+                            registries, including operational processes, database structure and consistencies
+                            of vocabularies and coding systems.
+
+                   (vi)     De-identification methodologies (e.g., pseudonymisation) used to protect the
+                            privacy and confidentiality of personal information.
+
+                  (vii)     The fitness for purpose assessment of systems and tools used for the collection
+                            and acquisition of RWD (e.g., registries, DHTs), including the validation status as
+                            appropriate.
+
+          (c)       Multiple data sources might need to be linked to support the reliability, including
+                    completeness of RWD (e.g., linkage of data from EHRs and claims databases or linkage
+                    of a RWD source to a mortality database to confirm outcomes). When data are linked,
+                    accurate matching to the individual should be assured, and the sponsor should ensure
+                    adequate measures to sufficiently protect both data privacy and the reliability of trial
+                    results. If data are to be linked, this should be pre-specified in the protocol or protocol-
+                    related documents, including how data inconsistencies between different sources will
+                    be resolved in a systematic and consistent manner.
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                        Page 12/14
+3.5.2. Remote data collection considerations
+
+          (a)        Remote data collection in clinical trials (e.g., the use of remote visits and DHTs,
+                    extraction of data from EHRs) requires special attention to be paid to data security
+                    vulnerabilities (see Annex 1, section 4.3.3), including cybersecurity and data privacy
+                    (see Annex 2, section 3.7).
+
+          (b)       Some of the RWD considerations in Annex 2, section 3.5.1 may also apply to remote
+                    clinical trial data collection.
+
+3.6. Investigational product management
+
+Various approaches to investigational product management (i.e., supply, storage, dispensing,
+administration, return, accountability documentation, destruction or alternative disposition) may be
+utilised as appropriate and in accordance with applicable regulatory requirements (see Annex 2,
+sections 2.3 and 3.8; Annex 1, section 3.15.3).
+
+3.6.1.      The sponsor should assess these approaches to investigational product management during
+            the protocol development process. This assessment should consider, for example, the
+            stability of the investigational product and the requirement for specialised storage conditions,
+            the necessary preparation of the final investigational product for administration (e.g.,
+            complex reconstitution or administration) and the route of administration. This assessment
+            should also consider the trial population, the knowledge about the investigational product
+            safety profile, the need for in-person clinical observation in the immediate post-
+            administration period, the measures needed to protect blinding if applicable, and the need for
+            emergency plans related to investigational product administration (e.g., requirement for
+            rescue medication).
+
+3.6.2.      The sponsor may arrange to send the investigational product to the participant (e.g., to the
+            participant’s home) in accordance with applicable regulatory requirements. Such shipment
+            should be carried out in accordance with the protocol, and the sponsor should ensure that the
+            shipment process is initiated after being authorised by the investigator. For specific
+            considerations for investigational product shipping to the participant, see Annex 2, section
+            2.3.1; in addition, see the privacy and confidentiality considerations in Annex 2, section 3.7.
+
+3.6.3.      The sponsor may deploy systems (e.g., interactive response technology, DHTs) and assist the
+            investigator to establish processes (e.g., home nurse visits) to ensure that the allocated
+            investigational product was delivered and administered appropriately to the trial participant.
+
+3.7. Privacy and confidentiality considerations
+
+Sponsors should ensure that security safeguards, including cybersecurity, are in place so that the
+privacy and confidentiality of the personal information of trial participants are protected in accordance
+with applicable regulatory requirements. Participants’ personal information may be required by service
+providers to fulfil their activities (e.g., disclosure of personal information when investigational product
+is shipped to participants or when a home nurse is deployed, where appropriate). In these
+circumstances, sponsors and service providers should ensure that appropriate informed consent has
+been provided by the participant, that the personal information is protected from inadvertent
+disclosure and that access to these data is limited to those authorised. The sponsors should address
+the risk of potential disclosure of personal information from a data breach, for example, when data
+from DHTs and/or RWD are used.
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                      Page 13/14
+3.8. Sponsor oversight
+
+Sponsor oversight may be more complex depending on the wide range of methodological approaches
+to the trial design and conduct, and the number of service providers involved in the trial conduct.
+Sponsors should ensure that there are processes in place, including clear lines of communication, to
+provide an appropriate level of oversight such that the participants’ rights, safety and well-being are
+protected, and the reliability of the trial results is ensured. Sponsor oversight also involves, but is not
+limited to, the implementation of quality control and assurance measures specifically customised to the
+clinical trial and its critical to quality factors and identified risks. These measures should be
+implemented in a manner which is proportionate to the potential impact on the protection of
+participants and/or the reliability of the trial results. Sponsors should maintain appropriate oversight of
+service providers including ensuring maintenance of their essential records (see Annex 1, sections 3.9,
+3.10 and 3.11, and Appendix C).
+
+When a sponsor arranges trial-related activities which are under the responsibility of the investigator
+(e.g., home nursing), the sponsor should ensure that the service providers are suitable to conduct this
+activity (see Annex 1, section 3.6.5). In such circumstances, the investigator retains the ability to
+make the decision on the appropriateness of the proposed service provider and is responsible for the
+oversight of their activities (see Annex 1, section 2.3.1).
+
+3.9. Safety assessment and reporting
+
+The management of safety information is an essential part of clinical trials to protect trial participants’
+safety through early detection and management of potential adverse drug reactions (see Annex 1,
+section 3.13).
+
+3.9.1.      Safety information may be collected in various ways and from multiple sources in clinical
+            trials with decentralised and/or pragmatic elements. For example, safety information may be
+            obtained through remote visits, DHTs, EHRs, in-person visits or a combination of these
+            approaches. In these circumstances, the sponsor should ensure that appropriate processes
+            and procedures are in place to make this information accessible to the investigator in a timely
+            manner according to the protocol. The safety information should be provided to the
+            investigator in a manner that allows the investigator to make decisions on care of the
+            participant and ensures their safety. For example, when DHTs are used to collect data, the
+            sponsor should ensure that information will be provided to the investigator in a way that is
+            relevant, meaningful and manageable, enabling an effective overview of the participant’s
+            health status and timely, appropriate medical decisions.
+
+3.9.2.      The approach to safety management, including any mitigating actions to safeguard
+            participant safety, and to reporting should be described in the protocol or protocol-related
+            documents (e.g., the safety management plan). This approach should take into account the
+            methodologies used in the trial. Where appropriate, consideration should be given to ICH E19
+            A Selective Approach to Safety Data Collection in Specific Late-Stage Pre-Approval or Post-
+            Approval Clinical Trials.
+
+
+
+
+ICH E6(R3) Guideline for good clinical practice – Annex 2
+                                                                                                    Page 14/14
+

@@ -1,0 +1,519 @@
+# L4-01 - Define trial-specific iPD criteria
+# Best-practice reference model of important protocol deviation (iPD) management, GEN-01 spec (B1).
+# Trace fields are derived from synthesis/requirements.yaml and synthesis/merged_findings.yaml.
+# Modelling choices, SHOULD deviations and open questions: spec/notes.md; REQ coverage: spec/coverage.md.
+id: L4-01
+title: "Define trial-specific iPD criteria"
+level: L4
+parent: {model: L3, node: A1}
+interface: {start: [S1], ends: [E1], message_flows: [M1]}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-3.9.2", page: "printed 26 / PDF 34"}
+      - {key: E6R3, loc: "P10.1", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "P10.3", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "A1-3.9.5", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: TCB-RBQM, loc: "SQTL-Process", page: "journal pp. 251-261 (section page not confirmed)"}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Investigator", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", page: "OJ L 158/13"}
+      - {key: 21CFR312, loc: "21CFR312.60", page: "n/a - eCFR web text without pagination"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-2.5.2", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.10.6", page: "printed 20 / PDF 28"}
+      - {key: E6R3, loc: "A1-2.3.1", page: "printed 12 / PDF 20"}
+      - {key: E6R3, loc: "A2-2.4", page: "printed 55 / PDF 63"}
+      - {key: E6R3, loc: "A2-2.4.1", page: "printed 56 / PDF 64"}
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", page: "OJ L 158/12"}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", page: "printed 89 / PDF 97"}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", page: "n/a - eCFR web text without pagination"}
+
+lanes:
+  - id: L_SPON
+    name: "Sponsor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+
+nodes:
+  - id: S1
+    type: start
+    label: "CtQ factors identified"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E8R1, loc: "S6.1.1", page: "printed 18"}
+      - {key: E6R3, loc: "P6.2", page: "printed 5 / PDF 13"}
+      - {key: E6R3, loc: "A1-3.1.2", page: "printed 23 / PDF 31"}
+      - {key: E6R3, loc: "A1-3.10", page: "printed 27 / PDF 35"}
+      - {key: E8R1, loc: "S3", page: "printed 3"}
+      - {key: E8R1, loc: "S3.1", page: "printed 3"}
+      - {key: E8R1, loc: "S3.2", page: "printed 4; printed 5"}
+      - {key: E8R1, loc: "S3.3.5", page: "printed 6"}
+      - {key: E8R1, loc: "S7", page: "printed 20-21; printed 20; bullet 1 of 18; printed 20; bullet 2 of 18; printed 20; bullet 3 of 18; printed 20; bullet 4 of 18; printed 20; bullet 5 of 18; printed 20; bullet 6 of 18; printed 20; bullet 8 of 18; printed 20; bullet 9 of 18; printed 20; bullet 10 of 18; printed 20; bullet 11 of 18; printed 20; bullet 12 of 18; printed 20; bullet 13 of 18; printed 20; bullet 14 of 18; printed 20; bullet 15 of 18; printed 20; bullet 16 of 18; printed 20; bullet 17 of 18; printed 20; bullet 18 of 18"}
+      - {key: E6R3, loc: "P7.1", page: "printed 5 / PDF 13"}
+      - {key: E6R3, loc: "P7.4", page: "printed 5-6 / PDF 13-14"}
+      - {key: E6R3, loc: "P8.3", page: "printed 6 / PDF 14"}
+      - {key: E6R3, loc: "A1-3.1.4", page: "printed 23 / PDF 31"}
+      - {key: E6R3, loc: "A2-3.2.2", page: "printed 57 / PDF 65"}
+      - {key: E8R1, loc: "S3.3", page: "printed 5"}
+      - {key: E8R1, loc: "S3.3.1", page: "printed 5"}
+      - {key: E8R1, loc: "S3.3.2", page: "printed 5"}
+      - {key: E8R1, loc: "S3.3.4", page: "printed 6"}
+      - {key: E8R1, loc: "S3.3.3", page: "printed 6"}
+      - {key: M11, loc: "S2.1", page: "printed 2"}
+      - {key: M11-TEMPLATE, loc: "SConventions [verify]", page: "printed iv-vii"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 295-298"}
+      - {key: TCB-RBQM, loc: "SHow-QTLs-Fit-in-a-Quality-Management-System", page: "journal pp. 251-261 (section page not confirmed)"}
+      - {key: CTTI-QbD, loc: "S2", page: "1 of 2"}
+      - {key: CTTI-QbD, loc: "S3", page: "1-2 of 2"}
+    req: [REQ-001, REQ-203, REQ-204, REQ-205, REQ-206, REQ-207]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    deadline: "during study planning"
+    party: "sponsor; The sponsor and other parties designing quality into a clinical study; clinical investigators, study coordinators and other site staff, and patients/patient organisations"
+    verify:
+      - "[verify] carried by the A1 start event 'CtQ factors identified' (no separate task); closest ICH text to a CtQ-to-iPD link (C-02)"
+      - "[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F02) (R2-005)"
+      - "[verify] sentence content from a single fetch (F02) (R2-006)"
+      - "[verify] sentence content from a single fetch (F03) (R2-014)"
+      - "[verify] sentence content from a single fetch (F03) (R2-017)"
+      - "[verify] detail from web page fetch only (R5-057)"
+      - "[verify binding] EU/US adoption of M11, M11-TEMPLATE not checked by the research stems (C-06)"
+      - "[verify] section content from a single fetch (F30); Step 4 status confirmed in F26 (R2-111)"
+      - "[verify] section label of the conventions part and wording; single fetch (F31) (R2-112)"
+  - id: A1
+    type: task
+    label: "Identify risks to CtQ factors"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.1", page: "printed 28 / PDF 36"}
+    req: [REQ-002]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "before trial initiation; ongoing during conduct"
+    record: "risk assessment"
+    party: "sponsor"
+  - id: A2
+    type: task
+    label: "Evaluate risks to CtQ factors"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.2", page: "printed 28 / PDF 36"}
+      - {key: E8R1, loc: "S3.2", page: "printed 4"}
+      - {key: FDA-RBM13, loc: "SIV.B", page: "printed 12-13"}
+    req: [REQ-003]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    record: "risk assessment"
+    party: "sponsor; The sponsor and other parties designing quality into a clinical study"
+    verify:
+      - "[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F02) (R2-008)"
+  - id: G1
+    type: and-split
+    lane: L_SPON
+    path: main
+  - id: A3
+    type: task
+    label: "Define risk controls for CtQ risks"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.3", page: "printed 28 / PDF 36"}
+      - {key: E8R1, loc: "S3.2", page: "printed 4; printed 4-5"}
+      - {key: E6R3, loc: "A1-3.10.1.4", page: "printed 28 / PDF 36"}
+      - {key: E6R3, loc: "P6.3", page: "printed 5 / PDF 13"}
+      - {key: E6R3, loc: "A1-3.16.1(x)(ix)", page: "printed 42-43 / PDF 50-51"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 9; lines 305-310, footnotes 22-23"}
+      - {key: FDA-RBM23, loc: "SQ1", page: "printed 4"}
+    req: [REQ-005, REQ-007, REQ-008, REQ-009, REQ-030]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    record: "risk control measures; study-specific plans; risk documentation"
+    party: "sponsor; The sponsor and other parties designing quality into a clinical study"
+    verify:
+      - "[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F02) (R2-010)"
+      - "[verify] principle without named party; Sponsor lane assigned by context"
+  - id: A4
+    type: task
+    label: "Set acceptable ranges for CtQ risks"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.3", page: "printed 28 / PDF 36"}
+      - {key: TCB-RBQM, loc: "SNumber-of-QTLs", page: "journal pp. 251-261 (section page not confirmed)"}
+      - {key: TCB-RBQM, loc: "SDefine-Process-Stage", page: "journal pp. 251-261 (section page not confirmed)"}
+      - {key: CTTI-CTQ, loc: "SData-Monitoring-and-Management", page: "printed 19 of 24"}
+    req: [REQ-006]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "acceptable ranges / QTL definitions and action plan"
+    party: "sponsor; study team"
+    verify:
+      - "[verify] trial-level sense of 'acceptable ranges' (A1-3.10.1.3), distinct from the protocol-provision sense of AppB-Intro (C-04)"
+  - id: A5
+    type: task
+    label: "Document critical data and processes"
+    lane: L_SPON
+    path: alt
+    src:
+      - {key: FDA-RBM13, loc: "SIV.A", page: "printed 11-12"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 298-303"}
+      - {key: CTTI-CTQ, loc: "SData-Monitoring-and-Management", page: "printed 19 of 24"}
+    req: [REQ-004]
+    binding: guidance
+    jurisdiction: [ICH, US]
+    deadline: "before or during protocol development"
+    record: "documented critical data and processes"
+    party: "Sponsors; study team"
+    verify:
+      - "[verify] single fetch (R5-063)"
+  - id: A6
+    type: task
+    label: "Specify criteria for important protocol deviations"
+    lane: L_SPON
+    path: alt
+    src:
+      - {key: E6R3, loc: "A1-3.9.3", page: "printed 27 / PDF 35"}
+      - {key: E3QA, loc: "S3", page: "printed 7; printed 6"}
+      - {key: FDA-PD24, loc: "SIII.A.1", page: "printed 4-5; lines 139-161; printed 5; lines 163-173, footnote 12"}
+      - {key: FDA-PD24, loc: "SIII.A.2", page: "printed 5; lines 177-182"}
+      - {key: TCB-PD-TIRS, loc: "SPrepare", page: "journal pp. 733-742 (Fig. 4; section page not confirmed); journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SAppendix-Table-1", page: "journal pp. 733-742 (Appendix Table 1; page not confirmed)"}
+    req: [REQ-010, REQ-011]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    record: "trial-specific iPD criteria; trial-specific iPD criteria (examples)"
+    party: "sponsor"
+    verify:
+      - "[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)"
+      - "[verify] examples from one fetch (R5-027)"
+  - id: A7
+    type: task
+    label: "Link iPD criteria to CtQ factors"
+    lane: L_SPON
+    path: alt
+    src:
+      - {key: FDA-PD24, loc: "SIII.A.1", page: "printed 4; lines 123-134, footnotes 9-10; printed 4; lines 136-137"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 234-236"}
+      - {key: TCB-PD-TIRS, loc: "SProtocol", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SPrepare", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: CTTI-CTQ, loc: "SProcedures-Supporting-Study-Endpoints-and-Data-Integrity", page: "printed 9 of 24"}
+      - {key: CTTI-CTQ, loc: "SData-Monitoring-and-Management", page: "printed 19 of 24"}
+      - {key: CTTI-CTQ, loc: "SEligibility-Criteria", page: "printed 3 of 24"}
+    req: [REQ-013, REQ-012]
+    binding: guidance
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "best practice: before protocol finalisation (REQ-013); before trial start (REQ-012)"
+    record: "trial-specific iPD criteria; protocol (list of important deviation types)"
+    party: "teams; study team"
+    verify:
+      - "[verify] no ICH guideline or regulation states that iPD criteria derive from CtQ factors; the link rests on FDA-PD24 (draft) and best practice (C-02)"
+      - "[verify] single fetch (R5-015)"
+      - "[verify] single fetch (R5-064)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: A8
+    type: task
+    label: "Describe deviation handling in the protocol"
+    lane: L_SPON
+    path: alt
+    src:
+      - {key: M11-TEMPLATE, loc: "S11.10", page: "printed 53 / PDF 62"}
+      - {key: E6R3, loc: "AppB-B.12.3", page: "printed 74 / PDF 82"}
+      - {key: E6R3, loc: "AppB-B.12.1", page: "printed 74 / PDF 82"}
+      - {key: M11-TEMPLATE, loc: "S11.6", page: "printed 52 / PDF 61"}
+      - {key: E8R1, loc: "S3.2", page: "printed 4-5"}
+      - {key: E6R3, loc: "AppB-B.12.2", page: "printed 74 / PDF 82"}
+      - {key: E6R3, loc: "AppB-B.2.5", page: "printed 70 / PDF 78"}
+      - {key: E6R3, loc: "A1-3.16.2(d)", page: "printed 43 / PDF 51"}
+      - {key: E6R3, loc: "AppB-B.10.4", page: "printed 73 / PDF 81"}
+      - {key: E9, loc: "S5.2", page: "printed 22"}
+      - {key: M11-TEMPLATE, loc: "S10.2", page: "printed 46 / PDF 55"}
+      - {key: E9R1, loc: "SA.3.4", page: "printed 13"}
+      - {key: M11-TEMPLATE, loc: "S6.8", page: "printed 32"}
+    req: [REQ-015, REQ-016, REQ-017, REQ-018, REQ-019, REQ-020, REQ-022]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "protocol (quality section) or referenced document; protocol (quality section); protocol; protocol statistical section; statistical analysis plan; protocol section 6.8; adherence records"
+    party: "sponsor"
+    verify:
+      - "[verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06)"
+      - "[verify binding] EU/US adoption of M11-TEMPLATE, E8R1 not checked by the research stems (C-06)"
+      - "[verify binding] EU/US adoption of E9, M11-TEMPLATE not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F19) (R2-076)"
+      - "[verify] instruction text from a single fetch (F29); heading listed in F28 (R2-115)"
+      - "[verify binding] EU/US adoption of E9, E9R1 not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F19) (R2-078)"
+  - id: A9
+    type: task
+    label: "Build flexibility into protocol provisions"
+    lane: L_SPON
+    path: alt
+    src:
+      - {key: E6R3, loc: "AppB-Intro", page: "printed 70 / PDF 78"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 273-293"}
+      - {key: FDA-PD24, loc: "SII", page: "printed 2; lines 44-51"}
+    req: [REQ-021]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    record: "protocol"
+    party: "sponsor"
+    verify:
+      - "[verify] protocol-provision sense of 'acceptable ranges' (AppB-Intro), distinct from A1-3.10.1.3 (C-04)"
+  - id: G2
+    type: and-join
+    lane: L_SPON
+    path: main
+  - id: A10
+    type: task
+    label: "Develop risk-based monitoring plan"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: EUCTR, loc: "Art. 48", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "A1-3.11.4.3", page: "printed 31 / PDF 39; printed 32 / PDF 40"}
+      - {key: E6R3, loc: "A1-3.11.4", page: "printed 30-31 / PDF 38-39"}
+      - {key: E6R3, loc: "AppC-C.3.2", page: "printed 81 / PDF 89"}
+      - {key: E6R3, loc: "GL:Monitoring Plan", page: "printed 88 / PDF 96"}
+      - {key: FDA-RBM13, loc: "SIV.D.1 [verify]", page: "printed 15-16 [verify]"}
+      - {key: FDA-RBM13, loc: "SIV.D.2", page: "printed 15-16 [verify]"}
+      - {key: FDA-RBM13, loc: "SIV.D.3", page: "printed 16"}
+      - {key: FDA-RBM23, loc: "SQ6", page: "printed 8-9"}
+      - {key: CTTI-CTQ, loc: "SData-Monitoring-and-Management", page: "printed 19 of 24"}
+    req: [REQ-023, REQ-024, REQ-025]
+    binding: binding-law
+    jurisdiction: [ICH, EU, US]
+    deadline: "generally before trial start (Appendix C asterisked record)"
+    record: "monitoring plan"
+    party: "sponsor; study team"
+    verify:
+      - "[verify] Sub-section (IV.D.1 vs IV.D.2) and printed page of the sentence on recording and reporting critical deviations differ between fetches (R4-084)"
+      - "[verify] Printed page of IV.D.2 passage (TOC says 15; fetches gave 16 and 17) (R4-085)"
+  - id: A11
+    type: task
+    label: "Prepare deviation assessment plan"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: TCB-PD-TIRS, loc: "SPrepare", page: "journal pp. 733-742 (Fig. 3; section page not confirmed); journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-014]
+    binding: best-practice
+    jurisdiction: [ICH]
+    deadline: "drafted with the protocol; maintained until last study data reviewed"
+    record: "Protocol Deviation Assessment Plan (PDAP)"
+    verify:
+      - "[verify] element list from one detailed fetch; PDAP template (XLSX) not readable (R5-013)"
+      - "[verify] element list from one detailed fetch (R5-014)"
+  - id: G3
+    type: xor-split
+    label: "EU CTR applies?"
+    lane: L_SPON
+    path: main
+    group: GR_EU
+  - id: A12
+    type: task
+    label: "Establish serious breach procedure"
+    lane: L_SPON
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EMA-SB, loc: "S3.2", page: "printed 5/21"}
+      - {key: EMA-SB, loc: "S6.1", page: "printed 9/21"}
+    req: [REQ-027, REQ-028, REQ-029]
+    binding: guidance
+    jurisdiction: [EU]
+    record: "contracts; protocol; training records in the clinical trial master file; sponsor procedure"
+    party: "sponsor"
+  - id: G4
+    type: xor-join
+    lane: L_SPON
+    path: main
+    group: GR_EU
+  - id: A13
+    type: task
+    label: "Instruct investigators on deviation reporting"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 236-239"}
+    req: [REQ-026]
+    binding: guidance
+    jurisdiction: [US]
+    draft: true
+    deadline: "sponsor-defined (no FDA day count)"
+    record: "deviation reporting instructions"
+    party: "Sponsors"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: A14
+    type: task
+    label: "Obtain investigator agreement to comply"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.6.3(a)", page: "printed 24 / PDF 32"}
+      - {key: E6R3, loc: "A1-3.3", page: "printed 24 / PDF 32"}
+    req: [REQ-032, REQ-031]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "before initiating trial activities"
+    record: "agreement"
+    party: "sponsor"
+  - id: A15
+    type: task
+    label: "Train study personnel"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E8R1, loc: "S6.1.2", page: "printed 18"}
+      - {key: E8R1, loc: "S7", page: "printed 20; bullet 7 of 18"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 6; lines 225-227; printed 9; lines 311-314"}
+      - {key: TCB-PD-TIRS, loc: "STrain", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-033, REQ-034]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "before involvement in the study"
+    record: "training records"
+    party: "sponsor; investigators, site staff, study monitors, and sponsor staff"
+    verify:
+      - "[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)"
+      - "[verify] sentence content from a single fetch (F05) (R2-029)"
+      - "[verify] full verbatim role wording of bullet 7 (fetch F08 truncated after 'by sponsor') (R2-040)"
+      - "[verify] single detailed fetch for the study-team part (R5-018)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: E1
+    type: end
+    label: "iPD criteria and plans approved"
+    lane: L_SPON
+    path: main
+  - id: S2
+    type: start-message
+    label: "Protocol and deviation reporting instructions received"
+    pool: P_INV
+    path: main
+  - id: A16
+    type: task
+    label: "Sign agreement to comply"
+    pool: P_INV
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.6.3(a)", page: "printed 24 / PDF 32"}
+    req: [REQ-032]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "agreement"
+    party: "investigator/institution"
+  - id: E2
+    type: end
+    label: "Trial participation agreed"
+    pool: P_INV
+    path: main
+
+flows:
+  - {id: F1, from: S1, to: A1}
+  - {id: F2, from: A1, to: A2}
+  - {id: F3, from: A2, to: G1}
+  - {id: F4, from: G1, to: A3}
+  - {id: F5, from: G1, to: A5}
+  - {id: F6, from: G1, to: A8}
+  - {id: F7, from: A3, to: A4}
+  - {id: F8, from: A4, to: G2}
+  - {id: F9, from: A5, to: A6}
+  - {id: F10, from: A6, to: A7}
+  - {id: F11, from: A7, to: G2}
+  - {id: F12, from: A8, to: A9}
+  - {id: F13, from: A9, to: G2}
+  - {id: F14, from: G2, to: A10}
+  - {id: F15, from: A10, to: A11}
+  - {id: F16, from: A11, to: G3}
+  - {id: F17, from: G3, to: A12, label: "Yes"}
+  - {id: F18, from: G3, to: G4, label: "No"}
+  - {id: F19, from: A12, to: G4}
+  - {id: F20, from: G4, to: A13}
+  - {id: F21, from: A13, to: A14}
+  - {id: F22, from: A14, to: A15}
+  - {id: F23, from: A15, to: E1}
+  - {id: F24, from: S2, to: A16}
+  - {id: F25, from: A16, to: E2}
+
+message_flows:
+  - id: M1
+    label: "Protocol and deviation reporting instructions provided"
+    src:
+      - {key: E6R3, loc: "A1-3.6.3(a)", page: "printed 24 / PDF 32"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 7; lines 236-239"}
+      - {key: EMA-SB, loc: "S3.2", page: "printed 5/21"}
+    req: [REQ-032, REQ-026, REQ-027]
+    binding: binding-ICH
+    jurisdiction: [ICH, EU, US]
+    draft: true
+    deadline: "sponsor-defined (no FDA day count)"
+    party: "sponsor"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+    from: A13
+    to: S2
+  - id: M2
+    label: "Agreement to comply signed"
+    src:
+      - {key: E6R3, loc: "A1-3.6.3(a)", page: "printed 24 / PDF 32"}
+    req: [REQ-032]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "investigator/institution"
+    from: A16
+    to: A14
+
+annotations:
+  - id: TA1
+    text: "C-02: no ICH guideline or regulation states that iPD criteria derive from CtQ factors. This link rests on draft FDA guidance and best practice only; the ICH basis of the criteria is E6(R3) Annex 1 3.9.3 with the E3 Q&A determinants."
+    assoc: [A7]
+
+groups:
+  - {id: GR_EU, label: "EU CTR", members: [G3, A12, G4]}
+
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks"}
+
+notes:
+  - "SCP-03: 16 activities (target 5-15) - 34 REQs and the separations required by C-02 (separately sourced CtQ-risk-criteria chain) and C-04 (acceptable ranges vs protocol flexibility); 24 nodes, within 31."
+  - "C-02: the CtQ-to-iPD link (REQ-013, with REQ-012) is a separate task A7 that rests only on draft FDA guidance and best practice; the ICH criteria task A6 carries only E6R3 A1-3.9.3 and E3QA S3."
+  - "Interface 'Quality by design and protocol development' (upstream, D3): its output is start event S1, which carries the interface REQs (no placeholder can precede a start event)."

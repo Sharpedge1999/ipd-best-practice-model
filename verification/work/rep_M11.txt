@@ -1,0 +1,6 @@
+====================================================================================================
+R2-111 | M11 | loc=S2.1 | page=printed 2
+PARA: The M11 Template gives a uniform table of contents and common headers for any medicinal product trial; top-level headings are fixed while lower-level sections may be adapted; the Template should be used together with the other ICH guidelines relevant to the conduct of clinical trials.
+LOC: found PDF 5 / printed 2 .. PDF 5 / printed 2 (1641 chars) 
+  PASSAGE-HEAD: 2.1 Clinical Electronic Structured Harmonised Protocol - Template The Template was designed based on general principles that support a harmonised standard proto
+  WINDOW 0.44 @ PDF 5 / printed 2: view process, for publishing on clinical trial registries to promote clinical trial transparency, or for standardised clinical trial data capture. Maintain flexibility - The Template provides both universal and optional text to maintain flexibility. Higher-level heading structure is retained, while many lower-level sections can be added, removed, or modified as needed. The Template should be used in conjunction with other ICH guidelines relevant to the conduct of clinical trials. 

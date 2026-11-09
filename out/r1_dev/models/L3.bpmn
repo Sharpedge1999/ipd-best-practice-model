@@ -1,0 +1,1289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ipd="urn:ipd-best-practice:trace:1.0" id="IPD_DEFINITIONS" targetNamespace="urn:ipd-best-practice:model" exporter="ipd spec2bpmn" exporterVersion="1.0">
+  <bpmn:category id="L3_GR_CONDUCT_CATEGORY">
+    <bpmn:categoryValue id="L3_GR_CONDUCT_VALUE" value="Runs repeatedly during trial conduct"/>
+  </bpmn:category>
+  <bpmn:collaboration id="L3_COLLAB" name="Important protocol deviation management - overview">
+    <bpmn:documentation textFormat="text/plain">Model: L3
+Title: Important protocol deviation management - overview</bpmn:documentation>
+    <bpmn:participant id="L3_P_SPON" name="Sponsor" processRef="L3_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Sponsor (p. printed 90 / PDF 98); EUCTR Art. 47 (p. OJ L 158/39); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination); E6R3 P3.1 (p. printed 4 / PDF 12); E6R3 A1-3.9.2 (p. printed 26 / PDF 34); E6R3 P10.1 (p. printed 7 / PDF 15); E6R3 P10.3 (p. printed 7 / PDF 15); E6R3 A1-3.9.5 (p. printed 27 / PDF 35); E6R3 A2-3.8 (p. printed 62 / PDF 70); EMA-SB SGlossary (p. printed 3/21); TCB-RBQM SQTL-Process (p. journal pp. 251-261 (section page not confirmed))</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Sponsor" page="printed 90 / PDF 98"/>
+          <ipd:source key="EUCTR" loc="Art. 47" page="OJ L 158/39"/>
+          <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="E6R3" loc="P3.1" page="printed 4 / PDF 12"/>
+          <ipd:source key="E6R3" loc="A1-3.9.2" page="printed 26 / PDF 34"/>
+          <ipd:source key="E6R3" loc="P10.1" page="printed 7 / PDF 15"/>
+          <ipd:source key="E6R3" loc="P10.3" page="printed 7 / PDF 15"/>
+          <ipd:source key="E6R3" loc="A1-3.9.5" page="printed 27 / PDF 35"/>
+          <ipd:source key="E6R3" loc="A2-3.8" page="printed 62 / PDF 70"/>
+          <ipd:source key="EMA-SB" loc="SGlossary" page="printed 3/21"/>
+          <ipd:source key="TCB-RBQM" loc="SQTL-Process" page="journal pp. 251-261 (section page not confirmed)"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L3_P_INV" name="Investigator/institution">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Investigator (p. printed 87 / PDF 95); EUCTR Art. 2(2)(15) (p. OJ L 158/13); 21CFR312 21CFR312.60 (p. n/a - eCFR web text without pagination); EUCTR Art. 47 (p. OJ L 158/39); E6R3 P3.1 (p. printed 4 / PDF 12); E6R3 A1-2.5.2 (p. printed 13 / PDF 21); E6R3 A1-2.10.6 (p. printed 20 / PDF 28); E6R3 A1-2.3.1 (p. printed 12 / PDF 20); E6R3 A2-2.4 (p. printed 55 / PDF 63); E6R3 A2-2.4.1 (p. printed 56 / PDF 64)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Investigator" page="printed 87 / PDF 95"/>
+          <ipd:source key="EUCTR" loc="Art. 2(2)(15)" page="OJ L 158/13"/>
+          <ipd:source key="21CFR312" loc="21CFR312.60" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="EUCTR" loc="Art. 47" page="OJ L 158/39"/>
+          <ipd:source key="E6R3" loc="P3.1" page="printed 4 / PDF 12"/>
+          <ipd:source key="E6R3" loc="A1-2.5.2" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-2.10.6" page="printed 20 / PDF 28"/>
+          <ipd:source key="E6R3" loc="A1-2.3.1" page="printed 12 / PDF 20"/>
+          <ipd:source key="E6R3" loc="A2-2.4" page="printed 55 / PDF 63"/>
+          <ipd:source key="E6R3" loc="A2-2.4.1" page="printed 56 / PDF 64"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L3_P_IEC" name="IRB/IEC">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC) (p. printed 87 / PDF 95); EUCTR Art. 2(2)(11) (p. OJ L 158/12); 21CFR56 21CFR56.108(b)(2) (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)" page="printed 87 / PDF 95"/>
+          <ipd:source key="EUCTR" loc="Art. 2(2)(11)" page="OJ L 158/12"/>
+          <ipd:source key="21CFR56" loc="21CFR56.108(b)(2)" page="n/a - eCFR web text without pagination"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:participant id="L3_P_RA" name="Regulatory authority">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Regulatory Authorities (p. printed 89 / PDF 97); EUCTR Art. 2(2)(12) (p. OJ L 158/12); 21CFR312 21CFR312.56(b) (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace>
+          <ipd:source key="E6R3" loc="GL:Regulatory Authorities" page="printed 89 / PDF 97"/>
+          <ipd:source key="EUCTR" loc="Art. 2(2)(12)" page="OJ L 158/12"/>
+          <ipd:source key="21CFR312" loc="21CFR312.56(b)" page="n/a - eCFR web text without pagination"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:participant>
+    <bpmn:messageFlow id="L3_M1" name="Protocol and deviation reporting instructions provided" sourceRef="L3_A1" targetRef="L3_P_INV">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.6.3(a) (p. printed 24 / PDF 32); FDA-PD24 SIII.B.2 (p. printed 7; lines 236-239); EMA-SB S3.2 (p. printed 5/21)
+Requirements: REQ-032, REQ-026, REQ-027
+Binding: binding-ICH
+Jurisdiction: ICH, EU, US
+Deadline: sponsor-defined (no FDA day count) (REQ-026); immediately (for the reporting party) (REQ-027)
+Party: sponsor
+Draft: DRAFT guidance
+Verify: [verify] basis is draft guidance only - shown as DRAFT, never a binding step</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH EU US" deadline="sponsor-defined (no FDA day count) (REQ-026); immediately (for the reporting party) (REQ-027)" draft="true" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.6.3(a)" page="printed 24 / PDF 32"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 7; lines 236-239"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:req id="REQ-032"/>
+          <ipd:req id="REQ-026"/>
+          <ipd:req id="REQ-027"/>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M2" name="Detected deviation communicated" sourceRef="L3_A2" targetRef="L3_P_INV">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-2.5.3 (p. printed 13 / PDF 21); E6R3 A1-3.11.4.5.1(b) (p. printed 32 / PDF 40); FDA-RBM23 SQ8 (p. printed 10)
+Requirements: REQ-047, REQ-053
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Party: sponsor
+Verify: [verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-2.5.3" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(b)" page="printed 32 / PDF 40"/>
+          <ipd:source key="FDA-RBM23" loc="SQ8" page="printed 10"/>
+          <ipd:req id="REQ-047"/>
+          <ipd:req id="REQ-053"/>
+          <ipd:verify>[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M3" name="Protocol amendment submitted for immediate-hazard change" sourceRef="L3_A3" targetRef="L3_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR312 21CFR312.30(b)(2)(ii) (p. n/a - eCFR web text without pagination)
+Requirements: REQ-085
+Binding: binding-law
+Jurisdiction: US
+Deadline: subsequently (no period stated)
+Party: sponsor
+Verify: [verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="US" deadline="subsequently (no period stated)" party="sponsor">
+          <ipd:source key="21CFR312" loc="21CFR312.30(b)(2)(ii)" page="n/a - eCFR web text without pagination"/>
+          <ipd:req id="REQ-085"/>
+          <ipd:verify>[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M4" name="Serious breach notified" sourceRef="L3_A5" targetRef="L3_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 52(1) (p. OJ L 158/40); EMA-SB S3.2 (p. printed 5/21); EUCTR-QA S11.3 (p. printed 1-2 (chapter 11)); EMA-SB S3.1 (p. printed 5/21); EUCTR-QA S1.5 (p. printed 4-5 (chapter 1; page numbers restart per chapter)); CTIS-BT-SB24 SSlide-20 (p. slide 20; notification type label on an unnumbered CTCG slide)
+Requirements: REQ-111
+Binding: binding-law
+Jurisdiction: EU
+Deadline: without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach
+Party: sponsor
+Verify: [verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05); [verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="EU" deadline="without undue delay, at the latest 7 (calendar) days from sponsor awareness of the potential breach" party="sponsor">
+          <ipd:source key="EUCTR" loc="Art. 52(1)" page="OJ L 158/40"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S11.3" page="printed 1-2 (chapter 11)"/>
+          <ipd:source key="EMA-SB" loc="S3.1" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S1.5" page="printed 4-5 (chapter 1; page numbers restart per chapter)"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-20" page="slide 20; notification type label on an unnumbered CTCG slide"/>
+          <ipd:req id="REQ-111"/>
+          <ipd:verify>[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)</ipd:verify>
+          <ipd:verify>[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M5" name="Serious noncompliance notified" sourceRef="L3_A5" targetRef="L3_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-119
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-119"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M6" name="Serious noncompliance notified" sourceRef="L3_A5" targetRef="L3_P_IEC">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.12.2 (p. printed 35 / PDF 43)
+Requirements: REQ-119
+Binding: binding-ICH
+Jurisdiction: ICH
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-119"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M7" name="Corrective action required" sourceRef="L3_A6" targetRef="L3_P_INV">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR312 21CFR312.56(b) (p. n/a - eCFR web text without pagination); E6R3 A1-3.12.1 (p. printed 35 / PDF 43)
+Requirements: REQ-134, REQ-135
+Binding: binding-law
+Jurisdiction: ICH, US
+Deadline: promptly
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH US" deadline="promptly" party="sponsor">
+          <ipd:source key="21CFR312" loc="21CFR312.56(b)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="E6R3" loc="A1-3.12.1" page="printed 35 / PDF 43"/>
+          <ipd:req id="REQ-134"/>
+          <ipd:req id="REQ-135"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M8" name="Investigator termination notified" sourceRef="L3_A6" targetRef="L3_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR312 21CFR312.56(b) (p. n/a - eCFR web text without pagination)
+Requirements: REQ-148
+Binding: binding-law
+Jurisdiction: US
+Party: sponsor</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="US" party="sponsor">
+          <ipd:source key="21CFR312" loc="21CFR312.56(b)" page="n/a - eCFR web text without pagination"/>
+          <ipd:req id="REQ-148"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M9" name="Clinical study report provided" sourceRef="L3_A7" targetRef="L3_P_RA">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.17.2(a) (p. printed 44 / PDF 52); E3QA S1 (p. printed 1-2); FDA-PD24 SIII.B.2 (p. printed 7; lines 241-243, footnote 16; printed 7; lines 243-245, footnote 17)
+Requirements: REQ-184, REQ-169
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Deadline: with the marketing application
+Party: sponsor
+Draft: DRAFT guidance
+Verify: [verify binding] EU/US adoption of E3QA not checked by the research stems (C-06); [verify] answer content from a single fetch (F33); topic confirmed in F16 (R2-065); [verify] Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked (R4-055); [verify] basis is draft guidance only - shown as DRAFT, never a binding step</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" deadline="with the marketing application" draft="true" party="sponsor">
+          <ipd:source key="E6R3" loc="A1-3.17.2(a)" page="printed 44 / PDF 52"/>
+          <ipd:source key="E3QA" loc="S1" page="printed 1-2"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 7; lines 241-243, footnote 16; printed 7; lines 243-245, footnote 17"/>
+          <ipd:req id="REQ-184"/>
+          <ipd:req id="REQ-169"/>
+          <ipd:verify>[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] answer content from a single fetch (F33); topic confirmed in F16 (R2-065)</ipd:verify>
+          <ipd:verify>[verify] Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked (R4-055)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:messageFlow id="L3_M10" name="Records no longer needed notified" sourceRef="L3_A8" targetRef="L3_P_INV">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-2.12.11 (p. printed 22 / PDF 30); E6R3 A1-2.12.12 (p. printed 23 / PDF 31); E6R3 AppC-C.1.3 (p. printed 75 / PDF 83)
+Requirements: REQ-191
+Binding: binding-ICH
+Jurisdiction: ICH
+Deadline: longest of the required period or sponsor notice
+Party: investigator/institution</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH" deadline="longest of the required period or sponsor notice" party="investigator/institution">
+          <ipd:source key="E6R3" loc="A1-2.12.11" page="printed 22 / PDF 30"/>
+          <ipd:source key="E6R3" loc="A1-2.12.12" page="printed 23 / PDF 31"/>
+          <ipd:source key="E6R3" loc="AppC-C.1.3" page="printed 75 / PDF 83"/>
+          <ipd:req id="REQ-191"/>
+        </ipd:trace>
+      </bpmn:extensionElements>
+    </bpmn:messageFlow>
+    <bpmn:group id="L3_GR_CONDUCT" categoryValueRef="L3_GR_CONDUCT_VALUE"/>
+  </bpmn:collaboration>
+  <bpmn:process id="L3_P_SPON_PROCESS" name="Sponsor" isExecutable="false">
+    <bpmn:documentation textFormat="text/plain">Reading convention (orchestrator default, l3_cut): steps A2-A6 recur throughout trial conduct; the sequence shows the path of one deviation and the AND gateways show channels open in parallel; no loop markers. Shown as text annotation TA1 and group GR_CONDUCT.
+Investigator/institution is a collapsed pool on L3 (orchestrator decision 06 Nov 2026): collapsed where it carries no tasks; D1 intent - investigator duties visible as tasks - unaffected, the duties are tasks in the L4 models.
+L3 shows 10 key hand-offs (at most one per call activity and pool gap, sent by the call activity); every one reappears with the same label and pools in the called L4 (SCP-06). Further hand-offs exist only on L4.</bpmn:documentation>
+    <bpmn:laneSet id="L3_P_SPON_LANESET">
+      <bpmn:lane id="L3_L_MON" name="Monitor">
+        <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-3.11.4.5.1(a) (p. printed 32 / PDF 40); E6R3 A1-3.11.4.4 (p. printed 32 / PDF 40)</bpmn:documentation>
+        <bpmn:extensionElements>
+          <ipd:trace>
+            <ipd:source key="E6R3" loc="A1-3.11.4.5.1(a)" page="printed 32 / PDF 40"/>
+            <ipd:source key="E6R3" loc="A1-3.11.4.4" page="printed 32 / PDF 40"/>
+          </ipd:trace>
+        </bpmn:extensionElements>
+        <bpmn:flowNodeRef>L3_A2</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="L3_L_SPON" name="Sponsor">
+        <bpmn:documentation textFormat="text/plain">Sources: E6R3 GL:Sponsor (p. printed 90 / PDF 98); EUCTR Art. 2(2)(14) (p. OJ L 158/12); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination)</bpmn:documentation>
+        <bpmn:extensionElements>
+          <ipd:trace>
+            <ipd:source key="E6R3" loc="GL:Sponsor" page="printed 90 / PDF 98"/>
+            <ipd:source key="EUCTR" loc="Art. 2(2)(14)" page="OJ L 158/12"/>
+            <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination"/>
+          </ipd:trace>
+        </bpmn:extensionElements>
+        <bpmn:flowNodeRef>L3_S1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_A1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_G1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_A3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_G2</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_G3</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_A4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_A5</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_G4</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_A6</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_A7</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_A8</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>L3_E1</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="L3_S1" name="CtQ factors identified">
+      <bpmn:documentation textFormat="text/plain">Sources: E8R1 S6.1.1 (p. printed 18); E6R3 P6.2 (p. printed 5 / PDF 13); E6R3 A1-3.1.2 (p. printed 23 / PDF 31); E6R3 A1-3.10 (p. printed 27 / PDF 35); E8R1 S3 (p. printed 3); E8R1 S3.1 (p. printed 3); E8R1 S3.2 (p. printed 4; printed 5); E8R1 S3.3.5 (p. printed 6); E8R1 S7 (p. printed 20-21; printed 20; bullet 1 of 18; printed 20; bullet 2 of 18; printed 20; bullet 3 of 18; printed 20; bullet 4 of 18; printed 20; bullet 5 of 18; printed 20; bullet 6 of 18; printed 20; bullet 8 of 18; printed 20; bullet 9 of 18; printed 20; bullet 10 of 18; printed 20; bullet 11 of 18; printed 20; bullet 12 of 18; printed 20; bullet 13 of 18; printed 20; bullet 14 of 18; printed 20; bullet 15 of 18; printed 20; bullet 16 of 18; printed 20; bullet 17 of 18; printed 20; bullet 18 of 18); E6R3 P7.1 (p. printed 5 / PDF 13); E6R3 P7.4 (p. printed 5-6 / PDF 13-14); E6R3 P8.3 (p. printed 6 / PDF 14); E6R3 A1-3.1.4 (p. printed 23 / PDF 31); E6R3 A2-3.2.2 (p. printed 57 / PDF 65); E8R1 S3.3 (p. printed 5); E8R1 S3.3.1 (p. printed 5); E8R1 S3.3.2 (p. printed 5); E8R1 S3.3.4 (p. printed 6); E8R1 S3.3.3 (p. printed 6); M11 S2.1 (p. printed 2); M11-TEMPLATE SConventions [verify] (p. printed iv-vii); FDA-PD24 SIII.B.2 (p. printed 8; lines 295-298); TCB-RBQM SHow-QTLs-Fit-in-a-Quality-Management-System (p. journal pp. 251-261 (section page not confirmed)); CTTI-QbD S2 (p. 1 of 2); CTTI-QbD S3 (p. 1-2 of 2)
+Requirements: REQ-001, REQ-203, REQ-204, REQ-205, REQ-206, REQ-207
+Binding: binding-ICH
+Jurisdiction: ICH, US
+Deadline: during study planning
+Party: sponsor; The sponsor and other parties designing quality into a clinical study; clinical investigators, study coordinators and other site staff, and patients/patient organisations
+Verify: [verify] carried by the A1 start event 'CtQ factors identified' (no separate task); closest ICH text to a CtQ-to-iPD link (C-02); [verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06); [verify] sentence content from a single fetch (F02) (R2-005); [verify] sentence content from a single fetch (F02) (R2-006); [verify] sentence content from a single fetch (F03) (R2-014); [verify] sentence content from a single fetch (F03) (R2-017); [verify] detail from web page fetch only (R5-057); [verify binding] EU/US adoption of M11, M11-TEMPLATE not checked by the research stems (C-06); [verify] section content from a single fetch (F30); Step 4 status confirmed in F26 (R2-111); [verify] section label of the conventions part and wording; single fetch (F31) (R2-112)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH US" deadline="during study planning" party="sponsor; The sponsor and other parties designing quality into a clinical study; clinical investigators, study coordinators and other site staff, and patients/patient organisations">
+          <ipd:source key="E8R1" loc="S6.1.1" page="printed 18"/>
+          <ipd:source key="E6R3" loc="P6.2" page="printed 5 / PDF 13"/>
+          <ipd:source key="E6R3" loc="A1-3.1.2" page="printed 23 / PDF 31"/>
+          <ipd:source key="E6R3" loc="A1-3.10" page="printed 27 / PDF 35"/>
+          <ipd:source key="E8R1" loc="S3" page="printed 3"/>
+          <ipd:source key="E8R1" loc="S3.1" page="printed 3"/>
+          <ipd:source key="E8R1" loc="S3.2" page="printed 4; printed 5"/>
+          <ipd:source key="E8R1" loc="S3.3.5" page="printed 6"/>
+          <ipd:source key="E8R1" loc="S7" page="printed 20-21; printed 20; bullet 1 of 18; printed 20; bullet 2 of 18; printed 20; bullet 3 of 18; printed 20; bullet 4 of 18; printed 20; bullet 5 of 18; printed 20; bullet 6 of 18; printed 20; bullet 8 of 18; printed 20; bullet 9 of 18; printed 20; bullet 10 of 18; printed 20; bullet 11 of 18; printed 20; bullet 12 of 18; printed 20; bullet 13 of 18; printed 20; bullet 14 of 18; printed 20; bullet 15 of 18; printed 20; bullet 16 of 18; printed 20; bullet 17 of 18; printed 20; bullet 18 of 18"/>
+          <ipd:source key="E6R3" loc="P7.1" page="printed 5 / PDF 13"/>
+          <ipd:source key="E6R3" loc="P7.4" page="printed 5-6 / PDF 13-14"/>
+          <ipd:source key="E6R3" loc="P8.3" page="printed 6 / PDF 14"/>
+          <ipd:source key="E6R3" loc="A1-3.1.4" page="printed 23 / PDF 31"/>
+          <ipd:source key="E6R3" loc="A2-3.2.2" page="printed 57 / PDF 65"/>
+          <ipd:source key="E8R1" loc="S3.3" page="printed 5"/>
+          <ipd:source key="E8R1" loc="S3.3.1" page="printed 5"/>
+          <ipd:source key="E8R1" loc="S3.3.2" page="printed 5"/>
+          <ipd:source key="E8R1" loc="S3.3.4" page="printed 6"/>
+          <ipd:source key="E8R1" loc="S3.3.3" page="printed 6"/>
+          <ipd:source key="M11" loc="S2.1" page="printed 2"/>
+          <ipd:source key="M11-TEMPLATE" loc="SConventions [verify]" page="printed iv-vii"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 8; lines 295-298"/>
+          <ipd:source key="TCB-RBQM" loc="SHow-QTLs-Fit-in-a-Quality-Management-System" page="journal pp. 251-261 (section page not confirmed)"/>
+          <ipd:source key="CTTI-QbD" loc="S2" page="1 of 2"/>
+          <ipd:source key="CTTI-QbD" loc="S3" page="1-2 of 2"/>
+          <ipd:req id="REQ-001"/>
+          <ipd:req id="REQ-203"/>
+          <ipd:req id="REQ-204"/>
+          <ipd:req id="REQ-205"/>
+          <ipd:req id="REQ-206"/>
+          <ipd:req id="REQ-207"/>
+          <ipd:verify>[verify] carried by the A1 start event 'CtQ factors identified' (no separate task); closest ICH text to a CtQ-to-iPD link (C-02)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F02) (R2-005)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F02) (R2-006)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F03) (R2-014)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F03) (R2-017)</ipd:verify>
+          <ipd:verify>[verify] detail from web page fetch only (R5-057)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of M11, M11-TEMPLATE not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] section content from a single fetch (F30); Step 4 status confirmed in F26 (R2-111)</ipd:verify>
+          <ipd:verify>[verify] section label of the conventions part and wording; single fetch (F31) (R2-112)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:outgoing>L3_F1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:callActivity id="L3_A1" name="Define trial-specific iPD criteria" calledElement="L4_01_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 48 (p. OJ L 158/39); E8R1 S6.1.1 (p. printed 18); E6R3 A1-3.10.1.1 (p. printed 28 / PDF 36); E6R3 A1-3.10.1.2 (p. printed 28 / PDF 36); E8R1 S3.2 (p. printed 4; printed 4-5); E6R3 A1-3.10.1.3 (p. printed 28 / PDF 36); E6R3 A1-3.10.1.4 (p. printed 28 / PDF 36); E6R3 P6.3 (p. printed 5 / PDF 13); E6R3 A1-3.9.3 (p. printed 27 / PDF 35); E3QA S3 (p. printed 7; printed 6); M11-TEMPLATE S11.10 (p. printed 53 / PDF 62); E6R3 AppB-B.12.3 (p. printed 74 / PDF 82); E6R3 AppB-B.12.1 (p. printed 74 / PDF 82); M11-TEMPLATE S11.6 (p. printed 52 / PDF 61); E6R3 AppB-B.12.2 (p. printed 74 / PDF 82); E6R3 AppB-B.2.5 (p. printed 70 / PDF 78); E6R3 A1-3.16.2(d) (p. printed 43 / PDF 51); E6R3 AppB-B.10.4 (p. printed 73 / PDF 81); E9 S5.2 (p. printed 22); M11-TEMPLATE S10.2 (p. printed 46 / PDF 55); E9R1 SA.3.4 (p. printed 13); E6R3 AppB-Intro (p. printed 70 / PDF 78); M11-TEMPLATE S6.8 (p. printed 32); E6R3 A1-3.11.4.3 (p. printed 31 / PDF 39; printed 32 / PDF 40); E6R3 A1-3.11.4 (p. printed 30-31 / PDF 38-39); E6R3 AppC-C.3.2 (p. printed 81 / PDF 89); E6R3 GL:Monitoring Plan (p. printed 88 / PDF 96); E6R3 A1-3.16.1(x)(ix) (p. printed 42-43 / PDF 50-51); E6R3 A1-3.3 (p. printed 24 / PDF 32); E6R3 A1-3.6.3(a) (p. printed 24 / PDF 32); E8R1 S6.1.2 (p. printed 18); E8R1 S7 (p. printed 20; bullet 7 of 18); FDA-RBM13 SIV.B (p. printed 12-13); FDA-RBM13 SIV.A (p. printed 11-12); FDA-PD24 SIII.B.2 (p. printed 8; lines 298-303; printed 9; lines 305-310, footnotes 22-23; printed 7; lines 234-236; printed 8; lines 273-293; printed 7; lines 236-239; printed 6; lines 225-227; printed 9; lines 311-314); FDA-RBM23 SQ1 (p. printed 4); FDA-PD24 SIII.A.1 (p. printed 4-5; lines 139-161; printed 5; lines 163-173, footnote 12; printed 4; lines 136-137; printed 4; lines 123-134, footnotes 9-10); FDA-PD24 SIII.A.2 (p. printed 5; lines 177-182); FDA-PD24 SII (p. printed 2; lines 44-51); FDA-RBM13 SIV.D.1 [verify] (p. printed 15-16 [verify]); FDA-RBM13 SIV.D.2 (p. printed 15-16 [verify]); FDA-RBM13 SIV.D.3 (p. printed 16); FDA-RBM23 SQ6 (p. printed 8-9); EMA-SB S3.2 (p. printed 5/21); EMA-SB S6.1 (p. printed 9/21); CTTI-CTQ SData-Monitoring-and-Management (p. printed 19 of 24); TCB-RBQM SNumber-of-QTLs (p. journal pp. 251-261 (section page not confirmed)); TCB-RBQM SDefine-Process-Stage (p. journal pp. 251-261 (section page not confirmed)); TCB-PD-TIRS SPrepare (p. journal pp. 733-742 (Fig. 4; section page not confirmed); journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Fig. 3; section page not confirmed)); TCB-PD-TIRS SAppendix-Table-1 (p. journal pp. 733-742 (Appendix Table 1; page not confirmed)); TCB-PD-TIRS SProtocol (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); CTTI-CTQ SProcedures-Supporting-Study-Endpoints-and-Data-Integrity (p. printed 9 of 24); CTTI-CTQ SEligibility-Criteria (p. printed 3 of 24); TCB-PD-TIRS STrain (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-001, REQ-002, REQ-003, REQ-004, REQ-005, REQ-006, REQ-007, REQ-008, REQ-009, REQ-010, REQ-011, REQ-012, REQ-013, REQ-014, REQ-015, REQ-016, REQ-017, REQ-018, REQ-019, REQ-020, REQ-021, REQ-022, REQ-023, REQ-024, REQ-025, REQ-026, REQ-027, REQ-028, REQ-029, REQ-030, REQ-031, REQ-032, REQ-033, REQ-034
+Binding: binding-law
+Jurisdiction: ICH, EU, US
+Party: sponsor; The sponsor and other parties designing quality into a clinical study; study team; teams; investigators, site staff, study monitors, and sponsor staff
+Draft: DRAFT guidance
+Verify: [verify] carried by the A1 start event 'CtQ factors identified' (no separate task); closest ICH text to a CtQ-to-iPD link (C-02); [verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06); [verify] sentence content from a single fetch (F02) (R2-008); [verify] single fetch (R5-063); [verify] trial-level sense of 'acceptable ranges' (A1-3.10.1.3), distinct from the protocol-provision sense of AppB-Intro (C-04); [verify] sentence content from a single fetch (F02) (R2-010); [verify] principle without named party; Sponsor lane assigned by context; [verify binding] EU/US adoption of E3QA not checked by the research stems (C-06); [verify] examples from one fetch (R5-027); [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify] no ICH guideline or regulation states that iPD criteria derive from CtQ factors; the link rests on FDA-PD24 (draft) and best practice (C-02); [verify] single fetch (R5-015); [verify] single fetch (R5-064); [verify] element list from one detailed fetch; PDAP template (XLSX) not readable (R5-013); [verify] element list from one detailed fetch (R5-014); [verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06); [verify binding] EU/US adoption of M11-TEMPLATE, E8R1 not checked by the research stems (C-06); [verify binding] EU/US adoption of E9, M11-TEMPLATE not checked by the research stems (C-06); [verify] sentence content from a single fetch (F19) (R2-076); [verify] instruction text from a single fetch (F29); heading listed in F28 (R2-115); [verify binding] EU/US adoption of E9, E9R1 not checked by the research stems (C-06); [verify] sentence content from a single fetch (F19) (R2-078); [verify] protocol-provision sense of 'acceptable ranges' (AppB-Intro), distinct from A1-3.10.1.3 (C-04); [verify] Sub-section (IV.D.1 vs IV.D.2) and printed page of the sentence on recording and reporting critical deviations differ between fetches (R4-084); [verify] Printed page of IV.D.2 passage (TOC says 15; fetches gave 16 and 17) (R4-085); [verify] sentence content from a single fetch (F05) (R2-029); [verify] full verbatim role wording of bullet 7 (fetch F08 truncated after 'by sponsor') (R2-040); [verify] single detailed fetch for the study-team part (R5-018)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH EU US" draft="true" party="sponsor; The sponsor and other parties designing quality into a clinical study; study team; teams; investigators, site staff, study monitors, and sponsor staff">
+          <ipd:source key="EUCTR" loc="Art. 48" page="OJ L 158/39"/>
+          <ipd:source key="E8R1" loc="S6.1.1" page="printed 18"/>
+          <ipd:source key="E6R3" loc="A1-3.10.1.1" page="printed 28 / PDF 36"/>
+          <ipd:source key="E6R3" loc="A1-3.10.1.2" page="printed 28 / PDF 36"/>
+          <ipd:source key="E8R1" loc="S3.2" page="printed 4; printed 4-5"/>
+          <ipd:source key="E6R3" loc="A1-3.10.1.3" page="printed 28 / PDF 36"/>
+          <ipd:source key="E6R3" loc="A1-3.10.1.4" page="printed 28 / PDF 36"/>
+          <ipd:source key="E6R3" loc="P6.3" page="printed 5 / PDF 13"/>
+          <ipd:source key="E6R3" loc="A1-3.9.3" page="printed 27 / PDF 35"/>
+          <ipd:source key="E3QA" loc="S3" page="printed 7; printed 6"/>
+          <ipd:source key="M11-TEMPLATE" loc="S11.10" page="printed 53 / PDF 62"/>
+          <ipd:source key="E6R3" loc="AppB-B.12.3" page="printed 74 / PDF 82"/>
+          <ipd:source key="E6R3" loc="AppB-B.12.1" page="printed 74 / PDF 82"/>
+          <ipd:source key="M11-TEMPLATE" loc="S11.6" page="printed 52 / PDF 61"/>
+          <ipd:source key="E6R3" loc="AppB-B.12.2" page="printed 74 / PDF 82"/>
+          <ipd:source key="E6R3" loc="AppB-B.2.5" page="printed 70 / PDF 78"/>
+          <ipd:source key="E6R3" loc="A1-3.16.2(d)" page="printed 43 / PDF 51"/>
+          <ipd:source key="E6R3" loc="AppB-B.10.4" page="printed 73 / PDF 81"/>
+          <ipd:source key="E9" loc="S5.2" page="printed 22"/>
+          <ipd:source key="M11-TEMPLATE" loc="S10.2" page="printed 46 / PDF 55"/>
+          <ipd:source key="E9R1" loc="SA.3.4" page="printed 13"/>
+          <ipd:source key="E6R3" loc="AppB-Intro" page="printed 70 / PDF 78"/>
+          <ipd:source key="M11-TEMPLATE" loc="S6.8" page="printed 32"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.3" page="printed 31 / PDF 39; printed 32 / PDF 40"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4" page="printed 30-31 / PDF 38-39"/>
+          <ipd:source key="E6R3" loc="AppC-C.3.2" page="printed 81 / PDF 89"/>
+          <ipd:source key="E6R3" loc="GL:Monitoring Plan" page="printed 88 / PDF 96"/>
+          <ipd:source key="E6R3" loc="A1-3.16.1(x)(ix)" page="printed 42-43 / PDF 50-51"/>
+          <ipd:source key="E6R3" loc="A1-3.3" page="printed 24 / PDF 32"/>
+          <ipd:source key="E6R3" loc="A1-3.6.3(a)" page="printed 24 / PDF 32"/>
+          <ipd:source key="E8R1" loc="S6.1.2" page="printed 18"/>
+          <ipd:source key="E8R1" loc="S7" page="printed 20; bullet 7 of 18"/>
+          <ipd:source key="FDA-RBM13" loc="SIV.B" page="printed 12-13"/>
+          <ipd:source key="FDA-RBM13" loc="SIV.A" page="printed 11-12"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 8; lines 298-303; printed 9; lines 305-310, footnotes 22-23; printed 7; lines 234-236; printed 8; lines 273-293; printed 7; lines 236-239; printed 6; lines 225-227; printed 9; lines 311-314"/>
+          <ipd:source key="FDA-RBM23" loc="SQ1" page="printed 4"/>
+          <ipd:source key="FDA-PD24" loc="SIII.A.1" page="printed 4-5; lines 139-161; printed 5; lines 163-173, footnote 12; printed 4; lines 136-137; printed 4; lines 123-134, footnotes 9-10"/>
+          <ipd:source key="FDA-PD24" loc="SIII.A.2" page="printed 5; lines 177-182"/>
+          <ipd:source key="FDA-PD24" loc="SII" page="printed 2; lines 44-51"/>
+          <ipd:source key="FDA-RBM13" loc="SIV.D.1 [verify]" page="printed 15-16 [verify]"/>
+          <ipd:source key="FDA-RBM13" loc="SIV.D.2" page="printed 15-16 [verify]"/>
+          <ipd:source key="FDA-RBM13" loc="SIV.D.3" page="printed 16"/>
+          <ipd:source key="FDA-RBM23" loc="SQ6" page="printed 8-9"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EMA-SB" loc="S6.1" page="printed 9/21"/>
+          <ipd:source key="CTTI-CTQ" loc="SData-Monitoring-and-Management" page="printed 19 of 24"/>
+          <ipd:source key="TCB-RBQM" loc="SNumber-of-QTLs" page="journal pp. 251-261 (section page not confirmed)"/>
+          <ipd:source key="TCB-RBQM" loc="SDefine-Process-Stage" page="journal pp. 251-261 (section page not confirmed)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SPrepare" page="journal pp. 733-742 (Fig. 4; section page not confirmed); journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Fig. 3; section page not confirmed)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SAppendix-Table-1" page="journal pp. 733-742 (Appendix Table 1; page not confirmed)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SProtocol" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="CTTI-CTQ" loc="SProcedures-Supporting-Study-Endpoints-and-Data-Integrity" page="printed 9 of 24"/>
+          <ipd:source key="CTTI-CTQ" loc="SEligibility-Criteria" page="printed 3 of 24"/>
+          <ipd:source key="TCB-PD-TIRS" loc="STrain" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-001"/>
+          <ipd:req id="REQ-002"/>
+          <ipd:req id="REQ-003"/>
+          <ipd:req id="REQ-004"/>
+          <ipd:req id="REQ-005"/>
+          <ipd:req id="REQ-006"/>
+          <ipd:req id="REQ-007"/>
+          <ipd:req id="REQ-008"/>
+          <ipd:req id="REQ-009"/>
+          <ipd:req id="REQ-010"/>
+          <ipd:req id="REQ-011"/>
+          <ipd:req id="REQ-012"/>
+          <ipd:req id="REQ-013"/>
+          <ipd:req id="REQ-014"/>
+          <ipd:req id="REQ-015"/>
+          <ipd:req id="REQ-016"/>
+          <ipd:req id="REQ-017"/>
+          <ipd:req id="REQ-018"/>
+          <ipd:req id="REQ-019"/>
+          <ipd:req id="REQ-020"/>
+          <ipd:req id="REQ-021"/>
+          <ipd:req id="REQ-022"/>
+          <ipd:req id="REQ-023"/>
+          <ipd:req id="REQ-024"/>
+          <ipd:req id="REQ-025"/>
+          <ipd:req id="REQ-026"/>
+          <ipd:req id="REQ-027"/>
+          <ipd:req id="REQ-028"/>
+          <ipd:req id="REQ-029"/>
+          <ipd:req id="REQ-030"/>
+          <ipd:req id="REQ-031"/>
+          <ipd:req id="REQ-032"/>
+          <ipd:req id="REQ-033"/>
+          <ipd:req id="REQ-034"/>
+          <ipd:verify>[verify] carried by the A1 start event 'CtQ factors identified' (no separate task); closest ICH text to a CtQ-to-iPD link (C-02)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F02) (R2-008)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-063)</ipd:verify>
+          <ipd:verify>[verify] trial-level sense of 'acceptable ranges' (A1-3.10.1.3), distinct from the protocol-provision sense of AppB-Intro (C-04)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F02) (R2-010)</ipd:verify>
+          <ipd:verify>[verify] principle without named party; Sponsor lane assigned by context</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] examples from one fetch (R5-027)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify] no ICH guideline or regulation states that iPD criteria derive from CtQ factors; the link rests on FDA-PD24 (draft) and best practice (C-02)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-015)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-064)</ipd:verify>
+          <ipd:verify>[verify] element list from one detailed fetch; PDAP template (XLSX) not readable (R5-013)</ipd:verify>
+          <ipd:verify>[verify] element list from one detailed fetch (R5-014)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of M11-TEMPLATE, E8R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E9, M11-TEMPLATE not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F19) (R2-076)</ipd:verify>
+          <ipd:verify>[verify] instruction text from a single fetch (F29); heading listed in F28 (R2-115)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E9, E9R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F19) (R2-078)</ipd:verify>
+          <ipd:verify>[verify] protocol-provision sense of 'acceptable ranges' (AppB-Intro), distinct from A1-3.10.1.3 (C-04)</ipd:verify>
+          <ipd:verify>[verify] Sub-section (IV.D.1 vs IV.D.2) and printed page of the sentence on recording and reporting critical deviations differ between fetches (R4-084)</ipd:verify>
+          <ipd:verify>[verify] Printed page of IV.D.2 passage (TOC says 15; fetches gave 16 and 17) (R4-085)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F05) (R2-029)</ipd:verify>
+          <ipd:verify>[verify] full verbatim role wording of bullet 7 (fetch F08 truncated after 'by sponsor') (R2-040)</ipd:verify>
+          <ipd:verify>[verify] single detailed fetch for the study-team part (R5-018)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L3_F1</bpmn:incoming>
+      <bpmn:outgoing>L3_F2</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:parallelGateway id="L3_G1" gatewayDirection="Diverging">
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F2</bpmn:incoming>
+      <bpmn:outgoing>L3_F3</bpmn:outgoing>
+      <bpmn:outgoing>L3_F4</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:callActivity id="L3_A2" name="Identify protocol deviations" calledElement="L4_02_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 48 (p. OJ L 158/39); 21CFR312 21CFR312.50 (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.56(a) (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.62(b) (p. n/a - eCFR web text without pagination); E6R3 A1-3.11.3 (p. printed 30 / PDF 38); E6R3 A1-3.16.1(b) (p. printed 39 / PDF 47); E6R3 A2-3.8 (p. printed 62 / PDF 70); E6R3 A1-3.11.4.2(a) (p. printed 31 / PDF 39); E6R3 A1-3.11.4.2(b) (p. printed 31 / PDF 39); E8R1 S6.1.3 (p. printed 18); E8R1 S3.3.2 (p. printed 6); E6R3 A1-3.11.4.5.4(b)(ii) (p. printed 34 / PDF 42); E6R3 A1-3.11.4.5.4(c) (p. printed 34 / PDF 42); E6R3 A1-4.2.3 (p. printed 47 / PDF 55); E6R3 A1-3.11.4.2(c) (p. printed 31 / PDF 39); E6R3 A1-3.10.1.3 (p. printed 28 / PDF 36); E6R3 A1-2.5.3 (p. printed 13 / PDF 21); E6R3 A1-3.11.4.1(a) (p. printed 31 / PDF 39); E6R3 GL:Monitoring (p. printed 88 / PDF 96); E6R3 A1-3.11.4.4 (p. printed 32 / PDF 40); E6R3 A1-3.11.4.5.1(a) (p. printed 32 / PDF 40); E6R3 A1-3.11.4.5.1(b) (p. printed 32 / PDF 40); E6R3 A1-3.11.4.5.2(b) (p. printed 32-33 / PDF 40-41); E6R3 A1-3.11.4.5.2(i) (p. printed 33 / PDF 41); E6R3 A1-3.11.4.5.4(a) (p. printed 34 / PDF 42); E6R3 A1-3.11.4.5.1(c) (p. printed 32 / PDF 40); E6R3 A1-3.11.4.6(a) (p. printed 34 / PDF 42); E6R3 GL:Monitoring Report (p. printed 88 / PDF 96); E6R3 A1-3.11.4.6(b) (p. printed 35 / PDF 43); E6R3 A1-3.11.4.6(c) (p. printed 35 / PDF 43); E6R3 A1-2.12.2 (p. printed 21 / PDF 29); E6R3 A1-2.12.6 (p. printed 22 / PDF 30); E6R3 A1-2.12.3 (p. printed 21 / PDF 29); E6R3 A1-2.11 (p. printed 21 / PDF 29); E6R3 A1-2.12.10(e) (p. printed 22 / PDF 30); FDA-RBM13 SIII.B (p. printed 8); FDA-PD24 SIII.B.2 (p. printed 6; lines 227-228; printed 9; lines 314-317; printed 8; lines 262-265); FDA-RBM13 SIV.D.1 (p. printed 15); FDA-RBM23 SQ4 (p. printed 7); FDA-RBM23 SQ5 (p. printed 7-8); FDA-RBM23 SQ8 (p. printed 10; printed 9-10); FDA-RBM23 SQ3 (p. printed 5-7); FDA-RBM13 SV (p. printed 17); FDA-PD24 SIII.B.1 (p. printed 6; lines 194-198); EMA-SB S6.4 (p. printed 9-10/21); TCB-PD-TIRS SIdentify-and-Collect (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-RBQM SRelationship-Between-QTLs-and-KRIs (p. journal pp. 251-261 (section page not confirmed)); TCB-RBQM SMonitor-Process-Stage (p. journal pp. 251-261 (section page not confirmed)); TCB-PD-TIRS SConfirm (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SClassify-and-Categorize (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SReview-and-Analyze (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-035, REQ-036, REQ-037, REQ-038, REQ-039, REQ-040, REQ-041, REQ-042, REQ-043, REQ-044, REQ-045, REQ-046, REQ-047, REQ-048, REQ-049, REQ-050, REQ-051, REQ-052, REQ-053, REQ-054, REQ-055, REQ-056, REQ-057, REQ-058, REQ-059, REQ-060, REQ-061, REQ-062, REQ-063, REQ-064, REQ-065, REQ-066, REQ-067, REQ-068, REQ-069
+Binding: binding-law
+Jurisdiction: ICH, EU, US
+Party: sponsor; responsible party; CRAs; site monitors and centralized monitoring; Study teams; persons performing monitoring; assigned monitor as site contact point; investigator; investigator/institution; Principal Investigator
+Draft: DRAFT guidance
+Verify: [verify] R1-089 is Annex 2: effective in the EU from 15 Jan 2027; FDA Annex 2 guidance still draft (C-06); [verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06); [verify] gerund item under A1-3.11.4.5; actor not named (R1 C7); [verify] section 4 duty of the 'responsible party' (investigator or sponsor); Sponsor lane chosen (R1 C14); [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify] 'deviation beyond these ranges' is a range exceedance, not a protocol deviation (C-04); [verify] single fetch (R5-025); [verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7); [verify] gerund item; Monitor lane inferred (R1 C7); [verify] 21 CFR 312.62(b) does not name deviations; applied as the US record basis for site documentation; [verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH EU US" draft="true" party="sponsor; responsible party; CRAs; site monitors and centralized monitoring; Study teams; persons performing monitoring; assigned monitor as site contact point; investigator; investigator/institution; Principal Investigator">
+          <ipd:source key="EUCTR" loc="Art. 48" page="OJ L 158/39"/>
+          <ipd:source key="21CFR312" loc="21CFR312.50" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.56(a)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.62(b)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="E6R3" loc="A1-3.11.3" page="printed 30 / PDF 38"/>
+          <ipd:source key="E6R3" loc="A1-3.16.1(b)" page="printed 39 / PDF 47"/>
+          <ipd:source key="E6R3" loc="A2-3.8" page="printed 62 / PDF 70"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.2(a)" page="printed 31 / PDF 39"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.2(b)" page="printed 31 / PDF 39"/>
+          <ipd:source key="E8R1" loc="S6.1.3" page="printed 18"/>
+          <ipd:source key="E8R1" loc="S3.3.2" page="printed 6"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.4(b)(ii)" page="printed 34 / PDF 42"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.4(c)" page="printed 34 / PDF 42"/>
+          <ipd:source key="E6R3" loc="A1-4.2.3" page="printed 47 / PDF 55"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.2(c)" page="printed 31 / PDF 39"/>
+          <ipd:source key="E6R3" loc="A1-3.10.1.3" page="printed 28 / PDF 36"/>
+          <ipd:source key="E6R3" loc="A1-2.5.3" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.1(a)" page="printed 31 / PDF 39"/>
+          <ipd:source key="E6R3" loc="GL:Monitoring" page="printed 88 / PDF 96"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.4" page="printed 32 / PDF 40"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(a)" page="printed 32 / PDF 40"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(b)" page="printed 32 / PDF 40"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.2(b)" page="printed 32-33 / PDF 40-41"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.2(i)" page="printed 33 / PDF 41"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.4(a)" page="printed 34 / PDF 42"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(c)" page="printed 32 / PDF 40"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.6(a)" page="printed 34 / PDF 42"/>
+          <ipd:source key="E6R3" loc="GL:Monitoring Report" page="printed 88 / PDF 96"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.6(b)" page="printed 35 / PDF 43"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.6(c)" page="printed 35 / PDF 43"/>
+          <ipd:source key="E6R3" loc="A1-2.12.2" page="printed 21 / PDF 29"/>
+          <ipd:source key="E6R3" loc="A1-2.12.6" page="printed 22 / PDF 30"/>
+          <ipd:source key="E6R3" loc="A1-2.12.3" page="printed 21 / PDF 29"/>
+          <ipd:source key="E6R3" loc="A1-2.11" page="printed 21 / PDF 29"/>
+          <ipd:source key="E6R3" loc="A1-2.12.10(e)" page="printed 22 / PDF 30"/>
+          <ipd:source key="FDA-RBM13" loc="SIII.B" page="printed 8"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 6; lines 227-228; printed 9; lines 314-317; printed 8; lines 262-265"/>
+          <ipd:source key="FDA-RBM13" loc="SIV.D.1" page="printed 15"/>
+          <ipd:source key="FDA-RBM23" loc="SQ4" page="printed 7"/>
+          <ipd:source key="FDA-RBM23" loc="SQ5" page="printed 7-8"/>
+          <ipd:source key="FDA-RBM23" loc="SQ8" page="printed 10; printed 9-10"/>
+          <ipd:source key="FDA-RBM23" loc="SQ3" page="printed 5-7"/>
+          <ipd:source key="FDA-RBM13" loc="SV" page="printed 17"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.1" page="printed 6; lines 194-198"/>
+          <ipd:source key="EMA-SB" loc="S6.4" page="printed 9-10/21"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SIdentify-and-Collect" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-RBQM" loc="SRelationship-Between-QTLs-and-KRIs" page="journal pp. 251-261 (section page not confirmed)"/>
+          <ipd:source key="TCB-RBQM" loc="SMonitor-Process-Stage" page="journal pp. 251-261 (section page not confirmed)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SConfirm" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SClassify-and-Categorize" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SReview-and-Analyze" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-035"/>
+          <ipd:req id="REQ-036"/>
+          <ipd:req id="REQ-037"/>
+          <ipd:req id="REQ-038"/>
+          <ipd:req id="REQ-039"/>
+          <ipd:req id="REQ-040"/>
+          <ipd:req id="REQ-041"/>
+          <ipd:req id="REQ-042"/>
+          <ipd:req id="REQ-043"/>
+          <ipd:req id="REQ-044"/>
+          <ipd:req id="REQ-045"/>
+          <ipd:req id="REQ-046"/>
+          <ipd:req id="REQ-047"/>
+          <ipd:req id="REQ-048"/>
+          <ipd:req id="REQ-049"/>
+          <ipd:req id="REQ-050"/>
+          <ipd:req id="REQ-051"/>
+          <ipd:req id="REQ-052"/>
+          <ipd:req id="REQ-053"/>
+          <ipd:req id="REQ-054"/>
+          <ipd:req id="REQ-055"/>
+          <ipd:req id="REQ-056"/>
+          <ipd:req id="REQ-057"/>
+          <ipd:req id="REQ-058"/>
+          <ipd:req id="REQ-059"/>
+          <ipd:req id="REQ-060"/>
+          <ipd:req id="REQ-061"/>
+          <ipd:req id="REQ-062"/>
+          <ipd:req id="REQ-063"/>
+          <ipd:req id="REQ-064"/>
+          <ipd:req id="REQ-065"/>
+          <ipd:req id="REQ-066"/>
+          <ipd:req id="REQ-067"/>
+          <ipd:req id="REQ-068"/>
+          <ipd:req id="REQ-069"/>
+          <ipd:verify>[verify] R1-089 is Annex 2: effective in the EU from 15 Jan 2027; FDA Annex 2 guidance still draft (C-06)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] gerund item under A1-3.11.4.5; actor not named (R1 C7)</ipd:verify>
+          <ipd:verify>[verify] section 4 duty of the 'responsible party' (investigator or sponsor); Sponsor lane chosen (R1 C14)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify] 'deviation beyond these ranges' is a range exceedance, not a protocol deviation (C-04)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-025)</ipd:verify>
+          <ipd:verify>[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)</ipd:verify>
+          <ipd:verify>[verify] gerund item; Monitor lane inferred (R1 C7)</ipd:verify>
+          <ipd:verify>[verify] 21 CFR 312.62(b) does not name deviations; applied as the US record basis for site documentation</ipd:verify>
+          <ipd:verify>[verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F3</bpmn:incoming>
+      <bpmn:outgoing>L3_F5</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="L3_A3" name="Manage intentional protocol deviations" calledElement="L4_03_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR312 21CFR312.66 (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.53(c)(1)(vii) (p. n/a - eCFR web text without pagination); 21CFR56 21CFR56.108(a)(4) (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.53(c)(1)(vi)(a) (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.30(b)(2)(ii) (p. n/a - eCFR web text without pagination); 21CFR56 21CFR56.104(c) (p. n/a - web text without pagination); E6R3 A1-1.4.7 (p. printed 10 / PDF 18); M11-TEMPLATE S5.1 (p. printed 25); E6R3 A1-2.5.4 (p. printed 13 / PDF 21); E6R3 A1-1.4.8(a) (p. printed 10-11 / PDF 18-19); E6R3 A1-2.5.5 (p. printed 13 / PDF 21); E6R3 A1-3.13.3 (p. printed 37 / PDF 45; printed 36 / PDF 44); FDA-PD24 SIII.B.1 (p. printed 6; lines 199-203; repeated SIII.B.2 lines 268-271); FDA-PD24 SIII.B.2 (p. printed 8; lines 265-268); FDA-PD24 SIII.C (p. printed 10; lines 363-365; printed 10; lines 365-372; printed 10; lines 360-363)
+Requirements: REQ-070, REQ-071, REQ-072, REQ-073, REQ-074, REQ-075, REQ-076, REQ-077, REQ-078, REQ-079, REQ-080, REQ-081, REQ-082, REQ-083, REQ-084, REQ-085, REQ-086, REQ-087
+Binding: binding-law
+Jurisdiction: ICH, US
+Party: IRB/IEC; investigator; each IRB; sponsor; Sponsors and clinical investigators; investigator/institution; investigator/institution or sponsor
+Draft: DRAFT guidance
+Verify: [verify] E6(R3) A1-1.4.7 frames this as an IRB/IEC written procedure; the party initiating the change is not named; [verify] represented by the IRB/IEC approval message flow; IRB/IEC is a collapsed pool (D1); [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06); [verify] whether the sentence is fixed universal text or instructional text of the template (R2-113); [verify] in the EU all submissions are made by the sponsor, not the investigator (EUCTR-QA Q&amp;A 1.5) (C-12); [verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005); [verify] notifying party not named (passive voice); Investigator chosen because 21 CFR 312.66 places IRB reporting on the investigator; [verify] eCFR text of 56.104(c) not retrievable (robots); confirm against eCFR or govinfo before X1 (R4-030)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH US" draft="true" party="IRB/IEC; investigator; each IRB; sponsor; Sponsors and clinical investigators; investigator/institution; investigator/institution or sponsor">
+          <ipd:source key="21CFR312" loc="21CFR312.66" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.53(c)(1)(vii)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR56" loc="21CFR56.108(a)(4)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.53(c)(1)(vi)(a)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.30(b)(2)(ii)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR56" loc="21CFR56.104(c)" page="n/a - web text without pagination"/>
+          <ipd:source key="E6R3" loc="A1-1.4.7" page="printed 10 / PDF 18"/>
+          <ipd:source key="M11-TEMPLATE" loc="S5.1" page="printed 25"/>
+          <ipd:source key="E6R3" loc="A1-2.5.4" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-1.4.8(a)" page="printed 10-11 / PDF 18-19"/>
+          <ipd:source key="E6R3" loc="A1-2.5.5" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-3.13.3" page="printed 37 / PDF 45; printed 36 / PDF 44"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.1" page="printed 6; lines 199-203; repeated SIII.B.2 lines 268-271"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 8; lines 265-268"/>
+          <ipd:source key="FDA-PD24" loc="SIII.C" page="printed 10; lines 363-365; printed 10; lines 365-372; printed 10; lines 360-363"/>
+          <ipd:req id="REQ-070"/>
+          <ipd:req id="REQ-071"/>
+          <ipd:req id="REQ-072"/>
+          <ipd:req id="REQ-073"/>
+          <ipd:req id="REQ-074"/>
+          <ipd:req id="REQ-075"/>
+          <ipd:req id="REQ-076"/>
+          <ipd:req id="REQ-077"/>
+          <ipd:req id="REQ-078"/>
+          <ipd:req id="REQ-079"/>
+          <ipd:req id="REQ-080"/>
+          <ipd:req id="REQ-081"/>
+          <ipd:req id="REQ-082"/>
+          <ipd:req id="REQ-083"/>
+          <ipd:req id="REQ-084"/>
+          <ipd:req id="REQ-085"/>
+          <ipd:req id="REQ-086"/>
+          <ipd:req id="REQ-087"/>
+          <ipd:verify>[verify] E6(R3) A1-1.4.7 frames this as an IRB/IEC written procedure; the party initiating the change is not named</ipd:verify>
+          <ipd:verify>[verify] represented by the IRB/IEC approval message flow; IRB/IEC is a collapsed pool (D1)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] whether the sentence is fixed universal text or instructional text of the template (R2-113)</ipd:verify>
+          <ipd:verify>[verify] in the EU all submissions are made by the sponsor, not the investigator (EUCTR-QA Q&amp;A 1.5) (C-12)</ipd:verify>
+          <ipd:verify>[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)</ipd:verify>
+          <ipd:verify>[verify] notifying party not named (passive voice); Investigator chosen because 21 CFR 312.66 places IRB reporting on the investigator</ipd:verify>
+          <ipd:verify>[verify] eCFR text of 56.104(c) not retrievable (robots); confirm against eCFR or govinfo before X1 (R4-030)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F4</bpmn:incoming>
+      <bpmn:outgoing>L3_F6</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:parallelGateway id="L3_G2" gatewayDirection="Converging">
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F5</bpmn:incoming>
+      <bpmn:incoming>L3_F6</bpmn:incoming>
+      <bpmn:outgoing>L3_F7</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:parallelGateway id="L3_G3" gatewayDirection="Diverging">
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F7</bpmn:incoming>
+      <bpmn:outgoing>L3_F8</bpmn:outgoing>
+      <bpmn:outgoing>L3_F9</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:callActivity id="L3_A4" name="Document and classify protocol deviations" calledElement="L4_04_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 56(1) (p. OJ L 158/41); EUCTR Art. 57 (p. OJ L 158/41); E3QA S3 (p. printed 6); E6R3 A1-2.5.3 (p. printed 13 / PDF 21); E6R3 A1-3.9.3 (p. printed 27 / PDF 35); E3 S10.2 (p. printed 13); E6R3 AppC-C.2.3 (p. printed 75 / PDF 83); E6R3 AppC-C.2.5 (p. printed 75-76 / PDF 83-84); FDA-PD24 SII (p. printed 1-2; lines 17-19 and 57-63; printed 2-3; lines 76-86; printed 2; line 60 (restated in SIII.A.1, printed 4)); FDA-PD24 SIII.B.2 (p. printed 7; line 233; printed 8; lines 262-265; printed 7; lines 234-236); FDA-PD24 SIII.A (p. printed 3; lines 93-101); EMA-SB S5.1 (p. printed 8/21); TCB-PD-TIRS SDefine (p. journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Fig. 2; section page not confirmed)); TCB-PD-TIRS SGCP-Compliance (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SStore (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SPrepare (p. journal pp. 733-742 (Fig. 5; section page not confirmed)); TCB-PD-TIRS SClassify-and-Categorize (p. journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Appendix Table 1; page not confirmed)); CDISC-CT SC225352 (p. PDF 9 of 1741 (codelist index)); CDISC-CT SC225353 (p. PDF 9 of 1741 (codelist index)); TCB-PD-TIRS SConfirm (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SIdentify-and-Collect (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-088, REQ-089, REQ-090, REQ-091, REQ-092, REQ-093, REQ-094, REQ-095, REQ-096, REQ-097, REQ-098, REQ-099, REQ-100, REQ-101, REQ-102, REQ-103, REQ-104
+Binding: binding-law
+Jurisdiction: ICH, EU, US
+Party: Sponsors; site staff, study staff, site or central monitoring, audits, regulatory inspections; the sponsor or the investigator, as applicable; investigator; the identifier; independent study team member, other than the identifier; the team; sponsor and investigator/institution; the sponsor and the investigator
+Draft: DRAFT guidance
+Verify: [verify binding] EU/US adoption of E3QA not checked by the research stems (C-06); [verify] the Q&amp;A item is unnumbered under heading '3. TERMINOLOGY'; fetch tool rendered its row label as '7 June 2012', which may be a row number 7 plus 'June 2012' (R2-066); [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify] Art. 56(1) applies to 'the sponsor or the investigator, as applicable'; applies equally in the Investigator/institution pool; [verify] documenting party not named in the text (R3-065); [verify] single detailed fetch; wording 'reasonable to consider' not confirmed verbatim (R5-003); [verify] Decision Tree image (TransCelerate asset, robots-blocked) not read; branch logic unknown (R5-005); [verify] Fig. 5 content not readable (R5-016); [verify] 'the identifier' may sit in the Sponsor or the Investigator/institution pool; source does not say; [verify] alignment of ICH E3, best-practice and CDISC DVCAT categories unknown (C-16); [verify binding] EU/US adoption of E3 not checked by the research stems (C-06); [verify] which four categories are ICH E3 (R2 to cross-check E3 10.2) (R5-026); [verify] codelist terms not read; check whether they match the seven TransCelerate categories (R5-065); [verify] codelist terms and first release date not read (R5-066); [verify] single fetch (R5-023)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH EU US" draft="true" party="Sponsors; site staff, study staff, site or central monitoring, audits, regulatory inspections; the sponsor or the investigator, as applicable; investigator; the identifier; independent study team member, other than the identifier; the team; sponsor and investigator/institution; the sponsor and the investigator">
+          <ipd:source key="EUCTR" loc="Art. 56(1)" page="OJ L 158/41"/>
+          <ipd:source key="EUCTR" loc="Art. 57" page="OJ L 158/41"/>
+          <ipd:source key="E3QA" loc="S3" page="printed 6"/>
+          <ipd:source key="E6R3" loc="A1-2.5.3" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-3.9.3" page="printed 27 / PDF 35"/>
+          <ipd:source key="E3" loc="S10.2" page="printed 13"/>
+          <ipd:source key="E6R3" loc="AppC-C.2.3" page="printed 75 / PDF 83"/>
+          <ipd:source key="E6R3" loc="AppC-C.2.5" page="printed 75-76 / PDF 83-84"/>
+          <ipd:source key="FDA-PD24" loc="SII" page="printed 1-2; lines 17-19 and 57-63; printed 2-3; lines 76-86; printed 2; line 60 (restated in SIII.A.1, printed 4)"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 7; line 233; printed 8; lines 262-265; printed 7; lines 234-236"/>
+          <ipd:source key="FDA-PD24" loc="SIII.A" page="printed 3; lines 93-101"/>
+          <ipd:source key="EMA-SB" loc="S5.1" page="printed 8/21"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SDefine" page="journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Fig. 2; section page not confirmed)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SGCP-Compliance" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SStore" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SPrepare" page="journal pp. 733-742 (Fig. 5; section page not confirmed)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SClassify-and-Categorize" page="journal pp. 733-742 (section page not confirmed; PMC HTML read); journal pp. 733-742 (Appendix Table 1; page not confirmed)"/>
+          <ipd:source key="CDISC-CT" loc="SC225352" page="PDF 9 of 1741 (codelist index)"/>
+          <ipd:source key="CDISC-CT" loc="SC225353" page="PDF 9 of 1741 (codelist index)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SConfirm" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SIdentify-and-Collect" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-088"/>
+          <ipd:req id="REQ-089"/>
+          <ipd:req id="REQ-090"/>
+          <ipd:req id="REQ-091"/>
+          <ipd:req id="REQ-092"/>
+          <ipd:req id="REQ-093"/>
+          <ipd:req id="REQ-094"/>
+          <ipd:req id="REQ-095"/>
+          <ipd:req id="REQ-096"/>
+          <ipd:req id="REQ-097"/>
+          <ipd:req id="REQ-098"/>
+          <ipd:req id="REQ-099"/>
+          <ipd:req id="REQ-100"/>
+          <ipd:req id="REQ-101"/>
+          <ipd:req id="REQ-102"/>
+          <ipd:req id="REQ-103"/>
+          <ipd:req id="REQ-104"/>
+          <ipd:verify>[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] the Q&amp;A item is unnumbered under heading '3. TERMINOLOGY'; fetch tool rendered its row label as '7 June 2012', which may be a row number 7 plus 'June 2012' (R2-066)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify] Art. 56(1) applies to 'the sponsor or the investigator, as applicable'; applies equally in the Investigator/institution pool</ipd:verify>
+          <ipd:verify>[verify] documenting party not named in the text (R3-065)</ipd:verify>
+          <ipd:verify>[verify] single detailed fetch; wording 'reasonable to consider' not confirmed verbatim (R5-003)</ipd:verify>
+          <ipd:verify>[verify] Decision Tree image (TransCelerate asset, robots-blocked) not read; branch logic unknown (R5-005)</ipd:verify>
+          <ipd:verify>[verify] Fig. 5 content not readable (R5-016)</ipd:verify>
+          <ipd:verify>[verify] 'the identifier' may sit in the Sponsor or the Investigator/institution pool; source does not say</ipd:verify>
+          <ipd:verify>[verify] alignment of ICH E3, best-practice and CDISC DVCAT categories unknown (C-16)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E3 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] which four categories are ICH E3 (R2 to cross-check E3 10.2) (R5-026)</ipd:verify>
+          <ipd:verify>[verify] codelist terms not read; check whether they match the seven TransCelerate categories (R5-065)</ipd:verify>
+          <ipd:verify>[verify] codelist terms and first release date not read (R5-066)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-023)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F8</bpmn:incoming>
+      <bpmn:outgoing>L3_F10</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="L3_A5" name="Assess and notify reportable noncompliance" calledElement="L4_05_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 52(2) (p. OJ L 158/40); EUCTR Art. 52(1) (p. OJ L 158/40); 21CFR312 21CFR312.66 (p. n/a - eCFR web text without pagination); 21CFR312 21CFR312.53(c)(1)(vii) (p. n/a - eCFR web text without pagination); 21CFR56 21CFR56.108(b)(2) (p. n/a - eCFR web text without pagination); E6R3 A1-3.12.2 (p. printed 35 / PDF 43); E6R3 A1-2.4.6 (p. printed 13 / PDF 21); E6R3 A1-1.4.8(b) (p. printed 11 / PDF 19); EMA-SB SGlossary (p. printed 3/21); EMA-SB S3.2 (p. printed 5/21); EMA-SB S5.1 (p. printed 8/21; printed 7-8/21); EMA-SB S6.1 (p. printed 9/21); EMA-SB SAppII (p. printed 18/21); CTIS-BT-SB24 SSlide-33 (p. slide 33); EMA-SB SAppI-8.2 (p. printed 15/21); EMA-SB SAppI-8.4 (p. printed 15/21); EMA-SB S7 (p. printed 10/21); EUCTR-QA S11.3 (p. printed 1-2 (chapter 11); printed 1 (chapter 11)); EMA-SB S3.1 (p. printed 5/21); EUCTR-QA S1.5 (p. printed 4-5 (chapter 1; page numbers restart per chapter)); CTIS-BT-SB24 SSlide-20 (p. slide 20; notification type label on an unnumbered CTCG slide); EMA-SB S4 (p. printed 6/21; printed 6/21 and 20-21/21); EMA-SB SAppIIIb (p. printed 20-21/21); CTIS-BT-SB24 SSlide-28 (p. slides 20, 26, 28; EU CT number point on an unnumbered CTCG slide); FDA-PD24 SIII.B.3 (p. printed 10; lines 351-353; printed 10; lines 355-356); TCB-PD-TIRS SReport (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SGCP-Compliance (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-105, REQ-106, REQ-107, REQ-108, REQ-109, REQ-110, REQ-111, REQ-112, REQ-113, REQ-114, REQ-115, REQ-116, REQ-117, REQ-118, REQ-119, REQ-120, REQ-121, REQ-122, REQ-123, REQ-124, REQ-125, REQ-126
+Binding: binding-law
+Jurisdiction: ICH, EU, US
+Party: sponsor; investigator or sponsor; investigator/institution; investigator; each IRB; Companies
+Draft: DRAFT guidance
+Verify: [verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14); [verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05); [verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13); [verify] Appendix III a form content not in the text layer (local copy also empty; form is an image or form object) (R3-056); [verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03); [verify] duty may lie with investigator or sponsor (A1-2.4.6); [verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03); [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1); [verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01); [verify] reporting party not stated in the source (R5-037); [verify] single fetch (R5-037)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH EU US" draft="true" party="sponsor; investigator or sponsor; investigator/institution; investigator; each IRB; Companies">
+          <ipd:source key="EUCTR" loc="Art. 52(2)" page="OJ L 158/40"/>
+          <ipd:source key="EUCTR" loc="Art. 52(1)" page="OJ L 158/40"/>
+          <ipd:source key="21CFR312" loc="21CFR312.66" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR312" loc="21CFR312.53(c)(1)(vii)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="21CFR56" loc="21CFR56.108(b)(2)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:source key="E6R3" loc="A1-2.4.6" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-1.4.8(b)" page="printed 11 / PDF 19"/>
+          <ipd:source key="EMA-SB" loc="SGlossary" page="printed 3/21"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5/21"/>
+          <ipd:source key="EMA-SB" loc="S5.1" page="printed 8/21; printed 7-8/21"/>
+          <ipd:source key="EMA-SB" loc="S6.1" page="printed 9/21"/>
+          <ipd:source key="EMA-SB" loc="SAppII" page="printed 18/21"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-33" page="slide 33"/>
+          <ipd:source key="EMA-SB" loc="SAppI-8.2" page="printed 15/21"/>
+          <ipd:source key="EMA-SB" loc="SAppI-8.4" page="printed 15/21"/>
+          <ipd:source key="EMA-SB" loc="S7" page="printed 10/21"/>
+          <ipd:source key="EUCTR-QA" loc="S11.3" page="printed 1-2 (chapter 11); printed 1 (chapter 11)"/>
+          <ipd:source key="EMA-SB" loc="S3.1" page="printed 5/21"/>
+          <ipd:source key="EUCTR-QA" loc="S1.5" page="printed 4-5 (chapter 1; page numbers restart per chapter)"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-20" page="slide 20; notification type label on an unnumbered CTCG slide"/>
+          <ipd:source key="EMA-SB" loc="S4" page="printed 6/21; printed 6/21 and 20-21/21"/>
+          <ipd:source key="EMA-SB" loc="SAppIIIb" page="printed 20-21/21"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-28" page="slides 20, 26, 28; EU CT number point on an unnumbered CTCG slide"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.3" page="printed 10; lines 351-353; printed 10; lines 355-356"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SReport" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SGCP-Compliance" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-105"/>
+          <ipd:req id="REQ-106"/>
+          <ipd:req id="REQ-107"/>
+          <ipd:req id="REQ-108"/>
+          <ipd:req id="REQ-109"/>
+          <ipd:req id="REQ-110"/>
+          <ipd:req id="REQ-111"/>
+          <ipd:req id="REQ-112"/>
+          <ipd:req id="REQ-113"/>
+          <ipd:req id="REQ-114"/>
+          <ipd:req id="REQ-115"/>
+          <ipd:req id="REQ-116"/>
+          <ipd:req id="REQ-117"/>
+          <ipd:req id="REQ-118"/>
+          <ipd:req id="REQ-119"/>
+          <ipd:req id="REQ-120"/>
+          <ipd:req id="REQ-121"/>
+          <ipd:req id="REQ-122"/>
+          <ipd:req id="REQ-123"/>
+          <ipd:req id="REQ-124"/>
+          <ipd:req id="REQ-125"/>
+          <ipd:req id="REQ-126"/>
+          <ipd:verify>[verify] EMA-SB glossary refers to the 'approved protocol version', Art. 52(1) to the version applicable at the time of the breach (C-14)</ipd:verify>
+          <ipd:verify>[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)</ipd:verify>
+          <ipd:verify>[verify] 'seven days' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)</ipd:verify>
+          <ipd:verify>[verify] Appendix III a form content not in the text layer (local copy also empty; form is an image or form object) (R3-056)</ipd:verify>
+          <ipd:verify>[verify] E6(R3) does not state whether a protocol deviation counts as such a 'change' (C-03)</ipd:verify>
+          <ipd:verify>[verify] duty may lie with investigator or sponsor (A1-2.4.6)</ipd:verify>
+          <ipd:verify>[verify] 21 CFR does not state whether a protocol deviation is a 'change in the research activity'; IRB written procedures decide (C-03)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution pools (D1)</ipd:verify>
+          <ipd:verify>[verify] 21 CFR defines neither 'serious' nor 'continuing'; no source maps iPD to this trigger (C-01)</ipd:verify>
+          <ipd:verify>[verify] reporting party not stated in the source (R5-037)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-037)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F9</bpmn:incoming>
+      <bpmn:outgoing>L3_F11</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:parallelGateway id="L3_G4" gatewayDirection="Converging">
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F10</bpmn:incoming>
+      <bpmn:incoming>L3_F11</bpmn:incoming>
+      <bpmn:outgoing>L3_F12</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:callActivity id="L3_A6" name="Remediate deviations and noncompliance" calledElement="L4_06_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: 21CFR312 21CFR312.56(b) (p. n/a - eCFR web text without pagination); E6R3 A1-3.9.6 (p. printed 27 / PDF 35); E6R3 A1-3.11.4.6(c) (p. printed 35 / PDF 43); E6R3 A1-3.11.4.5.1(d) (p. printed 32 / PDF 40); E8R1 S6.1 (p. printed 18); E6R3 A1-3.11.4.5.1(b) (p. printed 32 / PDF 40); E6R3 A1-2.5.3 (p. printed 13 / PDF 21); E6R3 A1-3.12.1 (p. printed 35 / PDF 43); E6R3 A1-3.12.2 (p. printed 35 / PDF 43); E6R3 A1-3.12.3 (p. printed 35 / PDF 43); E6R3 A1-3.10.1.5 (p. printed 29 / PDF 37); E6R3 P7.3 (p. printed 5 / PDF 13); E8R1 S3.3.4 (p. printed 6); E8R1 S6.1.2 (p. printed 18); FDA-PD24 SIII.B.2 (p. printed 6-7; lines 228-231; printed 9; lines 319-321; printed 9; lines 322-325; printed 9; lines 326-329; printed 9; lines 325-326); FDA-RBM23 SQ7 (p. printed 9); EMA-SB S6.1 (p. printed 9/21); EMA-SB SAppII (p. printed 18/21); EMA-SB S7 (p. printed 10/21); EMA-SB S3.2 (p. printed 5-6/21); CTIS-BT-SB24 SSlide-19 (p. slides 19, 26); CTIS-TM05 SOther-notifications [verify] (p. printed 4); FDA-RBM23 SQ2 (p. printed 4-5); FDA-RBM13 SIV.D.5 (p. printed 17); CTTI-CTQ SData-Monitoring-and-Management (p. printed 19 of 24); CTTI-QbD S4 (p. 2 of 2); TCB-PD-TIRS STrain (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-127, REQ-128, REQ-129, REQ-130, REQ-131, REQ-132, REQ-133, REQ-134, REQ-135, REQ-136, REQ-137, REQ-138, REQ-139, REQ-140, REQ-141, REQ-142, REQ-143, REQ-144, REQ-145, REQ-146, REQ-147, REQ-148, REQ-149, REQ-150, REQ-151, REQ-152, REQ-153
+Binding: binding-law
+Jurisdiction: ICH, EU, US
+Party: sponsor; study team; investigator; the sponsor or clinical investigator; The party at which the serious breach occurred; sponsor users
+Draft: DRAFT guidance
+Verify: [verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06); [verify] gerund item; Monitor lane inferred (R1 C7); [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify] FDA-PD24 names 'the sponsor or clinical investigator' for the root cause analysis (C-15); [verify] 'updating their analysis' (lines 324-325) does not say which analysis is meant (root-cause or statistical analysis) (R4-069); [verify] party is the party where the breach occurred (sponsor, CRO or investigator); Sponsor lane by default; [verify] against CTIS sponsor handbook v6.4 section 4.9 (p. 140) (R3-097); [verify] printed section label of the guide not captured (loc names the topic 'other types of notifications') (R3-097); [verify] local copy not available (shell fetch returned HTTP 404 page, vendor/sources/CTIS-TM05/doc_17.txt) (R3-097); [verify] single fetch (R5-019)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH EU US" draft="true" party="sponsor; study team; investigator; the sponsor or clinical investigator; The party at which the serious breach occurred; sponsor users">
+          <ipd:source key="21CFR312" loc="21CFR312.56(b)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="E6R3" loc="A1-3.9.6" page="printed 27 / PDF 35"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.6(c)" page="printed 35 / PDF 43"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(d)" page="printed 32 / PDF 40"/>
+          <ipd:source key="E8R1" loc="S6.1" page="printed 18"/>
+          <ipd:source key="E6R3" loc="A1-3.11.4.5.1(b)" page="printed 32 / PDF 40"/>
+          <ipd:source key="E6R3" loc="A1-2.5.3" page="printed 13 / PDF 21"/>
+          <ipd:source key="E6R3" loc="A1-3.12.1" page="printed 35 / PDF 43"/>
+          <ipd:source key="E6R3" loc="A1-3.12.2" page="printed 35 / PDF 43"/>
+          <ipd:source key="E6R3" loc="A1-3.12.3" page="printed 35 / PDF 43"/>
+          <ipd:source key="E6R3" loc="A1-3.10.1.5" page="printed 29 / PDF 37"/>
+          <ipd:source key="E6R3" loc="P7.3" page="printed 5 / PDF 13"/>
+          <ipd:source key="E8R1" loc="S3.3.4" page="printed 6"/>
+          <ipd:source key="E8R1" loc="S6.1.2" page="printed 18"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 6-7; lines 228-231; printed 9; lines 319-321; printed 9; lines 322-325; printed 9; lines 326-329; printed 9; lines 325-326"/>
+          <ipd:source key="FDA-RBM23" loc="SQ7" page="printed 9"/>
+          <ipd:source key="EMA-SB" loc="S6.1" page="printed 9/21"/>
+          <ipd:source key="EMA-SB" loc="SAppII" page="printed 18/21"/>
+          <ipd:source key="EMA-SB" loc="S7" page="printed 10/21"/>
+          <ipd:source key="EMA-SB" loc="S3.2" page="printed 5-6/21"/>
+          <ipd:source key="CTIS-BT-SB24" loc="SSlide-19" page="slides 19, 26"/>
+          <ipd:source key="CTIS-TM05" loc="SOther-notifications [verify]" page="printed 4"/>
+          <ipd:source key="FDA-RBM23" loc="SQ2" page="printed 4-5"/>
+          <ipd:source key="FDA-RBM13" loc="SIV.D.5" page="printed 17"/>
+          <ipd:source key="CTTI-CTQ" loc="SData-Monitoring-and-Management" page="printed 19 of 24"/>
+          <ipd:source key="CTTI-QbD" loc="S4" page="2 of 2"/>
+          <ipd:source key="TCB-PD-TIRS" loc="STrain" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-127"/>
+          <ipd:req id="REQ-128"/>
+          <ipd:req id="REQ-129"/>
+          <ipd:req id="REQ-130"/>
+          <ipd:req id="REQ-131"/>
+          <ipd:req id="REQ-132"/>
+          <ipd:req id="REQ-133"/>
+          <ipd:req id="REQ-134"/>
+          <ipd:req id="REQ-135"/>
+          <ipd:req id="REQ-136"/>
+          <ipd:req id="REQ-137"/>
+          <ipd:req id="REQ-138"/>
+          <ipd:req id="REQ-139"/>
+          <ipd:req id="REQ-140"/>
+          <ipd:req id="REQ-141"/>
+          <ipd:req id="REQ-142"/>
+          <ipd:req id="REQ-143"/>
+          <ipd:req id="REQ-144"/>
+          <ipd:req id="REQ-145"/>
+          <ipd:req id="REQ-146"/>
+          <ipd:req id="REQ-147"/>
+          <ipd:req id="REQ-148"/>
+          <ipd:req id="REQ-149"/>
+          <ipd:req id="REQ-150"/>
+          <ipd:req id="REQ-151"/>
+          <ipd:req id="REQ-152"/>
+          <ipd:req id="REQ-153"/>
+          <ipd:verify>[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] gerund item; Monitor lane inferred (R1 C7)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify] FDA-PD24 names 'the sponsor or clinical investigator' for the root cause analysis (C-15)</ipd:verify>
+          <ipd:verify>[verify] 'updating their analysis' (lines 324-325) does not say which analysis is meant (root-cause or statistical analysis) (R4-069)</ipd:verify>
+          <ipd:verify>[verify] party is the party where the breach occurred (sponsor, CRO or investigator); Sponsor lane by default</ipd:verify>
+          <ipd:verify>[verify] against CTIS sponsor handbook v6.4 section 4.9 (p. 140) (R3-097)</ipd:verify>
+          <ipd:verify>[verify] printed section label of the guide not captured (loc names the topic 'other types of notifications') (R3-097)</ipd:verify>
+          <ipd:verify>[verify] local copy not available (shell fetch returned HTTP 404 page, vendor/sources/CTIS-TM05/doc_17.txt) (R3-097)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-019)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:categoryValueRef>L3_GR_CONDUCT_VALUE</bpmn:categoryValueRef>
+      <bpmn:incoming>L3_F12</bpmn:incoming>
+      <bpmn:outgoing>L3_F13</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="L3_A7" name="Finalise iPDs for clinical study report" calledElement="L4_07_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: E6R3 A1-4.2.6(b) (p. printed 48 / PDF 56); E9 S5.2 (p. printed 22); E9 S5.2.1 (p. printed 23; printed 22-23); E9 GL:Blind Review (p. printed 32); E9 S5.2.2 (p. printed 23-24 [verify]; printed 24); E6R3 A1-4.2.6(c) (p. printed 48 / PDF 56); E9 S7.1 (p. printed 30); E9R1 SA.1 (p. printed 3); E9R1 SA.5.3 (p. printed 18); E3 S10.2 (p. printed 13); E3QA S3 (p. printed 7; printed 7-8; printed 6-7); E3 S16.2 (p. printed 29); E3 SIntroduction (p. printed 1-2); E3 S11.1 (p. printed 13); E3 S11.4.2.6 (p. printed 17); E3 SAnnex-IVa (p. printed 35 [verify]); E6R3 A1-3.10 (p. printed 27 / PDF 35); E6R3 A1-3.10.1.6 (p. printed 29 / PDF 37); E8R1 S6.3 (p. printed 19); E6R3 A1-3.17.2(a) (p. printed 44 / PDF 52); E3QA S1 (p. printed 1-2); EMA-SB S5.1 (p. printed 8/21); FDA-PD24 SIII.B.2 (p. printed 7; lines 241-243, footnote 16; printed 7; lines 243-245, footnote 17; printed 7; lines 246-248, footnote 18; printed 7; lines 248-250); FDA-SDTCG S4.1.1.3 (p. 16 or 17 of 97 [verify]); TCB-PD STaking-a-holistic-approach-CLOSEOUT [verify] (p. web page (carousel tab inferred)); TCB-PD-TIRS SClose-Out (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SReview-and-Analyze (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD STaking-a-holistic-approach-REVIEW-ANALYZE [verify] (p. web page (carousel tab inferred)); TCB-PD-TIRS SReport (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-RBQM SReport-Process-Stage (p. journal pp. 251-261 (section page not confirmed)); NCIT-DV SC49585 (p. web page); CDISC-SDTMIG40-PR S35 (p. slides 35-36)
+Requirements: REQ-154, REQ-155, REQ-156, REQ-157, REQ-158, REQ-159, REQ-160, REQ-161, REQ-162, REQ-163, REQ-164, REQ-165, REQ-166, REQ-167, REQ-168, REQ-169, REQ-170, REQ-171, REQ-172, REQ-173, REQ-174, REQ-175, REQ-176, REQ-177, REQ-178, REQ-179, REQ-180, REQ-181, REQ-182, REQ-183, REQ-184, REQ-185, REQ-186, REQ-187
+Binding: binding-ICH
+Jurisdiction: ICH, EU, US
+Party: responsible party; Each company; sponsor
+Draft: DRAFT guidance
+Verify: [verify binding] EU/US adoption of E9 not checked by the research stems (C-06); [verify] sentence content from a single fetch (F19) (R2-085); [verify] glossary wording from a single fetch (F20) (R2-096); [verify] printed page: 23 per F19, 24 per F21 (R2-087); [verify] printed page: 23 per F19, 24 per F21 (R2-086); [verify] sentence content from a single fetch (F19) (R2-084); [verify] sentence content from a single fetch (F20) (R2-089); [verify binding] EU/US adoption of E9R1 not checked by the research stems (C-06); [verify binding] EU/US adoption of E3, E3QA not checked by the research stems (C-06); [verify] single fetch (R5-036); [verify] single fetch (R5-038); [verify binding] EU/US adoption of E3 not checked by the research stems (C-06); [verify] single fetch (R5-040); [verify] Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked (R4-055); [verify] basis is draft guidance only - shown as DRAFT, never a binding step; [verify binding] EU/US adoption of E3, E9 not checked by the research stems (C-06); [verify] sentence content from a single fetch (F11) (R2-059); [verify] single fetch (R5-039); [verify binding] EU/US adoption of E3QA not checked by the research stems (C-06); [verify binding] EU/US adoption of E3QA, E3 not checked by the research stems (C-06); [verify] annex page numbers read from footers; fetch F13 warned they may be off by one (R2-064); [verify] single fetch (R5-041); [verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06); [verify] answer content from a single fetch (F33); topic confirmed in F16 (R2-065); [verify] page number: fetches gave 16 and 17 of 97 (R5-069); [verify] secondary mirror of NCIt; SDTMIG v3.4 DV text (purpose, assumptions) behind CDISC login, not read (R5-068); [verify] DVCLASI is in the SDTMIG v4.0 public review draft only (R5-067); [verify] SDTMIG v4.0 publication status and final DVCLASI definition (R5-067); [verify] slide 36 wording from one fetch (R5-067); [verify] page number: fetches gave 16 and 17 of 97 (R5-070); [verify] variable meanings glossed from CDISC naming, SDTMIG text not read (R5-070)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-ICH" jurisdiction="ICH EU US" draft="true" party="responsible party; Each company; sponsor">
+          <ipd:source key="E6R3" loc="A1-4.2.6(b)" page="printed 48 / PDF 56"/>
+          <ipd:source key="E9" loc="S5.2" page="printed 22"/>
+          <ipd:source key="E9" loc="S5.2.1" page="printed 23; printed 22-23"/>
+          <ipd:source key="E9" loc="GL:Blind Review" page="printed 32"/>
+          <ipd:source key="E9" loc="S5.2.2" page="printed 23-24 [verify]; printed 24"/>
+          <ipd:source key="E6R3" loc="A1-4.2.6(c)" page="printed 48 / PDF 56"/>
+          <ipd:source key="E9" loc="S7.1" page="printed 30"/>
+          <ipd:source key="E9R1" loc="SA.1" page="printed 3"/>
+          <ipd:source key="E9R1" loc="SA.5.3" page="printed 18"/>
+          <ipd:source key="E3" loc="S10.2" page="printed 13"/>
+          <ipd:source key="E3QA" loc="S3" page="printed 7; printed 7-8; printed 6-7"/>
+          <ipd:source key="E3" loc="S16.2" page="printed 29"/>
+          <ipd:source key="E3" loc="SIntroduction" page="printed 1-2"/>
+          <ipd:source key="E3" loc="S11.1" page="printed 13"/>
+          <ipd:source key="E3" loc="S11.4.2.6" page="printed 17"/>
+          <ipd:source key="E3" loc="SAnnex-IVa" page="printed 35 [verify]"/>
+          <ipd:source key="E6R3" loc="A1-3.10" page="printed 27 / PDF 35"/>
+          <ipd:source key="E6R3" loc="A1-3.10.1.6" page="printed 29 / PDF 37"/>
+          <ipd:source key="E8R1" loc="S6.3" page="printed 19"/>
+          <ipd:source key="E6R3" loc="A1-3.17.2(a)" page="printed 44 / PDF 52"/>
+          <ipd:source key="E3QA" loc="S1" page="printed 1-2"/>
+          <ipd:source key="EMA-SB" loc="S5.1" page="printed 8/21"/>
+          <ipd:source key="FDA-PD24" loc="SIII.B.2" page="printed 7; lines 241-243, footnote 16; printed 7; lines 243-245, footnote 17; printed 7; lines 246-248, footnote 18; printed 7; lines 248-250"/>
+          <ipd:source key="FDA-SDTCG" loc="S4.1.1.3" page="16 or 17 of 97 [verify]"/>
+          <ipd:source key="TCB-PD" loc="STaking-a-holistic-approach-CLOSEOUT [verify]" page="web page (carousel tab inferred)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SClose-Out" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SReview-and-Analyze" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD" loc="STaking-a-holistic-approach-REVIEW-ANALYZE [verify]" page="web page (carousel tab inferred)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SReport" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-RBQM" loc="SReport-Process-Stage" page="journal pp. 251-261 (section page not confirmed)"/>
+          <ipd:source key="NCIT-DV" loc="SC49585" page="web page"/>
+          <ipd:source key="CDISC-SDTMIG40-PR" loc="S35" page="slides 35-36"/>
+          <ipd:req id="REQ-154"/>
+          <ipd:req id="REQ-155"/>
+          <ipd:req id="REQ-156"/>
+          <ipd:req id="REQ-157"/>
+          <ipd:req id="REQ-158"/>
+          <ipd:req id="REQ-159"/>
+          <ipd:req id="REQ-160"/>
+          <ipd:req id="REQ-161"/>
+          <ipd:req id="REQ-162"/>
+          <ipd:req id="REQ-163"/>
+          <ipd:req id="REQ-164"/>
+          <ipd:req id="REQ-165"/>
+          <ipd:req id="REQ-166"/>
+          <ipd:req id="REQ-167"/>
+          <ipd:req id="REQ-168"/>
+          <ipd:req id="REQ-169"/>
+          <ipd:req id="REQ-170"/>
+          <ipd:req id="REQ-171"/>
+          <ipd:req id="REQ-172"/>
+          <ipd:req id="REQ-173"/>
+          <ipd:req id="REQ-174"/>
+          <ipd:req id="REQ-175"/>
+          <ipd:req id="REQ-176"/>
+          <ipd:req id="REQ-177"/>
+          <ipd:req id="REQ-178"/>
+          <ipd:req id="REQ-179"/>
+          <ipd:req id="REQ-180"/>
+          <ipd:req id="REQ-181"/>
+          <ipd:req id="REQ-182"/>
+          <ipd:req id="REQ-183"/>
+          <ipd:req id="REQ-184"/>
+          <ipd:req id="REQ-185"/>
+          <ipd:req id="REQ-186"/>
+          <ipd:req id="REQ-187"/>
+          <ipd:verify>[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F19) (R2-085)</ipd:verify>
+          <ipd:verify>[verify] glossary wording from a single fetch (F20) (R2-096)</ipd:verify>
+          <ipd:verify>[verify] printed page: 23 per F19, 24 per F21 (R2-087)</ipd:verify>
+          <ipd:verify>[verify] printed page: 23 per F19, 24 per F21 (R2-086)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F19) (R2-084)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F20) (R2-089)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E9R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E3, E3QA not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-036)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-038)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E3 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-040)</ipd:verify>
+          <ipd:verify>[verify] Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked (R4-055)</ipd:verify>
+          <ipd:verify>[verify] basis is draft guidance only - shown as DRAFT, never a binding step</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E3, E9 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] sentence content from a single fetch (F11) (R2-059)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-039)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E3QA, E3 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] annex page numbers read from footers; fetch F13 warned they may be off by one (R2-064)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-041)</ipd:verify>
+          <ipd:verify>[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)</ipd:verify>
+          <ipd:verify>[verify] answer content from a single fetch (F33); topic confirmed in F16 (R2-065)</ipd:verify>
+          <ipd:verify>[verify] page number: fetches gave 16 and 17 of 97 (R5-069)</ipd:verify>
+          <ipd:verify>[verify] secondary mirror of NCIt; SDTMIG v3.4 DV text (purpose, assumptions) behind CDISC login, not read (R5-068)</ipd:verify>
+          <ipd:verify>[verify] DVCLASI is in the SDTMIG v4.0 public review draft only (R5-067)</ipd:verify>
+          <ipd:verify>[verify] SDTMIG v4.0 publication status and final DVCLASI definition (R5-067)</ipd:verify>
+          <ipd:verify>[verify] slide 36 wording from one fetch (R5-067)</ipd:verify>
+          <ipd:verify>[verify] page number: fetches gave 16 and 17 of 97 (R5-070)</ipd:verify>
+          <ipd:verify>[verify] variable meanings glossed from CDISC naming, SDTMIG text not read (R5-070)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L3_F13</bpmn:incoming>
+      <bpmn:outgoing>L3_F14</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:callActivity id="L3_A8" name="Archive deviation records" calledElement="L4_08_P_SPON_PROCESS">
+      <bpmn:documentation textFormat="text/plain">Sources: EUCTR Art. 58 (p. OJ L 158/41); EUCTR Art. 2(2)(26) (p. OJ L 158/13); 21CFR312 21CFR312.62(c) (p. n/a - eCFR web text without pagination); E6R3 AppC-C.3.2 (p. printed 81 / PDF 89; printed 78-79 / PDF 86-87; printed 79 / PDF 87); E6R3 AppC-C.3.1(r) (p. printed 78 / PDF 86); E6R3 GL:Essential Records (p. printed 85-86 / PDF 93-94); E6R3 AppC-C.3.1(a) (p. printed 77 / PDF 85); E6R3 AppC-C.3.1(s) (p. printed 78 / PDF 86); E6R3 A1-3.16.3(a) (p. printed 43 / PDF 51); E6R3 P9.5 (p. printed 6 / PDF 14); E6R3 A1-2.12.11 (p. printed 22 / PDF 30); E6R3 A1-2.12.12 (p. printed 23 / PDF 31); E6R3 AppC-C.1.3 (p. printed 75 / PDF 83); E6R3 AppC-C.2.6 (p. printed 76 / PDF 84); E6R3 A1-4.2.7 (p. printed 48 / PDF 56); TCB-PD-TIRS SClose-Out (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD-TIRS SStore (p. journal pp. 733-742 (section page not confirmed; PMC HTML read)); TCB-PD STaking-a-holistic-approach-CLOSEOUT (p. web page (carousel tab CLOSEOUT)); TCB-PD-TIRS SDefine (p. journal pp. 733-742 (section page not confirmed; PMC HTML read))
+Requirements: REQ-188, REQ-189, REQ-190, REQ-191, REQ-192, REQ-193, REQ-194, REQ-195, REQ-196, REQ-197, REQ-198, REQ-199, REQ-200, REQ-201, REQ-202
+Binding: binding-law
+Jurisdiction: ICH, EU, US
+Party: sponsor and investigator/institution; sponsor; sponsors and investigators; investigator/institution; responsible party; investigator
+Verify: [verify] duty of 'sponsor and investigator/institution'; applies in both pools; [verify] single fetch (R5-033); [verify] single fetch (R5-006)</bpmn:documentation>
+      <bpmn:extensionElements>
+        <ipd:trace binding="binding-law" jurisdiction="ICH EU US" party="sponsor and investigator/institution; sponsor; sponsors and investigators; investigator/institution; responsible party; investigator">
+          <ipd:source key="EUCTR" loc="Art. 58" page="OJ L 158/41"/>
+          <ipd:source key="EUCTR" loc="Art. 2(2)(26)" page="OJ L 158/13"/>
+          <ipd:source key="21CFR312" loc="21CFR312.62(c)" page="n/a - eCFR web text without pagination"/>
+          <ipd:source key="E6R3" loc="AppC-C.3.2" page="printed 81 / PDF 89; printed 78-79 / PDF 86-87; printed 79 / PDF 87"/>
+          <ipd:source key="E6R3" loc="AppC-C.3.1(r)" page="printed 78 / PDF 86"/>
+          <ipd:source key="E6R3" loc="GL:Essential Records" page="printed 85-86 / PDF 93-94"/>
+          <ipd:source key="E6R3" loc="AppC-C.3.1(a)" page="printed 77 / PDF 85"/>
+          <ipd:source key="E6R3" loc="AppC-C.3.1(s)" page="printed 78 / PDF 86"/>
+          <ipd:source key="E6R3" loc="A1-3.16.3(a)" page="printed 43 / PDF 51"/>
+          <ipd:source key="E6R3" loc="P9.5" page="printed 6 / PDF 14"/>
+          <ipd:source key="E6R3" loc="A1-2.12.11" page="printed 22 / PDF 30"/>
+          <ipd:source key="E6R3" loc="A1-2.12.12" page="printed 23 / PDF 31"/>
+          <ipd:source key="E6R3" loc="AppC-C.1.3" page="printed 75 / PDF 83"/>
+          <ipd:source key="E6R3" loc="AppC-C.2.6" page="printed 76 / PDF 84"/>
+          <ipd:source key="E6R3" loc="A1-4.2.7" page="printed 48 / PDF 56"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SClose-Out" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SStore" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:source key="TCB-PD" loc="STaking-a-holistic-approach-CLOSEOUT" page="web page (carousel tab CLOSEOUT)"/>
+          <ipd:source key="TCB-PD-TIRS" loc="SDefine" page="journal pp. 733-742 (section page not confirmed; PMC HTML read)"/>
+          <ipd:req id="REQ-188"/>
+          <ipd:req id="REQ-189"/>
+          <ipd:req id="REQ-190"/>
+          <ipd:req id="REQ-191"/>
+          <ipd:req id="REQ-192"/>
+          <ipd:req id="REQ-193"/>
+          <ipd:req id="REQ-194"/>
+          <ipd:req id="REQ-195"/>
+          <ipd:req id="REQ-196"/>
+          <ipd:req id="REQ-197"/>
+          <ipd:req id="REQ-198"/>
+          <ipd:req id="REQ-199"/>
+          <ipd:req id="REQ-200"/>
+          <ipd:req id="REQ-201"/>
+          <ipd:req id="REQ-202"/>
+          <ipd:verify>[verify] duty of 'sponsor and investigator/institution'; applies in both pools</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-033)</ipd:verify>
+          <ipd:verify>[verify] single fetch (R5-006)</ipd:verify>
+        </ipd:trace>
+      </bpmn:extensionElements>
+      <bpmn:incoming>L3_F14</bpmn:incoming>
+      <bpmn:outgoing>L3_F15</bpmn:outgoing>
+    </bpmn:callActivity>
+    <bpmn:endEvent id="L3_E1" name="iPDs reported in clinical study report and records archived">
+      <bpmn:incoming>L3_F15</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="L3_F1" sourceRef="L3_S1" targetRef="L3_A1"/>
+    <bpmn:sequenceFlow id="L3_F2" sourceRef="L3_A1" targetRef="L3_G1"/>
+    <bpmn:sequenceFlow id="L3_F3" sourceRef="L3_G1" targetRef="L3_A2"/>
+    <bpmn:sequenceFlow id="L3_F4" sourceRef="L3_G1" targetRef="L3_A3"/>
+    <bpmn:sequenceFlow id="L3_F5" sourceRef="L3_A2" targetRef="L3_G2"/>
+    <bpmn:sequenceFlow id="L3_F6" sourceRef="L3_A3" targetRef="L3_G2"/>
+    <bpmn:sequenceFlow id="L3_F7" sourceRef="L3_G2" targetRef="L3_G3"/>
+    <bpmn:sequenceFlow id="L3_F8" sourceRef="L3_G3" targetRef="L3_A4"/>
+    <bpmn:sequenceFlow id="L3_F9" sourceRef="L3_G3" targetRef="L3_A5"/>
+    <bpmn:sequenceFlow id="L3_F10" sourceRef="L3_A4" targetRef="L3_G4"/>
+    <bpmn:sequenceFlow id="L3_F11" sourceRef="L3_A5" targetRef="L3_G4"/>
+    <bpmn:sequenceFlow id="L3_F12" sourceRef="L3_G4" targetRef="L3_A6"/>
+    <bpmn:sequenceFlow id="L3_F13" sourceRef="L3_A6" targetRef="L3_A7"/>
+    <bpmn:sequenceFlow id="L3_F14" sourceRef="L3_A7" targetRef="L3_A8"/>
+    <bpmn:sequenceFlow id="L3_F15" sourceRef="L3_A8" targetRef="L3_E1"/>
+    <bpmn:textAnnotation id="L3_TA1">
+      <bpmn:text>Reading convention: the steps from 'Identify protocol deviations' to 'Remediate deviations and noncompliance' recur throughout trial conduct. The sequence shows the path of one deviation; the AND gateways show channels that are open in parallel. No loop markers are used.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="L3_TA1_ASSOC1" sourceRef="L3_G1" targetRef="L3_TA1" associationDirection="None"/>
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="L3_DIAGRAM" name="L3 - Important protocol deviation management - overview">
+    <bpmndi:BPMNPlane id="L3_PLANE" bpmnElement="L3_COLLAB">
+      <bpmndi:BPMNShape id="L3_P_IEC_di" bpmnElement="L3_P_IEC" isHorizontal="true">
+        <dc:Bounds x="20" y="20" width="2684" height="60"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_P_INV_di" bpmnElement="L3_P_INV" isHorizontal="true">
+        <dc:Bounds x="20" y="209" width="2684" height="60"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_P_SPON_di" bpmnElement="L3_P_SPON" isHorizontal="true">
+        <dc:Bounds x="20" y="411" width="2684" height="672"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_P_RA_di" bpmnElement="L3_P_RA" isHorizontal="true">
+        <dc:Bounds x="20" y="1225" width="2684" height="60"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_L_MON_di" bpmnElement="L3_L_MON" isHorizontal="true">
+        <dc:Bounds x="50" y="411" width="2654" height="217"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_L_SPON_di" bpmnElement="L3_L_SPON" isHorizontal="true">
+        <dc:Bounds x="50" y="628" width="2654" height="455"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_S1_di" bpmnElement="L3_S1">
+        <dc:Bounds x="187" y="915" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="160" y="955" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A1_di" bpmnElement="L3_A1">
+        <dc:Bounds x="324" y="893" width="160" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_G1_di" bpmnElement="L3_G1">
+        <dc:Bounds x="578" y="908" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A2_di" bpmnElement="L3_A2">
+        <dc:Bounds x="762" y="462" width="160" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A3_di" bpmnElement="L3_A3">
+        <dc:Bounds x="752" y="893" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_G2_di" bpmnElement="L3_G2">
+        <dc:Bounds x="1056" y="908" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_G3_di" bpmnElement="L3_G3">
+        <dc:Bounds x="1250" y="908" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A4_di" bpmnElement="L3_A4">
+        <dc:Bounds x="1419" y="692" width="160" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A5_di" bpmnElement="L3_A5">
+        <dc:Bounds x="1394" y="888" width="210" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_G4_di" bpmnElement="L3_G4">
+        <dc:Bounds x="1698" y="908" width="50" height="50"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A6_di" bpmnElement="L3_A6">
+        <dc:Bounds x="1842" y="893" width="180" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A7_di" bpmnElement="L3_A7">
+        <dc:Bounds x="2066" y="888" width="180" height="90"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_A8_di" bpmnElement="L3_A8">
+        <dc:Bounds x="2290" y="893" width="160" height="80"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_E1_di" bpmnElement="L3_E1">
+        <dc:Bounds x="2551" y="915" width="36" height="36"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2504" y="955" width="130" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_GR_CONDUCT_di" bpmnElement="L3_GR_CONDUCT">
+        <dc:Bounds x="518" y="417" width="1514" height="645"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="524" y="421" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="L3_TA1_di" bpmnElement="L3_TA1">
+        <dc:Bounds x="722" y="658" width="240" height="148"/>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="L3_F1_di" bpmnElement="L3_F1">
+        <di:waypoint x="223" y="933"/>
+        <di:waypoint x="324" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F2_di" bpmnElement="L3_F2">
+        <di:waypoint x="484" y="933"/>
+        <di:waypoint x="578" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F3_di" bpmnElement="L3_F3">
+        <di:waypoint x="603" y="908"/>
+        <di:waypoint x="603" y="502"/>
+        <di:waypoint x="762" y="502"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F4_di" bpmnElement="L3_F4">
+        <di:waypoint x="628" y="933"/>
+        <di:waypoint x="752" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F5_di" bpmnElement="L3_F5">
+        <di:waypoint x="922" y="502"/>
+        <di:waypoint x="1081" y="502"/>
+        <di:waypoint x="1081" y="908"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F6_di" bpmnElement="L3_F6">
+        <di:waypoint x="932" y="933"/>
+        <di:waypoint x="1056" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F7_di" bpmnElement="L3_F7">
+        <di:waypoint x="1106" y="933"/>
+        <di:waypoint x="1250" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F8_di" bpmnElement="L3_F8">
+        <di:waypoint x="1275" y="908"/>
+        <di:waypoint x="1275" y="732"/>
+        <di:waypoint x="1419" y="732"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F9_di" bpmnElement="L3_F9">
+        <di:waypoint x="1300" y="933"/>
+        <di:waypoint x="1394" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F10_di" bpmnElement="L3_F10">
+        <di:waypoint x="1579" y="732"/>
+        <di:waypoint x="1723" y="732"/>
+        <di:waypoint x="1723" y="908"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F11_di" bpmnElement="L3_F11">
+        <di:waypoint x="1604" y="933"/>
+        <di:waypoint x="1698" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F12_di" bpmnElement="L3_F12">
+        <di:waypoint x="1748" y="933"/>
+        <di:waypoint x="1842" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F13_di" bpmnElement="L3_F13">
+        <di:waypoint x="2022" y="933"/>
+        <di:waypoint x="2066" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F14_di" bpmnElement="L3_F14">
+        <di:waypoint x="2246" y="933"/>
+        <di:waypoint x="2290" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_F15_di" bpmnElement="L3_F15">
+        <di:waypoint x="2450" y="933"/>
+        <di:waypoint x="2551" y="933"/>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M1_di" bpmnElement="L3_M1">
+        <di:waypoint x="404" y="893"/>
+        <di:waypoint x="404" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="410" y="279" width="150" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M2_di" bpmnElement="L3_M2">
+        <di:waypoint x="842" y="462"/>
+        <di:waypoint x="842" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="848" y="279" width="120" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M3_di" bpmnElement="L3_M3">
+        <di:waypoint x="920" y="973"/>
+        <di:waypoint x="920" y="1225"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="926" y="1093" width="150" height="44"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M4_di" bpmnElement="L3_M4">
+        <di:waypoint x="1406" y="978"/>
+        <di:waypoint x="1406" y="1225"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1412" y="1093" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M5_di" bpmnElement="L3_M5">
+        <di:waypoint x="1592" y="978"/>
+        <di:waypoint x="1592" y="1225"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1598" y="1093" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M6_di" bpmnElement="L3_M6">
+        <di:waypoint x="1406" y="888"/>
+        <di:waypoint x="1406" y="80"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1412" y="90" width="150" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M7_di" bpmnElement="L3_M7">
+        <di:waypoint x="1932" y="893"/>
+        <di:waypoint x="1932" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1938" y="279" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M8_di" bpmnElement="L3_M8">
+        <di:waypoint x="2010" y="973"/>
+        <di:waypoint x="2010" y="1225"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2016" y="1093" width="120" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M9_di" bpmnElement="L3_M9">
+        <di:waypoint x="2234" y="978"/>
+        <di:waypoint x="2234" y="1225"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2240" y="1093" width="90" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_M10_di" bpmnElement="L3_M10">
+        <di:waypoint x="2370" y="893"/>
+        <di:waypoint x="2370" y="269"/>
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="2376" y="279" width="120" height="31"/>
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="L3_TA1_ASSOC1_di" bpmnElement="L3_TA1_ASSOC1">
+        <di:waypoint x="603" y="908"/>
+        <di:waypoint x="603" y="903"/>
+        <di:waypoint x="615" y="903"/>
+        <di:waypoint x="615" y="769"/>
+        <di:waypoint x="722" y="769"/>
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

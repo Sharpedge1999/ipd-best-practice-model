@@ -1,0 +1,11 @@
+src: FDA-PD24
+method: local-text
+notes:
+  R4-035: "Lines 17-19 are in section I (Introduction), as the paraphrase itself states; lines 57-63 in section II (PDF 5 / printed 2). Document is a December 2024 draft guidance (cover: DRAFT GUIDANCE, 'Draft - Not for Implementation')."
+  R4-051: "Lines 228-231 are on printed 7 (section III.B.2 starts printed 6)."
+  R4-055: "Footnote 16 says 'as described in the most current version of' the BIMO Technical Conformance Guide and cites v3.1 (September 2024) as reference; source modality 'should'."
+  R4-065: "Footnote 22 cites the 2013 and 2023 FDA monitoring guidances; footnote 23 'See ICH E6(R2)'."
+evpage:
+  R4-065: "PDF 12 / printed 9 (lines 305-310)"
+evsnip:
+  R4-065: "Sponsors should assess the risks that such critical protocol elements may not be"

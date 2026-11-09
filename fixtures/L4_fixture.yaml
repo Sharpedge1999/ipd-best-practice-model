@@ -1,0 +1,92 @@
+# FIXTURE - NOT A MODEL. Test input for converter (B2), viewer (W1) and
+# tools/lint_spec.py. Content is placeholder only: loc "FIXTURE", REQ-9nn.
+# Shape (13 nodes): Sponsor pool with 2 lanes, expanded Investigator/institution
+# pool with 1 task (D1, ROL-03 exception), collapsed IRB/IEC and Regulatory
+# authority pools, one XOR split/join, one AND split/join, message flow to
+# P_RA, one data object, one group. Exercises: multiple sources with page,
+# draft guidance (DRAFT badge), verify item (VERIFY badge), default flow,
+# interface call activity (calls: null), text annotation, string notes (S0-18).
+id: L4-01
+title: "FIXTURE - Classify protocol deviations"
+level: L4
+parent: {model: L3, node: A1}
+interface: {start: [S1], ends: [E1], message_flows: [M1, M2]}
+
+pools:
+  - {id: P_SPON, name: "FIXTURE - Sponsor", kind: internal, expanded: true}
+  - {id: P_INV, name: "FIXTURE - Investigator/institution", kind: external, expanded: true}
+  - {id: P_IEC, name: "FIXTURE - IRB/IEC", kind: external, expanded: false}
+  - {id: P_RA, name: "FIXTURE - Regulatory authority", kind: external, expanded: false}
+
+lanes:
+  - {id: L_MON, name: "FIXTURE - Monitor", pool: P_SPON, src: [{key: E6R3, loc: "FIXTURE"}]}
+  - {id: L_SPON, name: "FIXTURE - Sponsor", pool: P_SPON, src: [{key: E6R3, loc: "FIXTURE"}]}
+
+nodes:
+  # Sponsor process
+  - {id: S1, type: start-message, label: "FIXTURE - Deviation report received", lane: L_MON, path: main}
+  - {id: A1, type: task, label: "FIXTURE - Classify protocol deviation", lane: L_MON,
+     src: [{key: E6R3, loc: "FIXTURE", page: "FIXTURE"}, {key: TCB-PD, loc: "FIXTURE"}],
+     req: [REQ-901], binding: binding-ICH, jurisdiction: [ICH],
+     record: "FIXTURE - Protocol deviation log entry", path: main}
+  - {id: G1, type: xor-split, label: "FIXTURE - Important protocol deviation?", lane: L_MON, path: main}
+  - {id: G2, type: and-split, lane: L_SPON, path: main}
+  - {id: A2, type: task, label: "FIXTURE - Assess deviation impact", lane: L_SPON,
+     src: [{key: FDA-PD24, loc: "FIXTURE"}], req: [REQ-902], binding: guidance, draft: true,
+     jurisdiction: [US], group: GR_FX, path: main}
+  - {id: A3, type: task, label: "FIXTURE - Notify regulatory authority", lane: L_SPON,
+     src: [{key: EUCTR, loc: "FIXTURE"}], req: [REQ-905], binding: binding-law, jurisdiction: [EU],
+     deadline: "xx days (FIXTURE)", group: GR_FX, path: alt,
+     verify: ["[verify] FIXTURE - placeholder verify item"]}
+  - {id: G3, type: and-join, lane: L_SPON, path: main}
+  - {id: A5, type: call-activity, label: "FIXTURE - Handle urgent safety measures", lane: L_SPON,
+     calls: null, interface: true,
+     src: [{key: EUCTR, loc: "FIXTURE"}], req: [REQ-906], binding: binding-law, jurisdiction: [EU], path: main}
+  - {id: G4, type: xor-join, lane: L_SPON, path: main}
+  - {id: E1, type: end, label: "FIXTURE - Protocol deviation classified", lane: L_SPON, path: main}
+  # Investigator/institution process
+  - {id: S2, type: start, label: "FIXTURE - Protocol deviation identified", pool: P_INV}
+  - {id: A4, type: task, label: "FIXTURE - Report deviation to sponsor", pool: P_INV,
+     src: [{key: E6R3, loc: "FIXTURE"}], req: [REQ-904], binding: binding-ICH, jurisdiction: [ICH]}
+  - {id: E2, type: end, label: "FIXTURE - Deviation reported to sponsor", pool: P_INV}
+
+flows:
+  - {id: F1, from: S1, to: A1}
+  - {id: F2, from: A1, to: G1}
+  - {id: F3, from: G1, to: G2, label: "FIXTURE - Yes", default: false}
+  - {id: F4, from: G2, to: A2}
+  - {id: F5, from: G2, to: A3}
+  - {id: F6, from: A2, to: G3}
+  - {id: F7, from: A3, to: G3}
+  - {id: F8, from: G3, to: A5}
+  - {id: F9, from: G1, to: G4, label: "FIXTURE - No", default: true}
+  - {id: F10, from: G4, to: E1}
+  - {id: F11, from: S2, to: A4}
+  - {id: F12, from: A4, to: E2}
+  - {id: F13, from: A5, to: G4}
+
+message_flows:
+  - {id: M1, from: A4, to: S1, label: "FIXTURE - Deviation report",
+     src: [{key: E6R3, loc: "FIXTURE"}], req: [REQ-904], binding: binding-ICH, jurisdiction: [ICH]}
+  - {id: M2, from: A3, to: P_RA, label: "FIXTURE - Deviation notification",
+     src: [{key: EUCTR, loc: "FIXTURE"}], req: [REQ-905], binding: binding-law, jurisdiction: [EU],
+     deadline: "xx days (FIXTURE)"}
+
+data:
+  - {id: D1, type: data-object, label: "FIXTURE - Protocol deviation log",
+     assoc: [{node: A1, dir: out}, {node: A2, dir: in}], src: [{key: E6R3, loc: "FIXTURE"}]}
+
+groups:
+  - {id: GR_FX, label: "FIXTURE - Important deviation handling", members: [G2, A2, A3, G3]}
+
+annotations:
+  - {id: TA1, text: "FIXTURE - Placeholder annotation on an interface call activity", assoc: [A5, F13],
+     src: [{key: EUCTR, loc: "FIXTURE"}]}
+
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "FIXTURE - D1: investigator obligations appear as tasks in an expanded pool"}
+
+open_items:
+  - "[verify] FIXTURE - placeholder open item"
+
+notes: "FIXTURE - placeholder model note"

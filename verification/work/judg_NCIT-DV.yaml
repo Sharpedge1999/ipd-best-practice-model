@@ -1,0 +1,4 @@
+src: NCIT-DV
+method: webfetch
+notes:
+  R5-068: "No local text. WebFetch of the mirror page (dated 03/11/2026): CDISC definition 'An events domain that contains protocol violations and deviations during the course of the study.' Secondary mirror, not the NCI EVS primary source."

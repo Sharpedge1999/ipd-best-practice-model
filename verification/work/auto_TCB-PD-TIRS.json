@@ -1,0 +1,78 @@
+{
+ "R5-002": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-003": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-006": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-009": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": false
+ },
+ "R5-012": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": false
+ },
+ "R5-013": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-019": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-020": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-022": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-028": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": false
+ },
+ "R5-031": {
+  "local": true,
+  "quote_level": "exact",
+  "quote_pages": [
+   "PDF 1 / printed None"
+  ],
+  "loc_found": false
+ },
+ "R5-032": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-034": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-040": {
+  "local": true,
+  "loc_found": false
+ },
+ "R5-043": {
+  "local": true,
+  "loc_found": false
+ }
+}

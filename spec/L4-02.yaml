@@ -1,0 +1,539 @@
+# L4-02 - Identify protocol deviations
+# Best-practice reference model of important protocol deviation (iPD) management, GEN-01 spec (B1).
+# Trace fields are derived from synthesis/requirements.yaml and synthesis/merged_findings.yaml.
+# Modelling choices, SHOULD deviations and open questions: spec/notes.md; REQ coverage: spec/coverage.md.
+id: L4-02
+title: "Identify protocol deviations"
+level: L4
+parent: {model: L3, node: A2}
+interface: {start: [S1], ends: [E1, E2], message_flows: [M1]}
+
+pools:
+  - id: P_SPON
+    name: "Sponsor"
+    kind: internal
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-3.9.2", page: "printed 26 / PDF 34"}
+      - {key: E6R3, loc: "P10.1", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "P10.3", page: "printed 7 / PDF 15"}
+      - {key: E6R3, loc: "A1-3.9.5", page: "printed 27 / PDF 35"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: EMA-SB, loc: "SGlossary", page: "printed 3/21"}
+      - {key: TCB-RBQM, loc: "SQTL-Process", page: "journal pp. 251-261 (section page not confirmed)"}
+  - id: P_INV
+    name: "Investigator/institution"
+    kind: external
+    expanded: true
+    src:
+      - {key: E6R3, loc: "GL:Investigator", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(15)", page: "OJ L 158/13"}
+      - {key: 21CFR312, loc: "21CFR312.60", page: "n/a - eCFR web text without pagination"}
+      - {key: EUCTR, loc: "Art. 47", page: "OJ L 158/39"}
+      - {key: E6R3, loc: "P3.1", page: "printed 4 / PDF 12"}
+      - {key: E6R3, loc: "A1-2.5.2", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.10.6", page: "printed 20 / PDF 28"}
+      - {key: E6R3, loc: "A1-2.3.1", page: "printed 12 / PDF 20"}
+      - {key: E6R3, loc: "A2-2.4", page: "printed 55 / PDF 63"}
+      - {key: E6R3, loc: "A2-2.4.1", page: "printed 56 / PDF 64"}
+  - id: P_IEC
+    name: "IRB/IEC"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Institutional Review Board (IRB)/Independent Ethics Committee (IEC)", page: "printed 87 / PDF 95"}
+      - {key: EUCTR, loc: "Art. 2(2)(11)", page: "OJ L 158/12"}
+      - {key: 21CFR56, loc: "21CFR56.108(b)(2)", page: "n/a - eCFR web text without pagination"}
+  - id: P_RA
+    name: "Regulatory authority"
+    kind: external
+    expanded: false
+    src:
+      - {key: E6R3, loc: "GL:Regulatory Authorities", page: "printed 89 / PDF 97"}
+      - {key: EUCTR, loc: "Art. 2(2)(12)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.56(b)", page: "n/a - eCFR web text without pagination"}
+
+lanes:
+  - id: L_SPON
+    name: "Sponsor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "GL:Sponsor", page: "printed 90 / PDF 98"}
+      - {key: EUCTR, loc: "Art. 2(2)(14)", page: "OJ L 158/12"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+  - id: L_MON
+    name: "Monitor"
+    pool: P_SPON
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.5.1(a)", page: "printed 32 / PDF 40"}
+      - {key: E6R3, loc: "A1-3.11.4.4", page: "printed 32 / PDF 40"}
+
+nodes:
+  - id: S1
+    type: start-timer
+    label: "Monitoring activity scheduled"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: EUCTR, loc: "Art. 48", page: "OJ L 158/39"}
+      - {key: 21CFR312, loc: "21CFR312.50", page: "n/a - eCFR web text without pagination"}
+      - {key: 21CFR312, loc: "21CFR312.56(a)", page: "n/a - eCFR web text without pagination"}
+    req: [REQ-048, REQ-049]
+    binding: binding-law
+    jurisdiction: [EU, US]
+    deadline: "continuous"
+    party: "sponsor"
+  - id: G1
+    type: or-split
+    label: "Which monitoring channels are due?"
+    lane: L_SPON
+    path: main
+    justification: "Centralised monitoring can complement and reduce site monitoring or be used on its own (E6R3 A1-3.11.4.2(b)) and site visit frequency follows the risks (A1-3.11.4.1(a)), so one or both channels run in a cycle (FLW-07, DEC-02). Both outgoing flows are conditional and there is no default flow: the trigger 'Monitoring activity scheduled' guarantees at least one channel, and a default flow would wrongly suppress centralised review whenever a site visit is due (an OR default flow runs only when no other condition holds). XOR rejected: the channels are not exclusive."
+  - id: A1
+    type: task
+    label: "Review trial data for protocol deviations"
+    lane: L_SPON
+    path: main
+    group: GR_CENTRAL
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.5.4(b)(ii)", page: "printed 34 / PDF 42"}
+      - {key: E6R3, loc: "A1-3.11.4.2(a)", page: "printed 31 / PDF 39"}
+      - {key: E6R3, loc: "A1-3.11.4.2(b)", page: "printed 31 / PDF 39"}
+      - {key: E8R1, loc: "S6.1.3", page: "printed 18"}
+      - {key: E8R1, loc: "S3.3.2", page: "printed 6"}
+      - {key: E6R3, loc: "A1-3.11.3", page: "printed 30 / PDF 38"}
+      - {key: E6R3, loc: "A1-3.16.1(b)", page: "printed 39 / PDF 47"}
+      - {key: E6R3, loc: "A2-3.8", page: "printed 62 / PDF 70"}
+      - {key: E6R3, loc: "A1-3.11.4.5.4(c)", page: "printed 34 / PDF 42"}
+      - {key: FDA-RBM13, loc: "SIII.B", page: "printed 8"}
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 6; lines 227-228; printed 9; lines 314-317"}
+      - {key: TCB-PD-TIRS, loc: "SIdentify-and-Collect", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-037, REQ-036, REQ-035, REQ-038, REQ-040, REQ-041]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "timely (REQ-036); early (REQ-041)"
+    record: "centralised monitoring report; deviation listings; oversight / monitoring plan"
+    party: "sponsor; CRAs; site monitors and centralized monitoring"
+    verify:
+      - "[verify] gerund item under A1-3.11.4.5; actor not named (R1 C7)"
+      - "[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)"
+      - "[verify] R1-089 is Annex 2: effective in the EU from 15 Jan 2027; FDA Annex 2 guidance still draft (C-06)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: A2
+    type: task
+    label: "Review audit trails and metadata"
+    lane: L_SPON
+    path: main
+    group: GR_CENTRAL
+    src:
+      - {key: E6R3, loc: "A1-4.2.3", page: "printed 47 / PDF 55"}
+    req: [REQ-039]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "responsible party"
+    verify:
+      - "[verify] section 4 duty of the 'responsible party' (investigator or sponsor); Sponsor lane chosen (R1 C14)"
+  - id: A3
+    type: task
+    label: "Evaluate acceptable range exceedance"
+    lane: L_SPON
+    path: main
+    group: GR_CENTRAL
+    src:
+      - {key: E6R3, loc: "A1-3.10.1.3", page: "printed 28 / PDF 36"}
+      - {key: TCB-RBQM, loc: "SRelationship-Between-QTLs-and-KRIs", page: "journal pp. 251-261 (section page not confirmed)"}
+      - {key: TCB-RBQM, loc: "SMonitor-Process-Stage", page: "journal pp. 251-261 (section page not confirmed)"}
+    req: [REQ-044]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+    verify:
+      - "[verify] 'deviation beyond these ranges' is a range exceedance, not a protocol deviation (C-04)"
+  - id: A4
+    type: task
+    label: "Review deviation trends"
+    lane: L_SPON
+    path: main
+    group: GR_CENTRAL
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.2", page: "printed 8; lines 262-265"}
+      - {key: FDA-RBM23, loc: "SQ5", page: "printed 7-8"}
+      - {key: TCB-PD-TIRS, loc: "SConfirm", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SClassify-and-Categorize", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+      - {key: TCB-PD-TIRS, loc: "SReview-and-Analyze", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-046, REQ-045]
+    binding: guidance
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "periodically (frequency per deviation assessment plan)"
+    record: "trend review output; monitoring plan; deviation tracking"
+    party: "Study teams; Sponsors"
+    verify:
+      - "[verify] single fetch (R5-025)"
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+  - id: A5
+    type: task
+    label: "Select sites for targeted monitoring"
+    lane: L_SPON
+    path: main
+    group: GR_CENTRAL
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.2(c)", page: "printed 31 / PDF 39"}
+      - {key: FDA-RBM13, loc: "SIV.D.1", page: "printed 15"}
+      - {key: FDA-RBM23, loc: "SQ4", page: "printed 7"}
+    req: [REQ-042, REQ-043]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    deadline: "promptly"
+    party: "sponsor"
+  - id: A6
+    type: task
+    label: "Perform site monitoring visit"
+    lane: L_MON
+    path: main
+    group: GR_SITE
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.1(a)", page: "printed 31 / PDF 39"}
+      - {key: E6R3, loc: "GL:Monitoring", page: "printed 88 / PDF 96"}
+      - {key: E6R3, loc: "A1-3.11.4.4", page: "printed 32 / PDF 40"}
+      - {key: E6R3, loc: "A1-3.11.4.5.1(a)", page: "printed 32 / PDF 40"}
+      - {key: FDA-RBM23, loc: "SQ3", page: "printed 5-7"}
+    req: [REQ-050, REQ-051, REQ-052, REQ-057]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    deadline: "early in site conduct"
+    record: "monitoring report"
+    party: "sponsor; persons performing monitoring; assigned monitor as site contact point"
+  - id: A7
+    type: task
+    label: "Verify protocol adherence at site"
+    lane: L_MON
+    path: main
+    group: GR_SITE
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.5.2(b)", page: "printed 32-33 / PDF 40-41"}
+      - {key: E6R3, loc: "A1-3.11.4.5.2(i)", page: "printed 33 / PDF 41"}
+      - {key: TCB-PD-TIRS, loc: "SIdentify-and-Collect", page: "journal pp. 733-742 (section page not confirmed; PMC HTML read)"}
+    req: [REQ-054, REQ-058]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor; CRAs"
+    verify:
+      - "[verify] gerund item; Monitor lane inferred (R1 C7)"
+  - id: A8
+    type: task
+    label: "Verify participant eligibility"
+    lane: L_MON
+    path: main
+    group: GR_SITE
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.5.4(a)", page: "printed 34 / PDF 42"}
+    req: [REQ-055]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+    verify:
+      - "[verify] gerund item; Monitor lane inferred (R1 C7)"
+  - id: A9
+    type: task
+    label: "Request correction of source record errors"
+    lane: L_MON
+    path: main
+    group: GR_SITE
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.5.1(c)", page: "printed 32 / PDF 40"}
+    req: [REQ-056]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    record: "corrected data with audit trail"
+    party: "sponsor"
+    verify:
+      - "[verify] gerund item; Monitor lane inferred (R1 C7)"
+  - id: G2
+    type: or-join
+    lane: L_SPON
+    path: main
+  - id: A10
+    type: task
+    label: "Document monitoring report"
+    lane: L_MON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.6(a)", page: "printed 34 / PDF 42"}
+      - {key: E6R3, loc: "GL:Monitoring Report", page: "printed 88 / PDF 96"}
+      - {key: E6R3, loc: "A1-3.11.4.6(c)", page: "printed 35 / PDF 43"}
+      - {key: FDA-RBM13, loc: "SV", page: "printed 17"}
+      - {key: FDA-RBM23, loc: "SQ8", page: "printed 9-10"}
+    req: [REQ-059, REQ-061]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    record: "monitoring report"
+    party: "sponsor"
+  - id: A11
+    type: task
+    label: "Review monitoring reports"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.6(b)", page: "printed 35 / PDF 43"}
+      - {key: FDA-RBM13, loc: "SV", page: "printed 17"}
+      - {key: FDA-RBM23, loc: "SQ8", page: "printed 9-10"}
+    req: [REQ-060]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    deadline: "timely (US guidance: promptly)"
+    record: "monitoring report"
+    party: "sponsor"
+  - id: G3
+    type: xor-split
+    label: "Potential protocol deviation identified?"
+    lane: L_SPON
+    path: main
+  - id: A12
+    type: task
+    label: "Communicate detected deviations to investigator"
+    lane: L_SPON
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.5.3", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-3.11.4.5.1(b)", page: "printed 32 / PDF 40"}
+      - {key: FDA-RBM23, loc: "SQ8", page: "printed 10"}
+    req: [REQ-047, REQ-053]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    party: "sponsor"
+    verify:
+      - "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
+  - id: E1
+    type: end
+    label: "Potential protocol deviation identified"
+    lane: L_SPON
+    path: main
+  - id: E2
+    type: end
+    label: "Monitoring completed without finding"
+    lane: L_SPON
+    path: exception
+  - id: S2
+    type: start
+    label: "Protocol deviation identified at site"
+    pool: P_INV
+    path: main
+  - id: A13
+    type: task
+    label: "Document protocol deviation"
+    pool: P_INV
+    path: main
+    src:
+      - {key: 21CFR312, loc: "21CFR312.62(b)", page: "n/a - eCFR web text without pagination"}
+      - {key: E6R3, loc: "A1-2.5.3", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-2.12.2", page: "printed 21 / PDF 29"}
+      - {key: E6R3, loc: "A1-2.12.6", page: "printed 22 / PDF 30"}
+      - {key: E6R3, loc: "A1-2.12.3", page: "printed 21 / PDF 29"}
+    req: [REQ-062, REQ-063, REQ-064, REQ-065]
+    binding: binding-law
+    jurisdiction: [ICH, US]
+    deadline: "timely"
+    record: "protocol deviation documentation (site records); source records; reported data with audit trail; case histories (CRFs, consent forms, medical records)"
+    party: "investigator"
+    verify:
+      - "[verify] 21 CFR 312.62(b) does not name deviations; applied as the US record basis for site documentation"
+  - id: A14
+    type: task
+    label: "Report deviation to sponsor"
+    pool: P_INV
+    path: main
+    src:
+      - {key: E6R3, loc: "A1-2.11", page: "printed 21 / PDF 29"}
+      - {key: FDA-PD24, loc: "SIII.B.1", page: "printed 6; lines 194-198"}
+    req: [REQ-066, REQ-067]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    draft: true
+    deadline: "per sponsor-specified timeframe (REQ-066); promptly (REQ-067)"
+    record: "deviation report; documentation and explanation of premature unblinding"
+    party: "investigator"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+      - "[verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)"
+  - id: G4
+    type: or-split
+    label: "Which additional reports are due?"
+    pool: P_INV
+    path: main
+    justification: "Every deviation is reported to the sponsor (A14, before the split: deviation report, FDA-PD24 SIII.B.1, DRAFT, including the premature unblinding explanation, E6R3 A1-2.11). One deviation can in addition require the computerised system incident report (E6R3 A1-2.12.10(e)) and, in the EU, the suspected serious breach report (EMA-SB S6.4); both can apply together (FLW-07, DEC-02). Default flow 'No further report' to the OR join when neither applies."
+  - id: A15
+    type: task
+    label: "Report computerised system incident"
+    pool: P_INV
+    path: alt
+    src:
+      - {key: E6R3, loc: "A1-2.12.10(e)", page: "printed 22 / PDF 30"}
+    req: [REQ-068]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "investigator/institution"
+  - id: A16
+    type: task
+    label: "Report suspected serious breach to sponsor"
+    pool: P_INV
+    path: alt
+    group: GR_EU
+    src:
+      - {key: EMA-SB, loc: "S6.4", page: "printed 9-10/21"}
+    req: [REQ-069]
+    binding: guidance
+    jurisdiction: [EU]
+    deadline: "promptly"
+    record: "site process / SOP"
+    party: "Principal Investigator"
+  - id: G5
+    type: or-join
+    pool: P_INV
+    path: main
+  - id: E3
+    type: end
+    label: "Deviation reported to sponsor"
+    pool: P_INV
+    path: main
+
+flows:
+  - {id: F1, from: S1, to: G1}
+  - {id: F2, from: G1, to: A1, label: "Centralised data review due"}
+  - {id: F3, from: G1, to: A6, label: "Site monitoring visit due"}
+  - {id: F4, from: A1, to: A2}
+  - {id: F5, from: A2, to: A3}
+  - {id: F6, from: A3, to: A4}
+  - {id: F7, from: A4, to: A5}
+  - {id: F8, from: A5, to: G2}
+  - {id: F9, from: A6, to: A7}
+  - {id: F10, from: A7, to: A8}
+  - {id: F11, from: A8, to: A9}
+  - {id: F12, from: A9, to: G2}
+  - {id: F13, from: A10, to: A11}
+  - {id: F14, from: G2, to: A10}
+  - {id: F15, from: A11, to: G3}
+  - {id: F16, from: G3, to: A12, label: "Yes"}
+  - {id: F17, from: G3, to: E2, label: "No"}
+  - {id: F18, from: A12, to: E1}
+  - {id: F19, from: S2, to: A13}
+  - {id: F20, from: A13, to: A14}
+  - {id: F21, from: G4, to: G5, label: "No further report", default: true}
+  - {id: F22, from: G4, to: A15, label: "System incident"}
+  - {id: F23, from: G4, to: A16, label: "Suspected serious breach (EU CTR)"}
+  - {id: F24, from: A14, to: G4}
+  - {id: F25, from: A15, to: G5}
+  - {id: F26, from: A16, to: G5}
+  - {id: F27, from: G5, to: E3}
+
+message_flows:
+  - id: M1
+    label: "Detected deviation communicated"
+    src:
+      - {key: E6R3, loc: "A1-2.5.3", page: "printed 13 / PDF 21"}
+      - {key: E6R3, loc: "A1-3.11.4.5.1(b)", page: "printed 32 / PDF 40"}
+      - {key: FDA-RBM23, loc: "SQ8", page: "printed 10"}
+    req: [REQ-047, REQ-053]
+    binding: binding-ICH
+    jurisdiction: [ICH, US]
+    party: "sponsor"
+    verify:
+      - "[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)"
+    from: A12
+    to: P_INV
+  - id: M2
+    label: "Source record correction requested"
+    src:
+      - {key: E6R3, loc: "A1-3.11.4.5.1(c)", page: "printed 32 / PDF 40"}
+    req: [REQ-056]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "sponsor"
+    verify:
+      - "[verify] gerund item; Monitor lane inferred (R1 C7)"
+    from: A9
+    to: P_INV
+  - id: M3
+    label: "Protocol deviation reported"
+    src:
+      - {key: FDA-PD24, loc: "SIII.B.1", page: "printed 6; lines 194-198"}
+    req: [REQ-066]
+    binding: guidance
+    jurisdiction: [US]
+    draft: true
+    deadline: "per sponsor-specified timeframe"
+    party: "investigators"
+    verify:
+      - "[verify] basis is draft guidance only - shown as DRAFT, never a binding step"
+    from: A14
+    to: A1
+  - id: M4
+    label: "Premature unblinding explained"
+    src:
+      - {key: E6R3, loc: "A1-2.11", page: "printed 21 / PDF 29"}
+    req: [REQ-067]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    deadline: "promptly"
+    party: "investigator"
+    verify:
+      - "[verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)"
+    from: A14
+    to: A1
+  - id: M5
+    label: "Computerised system incident reported"
+    src:
+      - {key: E6R3, loc: "A1-2.12.10(e)", page: "printed 22 / PDF 30"}
+    req: [REQ-068]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "investigator/institution"
+    from: A15
+    to: A11
+  - id: M6
+    label: "Computerised system incident reported"
+    src:
+      - {key: E6R3, loc: "A1-2.12.10(e)", page: "printed 22 / PDF 30"}
+    req: [REQ-068]
+    binding: binding-ICH
+    jurisdiction: [ICH]
+    party: "investigator/institution"
+    verify:
+      - "[verify] IRB/IEC recipient only where applicable (E6R3 A1-2.12.10(e))"
+    from: A15
+    to: P_IEC
+  - id: M7
+    label: "Suspected serious breach reported"
+    src:
+      - {key: EMA-SB, loc: "S6.4", page: "printed 9-10/21"}
+    req: [REQ-069]
+    binding: guidance
+    jurisdiction: [EU]
+    deadline: "promptly"
+    party: "Principal Investigator"
+    from: A16
+    to: A11
+
+groups:
+  - {id: GR_CENTRAL, label: "Centralised data review", members: [A1, A2, A3, A4, A5]}
+  - {id: GR_SITE, label: "Site monitoring", members: [A6, A7, A8, A9]}
+  - {id: GR_EU, label: "EU CTR", members: [A16]}
+
+rule_exceptions:
+  - {rule: ROL-03, element: P_INV, reason: "D1 (orchestrator default, 06 Nov 2026): Investigator/institution is an expanded pool on all levels because investigator obligations are binding steps that must appear as tasks"}
+  - {rule: DEC-06, element: G3, reason: "XOR split G3: each branch is a distinct business outcome (E1, E2) and ends in its own end event without a join"}
+
+open_items:
+  - "[verify interface] Neighbouring process 'Data governance and computerised systems' configures the audit trails and metadata that A2 reviews; set-up process without a flow hand-off, so no placeholder element. Interface REQs: REQ-209."
+  - "[verify interface] Neighbouring process 'Safety reporting' (SAE to sponsor, EU CTR Art. 41(2), 24 h) runs in parallel when a deviation causes an SAE; the investigator OR split already has 3 branches (FLW-06). Interface REQs: REQ-214."
+
+notes:
+  - "SCP-03: 16 activities (target 5-15) - user decision 06 Nov 2026 to merge identification channels; 26 nodes, within 31."
+  - "Sponsor-to-investigator flows M1 and M2 end on the Investigator/institution pool: a target node would form a cycle with the investigator's reports (layout constraint), and the investigator's review of communicated deviations is modelled in L4-04. Investigator reports enter the sponsor where they are reviewed: deviation report and premature unblinding explanation in centralised data review A1 (FDA-PD24 SIII.B.2: sponsors receive deviation information mainly through monitoring), system incident and suspected serious breach reports in the sponsor review A11, which takes the detection decision."
+  - "Legal monitoring duties (EU CTR Art. 48, 21 CFR 312.50/312.56(a)) sit on the timer start event because they cover both channels."
+  - "A10 'Document monitoring report' follows the OR join G2 (V1 round 1): a monitoring report follows site and/or centralised monitoring activities (E6R3 GL:Monitoring Report, REQ-059), so both channels feed the sponsor review A11; Monitor lane because REQ-059 places the report on the monitor."

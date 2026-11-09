@@ -1,0 +1,10 @@
+src: TCB-PD
+method: webfetch
+notes:
+  R5-045: "No local text. WebFetch (two fetches): close-out best-practice tasks include 'Conduct a \"lessons learned\" session.' Page last modified 2023-01-17."
+except:
+  R5-046:
+    v: paraphrase-distorted
+    s: medium
+    note: "Quote verbatim (two differently worded WebFetch calls agree). The source parenthetical defines finalising the PD process as '(close out the living PDAP or other documents used)', not 'the point after which deviations are finalised for analysis and reporting'. The next sentence 'We recommend that finalization occur after the last study data has been reviewed.' is present on the page; the paraphrase marks it as unconfirmed and drops it."
+    corr: "Each company should determine when to finalize its PD process (close out the living PDAP or other documents used); the page recommends that finalization occur after the last study data has been reviewed."

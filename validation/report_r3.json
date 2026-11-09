@@ -1,0 +1,1813 @@
+[
+ {
+  "record": "summary",
+  "layer": "L0",
+  "timestamp": "2026-11-07T17:33:38+00:00",
+  "counts": {},
+  "passed": [
+   {
+    "layer": "L0",
+    "check": "spec schema (jsonschema Draft 2020-12, own run, contracts/spec.schema.json)",
+    "count": 9,
+    "note": ""
+   },
+   {
+    "layer": "L0",
+    "check": "ids unique within each model (all id kinds)",
+    "count": 555,
+    "note": ""
+   },
+   {
+    "layer": "L0",
+    "check": "references resolve (lanes, pools, flows, message flows, data, groups, annotations, rule_exceptions, interface, parent, calls)",
+    "count": 840,
+    "note": ""
+   },
+   {
+    "layer": "L0",
+    "check": "src keys in contracts/source_registry.yaml; src {key, loc} pairs among the findings behind the element's REQs (or in some finding for elements without REQs)",
+    "count": 1034,
+    "note": ""
+   },
+   {
+    "layer": "L0",
+    "check": "REQ ids exist in synthesis/requirements.yaml; their findings exist in merged_findings.yaml",
+    "count": 510,
+    "note": ""
+   }
+  ],
+  "note": "Round 3 (final, V1 owner 3) on the rebuilt artefacts: spec/FROZEN.sha256 9/9 OK; out/ipd_best_practice.bpmn sha256 37a8b9c9e596a9f8... (= expected). Changed since round 2 (diff of spec/ against the B1 round-2 base copy): L3, L4-02, L4-03 only. Same tools as round 2 (own jsonschema run, own reference resolution). Self-test tools/validate/v1_selftest.py: 28/28 seeded faults detected (2 new round-3 cases for the OR default flow).",
+  "inputs": [
+   "contracts/source_registry.yaml",
+   "contracts/spec.schema.json",
+   "spec/*.yaml (sha256 checked against spec/FROZEN.sha256)",
+   "spec/notes.md",
+   "synthesis/glossary.yaml",
+   "synthesis/l3_cut.md",
+   "synthesis/merged_findings.yaml",
+   "synthesis/requirements.yaml"
+  ],
+  "not_checked": []
+ },
+ {
+  "rule_id": "FLW-07",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "F2",
+  "message": "outgoing flow 'Centralised data review due' of OR split G1 carries no conditionExpression (the split has no default flow, so the converter writes none, build_log.md section 3); the condition exists only as the flow label, and a tool that executes or simulates the XML may start this branch every time. Covered by the accepted B2 conditionExpression limitation (descriptive model)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-07",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "F3",
+  "message": "outgoing flow 'Site monitoring visit due' of OR split G1 carries no conditionExpression (the split has no default flow, so the converter writes none, build_log.md section 3); the condition exists only as the flow label, and a tool that executes or simulates the XML may start this branch every time. Covered by the accepted B2 conditionExpression limitation (descriptive model)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-02",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "F22",
+  "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-02",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "F23",
+  "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-02",
+  "layer": "L1",
+  "model": "L4-03",
+  "element": "F7",
+  "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-02",
+  "layer": "L1",
+  "model": "L4-03",
+  "element": "F8",
+  "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-02",
+  "layer": "L1",
+  "model": "L4-08",
+  "element": "F12",
+  "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-02",
+  "layer": "L1",
+  "model": "L4-08",
+  "element": "F13",
+  "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "REF",
+  "layer": "L1",
+  "model": "L3",
+  "element": "A1-A8",
+  "message": "per-model export L3.bpmn: calledElement of 8 call activities points to processes that exist only in the combined file and the L4 files (no bpmn:import); a tool opening L3.bpmn alone cannot resolve them (known, build_log.md)",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "G1",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "G2",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "G4",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-02",
+  "element": "G5",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-03",
+  "element": "G2",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-03",
+  "element": "G3",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-08",
+  "element": "G3",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "BPMNLINT",
+  "layer": "L1",
+  "model": "L4-08",
+  "element": "G4",
+  "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "record": "summary",
+  "layer": "L1",
+  "timestamp": "2026-11-07T17:40:49+00:00",
+  "counts": {
+   "SHOULD documented": 17
+  },
+  "passed": [
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/ipd_best_practice.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L3)",
+    "count": 55,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-01)",
+    "count": 59,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-02)",
+    "count": 69,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-03)",
+    "count": 82,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-04)",
+    "count": 50,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-05)",
+    "count": 75,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-06)",
+    "count": 75,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-07)",
+    "count": 48,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (combined L4-08)",
+    "count": 47,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L3.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L3 L3)",
+    "count": 55,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L3)",
+    "count": 16,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-01.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-01 L4-01)",
+    "count": 59,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-01)",
+    "count": 24,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-02.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-02 L4-02)",
+    "count": 69,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-02)",
+    "count": 26,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-03.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-03 L4-03)",
+    "count": 82,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-03)",
+    "count": 32,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-04.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-04 L4-04)",
+    "count": 50,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-04)",
+    "count": 21,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-05.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-05 L4-05)",
+    "count": 75,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-05)",
+    "count": 28,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-06.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-06 L4-06)",
+    "count": 75,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-06)",
+    "count": 28,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-07.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-07 L4-07)",
+    "count": 48,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-07)",
+    "count": 19,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "well-formed XML + XSD valid against OMG BPMN20.xsd (out/models/L4-08.bpmn)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "DI complete, bounds/waypoints valid, lane/pool containment (L4-08 L4-08)",
+    "count": 47,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "spec-to-XML fidelity: ids, types, names, flows, incoming/outgoing, defaults, message flows, data, groups, annotations, lanes, notes (L4-08)",
+    "count": 16,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "per-model exports out/models/*.bpmn identical to the corresponding elements of the combined file",
+    "count": 52,
+    "note": ""
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/ipd_best_practice.bpmn)",
+    "count": 1718
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 224, ipd:source 1034, ids kept (out/ipd_best_practice.bpmn)",
+    "count": 224
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/ipd_best_practice.bpmn): 8 hits, classified below",
+    "count": 8
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L3.bpmn)",
+    "count": 344
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 27, ipd:source 330, ids kept (out/models/L3.bpmn)",
+    "count": 27
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L3.bpmn): 0 hits, classified below",
+    "count": 0
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-01.bpmn)",
+    "count": 171
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 24, ipd:source 127, ids kept (out/models/L4-01.bpmn)",
+    "count": 24
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-01.bpmn): 0 hits, classified below",
+    "count": 0
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-02.bpmn)",
+    "count": 194
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 30, ipd:source 98, ids kept (out/models/L4-02.bpmn)",
+    "count": 30
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-02.bpmn): 4 hits, classified below",
+    "count": 4
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-03.bpmn)",
+    "count": 214
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 28, ipd:source 79, ids kept (out/models/L4-03.bpmn)",
+    "count": 28
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-03.bpmn): 2 hits, classified below",
+    "count": 2
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-04.bpmn)",
+    "count": 131
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 21, ipd:source 74, ids kept (out/models/L4-04.bpmn)",
+    "count": 21
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-04.bpmn): 0 hits, classified below",
+    "count": 0
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-05.bpmn)",
+    "count": 197
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 29, ipd:source 98, ids kept (out/models/L4-05.bpmn)",
+    "count": 29
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-05.bpmn): 0 hits, classified below",
+    "count": 0
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-06.bpmn)",
+    "count": 199
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 29, ipd:source 79, ids kept (out/models/L4-06.bpmn)",
+    "count": 29
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-06.bpmn): 0 hits, classified below",
+    "count": 0
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-07.bpmn)",
+    "count": 149
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 20, ipd:source 86, ids kept (out/models/L4-07.bpmn)",
+    "count": 20
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-07.bpmn): 0 hits, classified below",
+    "count": 0
+   },
+   {
+    "layer": "L1",
+    "check": "bpmn-moddle 10.3.1 import with contracts/ipd_moddle.json: 0 warnings (out/models/L4-08.bpmn)",
+    "count": 127
+   },
+   {
+    "layer": "L1",
+    "check": "lossless toXML/fromXML round trip: ipd:trace 16, ipd:source 63, ids kept (out/models/L4-08.bpmn)",
+    "count": 16
+   },
+   {
+    "layer": "L1",
+    "check": "bpmnlint 11.15.0 recommended (26 rules) run (out/models/L4-08.bpmn): 2 hits, classified below",
+    "count": 2
+   }
+  ],
+  "note": "Round 3 (final, V1 owner 3) on the rebuilt artefacts: spec/FROZEN.sha256 9/9 OK; out/ipd_best_practice.bpmn sha256 37a8b9c9e596a9f8... (= expected). Changed since round 2 (diff of spec/ against the B1 round-2 base copy): L3, L4-02, L4-03 only. out/ipd_best_practice.report.json (spec2bpmn 1.0, lint pass, 0 warnings) lists sha256 values equal to the 10 files on disk. XSD: lxml against vendor/xsd_v1/omg/BPMN20.xsd (sha256 a07c159c...; Semantic/BPMNDI/DC/DI from the same dir), combined file and 9 per-model exports valid. bpmn-moddle 10.3.1 with contracts/ipd_moddle.json: 0 warnings, lossless round trip. bpmnlint 11.15.0 recommended (26 rules): 8 no-inclusive-gateway warnings (L3 G1/G2 gone - L3 has no OR gateway), every OR gateway justified (DEC-02); no other hit. Gateway types in the XML: L3 G1/G2/G3/G4 parallelGateway, G5/G6 exclusiveGateway (no inclusiveGateway on L3); L4-02 G4 default=F21, G1 no default. New round-3 check: non-default outgoing flows of an OR split without default carry no conditionExpression (L4-02 F2, F3) - documented-choice under the accepted B2 conditionExpression limitation. L3 F4 and L4-02 F3 no longer carry a conditionExpression (their round-2 FLW-02 records are gone). Self-test --bpmn-only: 10/10.",
+  "inputs": [
+   "contracts/ipd_extension.md",
+   "contracts/ipd_moddle.json",
+   "out/ipd_best_practice.bpmn",
+   "out/models/L3.bpmn",
+   "out/models/L4-01.bpmn",
+   "out/models/L4-02.bpmn",
+   "out/models/L4-03.bpmn",
+   "out/models/L4-04.bpmn",
+   "out/models/L4-05.bpmn",
+   "out/models/L4-06.bpmn",
+   "out/models/L4-07.bpmn",
+   "out/models/L4-08.bpmn",
+   "spec/*.yaml"
+  ],
+  "not_checked": []
+ },
+ {
+  "rule_id": "FLW-09",
+  "layer": "L2",
+  "model": "L4-03",
+  "element": "S1",
+  "message": "one start event 'Intentional protocol deviation communicated' receives 2 message types ['Immediate-hazard deviation reported', 'Intentional protocol deviation request submitted']; documented rule exception accepted by the orchestrator (rule_exceptions FLW-09, conflicts.md C-27: one business trigger, revisitable by the user)",
+  "severity": "MUST",
+  "owner": "B1",
+  "status": "documented-exception"
+ },
+ {
+  "record": "summary",
+  "layer": "L2",
+  "timestamp": "2026-11-07T17:33:38+00:00",
+  "counts": {
+   "MUST documented": 1
+  },
+  "passed": [
+   {
+    "layer": "L2",
+    "check": "reachability, FLW-03, FLW-04 (reduction + dominator), FLW-08, FLW-09 per process",
+    "count": 16,
+    "note": ""
+   }
+  ],
+  "note": "Round 3 (final, V1 owner 3) on the rebuilt artefacts: spec/FROZEN.sha256 9/9 OK; out/ipd_best_practice.bpmn sha256 37a8b9c9e596a9f8... (= expected). Changed since round 2 (diff of spec/ against the B1 round-2 base copy): L3, L4-02, L4-03 only. L3 now: AND split G1 -> A2 and -> XOR G5 'Intentional protocol deviation considered?' (Yes -> A3, No -> G6) -> XOR join G6 -> AND join G2; reduction to a single block succeeds (FLW-04), no AND join closes alternative paths (FLW-08: the XOR pair G5/G6 sits inside the AND branch). FLW-09 at L4-03 S1 = accepted MUST exception (C-27), not open.",
+  "inputs": [
+   "contracts/source_registry.yaml",
+   "contracts/spec.schema.json",
+   "spec/*.yaml (sha256 checked against spec/FROZEN.sha256)",
+   "spec/notes.md",
+   "synthesis/glossary.yaml",
+   "synthesis/l3_cut.md",
+   "synthesis/merged_findings.yaml",
+   "synthesis/requirements.yaml"
+  ],
+  "not_checked": []
+ },
+ {
+  "rule_id": "SCP-03",
+  "layer": "L3",
+  "model": "L4-01",
+  "element": "-",
+  "message": "16 activities, 24 nodes (target 5-15 activities, <= 31 nodes)",
+  "severity": "SHOULD",
+  "owner": "B1",
+  "status": "documented-deviation"
+ },
+ {
+  "rule_id": "SCP-03",
+  "layer": "L3",
+  "model": "L4-02",
+  "element": "-",
+  "message": "16 activities, 26 nodes (target 5-15 activities, <= 31 nodes)",
+  "severity": "SHOULD",
+  "owner": "B1",
+  "status": "documented-deviation"
+ },
+ {
+  "rule_id": "FLW-07",
+  "layer": "L3",
+  "model": "L4-02",
+  "element": "G1",
+  "message": "OR split with 0 default flows (needs exactly 1); documented SHOULD deviation in notes.md section 8: No default flow: the trigger 'Monitoring activity scheduled' guarantees at least one channel; a default flow would wrongly suppress centralised review whenever a site visit is due.",
+  "severity": "SHOULD",
+  "owner": "B1",
+  "status": "documented-deviation"
+ },
+ {
+  "rule_id": "SCP-03",
+  "layer": "L3",
+  "model": "L4-03",
+  "element": "-",
+  "message": "14 activities, 32 nodes (target 5-15 activities, <= 31 nodes)",
+  "severity": "SHOULD",
+  "owner": "B1",
+  "status": "documented-deviation"
+ },
+ {
+  "record": "summary",
+  "layer": "L3",
+  "timestamp": "2026-11-07T17:33:38+00:00",
+  "counts": {
+   "SHOULD documented": 4
+  },
+  "passed": [
+   {
+    "layer": "L3",
+    "check": "SCP-07 no task label repeated across models",
+    "count": 100,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "SCP-03/04, FLW-01/06/07, LBL-01/02/03 (heuristics), ROL-01/02, CHARS per model",
+    "count": 9,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "FLW-07 OR default-flow check (round 3, OMG 10.6.3): every OR split listed; every default flow goes straight to the OR join that all other branches reach (empty default path), so no default path carries work that must run together with a true branch; no default labelled as unconditional",
+    "count": 4,
+    "note": "OR splits: L4-02 G1, L4-02 G4, L4-03 G2, L4-08 G3; default paths: L4-02 G4 F21 'No further report' -> OR join G5 (empty default path); L4-03 G2 F9 'Neither' -> OR join G3 (empty default path); L4-08 G3 F14 'Neither' -> OR join G4 (empty default path)"
+   },
+   {
+    "layer": "L3",
+    "check": "SCP-06 each L3 call activity has exactly one child; every L3 hand-off reappears in the child (pool + identical label) and is listed in interface.message_flows",
+    "count": 12,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "SCP-06 child Sponsor start = l3_cut trigger; every l3_cut outcome is an end event of the child",
+    "count": 25,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L3)",
+    "count": 2,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-01)",
+    "count": 2,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-02)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-03)",
+    "count": 8,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-04)",
+    "count": 5,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-05)",
+    "count": 9,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-06)",
+    "count": 9,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-07)",
+    "count": 4,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (combined L4-08)",
+    "count": 2,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L3 L3)",
+    "count": 2,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-01 L4-01)",
+    "count": 2,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-02 L4-02)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-03 L4-03)",
+    "count": 8,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-04 L4-04)",
+    "count": 5,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-05 L4-05)",
+    "count": 9,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-06 L4-06)",
+    "count": 9,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-07 L4-07)",
+    "count": 4,
+    "note": ""
+   },
+   {
+    "layer": "L3",
+    "check": "LAY-04 isMarkerVisible on XOR, no colour attributes (L4-08 L4-08)",
+    "count": 2,
+    "note": ""
+   }
+  ],
+  "note": "Round 3 (final, V1 owner 3) on the rebuilt artefacts: spec/FROZEN.sha256 9/9 OK; out/ipd_best_practice.bpmn sha256 37a8b9c9e596a9f8... (= expected). Changed since round 2 (diff of spec/ against the B1 round-2 base copy): L3, L4-02, L4-03 only. Sizes: L3 16 nodes / 12 message flows (gateway types and, xor); L4-02 26 nodes; L4-03 32 nodes (SCP-03 deviation documented). Round-3 OR default-flow check (task item 2, OMG BPMN 2.0.2 10.6.3, beyond the round-2 label heuristic): every OR split in every model inspected - L4-02 G1 (no default; documented FLW-07 SHOULD deviation), L4-02 G4 default F21 'No further report' -> OR join G5, L4-03 G2 default F9 'Neither' -> OR join G3, L4-08 G3 default F14 'Neither' -> OR join G4. Every default flow goes straight to the OR join with an empty path, so no default carries work that must run together with a true branch; the always-needed work (L4-02 A14, L4-08 A6) sits before the split. No OR gateway on L3. Round-2 MUST FLW-07 L3 F3 fixed.",
+  "inputs": [
+   "contracts/ipd_extension.md",
+   "contracts/source_registry.yaml",
+   "contracts/spec.schema.json",
+   "out/ipd_best_practice.bpmn",
+   "out/models/L3.bpmn",
+   "out/models/L4-01.bpmn",
+   "out/models/L4-02.bpmn",
+   "out/models/L4-03.bpmn",
+   "out/models/L4-04.bpmn",
+   "out/models/L4-05.bpmn",
+   "out/models/L4-06.bpmn",
+   "out/models/L4-07.bpmn",
+   "out/models/L4-08.bpmn",
+   "spec/*.yaml",
+   "spec/*.yaml (sha256 checked against spec/FROZEN.sha256)",
+   "spec/notes.md",
+   "synthesis/glossary.yaml",
+   "synthesis/l3_cut.md",
+   "synthesis/merged_findings.yaml",
+   "synthesis/requirements.yaml"
+  ],
+  "not_checked": []
+ },
+ {
+  "record": "summary",
+  "layer": "L4",
+  "timestamp": "2026-11-07T17:33:38+00:00",
+  "counts": {},
+  "passed": [
+   {
+    "layer": "L4",
+    "check": "binding, draft, support, verify, src completeness per traced element",
+    "count": 174,
+    "note": ""
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L3)",
+    "count": 27,
+    "note": "34 elements compared, 27 traced, 27 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-01)",
+    "count": 24,
+    "note": "31 elements compared, 24 traced, 24 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-02)",
+    "count": 30,
+    "note": "39 elements compared, 30 traced, 30 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-03)",
+    "count": 28,
+    "note": "46 elements compared, 28 traced, 28 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-04)",
+    "count": 21,
+    "note": "29 elements compared, 21 traced, 21 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-05)",
+    "count": 29,
+    "note": "42 elements compared, 29 traced, 29 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-06)",
+    "count": 29,
+    "note": "43 elements compared, 29 traced, 29 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-07)",
+    "count": 20,
+    "note": "26 elements compared, 20 traced, 20 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (combined L4-08)",
+    "count": 16,
+    "note": "24 elements compared, 16 traced, 16 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L3 L3)",
+    "count": 27,
+    "note": "34 elements compared, 27 traced, 27 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-01 L4-01)",
+    "count": 24,
+    "note": "31 elements compared, 24 traced, 24 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-02 L4-02)",
+    "count": 30,
+    "note": "39 elements compared, 30 traced, 30 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-03 L4-03)",
+    "count": 28,
+    "note": "46 elements compared, 28 traced, 28 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-04 L4-04)",
+    "count": 21,
+    "note": "29 elements compared, 21 traced, 21 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-05 L4-05)",
+    "count": 29,
+    "note": "42 elements compared, 29 traced, 29 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-06 L4-06)",
+    "count": 29,
+    "note": "43 elements compared, 29 traced, 29 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-07 L4-07)",
+    "count": 20,
+    "note": "26 elements compared, 20 traced, 20 fully equal"
+   },
+   {
+    "layer": "L4",
+    "check": "ipd:trace and documentation text match the spec for every traced element (L4-08 L4-08)",
+    "count": 16,
+    "note": "24 elements compared, 16 traced, 16 fully equal"
+   }
+  ],
+  "note": "Round 3 (final, V1 owner 3) on the rebuilt artefacts: spec/FROZEN.sha256 9/9 OK; out/ipd_best_practice.bpmn sha256 37a8b9c9e596a9f8... (= expected). Changed since round 2 (diff of spec/ against the B1 round-2 base copy): L3, L4-02, L4-03 only. Coverage of in-scope binding REQs complete (no COVERAGE error); ipd:trace and documentation equal the spec for every traced element in the combined and per-model files (L4-03 A14 with its new REQ-083/075/076 trace and five verify items included).",
+  "inputs": [
+   "contracts/ipd_extension.md",
+   "contracts/source_registry.yaml",
+   "contracts/spec.schema.json",
+   "out/ipd_best_practice.bpmn",
+   "out/models/L3.bpmn",
+   "out/models/L4-01.bpmn",
+   "out/models/L4-02.bpmn",
+   "out/models/L4-03.bpmn",
+   "out/models/L4-04.bpmn",
+   "out/models/L4-05.bpmn",
+   "out/models/L4-06.bpmn",
+   "out/models/L4-07.bpmn",
+   "out/models/L4-08.bpmn",
+   "spec/*.yaml",
+   "spec/*.yaml (sha256 checked against spec/FROZEN.sha256)",
+   "spec/notes.md",
+   "synthesis/glossary.yaml",
+   "synthesis/l3_cut.md",
+   "synthesis/merged_findings.yaml",
+   "synthesis/requirements.yaml"
+  ],
+  "not_checked": []
+ },
+ {
+  "rule_id": "SCP-02",
+  "layer": "REVIEW",
+  "model": "L4-03",
+  "element": "S1",
+  "message": "Sponsor sub-process entered by two message types through one start event: accepted by the orchestrator as one business trigger ('Intentional protocol deviation communicated'), with the deciding task A14 before G1 (conflicts.md C-27, rule_exceptions FLW-09, revisitable by the user). No repair needed.",
+  "severity": "SHOULD",
+  "owner": "B1",
+  "status": "documented-exception"
+ },
+ {
+  "rule_id": "FLW-05",
+  "layer": "REVIEW",
+  "model": "L3",
+  "element": "G5",
+  "message": "New XOR split G5 'Intentional protocol deviation considered?' has no deciding activity before it (predecessor: AND split G1, then A1). notes.md section 6 names a trigger attribute - the investigator's consideration of an intentional protocol deviation (L4-03 S2), communicated by M11/M12 - but M11/M12 reach A3 only after the gateway, and unlike the trial-attribute gateways (EU CTR applies?, IND under 21 CFR 312?) the condition is not fixed at set-up but arises during conduct. Plausible only under the reading convention TA1 ('channels open in parallel ... only when an intentional protocol deviation is considered'); listed, like the round-1 FLW-08 reading-convention item, so that the user confirms the convention. No repair needed if confirmed.",
+  "severity": "SHOULD",
+  "owner": "B1",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "FLW-05",
+  "layer": "REVIEW",
+  "model": "L4-03",
+  "element": "G4",
+  "message": "notes.md section 6 row for G4 'Deviation from eligibility criteria requested?' quotes A12 as 'Request approval of intentional deviation'; the spec label is 'Request approval of intentional protocol deviation' (renamed in round 2 for LBL-04), so the table uses the short form the LBL-04 repair removed. Since round 2 the sponsor review A14 'Review intentional protocol deviation communication' carries REQ-075 (trigger 'Deviation from eligibility criteria requested') and precedes G1 -> G4, so the sponsor-side deciding activity for G4 is A14, which the row does not name. Repair (documentation only): correct the label and name A14 (content of the request from A12 via M3, reviewed by A14).",
+  "severity": "SHOULD",
+  "owner": "B1",
+  "status": "open"
+ },
+ {
+  "rule_id": "LBL-05",
+  "layer": "REVIEW",
+  "model": "L4-02",
+  "element": "l3_cut.md A2",
+  "message": "synthesis/l3_cut.md, A2 'Two channels, one trigger' (rewritten for the round-3 G1/G4 change) says the OR join G2 closes the channels 'before \"Evaluate monitoring findings\" and \"Communicate detected deviations to investigator\"'. No element is labelled 'Evaluate monitoring findings'; after G2 L4-02 has A10 'Document monitoring report' and A11 'Review monitoring reports' (then G3 and A12). One name for one thing: use the spec labels.",
+  "severity": "SHOULD",
+  "owner": "Y1",
+  "status": "open"
+ },
+ {
+  "record": "summary",
+  "layer": "REVIEW",
+  "timestamp": "2026-11-07T17:33:39+00:00",
+  "counts": {
+   "SHOULD": 2,
+   "SHOULD documented": 2
+  },
+  "passed": [
+   {
+    "layer": "REVIEW",
+    "check": "FLW-05: notes.md section 6 lists all 29 XOR/OR splits (L3 G1 is now an AND split and no longer listed; new: L3 G5) with the exact question; every 'directly before' claim holds (tools/validate/v1_r3_flw05.py: 29 splits, 29 rows, 1 issue = the L4-03 G4 label above); L4-02 G4 row now names A13 with A14 in between (true: F20 A13 -> A14, F24 A14 -> G4); L4-02 G1 deciding element (monitoring plan L4-01 A10, applied at timer start) unchanged and plausible; L4-03 G1 <- A14 directly before; deciding element or trial attribute plausible for all 29 (L3 G5 only under the reading convention - see the documented-choice item)",
+    "count": 29
+   },
+   {
+    "layer": "REVIEW",
+    "check": "SCP-02 on the changed models: L4-02 one Sponsor trigger (timer S1), the investigator start S2 is the external participant's own process; named outcomes E1, E2 and investigator E3 'Deviation reported to sponsor' - E3 is now true on every investigator path because A14 precedes G4 (in round 2 the system-incident and suspected-serious-breach paths reached E3 without the deviation report); L4-03 one trigger (accepted exception C-27), outcomes E1-E3 unchanged by the A14 REQ change; L3 A3 (L4-03) is now entered only through G5 'Yes', its trigger in l3_cut ('Intentional protocol deviation considered') matches the G5 question and L4-03 S2",
+    "count": 3
+   },
+   {
+    "layer": "REVIEW",
+    "check": "LBL-04 on the changed elements: L3 G5 'Intentional protocol deviation considered?' (glossary label form 'intentional protocol deviation'; same wording as L4-03 S2 and REQ-073 trigger); L4-02 F2 'Centralised data review due' / F3 'Site monitoring visit due' (same terms as groups GR_CENTRAL 'Centralised data review', GR_SITE 'Site monitoring' and A6 'Perform site monitoring visit'); G4 'Which additional reports are due?', F21 'No further report', F22 'System incident', F23 'Suspected serious breach (EU CTR)' (glossary 'suspected serious breach', 'EU CTR' not bare 'CTR'); L4-03 A14 'Review intentional protocol deviation communication' (glossary form); no bare 'CSR'/'CTR', no 'intentional deviation' or 'important deviation' short form in any spec label",
+    "count": 9
+   },
+   {
+    "layer": "REVIEW",
+    "check": "GEN-03 L4-03 A14 (round-2 finding) re-judged: A14 now carries the sponsor REQs of the paths it routes - REQ-083 (E6R3 A1-3.13.3, sponsor, 'take prompt action to address immediate hazards', binding-ICH), REQ-075 (M11-TEMPLATE S5.1, waivers not permitted, binding-ICH with its [verify binding]) and REQ-076 (FDA-PD24 SIII.B.2 draft, 'sponsors should carefully consider investigators' requests', DRAFT shown); src pairs are those of the findings (R1-079, R2-113, R4-061); binding-ICH = strongest REQ binding; deadline 'promptly' is REQ-083's (only REQ with a deadline, shown unattributed, as on the other 28 elements whose REQs carry exactly one deadline); party 'sponsor; Sponsors' verbatim; own [verify] 'review step implied by the routing; no source names it as a separate step' kept. No invented obligation, actor or deadline - round-2 finding fixed",
+    "count": 1
+   },
+   {
+    "layer": "REVIEW",
+    "check": "GEN-03 systemic (round 1, Y1) still holds: requirements.yaml carries a modal for every REQ; 'may'-only binding REQs stated as permissions",
+    "count": 16
+   },
+   {
+    "layer": "REVIEW",
+    "check": "semantic spot check: task label and REQ statements match the finding paraphrases (no invented obligation, actor or deadline); sample = random.Random(20261106).sample(sorted (model, id) task pairs, 25) of 100 tasks: L4-07 A11, L4-01 A15, L4-01 A5, L4-02 A10, L4-02 A8, L4-01 A1, L4-06 A8, L4-03 A6, L4-04 A5, L4-03 A12, L4-07 A2, L4-01 A10, L4-08 A8, L4-01 A12, L4-01 A8, L4-02 A5, L4-03 A11, L4-08 A5, L4-02 A14, L4-03 A3, L4-06 A3, L4-07 A10, L4-03 A8, L4-08 A3, L4-08 A4",
+    "count": 25,
+    "note": "25 of 25 sampled tasks without finding"
+   }
+  ],
+  "note": "Round 3 judgements in tools/validate/v1_review_judgements_r3.json (round 2: v1_review_judgements_r2.json). Same seed 20261106, same population (100 tasks) and the identical sample; only L4-02 A14 of the sample changed (position before G4) and was re-judged ok; L4-03 A14 (round-2 GEN-03) re-judged: fixed. FLW-05, SCP-02 and LBL-04 re-checked on every changed element (L3 G1/G2/G5/G6, L4-02 G1/F2/F3/G4/F20/F21/F24/A14, L4-03 A14); FLW-05 table checked mechanically by tools/validate/v1_r3_flw05.py.",
+  "inputs": [
+   "spec/*.yaml",
+   "spec/notes.md",
+   "synthesis/conflicts.md",
+   "synthesis/glossary.yaml",
+   "synthesis/l3_cut.md",
+   "synthesis/merged_findings.yaml",
+   "synthesis/requirements.yaml",
+   "tools/validate/v1_review_judgements.json"
+  ],
+  "not_checked": [
+   "Fit of the model to the real process (GEN-06): only the process owners can confirm it.",
+   "The source documents themselves: the spot check compares labels and REQ statements with the finding paraphrases, not with the source texts (X1's remit).",
+   "Retained, unchanged sample tasks were not re-read; their round-2 verdict stands (their dump is identical to round 2)."
+  ]
+ },
+ {
+  "rule_id": "LAY-02",
+  "layer": "L5",
+  "model": "L3",
+  "element": "M12, M11, F17",
+  "message": "New round-3 routing on L3: the XOR bypass F17 'No' runs 17 px above A3 'Manage intentional protocol deviations', so both hand-offs from the Investigator/institution pool cross it just above A3 (L3 crossings 3 -> 5), and M12 'Intentional protocol deviation request submitted' runs parallel 7 px above F17 for 106 px (5 px at the default 75% zoom; DI measurement tools/validate/v1_r3_di.py). Dashed vs solid stays distinguishable in the close-up (/tmp/v1_l5/r3zoom/L3_block.png). Accepted by B2 as a tight spot in build_log.md (B2b-r3). Optional improvement: route F17 below A3 (one crossing with M3 instead of two, no parallel run).",
+  "severity": "SHOULD",
+  "owner": "B2",
+  "status": "documented-choice"
+ },
+ {
+  "rule_id": "VIEW-READABILITY",
+  "layer": "L5",
+  "model": "L3",
+  "element": "bpmn.io watermark",
+  "message": "The bpmn.io watermark (licence requirement of bpmn-js, must stay visible and uncovered) sits bottom-right over the label of the collapsed Regulatory authority pool in the L3 default view (round 2: L4-02). Accepted (licence constraint, SHOULD note); no repair.",
+  "severity": "SHOULD",
+  "owner": "W1",
+  "status": "documented-choice"
+ },
+ {
+  "record": "summary",
+  "layer": "L5",
+  "timestamp": "2026-11-07T17:39:43+00:00",
+  "counts": {
+   "SHOULD documented": 2
+  },
+  "passed": [
+   {
+    "layer": "L5",
+    "check": "W1 suite tools/test_viewer.mjs re-run by V1 on the single-file copy /tmp/v1_l5/ipd_best_practice_map.html (sha256 f5b49fbc..., = expected and = out/): 207 assertions, 0 failures - console, network, all 9 diagrams open, overlay counts, default zoom 75% (L4-08 60%), minimap closed by default on all 9 diagrams and toggled by its button, panel, MAY chip, filters, zoom, routing, copy, responsive, runtime href/src audit",
+    "count": 207
+   },
+   {
+    "layer": "L5",
+    "check": "W1 suite tools/test_viewer.mjs --publish-dir re-run by V1 on the copy /tmp/v1_pub/publish (index.html 644641fd..., app.js 2180f943..., boot.js 30e6291e..., data/ipd_best_practice.bpmn = out/ 37a8b9c9..., data/citations.json = out/ ed537136...): 213 assertions, 0 failures - pinned CDN scripts with sha384 SRI and crossorigin, CDN routed to viewer/node_modules, tampered bpmn-js body blocked by the browser, network only CDN + own files, console clean",
+    "count": 213
+   },
+   {
+    "layer": "L5",
+    "check": "round-2 VIEW-READABILITY (minimap open by default hides content on L3, L4-02..L4-05) fixed: closed by default on all 9 diagrams in both variants (W1 suite and V1 tools/validate/v1_publish.mjs); 'Show minimap' button in the toolbar",
+    "count": 9
+   },
+   {
+    "layer": "L5",
+    "check": "screens judged (V1 copies, default view and close-ups by tools/validate/v1_r3_zoomshots.mjs): L3 - AND split G1 to A2 (Monitor lane) and to XOR G5 'Intentional protocol deviation considered?' (X marker, Yes/No labels), A3, XOR join G6 (X marker), AND join G2, TA1 reading convention legible, no OR gateway; L4-02 - G1 OR with two labelled flows and no default slash, G4 OR after 'Report deviation to sponsor' with default slash on 'No further report' straight into the OR join, A15/A16 above, labels and source boxes legible at 75-100%%; L4-03 - S1 -> A14 with badges ICH, DRAFT, VERIFY and sources E6R3 A1-3.13.3, M11-TEMPLATE S5.1, FDA-PD24 SIII.B.2 (round 2: LAW with investigator sources), G1 Yes/No legible. No overlap, no edge through a shape; one tight spot on L3 (LAY-02 record above)",
+    "count": 3
+   },
+   {
+    "layer": "L5",
+    "check": "LAY-02 DI re-measured (tools/validate/v1_r3_di.py on out/ipd_best_practice.bpmn): 62 of 66 message-flow ends on activities dock top/bottom (0 side docks on activities); the 4 ends that enter a start event from the left (L4-01 M1, L4-03 M3, L4-04 M1, L4-06 M1) are unchanged since round 2; parallel message/sequence runs: L3 M12||F17 (new, documented above) and L4-05 M3, M4 || F17 (5 px over 24 and 44 px, unchanged since round 2); crossings r2 -> r3: L3 3 -> 5, L4-02 5 -> 4, others unchanged",
+    "count": 66
+   },
+   {
+    "layer": "L5",
+    "check": "both variants run the same code: publish app.js equals the inline app script of the single-file page; the single-file page inlines the same pinned library files (bpmn-js 18.31.1 navigated viewer, diagram-js-minimap 5.6.0) that the publish variant loads from the CDN",
+    "count": 3
+   },
+   {
+    "layer": "L5",
+    "check": "bpmn-js import of the embedded XML: 0 warnings",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "every diagram opens (9 BPMNDiagrams of the XML) and its overlay set equals the elements with ipd:source (participants and lanes are panel-only by design)",
+    "count": 176,
+    "note": "L3_DIAGRAM 21/21, L4_01_DIAGRAM 19/19, L4_02_DIAGRAM 24/24, L4_03_DIAGRAM 23/23, L4_04_DIAGRAM 16/16, L4_05_DIAGRAM 24/24, L4_06_DIAGRAM 23/23, L4_07_DIAGRAM 15/15, L4_08_DIAGRAM 11/11"
+   },
+   {
+    "layer": "L5",
+    "check": "overlay badges are text (LAW/ICH/GUIDANCE/DRAFT/BP/VERIFY) and equal the badges derived from ipd:trace (LAY-04: meaning not by colour alone)",
+    "count": 176,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "panel of every task/call activity of L4-03 and L4-05 lists all its source keys and locs, REQ ids and binding",
+    "count": 26,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "runtime DOM audit: every src/href is data:/blob:/#, a panel source link from citations.json, or the bpmn.io watermark",
+    "count": 5,
+    "note": "3 source links, 1 watermark"
+   },
+   {
+    "layer": "L5",
+    "check": "network: no request other than the file itself, data: and blob: (all others would be aborted)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "zero console errors",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "zero page errors",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "static: no external URL in markup src/href/srcset/action/poster/data attributes",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "static: all 6 scripts and 2 style blocks inline (no <script src>, no <link rel=stylesheet>)",
+    "count": 8,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "static: CSS url() only data: URIs, no @import",
+    "count": 2,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "embedded ipd-bpmn equals out/ipd_best_practice.bpmn",
+    "count": 1,
+    "note": "sha256 37a8b9c9e596a9f8"
+   },
+   {
+    "layer": "L5",
+    "check": "embedded ipd-data equals out/citations.json",
+    "count": 1,
+    "note": "sha256 ed537136131bea8a"
+   },
+   {
+    "layer": "L5",
+    "check": "embedded ipd-moddle equals contracts/ipd_moddle.json",
+    "count": 1,
+    "note": "sha256 e724a1e4488ddb58"
+   },
+   {
+    "layer": "L5",
+    "check": "static: http(s) URLs in script code classified: URL in a library comment or string (never fetched) 1, bpmn.io watermark / licence 7, namespace/schema identifier 19",
+    "count": 27,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "static: exactly 2 CDN scripts (bpmn-js@18.31.1/dist/bpmn-navigated-viewer.production.min.js, diagram-js-minimap@5.6.0/dist/diagram-minimap.umd.prod.js), each pinned to the version in viewer/node_modules, integrity = sha384 of that file, crossorigin=\"anonymous\"; own scripts boot.js",
+    "count": 2,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "static: no stylesheet link (CSS inline); only <link rel=\"icon\" href=\"data:,\">",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "page loads from the local server with the CDN routed to the pinned local files; viewer ready (data-ready=1)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "bpmn-js import of the served XML (data/ipd_best_practice.bpmn): 0 warnings",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "every diagram opens (9 BPMNDiagrams of the served XML) and its overlay set equals the elements with ipd:source",
+    "count": 176,
+    "note": "L3_DIAGRAM 21/21 (zoom 75%), L4_01_DIAGRAM 19/19 (zoom 75%), L4_02_DIAGRAM 24/24 (zoom 75%), L4_03_DIAGRAM 23/23 (zoom 75%), L4_04_DIAGRAM 16/16 (zoom 75%), L4_05_DIAGRAM 24/24 (zoom 75%), L4_06_DIAGRAM 23/23 (zoom 75%), L4_07_DIAGRAM 15/15 (zoom 75%), L4_08_DIAGRAM 11/11 (zoom 60%)"
+   },
+   {
+    "layer": "L5",
+    "check": "overlay badges equal the badges derived from ipd:trace (LAY-04)",
+    "count": 176,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "minimap closed by default on every diagram",
+    "count": 9,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "bpmn.io watermark present (licence)",
+    "count": 1,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "network: only the 2 pinned CDN scripts and own files (app.js, boot.js, data/citations.json, data/ipd_best_practice.bpmn, index.html); no other request",
+    "count": 7,
+    "note": "CDN 2, own 5"
+   },
+   {
+    "layer": "L5",
+    "check": "no SRI / integrity message (both CDN scripts accepted by the browser integrity check)",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "zero console errors",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "zero page errors",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "no alert/confirm/prompt dialog",
+    "count": 0,
+    "note": ""
+   },
+   {
+    "layer": "L5",
+    "check": "negative control: one CDN body altered by one comment line -> browser blocks it (integrity message) and the page shows its failure message instead of a diagram",
+    "count": 1,
+    "note": "error: Failed to find a valid digest in the 'integrity' attribute for resource 'https://cdn.jsdelivr.net/npm/bpmn-js@18.31.1/dist/bpmn-navigated-viewer.producti | canvas: The diagram library (bpmn-js) could not be loaded from the CDN, or its integrity check failed."
+   }
+  ],
+  "note": "Round 3: single-file viewer copy /tmp/v1_l5/ipd_best_practice_map.html (sha256 f5b49fbcc72518aa..., = expected) and publish variant copy /tmp/v1_pub/publish served by python3 -I -m http.server on 127.0.0.1, both offline. Publish: the two CDN URLs (bpmn-js@18.31.1 navigated viewer, diagram-js-minimap@5.6.0 UMD) were routed to the files of the same versions in viewer/node_modules with Access-Control-Allow-Origin, so the browser's SRI check ran on every load; a negative control with one altered CDN body was blocked. V1 checks (tools/validate/v1_render.mjs single-file, v1_selfcontained.py, v1_publish.mjs): 0 errors.",
+  "inputs": [
+   "/home/claude/ipd/out/ipd_best_practice.bpmn",
+   "/tmp/v1_l5 (single-file copy)",
+   "/tmp/v1_l5/citations.json",
+   "/tmp/v1_l5/ipd_best_practice_map.html",
+   "/tmp/v1_pub/publish (copy of out/publish)",
+   "contracts/ipd_moddle.json",
+   "out/citations.json",
+   "out/ipd_best_practice.bpmn",
+   "out/screens/*.png",
+   "tools/test_viewer.mjs",
+   "tools/validate/v1_publish.mjs",
+   "tools/validate/v1_r3_di.py",
+   "tools/validate/v1_r3_zoomshots.mjs",
+   "viewer/node_modules (pinned CDN stand-ins)"
+  ],
+  "not_checked": [
+   "Whether cdn.jsdelivr.net actually serves bytes identical to viewer/node_modules (offline: the CDN was routed to the local pinned files; the SRI attributes equal sha384 of those files, so a different CDN body would be blocked, not executed).",
+   "Rendering in browsers other than headless Chrome (playwright-core 1.65.0, /usr/bin/google-chrome)."
+  ]
+ },
+ {
+  "record": "comparison",
+  "against": "r2",
+  "fixed": [
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L3",
+    "element": "F4",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "was SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "F3",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "was SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L3",
+    "element": "G1",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "was SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L3",
+    "element": "G2",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "was SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-07",
+    "layer": "L3",
+    "model": "L3",
+    "element": "F3",
+    "message": "default flow F3 'Always' of OR split G1 is labelled as unconditional, but an inclusive gateway takes its default flow only when no other outgoing condition is true (OMG BPMN 2.0.2 10.6.3): whenever ['Yes'] holds, A2 is NOT started. Repair: make F3 a conditional (non-default) flow that is always true and state the FLW-07 SHOULD deviation (no default needed because one path is always taken), or keep the AND split with the reading convention.",
+    "severity": "MUST",
+    "owner": "B1",
+    "status": "open",
+    "sevstat": "was MUST open"
+   },
+   {
+    "rule_id": "GEN-03",
+    "layer": "REVIEW",
+    "model": "L4-03",
+    "element": "A14",
+    "message": "New deciding task 'Review intentional protocol deviation communication' (Sponsor lane) carries only investigator REQs - REQ-073 (21CFR312.53(c)(1)(vi)(a): the investigator notifies the sponsor before changes), REQ-080 (E6R3 A1-2.5.4: the investigator informs the sponsor) and REQ-074 (FDA-PD24 draft: the investigator obtains prior sponsor approval) - so a sponsor step that no source names (its own [verify] item says so) shows LAW. The same REQs already sit on the investigator tasks A10, A12 and on M1, M3. Repair: give A14 a sponsor-side REQ (e.g. REQ-076 'consider each investigator request', FDA-PD24 draft, and the receipt side of REQ-083) or mark its binding as derived from the incoming messages, so the badge does not claim a binding sponsor obligation.",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "open",
+    "sevstat": "was SHOULD open"
+   },
+   {
+    "rule_id": "VIEW-READABILITY",
+    "layer": "L5",
+    "model": "L3, L4-02, L4-03, L4-04, L4-05",
+    "element": "minimap",
+    "message": "The minimap, open by default in the top-right corner of the canvas (about 320 x 160 px), hides diagram content in the default view: L3 the hand-off M11 'Immediate-hazard deviation reported' label and its source box; L4-02 the investigator OR join and the M5 label; L4-03 the investigator tasks A10/A11 and the M2 label; L4-04 the investigator task A10 and its source box; L4-05 the investigator end event area. Open it collapsed (as on L4-08), or place it where the canvas is empty (e.g. bottom-left over the pool header), or shift the initial viewport so nothing sits under it. Minor: on L4-02 the bpmn.io watermark overlaps the label of the collapsed Regulatory authority pool.",
+    "severity": "SHOULD",
+    "owner": "W1",
+    "status": "open",
+    "sevstat": "was SHOULD open"
+   }
+  ],
+  "still_open": [],
+  "unchanged_documented": [
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "F22",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "F23",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L4-03",
+    "element": "F7",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L4-03",
+    "element": "F8",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L4-08",
+    "element": "F12",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-02",
+    "layer": "L1",
+    "model": "L4-08",
+    "element": "F13",
+    "message": "conditionExpression (body = flow label) on a non-default flow of a split with a default flow; analytic element in a descriptive model, written to satisfy bpmnlint conditional-flows (build_log.md section 3)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "REF",
+    "layer": "L1",
+    "model": "L3",
+    "element": "A1-A8",
+    "message": "per-model export L3.bpmn: calledElement of 8 call activities points to processes that exist only in the combined file and the L4 files (no bpmn:import); a tool opening L3.bpmn alone cannot resolve them (known, build_log.md)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "G1",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "G2",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "G4",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "G5",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-03",
+    "element": "G2",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-03",
+    "element": "G3",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-08",
+    "element": "G3",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8 and by the or-split justification",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "BPMNLINT",
+    "layer": "L1",
+    "model": "L4-08",
+    "element": "G4",
+    "message": "bpmnlint no-inclusive-gateway (warn): Element type <bpmn:InclusiveGateway> is discouraged - modelling choice: OR gateway for 'one or more' (FLW-07, DEC-02), justified in notes.md section 8",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-09",
+    "layer": "L2",
+    "model": "L4-03",
+    "element": "S1",
+    "message": "one start event 'Intentional protocol deviation communicated' receives 2 message types ['Immediate-hazard deviation reported', 'Intentional protocol deviation request submitted']; documented rule exception accepted by the orchestrator (rule_exceptions FLW-09, conflicts.md C-27: one business trigger, revisitable by the user)",
+    "severity": "MUST",
+    "owner": "B1",
+    "status": "documented-exception",
+    "sevstat": "MUST documented-exception"
+   },
+   {
+    "rule_id": "SCP-03",
+    "layer": "L3",
+    "model": "L4-01",
+    "element": "-",
+    "message": "16 activities, 24 nodes (target 5-15 activities, <= 31 nodes)",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "documented-deviation",
+    "sevstat": "SHOULD documented-deviation"
+   },
+   {
+    "rule_id": "SCP-03",
+    "layer": "L3",
+    "model": "L4-02",
+    "element": "-",
+    "message": "16 activities, 26 nodes (target 5-15 activities, <= 31 nodes)",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "documented-deviation",
+    "sevstat": "SHOULD documented-deviation"
+   },
+   {
+    "rule_id": "SCP-03",
+    "layer": "L3",
+    "model": "L4-03",
+    "element": "-",
+    "message": "14 activities, 32 nodes (target 5-15 activities, <= 31 nodes)",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "documented-deviation",
+    "sevstat": "SHOULD documented-deviation"
+   },
+   {
+    "rule_id": "SCP-02",
+    "layer": "REVIEW",
+    "model": "L4-03",
+    "element": "S1",
+    "message": "Sponsor sub-process entered by two message types through one start event: accepted by the orchestrator as one business trigger ('Intentional protocol deviation communicated'), with the deciding task A14 before G1 (conflicts.md C-27, rule_exceptions FLW-09, revisitable by the user). No repair needed.",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "documented-exception",
+    "sevstat": "SHOULD documented-exception"
+   }
+  ],
+  "changed_status": [],
+  "new": [
+   {
+    "rule_id": "FLW-07",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "F2",
+    "message": "outgoing flow 'Centralised data review due' of OR split G1 carries no conditionExpression (the split has no default flow, so the converter writes none, build_log.md section 3); the condition exists only as the flow label, and a tool that executes or simulates the XML may start this branch every time. Covered by the accepted B2 conditionExpression limitation (descriptive model)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-07",
+    "layer": "L1",
+    "model": "L4-02",
+    "element": "F3",
+    "message": "outgoing flow 'Site monitoring visit due' of OR split G1 carries no conditionExpression (the split has no default flow, so the converter writes none, build_log.md section 3); the condition exists only as the flow label, and a tool that executes or simulates the XML may start this branch every time. Covered by the accepted B2 conditionExpression limitation (descriptive model)",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-07",
+    "layer": "L3",
+    "model": "L4-02",
+    "element": "G1",
+    "message": "OR split with 0 default flows (needs exactly 1); documented SHOULD deviation in notes.md section 8: No default flow: the trigger 'Monitoring activity scheduled' guarantees at least one channel; a default flow would wrongly suppress centralised review whenever a site visit is due.",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "documented-deviation",
+    "sevstat": "SHOULD documented-deviation"
+   },
+   {
+    "rule_id": "FLW-05",
+    "layer": "REVIEW",
+    "model": "L3",
+    "element": "G5",
+    "message": "New XOR split G5 'Intentional protocol deviation considered?' has no deciding activity before it (predecessor: AND split G1, then A1). notes.md section 6 names a trigger attribute - the investigator's consideration of an intentional protocol deviation (L4-03 S2), communicated by M11/M12 - but M11/M12 reach A3 only after the gateway, and unlike the trial-attribute gateways (EU CTR applies?, IND under 21 CFR 312?) the condition is not fixed at set-up but arises during conduct. Plausible only under the reading convention TA1 ('channels open in parallel ... only when an intentional protocol deviation is considered'); listed, like the round-1 FLW-08 reading-convention item, so that the user confirms the convention. No repair needed if confirmed.",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "FLW-05",
+    "layer": "REVIEW",
+    "model": "L4-03",
+    "element": "G4",
+    "message": "notes.md section 6 row for G4 'Deviation from eligibility criteria requested?' quotes A12 as 'Request approval of intentional deviation'; the spec label is 'Request approval of intentional protocol deviation' (renamed in round 2 for LBL-04), so the table uses the short form the LBL-04 repair removed. Since round 2 the sponsor review A14 'Review intentional protocol deviation communication' carries REQ-075 (trigger 'Deviation from eligibility criteria requested') and precedes G1 -> G4, so the sponsor-side deciding activity for G4 is A14, which the row does not name. Repair (documentation only): correct the label and name A14 (content of the request from A12 via M3, reviewed by A14).",
+    "severity": "SHOULD",
+    "owner": "B1",
+    "status": "open",
+    "sevstat": "SHOULD open"
+   },
+   {
+    "rule_id": "LBL-05",
+    "layer": "REVIEW",
+    "model": "L4-02",
+    "element": "l3_cut.md A2",
+    "message": "synthesis/l3_cut.md, A2 'Two channels, one trigger' (rewritten for the round-3 G1/G4 change) says the OR join G2 closes the channels 'before \"Evaluate monitoring findings\" and \"Communicate detected deviations to investigator\"'. No element is labelled 'Evaluate monitoring findings'; after G2 L4-02 has A10 'Document monitoring report' and A11 'Review monitoring reports' (then G3 and A12). One name for one thing: use the spec labels.",
+    "severity": "SHOULD",
+    "owner": "Y1",
+    "status": "open",
+    "sevstat": "SHOULD open"
+   },
+   {
+    "rule_id": "LAY-02",
+    "layer": "L5",
+    "model": "L3",
+    "element": "M12, M11, F17",
+    "message": "New round-3 routing on L3: the XOR bypass F17 'No' runs 17 px above A3 'Manage intentional protocol deviations', so both hand-offs from the Investigator/institution pool cross it just above A3 (L3 crossings 3 -> 5), and M12 'Intentional protocol deviation request submitted' runs parallel 7 px above F17 for 106 px (5 px at the default 75% zoom; DI measurement tools/validate/v1_r3_di.py). Dashed vs solid stays distinguishable in the close-up (/tmp/v1_l5/r3zoom/L3_block.png). Accepted by B2 as a tight spot in build_log.md (B2b-r3). Optional improvement: route F17 below A3 (one crossing with M3 instead of two, no parallel run).",
+    "severity": "SHOULD",
+    "owner": "B2",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   },
+   {
+    "rule_id": "VIEW-READABILITY",
+    "layer": "L5",
+    "model": "L3",
+    "element": "bpmn.io watermark",
+    "message": "The bpmn.io watermark (licence requirement of bpmn-js, must stay visible and uncovered) sits bottom-right over the label of the collapsed Regulatory authority pool in the L3 default view (round 2: L4-02). Accepted (licence constraint, SHOULD note); no repair.",
+    "severity": "SHOULD",
+    "owner": "W1",
+    "status": "documented-choice",
+    "sevstat": "SHOULD documented-choice"
+   }
+  ]
+ },
+ {
+  "record": "verdict",
+  "verdict": "pass with documented exceptions",
+  "lines": [
+   "**pass with documented exceptions.** No open MUST in any layer (round 2 had 1: L3 FLW-07 F3, now fixed). The one MUST that remains is FLW-09 at L4-03 S1, an exception the orchestrator accepted (conflicts.md C-27, rule_exceptions; the user can revisit it). The two open SHOULD findings are documentation only: notes.md and l3_cut.md text. No model element, XML or viewer file has to change.",
+   "",
+   "Changes since round 2, each checked in the specs, in the XML and in the viewer:",
+   "",
+   "- L3: AND split G1 leads to A2 and to XOR G5 'Intentional protocol deviation considered?' (Yes to A3, No to XOR join G6), then AND join G2. L3 has no inclusiveGateway in spec or XML, and FLW-04/FLW-08 hold. Round-2 MUST fixed.",
+   "- L4-02: G1 has no default flow. Its two labelled flows carry no conditionExpression (accepted B2 limitation). A14 'Report deviation to sponsor' now runs before G4 'Which additional reports are due?'. G4 has the default F21 'No further report' straight into the OR join G5, so E3 'Deviation reported to sponsor' is true on every path.",
+   "- L4-03 A14 carries REQ-083/075/076 (sponsor) with binding-ICH, DRAFT and five [verify] items, and the viewer shows ICH, DRAFT and VERIFY. Round-2 GEN-03 fixed.",
+   "- The minimap is closed by default on all 9 diagrams in both variants. Round-2 W1 SHOULD fixed.",
+   "- OR default-flow check (all models): there are 4 OR splits (L4-02 G1, G4; L4-03 G2; L4-08 G3). Every default flow goes straight to the OR join with nothing on the path, so no default carries work that must run alongside a true branch. The new automatic check is self-tested: 28/28 seeded faults found.",
+   "",
+   "Comparison with round 2: 7 records are fixed. 3 were open: the L3 FLW-07 MUST, the L4-03 A14 GEN-03 SHOULD and the minimap SHOULD. The other 4 were documented items that no longer apply because their elements changed: the conditionExpression on L3 F4 and L4-02 F3, and the bpmnlint warnings on L3 G1/G2. Nothing is still open from round 2; 8 records are new, 2 of them open SHOULD findings.",
+   "",
+   "Accepted items, reported as accepted and not open:",
+   "",
+   "- FLW-09 (MUST) and SCP-02 at L4-03 S1 (C-27).",
+   "- The B2 conditionExpression handling: 6 FLW-02 flows plus L4-02 F2/F3 under FLW-07.",
+   "- calledElement in the per-model L3.bpmn.",
+   "- FLW-07 at L4-02 G1 (no default flow).",
+   "- The bpmn.io watermark covering a pool label (licence).",
+   "",
+   "Other documented items:",
+   "",
+   "- SCP-03 at L4-01, L4-02 and L4-03.",
+   "- 8 bpmnlint no-inclusive-gateway warnings (DEC-02).",
+   "- FLW-05 at L3 G5: a trigger attribute instead of a deciding activity, plausible under the TA1 reading convention. The user should confirm it.",
+   "- LAY-02 tight spot on L3 (M12 runs 7 px beside F17), which B2 accepted in build_log.",
+   "",
+   "Open SHOULD findings (repair optional, text only):",
+   "",
+   "- B1, notes.md section 6, L4-03 G4 row: the A12 label is out of date, and the row should name A14 as the deciding activity.",
+   "- Y1, l3_cut.md A2: it names a task 'Evaluate monitoring findings' that does not exist.",
+   "",
+   "Not checked: whether the model fits the real process (GEN-06, process owners); the source texts themselves (X1); whether cdn.jsdelivr.net serves files byte-identical to viewer/node_modules (offline; SRI would block a different body); browsers other than headless Chrome."
+  ],
+  "timestamp": "2026-11-07T17:41:10+00:00"
+ }
+]

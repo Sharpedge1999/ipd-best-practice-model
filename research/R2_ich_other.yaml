@@ -1,0 +1,3402 @@
+# R2 - ICH design and reporting (E8(R1) incl. mandatory CtQ part, E3, E3 Q&A (R1), E9, E9(R1), M11)
+# One atomic obligation or definition per record, sorted by id. Fetch IDs (F01...) refer to the fetch log in R2_notes.md.
+# Modal mapping for sentences without 'should/may/must': see R2_notes.md section 5.
+
+# =============================================================== E8R1
+- id: R2-001
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 3"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F01, F07)"
+  paraphrase: "Quality by design means concentrating on critical to quality factors so that participants' rights, safety and well-being are protected, results are reliable and meaningful, and risks to those factors are managed in proportion to the risk. A framework for identifying and reviewing these factors supports the approach from design and planning through conduct, analysis and reporting."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: "study design and planning"
+  action: "Apply quality by design centred on critical to quality factors across the study life cycle"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, QbD]
+  related: [R2-003]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-002
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.1"
+  loc_alt: ""
+  page: "printed 3"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F06, F07)"
+  paraphrase: "Quality is built in prospectively through attention to the protocol, procedures, operational plans and training, which can raise the chance of answering the study questions and avoiding important errors. Retrospective document and data review, monitoring and audits are an important part of quality assurance but, even combined, are not sufficient on their own to ensure study quality (statement, no 'should')."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study design and planning"
+  action: "Design quality in prospectively instead of relying on retrospective review, monitoring and audit alone"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [QbD, RBQM]
+  related: [R2-001]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-003
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02, F06)"
+  paraphrase: "Critical to quality factors are attributes of a study whose integrity is fundamental to protecting participants, to the reliability and interpretability of the results, and to the decisions based on them. They are critical because errors in design or conduct that undermine them would also undermine the reliability or ethics of those decisions."
+  quote: "attributes of a study whose integrity is fundamental"
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Define critical to quality factors"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-027, R2-116]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-004
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02, F09)"
+  paraphrase: "The sponsor and the other parties designing quality into a study should identify its critical to quality factors; each study should have a basic set of quality-relevant factors identified, with emphasis on those that are critical to study quality."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "The sponsor and other parties designing quality into a clinical study"
+  party_norm: sponsor
+  trigger: "study design"
+  action: "Identify the critical to quality factors of the study"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-003, R2-012]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-005
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02)"
+  paraphrase: "Critical to quality factors should be considered as a whole so that interdependencies between them are recognised."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study design"
+  action: "Consider CtQ factors holistically and recognise their interdependencies"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-004]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F02)"]
+
+- id: R2-006
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02)"
+  paraphrase: "Study design should reflect current knowledge of the drug, the condition, the underlying biology and the intended population; knowledge accumulated at each development stage continues to inform which factors are critical and which controls are used to manage them."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study design; new knowledge on the product"
+  action: "Base CtQ factors and their controls on current product, disease and population knowledge"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-022]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F02)"]
+
+- id: R2-007
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02, F06)"
+  paraphrase: "Once critical to quality factors are identified, the risks to them are to be determined and a decision taken whether each risk is acceptable or should be mitigated, based on its probability, detectability and impact (framed in the source as important)."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "The sponsor and other parties designing quality into a clinical study"
+  party_norm: sponsor
+  trigger: "CtQ factors identified"
+  action: "Assess each risk to a CtQ factor by probability, detectability and impact and decide to accept or mitigate it"
+  deadline: "none"
+  recipient: ""
+  record: "risk assessment"
+  step_hint: assess
+  themes: [CtQ, RBQM]
+  related: [R2-009]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-008
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02)"
+  paraphrase: "The term risk is used in the sense of general risk management methodology and applies to all factors of a study."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Interpret risk per general risk management methodology"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: [R2-007]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F02)"]
+
+- id: R2-009
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02, F09)"
+  paraphrase: "Where a risk to a critical to quality factor is to be mitigated, the necessary control processes should be put in place and communicated, and the necessary mitigating actions taken."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "The sponsor and other parties designing quality into a clinical study"
+  party_norm: sponsor
+  trigger: "risk to a CtQ factor judged to need mitigation"
+  action: "Put control processes in place, communicate them and take mitigating actions"
+  deadline: "none"
+  recipient: "not specified (those involved in the study)"
+  record: "control processes"
+  step_hint: mitigate
+  themes: [CtQ, RBQM]
+  related: [R2-007, R2-026]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-010
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02)"
+  paraphrase: "Proactive, ongoing communication about critical to quality factors and risk mitigation activities supports a shared understanding by sponsor and sites of priorities and resource allocation (presented as beneficial, no 'should')."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "CtQ factors and mitigations defined"
+  action: "Communicate CtQ factors and mitigation activities to sponsor staff and sites"
+  deadline: "ongoing"
+  recipient: "sites"
+  record: ""
+  step_hint: other
+  themes: [CtQ, RBQM]
+  related: [R2-011]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F02)"]
+
+- id: R2-011
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 4-5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02, F06)"
+  paraphrase: "Proactive support, for example site training appropriate to role and a description in the protocol of the critical to quality factors and potential mitigation measures, helps ensure the protocol, procedures and associated plans are implemented correctly."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "CtQ factors and mitigations defined"
+  action: "Describe CtQ factors and potential mitigation measures in the protocol and train site staff according to role"
+  deadline: "none"
+  recipient: "sites"
+  record: "protocol"
+  step_hint: define
+  themes: [CtQ, training]
+  related: [R2-116]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-012
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02, F09)"
+  paraphrase: "Because perfection in every aspect is rarely achievable, or only with disproportionate resources, quality factors should be prioritised at the design stage to identify those that are critical, and procedures should be proportionate to the risks and to the importance of the information collected."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study design"
+  action: "Prioritise quality factors to single out the critical ones and scale procedures to risk"
+  deadline: "at the design stage"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: [R2-004, R2-013]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-013
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.2"
+  loc_alt: ""
+  page: "printed 5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F02, F09)"
+  paraphrase: "Critical to quality factors should be clear and should not be cluttered with minor issues, for example those arising from extensive secondary objectives or from processes and data collection unrelated to participant protection or the primary objectives."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study design"
+  action: "Keep the CtQ list focused and free of minor issues"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-012]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-014
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3"
+  loc_alt: ""
+  page: "printed 5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03)"
+  paraphrase: "Identifying critical to quality factors should include judging whether the objectives can be met effectively and efficiently with the chosen design and data sources; the quality approach asks whether objectives are clear, the design answers the question, the question matters to patients and hypotheses are specific and valid. Early patient consultation can support this."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study design"
+  action: "Check that objectives are achievable with the chosen design and data sources when identifying CtQ factors"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-004]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F03)"]
+
+- id: R2-015
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3"
+  loc_alt: ""
+  page: "printed 5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F32)"
+  paraphrase: "Study designs should be operationally feasible and avoid unnecessary complexity; protocols and data collection tools should allow the study to be conducted as designed and avoid unnecessary data collection."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "protocol and data collection tool design"
+  action: "Design a feasible, non-complex protocol and data collection tools without unnecessary data"
+  deadline: "none"
+  recipient: ""
+  record: "protocol; data collection tools"
+  step_hint: define
+  themes: [CtQ, data]
+  related: [R2-018]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-016
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.1"
+  loc_alt: ""
+  page: "printed 5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F32)"
+  paraphrase: "A culture that values critical thinking and open dialogue, beyond tools and checklists, is encouraged; inflexible one-size-fits-all approaches should be discouraged, and while standard operating procedures are necessary, study-specific strategies and actions are also needed to ensure quality."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Complement standard procedures with study-specific quality strategies and actions"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-073]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-017
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.1"
+  loc_alt: ""
+  page: "printed 5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03)"
+  paraphrase: "Evidence supporting quality decisions should be gathered and reviewed transparently before and during the study, acknowledging known gaps and conflicts and anticipating new ones."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "before and during the study"
+  action: "Gather and review quality evidence transparently"
+  deadline: "before and during the study"
+  recipient: ""
+  record: ""
+  step_hint: assess
+  themes: [CtQ]
+  related: []
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F03)"]
+
+- id: R2-018
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.2"
+  loc_alt: ""
+  page: "printed 5"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F32)"
+  paraphrase: "Effort should focus on activities essential to reliable and meaningful outcomes and to safe, ethical conduct, and consideration should be given to eliminating nonessential activities and data collection."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study design"
+  action: "Focus on essential activities and consider removing nonessential activities and data collection"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-015]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-019
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.2"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F06, F07)"
+  paraphrase: "Resources should be directed to detecting, and to preventing or controlling, the errors that matter."
+  quote: "Resources should be deployed to identify and prevent or control errors that matter."
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning and conduct"
+  action: "Deploy resources to identify, prevent or control errors that matter"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: identify
+  themes: [CtQ, RBQM]
+  related: [R2-031]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-020
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.3"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F32)"
+  paraphrase: "Study design benefits from input from a broad range of stakeholders, including patients and healthcare providers, and should be open to challenge by internal and external experts; investigators, study coordinators, other site staff and patients or patient organisations may contribute insight, for example on enrolment feasibility, visit burden that could cause dropouts, and endpoint relevance."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "clinical investigators, study coordinators and other site staff, and patients/patient organisations"
+  party_norm: other
+  trigger: "study design"
+  action: "Obtain stakeholder input on design, feasibility, visit burden and endpoints"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-034]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-021
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.3"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F32)"
+  paraphrase: "Early engagement with regulatory authorities is encouraged, particularly where novel critical elements such as populations, procedures or endpoints are involved."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "novel critical study elements"
+  action: "Engage regulatory authorities early on novel critical elements"
+  deadline: "early (study design)"
+  recipient: "regulatory authorities"
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: []
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-022
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.4"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F06)"
+  paraphrase: "Accumulated experience and knowledge, together with periodic review of the critical to quality factors, should inform whether risk control mechanisms need adjustment, because new or unanticipated issues may arise once the study has started."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study ongoing; new or unanticipated issues; accumulated experience"
+  action: "Review CtQ factors periodically and adjust risk control mechanisms where needed"
+  deadline: "periodic (frequency not stated)"
+  recipient: ""
+  record: ""
+  step_hint: assess
+  themes: [CtQ, RBQM]
+  related: [R2-006, R2-030]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-023
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.4"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F09)"
+  paraphrase: "Studies with adaptive features and/or interim decision points need specific attention in proactive planning, ongoing review and risk management."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study with adaptive features or interim decision points"
+  action: "Give adaptive and interim-decision designs specific attention in planning, review and risk management"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: [R2-022]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-024
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.5"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F32)"
+  paraphrase: "A successful study rests on a protocol that is scientifically sound and operationally feasible; the feasibility assessment considers design and implementation elements that could affect operational completion, including regional practice, qualified investigators, equipment and facilities, availability of the target population and enrolment capacity."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Assess operational feasibility of design and implementation elements"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-041]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-025
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S3.3.5"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F03, F32)"
+  paraphrase: "Retention and follow-up of study participants are also key critical to quality factors."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Treat participant retention and follow-up as CtQ factors"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-088, R2-105]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-026
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S6.1"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F05, F07)"
+  paraphrase: "Quality by design principles should guide study conduct and reporting, and risk-proportionate mitigation measures should be used to preserve the integrity of the critical to quality factors."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study conduct"
+  action: "Apply risk-proportionate mitigation to protect CtQ factors during conduct"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: mitigate
+  themes: [CtQ, RBQM]
+  related: [R2-009]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-027
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S6.1.1"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F05, F06, F07)"
+  paraphrase: "Adherence to the protocol and related documents is essential, and many aspects of adherence should be counted among the study's critical to quality factors."
+  quote: "aspects of adherence should be considered among the study's critical to quality factors"
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "CtQ identification"
+  action: "Include key aspects of protocol adherence among the CtQ factors"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, iPD]
+  related: [R2-003, R2-073]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-028
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S6.1.1"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F05)"
+  paraphrase: "Good quality by design may reduce the number of protocol amendments and support ongoing adherence; where an amendment is necessary, its rationale should be clearly explained and its impact on study conduct carefully considered."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "protocol amendment needed"
+  action: "Explain the amendment rationale and assess its impact on study conduct"
+  deadline: "none"
+  recipient: ""
+  record: "protocol amendment"
+  step_hint: other
+  themes: [amendment]
+  related: [R2-053]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F05)"]
+
+- id: R2-029
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S6.1.2"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F05)"
+  paraphrase: "People involved in conducting the study should receive training appropriate to their role before they take part."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (study personnel)"
+  party_norm: other
+  trigger: "personnel joining the study"
+  action: "Train personnel to their role before involvement"
+  deadline: "before involvement in the study"
+  recipient: "study personnel"
+  record: ""
+  step_hint: define
+  themes: [training]
+  related: [R2-030]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F05)"]
+
+- id: R2-030
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S6.1.2"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F05, F09)"
+  paraphrase: "Updated training or retraining may be needed to address issues with critical to quality factors that arise during the study, or protocol amendments."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "issues with CtQ factors identified during conduct; protocol amendment"
+  action: "Provide updated training or retraining"
+  deadline: "none"
+  recipient: "study personnel"
+  record: ""
+  step_hint: mitigate
+  themes: [CtQ, training]
+  related: [R2-022, R2-029]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-031
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S6.1.3"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F05, F09)"
+  paraphrase: "Operational checks, centralised data monitoring and statistical surveillance can detect important data quality issues so that corrective action can be taken."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "ongoing data collection"
+  action: "Use operational checks, centralised monitoring and statistical surveillance to detect data quality issues for correction"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: identify
+  themes: [data, RBQM]
+  related: [R2-019]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-032
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S6.3"
+  loc_alt: ""
+  page: "printed 19"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F05, F06, F07)"
+  paraphrase: "Designing the study report is part of quality by design, and the report should describe the critical to quality factors of the study."
+  quote: "The report should describe the critical to quality factors in the study."
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study reporting"
+  action: "Describe the study's CtQ factors in the study report"
+  deadline: "none"
+  recipient: ""
+  record: "study report"
+  step_hint: report-csr
+  themes: [CtQ]
+  related: [R2-055]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-033
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20-21"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "Identification of critical to quality factors should be supported by early cross-functional discussion and decisions during study planning, and the 18 listed aspects should be considered where relevant when designing a study; the list is not exhaustive, may not apply to every study, and other aspects may be needed."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Run early cross-functional CtQ identification using the listed considerations"
+  deadline: "during study planning"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-004]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-034
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 1 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: relevant stakeholders, including patients, are engaged in study planning and design."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Engage stakeholders including patients"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-020, R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-035
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 2 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the prerequisite non-clinical studies and, where applicable, clinical studies are complete and adequate to support the study."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Confirm prerequisite studies are complete and adequate"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-036
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 3 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: study objectives address relevant scientific questions suited to the study's role in development, taking accumulated product knowledge into account."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Set scientifically relevant objectives"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-037
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 4 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the design supports a meaningful comparison of the drug's effects with the chosen control group."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Design for meaningful comparison with the control"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-038
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 5 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: adequate measures protect participants' rights, safety and welfare, for example informed consent, ethics review, investigator and site training, and pseudonymisation."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Put participant protection measures in place"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, safety]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-039
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 6 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: information provided to participants should be clear and understandable."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Make participant information clear and understandable"
+  deadline: "none"
+  recipient: "participants"
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-040
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 7 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the competencies and training that sponsor and investigator staff need for their roles in the study are identified."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "sponsor (bullet also names investigator staff)"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Identify required competencies and training by role"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, training]
+  related: [R2-029, R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: ["[verify] full verbatim role wording of bullet 7 (fetch F08 truncated after 'by sponsor')"]
+
+- id: R2-041
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 8 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: study feasibility should be assessed to ensure the study is operationally viable."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Assess operational feasibility"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-024, R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-042
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 9 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the number of participants, study duration and visit frequency are sufficient to support the objectives."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Size sample, duration and visit schedule to the objectives"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-043
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 10 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: eligibility criteria reflect the study objectives and are well documented in the protocol."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Define and document eligibility criteria aligned to objectives"
+  deadline: "none"
+  recipient: ""
+  record: "protocol"
+  step_hint: define
+  themes: [CtQ, eligibility]
+  related: [R2-033, R2-068]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-044
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 11 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the protocol specifies the data needed to meet the objectives, understand benefit-risk and monitor safety."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Specify required data in the protocol"
+  deadline: "none"
+  recipient: ""
+  record: "protocol"
+  step_hint: define
+  themes: [CtQ, data]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-045
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 12 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: response variables and the methods to assess them are well defined and support evaluation of the drug's effects."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Define response variables and assessment methods"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-046
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 13 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: study procedures include adequate measures to minimise bias, such as randomisation and blinding."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Build bias-minimising measures into procedures"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-047
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 14 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the statistical analysis plan is pre-specified and defines analysis methods appropriate to the endpoints and populations."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Pre-specify the statistical analysis plan"
+  deadline: "none"
+  recipient: ""
+  record: "statistical analysis plan"
+  step_hint: define
+  themes: [CtQ, analysis]
+  related: [R2-033, R2-076]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-048
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 15 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: systems and processes are in place that support study conduct and ensure the integrity of critical study data."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Establish systems and processes protecting critical data integrity"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, data]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-049
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 16 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the extent and nature of study monitoring are tailored to the study design, objectives and participant safety needs."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Tailor monitoring extent and nature to design, objectives and safety"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, RBQM]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-050
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 17 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: the need for, and appropriate role of, a data monitoring committee is assessed."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Assess need and role of a data monitoring committee"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ, safety]
+  related: [R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-051
+  src: E8R1
+  doc: "ICH E8(R1) General Considerations for Clinical Studies, Final version, Step 4, adopted 6 October 2021"
+  url: "https://database.ich.org/sites/default/files/E8-R1_Guideline_Step4_2021_1006.pdf"
+  loc: "S7"
+  loc_alt: ""
+  page: "printed 20; bullet 18 of 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F04, F08)"
+  paraphrase: "CtQ consideration: reporting of study results is planned, comprehensive, accurate, timely and publicly accessible."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "study planning"
+  action: "Plan comprehensive, accurate, timely and public results reporting"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [CtQ]
+  related: [R2-032, R2-033]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+# =============================================================== E3
+- id: R2-052
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "SIntroduction"
+  loc_alt: ""
+  page: "printed 1-2"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F12, F14)"
+  paraphrase: "The design and conduct sections of the report should clarify features not well described in the protocol and identify how the study as conducted differed from the protocol, and the report should discuss the statistical methods used to account for these deviations from the planned protocol."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Identify how conduct differed from the protocol and explain the statistical handling"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-055]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-053
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S9.8"
+  loc_alt: ""
+  page: "printed 12"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F10, F14)"
+  paraphrase: "Any change in study conduct or planned analyses made after the study started (for example dropping a treatment group, changing entry criteria or doses, adjusting sample size) should be described, with timing, reasons, decision procedure, responsible persons or groups and the data available (and to whom) at the time, whether or not the change was made by formal protocol amendment; implications for interpretation should be discussed."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "change in conduct or planned analyses after study start"
+  action: "Describe each change with timing, reasons, procedure and responsible persons"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report section 9.8"
+  step_hint: report-csr
+  themes: [amendment]
+  related: [R2-028]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] section content from a single fetch (F14); section number confirmed in TOC (F10)"]
+
+- id: R2-054
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S10.1"
+  loc_alt: ""
+  page: "printed 12-13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F12, F14)"
+  paraphrase: "The report should account clearly for all patients who entered the study, give the numbers randomised and completing each phase, and give the reasons for all post-randomisation discontinuations by treatment and major reason (for example lost to follow-up, adverse event, poor compliance); appendix 16.2.1 lists all discontinued patients by centre and treatment group with the specific reason."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Report patient disposition and discontinuation reasons and list discontinued patients"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report section 10.1; appendix 16.2.1"
+  step_hint: report-csr
+  themes: [disposition]
+  related: [R2-064]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-055
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S10.2"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F10, F11, F12, F14)"
+  paraphrase: "All important deviations related to inclusion or exclusion criteria, conduct of the study, patient management or patient assessment should be described in the report."
+  quote: "All important deviations related to study inclusion or exclusion criteria"
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "important protocol deviations occurred in the study"
+  action: "Describe all important deviations in CSR section 10.2"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report section 10.2"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-056, R2-058, R2-072]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-056
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S10.2"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F10, F11)"
+  paraphrase: "In the body of the report, protocol deviations should be appropriately summarised by centre and grouped into different categories."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Summarise deviations by centre and group them into categories"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report section 10.2"
+  step_hint: classify
+  themes: [iPD]
+  related: [R2-055, R2-057]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-057
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S10.2"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F10, F14)"
+  paraphrase: "Example deviation categories: patients who entered the study without meeting the entry criteria; patients who developed withdrawal criteria during the study but were not withdrawn; patients who received the wrong treatment or an incorrect dose; patients who received an excluded concomitant treatment."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (examples)"
+  party_norm: other
+  trigger: ""
+  action: "Use example categories as a starting point for deviation grouping"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [iPD, eligibility]
+  related: [R2-056, R2-068, R2-074]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-058
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S10.2"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F10, F11)"
+  paraphrase: "Individual patients with these protocol deviations should be listed in appendix 16.2.2, broken down by centre for multicentre studies."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "List patients with protocol deviations by centre in appendix 16.2.2"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report appendix 16.2.2"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-055, R2-063, R2-072]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-059
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S11.1"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F11)"
+  paraphrase: "The patients included in each efficacy analysis should be precisely defined; if the inclusion and exclusion rules for analyses were not defined in the protocol, the report should explain when (relative to unblinding) and how they were developed; a study intended to establish efficacy should also include an analysis of all randomised or enrolled patients with on-treatment data. The section does not itself name protocol deviations as an exclusion basis."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Define analysis populations and report when and how exclusion rules were set relative to unblinding"
+  deadline: "none (timing relative to unblinding to be reported)"
+  recipient: ""
+  record: "clinical study report section 11.1"
+  step_hint: report-csr
+  themes: [analysis]
+  related: [R2-087]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F11)"]
+
+- id: R2-060
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S11.1"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F11, F15)"
+  paraphrase: "A tabular listing of all patients, visits and observations excluded from the efficacy analysis should be provided in appendix 16.2.3, with Annex VI as an example format."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "List excluded patients, visits and observations in appendix 16.2.3"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report appendix 16.2.3"
+  step_hint: report-csr
+  themes: [analysis]
+  related: [R2-063, R2-092]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-061
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S11.1"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F11, F15)"
+  paraphrase: "The reasons for exclusions should also be analysed for the whole treatment group over time, with Annex VII as an example format."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Analyse exclusion reasons by treatment group over time"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report section 11.1"
+  step_hint: report-csr
+  themes: [analysis]
+  related: [R2-060]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-062
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S11.4.2.6"
+  loc_alt: ""
+  page: "printed 17"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F12, F15)"
+  paraphrase: "Where patients with available data are dropped from an efficacy subset for reasons such as poor compliance, missed visits or ineligibility, the effect on the results should be examined closely; an analysis of all available data should be performed for every study intended to establish efficacy, and important differences arising from the choice of population should be discussed explicitly."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "patients dropped from an efficacy subset"
+  action: "Examine the effect of exclusions and present an all-available-data analysis"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report section 11.4.2.6"
+  step_hint: assess
+  themes: [analysis]
+  related: [R2-090]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-063
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "S16.2"
+  loc_alt: ""
+  page: "printed 29"
+  retrieval: "WebFetch 2026-11-06 offset 0 and offset 100000 (F10, F12, F13)"
+  paraphrase: "The appendix structure for patient data listings includes 16.2.1 discontinued patients, 16.2.2 protocol deviations and 16.2.3 patients excluded from the efficacy analysis (titles only; the content requirements sit in sections 10.1, 10.2 and 11.1)."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (report structure)"
+  party_norm: other
+  trigger: ""
+  action: "Provide deviation and exclusion listings in the defined appendices"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report appendices 16.2.1, 16.2.2, 16.2.3"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-054, R2-058, R2-060]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-064
+  src: E3
+  doc: "ICH Harmonised Tripartite Guideline E3 Structure and Content of Clinical Study Reports, Current Step 4 version, 30 November 1995"
+  url: "https://database.ich.org/sites/default/files/E3_Guideline.pdf"
+  loc: "SAnnex-IVa"
+  loc_alt: ""
+  page: "printed 35 [verify]"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F13)"
+  paraphrase: "The example patient disposition flowchart in Annex IVa lists 'protocol violation' as a reason for withdrawal; the E3 Q&A (R1) later clarifies the intended meaning and suggests relabelling it 'protocol deviation'."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (example)"
+  party_norm: other
+  trigger: ""
+  action: "Show protocol-related withdrawals in the disposition flowchart"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report Annex IVa flowchart"
+  step_hint: report-csr
+  themes: [disposition]
+  related: [R2-070, R2-071]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] annex page numbers read from footers; fetch F13 warned they may be off by one"]
+
+# =============================================================== E3QA
+- id: R2-065
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S1"
+  loc_alt: ""
+  page: "printed 1-2"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F33)"
+  paraphrase: "E3 is a guideline, not a set of rigid requirements or a template, with flexibility built in; each report should consider all topics described unless clearly not relevant, sequence and grouping may be changed, and where a relevant aspect is omitted the report should say so and give the reason."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "sponsors"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Apply E3 flexibly and explain omitted relevant aspects"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report"
+  step_hint: report-csr
+  themes: [CSR]
+  related: [R2-074]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] answer content from a single fetch (F33); topic confirmed in F16"]
+
+- id: R2-066
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F17)"
+  paraphrase: "A protocol deviation is any change, divergence or departure from the study design or procedures defined in the protocol."
+  quote: "any change, divergence, or departure from the study design or procedures"
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Define protocol deviation"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [iPD]
+  related: [R2-067]
+  conflict_note: ""
+  confidence: high
+  verify: ["[verify] the Q&A item is unnumbered under heading '3. TERMINOLOGY'; fetch tool rendered its row label as '7 June 2012', which may be a row number 7 plus 'June 2012'"]
+
+- id: R2-067
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F17, F18)"
+  paraphrase: "Important protocol deviations are the subset of protocol deviations that may significantly affect the completeness, accuracy and/or reliability of the study data, or that may significantly affect a subject's rights, safety or well-being."
+  quote: "may significantly impact the completeness, accuracy, and/or reliability of the study data"
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Classify a deviation as important if it may significantly affect data reliability or subject rights, safety or well-being"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [iPD, data, safety]
+  related: [R2-066, R2-073]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-068
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F35)"
+  paraphrase: "Examples of important protocol deviations may include enrolling subjects in violation of key eligibility criteria designed to ensure a specific population, or failing to collect data needed to interpret primary endpoints, as this may compromise the scientific value of the trial."
+  quote: ""
+  modal: example
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (examples)"
+  party_norm: other
+  trigger: ""
+  action: "Use the examples when defining trial-specific important deviations"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [iPD, eligibility]
+  related: [R2-057, R2-067]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-069
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F35)"
+  paraphrase: "The terms 'protocol violation' and 'important protocol deviation' are sometimes used interchangeably for a significant departure from protocol requirements; 'violation' may also carry other meanings in a regulatory context."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Treat 'protocol violation' as a term to avoid or define precisely"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [iPD, terminology]
+  related: [R2-070]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-070
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 6-7"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F35)"
+  paraphrase: "In E3 Annex IVa (subject disposition), 'protocol violation' was meant only for a departure from study requirements, by the subject or investigator, that resulted in the subject's withdrawal from study participation; whether such subjects are included in the analysis is a separate question."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Keep withdrawal-causing departures (disposition) separate from analysis-set decisions"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [iPD, disposition, terminology]
+  related: [R2-064, R2-071]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-071
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 7-8"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F35)"
+  paraphrase: "To avoid confusion, sponsors are encouraged to replace 'protocol violation' in Annex IVa with 'protocol deviation', as shown in the example flowchart on page 8, or may use another descriptor if the information is broadly consistent with the stated definition."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "sponsors"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Label protocol-related withdrawals as 'protocol deviation' in the disposition flowchart"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report disposition flowchart"
+  step_hint: report-csr
+  themes: [disposition, terminology]
+  related: [R2-064, R2-070]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-072
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 7"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F17)"
+  paraphrase: "Deviations generally considered important, as exemplified in E3, should be described in CSR section 10.2 and included in the appendix 16.2.2 listing; the Q&A does not say whether non-important deviations are also reported."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "important protocol deviations occurred"
+  action: "Describe important deviations in CSR section 10.2 and list them in appendix 16.2.2"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report section 10.2; appendix 16.2.2"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-055, R2-058]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-073
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 7"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F17, F35)"
+  paraphrase: "The definition of important protocol deviations for a particular trial is determined in part by the study design, the critical procedures, the study data, the subject protections described in the protocol, and the planned analyses of study data."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: "trial design"
+  action: "Derive the trial-specific definition of important deviations from design, critical procedures, data, subject protections and planned analyses"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [iPD]
+  related: [R2-027, R2-067, R2-074]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-074
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 7"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F17)"
+  paraphrase: "Consistent with the flexibility of E3, sponsors may amend or add to the E3 examples of important deviations to fit the needs of the trial."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "sponsors"
+  party_norm: sponsor
+  trigger: "trial-specific iPD definition"
+  action: "Adapt or extend the E3 examples of important deviations for the trial"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [iPD]
+  related: [R2-073, R2-075]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-075
+  src: E3QA
+  doc: "ICH E3 Guideline Structure and Content of Clinical Study Reports - Questions and Answers (R1), Step 4, current version 6 July 2012"
+  url: "https://database.ich.org/sites/default/files/E3_Q&As_R1_Q&As.pdf"
+  loc: "S3"
+  loc_alt: ""
+  page: "printed 7"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F16, F18)"
+  paraphrase: "Substantial additions to or changes of the E3 examples of important deviations should be clearly described for the reviewer."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] Step 4 ICH Q&A; registry default verify-binding overridden because Step 4 status confirmed; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "E3 examples of important deviations substantially changed"
+  action: "Explain substantial changes to the important-deviation examples in the report"
+  deadline: "none"
+  recipient: "the reviewer"
+  record: "clinical study report"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-074]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+# =============================================================== E9
+- id: R2-076
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2"
+  loc_alt: ""
+  page: "printed 22"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19)"
+  paraphrase: "The set of subjects whose data are included in the main analyses should be defined in the statistical section of the protocol."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (protocol content)"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Define analysis sets in the protocol statistical section"
+  deadline: "none"
+  recipient: ""
+  record: "protocol statistical section"
+  step_hint: define
+  themes: [analysis]
+  related: [R2-115]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F19)"]
+
+- id: R2-077
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2"
+  loc_alt: ""
+  page: "printed 22"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19, F21)"
+  paraphrase: "The protocol should specify procedures aimed at minimising anticipated irregularities in study conduct that might impair a satisfactory analysis, including protocol violations, withdrawals and missing values."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (protocol content)"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Specify in the protocol procedures that minimise protocol violations, withdrawals and missing values"
+  deadline: "none"
+  recipient: ""
+  record: "protocol"
+  step_hint: define
+  themes: [analysis, data]
+  related: [R2-078]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-078
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2"
+  loc_alt: ""
+  page: "printed 22"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19)"
+  paraphrase: "The protocol should consider ways both to reduce the frequency of such problems and to handle in the analysis the problems that do occur."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (protocol content)"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Plan prevention and analytical handling of conduct irregularities"
+  deadline: "none"
+  recipient: ""
+  record: "protocol"
+  step_hint: mitigate
+  themes: [analysis]
+  related: [R2-077]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F19)"]
+
+- id: R2-079
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2"
+  loc_alt: ""
+  page: "printed 22"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19, F21)"
+  paraphrase: "Possible amendments to the way the analysis will deal with protocol violations should be identified during the blind review."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "blind review before unblinding"
+  action: "Identify changes to the analytical handling of protocol violations at blind review"
+  deadline: "during blind review, before breaking the blind"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [iPD, analysis]
+  related: [R2-091, R2-096]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-080
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2"
+  loc_alt: ""
+  page: "printed 22"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19, F21)"
+  paraphrase: "It is desirable to characterise each important protocol violation by when it occurred, its cause and its influence on the trial result."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "important protocol violation identified"
+  action: "Record timing, cause and influence on the result for each important violation"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: assess
+  themes: [iPD]
+  related: [R2-081]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-081
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2"
+  loc_alt: ""
+  page: "printed 22"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19, F21)"
+  paraphrase: "The frequency and type of protocol violations, missing values and other problems should be documented in the clinical study report, together with their possible influence on the trial results."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Report frequency, type and possible influence of protocol violations in the CSR"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-055, R2-080]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-082
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.1"
+  loc_alt: ""
+  page: "printed 22-23"
+  retrieval: "WebFetch 2026-11-06 offset 0 and offset 100000 (F19, F20)"
+  paraphrase: "Under the intention-to-treat principle the primary analysis should include all randomised subjects; the full analysis set is as complete as possible, and only limited circumstances may justify excluding randomised subjects, such as failure to satisfy major entry criteria, taking no trial medication, or having no post-randomisation data; any exclusion should always be justified."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "analysis set definition"
+  action: "Keep randomised subjects in the full analysis set unless a justified exclusion applies"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [analysis]
+  related: [R2-083, R2-084]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-083
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.1"
+  loc_alt: ""
+  page: "printed 22-23"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19, F21)"
+  paraphrase: "Subjects who fail an entry criterion may be excluded from the full analysis set without introducing bias only if the criterion was measured before randomisation, detection of the eligibility violation is completely objective, all subjects receive equal scrutiny for such violations (which underlines the importance of blind review), and all detected violations of that criterion are excluded."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "eligibility violation detected"
+  action: "Apply the four conditions before excluding eligibility violators from the full analysis set"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [analysis, eligibility, iPD]
+  related: [R2-082, R2-113]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-084
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.1"
+  loc_alt: ""
+  page: "printed 23"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19)"
+  paraphrase: "When the full analysis set is used, protocol violations after randomisation may affect the data and conclusions, especially where their occurrence relates to treatment assignment; in most respects it is appropriate to include data from such subjects, consistent with intention-to-treat."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "post-randomisation protocol violation"
+  action: "Retain data of subjects with post-randomisation violations in the full analysis set"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: assess
+  themes: [analysis, iPD]
+  related: [R2-082]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F19)"]
+
+- id: R2-085
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.1"
+  loc_alt: ""
+  page: "printed 23"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19)"
+  paraphrase: "Because some problems cannot be foreseen, the handling of irregularities may sometimes be deferred to the blind review at the end of the trial, if the protocol so specifies."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "unforeseen irregularity in conduct"
+  action: "Defer handling decisions to the end-of-trial blind review where the protocol allows"
+  deadline: "blind review at the end of the trial"
+  recipient: ""
+  record: "protocol"
+  step_hint: classify
+  themes: [analysis]
+  related: [R2-079]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F19)"]
+
+- id: R2-086
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.2"
+  loc_alt: ""
+  page: "printed 23-24 [verify]"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19, F21)"
+  paraphrase: "The per protocol set is the subset of the full analysis set that is more compliant with the protocol, characterised by a pre-specified minimal exposure to treatment, availability of primary variable measurements, and absence of major protocol violations, including violation of entry criteria."
+  quote: "the absence of any major protocol violations including the violation of entry criteria"
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Exclude subjects with major protocol violations from the per protocol set"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [analysis, iPD]
+  related: [R2-087, R2-106]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] printed page: 23 per F19, 24 per F21"]
+
+- id: R2-087
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.2"
+  loc_alt: ""
+  page: "printed 23-24 [verify]"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F19, F21)"
+  paraphrase: "The precise reasons for excluding subjects from the per protocol set should be fully defined and documented before the blind is broken."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "analysis preparation"
+  action: "Define and document per protocol exclusion reasons"
+  deadline: "before breaking the blind"
+  recipient: ""
+  record: "documented per protocol exclusion reasons"
+  step_hint: classify
+  themes: [analysis, iPD]
+  related: [R2-079, R2-086, R2-092]
+  conflict_note: ""
+  confidence: high
+  verify: ["[verify] printed page: 23 per F19, 24 per F21"]
+
+- id: R2-088
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.2"
+  loc_alt: ""
+  page: "printed 24"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20, F22)"
+  paraphrase: "Protocol violations other than those used to define the per protocol set should be fully identified and summarised; relevant violations may include errors in treatment assignment, use of excluded medication, poor compliance, loss to follow-up and missing data."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "analysis preparation"
+  action: "Identify and summarise all other protocol violations"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: identify
+  themes: [iPD]
+  related: [R2-025, R2-089]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-089
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.2"
+  loc_alt: ""
+  page: "printed 24"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20)"
+  paraphrase: "It is good practice to assess the pattern of such problems across treatment groups with respect to frequency and time of occurrence."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "protocol violations summarised"
+  action: "Compare frequency and timing of violations between treatment groups"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: assess
+  themes: [iPD]
+  related: [R2-088]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F20)"]
+
+- id: R2-090
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S5.2.3"
+  loc_alt: ""
+  page: "printed 24 [verify]"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20, F22)"
+  paraphrase: "It is generally advantageous to show that the main results are not sensitive to the choice of analysed subjects; in confirmatory trials it is usually appropriate to plan analyses of both the full analysis set and the per protocol set so that differences can be discussed, and exclusion of a substantial proportion of subjects from the per protocol set casts some doubt on the overall validity of the trial."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "confirmatory trial analysis planning"
+  action: "Plan full analysis set and per protocol analyses and discuss differences"
+  deadline: "none"
+  recipient: ""
+  record: "statistical analysis plan"
+  step_hint: assess
+  themes: [analysis]
+  related: [R2-062]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] section content from a single fetch (F20); start page 24 per TOC and F22, 25 per F20"]
+
+- id: R2-091
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S7.1"
+  loc_alt: ""
+  page: "printed 30"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20, F22)"
+  paraphrase: "Decisions taken during the blinded pre-analysis review, such as excluding subjects or data from the analysis sets, should be described in the report and distinguished from decisions taken after unblinding."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "blind review completed"
+  action: "Report blind review decisions separately from post-unblinding decisions"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report"
+  step_hint: report-csr
+  themes: [analysis, iPD]
+  related: [R2-079, R2-096]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-092
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S7.1"
+  loc_alt: ""
+  page: "printed 30"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20, F22)"
+  paraphrase: "All reasons for exclusion from analysis should be documented, including, for subjects in the full analysis set but not the per protocol set, the reasons for their exclusion from the latter."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "subject or data excluded from an analysis"
+  action: "Document every reason for exclusion from analysis"
+  deadline: "none"
+  recipient: ""
+  record: "exclusion reasons (CSR)"
+  step_hint: document
+  themes: [analysis]
+  related: [R2-060, R2-087]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-093
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S7.1"
+  loc_alt: ""
+  page: "printed 30"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20, F22)"
+  paraphrase: "The effect on the main analyses of all losses of subjects or data, withdrawals from treatment and major protocol violations should be considered carefully."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "analysis and reporting"
+  action: "Assess the effect of major protocol violations on the main analyses"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: assess
+  themes: [iPD, analysis]
+  related: [R2-094]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-094
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S7.1"
+  loc_alt: ""
+  page: "printed 30"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20, F22)"
+  paraphrase: "Subjects lost to follow-up, withdrawn from treatment or with a severe protocol violation should be identified and described, including their reasons and the relationship to treatment and outcome."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "clinical study report preparation"
+  action: "Identify and describe subjects with severe protocol violations, with reasons and relation to treatment and outcome"
+  deadline: "none"
+  recipient: ""
+  record: "clinical study report"
+  step_hint: report-csr
+  themes: [iPD]
+  related: [R2-093]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-095
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "S7.2"
+  loc_alt: ""
+  page: "printed 31"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20, F22)"
+  paraphrase: "When summarising the clinical database across trials, the handling of protocol violators and deviators, together with the other conventions listed, should be kept compatible unless there are valid reasons not to."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "summary across trials (submission)"
+  action: "Handle protocol violators and deviators consistently across trials"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: other
+  themes: [iPD, analysis]
+  related: []
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-096
+  src: E9
+  doc: "ICH Harmonised Tripartite Guideline E9 Statistical Principles for Clinical Trials, Current Step 4 version, 5 February 1998"
+  url: "https://database.ich.org/sites/default/files/E9_Guideline.pdf"
+  loc: "GL:Blind Review"
+  loc_alt: ""
+  page: "printed 32"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F20)"
+  paraphrase: "Blind review is the checking and assessment of data between trial completion and the breaking of the blind, in order to finalise the planned analysis."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Define blind review"
+  deadline: "between trial completion and breaking of the blind"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [analysis]
+  related: [R2-079, R2-091]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] glossary wording from a single fetch (F20)"]
+
+# =============================================================== E9R1
+- id: R2-097
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.1"
+  loc_alt: ""
+  page: "printed 3"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23, F24)"
+  paraphrase: "The addendum revisits per protocol analysis, asking whether the need to explore the impact of protocol violations and deviations can be met in a way that is less biased and more interpretable than a naive per protocol analysis."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (scope statement)"
+  party_norm: other
+  trigger: ""
+  action: "Consider estimand-based alternatives to naive per protocol analysis"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [analysis, estimand]
+  related: [R2-107]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-098
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.1"
+  loc_alt: ""
+  page: "printed 3"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23)"
+  paraphrase: "Discontinuation of randomised treatment is distinguished from withdrawal from the study: treatment discontinuation is an intercurrent event to be addressed in the estimand, whereas study withdrawal leads to missing data."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Distinguish treatment discontinuation from study withdrawal"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [estimand, data]
+  related: [R2-101]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F23)"]
+
+- id: R2-099
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.3.1"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23)"
+  paraphrase: "Very granular events, such as a single missed dose of a chronic treatment or a dose taken at the wrong time of day, need not be handled as intercurrent events if they are not expected to affect interpretation of the variable."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Exclude very granular adherence events from intercurrent event handling where interpretation is unaffected"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [estimand]
+  related: [R2-110]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F23)"]
+
+- id: R2-100
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.3.1"
+  loc_alt: ""
+  page: "printed 6"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23, F24)"
+  paraphrase: "Where the relevance of an intercurrent event depends on its reason, magnitude or timing, that additional information should be defined and recorded accurately in the trial."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "intercurrent event whose relevance depends on reason, magnitude or timing"
+  action: "Define and accurately record reason, magnitude and timing"
+  deadline: "none"
+  recipient: ""
+  record: "trial data on reason, magnitude and timing of the event"
+  step_hint: document
+  themes: [estimand, data]
+  related: [R2-104]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-101
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.3.1"
+  loc_alt: ""
+  page: "printed 7"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23)"
+  paraphrase: "Withdrawal from the trial and other reasons for missing data, such as administrative censoring, are not intercurrent events in themselves, although a subject may have experienced an intercurrent event before withdrawing."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Classify withdrawal as a missing data cause, not an intercurrent event"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [estimand, data]
+  related: [R2-098]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] sentence content from a single fetch (F23)"]
+
+- id: R2-102
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.3.4"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23, F34)"
+  paraphrase: "For non-inferiority and equivalence trials, which are not conservative, minimising the number of protocol violations and deviations, non-adherence and withdrawals is important."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "non-inferiority or equivalence trial"
+  action: "Minimise protocol violations and deviations, non-adherence and withdrawals"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: mitigate
+  themes: [iPD, estimand]
+  related: [R2-077]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-103
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.4"
+  loc_alt: ""
+  page: "printed 13"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23, F24)"
+  paraphrase: "Efforts should be made to collect all data relevant to support estimation; discontinuation, switching or added medication does not mean the variable cannot be measured afterwards."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "trial conduct, including after an intercurrent event"
+  action: "Continue collecting relevant data after intercurrent events"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: other
+  themes: [estimand, data]
+  related: [R2-105]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] exact sentence boundaries; confirmed only as short phrases (F24)"]
+
+- id: R2-104
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.4"
+  loc_alt: ""
+  page: "printed 14"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23, F24)"
+  paraphrase: "A prospective plan to collect informative reasons why intended data are missing may help distinguish intercurrent events from missing data, for example by recording a loss to follow-up more accurately as discontinuation due to lack of efficacy."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "trial planning"
+  action: "Plan collection of informative reasons for missing data"
+  deadline: "prospective (before conduct)"
+  recipient: ""
+  record: "reasons for missing data"
+  step_hint: document
+  themes: [estimand, data]
+  related: [R2-100]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-105
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.4"
+  loc_alt: ""
+  page: "printed 14"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F24, F34)"
+  paraphrase: "Measures can be implemented to retain subjects in the trial."
+  quote: ""
+  modal: may
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "trial conduct"
+  action: "Implement subject retention measures"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: mitigate
+  themes: [estimand, data]
+  related: [R2-025]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-106
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.5.3"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F23, F24, F25)"
+  paraphrase: "The addendum contrasts protocol violations and deviations with intercurrent events: a violation or deviation such as an out-of-window visit might exclude a subject from the per protocol set without any intercurrent event, and a subject could experience an intercurrent event such as death without having deviated from the protocol. It does not state this as a formal rule."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Classify protocol deviations and intercurrent events as separate dimensions"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [iPD, estimand]
+  related: [R2-086, R2-107, R2-110]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-107
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.5.3"
+  loc_alt: ""
+  page: "printed 18"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F24, F25)"
+  paraphrase: "Despite these differences, events that affect the interpretation or existence of measurements are addressed in the estimand description; an estimand with an aligned analysis method might better address the objective usually given to per protocol analysis, in which case per protocol analysis may add little further insight."
+  quote: "Notwithstanding the differences between violations and deviations from the protocol and intercurrent events"
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Address measurement-affecting events in the estimand rather than via naive per protocol analysis"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: classify
+  themes: [iPD, estimand, analysis]
+  related: [R2-097, R2-106]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-108
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.6"
+  loc_alt: ""
+  page: "printed 19"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F25, F34)"
+  paraphrase: "Summaries of the number and timing of each intercurrent event in each treatment group should be reported in the clinical trial report (term used in the source)."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "trial report preparation"
+  action: "Summarise number and timing of each intercurrent event by treatment group"
+  deadline: "none"
+  recipient: ""
+  record: "clinical trial report"
+  step_hint: report-csr
+  themes: [estimand]
+  related: [R2-109]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-109
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "SA.6"
+  loc_alt: ""
+  page: "printed 19"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F25, F34)"
+  paraphrase: "Where intercurrent events not foreseen at the design stage are identified during trial conduct, the report should discuss the analysis choices made and their effect on the estimand, on the treatment effect estimated and on interpretation of the results."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not named (report content)"
+  party_norm: sponsor
+  trigger: "unforeseen intercurrent event identified during conduct"
+  action: "Discuss analysis choices and impact on estimand and interpretation in the report"
+  deadline: "none"
+  recipient: ""
+  record: "clinical trial report"
+  step_hint: report-csr
+  themes: [estimand]
+  related: [R2-108]
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-110
+  src: E9R1
+  doc: "ICH E9(R1) Addendum on Estimands and Sensitivity Analysis in Clinical Trials to the Guideline on Statistical Principles for Clinical Trials, Final version, Step 4, adopted 20 November 2019"
+  url: "https://database.ich.org/sites/default/files/E9-R1_Step4_Guideline_2019_1203.pdf"
+  loc: "GL:Intercurrent Events"
+  loc_alt: ""
+  page: "printed 20"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F24, F25)"
+  paraphrase: "Intercurrent events are events occurring after treatment initiation that affect either the interpretation or the existence of the measurements associated with the clinical question of interest."
+  quote: ""
+  modal: definition
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline; EU route owned by R3, US route owned by R4"
+  jurisdiction: ICH
+  party: "not applicable (definition)"
+  party_norm: other
+  trigger: ""
+  action: "Define intercurrent event"
+  deadline: "none"
+  recipient: ""
+  record: ""
+  step_hint: define
+  themes: [estimand]
+  related: [R2-106]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] only the opening words of the glossary definition were returned verbatim (F24)"]
+
+# =============================================================== M11 and M11-TEMPLATE
+- id: R2-111
+  src: M11
+  doc: "ICH Harmonised Guideline M11 Structure and Content of Clinical Protocols - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Final version, Step 4, adopted 19 November 2025"
+  url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Guideline_2025_1119.pdf"
+  loc: "S2.1"
+  loc_alt: ""
+  page: "printed 2"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F26, F30)"
+  paraphrase: "The M11 Template gives a uniform table of contents and common headers for any medicinal product trial; top-level headings are fixed while lower-level sections may be adapted; the Template should be used together with the other ICH guidelines relevant to the conduct of clinical trials."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline adopted 19 November 2025; regional implementation not checked (R3, R4)"
+  jurisdiction: ICH
+  party: "not named (protocol authors)"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Use the M11 Template together with other relevant ICH guidelines"
+  deadline: "none"
+  recipient: ""
+  record: "protocol"
+  step_hint: define
+  themes: [protocol]
+  related: [R2-112]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] section content from a single fetch (F30); Step 4 status confirmed in F26"]
+
+- id: R2-112
+  src: M11-TEMPLATE
+  doc: "ICH M11 Template - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Final version, Step 4, adopted 19 November 2025"
+  url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Template_2025_1119.pdf"
+  loc: "SConventions [verify]"
+  loc_alt: ""
+  page: "printed iv-vii"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F31)"
+  paraphrase: "Template conventions: instructional text is removed before the protocol is finalised; level 1 and level 2 headings are required, must not be deleted or modified, and are kept with 'Not applicable' where they do not apply; optional lower-level headings may be omitted and additional headings added."
+  quote: ""
+  modal: must
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline adopted 19 November 2025; regional implementation not checked (R3, R4)"
+  jurisdiction: ICH
+  party: "not named (protocol authors)"
+  party_norm: sponsor
+  trigger: "protocol authoring with the M11 Template"
+  action: "Retain all level 1 and level 2 headings, marking non-applicable ones"
+  deadline: "none"
+  recipient: ""
+  record: "protocol"
+  step_hint: define
+  themes: [protocol]
+  related: [R2-116, R2-117]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] section label of the conventions part and wording; single fetch (F31)"]
+
+- id: R2-113
+  src: M11-TEMPLATE
+  doc: "ICH M11 Template - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Final version, Step 4, adopted 19 November 2025"
+  url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Template_2025_1119.pdf"
+  loc: "S5.1"
+  loc_alt: ""
+  page: "printed 25"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F27, F31)"
+  paraphrase: "Prospective approval of protocol deviations from recruitment and enrolment criteria, known as protocol waivers or exemptions, is not permitted."
+  quote: ""
+  modal: must
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline adopted 19 November 2025; regional implementation not checked (R3, R4)"
+  jurisdiction: ICH
+  party: "not named"
+  party_norm: sponsor
+  trigger: "candidate participant does not meet eligibility criteria"
+  action: "Do not grant prospective waivers or exemptions from eligibility criteria"
+  deadline: "none"
+  recipient: ""
+  record: "protocol section 5.1"
+  step_hint: other
+  themes: [iPD, eligibility]
+  related: [R2-083]
+  conflict_note: ""
+  confidence: high
+  verify: ["[verify] whether the sentence is fixed universal text or instructional text of the template"]
+
+- id: R2-114
+  src: M11-TEMPLATE
+  doc: "ICH M11 Template - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Final version, Step 4, adopted 19 November 2025"
+  url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Template_2025_1119.pdf"
+  loc: "S6.8"
+  loc_alt: ""
+  page: "printed 32"
+  retrieval: "WebFetch 2026-11-06 offset 0 (F27, F31)"
+  paraphrase: "The protocol describes how adherence to the trial intervention will be monitored and documented (for example accountability records, diaries, concentration measurements), lists the mandatory adherence records and identifies which records are source records (imperative template instruction)."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline adopted 19 November 2025; regional implementation not checked (R3, R4)"
+  jurisdiction: ICH
+  party: "not named (protocol authors)"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Specify adherence monitoring, documentation and source records in the protocol"
+  deadline: "none"
+  recipient: ""
+  record: "protocol section 6.8; adherence records"
+  step_hint: document
+  themes: [data, protocol]
+  related: []
+  conflict_note: ""
+  confidence: high
+  verify: []
+
+- id: R2-115
+  src: M11-TEMPLATE
+  doc: "ICH M11 Template - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Final version, Step 4, adopted 19 November 2025"
+  url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Template_2025_1119.pdf"
+  loc: "S10.2"
+  loc_alt: ""
+  page: "printed 47"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F28, F29)"
+  paraphrase: "The protocol describes the trial-level analysis sets, aligned with the estimands, and specifies the analysis set used for each analysis; the instruction does not mention protocol deviations (imperative template instruction)."
+  quote: ""
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline adopted 19 November 2025; regional implementation not checked (R3, R4)"
+  jurisdiction: ICH
+  party: "not named (protocol authors)"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Describe analysis sets aligned with estimands"
+  deadline: "none"
+  recipient: ""
+  record: "protocol section 10.2"
+  step_hint: define
+  themes: [analysis, protocol]
+  related: [R2-076]
+  conflict_note: ""
+  confidence: medium
+  verify: ["[verify] instruction text from a single fetch (F29); heading listed in F28"]
+
+- id: R2-116
+  src: M11-TEMPLATE
+  doc: "ICH M11 Template - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Final version, Step 4, adopted 19 November 2025"
+  url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Template_2025_1119.pdf"
+  loc: "S11.6"
+  loc_alt: ""
+  page: "printed 53"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F28, F29)"
+  paraphrase: "Under the heading Risk-Based Quality Management, the protocol describes the identified critical to quality factors, the associated risks and the risk mitigation strategies for the trial, or refers to the location where this information is described and updated during the trial based on emerging data (imperative template instruction)."
+  quote: "Describe the identified critical to quality factors, associated risks and risk mitigation strategies"
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline adopted 19 November 2025; regional implementation not checked (R3, R4)"
+  jurisdiction: ICH
+  party: "not named (protocol authors)"
+  party_norm: sponsor
+  trigger: "protocol development; emerging data during the trial"
+  action: "Document CtQ factors, risks and mitigations in the protocol or a referenced, maintained location"
+  deadline: "updated during the trial"
+  recipient: ""
+  record: "protocol section 11.6 or referenced document"
+  step_hint: define
+  themes: [CtQ, RBQM, protocol]
+  related: [R2-003, R2-011, R2-112]
+  conflict_note: ""
+  confidence: high
+  verify: ["[verify] printed page: TOC shows 52 (F27), footer 53 (F28, F29)"]
+
+- id: R2-117
+  src: M11-TEMPLATE
+  doc: "ICH M11 Template - Clinical Electronic Structured Harmonised Protocol (CeSHarP), Final version, Step 4, adopted 19 November 2025"
+  url: "https://database.ich.org/sites/default/files/ICH_Step4_M11_Final_Template_2025_1119.pdf"
+  loc: "S11.10"
+  loc_alt: ""
+  page: "printed 54"
+  retrieval: "WebFetch 2026-11-06 offset 100000 (F28, F29)"
+  paraphrase: "Under the heading Protocol Deviations, the protocol describes the plans for detecting, reviewing and reporting any deviations from the protocol, or refers to a separate document; the template gives no definition of important deviations (imperative template instruction)."
+  quote: "Describe plans for detecting, reviewing, and reporting any deviations from the protocol"
+  modal: should
+  binding: binding-ICH
+  draft: false
+  binding_route: "[verify] ICH Step 4 guideline adopted 19 November 2025; regional implementation not checked (R3, R4)"
+  jurisdiction: ICH
+  party: "not named (protocol authors)"
+  party_norm: sponsor
+  trigger: "protocol development"
+  action: "Describe deviation detection, review and reporting plans in the protocol or a referenced document"
+  deadline: "none"
+  recipient: ""
+  record: "protocol section 11.10 or referenced document"
+  step_hint: define
+  themes: [iPD, protocol]
+  related: [R2-073, R2-112]
+  conflict_note: ""
+  confidence: high
+  verify: ["[verify] printed page: TOC shows 53 (F27), footer 54 (F28, F29)"]
