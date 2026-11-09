@@ -594,7 +594,8 @@ def load_verify_triage(path, warnings):
             warnings.append("verify triage: %s entry without wording: %s" % (c, t[:60]))
         if c == "general" and text(it.get("general")) not in general:
             warnings.append("verify triage: unknown general statement %r for: %s" % (it.get("general"), t[:60]))
-        items[t] = {"class": c, "wording": text(it.get("wording")), "general": text(it.get("general"))}
+        items[t] = {"class": c, "wording": text(it.get("wording")), "general": text(it.get("general")),
+                    "not_on": [text(x) for x in as_list(it.get("not_on")) if text(x)]}
     return {"general": general, "items": items}
 
 
@@ -603,10 +604,13 @@ def apply_verify_triage(citations, triage, warnings):
     are not shown. The raw texts stay in the model, the requirements, the findings and the register (verify_raw)."""
     items, used_general, untriaged = triage["items"], set(), set()
 
-    def split(raw):
+    def split(raw, eid=None):
+        # not_on: elements that carry the text although it does not concern them (shown there as dropped)
         opened, notes = [], []
         for v in raw:
             t = items.get(v)
+            if t is not None and eid and eid in t.get("not_on", []):
+                continue
             if t is None:
                 untriaged.add(v)
                 t = {"class": "open", "wording": VERIFY_TAG.sub("", v).strip(), "general": ""}
@@ -634,7 +638,8 @@ def apply_verify_triage(citations, triage, warnings):
         f["verify"], f["verify_notes"] = split(f["verify_raw"])
     for rec in citations["elements"].values():
         rec["verify_raw"] = rec["verify"]
-        rec["verify"], rec["verify_notes"] = split(rec["verify_raw"])
+        rec["verify"], rec["verify_notes"] = split(rec["verify_raw"], rec["id"])
+        blocked = set(t["wording"] for t in items.values() if rec["id"] in t.get("not_on", []))
         for rq in rec["reqs"]:
             rq["verify_raw"] = rq["verify"]
             rq["verify"], rq["verify_notes"] = split(rq["verify_raw"])
@@ -646,9 +651,9 @@ def apply_verify_triage(citations, triage, warnings):
                     f["verify"], f["verify_notes"] = split(f["verify_raw"])
                 if isinstance(f, dict):
                     fops += f.get("verify", [])
-            # an open point of a requirement, or of a finding behind it, also marks the element
+            # an open point of a requirement, or of a finding behind it, also marks the element (unless not_on)
             for w in rq["verify"] + fops:
-                if w not in rec["verify"]:
+                if w not in rec["verify"] and w not in blocked:
                     rec["verify"].append(w)
         open_loc = False
         for s in rec["sources"]:
