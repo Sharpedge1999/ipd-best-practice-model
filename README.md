@@ -11,6 +11,7 @@ Status: final build 07 Nov 2026; viewer fix (readable labels on highlighted and 
 | `out/ipd_best_practice.bpmn` | BPMN 2.0 XML with DI: L3 overview plus eight L4 models in one definitions file; per-model files in `out/models/` |
 | `out/ipd_best_practice_map.html` | Interactive map, one self-contained file (works offline) |
 | `out/publish/` | Hosted variant of the map: bpmn-js 18.31.1 and diagram-js-minimap 5.6.0 from jsDelivr with SRI, model and citations as own files |
+| GitHub Pages | `.github/workflows/pages.yml` publishes `out/publish/` on every push to `main` that changes it (plus the offline map as `offline.html`). One-time setup: Settings → Pages → Source: GitHub Actions |
 | `out/citations.json` | Trace data per element (sources, findings, requirements) used by the map |
 | `register/` | Requirements register (`iPD_Requirements_Register.md`, split copy in `parts/`) and handover |
 
