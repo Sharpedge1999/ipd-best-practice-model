@@ -729,7 +729,7 @@
     if (!f || f.missing) return '<div class="find"><h4>' + esc(f ? f.id : '') + '</h4><p class="muted">Finding not in merged_findings.yaml.</p></div>';
     var b = BINDING_BADGE[f.binding];
     var h = '<div class="find"><h4>' + esc(f.id) + ' ' + (b ? badge(b) : '') + (f.draft ? ' ' + badge('DRAFT') : '') + '</h4>';
-    h += '<p class="kv">' + esc([f.doc, f.loc + (f.loc_alt ? ' (other version: ' + f.loc_alt + ')' : ''), f.page ? 'page ' + f.page : ''].filter(Boolean).join(' | ')) + '</p>';
+    h += '<p class="kv">' + esc([f.doc, locOf(f) + (f.loc_alt ? ' (other version: ' + f.loc_alt + ')' : ''), pageOf(f) ? 'page ' + pageOf(f) : ''].filter(Boolean).join(' | ')) + '</p>';
     if (f.paraphrase) h += '<p>' + esc(f.paraphrase) + '</p>';
     if (f.quote) h += '<blockquote class="quote">"' + esc(f.quote) + '"</blockquote>';
     var kv = [];
@@ -806,7 +806,7 @@
     if (fl.length) {
       h += '<details><summary class="kv">' + (s.findings_match === 'key' ? 'Findings from ' + esc(s.key) + ' behind the linked requirements (no finding at exactly this location)' : 'Text at this location') + ' (' + fl.length + ')</summary>';
       fl.slice(0, 3).forEach(function (f) {
-        h += '<div class="find"><div class="tag">' + esc(f.id) + ' | ' + esc(f.loc) + (f.page ? ' | page ' + esc(f.page) : '') + '</div>';
+        h += '<div class="find"><div class="tag">' + esc(f.id) + ' | ' + esc(locOf(f)) + (pageOf(f) ? ' | page ' + esc(pageOf(f)) : '') + '</div>';
         if (f.paraphrase) h += '<p>' + esc(f.paraphrase) + '</p>';
         if (f.quote) h += '<blockquote class="quote">"' + esc(f.quote) + '"</blockquote>';
         (f.verify || []).forEach(function (v) { h += verifyBox(v); });
@@ -892,7 +892,8 @@
     var openVerify = rec.verify.slice();
     if (rec.binding === 'verify-binding') openVerify.unshift('Binding class to be verified');
     if (openVerify.length) {
-      h += '<details class="sec-d"><summary>' + badge('VERIFY') + 'Open checks (' + openVerify.length + ')</summary><div class="sec-b">' +
+      // open by default: an open point is what a reader of a VERIFY step has to see
+      h += '<details class="sec-d" open><summary>' + badge('VERIFY') + 'Open checks (' + openVerify.length + ')</summary><div class="sec-b">' +
         openVerify.map(verifyBox).join('') + '</div></details>';
     }
     if (step && rec.reqs.length) {

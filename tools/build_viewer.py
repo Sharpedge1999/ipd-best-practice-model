@@ -596,7 +596,15 @@ def load_verify_triage(path, warnings):
             warnings.append("verify triage: unknown general statement %r for: %s" % (it.get("general"), t[:60]))
         items[t] = {"class": c, "wording": text(it.get("wording")), "general": text(it.get("general")),
                     "not_on": [text(x) for x in as_list(it.get("not_on")) if text(x)]}
-    return {"general": general, "items": items}
+    inline = []
+    for it in data.get("inline") or []:
+        if text(it.get("tag")) and text(it.get("action")) in ("strip", "replace", "keep"):
+            inline.append({"tag": it["tag"], "fields": [text(f) for f in as_list(it.get("fields"))],
+                           "action": text(it.get("action")), "note": text(it.get("note")),
+                           "with": it.get("with") or ""})
+        else:
+            warnings.append("verify triage: inline rule without tag or action skipped")
+    return {"general": general, "items": items, "inline": inline}
 
 
 def apply_verify_triage(citations, triage, warnings):
@@ -688,6 +696,44 @@ def apply_verify_triage(citations, triage, warnings):
             else:
                 md.append([kind, val])
         dg["model_doc"] = md
+    # inline fragments in displayed fields: strip the ones the triage settled (a note may replace them)
+    def inline_clean(val, field, notes=None):
+        if not isinstance(val, str) or "[verify" not in val.lower():
+            return val
+        for rule in triage.get("inline", []):
+            if rule["action"] in ("strip", "replace") and field in rule["fields"] and rule["tag"] in val:
+                val = re.sub(r"\s{2,}", " ", val.replace(rule["tag"], rule["with"] if rule["action"] == "replace" else "")).strip()
+                if rule["note"] and notes is not None and rule["note"] not in notes:
+                    notes.append(rule["note"])
+        return val
+
+    def clean_finding(f):
+        f["binding_route"] = inline_clean(f.get("binding_route", ""), "binding_route")
+        loc, page = inline_clean(f.get("loc", ""), "loc"), inline_clean(f.get("page", ""), "page")
+        if loc != f.get("loc", ""):
+            f["loc_shown"] = loc
+        if page != f.get("page", ""):
+            f["page_shown"] = page
+
+    for f in citations["findings"].values():
+        clean_finding(f)
+    for rec in citations["elements"].values():
+        rec["binding_routes"] = [inline_clean(r, "binding_route") for r in rec["binding_routes"]]
+        for fld in ("deadline", "record", "party"):
+            rec[fld] = inline_clean(rec.get(fld, ""), fld, rec["verify_notes"])
+        for rq in rec["reqs"]:
+            for fld in ("binding_route", "recipient", "deadline", "record", "party", "trigger", "action"):
+                rq[fld] = inline_clean(rq.get(fld, ""), fld, rq.setdefault("verify_notes", []))
+            for f in rq.get("findings", []):
+                if isinstance(f, dict) and not f.get("missing"):
+                    clean_finding(f)
+    leftover = sorted(set(m.group(0) for r in citations["elements"].values()
+                          for v in [r.get("deadline", ""), r.get("record", ""), r.get("party", "")] + r["binding_routes"] +
+                          [q.get(k, "") for q in r["reqs"] for k in ("binding_route", "recipient", "deadline", "record", "party")]
+                          for m in re.finditer(r"\[verify[^\]]*\]", v or "", re.I)))
+    for tag in leftover:
+        if not any(rule["tag"].strip() in tag or tag in rule["tag"] for rule in triage.get("inline", []) if rule["action"] == "keep"):
+            warnings.append("verify triage: inline fragment left in a displayed field: %s" % tag)
     after = sum(1 for r in citations["elements"].values() if "VERIFY" in r["badges"])
     for v in sorted(untriaged):
         warnings.append("verify triage: no entry, shown as VERIFY: %s" % v[:90])

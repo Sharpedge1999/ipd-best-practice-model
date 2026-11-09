@@ -1,0 +1,1535 @@
+# Verify triage for the interactive map (tools/build_viewer.py --verify-triage).
+# One entry per raw "[verify]" text of the model, requirements and findings. The raw texts stay unchanged in
+# spec/, out/*.bpmn, synthesis/ and register/; this file only decides how the map shows them:
+#   open    - VERIFY badge and a yellow box with the general wording (a reviewer must look)
+#   note    - plain note in the side panel, no badge
+#   general - covered by one general statement in the legend (general:)
+#   drop    - settled at the source; not shown
+# Triage per level against the local source texts (vendor/sources), X1 results and synthesis/conflicts.md;
+# evidence records what was checked.
+inline:
+- tag: ' [verify binding]'
+  fields:
+  - binding_route
+  action: strip
+  evidence: ICH regional adoption; covered by the general statement G-ADOPTION (contracts/source_registry.yaml binding notes;
+    synthesis/conflicts.md C-06).
+- tag: '[verify] '
+  fields:
+  - binding_route
+  action: strip
+  evidence: '''EU: [verify] via EU CTR Art. 47 / EMA adoption'' on E6(R3) findings: E6(R3) adoption is documented (EU CTR
+    Art. 47 second paragraph; EMA effective dates in vendor/sources/EMA-E6R3/doc_13.txt lines 26-27); general statement G-ADOPTION.'
+- tag: ' [verify]'
+  fields:
+  - loc
+  - page
+  action: strip
+  evidence: Finding copies of the source locations triaged as drop or G-LOCATION (SOURCE-LOC entries); none is open.
+- tag: ' [verify channel]'
+  fields:
+  - recipient
+  action: strip
+  note: The source does not say how affected subjects are informed; informing them through the investigator is assumed.
+  evidence: 'vendor/sources/EMA-SB/doc_11.txt lines 758-759 (Appendix II): ''proper risk proportional actions are taken, which
+    may include informing the subjects affected''; no channel named. REQ-142 (L3_A6, L4_06_A6).'
+- tag: '[verify 5 working days]'
+  fields:
+  - deadline
+  action: keep
+  evidence: Open point C-11 (21 CFR 56.104(c) window), triaged open by L4-03; the deadline keeps its marker on L4_03_A11 and
+    L4_03_M2.
+- tag: '[verify] 5 working days'
+  fields:
+  - deadline
+  action: keep
+  evidence: Same open point C-11 on REQ-086.
+- tag: '[verify whether its 5-working-day'
+  fields:
+  - deadline
+  action: keep
+  evidence: Same open point C-11 on finding R4-005.
+- tag: ' [verify R3]'
+  fields:
+  - binding_route
+  action: strip
+  evidence: 'EMA page confirms Annex 2 effective 15 January 2027: vendor/sources/EMA-E6R3/doc_13.txt lines 27 and 44.'
+- tag: '[verify R4 whether Annex 2 adopted]'
+  fields:
+  - binding_route
+  action: replace
+  with: (FDA Annex 2 still draft)
+  evidence: 'FDA page lists E6(R3) Annex 2 as draft guidance: vendor/sources/FDA-E6R3-A2/doc_31.txt lines 64-81.'
+- tag: FDA-SDTCG [verify]
+  fields:
+  - binding_route
+  action: replace
+  with: FDA-SDTCG
+  evidence: 'L4-07 triage: the DV domain text of FDA-SDTCG S4.1.1.3 is on page 16 of 97 (vendor/sources/FDA-SDTCG/doc_41.txt
+    lines 1405-1456); X1 confirmed R5-069 and R5-070.'
+- tag: Data Standards Catalog [verify]
+  fields:
+  - binding_route
+  action: keep
+  evidence: 'Open point ''SDTM/SDTMIG version and DVCLASI status'' (L4-07): the FDA Data Standards Catalog has no local copy.'
+general:
+  G-ADOPTION:
+    wording: 'ICH guidelines apply through regional adoption. E6(R3) adoption is documented (EU: EU CTR Art. 47, EMA dates;
+      US: FDA guidance); for E3, E3 Q&A, E8(R1), E9, E9(R1) and M11 it was not checked. In the US they are nonbinding guidance.'
+    evidence: 'Brief wording needs correction: it says adoption was not checked guideline by guideline and that ICH guidelines
+      ''bind'' through EMA and FDA. contracts/source_registry.yaml: E6R3 notes EU effective dates (Principles and Annex 1
+      23 Jul 2025, Annex 2 15 Jan 2027) and US FDA guidance; FDA-E6R3 ''US adoption of ICH E6(R3): nonbinding guidance; 21
+      CFR binds''; E3, E8R1, E9, E9R1 ''EU/US adoption not checked [verify binding]'', E3QA ''regional adoption not checked'',
+      M11 ''regional implementation date not checked'', M11-TEMPLATE ''regional route [verify binding]''. synthesis/requirements.yaml
+      binding_route: E6R3 route (97 REQs) names EU CTR Art. 47 ''appropriate account'', EMA dates and ''US: FDA guidance,
+      nonbinding ... binding only where 21 CFR restates it''; E3, E3QA, E8R1, E9, E9R1, M11, M11-TEMPLATE routes say ''EU
+      and US adoption ... not checked by the research stems [verify binding]; in the US ICH guidelines are guidance only''.
+      merged_findings.yaml: FDA-E6R3 (final, nonbinding) and FDA-E6R3-A2 (Annex 2 draft) routes. synthesis/conflicts.md C-06
+      Side C: ''Adoption of E8(R1), E3, E3 Q&A, E9, E9(R1) and M11 was not checked''. Local texts: vendor/sources/EUCTR-OJ
+      Art. 47 second paragraph (''take appropriate account of ... the ICH guidelines on good clinical practice'' - GCP only,
+      so it does not carry E3 or E9); vendor/sources/EMA-E6R3/doc_13.txt lines 26-27 effective dates; vendor/sources/FDA-E6R3/doc_30.txt
+      ''Contains Nonbinding Recommendations''; vendor/sources/FDA-E6R3-A2/doc_31.txt ''Draft Guidance''. All [verify binding]
+      texts in in_*.json name only E3, E3QA, E8R1, E9, E9R1, M11, M11-TEMPLATE, so the corrected wording covers them. The
+      Annex 2 text in L4-02 (R1-089, REQ-035) concerns E6(R3) dates and is covered by the documented-adoption clause or a
+      note, not by ''not checked''.'
+  G-RETRIEVAL:
+    wording: 'Some page numbers or wordings rest on a single retrieval or could not be compared with a stored copy. The blind
+      source check covered 427 of 537 findings, all binding ones included: 414 confirmed directly, 13 after correction or
+      re-check.'
+    evidence: 'Brief numbers are right for the first pass but ''sampled'' is misleading and the re-check is missing. verification/X1_summary.md:
+      427 items, first pass 414 confirmed, 13 not confirmed (0 high, 3 medium, 10 low); section ''Re-check (gate G4)'': all
+      16 entries of x1_corrections.yaml confirmed, 12 corrected, R2-102 was an X1 error, ''Totals after re-check across the
+      427 items: 427 confirmed, 0 non-confirmed''. synthesis/verification_worklist.yaml meta: selection ''100% of binding-law
+      and binding-ICH findings; every finding with a quote; deterministic 25% sample of guidance and best-practice findings''
+      (340 binding, 197 pool, 50 sampled, 427 total); 537 findings in synthesis/merged_findings.yaml (README.md also says
+      537). Not fully checkable per X1_summary.md: TCB-PD, TCB-RBQM, NCIT-DV (no usable local text, WebFetch only), TCB-PD-TIRS
+      journal pages (PMC HTML). Guidance or best-practice findings outside the 25% sample were not checked by X1 (for example
+      R3-097, R4-084, R4-085, R5-047).'
+  G-DRAFT:
+    wording: A requirement whose only regulatory basis is draft guidance carries the DRAFT badge and counts as guidance, never
+      as binding. Where a step also has binding requirements, DRAFT appears next to its LAW or ICH badge.
+    evidence: 'out/citations.json: the text ''[verify] basis is draft guidance only - shown as DRAFT, never a binding step''
+      sits on 21 distinct REQs (REQ-012, 013, 026, 034, 041, 046, 066, 074, 076, 077, 087, 089, 100, 101, 122, 123, 132, 139,
+      153, 169, 186) on 37 elements. All 37 elements carry the DRAFT badge; all 21 REQs have draft true and binding guidance;
+      no draft REQ is binding-law or binding-ICH; all 21 draft REQs on the map carry the text; no element with a draft REQ
+      lacks the badge. The 9 elements whose REQs are all draft (L4_01_A13, L4_01_A7, L4_02_M3, L4_03_A7, L4_03_M5, L4_04_A7,
+      L4_04_M3, L4_05_A10, L4_05_M7) have binding guidance. But 25 of the 37 elements show LAW or ICH (L3_A1 to L3_A7, L3_M1,
+      L3_M9, L3_M12, L4_01_A15, L4_01_M1, L4_02_A1, L4_02_A14, L4_03_A2, L4_03_A10, L4_03_A12, L4_03_A14, L4_03_M3, L4_04_A1,
+      L4_06_A2, L4_06_A4, L4_06_A8, L4_07_A11, L4_07_M1) because each also has a non-draft binding REQ (spec/notes.md: element
+      binding = strongest REQ binding, draft true if any REQ is draft), so the step itself is binding and ''never a binding
+      step'' needs the rewording above; viewer/src/app.js legend already says ''Rests (also) on draft guidance - shown next
+      to the binding badge''. 6 of the 21 REQs (REQ-013, 034, 041, 046, 101, 186) also cite best-practice sources, hence ''only
+      regulatory basis''. requirements.yaml has 24 draft REQs: REQ-229 (interface, named only in an L4-05 model_doc open item)
+      and out-of-scope REQ-261, REQ-265 are not on map elements. Related texts that are not G-DRAFT: the R1-089 Annex 2 text
+      sits on REQ-035 with draft false (its elements L3_A2, L4_02_A1 show DRAFT only through REQ-041 and others); the C-02
+      text (REQ-013) and the DVCLASI text (REQ-186) are on draft REQs and DRAFT elements but say more than the general statement.'
+  G-LOCATION:
+    wording: For a few sources without a usable stored copy (an industry web page, a CTIS training guide) the exact section
+      label or page could not be confirmed; the content is cited from the named document.
+    evidence: 'All 11 source entries in out/citations.json with ''[verify]'' in loc or page (12 findings) checked. Only three
+      fit the statement: TCB-PD CLOSEOUT and REVIEW-ANALYZE (R5-046, R5-047; carousel tab inferred; no local copy, INDEX.md:
+      toolkit host robots-restricted; X1 checked R5-046 by WebFetch only) and CTIS-TM05 ''Other notifications'' (R3-097; vendor/sources/CTIS-TM05/doc_17.txt
+      is an EMA ''Page or document not found'' page although INDEX.md lists it as a local text). The other eight are settled
+      by the local text and should be drop, not G-LOCATION: E9 5.2.2 printed 23-24 and 24 (R2-086, R2-087, X1 confirmed),
+      E9 5.2.3 printed 24 (R2-090, X1 confirmed), E3 Annex IVa printed 35 (R2-064, X1 confirmed), FDA-SDTCG 4.1.1.3 Page 16
+      of 97 (R5-069, R5-070, X1 confirmed), M11-TEMPLATE conventions = Section 0.3 ''Template Conventions and General Instructions'',
+      printed iv-viii (R2-112, X1 confirmed), FDA-RBM13 IV.D.1 and IV.D.2 (R4-084, R4-085, not in X1): vendor/sources/FDA-RBM13/doc_32.txt
+      PDF 18-19 and TOC put the IV.D.1 bullet ''possible deviations or failures that would be critical to study integrity
+      and how these are to be recorded and reported'' on printed 15 and IV.D.2 on printed 15-16, so IV.D.1 is the right section.'
+items:
+- text: SOURCE-LOC E9 | S5.2.2 | printed 23-24 [verify]; printed 24
+  class: drop
+  topic: E9 5.2.2 printed page
+  evidence: 'vendor/sources/E9/doc_6.txt PDF 27-28: the 5.2.2 heading and criterion (i) are on printed 23; criteria (ii)-(iii),
+    the exclusion-reasons sentence (R2-087) and the violations summary (R2-088, R2-089) are on printed 24, so ''printed 23-24''
+    (R2-086) and ''printed 24'' are both right. verification/X1_results.yaml R2-086 and R2-087: confirmed, method local-text,
+    ''Page [verify] resolved''.'
+- text: '[verify] carried by the A1 start event ''CtQ factors identified'' (no separate task); closest ICH text to a CtQ-to-iPD
+    link (C-02)'
+  class: note
+  wording: ICH counts many protocol adherence aspects among CtQ factors, the nearest ICH link to iPD criteria; shown on the
+    start event, not as a task.
+  topic: 'C-02 CtQ-to-iPD link: adherence aspects carried by the start event'
+  evidence: 'vendor/sources/E8R1/doc_3.txt lines 1031-1033 (6.1.1, PDF 24 / printed 18): ''many aspects of adherence should
+    be considered among the study''s critical to quality factors''; X1 confirmed R2-027. synthesis/conflicts.md C-02 handling
+    puts REQ-001 on the start event ''CtQ factors identified''; E6R3 A1-3.9.3 (e6r3 consolidated text lines 1693-1697) names
+    no CtQ factors.'
+- text: '[verify] no ICH guideline or regulation states that iPD criteria derive from CtQ factors; the link rests on FDA-PD24
+    (draft) and best practice (C-02)'
+  class: note
+  wording: No ICH guideline or regulation derives iPD criteria from CtQ factors; this link rests on draft FDA guidance and
+    best practice only.
+  topic: C-02 no ICH or legal basis for deriving iPD criteria from CtQ factors
+  evidence: 'synthesis/conflicts.md C-02 (decision 06 Nov 2026: no ICH or legal basis claimed, REQ-013 stays DRAFT); vendor/sources/FDA-PD24/doc_29.txt
+    lines 268-273 (SIII.A.1, ''Draft - Not for Implementation''): important deviations ''should be those that could affect
+    critical-to-quality factors''; E6R3 A1-3.9.3 (e6r3 lines 1693-1697) sets iPD criteria without CtQ. Elements all show DRAFT,
+    but the text says more than G-DRAFT (see spec/notes.md L4-01 TA1).'
+- text: '[verify] protocol-provision sense of ''acceptable ranges'' (AppB-Intro), distinct from A1-3.10.1.3 (C-04)'
+  class: note
+  wording: 'Meaning of a term: ''acceptable ranges'' here are ranges allowed within specific protocol provisions, not the
+    trial-level limits set for risks to CtQ factors.'
+  topic: 'C-04 acceptable ranges: protocol-provision sense'
+  evidence: 'vendor/sources/e6r3/E6R3_consolidated_2026-06-16.txt lines 3913-3916 (Appendix B intro, PDF 78 / printed 70):
+    ''Building adaptability into the protocol, for example, by including acceptable ranges for specific protocol provisions,
+    can reduce the number of deviations''; A1-3.10.1.3 (lines 1781-1786) uses the term for trial-level limits. X1 confirmed
+    R1-109 and R1-041; synthesis/conflicts.md C-04.'
+- text: '[verify] trial-level sense of ''acceptable ranges'' (A1-3.10.1.3), distinct from the protocol-provision sense of
+    AppB-Intro (C-04)'
+  class: note
+  wording: 'Meaning of a term: ''acceptable ranges'' here are trial-level limits, such as quality tolerance limits, for risks
+    to CtQ factors, not ranges within protocol provisions.'
+  topic: 'C-04 acceptable ranges: trial-level sense'
+  evidence: 'vendor/sources/e6r3/E6R3_consolidated_2026-06-16.txt lines 1781-1786 (A1-3.10.1.3, PDF 36 / printed 28): the
+    sponsor sets ''pre-specified acceptable ranges (e.g., quality tolerance limits at the trial level) to support the control
+    of risks to critical to quality factors''; Appendix B intro (lines 3913-3916, PDF 78) uses the term for ''specific protocol
+    provisions''. X1 confirmed R1-041 and R1-109; synthesis/conflicts.md C-04 keeps the senses apart.'
+- text: '[verify] principle without named party; Sponsor lane assigned by context'
+  class: note
+  wording: 'Lane assumed: the ICH principle on strategies against serious noncompliance names no party; the step sits in the
+    sponsor lane by context.'
+  topic: 'C-25 lane by context: E6(R3) principle 6.3 names no party'
+  evidence: 'vendor/sources/e6r3/E6R3_consolidated_2026-06-16.txt lines 515-517 (Principle 6.3, PDF 13 / printed 5): ''Strategies
+    should be implemented to avoid, detect, address and prevent recurrence of serious noncompliance...'' (passive, no party;
+    R1-003 party ''not named (principle)''). synthesis/requirements_src.yaml A1-STRATEGY sets party sponsor; spec/L4-01.yaml
+    A3 is in L_SPON; same approach as synthesis/conflicts.md C-25.'
+- text: '[verify binding] EU/US adoption of E3QA not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of the E3 Q&A was not checked; decision ''E3 Q&A (R1) and M11 are binding-ICH
+    with [verify binding]''; binding_route of REQ-010, REQ-011 says US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of E8R1 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06 Side C: adoption of E8(R1) was not checked; the binding_route of the E8R1 REQs (synthesis/requirements.yaml,
+    e.g. REQ-001) says EU and US adoption not checked and US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of E9, E9R1 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06 Side C: adoption of E9 and E9(R1) was not checked; binding_route of REQ-020 says
+    US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of E9, M11-TEMPLATE not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of E9 and M11 was not checked; binding_route of REQ-019 says US guidance
+    only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of M11, M11-TEMPLATE not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: M11 adoption was not checked (decision: M11 binding-ICH with [verify binding]);
+    binding_route of REQ-207 says US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of M11-TEMPLATE not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: M11 adoption was not checked (decision: M11 binding-ICH with [verify binding]);
+    binding_route of REQ-015, REQ-022, REQ-075 says US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of M11-TEMPLATE, E8R1 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of M11 and E8(R1) was not checked; binding_route of REQ-016 says US guidance
+    only - covered by the legend statement.'
+- text: '[verify] basis is draft guidance only - shown as DRAFT, never a binding step'
+  class: general
+  general: G-DRAFT
+  topic: G-DRAFT basis is draft guidance only
+  evidence: 'Checked all 58 ids in `where` against out/citations.json (element badges) and synthesis/requirements.yaml: every
+    element shows DRAFT and every REQ (REQ-012, 013, 026, 034, 041 and the rest) has draft true; no exception.'
+- text: '[verify] detail from web page fetch only'
+  class: drop
+  topic: CTTI QbD recommendation 3 stakeholders (web page fetch)
+  evidence: 'R5-057 is not in the X1 sample, but the stored PDF vendor/sources/CTTI-QbD/doc_36.txt lines 35-50 (Recommendation
+    3, pages 1-2 of 2) has the same text as the web page doc_37.txt lines 80-92: sponsor plus ''clinical investigators, study
+    coordinators and other site staff, and patients''; feasibility of eligibility criteria and burdensome visits; ''early
+    engagement with regulators should also be considered'' for novel critical to quality features.'
+- text: '[verify] detail from web page fetch only (R5-057)'
+  class: drop
+  topic: CTTI QbD recommendation 3 stakeholders (web page fetch)
+  evidence: 'R5-057 is not in the X1 sample, but the stored PDF vendor/sources/CTTI-QbD/doc_36.txt lines 35-50 (Recommendation
+    3, pages 1-2 of 2) has the same text as the web page doc_37.txt lines 80-92: sponsor plus ''clinical investigators, study
+    coordinators and other site staff, and patients''; feasibility of eligibility criteria and burdensome visits; ''early
+    engagement with regulators should also be considered'' for novel critical to quality features.'
+- text: '[verify] full verbatim role wording of bullet 7 (fetch F08 truncated after ''by sponsor'')'
+  class: drop
+  topic: E8R1 S7 bullet 7 training wording
+  evidence: 'verification/X1_results.yaml R2-040 confirmed; vendor/sources/E8R1/doc_3.txt lines 1150-1151 (S7, PDF 26 / printed
+    20) give the full bullet: ''Competencies and training required for the study by sponsor and investigator staff, relevant
+    to their role, should be identified.'''
+- text: '[verify] full verbatim role wording of bullet 7 (fetch F08 truncated after ''by sponsor'') (R2-040)'
+  class: drop
+  topic: E8R1 S7 bullet 7 training wording
+  evidence: 'verification/X1_results.yaml R2-040 confirmed; vendor/sources/E8R1/doc_3.txt lines 1150-1151 (S7, PDF 26 / printed
+    20) give the full bullet: ''Competencies and training required for the study by sponsor and investigator staff, relevant
+    to their role, should be identified.'''
+- text: Printed page of IV.D.2 passage (TOC says 15; fetches gave 16 and 17)
+  class: drop
+  topic: FDA-RBM13 IV.D.2 printed page
+  evidence: 'vendor/sources/FDA-RBM13/doc_32.txt: heading ''2. Communication of Monitoring Results'' and the format, content,
+    timing and archiving bullet on printed 15 / PDF 18 (lines 911-914, footer line 927; TOC line 102 gives 15); ''of immediate
+    reporting of significant monitoring issues to appropriate parties (e.g., sponsor management, CI and site staff, IRB, FDA),
+    as necessary'' on printed 16 / PDF 19 (lines 933-934). IV.D.2 and printed 15-16 as cited are correct.'
+- text: SOURCE-LOC FDA-RBM13 | SIV.D.2 | printed 15-16 [verify]
+  class: drop
+  topic: FDA-RBM13 IV.D.2 printed page
+  evidence: 'vendor/sources/FDA-RBM13/doc_32.txt: heading ''2. Communication of Monitoring Results'' and the format, content,
+    timing and archiving bullet on printed 15 / PDF 18 (lines 911-914, footer line 927; TOC line 102 gives 15); ''of immediate
+    reporting of significant monitoring issues to appropriate parties (e.g., sponsor management, CI and site staff, IRB, FDA),
+    as necessary'' on printed 16 / PDF 19 (lines 933-934). IV.D.2 and printed 15-16 as cited are correct.'
+- text: '[verify] Printed page of IV.D.2 passage (TOC says 15; fetches gave 16 and 17) (R4-085)'
+  class: drop
+  topic: FDA-RBM13 IV.D.2 printed page
+  evidence: 'vendor/sources/FDA-RBM13/doc_32.txt: heading ''2. Communication of Monitoring Results'' and the format, content,
+    timing and archiving bullet on printed 15 / PDF 18 (lines 911-914, footer line 927; TOC line 102 gives 15); ''of immediate
+    reporting of significant monitoring issues to appropriate parties (e.g., sponsor management, CI and site staff, IRB, FDA),
+    as necessary'' on printed 16 / PDF 19 (lines 933-934). IV.D.2 and printed 15-16 as cited are correct.'
+- text: SOURCE-LOC FDA-RBM13 | SIV.D.1 [verify] | printed 15-16 [verify]
+  class: drop
+  topic: 'FDA-RBM13 critical deviations bullet: IV.D.1, printed 15'
+  evidence: 'vendor/sources/FDA-RBM13/doc_32.txt: after ''The components of a monitoring plan might include the following:''
+    (line 886), heading ''1. Description of Monitoring Approaches'' (line 888) holds the bullet ''Identification of possible
+    deviations or failures that would be critical to study integrity and how these are to be recorded and reported'' (lines
+    902-903) on printed 15 / PDF 18 (footer line 927); TOC line 101 gives IV.D.1 p. 15. IV.D.1 is the right sub-section; the
+    sentence is on printed 15 only, so ''printed 15-16'' is wider than needed.'
+- text: Sub-section (IV.D.1 vs IV.D.2) and printed page of the sentence on recording and reporting critical deviations differ
+    between fetches
+  class: drop
+  topic: 'FDA-RBM13 critical deviations bullet: IV.D.1, printed 15'
+  evidence: 'vendor/sources/FDA-RBM13/doc_32.txt: after ''The components of a monitoring plan might include the following:''
+    (line 886), heading ''1. Description of Monitoring Approaches'' (line 888) holds the bullet ''Identification of possible
+    deviations or failures that would be critical to study integrity and how these are to be recorded and reported'' (lines
+    902-903) on printed 15 / PDF 18 (footer line 927); TOC line 101 gives IV.D.1 p. 15. IV.D.1 is the right sub-section; the
+    sentence is on printed 15 only, so ''printed 15-16'' is wider than needed.'
+- text: '[verify] Sub-section (IV.D.1 vs IV.D.2) and printed page of the sentence on recording and reporting critical deviations
+    differ between fetches (R4-084)'
+  class: drop
+  topic: 'FDA-RBM13 critical deviations bullet: IV.D.1, printed 15'
+  evidence: 'vendor/sources/FDA-RBM13/doc_32.txt: after ''The components of a monitoring plan might include the following:''
+    (line 886), heading ''1. Description of Monitoring Approaches'' (line 888) holds the bullet ''Identification of possible
+    deviations or failures that would be critical to study integrity and how these are to be recorded and reported'' (lines
+    902-903) on printed 15 / PDF 18 (footer line 927); TOC line 101 gives IV.D.1 p. 15. IV.D.1 is the right sub-section; the
+    sentence is on printed 15 only, so ''printed 15-16'' is wider than needed.'
+- text: '[verify] section content from a single fetch (F30); Step 4 status confirmed in F26'
+  class: drop
+  topic: M11 S2.1 template use (single fetch)
+  evidence: 'verification/X1_results.yaml R2-111 confirmed (S2.1, PDF 5 / printed 2); vendor/sources/M11/doc_8.txt lines 150-152
+    (''Higher-level heading structure is retained, while many lower-level sections can be added, removed, or modified'');
+    the stored file is the Step 4 final guideline (vendor/sources/INDEX.md: ICH_Step4_M11_Final_Guideline_2025_1119.pdf).'
+- text: '[verify] section content from a single fetch (F30); Step 4 status confirmed in F26 (R2-111)'
+  class: drop
+  topic: M11 S2.1 template use (single fetch)
+  evidence: 'verification/X1_results.yaml R2-111 confirmed (S2.1, PDF 5 / printed 2); vendor/sources/M11/doc_8.txt lines 150-152
+    (''Higher-level heading structure is retained, while many lower-level sections can be added, removed, or modified'');
+    the stored file is the Step 4 final guideline (vendor/sources/INDEX.md: ICH_Step4_M11_Final_Guideline_2025_1119.pdf).'
+- text: '[verify] instruction text from a single fetch (F29); heading listed in F28'
+  class: drop
+  topic: M11 Template S10.2 analysis sets page
+  evidence: 'verification/X1_results.yaml R2-115 page-wrong, corrected to printed 46 / PDF 55 (synthesis/x1_corrections.yaml,
+    synthesis/changes_X1.md line 12); vendor/sources/M11-TEMPLATE/doc_9.txt lines 1861-1864 (PDF 55; TOC line 671 gives 46):
+    ''Describe analysis sets to be considered at the trial level ... aligned with estimands''; no mention of deviations, as
+    the finding says.'
+- text: '[verify] instruction text from a single fetch (F29); heading listed in F28 (R2-115)'
+  class: drop
+  topic: M11 Template S10.2 analysis sets page
+  evidence: 'verification/X1_results.yaml R2-115 page-wrong, corrected to printed 46 / PDF 55 (synthesis/x1_corrections.yaml,
+    synthesis/changes_X1.md line 12); vendor/sources/M11-TEMPLATE/doc_9.txt lines 1861-1864 (PDF 55; TOC line 671 gives 46):
+    ''Describe analysis sets to be considered at the trial level ... aligned with estimands''; no mention of deviations, as
+    the finding says.'
+- text: SOURCE-LOC M11-TEMPLATE | SConventions [verify] | printed iv-vii
+  class: drop
+  topic: M11 Template conventions section label
+  evidence: verification/X1_results.yaml R2-112 confirmed; vendor/sources/M11-TEMPLATE/doc_9.txt line 81 heading '0.3 Template
+    Conventions and General Instructions' (printed iv / PDF 3); typeface table with 'Instructional text that is to be removed
+    prior to finalisation' (line 128, printed v) and 'Heading Structure and Flexibility' (line 132, printed v) with 'Do not
+    delete or modify L1/L2' (lines 145, 154, printed vi); 'remove all instructional text' (line 254, printed viii). Content
+    as cited; the section label is 0.3 and the range is printed iv-viii.
+- text: '[verify] section label of the conventions part and wording; single fetch (F31)'
+  class: drop
+  topic: M11 Template conventions section label
+  evidence: verification/X1_results.yaml R2-112 confirmed; vendor/sources/M11-TEMPLATE/doc_9.txt line 81 heading '0.3 Template
+    Conventions and General Instructions' (printed iv / PDF 3); typeface table with 'Instructional text that is to be removed
+    prior to finalisation' (line 128, printed v) and 'Heading Structure and Flexibility' (line 132, printed v) with 'Do not
+    delete or modify L1/L2' (lines 145, 154, printed vi); 'remove all instructional text' (line 254, printed viii). Content
+    as cited; the section label is 0.3 and the range is printed iv-viii.
+- text: '[verify] section label of the conventions part and wording; single fetch (F31) (R2-112)'
+  class: drop
+  topic: M11 Template conventions section label
+  evidence: verification/X1_results.yaml R2-112 confirmed; vendor/sources/M11-TEMPLATE/doc_9.txt line 81 heading '0.3 Template
+    Conventions and General Instructions' (printed iv / PDF 3); typeface table with 'Instructional text that is to be removed
+    prior to finalisation' (line 128, printed v) and 'Heading Structure and Flexibility' (line 132, printed v) with 'Do not
+    delete or modify L1/L2' (lines 145, 154, printed vi); 'remove all instructional text' (line 254, printed viii). Content
+    as cited; the section label is 0.3 and the range is printed iv-viii.
+- text: '[verify] element list from one detailed fetch'
+  class: drop
+  topic: PDAP element list TCB-PD-TIRS
+  evidence: 'R5-014 is not in the X1 sample, but vendor/sources/TCB-PD-TIRS/doc_34.txt lines 128-132: ''Additional elements
+    may be included:'' frequency of data reviews or trend analyses, feedback and/or escalation pathways, type and extent of
+    reconciliation, documentation, approval and archiving requirements.'
+- text: '[verify] element list from one detailed fetch (R5-014)'
+  class: drop
+  topic: PDAP element list TCB-PD-TIRS
+  evidence: 'R5-014 is not in the X1 sample, but vendor/sources/TCB-PD-TIRS/doc_34.txt lines 128-132: ''Additional elements
+    may be included:'' frequency of data reviews or trend analyses, feedback and/or escalation pathways, type and extent of
+    reconciliation, documentation, approval and archiving requirements.'
+- text: '[verify] element list from one detailed fetch; PDAP template (XLSX) not readable'
+  class: drop
+  topic: PDAP element list TCB-PD-TIRS
+  evidence: 'verification/X1_results.yaml R5-013 confirmed (local-text, verbatim); vendor/sources/TCB-PD-TIRS/doc_34.txt lines
+    124-127: ''The PDAP template includes the following recommended elements'' with the three elements. The finding cites
+    the paper, not the XLSX template, so the unread template does not affect REQ-014.'
+- text: '[verify] element list from one detailed fetch; PDAP template (XLSX) not readable (R5-013)'
+  class: drop
+  topic: PDAP element list TCB-PD-TIRS
+  evidence: 'verification/X1_results.yaml R5-013 confirmed (local-text, verbatim); vendor/sources/TCB-PD-TIRS/doc_34.txt lines
+    124-127: ''The PDAP template includes the following recommended elements'' with the three elements. The finding cites
+    the paper, not the XLSX template, so the unread template does not affect REQ-014.'
+- text: '[verify] examples from one fetch'
+  class: drop
+  topic: examples from one fetch TCB-PD-TIRS Table 1
+  evidence: 'R5-027 is not in the X1 sample, but vendor/sources/TCB-PD-TIRS/doc_34.txt lines 171-224 (Appendix Table 1) list
+    the important examples named in the paraphrase: procedures before initial consent, entry criteria not satisfied, wrong
+    treatment or incorrect dose or expired product, missed assessments for primary or key secondary endpoints, SAEs or pregnancy
+    not reported in the required timeframe, withdrawal criteria met but not withdrawn.'
+- text: '[verify] examples from one fetch (R5-027)'
+  class: drop
+  topic: examples from one fetch TCB-PD-TIRS Table 1
+  evidence: 'R5-027 is not in the X1 sample, but vendor/sources/TCB-PD-TIRS/doc_34.txt lines 171-224 (Appendix Table 1) list
+    the important examples named in the paraphrase: procedures before initial consent, entry criteria not satisfied, wrong
+    treatment or incorrect dose or expired product, missed assessments for primary or key secondary endpoints, SAEs or pregnancy
+    not reported in the required timeframe, withdrawal criteria met but not withdrawn.'
+- text: '[verify] single fetch (R5-063)'
+  class: drop
+  topic: single fetch CTTI-CTQ critical data elements
+  evidence: R5-063 is not in the X1 sample, but vendor/sources/CTTI-CTQ/doc_38.txt lines 839-840 (Data Monitoring and Management,
+    page 19 of 24, footer line 853) read 'Define critical data elements for data management during protocol development',
+    matching paraphrase and page.
+- text: '[verify] single fetch (R5-064)'
+  class: drop
+  topic: single fetch CTTI-CTQ eligibility 'getting it wrong'
+  evidence: 'R5-064 is not in the X1 sample, but vendor/sources/CTTI-CTQ/doc_38.txt lines 105-108 (Eligibility Criteria, page
+    3 of 24, footer line 133): ''Evaluate the impact of "getting it wrong" with regard to eligibility. If a trial participant
+    is found to not meet a criterion, what is the impact on the trial?''.'
+- text: '[verify] sentence content from a single fetch (F05)'
+  class: drop
+  topic: single fetch E8R1 6.1.2 training
+  evidence: 'verification/X1_results.yaml R2-029 confirmed (PDF 24 / printed 18); vendor/sources/E8R1/doc_3.txt lines 1040-1042
+    (6.1.2 Training): ''Individuals involved in study conduct should receive training commensurate with their role in the
+    study and this training should occur prior to their becoming involved in the study''.'
+- text: '[verify] sentence content from a single fetch (F05) (R2-029)'
+  class: drop
+  topic: single fetch E8R1 6.1.2 training
+  evidence: 'verification/X1_results.yaml R2-029 confirmed (PDF 24 / printed 18); vendor/sources/E8R1/doc_3.txt lines 1040-1042
+    (6.1.2 Training): ''Individuals involved in study conduct should receive training commensurate with their role in the
+    study and this training should occur prior to their becoming involved in the study''.'
+- text: '[verify] sentence content from a single fetch (F02)'
+  class: drop
+  topic: single fetch E8R1 S3.2
+  evidence: verification/X1_results.yaml R2-005, R2-006, R2-008, R2-010 confirmed (local-text, PDF 10 / printed 4); passages
+    in vendor/sources/E8R1/doc_3.txt lines 310, 314, 327 and 330.
+- text: '[verify] sentence content from a single fetch (F02) (R2-005)'
+  class: drop
+  topic: single fetch E8R1 S3.2
+  evidence: verification/X1_results.yaml R2-005, R2-006, R2-008, R2-010 confirmed (local-text, PDF 10 / printed 4); passages
+    in vendor/sources/E8R1/doc_3.txt lines 310, 314, 327 and 330.
+- text: '[verify] sentence content from a single fetch (F02) (R2-006)'
+  class: drop
+  topic: single fetch E8R1 S3.2
+  evidence: verification/X1_results.yaml R2-005, R2-006, R2-008, R2-010 confirmed (local-text, PDF 10 / printed 4); passages
+    in vendor/sources/E8R1/doc_3.txt lines 310, 314, 327 and 330.
+- text: '[verify] sentence content from a single fetch (F02) (R2-010)'
+  class: drop
+  topic: single fetch E8R1 S3.2 proactive communication
+  evidence: 'verification/X1_results.yaml R2-010 confirmed (PDF 10 / printed 4; note: ''ongoing'' added, meaning unchanged);
+    vendor/sources/E8R1/doc_3.txt line 330: ''Proactive communication of the critical to quality factors and risk mitigation
+    activities will support...''.'
+- text: '[verify] sentence content from a single fetch (F02) (R2-008)'
+  class: drop
+  topic: single fetch E8R1 S3.2 risk methodology
+  evidence: 'verification/X1_results.yaml R2-008 confirmed (local-text, PDF 10 / printed 4); vendor/sources/E8R1/doc_3.txt
+    line 327: ''The term risk is used here in the context of general risk management methodology''.'
+- text: '[verify] sentence content from a single fetch (F03)'
+  class: drop
+  topic: single fetch E8R1 S3.3 and S3.3.1
+  evidence: 'verification/X1_results.yaml R2-014 confirmed (S3.3, PDF 11 / printed 5; vendor/sources/E8R1/doc_3.txt lines
+    350-357); R2-017 paraphrase-distorted, corrected in synthesis/x1_corrections.yaml (synthesis/changes_X1.md line 10): the
+    merged paraphrase now matches doc_3.txt lines 376-378 (''Evidence used to inform the study design should be gathered and
+    reviewed ... in a transparent manner''); REQ-205 statement unaffected (changes_X1.md line 61).'
+- text: '[verify] sentence content from a single fetch (F03) (R2-014)'
+  class: drop
+  topic: single fetch E8R1 S3.3 and S3.3.1
+  evidence: 'verification/X1_results.yaml R2-014 confirmed (S3.3, PDF 11 / printed 5; vendor/sources/E8R1/doc_3.txt lines
+    350-357); R2-017 paraphrase-distorted, corrected in synthesis/x1_corrections.yaml (synthesis/changes_X1.md line 10): the
+    merged paraphrase now matches doc_3.txt lines 376-378 (''Evidence used to inform the study design should be gathered and
+    reviewed ... in a transparent manner''); REQ-205 statement unaffected (changes_X1.md line 61).'
+- text: '[verify] sentence content from a single fetch (F03) (R2-017)'
+  class: drop
+  topic: single fetch E8R1 S3.3 and S3.3.1
+  evidence: 'verification/X1_results.yaml R2-014 confirmed (S3.3, PDF 11 / printed 5; vendor/sources/E8R1/doc_3.txt lines
+    350-357); R2-017 paraphrase-distorted, corrected in synthesis/x1_corrections.yaml (synthesis/changes_X1.md line 10): the
+    merged paraphrase now matches doc_3.txt lines 376-378 (''Evidence used to inform the study design should be gathered and
+    reviewed ... in a transparent manner''); REQ-205 statement unaffected (changes_X1.md line 61).'
+- text: '[verify] sentence content from a single fetch (F19)'
+  class: drop
+  topic: single fetch E9 S5.2 and S5.2.1
+  evidence: verification/X1_results.yaml R2-076, R2-078 (S5.2, PDF 26 / printed 22) and R2-084, R2-085 (S5.2.1, PDF 27 / printed
+    23) confirmed; vendor/sources/E9/doc_6.txt lines 1371-1373, 1384-1389, 1443-1446 and 1465-1469.
+- text: '[verify] sentence content from a single fetch (F19) (R2-076)'
+  class: drop
+  topic: single fetch E9 S5.2 and S5.2.1
+  evidence: verification/X1_results.yaml R2-076, R2-078 (S5.2, PDF 26 / printed 22) and R2-084, R2-085 (S5.2.1, PDF 27 / printed
+    23) confirmed; vendor/sources/E9/doc_6.txt lines 1371-1373, 1384-1389, 1443-1446 and 1465-1469.
+- text: '[verify] sentence content from a single fetch (F19) (R2-078)'
+  class: drop
+  topic: single fetch E9 S5.2 and S5.2.1
+  evidence: verification/X1_results.yaml R2-076, R2-078 (S5.2, PDF 26 / printed 22) and R2-084, R2-085 (S5.2.1, PDF 27 / printed
+    23) confirmed; vendor/sources/E9/doc_6.txt lines 1371-1373, 1384-1389, 1443-1446 and 1465-1469.
+- text: '[verify] single fetch'
+  class: drop
+  topic: single fetch TCB-PD-TIRS and CTTI-CTQ findings
+  evidence: 'All 14 findings checked in the local texts. X1 confirmed R5-006, R5-019, R5-040; the others are not in the X1
+    sample but are present: vendor/sources/TCB-PD-TIRS/doc_34.txt R5-006 line 102, R5-015 line 122, R5-019 line 137, R5-023
+    line 141, R5-025 lines 145-148, R5-033 line 157, R5-036 line 159, R5-037 line 160, R5-038 line 162, R5-039 line 163, R5-040
+    line 164, R5-041 line 165; vendor/sources/CTTI-CTQ/doc_38.txt R5-064 lines 105-108 (page 3 of 24), R5-063 lines 839-840
+    (page 19 of 24).'
+- text: '[verify] single fetch (R5-015)'
+  class: drop
+  topic: single fetch TCB-PD-TIRS risk assessment tools
+  evidence: 'R5-015 is not in the X1 sample, but vendor/sources/TCB-PD-TIRS/doc_34.txt line 122 (Prepare): ''teams may find
+    program-level or protocol level risk assessment tools useful to identify potential situations which would be considered
+    important PDs''.'
+- text: '[verify] single detailed fetch for the study-team part'
+  class: drop
+  topic: single fetch TCB-PD-TIRS training of the study team
+  evidence: 'R5-018 is not in the X1 sample, but vendor/sources/TCB-PD-TIRS/doc_34.txt lines 134-136 (Train): ''Training should
+    be provided to relevant study team members, emphasizing their role'' and ''Train study team (including CRAs, CROs, vendor,
+    etc.) on the protocol including amendments and the PDAP including updates.'''
+- text: '[verify] single detailed fetch for the study-team part (R5-018)'
+  class: drop
+  topic: single fetch TCB-PD-TIRS training of the study team
+  evidence: 'R5-018 is not in the X1 sample, but vendor/sources/TCB-PD-TIRS/doc_34.txt lines 134-136 (Train): ''Training should
+    be provided to relevant study team members, emphasizing their role'' and ''Train study team (including CRAs, CROs, vendor,
+    etc.) on the protocol including amendments and the PDAP including updates.'''
+- text: '[verify] 21 CFR 312.62(b) does not name deviations; applied as the US record basis for site documentation'
+  class: note
+  wording: 21 CFR 312.62(b) requires case histories recording all observations but does not name deviations; used here as
+    the US basis for site documentation.
+  topic: 21 CFR 312.62(b) case histories as US basis for deviation documentation
+  evidence: 'vendor/sources/eCFR-api/part312.txt line 752 (312.62(b)): case histories that ''record all observations and other
+    data pertinent to the investigation''; no mention of deviations; X1 confirmed R4-020. FDA-PD24 does not cite 312.62 (grep).
+    The task also rests on E6R3 A1-2.5.3 ''document all protocol deviations'' (doc_1.txt line 959).'
+- text: '[verify] ''deviation beyond these ranges'' is a range exceedance, not a protocol deviation (C-04)'
+  class: note
+  wording: 'Meaning of a term: in E6(R3) ''deviation beyond these ranges'' means a range exceedance (e.g. a quality tolerance
+    limit), not a protocol deviation.'
+  topic: C-04 acceptable range exceedance is not a protocol deviation
+  evidence: 'vendor/sources/E6R3/doc_1.txt lines 1781-1786 (A1-3.10.1.3): pre-specified acceptable ranges, e.g. quality tolerance
+    limits; ''Where deviation beyond these ranges is detected, an evaluation should be performed''; X1 confirmed R1-042. synthesis/conflicts.md
+    C-04 settles the reading; the task label already says ''exceedance''.'
+- text: '[verify] R1-089 is Annex 2: effective in the EU from 15 Jan 2027; FDA Annex 2 guidance still draft (C-06)'
+  class: note
+  wording: 'Effective dates: one cited E6(R3) Annex 2 passage is effective in the EU from 15 Jan 2027; FDA''s Annex 2 guidance
+    is still draft.'
+  topic: C-06 E6(R3) Annex 2 effective dates
+  evidence: 'vendor/sources/E6R3/doc_1.txt line 3562 (Annex 2 section 3.8, starts line 3025; PDF 70) holds the R1-089 text,
+    X1 confirmed; vendor/sources/EMA-E6R3/doc_13.txt lines 27, 44, 50: Annex 2 effective 15 January 2027; vendor/sources/FDA-E6R3-A2/doc_31.txt
+    lines 64-68: Draft, not for implementation. REQ-035 also rests on Annex 1 findings R1-047, R1-081 (X1 confirmed), so the
+    step requirement does not depend on the date.'
+- text: '[verify] E6(R3) does not label premature unblinding a protocol deviation; trial-specific criteria decide (R1 C13)'
+  class: note
+  wording: 'Premature unblinding: E6(R3) requires prompt explanation to the sponsor but does not call it a deviation; trial-specific
+    criteria decide whether it is an important deviation.'
+  topic: C-21 premature unblinding as a deviation
+  evidence: 'vendor/sources/E6R3/doc_1.txt lines 1376-1384 (A1-2.11, PDF 29 / printed 21): ''promptly document and explain
+    to the sponsor any premature unblinding'', no deviation wording; X1 confirmed R1-093. FDA-PD24 draft lines 172-173 lists
+    unblinding for reasons not in the protocol as important; synthesis/conflicts.md C-21 leaves it to the trial-specific criteria
+    (E6R3 A1-3.9.3, line 1693).'
+- text: '[verify] section 4 duty of the ''responsible party'' (investigator or sponsor); Sponsor lane chosen (R1 C14)'
+  class: note
+  wording: 'Duty applies to two parties: E6(R3) addresses this data and metadata review to investigators and sponsors; the
+    model shows only the sponsor''s review.'
+  topic: C-25 E6(R3) section 4 responsible party (investigator and sponsor)
+  evidence: 'vendor/sources/E6R3/doc_1.txt line 2698 (section 4 intro: ''responsible parties (i.e., investigators and sponsors)'')
+    and lines 2813-2818 (4.2.3 review of data, audit trails and metadata, no party named); X1 confirmed R1-102 (PDF 55 / printed
+    47). synthesis/conflicts.md C-25 sets the Sponsor lane; spec/L4-02.yaml has no investigator task for this review.'
+- text: '[verify] gerund item under A1-3.11.4.5; actor not named (R1 C7)'
+  class: note
+  wording: 'Lane assumed: E6(R3) lists this as a monitoring activity under the sponsor''s monitoring plan without naming who
+    performs it.'
+  topic: C-25 lane assumed for E6(R3) monitoring activities
+  evidence: vendor/sources/E6R3/doc_1.txt lines 1972-1981 (3.11.4.4 'Persons performing monitoring should follow the sponsor's
+    monitoring plan'; 3.11.4.5 lead-in 'Monitoring ... should generally include the following activities') and line 2108 (3.11.4.5.4(b)(ii),
+    gerund list, no actor); X1 confirmed R1-065. synthesis/conflicts.md C-25 records the lane choice; L4-02 A1 sits in the
+    Sponsor lane, L3 A2 in the Monitor lane.
+- text: '[verify] gerund item; Monitor lane inferred (R1 C7)'
+  class: note
+  wording: 'Lane assumed: E6(R3) lists this as a monitoring activity under the sponsor''s monitoring plan without naming who
+    performs it.'
+  topic: C-25 lane assumed for E6(R3) monitoring activities
+  evidence: 'vendor/sources/E6R3/doc_1.txt lines 1977-2049 and 2094 (3.11.4.5 lead-in; 3.11.4.5.1(b),(c); 3.11.4.5.2(b),(i);
+    3.11.4.5.4(a): gerund items, no actor); X1 confirmed R1-058, R1-059, R1-060, R1-062, R1-063, R1-064. synthesis/conflicts.md
+    C-25; L4-02 A7, A8, A9 and L4-06 A2 are in the Monitor lane.'
+- text: '[verify] gerund item; Monitor lane inferred from A1-3.11.4.4 and A1-3.11.4.5.1(a) (R1 C7)'
+  class: note
+  wording: 'Lane assumed: E6(R3) lists this as a monitoring activity under the sponsor''s monitoring plan without naming who
+    performs it.'
+  topic: C-25 lane assumed for E6(R3) monitoring activities
+  evidence: 'vendor/sources/E6R3/doc_1.txt lines 1972-1995 (3.11.4.4, 3.11.4.5 lead-in, 3.11.4.5.1(a) assigned monitor as
+    contact point, (b) ''Informing the investigator ... of relevant deviations'', gerund, no actor); X1 confirmed R1-057.
+    Discrepancy: the raw text says Monitor lane, but spec/L4-02.yaml places A12 (and its message M1) in the Sponsor lane (L_SPON);
+    only L3 A2 is in the Monitor lane.'
+- text: '[verify] IRB/IEC recipient only where applicable (E6R3 A1-2.12.10(e))'
+  class: note
+  wording: 'Conditional recipient: E6(R3) sends this incident report to the IRB/IEC only where applicable; the guideline does
+    not define when.'
+  topic: IRB/IEC recipient of computerised system incident report only where applicable
+  evidence: 'vendor/sources/E6R3/doc_1.txt lines 1459-1462 (A1-2.12.10(e), PDF 30 / printed 22): incidents ''are reported
+    to the sponsor and, where applicable, to the IRB/IEC''; X1 confirmed R1-095. The condition is left to applicable requirements;
+    the report to the sponsor (M5) is unaffected, so no reviewer decision is needed.'
+- text: '[verify interface] Neighbouring process ''Data governance and computerised systems'' configures the audit trails
+    and metadata that A2 reviews; set-up process without a flow hand-off, so no placeholder element. Interface REQs: REQ-209.'
+  class: note
+  wording: 'Interface: the data governance and computerised systems process sets up the audit trails and metadata reviewed
+    here; no hand-off is drawn.'
+  topic: 'interface: data governance and computerised systems'
+  evidence: synthesis/requirements.yaml REQ-209 (status interface, trigger 'Computerised system set-up'); source E6R3 A1-4.2.2,
+    vendor/sources/E6R3/doc_1.txt lines 2777-2811, X1 confirmed R1-101. spec/notes.md S0-18 records interface REQs without
+    a hand-off point as [verify interface] open items; modelling choice only.
+- text: '[verify interface] Neighbouring process ''Safety reporting'' (SAE to sponsor, EU CTR Art. 41(2), 24 h) runs in parallel
+    when a deviation causes an SAE; the investigator OR split already has 3 branches (FLW-06). Interface REQs: REQ-214.'
+  class: note
+  wording: 'Interface: a deviation that causes a serious adverse event also triggers safety reporting to the sponsor (EU:
+    within 24 hours), not drawn here.'
+  topic: 'interface: safety reporting (SAE to sponsor)'
+  evidence: 'vendor/sources/EUCTR-OJ/reg_2014_536_en.txt lines 2394-2395 (Art. 41(2)): SAEs to the sponsor ''without undue
+    delay but not later than within 24 hours of obtaining knowledge'', unless the protocol exempts certain SAEs; X1 confirmed
+    R3-015. spec/L4-02.yaml G4 has the 3 branches F21-F23; REQ-214 status interface.'
+- text: '[verify] single fetch (R5-025)'
+  class: drop
+  topic: single fetch TCB-PD-TIRS reclassification triggers
+  evidence: R5-025 is not in the X1 sample, but the local PMC text vendor/sources/TCB-PD-TIRS/doc_34.txt lines 145-148 (Classify
+    and Categorize) states the reclassification triggers 'meeting a pre-determined threshold', 'increase in volume, frequency
+    or cadence' and that important PDs may be reclassified to non-important, matching the paraphrase.
+- text: Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol changes,
+    or only the manner of notification; regulation text gives the cross-reference only
+  class: open
+  wording: 'Deadline not settled: 21 CFR 312.30 requires IRB notification of immediate-hazard protocol changes per 21 CFR
+    56.104(c); it does not say whether the 5-working-day window applies.'
+  topic: C-11 IRB notification window per 21 CFR 56.104(c)
+  evidence: vendor/sources/eCFR-api/part312.txt l.340 (312.30(b)(2)(ii)) gives only 'notified in accordance with 56.104(c)';
+    part56.txt l.97 sets 5 working days for emergency use of a test article; FDA-PD24 (draft) lines 345-347 and fn 24 repeat
+    the cross-reference only; conflicts.md C-11 leaves it open. No local source settles it. X1 R4-005 confirmed the paraphrase,
+    not the applicability.
+- text: '[verify] Whether the 5-working-day window of 21CFR56.104(c) applies to IRB notification of immediate-hazard protocol
+    changes, or only the manner of notification; regulation text gives the cross-reference only (R4-005)'
+  class: open
+  wording: 'Deadline not settled: 21 CFR 312.30 requires IRB notification of immediate-hazard protocol changes per 21 CFR
+    56.104(c); it does not say whether the 5-working-day window applies.'
+  topic: C-11 IRB notification window per 21 CFR 56.104(c)
+  evidence: vendor/sources/eCFR-api/part312.txt l.340 (312.30(b)(2)(ii)) gives only 'notified in accordance with 56.104(c)';
+    part56.txt l.97 sets 5 working days for emergency use of a test article; FDA-PD24 (draft) lines 345-347 and fn 24 repeat
+    the cross-reference only; conflicts.md C-11 leaves it open. No local source settles it.
+  not_on:
+  - L3_M3
+  - L4_03_A5
+  - L4_03_M8
+  not_on_reason: These elements are the sponsor's protocol amendment submission to FDA (REQ-085); the open window concerns
+    only the IRB notification (L4_03_A11, L4_03_M2 and the L3 step L3_A3). Reported by the L4-03 triage for L4_03_M8; L3_M3
+    and L4_03_A5 are the same submission.
+- text: '[verify] whether the 5-working-day window of 21 CFR 56.104(c) applies to immediate-hazard protocol changes (C-11)'
+  class: open
+  wording: 'Deadline not settled: 21 CFR 312.30 requires IRB notification of immediate-hazard protocol changes per 21 CFR
+    56.104(c); it does not say whether the 5-working-day window applies.'
+  topic: C-11 IRB notification window per 21 CFR 56.104(c)
+  evidence: vendor/sources/eCFR-api/part312.txt l.340 (312.30(b)(2)(ii)) gives only 'notified in accordance with 56.104(c)';
+    part56.txt l.97 sets 5 working days for emergency use of a test article; FDA-PD24 (draft) lines 345-347 and fn 24 repeat
+    the cross-reference only; conflicts.md C-11 leaves it open. No local source settles it.
+- text: '[verify] notifying party not named (passive voice); Investigator chosen because 21 CFR 312.66 places IRB reporting
+    on the investigator'
+  class: note
+  wording: Notifying party not named in 21 CFR 312.30; investigator shown because 21 CFR 312.66 and ICH E6(R3) put IRB reporting
+    on the investigator.
+  topic: C-11 party notifying the IRB of an immediate-hazard change
+  evidence: eCFR-api/part312.txt l.340 (312.30(b)(2)(ii)) is passive ('the reviewing IRB is notified'); l.772 (312.66) makes
+    the investigator report changes to the IRB; E6R3 1.4.8(a) and 2.5.5 (doc_1.txt l.812-821, 972-974) name the investigator
+    too.
+- text: '[verify] in the EU all submissions are made by the sponsor, not the investigator (EUCTR-QA Q&A 1.5) (C-12)'
+  class: note
+  wording: ICH allows the investigator/institution or the sponsor to submit; in the EU all submissions are made by or on behalf
+    of the sponsor.
+  topic: C-12 who submits to authorities
+  evidence: 'EUCTR-QA/doc_12.txt l.578-584 (Q&A 1.5, point 9): submissions ''done by or on behalf of the sponsor (and not
+    by the investigator)''; E6R3 3.13.3 (doc_1.txt l.2243-2246) names either party; C-12 decision. X1 R3-086 confirmed.'
+- text: '[verify] represented by the IRB/IEC approval message flow; IRB/IEC is a collapsed pool (D1)'
+  class: note
+  wording: IRB/IEC duties are shown only as message flows; the IRB/IEC is drawn as a collapsed pool without tasks.
+  topic: D1 collapsed IRB/IEC pool
+  evidence: 'contracts/decisions.md l.13 (D1: IRB/IEC and Regulatory authority are collapsed pools linked by message flows);
+    21CFR56.108(a)(4) in eCFR-api/part56.txt l.137 is an IRB written-procedure duty, carried by M7 ''IRB/IEC decision issued''
+    (spec/L4-03.yaml).'
+- text: '[verify] assessment step implied by the immediate-hazard exception in E6R3 A1-2.5.4, A1-1.4.7 and 21 CFR 312.66;
+    no source names it as a separate step'
+  class: note
+  wording: Assessment step derived from the immediate-hazard exception in ICH E6(R3) and 21 CFR 312.66; no source names it
+    as a separate step.
+  topic: Modelled investigator immediate-hazard assessment step
+  evidence: 'E6R3/doc_1.txt l.967-970 (2.5.4) and l.806-810 (1.4.7), eCFR-api/part312.txt l.772 (312.66): exception ''except
+    where necessary to eliminate apparent immediate hazards'', no separate assessment step stated.'
+- text: '[verify] review step implied by the routing; no source names it as a separate step'
+  class: note
+  wording: Review step added for the routing; draft FDA guidance asks sponsors to carefully consider investigators' deviation
+    requests, but no source names a separate step.
+  topic: Modelled sponsor review step
+  evidence: 'FDA-PD24/doc_29.txt lines 265-268 (draft): ''Sponsors should carefully consider investigators'' protocol deviation
+    requests''; E6R3 3.13.3 (doc_1.txt l.2232-2246) and M11 S5.1 contain no review step. Element already carries DRAFT.'
+- text: '[verify] E6(R3) A1-1.4.7 frames this as an IRB/IEC written procedure; the party initiating the change is not named'
+  class: note
+  wording: ICH frames prior IRB/IEC approval as an IRB/IEC procedure without naming who initiates the change; the investigator
+    lane follows 21 CFR 312.66.
+  topic: Party initiating a protocol change (E6R3 A1-1.4.7)
+  evidence: 'E6R3/doc_1.txt l.787-810: A1-1.4 ''The IRB/IEC should establish, document and follow its procedures'' and 1.4.7
+    is passive; eCFR-api/part312.txt l.772 (312.66) and l.695 (312.53(c)(1)(vii)) and E6R3 2.5.4 (l.967) put the duty on the
+    investigator. X1 R1-011 confirmed.'
+- text: '[verify] eCFR text of 56.104(c) not retrievable (robots); confirm against eCFR or govinfo before X1 (R4-030)'
+  class: drop
+  topic: 21 CFR 56.104(c) text retrieval
+  evidence: vendor/sources/eCFR-api/part56.txt l.97 (eCFR API, as of 2026-11-04) reads 'reported to the IRB within 5 working
+    days', identical to the Cornell LII copy vendor/sources/21CFR56/doc_26.txt l.70; X1 R4-030 confirmed verbatim.
+- text: eCFR text of 56.104(c) not retrievable (robots); confirm against eCFR or govinfo before X1
+  class: drop
+  topic: 21 CFR 56.104(c) text retrieval
+  evidence: vendor/sources/eCFR-api/part56.txt l.97 (eCFR API, as of 2026-11-04) reads 'reported to the IRB within 5 working
+    days', identical to the Cornell LII copy vendor/sources/21CFR56/doc_26.txt l.70; X1 R4-030 confirmed verbatim.
+- text: '[verify] whether the M11 Template sentence is fixed text or instructional text (R2-113)'
+  class: drop
+  topic: 'M11 Template S5.1 waiver sentence: universal or instructional text'
+  evidence: 'vendor/sources/M11-TEMPLATE/doc_9.pdf PDF p.34 (printed 25), font check with pdfplumber: the sentence ''Prospective
+    approval of protocol deviations ... is not permitted.'' is black Times New Roman after the <Enter ...> insertion point;
+    the template table (doc_9.txt l.94-131) defines black Times New Roman as universal text for all protocols, instructional
+    text is red Calibri. Resolved: universal text; X1 confirmed R2-113.'
+- text: '[verify] whether the sentence is fixed universal text or instructional text of the template'
+  class: drop
+  topic: 'M11 Template S5.1 waiver sentence: universal or instructional text'
+  evidence: 'vendor/sources/M11-TEMPLATE/doc_9.pdf PDF p.34 (printed 25), font check with pdfplumber: the sentence ''Prospective
+    approval of protocol deviations ... is not permitted.'' is black Times New Roman after the <Enter ...> insertion point;
+    the template table (doc_9.txt l.94-131) defines black Times New Roman as universal text for all protocols, instructional
+    text is red Calibri. Resolved: universal text; X1 confirmed R2-113.'
+- text: '[verify] whether the sentence is fixed universal text or instructional text of the template (R2-113)'
+  class: drop
+  topic: 'M11 Template S5.1 waiver sentence: universal or instructional text'
+  evidence: 'vendor/sources/M11-TEMPLATE/doc_9.pdf PDF p.34 (printed 25), font check with pdfplumber: the sentence ''Prospective
+    approval of protocol deviations ... is not permitted.'' is black Times New Roman after the <Enter ...> insertion point;
+    the template table (doc_9.txt l.94-131) defines black Times New Roman as universal text for all protocols, instructional
+    text is red Calibri. Resolved: universal text; X1 confirmed R2-113.'
+- text: '[verify] alignment of ICH E3, best-practice and CDISC DVCAT categories unknown (C-16)'
+  class: note
+  wording: The seven CDISC DVCAT terms correspond to the seven TransCelerate categories; four of them cover the ICH E3 examples.
+    The model fixes no category scheme.
+  topic: C-16 deviation category schemes
+  evidence: synthesis/conflicts.md C-16 (category scheme is an implementation choice). Checked E3/doc_4.txt lines 1049-1061
+    (four examples), TCB-PD-TIRS/doc_34.txt lines 149 and 178-222 (seven categories, Table 1), CDISC-CT/doc_39.txt PDF 488
+    (seven DVCAT terms).
+- text: '[verify] codelist terms not read; check whether they match the seven TransCelerate categories'
+  class: note
+  wording: The seven CDISC DVCAT terms correspond to the seven TransCelerate categories; four of them cover the ICH E3 examples.
+    The model fixes no category scheme.
+  topic: C-16 deviation category schemes
+  evidence: 'vendor/sources/CDISC-CT/doc_39.txt PDF 488: DVCAT terms DISCONTINUATION, INCLUSION/EXCLUSION, INFORMED CONSENT/ASSENT,
+    PROHIBITED CONCOMITANT INTERVENTION, SAFETY REPORTING, STUDY INTERVENTION, TRIAL PROCEDURES - one-to-one with the seven
+    TCB categories. X1 R5-065 confirmed and names the same page.'
+- text: '[verify] codelist terms not read; check whether they match the seven TransCelerate categories (R5-065)'
+  class: note
+  wording: The seven CDISC DVCAT terms correspond to the seven TransCelerate categories; four of them cover the ICH E3 examples.
+    The model fixes no category scheme.
+  topic: C-16 deviation category schemes
+  evidence: 'vendor/sources/CDISC-CT/doc_39.txt PDF 488: DVCAT terms DISCONTINUATION, INCLUSION/EXCLUSION, INFORMED CONSENT/ASSENT,
+    PROHIBITED CONCOMITANT INTERVENTION, SAFETY REPORTING, STUDY INTERVENTION, TRIAL PROCEDURES - one-to-one with the seven
+    TCB categories. X1 R5-065 confirmed and names the same page.'
+- text: '[verify] which four categories are ICH E3 (R2 to cross-check E3 10.2)'
+  class: note
+  wording: The seven CDISC DVCAT terms correspond to the seven TransCelerate categories; four of them cover the ICH E3 examples.
+    The model fixes no category scheme.
+  topic: C-16 deviation category schemes
+  evidence: 'Cross-check done: E3/doc_4.txt lines 1049-1061 (S10.2, printed 13) lists entry criteria, withdrawal criteria,
+    wrong treatment or dose, excluded concomitant treatment; these match TCB Table 1 inclusion/exclusion, discontinuation,
+    study intervention, prohibited concomitant medication (doc_34.txt lines 184-221, same wording). The paper itself does
+    not name them (line 149).'
+- text: '[verify] which four categories are ICH E3 (R2 to cross-check E3 10.2) (R5-026)'
+  class: note
+  wording: The seven CDISC DVCAT terms correspond to the seven TransCelerate categories; four of them cover the ICH E3 examples.
+    The model fixes no category scheme.
+  topic: C-16 deviation category schemes
+  evidence: 'Cross-check done: E3/doc_4.txt lines 1049-1061 (S10.2, printed 13) lists entry criteria, withdrawal criteria,
+    wrong treatment or dose, excluded concomitant treatment; these match TCB Table 1 inclusion/exclusion, discontinuation,
+    study intervention, prohibited concomitant medication (doc_34.txt lines 184-221, same wording). The paper itself does
+    not name them (line 149).'
+- text: '[verify] codelist terms and first release date not read'
+  class: note
+  wording: CDISC DVCAT and DVDECOD terms were read in the 2026-09-25 release; the release that first introduced these codelists
+    was not checked.
+  topic: CDISC DVCAT and DVDECOD first release
+  evidence: 'vendor/sources/CDISC-CT/doc_39.txt: DVDECOD terms on PDF 489, index on PDF 9; the file is one release snapshot
+    with no per-codelist history. CDISC-SDTMIG40-PR/doc_40.txt line 394 only says CT for DVDECOD and DVCAT is new with SDTMIG
+    v4.0. Step requires a controlled list, not this codelist.'
+- text: '[verify] codelist terms and first release date not read (R5-066)'
+  class: note
+  wording: CDISC DVCAT and DVDECOD terms were read in the 2026-09-25 release; the release that first introduced these codelists
+    was not checked.
+  topic: CDISC DVCAT and DVDECOD first release
+  evidence: 'vendor/sources/CDISC-CT/doc_39.txt: DVDECOD terms on PDF 489, index on PDF 9; the file is one release snapshot
+    with no per-codelist history. CDISC-SDTMIG40-PR/doc_40.txt line 394 only says CT for DVDECOD and DVCAT is new with SDTMIG
+    v4.0. Step requires a controlled list, not this codelist.'
+- text: '[verify] ''the identifier'' may sit in the Sponsor or the Investigator/institution pool; source does not say'
+  class: note
+  wording: Classification ideally by the person who identified the deviation; TransCelerate does not say whether sponsor or
+    investigator/institution staff. Shown in the Sponsor lane.
+  topic: 'Classifying party: the identifier'
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 142: ''classified and categorized upon identification, ideally by
+    the identifier'' (best practice, no party named). E6R3 A1-3.9.3 (line 1693) gives the sponsor the criteria and FDA-PD24
+    lines 262-265 the reclassification; none of the checked texts assigns the initial classification.'
+- text: '[verify] documenting party not named in the text'
+  class: note
+  wording: The EMA serious breach guideline does not name who documents deviations that are not serious breaches; the step
+    is shown in the Sponsor lane.
+  topic: Documenting party not named (EMA serious breach guideline S5.1)
+  evidence: 'vendor/sources/EMA-SB/doc_11.txt lines 361-364 (page 8/21): ''Deviations that do not significantly affect ...
+    should be documented (for example, in the trial case report form or the clinical trial master file)'' - passive, no party
+    named. X1 R3-065 confirmed.'
+- text: '[verify] documenting party not named in the text (R3-065)'
+  class: note
+  wording: The EMA serious breach guideline does not name who documents deviations that are not serious breaches; the step
+    is shown in the Sponsor lane.
+  topic: Documenting party not named (EMA serious breach guideline S5.1)
+  evidence: 'vendor/sources/EMA-SB/doc_11.txt lines 361-364 (page 8/21): ''Deviations that do not significantly affect ...
+    should be documented (for example, in the trial case report form or the clinical trial master file)'' - passive, no party
+    named. X1 R3-065 confirmed.'
+- text: '[verify interface] Neighbouring process ''Computerised systems validation'' provides the validated deviation repository
+    used by A2 and A9 (set-up process, no flow hand-off). Interface REQs: REQ-211.'
+  class: note
+  wording: Neighbouring process 'Computerised systems validation' provides the validated deviation repository used for recording
+    and filing; set-up process, no hand-off is drawn.
+  topic: 'Interface: computerised systems validation'
+  evidence: vendor/sources/TCB-PD-TIRS/doc_34.txt line 155 (store PDs in a validated repository or system); REQ-211 rests
+    on E6R3 A1-4.3.4(a), X1 R1-108 confirmed. Modelling choice per spec/notes.md S0-18 interface handling.
+- text: '[verify interface] Neighbouring process ''Data management (correction)'': a corrected data error can remove a deviation
+    found in reconciliation (A8); no flow hand-off inside one deviation instance. Interface REQs: REQ-210.'
+  class: note
+  wording: 'Neighbouring process ''Data management (correction)'': a corrected data error can remove a deviation during reconciliation;
+    no hand-off is drawn within one deviation.'
+  topic: 'Interface: data management (correction)'
+  evidence: vendor/sources/TCB-PD-TIRS/doc_34.txt line 153 ('transcription error corrected eliminating the PD'); REQ-210 rests
+    on E6R3 A1-4.2.4, X1 R1-103 confirmed. Modelling choice per spec/notes.md (interface REQs without hand-off stay open_items).
+- text: '[verify] Art. 56(1) applies to ''the sponsor or the investigator, as applicable''; applies equally in the Investigator/institution
+    pool'
+  class: note
+  wording: Recording duty applies to the sponsor or investigator, as applicable (EU CTR Art. 56(1)); shown in the Sponsor
+    lane, it applies equally to the investigator/institution.
+  topic: Recording duty of sponsor or investigator (EU CTR Art. 56(1))
+  evidence: 'vendor/sources/EUCTR-OJ/reg_2014_536_en.txt line 2648 (OJ L 158/41): ''stored by the sponsor or investigator,
+    as applicable''; the raw quote adds a second ''the''. X1 R3-031 confirmed. L4-04 A2 sits in the Sponsor lane only.'
+- text: '[verify] Decision Tree image (TransCelerate asset, robots-blocked) not read; branch logic unknown'
+  class: note
+  wording: Figures of the TransCelerate paper (decision tree, issue management illustration) were not read; classification
+    rests on its text and the ICH definition.
+  topic: TransCelerate figures not read
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt lines 102-107 and doc_34.html: Fig. 2 is an image with caption ''Protocol
+    deviation decision tree'' only (no alt text); the text calls it a support for consistent judgement. Importance rule is
+    set by E6R3 A1-3.9.3 (E6R3/doc_1.txt line 1693) and E3QA S3. No X1 record.'
+- text: '[verify] Decision Tree image (TransCelerate asset, robots-blocked) not read; branch logic unknown (R5-005)'
+  class: note
+  wording: Figures of the TransCelerate paper (decision tree, issue management illustration) were not read; classification
+    rests on its text and the ICH definition.
+  topic: TransCelerate figures not read
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt lines 102-107 and doc_34.html: Fig. 2 is an image with caption ''Protocol
+    deviation decision tree'' only (no alt text); the text calls it a support for consistent judgement. Importance rule is
+    set by E6R3 A1-3.9.3 (E6R3/doc_1.txt line 1693) and E3QA S3. No X1 record.'
+- text: '[verify] Fig. 5 content not readable'
+  class: note
+  wording: Figures of the TransCelerate paper (decision tree, issue management illustration) were not read; classification
+    rests on its text and the ICH definition.
+  topic: TransCelerate figures not read
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt lines 119-122: Fig. 5 is an image with caption ''Issue management illustration''
+    only; content not in the local text. The figure supports consistency and sets no step rule. No X1 record.'
+- text: '[verify] Fig. 5 content not readable (R5-016)'
+  class: note
+  wording: Figures of the TransCelerate paper (decision tree, issue management illustration) were not read; classification
+    rests on its text and the ICH definition.
+  topic: TransCelerate figures not read
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt lines 119-122: Fig. 5 is an image with caption ''Issue management illustration''
+    only; content not in the local text. The figure supports consistency and sets no step rule. No X1 record.'
+- text: '[verify binding] EU/US adoption of E3 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of E3 not checked; ICH REQs stay binding-ICH with [verify binding], US
+    guidance only. Covered by the general adoption statement.'
+- text: '[verify] the Q&A item is unnumbered under heading ''3. TERMINOLOGY''; fetch tool rendered its row label as ''7 June
+    2012'', which may be a row number 7 plus ''June 2012'''
+  class: drop
+  topic: E3 Q&A row label (question 7)
+  evidence: 'vendor/sources/E3QA/doc_5.txt lines 69-277: the Q&A rows are numbered 1 to 7 across sections 1-3 with ''June
+    2012'' in the Date of Approval column (the document history also cites ''Question 6''); the item is question 7 under ''3.
+    TERMINOLOGY'', definition on printed page 6. X1 R2-066 confirmed (PDF 9 / printed 6).'
+- text: '[verify] the Q&A item is unnumbered under heading ''3. TERMINOLOGY''; fetch tool rendered its row label as ''7 June
+    2012'', which may be a row number 7 plus ''June 2012'' (R2-066)'
+  class: drop
+  topic: E3 Q&A row label (question 7)
+  evidence: 'vendor/sources/E3QA/doc_5.txt lines 69-277: the Q&A rows are numbered 1 to 7 across sections 1-3 with ''June
+    2012'' in the Date of Approval column (the document history also cites ''Question 6''); the item is question 7 under ''3.
+    TERMINOLOGY'', definition on printed page 6. X1 R2-066 confirmed (PDF 9 / printed 6).'
+- text: '[verify] single detailed fetch; wording ''reasonable to consider'' not confirmed verbatim'
+  class: drop
+  topic: TransCelerate 'reasonable to consider' wording
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 101 (section Define): ''It appears reasonable, however, to consider
+    a PD non-important if it does not meet the criteria for important.'' X1 R5-003 confirmed, quotes verbatim.'
+- text: '[verify] single detailed fetch; wording ''reasonable to consider'' not confirmed verbatim (R5-003)'
+  class: drop
+  topic: TransCelerate 'reasonable to consider' wording
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 101 (section Define): ''It appears reasonable, however, to consider
+    a PD non-important if it does not meet the criteria for important.'' X1 R5-003 confirmed, quotes verbatim.'
+- text: '[verify] single fetch (R5-023)'
+  class: drop
+  topic: TransCelerate PDAP update wording
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 141 (end of section Identify and Collect): ''If important PDs are
+    identified during study conduct, which are not included in the PDAP, the study team should consider updating the PDAP.''
+    Matches the finding; not in the X1 sample.'
+- text: '[verify] 21 CFR does not state whether a protocol deviation is a ''change in the research activity''; IRB written
+    procedures decide (C-03)'
+  class: open
+  wording: 'Reporting duty not settled: neither E6(R3) nor 21 CFR says whether a protocol deviation is a ''change'' for prompt
+    IRB/IEC reporting; the model defers to IRB/IEC procedures.'
+  topic: C-03 deviation as reportable change
+  evidence: 'eCFR part312.txt line 772 (312.66) and line 695 (312.53(c)(1)(vii)) require prompt reporting of ''all changes
+    in the research activity'' with no definition; part56.txt line 137 (56.108(a)(3)) leaves it to IRB written procedures;
+    FDA-PD24 SIII.B.3 (doc_29.txt lines 351-356, DRAFT) does not settle it. conflicts.md C-03: [verify] on 312.66 stays.'
+- text: '[verify] E6(R3) does not state whether a protocol deviation counts as such a ''change'' (C-03)'
+  class: open
+  wording: 'Reporting duty not settled: neither E6(R3) nor 21 CFR says whether a protocol deviation is a ''change'' for prompt
+    IRB/IEC reporting; the model defers to IRB/IEC procedures.'
+  topic: C-03 deviation as reportable change
+  evidence: E6R3 doc_1.txt lines 806-824 (1.4.7, 1.4.8(a)/(b), printed 10-11) and line 947 (2.4.6, printed 13) speak of 'changes'
+    and list deviations separately, without saying whether a deviation is a change. conflicts.md C-03 closed by default (IRB
+    procedures decide) without settling the point.
+- text: '[verify] whose awareness (delegated party, CRO, monitor) starts the clock is not defined (C-05)'
+  class: open
+  wording: 'Deadline not settled: the sources start the EU 7-day serious breach clock at sponsor awareness but do not say
+    whether awareness of a delegated party, CRO or monitor counts.'
+  topic: C-05 serious breach clock start
+  evidence: Art. 52(1) (reg_2014_536_en.txt line 2594), EMA-SB S3.2 (doc_11.txt lines 205, 233), S6.1-6.4 (lines 380-440)
+    and EUCTR-QA 11.3 point 523 (doc_12.txt lines 5888-5890) all say 'sponsor' awareness; the EMA-SB glossary allows delegates
+    (lines 96-111) but none defines whose awareness counts. conflicts.md C-05 (user decision 06 Nov 2026) keeps this open.
+- text: '[verify] 21 CFR defines neither ''serious'' nor ''continuing''; no source maps iPD to this trigger (C-01)'
+  class: note
+  wording: 21 CFR defines neither 'serious' nor 'continuing' noncompliance, and no source links important protocol deviations
+    to this IRB reporting trigger.
+  topic: C-01 serious or continuing noncompliance undefined
+  evidence: eCFR part56.txt line 138 is the only occurrence of 'serious or continuing noncompliance' in parts 56 and 312,
+    with no definition; no hit in FDA-PD24 (doc_29.txt). X1 R4-028 confirmed; conflicts.md C-01 keeps the IRB decision separate.
+- text: '[verify] ''seven days'' (Art. 52(1)) read as calendar days per EMA-SB S3.2 (C-13)'
+  class: note
+  wording: Seven days in EU CTR Art. 52(1) are read as calendar days, as the EMA serious breach guideline states.
+  topic: C-13 seven calendar days
+  evidence: Art. 52(1) says 'seven days' (reg_2014_536_en.txt line 2594); EMA-SB S3.2 says '7 calendar days' (doc_11.txt lines
+    205, 233, printed 5/21) and CTIS-BT-SB24 '7 (calendar) days' (doc_15.txt line 279). Interpretation from guidance, settled
+    in conflicts.md C-13.
+- text: '[verify] EMA-SB glossary refers to the ''approved protocol version'', Art. 52(1) to the version applicable at the
+    time of the breach (C-14)'
+  class: note
+  wording: 'The EMA guideline says ''approved protocol version''; the model uses the EU CTR wording: the protocol version
+    applicable at the time of the breach.'
+  topic: C-14 protocol version wording
+  evidence: EUCTR-OJ reg_2014_536_en.txt lines 2593-2595 (Art. 52(1), OJ L 158/40) 'version of the protocol applicable at
+    the time of the breach'; EMA-SB doc_11.txt line 122 (Glossary, printed 3/21) 'approved protocol version'. Both confirmed
+    (X1 R3-023, R3-043 confirmed); conflicts.md C-14 keeps regulation wording.
+- text: '[verify] represented by message flows from the collapsed IRB/IEC pool to the Regulatory authority and Investigator/institution
+    pools (D1)'
+  class: note
+  wording: The IRB's duty stays inside the collapsed IRB/IEC pool; only its reports to FDA and to institutional officials
+    are shown, as message flows.
+  topic: D1 IRB reporting as message flows
+  evidence: 'eCFR part56.txt line 138 (56.108(b)(2)): reporting to the IRB, appropriate institutional officials and FDA; contracts/decisions.md
+    D1 (IRB/IEC collapsed pool) and conflicts.md C-01 handling (4) confirm the modelling choice (spec L4-05 M8, M9).'
+- text: '[verify] duty may lie with investigator or sponsor (A1-2.4.6)'
+  class: note
+  wording: E6(R3) gives this duty to the investigator or the sponsor; the model places it with the investigator/institution,
+    who reports changes under the IRB/IEC procedures.
+  topic: IRB/IEC change reporting party
+  evidence: 'E6R3 doc_1.txt line 947 (2.4.6, printed 13): ''The investigator or the sponsor should promptly communicate to
+    the IRB/IEC''; lines 786-824 (1.4, 1.4.8(b), printed 11): IRB/IEC procedures specify reporting by the investigator/institution.
+    X1 R1-016 and R1-013 confirmed.'
+- text: '[verify interface] Neighbouring process ''IND safety reporting and unanticipated problems'' (21 CFR 312.32, 312.55,
+    312.66, 56.108(b)(1)): runs when a deviation reveals or contributes to a reportable safety event; no flow hand-off is
+    defined in the sources. Interface REQs: REQ-224, REQ-225, REQ-227, REQ-228, REQ-229.'
+  class: note
+  wording: IND safety and unanticipated problem reporting are US processes outside this step; they run when a deviation reveals
+    or contributes to a reportable safety event.
+  topic: 'Interface: IND safety and unanticipated problems'
+  evidence: eCFR part312.txt line 772 (312.66 unanticipated problems) and part56.txt line 138 (56.108(b)(1)); X1 R4-009, R4-015,
+    R4-023, R4-027 confirmed; REQ-229 rests on FDA-PD24 (DRAFT). requirements.yaml REQ-224 to REQ-229 status interface, no
+    hand-off defined.
+- text: '[verify interface] IRB/IEC-internal process ''Suspension or termination of IRB approval'' inside the collapsed IRB/IEC
+    pool (D1); its reports are not part of this step. Interface REQs: REQ-230.'
+  class: note
+  wording: Suspension or termination of IRB approval is an IRB/IEC-internal process; its reports are not part of this step.
+  topic: 'Interface: IRB approval suspension or termination'
+  evidence: 'eCFR part56.txt line 138 (56.108(b)(3)): IRB procedures for reporting suspension or termination of IRB approval;
+    X1 R4-029 confirmed; requirements.yaml REQ-230 status interface (collapsed IRB/IEC pool, decisions.md D1).'
+- text: '[verify interface] Authority-initiated processes after a notification (CTIS request for information; corrective measures,
+    EU CTR Art. 77): each starts with an incoming authority request, so it is a separate process (SCP-02). The authority''s
+    assessment of the notification (REQ-231) is attached to message flow M1. Interface REQs: REQ-232, REQ-233, REQ-234.'
+  class: note
+  wording: Authority follow-ups after a notification (CTIS requests for information, EU CTR Art. 77 corrective measures) are
+    separate processes, each started by an authority request.
+  topic: 'Interface: authority follow-up after notification'
+  evidence: EUCTR-OJ reg_2014_536_en.txt line 3014 ff. (Art. 77(1)-(2)); CTIS-BT-SB24 doc_15.txt lines 221-227 (RFI via ad
+    hoc workflow); X1 R3-040, R3-041, R3-093, R3-106 confirmed; requirements.yaml REQ-231 to REQ-234 status interface (REQ-231
+    on flow M1).
+- text: '[verify interface] Neighbouring process ''Data security incident handling'': an incident that is also serious noncompliance
+    or a serious breach enters this step through S1. Interface REQs: REQ-212.'
+  class: note
+  wording: Data security incidents have their own process; an incident that is also serious noncompliance or a serious breach
+    enters this step at its start.
+  topic: 'Interface: data security incidents'
+  evidence: 'E6R3 doc_1.txt lines 2499-2501 (A1-3.16.1(w), printed 41): sponsor processes for reporting incidents including
+    security breaches; X1 R1-082 confirmed; synthesis/requirements.yaml REQ-212 status interface; spec/notes.md section 7
+    (interface placeholders).'
+- text: '[verify] reporting party not stated in the source (R5-037)'
+  class: note
+  wording: 'Lane assumed: the source names no reporting party, so periodic deviation reporting is shown in the Sponsor lane.'
+  topic: Periodic deviation reporting party
+  evidence: 'TCB-PD-TIRS doc_34.txt line 160 (Report section): ''Periodic reporting during the clinical study to a central
+    IRB, local IRBs, EC, and/or Health Authorities varies on cadence and content'' - no party named; spec L4-05 A7 sits in
+    the Sponsor lane.'
+- text: '[verify] Appendix III a form content not in the text layer (local copy also empty; form is an image or form object)'
+  class: drop
+  topic: Appendix III a CTIS form
+  evidence: 'Rendered vendor/sources/EMA-SB/doc_11.pdf page 19/21 (pdfimages: two embedded images): Appendix III a is two
+    CTIS screenshots of the ''New serious breach notification'' form with mandatory fields marked * (date of becoming aware,
+    date of breach, affected countries, breach category, areas impacted, description, actions taken and planned, impact on
+    safety or benefit-risk; screenshot system version 1.00, 23/03/2021); S4 (doc_11.txt line 267, printed 6/21) confirms ''All
+    relevant fields in CTIS, as presented in Appendix IIIa ... must be completed''. Only the text layer is empty, the content
+    is checkable.'
+- text: '[verify] Appendix III a form content not in the text layer (local copy also empty; form is an image or form object)
+    (R3-056)'
+  class: drop
+  topic: Appendix III a CTIS form
+  evidence: 'Rendered vendor/sources/EMA-SB/doc_11.pdf page 19/21 (pdfimages: two embedded images): Appendix III a is two
+    CTIS screenshots of the ''New serious breach notification'' form with mandatory fields marked * (date of becoming aware,
+    date of breach, affected countries, breach category, areas impacted, description, actions taken and planned, impact on
+    safety or benefit-risk; screenshot system version 1.00, 23/03/2021); S4 (doc_11.txt line 267, printed 6/21) confirms ''All
+    relevant fields in CTIS, as presented in Appendix IIIa ... must be completed''. Only the text layer is empty, the content
+    is checkable.'
+- text: '[verify] single fetch (R5-037)'
+  class: drop
+  topic: TransCelerate periodic reporting retrieval
+  evidence: 'Compared with the stored copy vendor/sources/TCB-PD-TIRS/doc_34.txt line 160 (PMC HTML, local): the passage matches
+    the R5-037 paraphrase (both important and non-important PDs reported as required, cadence and content vary). The single-fetch
+    doubt is resolved; R5-037 was not in the X1 sample.'
+- text: '[verify] drug disposition or return follows 21 CFR 312.59 (interface, not extracted)'
+  class: note
+  wording: Return or other disposition of unused drug follows 21 CFR 312.59 (sponsor assures return, may authorize alternative
+    disposition); its steps are not modelled here.
+  topic: 21 CFR 312.59 drug disposition interface
+  evidence: 'vendor/sources/eCFR-api/part312.txt line 721: 312.56(b) requires the investigator to ''dispose of or return the
+    investigational drug in accordance with the requirements of 312.59''; line 739: 312.59 has the sponsor assure return and
+    allows alternative disposition. Link confirmed; 312.59 is an interface not extracted as a REQ.'
+- text: '[verify] FDA-PD24 names ''the sponsor or clinical investigator'' for the root cause analysis (C-15)'
+  class: note
+  wording: FDA draft guidance assigns root cause analysis of recurrent deviations to sponsor or investigator; ICH E6(R3) names
+    the sponsor; shown in the Sponsor lane.
+  topic: C-15 root cause analysis owner
+  evidence: 'vendor/sources/FDA-PD24/doc_29.txt printed p. 9 lines 319-321: ''the sponsor or clinical investigator should
+    conduct a root-cause analysis''; E6R3 A1-3.12.2 (consolidated text line 2148-2151, printed 35) names the sponsor. synthesis/conflicts.md
+    C-15 resolves it: Sponsor lane, investigator''s own preventive measures a separate task.'
+- text: '[verify] against CTIS sponsor handbook v6.4 section 4.9 (p. 140)'
+  class: note
+  wording: CTIS screen details for updating a notification come from EMA training material; the current CTIS sponsor handbook
+    section on notifications could not be read.
+  topic: CTIS handbook notifications section not read
+  evidence: 'contracts/source_registry.yaml: CTIS sponsor handbook v6.4 has no local text, section 4.9 (p. 140) ''not readable
+    - gap''; cannot be checked. The requirement itself (update and follow-up reports through CTIS) is confirmed locally in
+    EMA-SB S3.2 (doc_11.txt lines 235-243, 271-272, p. 5-6/21) and CTIS-BT-SB24 slides 19 and 26 (X1 R3-092 confirmed), so
+    the gap does not change the step.'
+- text: '[verify] against CTIS sponsor handbook v6.4 section 4.9 (p. 140) (R3-097)'
+  class: note
+  wording: CTIS screen details for updating a notification come from EMA training material; the current CTIS sponsor handbook
+    section on notifications could not be read.
+  topic: CTIS handbook notifications section not read
+  evidence: 'contracts/source_registry.yaml: CTIS sponsor handbook v6.4 has no local text, section 4.9 (p. 140) ''not readable
+    - gap''; cannot be checked. The requirement itself (update and follow-up reports through CTIS) is confirmed locally in
+    EMA-SB S3.2 (doc_11.txt lines 235-243, 271-272, p. 5-6/21) and CTIS-BT-SB24 slides 19 and 26 (X1 R3-092 confirmed), so
+    the gap does not change the step.'
+- text: '''updating their analysis'' (lines 324-325) does not say which analysis is meant (root-cause or statistical analysis)'
+  class: note
+  wording: FDA draft guidance asks sponsors to consider updating 'their analysis' if deviations affect critical-to-quality
+    factors; it does not say whether root cause or statistical analysis.
+  topic: FDA-PD24 'their analysis' meaning
+  evidence: vendor/sources/FDA-PD24/doc_29.txt printed p. 9 lines 322-325 confirm the wording 'consider updating their analysis
+    if the deviations impact critical-to-quality factors'; no other passage in the guidance defines it (grep 'analys'). Draft
+    'consider' only; REQ-139 is draft and L4_06_A4 carries DRAFT, so no binding step depends on it.
+- text: '[verify] ''updating their analysis'' (lines 324-325) does not say which analysis is meant (root-cause or statistical
+    analysis) (R4-069)'
+  class: note
+  wording: FDA draft guidance asks sponsors to consider updating 'their analysis' if deviations affect critical-to-quality
+    factors; it does not say whether root cause or statistical analysis.
+  topic: FDA-PD24 'their analysis' meaning
+  evidence: vendor/sources/FDA-PD24/doc_29.txt printed p. 9 lines 322-325 confirm the wording 'consider updating their analysis
+    if the deviations impact critical-to-quality factors'; no other passage in the guidance defines it (grep 'analys'). Draft
+    'consider' only; REQ-139 is draft and L4_06_A4 carries DRAFT, so no binding step depends on it.
+- text: '[verify interface] Neighbouring process ''Protocol amendment (21 CFR 312.30; EU CTR Chapter III)'' runs when an amendment
+    is the corrective action; the sources define no decision point inside this step. Interface REQs: REQ-221, REQ-222.'
+  class: note
+  wording: Protocol amendment (21 CFR 312.30, EU CTR Chapter III) is a separate process used when an amendment is the corrective
+    action; not modelled here.
+  topic: 'Interface: protocol amendment'
+  evidence: 'REQ-221 (21 CFR 312.30, part312.txt line 322) and REQ-222 (E8R1 line 1037) have status interface in synthesis/requirements.yaml;
+    EU CTR Chapter III is the substantial modification procedure (reg_2014_536_en.txt line 1451-1453). spec/coverage.md: open_items
+    #2, no hand-off point in the flow.'
+- text: '[verify interface] Neighbouring process ''Quality assurance and audit'': its findings enter L4-04/L4-05 as potential
+    deviations or noncompliance and its CAPA requests enter this step. Interface REQs: REQ-208.'
+  class: note
+  wording: 'Quality assurance and audit is not modelled: its findings enter deviation classification or noncompliance assessment
+    as potential issues; its CAPA requests enter this step.'
+  topic: 'Interface: quality assurance and audit'
+  evidence: 'synthesis/requirements.yaml REQ-208 status interface, reason ''its findings enter A4/A5 ... and its CAPA requests
+    A6''; E6R3 A1-3.11.1 (consolidated text lines 1823-1828) confirms risk-based QA to identify causes of serious noncompliance
+    and enable CAPA. spec/coverage.md maps REQ-208 to L4-06 open_items #1.'
+- text: '[verify interface] Neighbouring processes ''Restart after temporary halt (EU CTR)'' and ''Discontinuation for unreasonable
+    risk (21 CFR 312.56(d))'' are safety and trial status processes. Interface REQs: REQ-223, REQ-226.'
+  class: note
+  wording: Restart after temporary halt (EU CTR Art. 38(2)) and discontinuation for unreasonable risk (21 CFR 312.56(d)) are
+    safety and trial status processes, not modelled here.
+  topic: 'Interface: restart after halt and discontinuation for risk'
+  evidence: 'EU CTR Art. 38(2) (reg_2014_536_en.txt lines 2349-2350) deems a restart a substantial modification; 21 CFR 312.56(d)
+    (part312.txt line 723) sets the 5-working-day discontinuation. REQ-223 and REQ-226 have status interface; spec/coverage.md:
+    open_items #3.'
+- text: '[verify] party is the party where the breach occurred (sponsor, CRO or investigator); Sponsor lane by default'
+  class: note
+  wording: 'Lane assumed: EMA guidance assigns the check on other trials to the party where the breach occurred (sponsor,
+    CRO or investigator); Sponsor lane shown.'
+  topic: 'Lane: party where serious breach occurred'
+  evidence: 'vendor/sources/EMA-SB/doc_11.txt S7, printed p. 10/21 (lines 450-452): ''The party (e.g. sponsor, CRO, investigator)
+    at which the serious breach occurred should verify the impact of the breach on other clinical trials (ongoing or ended)'';
+    Appendix II (p. 18/21) has the sponsor check its other trials with the same service provider, supporting the Sponsor lane.'
+- text: '[verify] local copy not available (shell fetch returned HTTP 404 page, vendor/sources/CTIS-TM05/doc_17.txt)'
+  class: general
+  general: G-RETRIEVAL
+  topic: CTIS-TM05 no stored copy
+  evidence: 'Confirmed: vendor/sources/CTIS-TM05/doc_17.txt is an EMA 404 page; source_registry.yaml local_text null; R3-097
+    not sampled by X1. The supporting finding rests on one WebFetch; REQ-144 is confirmed independently in EMA-SB S3.2 (p.
+    5-6/21) and CTIS-BT-SB24 slide 19 (X1 R3-092 confirmed).'
+- text: '[verify] local copy not available (shell fetch returned HTTP 404 page, vendor/sources/CTIS-TM05/doc_17.txt) (R3-097)'
+  class: general
+  general: G-RETRIEVAL
+  topic: CTIS-TM05 no stored copy
+  evidence: 'Confirmed: vendor/sources/CTIS-TM05/doc_17.txt is an EMA 404 page; source_registry.yaml local_text null; R3-097
+    not sampled by X1. The supporting finding rests on one WebFetch; REQ-144 is confirmed independently in EMA-SB S3.2 (p.
+    5-6/21) and CTIS-BT-SB24 slide 19 (X1 R3-092 confirmed).'
+- text: SOURCE-LOC CTIS-TM05 | SOther-notifications [verify] | printed 4
+  class: general
+  general: G-LOCATION
+  topic: CTIS-TM05 section label
+  evidence: 'Same citation as R3-097: section ''Other notifications'' and printed p. 4 cannot be checked because vendor/sources/CTIS-TM05/doc_17.txt
+    is a 404 page; the step content rests on EMA-SB S3.2 and CTIS-BT-SB24, both checked locally.'
+- text: '[verify] printed section label of the guide not captured (loc names the topic ''other types of notifications'')'
+  class: general
+  general: G-LOCATION
+  topic: CTIS-TM05 section label
+  evidence: Local copy vendor/sources/CTIS-TM05/doc_17.txt is an EMA 'Page or document not found' page, so the section label
+    cannot be checked; R3-097 is not in verification/X1_results.yaml. Content of REQ-144 rests on EMA-SB S3.2 and CTIS-BT-SB24
+    (both checked locally), so only the location of this supporting citation is uncertain.
+- text: '[verify] printed section label of the guide not captured (loc names the topic ''other types of notifications'') (R3-097)'
+  class: general
+  general: G-LOCATION
+  topic: CTIS-TM05 section label
+  evidence: Local copy vendor/sources/CTIS-TM05/doc_17.txt is an EMA 'Page or document not found' page, so the section label
+    cannot be checked; R3-097 is not in verification/X1_results.yaml. Content of REQ-144 rests on EMA-SB S3.2 and CTIS-BT-SB24
+    (both checked locally), so only the location of this supporting citation is uncertain.
+- text: '[verify] single fetch (R5-019)'
+  class: drop
+  topic: TCB-PD-TIRS retraining single fetch
+  evidence: 'verification/X1_results.yaml R5-019: confirmed, method local-text, all quotes verbatim; vendor/sources/TCB-PD-TIRS/doc_34.txt
+    line 137 ''Retraining and feedback mechanisms should also be implemented.'' The single-fetch doubt is resolved.'
+- text: '[verify] DVCLASI is in the SDTMIG v4.0 public review draft only (R5-067)'
+  class: open
+  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
+    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
+  topic: SDTM/SDTMIG version and DVCLASI status
+  evidence: 'vendor/sources/CDISC-SDTMIG40-PR/doc_40.txt slides 35-36 (PDF 34-35): DVCLASI is new in the SDTMIG v4.0 public
+    review; slide 42 (PDF 41): review closed 6 Apr 2026, publication targeted Q4 2026, dependent on comments. Final status
+    and FDA support not settled by any local source.'
+- text: '[verify] Data Standards Catalog not read; confirm SDTM/SDTMIG versions supported'
+  class: open
+  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
+    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
+  topic: SDTM/SDTMIG version and DVCLASI status
+  evidence: FDA-ESTUDY/doc_42.txt lines 236-241 require 'FDA-supported standards ... specified in the Catalog'; FDA-SDTCG/doc_41.txt
+    lines 1093-1094 and 2629-2630 defer SDTMIG versions to the Catalog. The Catalog is not in vendor/sources; versions not
+    checkable.
+- text: '[verify] Data Standards Catalog not read; confirm SDTM/SDTMIG versions supported (R5-071)'
+  class: open
+  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
+    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
+  topic: SDTM/SDTMIG version and DVCLASI status
+  evidence: FDA-ESTUDY/doc_42.txt lines 236-241 require 'FDA-supported standards ... specified in the Catalog'; FDA-SDTCG/doc_41.txt
+    lines 1093-1094 and 2629-2630 defer SDTMIG versions to the Catalog. The Catalog is not in vendor/sources; versions not
+    checkable.
+- text: '[verify] SDTMIG v4.0 publication status and final DVCLASI definition'
+  class: open
+  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
+    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
+  topic: SDTM/SDTMIG version and DVCLASI status
+  evidence: 'CDISC-SDTMIG40-PR/doc_40.txt slide 42 (PDF 41): ''targeted Publication: Q4 2026''; no local source shows SDTMIG
+    v4.0 published. FDA-SDTCG/doc_41.txt lines 2629-2630: supported SDTMIGs are listed in the Catalog, which is not local.'
+- text: '[verify] SDTMIG v4.0 publication status and final DVCLASI definition (R5-067)'
+  class: open
+  wording: 'Data standard version not settled: FDA-supported SDTM and SDTMIG versions were not checked in the Data Standards
+    Catalog; the classification variable DVCLASI exists only in the SDTMIG v4.0 review draft.'
+  topic: SDTM/SDTMIG version and DVCLASI status
+  evidence: 'CDISC-SDTMIG40-PR/doc_40.txt slide 42 (PDF 41): ''targeted Publication: Q4 2026''; no local source shows SDTMIG
+    v4.0 published. FDA-SDTCG/doc_41.txt lines 2629-2630: supported SDTMIGs are listed in the Catalog, which is not local.'
+- text: '[verify binding] schema has no ''binding guidance'' class; mapped to binding-law because the statute (745A(a)) plus
+    guidance text state binding effect'
+  class: note
+  wording: 'Shown as law: FDA''s study data guidance states binding effect for electronic format under FD&C Act 745A(a); the
+    model has no binding-guidance class.'
+  topic: FDA study data guidance binding class
+  evidence: 'vendor/sources/FDA-ESTUDY/doc_42.txt lines 41-42 (printed 2): ''Insofar as this guidance specifies the format
+    for electronic submissions ... pursuant to section 745A(a) ... it will have binding effect.'' Mapping is a schema choice;
+    DV domain content stays a nonbinding TCG recommendation.'
+- text: '[verify binding] schema has no ''binding guidance'' class; mapped to binding-law because the statute (745A(a)) plus
+    guidance text state binding effect (R5-071)'
+  class: note
+  wording: 'Shown as law: FDA''s study data guidance states binding effect for electronic format under FD&C Act 745A(a); the
+    model has no binding-guidance class.'
+  topic: FDA study data guidance binding class
+  evidence: 'vendor/sources/FDA-ESTUDY/doc_42.txt lines 41-42 (printed 2): ''Insofar as this guidance specifies the format
+    for electronic submissions ... pursuant to section 745A(a) ... it will have binding effect.'' Mapping is a schema choice;
+    DV domain content stays a nonbinding TCG recommendation.'
+- text: '[verify interface] Neighbouring process ''CSR authoring'' writes the sections on changes in conduct (E3 9.8) and
+    patient disposition (E3 10.1); only the deviation content and the disposition label (REQ-178) belong to this step. Interface
+    REQs: REQ-241, REQ-242.'
+  class: note
+  wording: E3 sections 9.8 (changes in conduct) and 10.1 (patient disposition) belong to neighbouring CSR authoring; this
+    step supplies only the deviation content and disposition label.
+  topic: 'Interface: CSR authoring'
+  evidence: spec/L4-07.yaml line 427 and spec/notes.md S7 (interface placeholders); E3/doc_4.txt 9.8 and 10.1 on PDF 20 /
+    printed 12 (X1 confirmed R2-053, R2-054); REQ-241 and REQ-242 have status interface in synthesis/requirements.yaml.
+- text: '[verify] secondary mirror of NCIt; SDTMIG v3.4 DV text (purpose, assumptions) behind CDISC login, not read'
+  class: note
+  wording: The SDTMIG DV domain text sits behind a CDISC login and was not read; variable meanings follow CDISC variable names
+    and controlled terminology.
+  topic: SDTMIG DV text not read
+  evidence: 'Mirror doubt resolved: vendor/sources/CDISC-CT/doc_39.txt (NCI EVS SDTM CT 2026-09-25) line 28947 gives C49585
+    DV ''An events domain that contains protocol violations and deviations during the course of the study.'' SDTMIG v3.4 has
+    no local copy; not checkable.'
+- text: '[verify] secondary mirror of NCIt; SDTMIG v3.4 DV text (purpose, assumptions) behind CDISC login, not read (R5-068)'
+  class: note
+  wording: The SDTMIG DV domain text sits behind a CDISC login and was not read; variable meanings follow CDISC variable names
+    and controlled terminology.
+  topic: SDTMIG DV text not read
+  evidence: 'Mirror doubt resolved: vendor/sources/CDISC-CT/doc_39.txt (NCI EVS SDTM CT 2026-09-25) line 28947 gives C49585
+    DV ''An events domain that contains protocol violations and deviations during the course of the study.'' SDTMIG v3.4 has
+    no local copy; not checkable.'
+- text: '[verify] variable meanings glossed from CDISC naming, SDTMIG text not read'
+  class: note
+  wording: The SDTMIG DV domain text sits behind a CDISC login and was not read; variable meanings follow CDISC variable names
+    and controlled terminology.
+  topic: SDTMIG DV text not read
+  evidence: vendor/sources/CDISC-CT/doc_39.txt lines 1179, 1181, 1507 support DVCAT (category), DVDECOD (dictionary-derived
+    term) and EPOCH; DVSPID, DVTERM, DVSCAT, DVSTDTC, DVENDTC glosses rest on CDISC naming only (SDTMIG not local). Variable
+    list itself confirmed in FDA-SDTCG p. 16.
+- text: '[verify] variable meanings glossed from CDISC naming, SDTMIG text not read (R5-070)'
+  class: note
+  wording: The SDTMIG DV domain text sits behind a CDISC login and was not read; variable meanings follow CDISC variable names
+    and controlled terminology.
+  topic: SDTMIG DV text not read
+  evidence: vendor/sources/CDISC-CT/doc_39.txt lines 1179, 1181, 1507 support DVCAT (category), DVDECOD (dictionary-derived
+    term) and EPOCH; DVSPID, DVTERM, DVSCAT, DVSTDTC, DVENDTC glosses rest on CDISC naming only (SDTMIG not local). Variable
+    list itself confirmed in FDA-SDTCG p. 16.
+- text: '[verify binding] EU/US adoption of E3, E3QA not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of E3, E3 Q&A, E9 and E9(R1) was not checked; every REQ on them carries
+    [verify binding] and its binding_route says US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of E3, E9 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of E3, E3 Q&A, E9 and E9(R1) was not checked; every REQ on them carries
+    [verify binding] and its binding_route says US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of E3QA, E3 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of E3, E3 Q&A, E9 and E9(R1) was not checked; every REQ on them carries
+    [verify binding] and its binding_route says US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of E9 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of E3, E3 Q&A, E9 and E9(R1) was not checked; every REQ on them carries
+    [verify binding] and its binding_route says US guidance only - covered by the legend statement.'
+- text: '[verify binding] EU/US adoption of E9R1 not checked by the research stems (C-06)'
+  class: general
+  general: G-ADOPTION
+  topic: C-06 ICH regional adoption
+  evidence: 'synthesis/conflicts.md C-06: adoption of E3, E3 Q&A, E9 and E9(R1) was not checked; every REQ on them carries
+    [verify binding] and its binding_route says US guidance only - covered by the legend statement.'
+- text: SOURCE-LOC TCB-PD | STaking-a-holistic-approach-CLOSEOUT [verify] | web page (carousel tab inferred)
+  class: general
+  general: G-LOCATION
+  topic: TCB-PD carousel tab
+  evidence: 'No local text (INDEX.md: TransCelerate host robots-restricted). X1 recheck confirmed R5-046 content by WebFetch
+    in the close-out paragraph, but the carousel tab label rests on fetch summaries only.'
+- text: SOURCE-LOC TCB-PD | STaking-a-holistic-approach-REVIEW-ANALYZE [verify] | web page (carousel tab inferred)
+  class: general
+  general: G-LOCATION
+  topic: TCB-PD carousel tab
+  evidence: 'No local text (INDEX.md: TransCelerate host robots-restricted); R5-047 (REVIEW-ANALYZE tab inferred) was not
+    in the X1 sample; X1_summary ''Not fully checkable'' lists TCB-PD. Tab label cannot be confirmed.'
+- text: '[verify] slide 36 wording from one fetch'
+  class: drop
+  topic: CDISC slide 36 wording
+  evidence: 'vendor/sources/CDISC-SDTMIG40-PR/doc_40.txt slide 36 (PDF 35): --CLASI ''Classification of Protocol Deviation'',
+    Events, DV domain only, impact on completeness, accuracy and/or reliability of data or subject rights, safety, well-being;
+    matches R5-067.'
+- text: '[verify] slide 36 wording from one fetch (R5-067)'
+  class: drop
+  topic: CDISC slide 36 wording
+  evidence: 'vendor/sources/CDISC-SDTMIG40-PR/doc_40.txt slide 36 (PDF 35): --CLASI ''Classification of Protocol Deviation'',
+    Events, DV domain only, impact on completeness, accuracy and/or reliability of data or subject rights, safety, well-being;
+    matches R5-067.'
+- text: SOURCE-LOC E3 | SAnnex-IVa | printed 35 [verify]
+  class: drop
+  topic: E3 Annex IVa page
+  evidence: 'vendor/sources/E3/doc_4.txt: Annex IVa flowchart with ''PROTOCOL VIOLATION'' on PDF 43 / printed 35; cited page
+    correct; X1 confirmed R2-064.'
+- text: '[verify] annex page numbers read from footers; fetch F13 warned they may be off by one'
+  class: drop
+  topic: E3 Annex IVa page
+  evidence: 'vendor/sources/E3/doc_4.txt: ''PROTOCOL VIOLATION'' in the Annex IVa flowchart is on PDF 43 / printed 35, so
+    the footer page is not off by one; X1 confirmed R2-064.'
+- text: '[verify] annex page numbers read from footers; fetch F13 warned they may be off by one (R2-064)'
+  class: drop
+  topic: E3 Annex IVa page
+  evidence: 'vendor/sources/E3/doc_4.txt: ''PROTOCOL VIOLATION'' in the Annex IVa flowchart is on PDF 43 / printed 35, so
+    the footer page is not off by one; X1 confirmed R2-064.'
+- text: '[verify] sentence content from a single fetch (F11)'
+  class: drop
+  topic: E3 S11.1 analysis populations (single fetch)
+  evidence: 'vendor/sources/E3/doc_4.txt 11.1, PDF 21 / printed 13: ''Exactly which patients were included in each efficacy
+    analysis should be precisely defined''; timing relative to unblinding matches; X1 confirmed R2-059.'
+- text: '[verify] sentence content from a single fetch (F11) (R2-059)'
+  class: drop
+  topic: E3 S11.1 analysis populations (single fetch)
+  evidence: 'vendor/sources/E3/doc_4.txt 11.1, PDF 21 / printed 13: ''Exactly which patients were included in each efficacy
+    analysis should be precisely defined''; timing relative to unblinding matches; X1 confirmed R2-059.'
+- text: '[verify] answer content from a single fetch (F33); topic confirmed in F16'
+  class: drop
+  topic: E3QA S1 flexibility answer (single fetch)
+  evidence: 'vendor/sources/E3QA/doc_5.txt PDF 4-5 / printed 1-2: ''ICH E3 is a Guideline, not a set of rigid requirements
+    or a template''; omitted relevant aspects ''should be clearly indicated and the rationale ... provided''; X1 confirmed
+    R2-065.'
+- text: '[verify] answer content from a single fetch (F33); topic confirmed in F16 (R2-065)'
+  class: drop
+  topic: E3QA S1 flexibility answer (single fetch)
+  evidence: 'vendor/sources/E3QA/doc_5.txt PDF 4-5 / printed 1-2: ''ICH E3 is a Guideline, not a set of rigid requirements
+    or a template''; omitted relevant aspects ''should be clearly indicated and the rationale ... provided''; X1 confirmed
+    R2-065.'
+- text: '[verify] sentence content from a single fetch (F19) (R2-085)'
+  class: drop
+  topic: E9 S5.2.1 deferral to blind review (single fetch)
+  evidence: 'vendor/sources/E9/doc_6.txt 5.2.1, PDF 27 / printed 23: ''defer detailed consideration of the manner of dealing
+    with irregularities until the blind review ... this should be stated in the protocol''; X1 confirmed R2-085.'
+- text: '[verify] sentence content from a single fetch (F19) (R2-084)'
+  class: drop
+  topic: E9 S5.2.1 full analysis set (single fetch)
+  evidence: 'vendor/sources/E9/doc_6.txt 5.2.1, PDF 27 / printed 23: ''When the full analysis set of subjects is used, violations
+    of the protocol that occur after randomisation...''; X1 confirmed R2-084.'
+- text: SOURCE-LOC E9 | S5.2.2 | printed 23-24 [verify]
+  class: drop
+  topic: E9 S5.2.2 page
+  evidence: 'vendor/sources/E9/doc_6.txt: 5.2.2 starts on PDF 27 / printed 23 (TOC also 23); the cited sentences (precise
+    reasons for PPS exclusion, criterion iii ''absence of any major protocol violations'') are on PDF 28 / printed 24; X1
+    confirmed R2-086 and R2-087.'
+- text: '[verify] printed page: 23 per F19, 24 per F21'
+  class: drop
+  topic: E9 S5.2.2 page
+  evidence: 'vendor/sources/E9/doc_6.txt: 5.2.2 starts on PDF 27 / printed 23 (TOC also 23); the cited sentences (precise
+    reasons for PPS exclusion, criterion iii ''absence of any major protocol violations'') are on PDF 28 / printed 24; X1
+    confirmed R2-086 and R2-087.'
+- text: '[verify] printed page: 23 per F19, 24 per F21 (R2-086)'
+  class: drop
+  topic: E9 S5.2.2 page
+  evidence: 'vendor/sources/E9/doc_6.txt: 5.2.2 starts on PDF 27 / printed 23 (TOC also 23); the cited sentences (precise
+    reasons for PPS exclusion, criterion iii ''absence of any major protocol violations'') are on PDF 28 / printed 24; X1
+    confirmed R2-086 and R2-087.'
+- text: '[verify] printed page: 23 per F19, 24 per F21 (R2-087)'
+  class: drop
+  topic: E9 S5.2.2 page
+  evidence: 'vendor/sources/E9/doc_6.txt: 5.2.2 starts on PDF 27 / printed 23 (TOC also 23); the cited sentences (precise
+    reasons for PPS exclusion, criterion iii ''absence of any major protocol violations'') are on PDF 28 / printed 24; X1
+    confirmed R2-086 and R2-087.'
+- text: '[verify] sentence content from a single fetch (F20)'
+  class: drop
+  topic: E9 S5.2.2 pattern across groups (single fetch)
+  evidence: 'vendor/sources/E9/doc_6.txt 5.2.2, PDF 28 / printed 24: ''It is good practice to assess the pattern of such problems
+    among the treatment groups'' (frequency, time of occurrence); X1 confirmed R2-089.'
+- text: '[verify] sentence content from a single fetch (F20) (R2-089)'
+  class: drop
+  topic: E9 S5.2.2 pattern across groups (single fetch)
+  evidence: 'vendor/sources/E9/doc_6.txt 5.2.2, PDF 28 / printed 24: ''It is good practice to assess the pattern of such problems
+    among the treatment groups'' (frequency, time of occurrence); X1 confirmed R2-089.'
+- text: SOURCE-LOC E9 | S5.2.3 | printed 24 [verify]
+  class: drop
+  topic: E9 S5.2.3 content and page
+  evidence: 'vendor/sources/E9/doc_6.txt: TOC line 106 and the 5.2.3 heading put the section on PDF 28 / printed 24 (not 25);
+    content (advantage of showing insensitivity, plan FAS and PPS analyses, ''throws some doubt'') matches; X1 confirmed R2-090.'
+- text: '[verify] section content from a single fetch (F20); start page 24 per TOC and F22, 25 per F20'
+  class: drop
+  topic: E9 S5.2.3 content and page
+  evidence: 'vendor/sources/E9/doc_6.txt: TOC line 106 and the 5.2.3 heading put the section on PDF 28 / printed 24 (not 25);
+    content (advantage of showing insensitivity, plan FAS and PPS analyses, ''throws some doubt'') matches; X1 confirmed R2-090.'
+- text: '[verify] section content from a single fetch (F20); start page 24 per TOC and F22, 25 per F20 (R2-090)'
+  class: drop
+  topic: E9 S5.2.3 content and page
+  evidence: 'vendor/sources/E9/doc_6.txt: TOC line 106 and the 5.2.3 heading put the section on PDF 28 / printed 24 (not 25);
+    content (advantage of showing insensitivity, plan FAS and PPS analyses, ''throws some doubt'') matches; X1 confirmed R2-090.'
+- text: '[verify] glossary wording from a single fetch (F20)'
+  class: drop
+  topic: E9 glossary Blind Review (single fetch)
+  evidence: 'vendor/sources/E9/doc_6.txt glossary, PDF 36 / printed 32: ''The checking and assessment of data during the period
+    of time between trial completion'' and breaking of the blind; X1 confirmed R2-096.'
+- text: '[verify] glossary wording from a single fetch (F20) (R2-096)'
+  class: drop
+  topic: E9 glossary Blind Review (single fetch)
+  evidence: 'vendor/sources/E9/doc_6.txt glossary, PDF 36 / printed 32: ''The checking and assessment of data during the period
+    of time between trial completion'' and breaking of the blind; X1 confirmed R2-096.'
+- text: '[verify] exact sentence boundaries; confirmed only as short phrases (F24)'
+  class: drop
+  topic: E9R1 A.4 sentence boundaries
+  evidence: 'vendor/sources/E9R1/doc_7.txt lines 660-667 (printed 13): full sentences ''Efforts should be made to collect
+    all data that are relevant to support estimation...'' and the discontinuation/switching sentence; X1 confirmed R2-103.'
+- text: '[verify] exact sentence boundaries; confirmed only as short phrases (F24) (R2-103)'
+  class: drop
+  topic: E9R1 A.4 sentence boundaries
+  evidence: 'vendor/sources/E9R1/doc_7.txt lines 660-667 (printed 13): full sentences ''Efforts should be made to collect
+    all data that are relevant to support estimation...'' and the discontinuation/switching sentence; X1 confirmed R2-103.'
+- text: '[verify] start dates from one fetch'
+  class: drop
+  topic: FDA-ESTUDY start dates
+  evidence: 'vendor/sources/FDA-ESTUDY/doc_42.txt lines 236-241 (printed 7): start date 24 months after publication (December
+    18, 2016) for NDA, ANDA, certain BLA; 36 months (December 18, 2017) for certain IND; X1 content confirmed.'
+- text: '[verify] start dates from one fetch (R5-071)'
+  class: drop
+  topic: FDA-ESTUDY start dates
+  evidence: 'vendor/sources/FDA-ESTUDY/doc_42.txt lines 236-241 (printed 7): start date 24 months after publication (December
+    18, 2016) for NDA, ANDA, certain BLA; 36 months (December 18, 2017) for certain IND; X1 content confirmed.'
+- text: Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked
+  class: drop
+  topic: FDA-PD24 footnote 16
+  evidence: 'vendor/sources/FDA-PD24/doc_29.txt lines 241-243 and footnote 16: CDER applications ''all protocol deviations
+    should also be provided as described in the most current version of the'' BIMO Technical Conformance Guide (v3.1, Sept
+    2024 cited); modal should; X1 confirmed R4-055.'
+- text: '[verify] Exact wording and modal of footnote 16 (BIMO Technical Conformance Guide reference) not double-checked (R4-055)'
+  class: drop
+  topic: FDA-PD24 footnote 16
+  evidence: 'vendor/sources/FDA-PD24/doc_29.txt lines 241-243 and footnote 16: CDER applications ''all protocol deviations
+    should also be provided as described in the most current version of the'' BIMO Technical Conformance Guide (v3.1, Sept
+    2024 cited); modal should; X1 confirmed R4-055.'
+- text: SOURCE-LOC FDA-SDTCG | S4.1.1.3 | 16 or 17 of 97 [verify]
+  class: drop
+  topic: FDA-SDTCG DV domain page
+  evidence: 'vendor/sources/FDA-SDTCG/doc_41.txt lines 1405-1456: the DV Domain text (incl. the variable list) sits between
+    the footers ''Page 15 of 97'' and ''Page 16 of 97'', i.e. on Page 16 of 97 (PDF 29); X1 confirmed R5-069 and R5-070.'
+- text: '[verify] page number: fetches gave 16 and 17 of 97'
+  class: drop
+  topic: FDA-SDTCG DV domain page
+  evidence: 'vendor/sources/FDA-SDTCG/doc_41.txt lines 1405-1456: the DV Domain text (incl. the variable list) sits between
+    the footers ''Page 15 of 97'' and ''Page 16 of 97'', i.e. on Page 16 of 97 (PDF 29); X1 confirmed R5-069 and R5-070.'
+- text: '[verify] page number: fetches gave 16 and 17 of 97 (R5-069)'
+  class: drop
+  topic: FDA-SDTCG DV domain page
+  evidence: 'vendor/sources/FDA-SDTCG/doc_41.txt lines 1405-1456: the DV Domain text (incl. the variable list) sits between
+    the footers ''Page 15 of 97'' and ''Page 16 of 97'', i.e. on Page 16 of 97 (PDF 29); X1 confirmed R5-069 and R5-070.'
+- text: '[verify] page number: fetches gave 16 and 17 of 97 (R5-070)'
+  class: drop
+  topic: FDA-SDTCG DV domain page
+  evidence: 'vendor/sources/FDA-SDTCG/doc_41.txt lines 1405-1456: the DV Domain text (incl. the variable list) sits between
+    the footers ''Page 15 of 97'' and ''Page 16 of 97'', i.e. on Page 16 of 97 (PDF 29); X1 confirmed R5-069 and R5-070.'
+- text: '[verify] single fetch (R5-036)'
+  class: drop
+  topic: TCB-PD-TIRS CSR recommendations (single fetch)
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 159 (Review and Analyze): ''Impact of important PDs should be discussed
+    in the CSR.'' Content of R5-036 confirmed in the stored PMC text.'
+- text: '[verify] single fetch (R5-038)'
+  class: drop
+  topic: TCB-PD-TIRS CSR recommendations (single fetch)
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt lines 161-162 (Report): high-level, study-specific summary for Section
+    10.2 of interim and final CSRs, impact on safety or interpretation at participant, site or overall level. R5-038 confirmed.'
+- text: '[verify] single fetch (R5-039)'
+  class: drop
+  topic: TCB-PD-TIRS CSR recommendations (single fetch)
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 163 (Report): ''Display number of participants whose important PD(s)
+    resulted in exclusion of any/all of their data from any/all analyses.'' R5-039 confirmed.'
+- text: '[verify] single fetch (R5-040)'
+  class: drop
+  topic: TCB-PD-TIRS CSR recommendations (single fetch)
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 164 (Report): ''Summarize important PDs by category.'' R5-040 confirmed
+    locally and by X1.'
+- text: '[verify] single fetch (R5-041)'
+  class: drop
+  topic: TCB-PD-TIRS CSR recommendations (single fetch)
+  evidence: 'vendor/sources/TCB-PD-TIRS/doc_34.txt line 165 (Report): ''GCP issues are usually described in a separate section
+    of the CSR. However, Section 10.2 may include a reference...'' R5-041 confirmed.'
+- text: '[verify] US sponsor record retention (21 CFR 312.57) not extracted by R4 (C-23); no US sponsor retention task is
+    modelled.'
+  class: open
+  wording: 'Retention duty not modelled: under 21 CFR 312.57(c) sponsors keep Part 312 records 2 years after marketing approval
+    or after investigational shipment stops and FDA is notified.'
+  topic: C-23 US sponsor record retention 21 CFR 312.57(c)
+  evidence: 'vendor/sources/eCFR-api/part312.txt line 729, 312.57(c): sponsor retains ''the records and reports required by
+    this part'' 2 years after approval, or 2 years after shipment and delivery for investigational use is discontinued and
+    FDA notified. No finding or REQ cites 312.57 (only synthesis/conflicts.md C-23); spec/L4-08.yaml has a US task only for
+    the investigator (A8, 312.62(c)); whether deviation records fall under ''records required by this part'' is for the reviewer.'
+- text: '[verify] directly accessible on request by regulatory authorities (E6R3 AppC-C.2.6; EU CTR Art. 58); request-driven
+    hand-off shown as data store, not as message flow'
+  class: note
+  wording: Records are kept directly accessible to authorities on request; this request-driven hand-off is shown as a data
+    store, not a message flow.
+  topic: request-driven access to archived records shown as data store
+  evidence: 'E6R3 C.2.6 (e6r3 text line 4215, printed 76 / PDF 84): ''directly accessible upon request by regulatory authorities,
+    monitors and auditors''; EU CTR Art. 58 second paragraph (vendor/sources/EUCTR-OJ/reg_2014_536_en.txt line 2682, OJ L
+    158/41): ''readily available and accessible, upon request, to the competent authorities''. Modelling choice documented
+    in spec/L4-08.yaml notes and synthesis/l3_cut.md A8; X1 confirmed R1-118 and R3-037.'
+- text: '[verify] duty of ''sponsor and investigator/institution''; applies in both pools'
+  class: note
+  wording: Retaining deviation and CAPA records is a duty of both sponsor and investigator/institution; it is shown as a task
+    in each pool.
+  topic: shared retention duty sponsor and investigator (deviation and CAPA records)
+  evidence: 'vendor/sources/e6r3/E6R3_consolidated_2026-06-16.txt C.2.6-C.2.8 (lines 4215-4232, printed 76 / PDF 84): sponsor
+    and investigator/institution retain essential records, each party its own at trial end; the Essential Records Table row
+    ''Records and reports of noncompliance including protocol deviations...'' (line 4491, PDF 89 / printed 81) names no party.
+    X1 confirmed R1-123 and R1-122; spec/L4-08.yaml carries REQ-188 on A1 (Sponsor) and A6 (Investigator/institution).'
+- text: '[verify] single fetch (R5-033)'
+  class: drop
+  topic: single fetch TCB-PD-TIRS PDAP filing
+  evidence: 'Local PMC text vendor/sources/TCB-PD-TIRS/doc_34.txt line 157 (Store section): ''The PDAP should be stored with
+    other protocol related decision-making records.'' This matches REQ-201; R5-033 was not in the X1 sample, but the local
+    text settles it.'
+- text: '[verify] single fetch (R5-006)'
+  class: drop
+  topic: single fetch TCB-PD-TIRS periodic therapeutic area reviews
+  evidence: 'verification/X1_results.yaml R5-006 verdict confirmed (local-text); vendor/sources/TCB-PD-TIRS/doc_34.txt line
+    102 (Define section): ''Conducting periodic therapeutic area or indication reviews is a best practice to maintain consistency
+    within a company.'''
+- text: '[verify] sentence content from a single fetch (F23)'
+  class: drop
+  topic: single retrieval E9(R1) A.1/A.3.1
+  evidence: 'verification/X1_results.yaml: R2-098, R2-099, R2-101 confirmed; passages present in vendor/sources/E9R1/doc_7.txt
+    lines 149-155, 317, 329.'

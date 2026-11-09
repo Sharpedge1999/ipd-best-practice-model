@@ -647,14 +647,21 @@ if (taskDiagram) {
     check(vcount >= rec.verify.length, `panel: open verify items highlighted with the text VERIFY (${vcount})`);
   }
   await page.screenshot({ path: path.join(screens, `${taskDiagram.id}_panel.png`) });
-  // a task with a verify item, if any (VERIFY highlight), screenshot
-  const vt = taskDiagram.overlay_elements.find(id => EL[id].verify.length && id !== taskId);
+  // a task with an open verify point (VERIFY highlight), in any L4 diagram, screenshot; then back to the task
+  const vt = taskDiagram.overlay_elements.find(id => EL[id].verify.length && id !== taskId) ||
+    Object.keys(EL).find(id => EL[id].type === 'bpmn:Task' && EL[id].overlay && EL[id].verify.length);
   if (vt) {
+    await openD(page, EL[vt].diagram);
     await page.evaluate(id => window.ipdApp.select(id), vt);
     await page.waitForTimeout(80);
     const vcount = await page.evaluate(() => Array.from(document.querySelectorAll('#panel-body .verify')).filter(n => n.textContent.startsWith('VERIFY')).length);
     check(vcount >= EL[vt].verify.length, `panel: ${vt} verify items shown with the text VERIFY (${vcount})`);
-    await page.screenshot({ path: path.join(screens, `${taskDiagram.id}_panel_verify.png`) });
+    await page.screenshot({ path: path.join(screens, `${EL[vt].diagram}_panel_verify.png`) });
+    await openD(page, taskDiagram.id);
+    await page.evaluate(id => window.ipdApp.select(id), taskId);
+    await page.waitForTimeout(80);
+  } else {
+    note('no task with an open verify point');
   }
   // selecting a step from the default view zooms to 100 %
   const zAfter = await page.evaluate(() => window.ipdApp.viewer.get('canvas').zoom());
