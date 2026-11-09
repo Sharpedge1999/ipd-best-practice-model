@@ -40,6 +40,9 @@ const expectMay = (arg('--expect-may', '') || '').split(',').map(x => x.trim()).
 // spec values of the default view (W1 change 1): below LEGIBLE fit zoom, open at READABLE_ZOOM
 const LEGIBLE = 0.6, READABLE_ZOOM = 0.75;
 const BINDING_BADGE = { 'binding-law': 'LAW', 'binding-ICH': 'ICH', 'guidance': 'GUIDANCE', 'best-practice': 'BP', 'verify-binding': 'VERIFY' };
+// source location and page as displayed: without a [verify] marker that the verify triage resolved
+const locOf = s => s.loc_shown != null ? s.loc_shown : s.loc;
+const pageOf = s => s.page_shown != null ? s.page_shown : s.page;
 function mayOnly(rec) { return rec.reqs.length > 0 && rec.reqs.every(q => q.found && q.modal === 'may'); }
 if (!htmlFile || !citFile || !screens) {
   console.error('usage: test_viewer.mjs (--html <page.html> --citations <citations.json> | --publish-dir <dir>) --screens <dir> [--chrome <path>] [--json-out <file>] [--expect-may <ids>]');
@@ -239,6 +242,13 @@ check(importWarnings.length === 0, 'import: zero bpmn-js import warnings', impor
 const panel0 = await page.evaluate(() => ({ mode: document.documentElement.getAttribute('data-panel'), shown: getComputedStyle(document.querySelector('#panel')).display !== 'none',
   canvas: document.querySelector('.canvas-wrap').getBoundingClientRect().width, main: document.querySelector('#main').getBoundingClientRect().width }));
 check(panel0.mode === 'closed' && !panel0.shown && Math.abs(panel0.canvas - panel0.main) < 1, 'panel: closed on load, canvas uses the full width', panel0);
+// verify triage: the VERIFY badge marks exactly the elements with an open point; every raw [verify] text is triaged
+if (CIT.meta.counts.verify_elements) {
+  const vc = CIT.meta.counts.verify_elements;
+  const vbad = Object.values(EL).filter(r => r.badges.includes('VERIFY') !== (r.verify.length > 0 || r.binding === 'verify-binding')).map(r => r.id);
+  check(vbad.length === 0 && CIT.meta.counts.verify_untriaged === 0,
+    `verify: VERIFY badge exactly on the ${vc.after_triage} elements with an open point (before triage ${vc.before_triage}); no untriaged text`, { vbad, untriaged: CIT.meta.counts.verify_untriaged });
+}
 const hdr = await page.evaluate(() => ({ t: document.querySelector('#page-title').textContent, s: document.querySelector('#page-status').textContent }));
 check(hdr.t === 'Important protocol deviation (iPD) management - best-practice reference model (BPMN 2.0)', 'header: title text');
 check(hdr.s === 'Outside-in reference model derived from ICH, EU and US sources - not validated by process owners', 'header: status line');
@@ -623,7 +633,7 @@ if (taskDiagram) {
   const panel = await page.evaluate(() => ({ h2: (document.querySelector('#panel-body h2') || {}).textContent || '', visible: document.querySelector('#panel-body').innerText,
     text: document.querySelector('#panel-body').textContent, sel: window.ipdApp.state.selected, mode: document.documentElement.getAttribute('data-panel'),
     shown: getComputedStyle(document.querySelector('#panel')).display !== 'none' }));
-  const missingSrc = rec.sources.filter(s => !panel.text.includes(s.key) || !panel.text.includes(s.loc) || (s.title && !panel.text.includes(s.title)) || (s.page && !panel.text.includes(s.page)));
+  const missingSrc = rec.sources.filter(s => !panel.text.includes(s.key) || !panel.text.includes(locOf(s)) || (s.title && !panel.text.includes(s.title)) || (pageOf(s) && !panel.text.includes(pageOf(s))));
   check(panel.sel === taskId && panel.h2 === rec.label && panel.mode === 'element' && panel.shown, `panel: click on task ${taskId} opens the side panel with its description`, panel.h2);
   const stmts = rec.reqs.filter(r => r.found && r.statement).map(r => r.statement);
   check(panel.visible.includes('What happens') && stmts.every(t => panel.visible.includes(t)) && panel.visible.includes('At a glance'),
@@ -786,7 +796,7 @@ if (ct) {
     await page.evaluate(() => window.ipdApp.idle());
     const st = await page.evaluate(() => ({ d: document.documentElement.getAttribute('data-diagram'), hash: location.hash, sel: window.ipdApp.state.selected, text: document.querySelector('#panel-body').textContent }));
     check(st.d === idg.id && st.sel === it.element_id, `interface: click on ${it.element_id} stays on ${idg.id} and opens its panel`, { d: st.d, sel: st.sel });
-    const miss = rec.reqs.map(r => r.id).concat(rec.sources.map(s => s.key + ' ' + s.loc)).filter(t => !st.text.includes(t));
+    const miss = rec.reqs.map(r => r.id).concat(rec.sources.map(s => s.key + ' ' + locOf(s))).filter(t => !st.text.includes(t));
     check(st.text.includes('Interface - outside this model') && st.text.includes('Interface requirements') && miss.length === 0,
       `interface: panel shows the interface note, its REQs and sources (${rec.reqs.length} REQ, ${rec.sources.length} source)`, miss);
     await page.screenshot({ path: path.join(screens, `${idg.id}_interface.png`) });

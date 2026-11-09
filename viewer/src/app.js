@@ -26,7 +26,7 @@
     GUIDANCE: 'Agency guidance - not legally binding',
     DRAFT: 'Rests (also) on draft guidance - shown next to the binding badge; draft guidance is never the only basis of a binding step',
     BP: 'Industry best practice or data standard',
-    VERIFY: 'Binding class, numbering or content still to be verified'
+    VERIFY: 'Open point a reviewer should check - for example an unsettled deadline, reporting duty or decision rule; the side panel says what to check'
   };
   var BINDING_BADGE = { 'binding-law': 'LAW', 'binding-ICH': 'ICH', 'guidance': 'GUIDANCE',
     'best-practice': 'BP', 'verify-binding': 'VERIFY' };
@@ -273,13 +273,19 @@
     var w = Math.max(150, el.width);
     return [el.x + el.width / 2 - w / 2, el.y + el.height + 6, w, 70];
   }
+  // a source location or page marked [verify] is shown without the marker unless the point is still open (verify triage)
+  function locOf(s) { return s.loc_shown != null ? s.loc_shown : s.loc; }
+  function pageOf(s) { return s.page_shown != null ? s.page_shown : s.page; }
   function sourceLines(rec) {
     var seen = {}, out = [];
     rec.sources.forEach(function (s) {
-      var k = s.key + ' ' + s.loc;
-      if (!seen[k]) { seen[k] = 1; out.push([s.key, s.loc]); }
+      var k = s.key + ' ' + locOf(s);
+      if (!seen[k]) { seen[k] = 1; out.push([s.key, locOf(s)]); }
     });
     return out;
+  }
+  function noteLines(list) {
+    return (list || []).map(function (n) { return '<p class="vnote"><span class="vnk">Note</span>' + esc(n) + '</p>'; }).join('');
   }
   var IFC_TEXT = 'Interface - outside this model';
   function isInterface(rec) { return !!(rec && rec.calls && rec.calls.interface); }
@@ -683,7 +689,7 @@
         esc(d.parent.label) + '</span>' + (pr ? badgesHtml(pr) : '') + '</button>' +
         (pr && pr.reqs.length ? reqList(pr.reqs) : '') + '</div>';
     }
-    var notes = (d.model_doc || []).filter(function (f) { return f[0] === 'Open item' || f[0] === 'Rule exception'; });
+    var notes = (d.model_doc || []).filter(function (f) { return f[0] === 'Open item' || f[0] === 'Rule exception' || f[0] === 'Model note'; });
     if (notes.length) {
       h += '<h3>Model notes</h3>';
       notes.forEach(function (f) {
@@ -734,6 +740,7 @@
     if (f.record) kv.push('Record: ' + f.record);
     if (kv.length) h += '<p class="kv">' + kv.map(esc).join('<br>') + '</p>';
     (f.verify || []).forEach(function (v) { h += verifyBox(v); });
+    h += noteLines(f.verify_notes);
     if (isHttp(f.url)) h += '<p>' + link(f.url) + '</p>';
     return h + '</div>';
   }
@@ -777,6 +784,7 @@
     if (r.scope) kv.push('Scope: ' + r.scope);
     if (kv.length) h += '<p class="kv">' + kv.map(esc).join('<br>') + '</p>';
     (r.verify || []).forEach(function (v) { h += verifyBox(v); });
+    h += noteLines(r.verify_notes);
     if (r.findings.length) {
       h += '<details><summary class="kv">Findings behind ' + esc(r.id) + ' (' + r.findings.length + ')</summary>' +
         r.findings.map(findingHtml).join('') + '</details>';
@@ -785,8 +793,8 @@
   }
   function sourceHtml(s) {
     var b = BINDING_BADGE[s.binding_default];
-    var h = '<div class="card"><div><span class="k">' + esc(s.key) + '</span> ' + esc(s.loc) +
-      (s.page ? ' <span class="kv">| page ' + esc(s.page) + '</span>' : '') + '</div>';
+    var h = '<div class="card"><div><span class="k">' + esc(s.key) + '</span> ' + esc(locOf(s)) +
+      (pageOf(s) ? ' <span class="kv">| page ' + esc(pageOf(s)) + '</span>' : '') + '</div>';
     h += '<p>' + (s.title ? esc(s.title) : '<span class="muted">Source key not in the registry.</span>') + '</p>';
     if (s.binding_default) h += '<p class="kv">Registry class: ' + esc(s.binding_default) + (b ? ' ' + badge(b) : '') + '</p>';
     if (isHttp(s.url)) {
@@ -802,6 +810,7 @@
         if (f.paraphrase) h += '<p>' + esc(f.paraphrase) + '</p>';
         if (f.quote) h += '<blockquote class="quote">"' + esc(f.quote) + '"</blockquote>';
         (f.verify || []).forEach(function (v) { h += verifyBox(v); });
+        h += noteLines(f.verify_notes);
         h += '</div>';
       });
       if (fl.length > 3) h += '<p class="kv">+' + (fl.length - 3) + ' more findings at this location (see requirements).</p>';
@@ -892,9 +901,10 @@
     }
     h += '<details class="sec-d"' + (!rec.reqs.length && rec.sources.length ? ' open' : '') + '><summary>Sources (' + rec.sources.length + ')</summary><div class="sec-b">' +
       (rec.sources.length ? rec.sources.map(sourceHtml).join('') : '<p class="muted">No source on this element.</p>') + '</div></details>';
-    if (rec.notes.length) {
-      h += '<details class="sec-d"><summary>Notes (' + rec.notes.length + ')</summary><div class="sec-b">' +
-        rec.notes.map(function (n) { return '<p>' + esc(n) + '</p>'; }).join('') + '</div></details>';
+    var vnotes = rec.verify_notes || [];
+    if (vnotes.length || rec.notes.length) {
+      h += '<details class="sec-d"><summary>Notes (' + (vnotes.length + rec.notes.length) + ')</summary><div class="sec-b">' +
+        noteLines(vnotes) + rec.notes.map(function (n) { return '<p>' + esc(n) + '</p>'; }).join('') + '</div></details>';
     }
     return h;
   }
@@ -966,17 +976,21 @@
       'Side panel: opens when you click a step (or its source box) and shows what happens in the step, the key facts and, folded, the requirements and sources; close it with x, Esc or a click on empty canvas. "Requirements list" lists all requirements of the diagram.',
       'Source box under an element: binding badge, then up to three source lines (source key and location); "+n more" when there are more. Click it for the step description and full citation.',
       'Dark green outline: the element matches the active filter (count in the filter bar). Faded: it does not match.',
-      'Yellow background: an open verify item, always labelled VERIFY.',
+      'Yellow background: an open point to check, always labelled VERIFY. Modelling choices and settled readings are plain notes in the side panel.',
       'Lane and pool sources are shown in the side panel only (click the lane or pool header).',
       'Wide diagrams open at ' + Math.round(READABLE_ZOOM * 100) + '% at the left edge, centred on the Sponsor pool: drag or scroll to pan, ' +
         '"Fit" shows the whole diagram, "100%" the detail; clicking a step zooms to 100%.' +
         (minimap ? ' The minimap (top right of the canvas, "Show minimap" / "Hide minimap") shows the whole diagram; its dark green frame marks the visible part - click or drag in it to move the view.' : '')
-    ].map(function (t) { return '<li><span>' + esc(t) + '</span></li>'; }).join('');
+    ].concat(Object.keys(META.verify_general || {}).length ? ['Not marked with VERIFY because it applies in general:'] : [])
+      .concat(Object.keys(META.verify_general || {}).map(function (k) { return '- ' + META.verify_general[k]; }))
+      .map(function (t) { return '<li><span>' + esc(t) + '</span></li>'; }).join('');
     var inp = META.inputs, b = [];
     b.push('Model file: ' + inp.bpmn.file + ' (sha256 ' + inp.bpmn.sha256.slice(0, 12) + ')');
     b.push(inp.findings ? 'Findings: ' + inp.findings.file + ' (' + inp.findings.records + ' records)' : 'Findings: not loaded - trace data from the .bpmn only');
     b.push(inp.requirements ? 'Requirements: ' + inp.requirements.file + ' (' + inp.requirements.records + ' records)' : 'Requirements: not loaded');
     b.push('Source registry: ' + inp.registry.file);
+    if (inp.verify_triage) b.push('Verify triage: ' + inp.verify_triage.file + ' (' + inp.verify_triage.records + ' entries; VERIFY on ' +
+      META.counts.verify_elements.after_triage + ' of ' + META.counts.verify_elements.before_triage + ' previously marked elements)');
     b.push('Rendered with bpmn-js ' + (META.viewer ? META.viewer.bpmn_js : '') + ' (NavigatedViewer); the bpmn.io watermark stays visible as its licence requires.');
     if (META.viewer && META.viewer.minimap) b.push('Minimap: diagram-js-minimap ' + META.viewer.minimap + ' (MIT licence, notice kept in the page source).');
     b.push('Generated by ' + META.generator + '.');

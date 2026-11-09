@@ -76776,7 +76776,8 @@
     "file": "synthesis/requirements.yaml",
     "records": 271,
     "sha256": "997888ac144bb3d91b849e61663e038dd55a1cd47e1fd22428d75acf52f2301e"
-   }
+   },
+   "verify_triage": null
   },
   "modal_loaded": true,
   "requirements_loaded": true,
@@ -76809,6 +76810,7 @@
   ],
   "title": "Important protocol deviation (iPD) management - best-practice reference model (BPMN 2.0)",
   "trace_only": false,
+  "verify_general": {},
   "viewer": {
    "bpmn_js": "18.31.1",
    "bundle": "bpmn-navigated-viewer.production.min.js",
